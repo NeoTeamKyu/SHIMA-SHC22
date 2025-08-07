@@ -1,0 +1,47 @@
+BubbleShield_DPLC:
+BubbleShield_DPLC_0: 	dc.w BubbleShield_DPLC_1A-BubbleShield_DPLC
+BubbleShield_DPLC_2: 	dc.w BubbleShield_DPLC_1D-BubbleShield_DPLC
+BubbleShield_DPLC_4: 	dc.w BubbleShield_DPLC_20-BubbleShield_DPLC
+BubbleShield_DPLC_6: 	dc.w BubbleShield_DPLC_23-BubbleShield_DPLC
+BubbleShield_DPLC_8: 	dc.w BubbleShield_DPLC_26-BubbleShield_DPLC
+BubbleShield_DPLC_A: 	dc.w BubbleShield_DPLC_29-BubbleShield_DPLC
+BubbleShield_DPLC_C: 	dc.w BubbleShield_DPLC_2C-BubbleShield_DPLC
+BubbleShield_DPLC_E: 	dc.w BubbleShield_DPLC_2F-BubbleShield_DPLC
+BubbleShield_DPLC_10: 	dc.w BubbleShield_DPLC_32-BubbleShield_DPLC
+BubbleShield_DPLC_12: 	dc.w BubbleShield_DPLC_35-BubbleShield_DPLC
+BubbleShield_DPLC_14: 	dc.w BubbleShield_DPLC_3A-BubbleShield_DPLC
+BubbleShield_DPLC_16: 	dc.w BubbleShield_DPLC_3F-BubbleShield_DPLC
+BubbleShield_DPLC_18: 	dc.w BubbleShield_DPLC_46-BubbleShield_DPLC
+BubbleShield_DPLC_1A: 	dc.b $1
+	dc.b $30, $0
+BubbleShield_DPLC_1D: 	dc.b $1
+	dc.b $50, $4
+BubbleShield_DPLC_20: 	dc.b $1
+	dc.b $80, $A
+BubbleShield_DPLC_23: 	dc.b $1
+	dc.b $80, $13
+BubbleShield_DPLC_26: 	dc.b $1
+	dc.b $B0, $1C
+BubbleShield_DPLC_29: 	dc.b $1
+	dc.b $80, $13
+BubbleShield_DPLC_2C: 	dc.b $1
+	dc.b $80, $A
+BubbleShield_DPLC_2F: 	dc.b $1
+	dc.b $50, $4
+BubbleShield_DPLC_32: 	dc.b $1
+	dc.b $10, $0
+BubbleShield_DPLC_35: 	dc.b $2
+	dc.b $80, $28
+	dc.b $80, $31
+BubbleShield_DPLC_3A: 	dc.b $2
+	dc.b $80, $3A
+	dc.b $80, $43
+BubbleShield_DPLC_3F: 	dc.b $3
+	dc.b $70, $4C
+	dc.b $50, $54
+	dc.b $B0, $5A
+BubbleShield_DPLC_46: 	dc.b $3
+	dc.b $F0, $66
+	dc.b $30, $76
+	dc.b $F0, $7A
+	even

@@ -1,0 +1,64 @@
+DPLC_20ab:
+DPLC_20ab_0: 	dc.w DPLC_20ab_1A-DPLC_20ab
+DPLC_20ab_2: 	dc.w DPLC_20ab_1D-DPLC_20ab
+DPLC_20ab_4: 	dc.w DPLC_20ab_24-DPLC_20ab
+DPLC_20ab_6: 	dc.w DPLC_20ab_29-DPLC_20ab
+DPLC_20ab_8: 	dc.w DPLC_20ab_30-DPLC_20ab
+DPLC_20ab_A: 	dc.w DPLC_20ab_37-DPLC_20ab
+DPLC_20ab_C: 	dc.w DPLC_20ab_3E-DPLC_20ab
+DPLC_20ab_E: 	dc.w DPLC_20ab_45-DPLC_20ab
+DPLC_20ab_10: 	dc.w DPLC_20ab_4C-DPLC_20ab
+DPLC_20ab_12: 	dc.w DPLC_20ab_53-DPLC_20ab
+DPLC_20ab_14: 	dc.w DPLC_20ab_5A-DPLC_20ab
+DPLC_20ab_16: 	dc.w DPLC_20ab_61-DPLC_20ab
+DPLC_20ab_18: 	dc.w DPLC_20ab_68-DPLC_20ab
+DPLC_20ab_1A: 	dc.b $1
+	dc.b $F0, $0
+DPLC_20ab_1D: 	dc.b $3
+	dc.b $F0, $10
+	dc.b $10, $20
+	dc.b $10, $E
+DPLC_20ab_24: 	dc.b $2
+	dc.b $10, $E
+	dc.b $30, $22
+DPLC_20ab_29: 	dc.b $3
+	dc.b $F0, $10
+	dc.b $10, $20
+	dc.b $10, $E
+DPLC_20ab_30: 	dc.b $3
+	dc.b $10, $E
+	dc.b $F0, $26
+	dc.b $70, $36
+DPLC_20ab_37: 	dc.b $3
+	dc.b $10, $E
+	dc.b $F0, $3E
+	dc.b $70, $4E
+DPLC_20ab_3E: 	dc.b $3
+	dc.b $10, $E
+	dc.b $F0, $56
+	dc.b $70, $66
+DPLC_20ab_45: 	dc.b $3
+	dc.b $10, $E
+	dc.b $F0, $6E
+	dc.b $70, $7E
+DPLC_20ab_4C: 	dc.b $3
+	dc.b $10, $E
+	dc.b $F0, $86
+	dc.b $70, $96
+DPLC_20ab_53: 	dc.b $3
+	dc.b $10, $E
+	dc.b $F0, $9E
+	dc.b $70, $AE
+DPLC_20ab_5A: 	dc.b $3
+	dc.b $10, $E
+	dc.b $F0, $B6
+	dc.b $70, $C6
+DPLC_20ab_61: 	dc.b $3
+	dc.b $10, $E
+	dc.b $F0, $CE
+	dc.b $70, $DE
+DPLC_20ab_68: 	dc.b $3
+	dc.b $10, $E6
+	dc.b $F0, $E8
+	dc.b $70, $F8
+	even

@@ -1,0 +1,1081 @@
+BadApplePC98_Header:
+	sHeaderInit
+	sHeaderTempo	$01, $00
+	sHeaderCh	$05, $03
+	sHeaderDAC	BadApplePC98_DAC1
+	sHeaderDAC	BadApplePC98_DAC2
+	sHeaderFM	BadApplePC98_FM1, $00, $00
+	sHeaderFM	BadApplePC98_FM2, $00, $09
+	sHeaderFM	BadApplePC98_FM3, $00, $09
+	sHeaderFM	BadApplePC98_FM4, $00, $0E
+	sHeaderFM	BadApplePC98_FM5, $00, $0E
+	sHeaderPSG	BadApplePC98_PSG1, $0C, $0D, $00, v01
+	sHeaderPSG	BadApplePC98_PSG2, $0C, $0D, $00, v01
+	sHeaderPSG	BadApplePC98_PSG3, $0D, $0F, $00, v0D
+
+
+	; Patch $00
+	; $3A
+	; $01, $07, $31, $71,	$8E, $8E, $8D, $53
+	; $0E, $0E, $0E, $06,	$00, $00, $00, $00
+	; $1F, $FF, $1F, $2F,	$18, $28, $27, $00
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$00, $03, $00, $07
+	spMultiple	$01, $01, $07, $01
+	spRateScale	$02, $02, $02, $01
+	spAttackRt	$0E, $0D, $0E, $13
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $0E, $0E, $06
+	spSustainLv	$01, $01, $0F, $02
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$18, $27, $28, $00
+
+	; Patch $01
+	; $20
+	; $3F, $03, $00, $01,	$9F, $9F, $5F, $5F
+	; $0A, $0A, $0B, $07,	$08, $08, $08, $08
+	; $27, $27, $17, $17,	$13, $34, $18, $0C
+	spAlgorithm	$00
+	spFeedback	$04
+	spDetune	$03, $00, $00, $00
+	spMultiple	$0F, $00, $03, $01
+	spRateScale	$02, $01, $02, $01
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $0B, $0A, $07
+	spSustainLv	$02, $01, $02, $01
+	spDecayRt	$08, $08, $08, $08
+	spReleaseRt	$07, $07, $07, $07
+	spTotalLv	$13, $18, $34, $0C
+
+	; Patch $02
+	; $34
+	; $33, $41, $7E, $74,	$5B, $9F, $5F, $1F
+	; $04, $07, $07, $08,	$00, $00, $00, $00
+	; $FF, $FF, $EF, $FF,	$23, $00, $29, $07
+	spAlgorithm	$04
+	spFeedback	$06
+	spDetune	$03, $07, $04, $07
+	spMultiple	$03, $0E, $01, $04
+	spRateScale	$01, $01, $02, $00
+	spAttackRt	$1B, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$04, $07, $07, $08
+	spSustainLv	$0F, $0E, $0F, $0F
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$23, $29, $00, $07
+
+	; Patch $03
+	; $3B
+	; $08, $02, $00, $00,	$1B, $1F, $1F, $1F
+	; $0E, $0C, $12, $05,	$00, $00, $00, $05
+	; $3A, $3A, $5A, $EF,	$1E, $2D, $0F, $04
+	spAlgorithm	$03
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$08, $00, $02, $00
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1B, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $12, $0C, $05
+	spSustainLv	$03, $05, $03, $0E
+	spDecayRt	$00, $00, $00, $05
+	spReleaseRt	$0A, $0A, $0A, $0F
+	spTotalLv	$1E, $0F, $2D, $04
+
+	; Patch $04
+	; $3B
+	; $31, $7F, $61, $0A,	$9F, $DF, $9F, $9F
+	; $03, $00, $01, $02,	$00, $1E, $1D, $1F
+	; $17, $F2, $E0, $FA,	$23, $20, $1C, $1B
+	spAlgorithm	$03
+	spFeedback	$07
+	spDetune	$03, $06, $07, $00
+	spMultiple	$01, $01, $0F, $0A
+	spRateScale	$02, $02, $03, $02
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$03, $01, $00, $02
+	spSustainLv	$01, $0E, $0F, $0F
+	spDecayRt	$00, $1D, $1E, $1F
+	spReleaseRt	$07, $00, $02, $0A
+	spTotalLv	$23, $1C, $20, $1B
+
+BadApplePC98_DAC1:
+	sStop
+
+BadApplePC98_DAC2:
+	sPan		spCenter
+
+BadApplePC98_Jump9:
+	dc.b dKickS3
+
+BadApplePC98_Loop144:
+	dc.b $18
+	sLoop		$00, $36, BadApplePC98_Loop144
+	dc.b dSnareS3, $06, $06, $06, $06, $18
+
+BadApplePC98_Loop145:
+	dc.b dKickS3
+	sLoop		$00, $1D, BadApplePC98_Loop145
+	dc.b dKickS3, $0C, $06, $06, dSnareS3, dSnareS3, dSnareS3, dSnareS3
+	dc.b dSnareS3, dSnareS3, $12, dKickS3, $60, $60
+
+BadApplePC98_Loop146:
+	dc.b $18
+	sLoop		$00, $07, BadApplePC98_Loop146
+	dc.b $06, $06, $06, $06
+
+BadApplePC98_Loop147:
+	dc.b $18
+	sLoop		$00, $2C, BadApplePC98_Loop147
+	dc.b dSnareS3, dSnareS3, dSnareS3, dSnareS3, $0C, $06
+
+BadApplePC98_Loop148:
+	dc.b $06, dKickS3, $0C, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3
+	dc.b dKickS3, dSnareS3, $06, $06, dKickS3, $0C, dSnareS3, dKickS3
+	dc.b dSnareS3, dKickS3, dSnareS3, dKickS3, $06, dSnareS3, dSnareS3, dKickS3
+	dc.b dKickS3, $0C, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3, dKickS3
+	dc.b dSnareS3, $06, $06, dKickS3, $0C, dSnareS3, dKickS3, dKickS3
+	dc.b $06, $06, dSnareS3, dSnareS3, dSnareS3, dSnareS3, dSnareS3, dSnareS3
+	dc.b dKickS3
+	sLoop		$00, $03, BadApplePC98_Loop148
+	dc.b dKickS3, dKickS3, $0C, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3
+	dc.b dKickS3, dSnareS3, $06, $06, dKickS3, $0C, dSnareS3, dKickS3
+	dc.b dSnareS3, dKickS3, dSnareS3, dKickS3, $06, dSnareS3, dSnareS3, dKickS3
+	dc.b dKickS3, $0C, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3, dKickS3
+	dc.b dSnareS3, $06, $06, dKickS3, $18, $18, $18, $18
+	sJump		BadApplePC98_Jump9
+
+BadApplePC98_FM1:
+	sVoice		$01
+	sModOff
+	sModOff
+	sPan		spCenter
+	ssDetune	$00
+	sModOff
+
+BadApplePC98_Jump1:
+	dc.b nRst, $7F, $41
+
+BadApplePC98_Loop1:
+	dc.b nEb2, $0C, nBb2, nAb2, nBb2, nFs2, nBb2, nF2
+	dc.b nBb2
+	sLoop		$00, $06, BadApplePC98_Loop1
+	dc.b nB1, nFs2, nF2, nFs2, nEb2, nFs2, nCs2, nFs2
+	dc.b nB1, nFs2, nF2, nFs2, nD2, nEb2, nBb2, nF2
+
+BadApplePC98_Loop2:
+	dc.b nEb2, nBb2, nAb2, nBb2, nFs2, nBb2, nF2, nBb2
+	sLoop		$00, $02, BadApplePC98_Loop2
+	dc.b nB1, nFs2, nF2, nFs2, nEb2, nFs2, nCs2, nFs2
+	dc.b nB1, nFs2, nF2, nFs2, nD2, nEb2, nBb2, nF2
+
+BadApplePC98_Loop3:
+	dc.b nEb2, nBb2
+	sLoop		$00, $08, BadApplePC98_Loop3
+
+BadApplePC98_Loop4:
+	dc.b nB1, nFs2
+	sLoop		$00, $04, BadApplePC98_Loop4
+	dc.b nCs2, nAb2, nCs2, nAb2, nD2, nAb2, nD2, nAb2
+
+BadApplePC98_Loop5:
+	dc.b nEb2, nBb2
+	sLoop		$00, $07, BadApplePC98_Loop5
+	dc.b nCs2, nAb2
+
+BadApplePC98_Loop6:
+	dc.b nB1, nFs2
+	sLoop		$00, $04, BadApplePC98_Loop6
+	dc.b nCs2, nAb2, nCs2, nAb2, nD2, nAb2, nD2, nAb2
+	dc.b nB1, $60, nCs2, nEb2, nEb2, $18, $18, $18
+	dc.b $18
+
+BadApplePC98_Loop7:
+	dc.b nB1, $0C, nFs2
+	sLoop		$00, $04, BadApplePC98_Loop7
+
+BadApplePC98_Loop8:
+	dc.b nCs2, nAb2
+	sLoop		$00, $04, BadApplePC98_Loop8
+
+BadApplePC98_Loop9:
+	dc.b nEb2, nBb2
+	sLoop		$00, $07, BadApplePC98_Loop9
+	dc.b nCs2, nAb2
+	sLoop		$01, $02, BadApplePC98_Loop7
+
+BadApplePC98_Loop10:
+	dc.b nB1, nFs2
+	sLoop		$00, $04, BadApplePC98_Loop10
+
+BadApplePC98_Loop11:
+	dc.b nCs2, nAb2
+	sLoop		$00, $04, BadApplePC98_Loop11
+
+BadApplePC98_Loop12:
+	dc.b nD2, nBb2
+	sLoop		$00, $08, BadApplePC98_Loop12
+
+BadApplePC98_Loop20:
+	dc.b nEb2, $0B, nRst, $01, nBb2, $0B, nRst, $01
+	dc.b nEb2, $05, nRst, $01, nEb2, $05, nRst, $01
+	dc.b nBb2, $05
+
+BadApplePC98_Loop13:
+	dc.b nRst, $01, nEb2, $05
+	sLoop		$00, $03, BadApplePC98_Loop13
+
+BadApplePC98_Loop14:
+	dc.b nRst, $01, nF2, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01, nC3, $05
+	sLoop		$00, $02, BadApplePC98_Loop14
+	dc.b nRst, $01, nG2, $0B, nRst, $01, nD3, $0B
+	dc.b nRst, $01, nG2, $05, nRst, $01, nD3, $05
+
+BadApplePC98_Loop15:
+	dc.b nRst, $01, nG2, $05
+	sLoop		$00, $04, BadApplePC98_Loop15
+	dc.b nRst, $01, nD3, $05, nRst, $01, nG2, $05
+	dc.b nRst, $01, nF2, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01, nC3, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01, nEb2, $0B, nRst, $01, nBb2, $0B
+	dc.b nRst, $01, nEb2, $05, nRst, $01, nEb2, $05
+	dc.b nRst, $01, nBb2, $05
+
+BadApplePC98_Loop16:
+	dc.b nRst, $01, nEb2, $05
+	sLoop		$00, $03, BadApplePC98_Loop16
+
+BadApplePC98_Loop17:
+	dc.b nRst, $01, nF2, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01, nC3, $05
+	sLoop		$00, $02, BadApplePC98_Loop17
+
+BadApplePC98_Loop18:
+	dc.b nRst, $01, nG2, $05, nRst, $01, nG2, $05
+	dc.b nRst, $01, nD3, $05
+	sLoop		$00, $02, BadApplePC98_Loop18
+
+BadApplePC98_Loop19:
+	dc.b nRst, $01, nG2, $05
+	sLoop		$00, $04, BadApplePC98_Loop19
+	dc.b nRst, $01, nD3, $05, nRst, $01, nG2, $05
+	dc.b nRst, $01, nF2, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01, nC3, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01
+	sLoop		$01, $03, BadApplePC98_Loop20
+	dc.b nEb2, $0B, nRst, $01, nBb2, $0B, nRst, $01
+	dc.b nEb2, $05, nRst, $01, nEb2, $05, nRst, $01
+	dc.b nBb2, $05
+
+BadApplePC98_Loop21:
+	dc.b nRst, $01, nEb2, $05
+	sLoop		$00, $03, BadApplePC98_Loop21
+
+BadApplePC98_Loop22:
+	dc.b nRst, $01, nF2, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01, nC3, $05
+	sLoop		$00, $02, BadApplePC98_Loop22
+	dc.b nRst, $01, nG2, $0B, nRst, $01, nD3, $0B
+	dc.b nRst, $01, nG2, $05, nRst, $01, nD3, $05
+
+BadApplePC98_Loop23:
+	dc.b nRst, $01, nG2, $05
+	sLoop		$00, $04, BadApplePC98_Loop23
+	dc.b nRst, $01, nD3, $05, nRst, $01, nG2, $05
+	dc.b nRst, $01, nF2, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01, nC3, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01, nEb2, $0B, nRst, $01, nBb2, $0B
+	dc.b nRst, $01, nEb2, $05, nRst, $01, nEb2, $05
+	dc.b nRst, $01, nBb2, $05
+
+BadApplePC98_Loop24:
+	dc.b nRst, $01, nEb2, $05
+	sLoop		$00, $03, BadApplePC98_Loop24
+
+BadApplePC98_Loop25:
+	dc.b nRst, $01, nF2, $05, nRst, $01, nF2, $05
+	dc.b nRst, $01, nC3, $05
+	sLoop		$00, $02, BadApplePC98_Loop25
+
+BadApplePC98_Loop26:
+	dc.b nRst, $01, nG2, $05, nRst, $01, nG2, $05
+	dc.b nRst, $01, nD3, $05
+	sLoop		$00, $02, BadApplePC98_Loop26
+
+BadApplePC98_Loop27:
+	dc.b nRst, $01, nG2, $05
+	sLoop		$00, $04, BadApplePC98_Loop27
+
+BadApplePC98_Loop28:
+	dc.b nRst, $01, nD3, $05, nRst, $01, nG2, $05
+	dc.b nRst, $01, nG2, $05
+	sLoop		$00, $02, BadApplePC98_Loop28
+	dc.b nRst, $01
+	sJump		BadApplePC98_Jump1
+
+BadApplePC98_FM2:
+	sVoice		$00
+	sModOff
+	sModOff
+	sModOff
+	sModOff
+	sPan		spCenter
+	ssDetune	$00
+	sModOff
+
+BadApplePC98_Jump2:
+	dc.b nRst, $60, $60, $60, $60, $60, $60, nBb4
+	dc.b $7F, sHold, $41, nFs4, $7F, sHold, $11, nF4
+	dc.b $30, nFs4, $7F, sHold, $41, nEb4, $7F, sHold
+	dc.b $11, nD4, $30
+	sModAMPS	$00, $01, $02, $04
+	dc.b nEb5, $0C, nF5, nFs5, nAb5, nBb5, $18, nEb5
+	dc.b $0C, nCs6, nBb5, $18, nEb5, nBb5, $0C, nAb5
+	dc.b nFs5, nF5, nEb5, nF5, nFs5, nAb5, nBb5, $18
+	dc.b nAb5, $0C, nFs5, nF5, nBb4, nF5, nFs5, nF5
+	dc.b nEb5, nD5, nF5, nEb5, nF5, nFs5, nAb5, nBb5
+	dc.b $18, nAb5, $0C, nCs6
+	sModAMPS	$00, $01, $03, $04
+	dc.b nEb6, $18, $18, nF6, nFs6, nEb6, $0C, nF6
+	dc.b nFs6, nAb6, nBb6, $18, nAb6, $0C, nFs6, nAb6
+	dc.b $18, nF6, nFs6, nAb6
+	sModAMPS	$00, $01, $02, $04
+	dc.b nEb5, $30, $0C, nF5, nFs5, $18, nF5, $24
+	dc.b nBb4, nF5, $18, $18, nFs5, $0C, nEb5, $24
+	dc.b nCs5, $18, $18, nEb5, $0C, nBb4, $24, nEb5
+	dc.b $18, $30, $0C, nF5, nFs5, $18, nF5, $24
+	dc.b nFs5, nAb5, $18, nEb5, $24, nBb5, $0C, $60
+	dc.b nAb5, $0C, nBb5
+	sModAMPS	$00, $01, $03, $04
+	dc.b nCs6, $18, nEb6, $30, $0C, nF6, nFs6, $18
+	dc.b nF6, $24, nBb5, nF6, $18, $18, nFs6, $0C
+	dc.b nEb6, $24, nCs6, $18, $18, nEb6, $0C, nBb5
+	dc.b $24, nF6, $18, nEb6, $30, $0C, nF6, nFs6
+	dc.b nAb6, nF6, $24, nFs6, nAb6, $18, nD6, $24
+	dc.b nBb5, nBb6, $18, nAb6, nFs6, nF6, nFs6
+	sModAMPS	$00, $01, $02, $04
+	dc.b nG5, $0C, nD5, $18, nG5, nBb4, $0C, nD5
+	dc.b nF5, nG5, nD5, nBb4, nG5, $18, $0C, nA5
+	dc.b nBb5, nG5, nD5, $18, nG5, nD5, $0C, nG5
+	dc.b nC6, nBb5, $30, nA5, $0C, nG5, nD5, nBb4
+	dc.b nG5, nD5, $18, nG5, nBb4, $0C, nD5, nF5
+	dc.b nG5, nD5, nBb4, nG5, $18, $0C, nA5, nBb5
+	dc.b nG5, nD5, $18, nG5, nD5, $0C, nG5, nC6
+	dc.b nBb5, $30, nA5, $18, nBb5
+	sModAMPS	$00, $01, $03, $04
+	dc.b nG6, $0C, nD6, $18, nG6, nBb5, $0C, nD6
+	dc.b nF6, nG6, nD6, nBb5, nG6, $18, $0C, nA6
+	dc.b nBb6, nG6, nD6, $18, nG6, nD6, $0C, nG6
+	dc.b nC7, nBb6, $30, nA6, $0C, nG6, nD6, nBb5
+	dc.b nG6, nD6, $18, nG6, nBb5, $0C, nD6, nF6
+	dc.b nG6, nD6, nBb5, nG6, $18, $0C, nA6, nBb6
+	dc.b nG6, nD6, $18, nG6, nD6, $0C, nG6, nA6
+	dc.b nRst, $60
+	sJump		BadApplePC98_Jump2
+
+BadApplePC98_FM3:
+	sVoice		$00
+	sModOff
+	sModOff
+	sModOff
+	sModOff
+	sPan		spCenter
+	ssDetune	$00
+	sModOff
+
+BadApplePC98_Jump3:
+	dc.b nRst, $60, $60, $60, $60, $60, $60, nEb4
+	dc.b $7F, sHold, $41, nB3, $7F, sHold, $11, nD4
+	dc.b $30, nEb4, $7F, sHold, $41, nB3, $7F, sHold
+	dc.b $11, nBb3, $30
+	sModAMPS	$00, $01, $02, $04
+	dc.b nEb4, $0C, nF4, nFs4, nAb4, nBb4, $18, nEb4
+	dc.b $0C, nCs5, nBb4, $18, nEb4, nBb4, $0C, nAb4
+	dc.b nFs4, nF4, nEb4, nF4, nFs4, nAb4, nBb4, $18
+	dc.b nAb4, $0C, nFs4, nF4, nBb3, nF4, nFs4, nF4
+	dc.b nEb4, nD4, nF4, nEb4, nF4, nFs4, nAb4, nBb4
+	dc.b $18, nAb4, $0C, nCs5, nEb5, $18, $18, nF5
+	dc.b nFs5, nEb5, $0C, nF5, nFs5, nAb5, nBb5, $18
+	dc.b nAb5, $0C, nFs5, nAb5, $18, nF5, nFs5, nAb5
+	dc.b nEb4, $30, $0C, nF4, nFs4, $18, nF4, $24
+	dc.b nBb3, nF4, $18, $18, nFs4, $0C, nEb4, $24
+	dc.b nCs4, $18, $18, nEb4, $0C, nBb3, $24, nEb4
+	dc.b $18, $30, $0C, nF4, nFs4, $18, nF4, $24
+	dc.b nFs4, nAb4, $18, nEb4, $24, nBb4, $0C, $60
+	dc.b nAb4, $0C, nBb4, nCs5, $18, nEb5, $30, $0C
+	dc.b nF5, nFs5, $18, nF5, $24, nBb4, nF5, $18
+	dc.b $18, nFs5, $0C, nEb5, $24, nCs5, $18, $18
+	dc.b nEb5, $0C, nBb4, $24, nF5, $18, nEb5, $30
+	dc.b $0C, nF5, nFs5, nAb5, nF5, $24, nFs5, nAb5
+	dc.b $18, nD5, $24, nBb4, nBb5, $18, nAb5, nFs5
+	dc.b nF5, nFs5
+	dc.b nG4, $0C, nD4, $18, nG4, nBb3, $0C, nD4
+	dc.b nF4, nG4, nD4, nBb3, nG4, $18, $0C, nA4
+	dc.b nBb4, nG4, nD4, $18, nG4, nD4, $0C, nG4
+	dc.b nC5, nBb4, $30, nA4, $0C, nG4, nD4, nBb3
+	dc.b nG4, nD4, $18, nG4, nBb3, $0C, nD4, nF4
+	dc.b nG4, nD4, nBb3, nG4, $18, $0C, nA4, nBb4
+	dc.b nG4, nD4, $18, nG4, nD4, $0C, nG4, nC5
+	dc.b nBb4, $30, nA4, $18, nBb4, nG5, $0C, nD5
+	dc.b $18, nG5, nBb4, $0C, nD5, nF5, nG5, nD5
+	dc.b nBb4, nG5, $18, $0C, nA5, nBb5, nG5, nD5
+	dc.b $18, nG5, nD5, $0C, nG5, nC6, nBb5, $30
+	dc.b nA5, $0C, nG5, nD5, nBb4, nG5, nD5, $18
+	dc.b nG5, nBb4, $0C, nD5, nF5, nG5, nD5, nBb4
+	dc.b nG5, $18, $0C, nA5, nBb5, nG5, nD5, $18
+	dc.b nG5, nD5, $0C, nG5, nA5, nRst, $60
+	sJump		BadApplePC98_Jump3
+
+BadApplePC98_FM4:
+	sVoice		$02
+	sPan		spLeft
+	sModOff
+	sModOff
+	ssDetune	$00
+	sModOff
+
+BadApplePC98_Jump4:
+	dc.b nRst, $7F, $7F, $7F, $0F
+
+BadApplePC98_Loop29:
+	dc.b nEb5, $0A, nRst, $0E
+	sLoop		$00, $08, BadApplePC98_Loop29
+	saVol		$FE
+
+BadApplePC98_Loop30:
+	dc.b nEb5, $0A, nRst, $0E
+	sLoop		$00, $0E, BadApplePC98_Loop30
+	dc.b nD5, $0A, nRst, $0E, nD5, $0A, nRst, $0E
+	sLoop		$01, $02, BadApplePC98_Loop30
+
+BadApplePC98_Loop31:
+	dc.b nEb4, $0A, nRst, $0E
+	sLoop		$00, $0E, BadApplePC98_Loop31
+	dc.b nD4, $0A, nRst, $0E, nD4, $0A
+
+BadApplePC98_Loop32:
+	dc.b nRst, $0E, nEb4, $0A
+	sLoop		$00, $0E, BadApplePC98_Loop32
+	dc.b nRst, $0E, nD4, $0A, nRst, $0E, nD4, $0A
+
+BadApplePC98_Loop36:
+	dc.b nRst, $02, nBb4, $04, nRst, $02, nBb4, $04
+
+BadApplePC98_Loop33:
+	dc.b nRst, $02, nEb5, $04
+	sLoop		$00, $04, BadApplePC98_Loop33
+
+BadApplePC98_Loop34:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $04, BadApplePC98_Loop34
+
+BadApplePC98_Loop35:
+	dc.b nRst, $02, nEb5, $04
+	sLoop		$00, $06, BadApplePC98_Loop35
+	sLoop		$01, $04, BadApplePC98_Loop36
+
+BadApplePC98_Loop37:
+	dc.b nRst, $02, nBb4, $04, nRst, $02, nEb5, $04
+	dc.b nRst, $02, nF5, $04, nRst, $02, nBb4, $04
+	sLoop		$00, $10, BadApplePC98_Loop37
+
+BadApplePC98_Loop41:
+	dc.b nRst, $02, nBb4, $04, nRst, $02, nBb4, $04
+
+BadApplePC98_Loop38:
+	dc.b nRst, $02, nEb5, $04
+	sLoop		$00, $04, BadApplePC98_Loop38
+
+BadApplePC98_Loop39:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $04, BadApplePC98_Loop39
+
+BadApplePC98_Loop40:
+	dc.b nRst, $02, nEb5, $04
+	sLoop		$00, $06, BadApplePC98_Loop40
+	sLoop		$01, $04, BadApplePC98_Loop41
+
+BadApplePC98_Loop42:
+	dc.b nRst, $02, nBb4, $04, nRst, $02, nEb5, $04
+	dc.b nRst, $02, nF5, $04, nRst, $02, nBb4, $04
+	sLoop		$00, $08, BadApplePC98_Loop42
+
+BadApplePC98_Loop43:
+	dc.b nRst, $02, nD5, $04, nRst, $02, nEb5, $04
+	dc.b nRst, $02, nF5, $04, nRst, $02, nBb5, $04
+	sLoop		$00, $08, BadApplePC98_Loop43
+	dc.b nRst, $02
+	saVol		$FE
+
+BadApplePC98_Loop44:
+	dc.b nBb4, $04, nRst, $02, nEb5, $04, nRst, $02
+	dc.b nG5, $04, nRst, $02, nG5, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop44
+
+BadApplePC98_Loop45:
+	dc.b nC5, $04, nRst, $02, nF5, $04, nRst, $02
+	dc.b nA5, $04, nRst, $02, nA5, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop45
+
+BadApplePC98_Loop46:
+	dc.b nD5, $04, nRst, $02, nG5, $04, nRst, $02
+	dc.b nBb5, $04, nRst, $02, nBb5, $04, nRst, $02
+	sLoop		$00, $03, BadApplePC98_Loop46
+	dc.b nC5, $04, nRst, $02, nF5, $04, nRst, $02
+	dc.b nA5, $04, nRst, $02, nA5, $04, nRst, $02
+	sLoop		$01, $07, BadApplePC98_Loop44
+
+BadApplePC98_Loop47:
+	dc.b nBb4, $04, nRst, $02, nEb5, $04, nRst, $02
+	dc.b nG5, $04, nRst, $02, nG5, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop47
+	dc.b nC5, $04, nRst, $02, nF5, $04, nRst, $02
+	dc.b nA5, $04, nRst, $02, nA5, $04, nRst, $02
+	dc.b nC5, $04, nRst, $02, nF5, $04, nRst, $02
+	dc.b nA5, $04, nRst, $02, nA5, $04, nRst, $62
+	saVol		$04
+	sJump		BadApplePC98_Jump4
+
+BadApplePC98_FM5:
+	sVoice		$02
+	sModOff
+	sModOff
+	sPan		spRight
+	ssDetune	$00
+	sModOff
+
+BadApplePC98_Jump5:
+	dc.b nRst, $7F, $7F, $7F, $0F
+
+BadApplePC98_Loop48:
+	dc.b nBb4, $0A, nRst, $0E
+	sLoop		$00, $08, BadApplePC98_Loop48
+	saVol		$FE
+
+BadApplePC98_Loop49:
+	dc.b nBb4, $0A, nRst, $0E
+	sLoop		$00, $3F, BadApplePC98_Loop49
+	dc.b nBb4, $0A, nRst, $02, nFs4, $04, nRst, $02
+	dc.b nFs4, $04
+
+BadApplePC98_Loop50:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $04, BadApplePC98_Loop50
+
+BadApplePC98_Loop51:
+	dc.b nRst, $02, nFs4, $04
+	sLoop		$00, $04, BadApplePC98_Loop51
+
+BadApplePC98_Loop52:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $06, BadApplePC98_Loop52
+	dc.b nRst, $02, nFs4, $04, nRst, $02, nFs4, $04
+
+BadApplePC98_Loop53:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $04, BadApplePC98_Loop53
+	dc.b nRst, $02, nFs4, $04, nRst, $02, nFs4, $04
+	dc.b nRst, $02, nAb4, $04, nRst, $02, nAb4, $04
+
+BadApplePC98_Loop54:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $06, BadApplePC98_Loop54
+	dc.b nRst, $02, nFs4, $04, nRst, $02, nFs4, $04
+
+BadApplePC98_Loop55:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $04, BadApplePC98_Loop55
+
+BadApplePC98_Loop56:
+	dc.b nRst, $02, nFs4, $04
+	sLoop		$00, $04, BadApplePC98_Loop56
+	sLoop		$01, $03, BadApplePC98_Loop54
+	sLoop		$02, $03, BadApplePC98_Loop52
+
+BadApplePC98_Loop57:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $06, BadApplePC98_Loop57
+	dc.b nRst, $02, nFs4, $04, nRst, $02, nFs4, $04
+
+BadApplePC98_Loop58:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $04, BadApplePC98_Loop58
+	dc.b nRst, $02, nFs4, $04, nRst, $02, nFs4, $04
+	dc.b nRst, $02, nAb4, $04, nRst, $02, nAb4, $04
+
+BadApplePC98_Loop59:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $06, BadApplePC98_Loop59
+	dc.b nRst, $02, nFs4, $04, nRst, $02, nFs4, $04
+
+BadApplePC98_Loop60:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $04, BadApplePC98_Loop60
+
+BadApplePC98_Loop61:
+	dc.b nRst, $02, nFs4, $04
+	sLoop		$00, $04, BadApplePC98_Loop61
+	sLoop		$01, $02, BadApplePC98_Loop59
+
+BadApplePC98_Loop62:
+	dc.b nRst, $02, nBb4, $04
+	sLoop		$00, $06, BadApplePC98_Loop62
+
+BadApplePC98_Loop63:
+	dc.b nRst, $02, nEb4, $04, nRst, $02, nBb4, $04
+	dc.b nRst, $02, nEb5, $04, nRst, $02, nEb5, $04
+	sLoop		$00, $02, BadApplePC98_Loop63
+
+BadApplePC98_Loop64:
+	dc.b nRst, $02, nF4, $04, nRst, $02, nC5, $04
+	dc.b nRst, $02, nF5, $04, nRst, $02, nF5, $04
+	sLoop		$00, $02, BadApplePC98_Loop64
+
+BadApplePC98_Loop65:
+	dc.b nRst, $02, nG4, $04, nRst, $02, nD5, $04
+	dc.b nRst, $02, nG5, $04, nRst, $02, nG5, $04
+	sLoop		$00, $03, BadApplePC98_Loop65
+	dc.b nRst, $02, nF4, $04, nRst, $02, nC5, $04
+	dc.b nRst, $02, nF5, $04, nRst, $02, nF5, $04
+	sLoop		$01, $04, BadApplePC98_Loop63
+	dc.b nRst, $02
+	saVol		$FE
+
+BadApplePC98_Loop66:
+	dc.b nEb5, $04, nRst, $02, nBb5, $04, nRst, $02
+	dc.b nEb6, $04, nRst, $02, nEb6, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop66
+
+BadApplePC98_Loop67:
+	dc.b nF5, $04, nRst, $02, nC6, $04, nRst, $02
+	dc.b nF6, $04, nRst, $02, nF6, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop67
+
+BadApplePC98_Loop68:
+	dc.b nG5, $04, nRst, $02, nD6, $04, nRst, $02
+	dc.b nG6, $04, nRst, $02, nG6, $04, nRst, $02
+	sLoop		$00, $03, BadApplePC98_Loop68
+	dc.b nF5, $04, nRst, $02, nC6, $04, nRst, $02
+	dc.b nF6, $04, nRst, $02, nF6, $04, nRst, $02
+	sLoop		$01, $03, BadApplePC98_Loop66
+
+BadApplePC98_Loop69:
+	dc.b nEb5, $04, nRst, $02, nBb5, $04, nRst, $02
+	dc.b nEb6, $04, nRst, $02, nEb6, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop69
+	dc.b nF5, $04, nRst, $02, nC6, $04, nRst, $02
+	dc.b nF6, $04, nRst, $02, nF6, $04, nRst, $02
+	dc.b nF5, $04, nRst, $02, nC6, $04, nRst, $02
+	dc.b nF6, $04, nRst, $02, nF6, $04, nRst, $62
+	saVol		$04
+	sJump		BadApplePC98_Jump5
+
+BadApplePC98_PSG1:
+	sModOff
+	sModOff
+	ssDetune	$00
+	sModOff
+
+BadApplePC98_Jump6:
+	dc.b nRst, $7F, $7F, $7F, $0F
+
+BadApplePC98_Loop70:
+	dc.b nEb3, $0C, nRst
+	sLoop		$00, $07, BadApplePC98_Loop70
+	dc.b nEb3
+
+BadApplePC98_Loop71:
+	dc.b nBb2, $06, nEb2, nF2, nFs2
+	sLoop		$00, $03, BadApplePC98_Loop71
+	dc.b nCs3, nEb3, nBb2, nEb2, nBb2, nEb2, nF2, nFs2
+	dc.b nBb2, nEb2, nF2, nFs2, nBb2, nEb2, nCs3, nEb3
+	dc.b nBb2, nAb2, nFs2, nF2
+
+BadApplePC98_Loop72:
+	dc.b nB1, nB1, nFs2, nB1, nB1, nCs2, nEb2, nFs2
+	sLoop		$00, $02, BadApplePC98_Loop72
+
+BadApplePC98_Loop73:
+	dc.b nD2, nEb2, nF2, nBb1
+	sLoop		$00, $03, BadApplePC98_Loop73
+	dc.b nBb1, nAb2, nFs2, nF2
+	sLoop		$01, $02, BadApplePC98_Loop71
+
+BadApplePC98_Loop74:
+	dc.b nEb2, $0C, nF2, nFs2, nBb2
+	sLoop		$00, $06, BadApplePC98_Loop74
+	dc.b nCs2, nEb2, nF2, nAb2, nD2, nEb2, nF2, nAb2
+	sLoop		$01, $02, BadApplePC98_Loop74
+
+BadApplePC98_Loop78:
+	dc.b nBb2, $04, nRst, $02, nBb2, $04
+
+BadApplePC98_Loop75:
+	dc.b nRst, $02, nEb3, $04
+	sLoop		$00, $04, BadApplePC98_Loop75
+
+BadApplePC98_Loop76:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $04, BadApplePC98_Loop76
+
+BadApplePC98_Loop77:
+	dc.b nRst, $02, nEb3, $04
+	sLoop		$00, $06, BadApplePC98_Loop77
+	dc.b nRst, $02
+	sLoop		$01, $04, BadApplePC98_Loop78
+
+BadApplePC98_Loop79:
+	dc.b nBb2, $04, nRst, $02, nEb3, $04, nRst, $02
+	dc.b nF3, $04, nRst, $02, nBb2, $04, nRst, $02
+	sLoop		$00, $10, BadApplePC98_Loop79
+
+BadApplePC98_Loop83:
+	dc.b nBb2, $04, nRst, $02, nBb2, $04
+
+BadApplePC98_Loop80:
+	dc.b nRst, $02, nEb3, $04
+	sLoop		$00, $04, BadApplePC98_Loop80
+
+BadApplePC98_Loop81:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $04, BadApplePC98_Loop81
+
+BadApplePC98_Loop82:
+	dc.b nRst, $02, nEb3, $04
+	sLoop		$00, $06, BadApplePC98_Loop82
+	dc.b nRst, $02
+	sLoop		$01, $04, BadApplePC98_Loop83
+
+BadApplePC98_Loop84:
+	dc.b nBb2, $04, nRst, $02, nEb3, $04, nRst, $02
+	dc.b nF3, $04, nRst, $02, nBb2, $04, nRst, $02
+	sLoop		$00, $08, BadApplePC98_Loop84
+
+BadApplePC98_Loop85:
+	dc.b nD3, $04, nRst, $02, nEb3, $04, nRst, $02
+	dc.b nF3, $04, nRst, $02, nBb3, $04, nRst, $02
+	sLoop		$00, $08, BadApplePC98_Loop85
+
+BadApplePC98_Loop86:
+	dc.b nBb1, $04, nRst, $02, nEb2, $04, nRst, $02
+	dc.b nG2, $04, nRst, $02, nG2, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop86
+
+BadApplePC98_Loop87:
+	dc.b nC2, $04, nRst, $02, nF2, $04, nRst, $02
+	dc.b nA2, $04, nRst, $02, nA2, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop87
+
+BadApplePC98_Loop88:
+	dc.b nD2, $04, nRst, $02, nG2, $04, nRst, $02
+	dc.b nBb2, $04, nRst, $02, nBb2, $04, nRst, $02
+	sLoop		$00, $03, BadApplePC98_Loop88
+	dc.b nC2, $04, nRst, $02, nF2, $04, nRst, $02
+	dc.b nA2, $04, nRst, $02, nA2, $04, nRst, $02
+	sLoop		$01, $07, BadApplePC98_Loop86
+
+BadApplePC98_Loop89:
+	dc.b nBb1, $04, nRst, $02, nEb2, $04, nRst, $02
+	dc.b nG2, $04, nRst, $02, nG2, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop89
+
+BadApplePC98_Loop90:
+	dc.b nC2, $04, nRst, $02, nF2, $04, nRst, $02
+	dc.b nA2, $04, nRst, $02, nA2, $04, nRst, $02
+	sLoop		$00, $02, BadApplePC98_Loop90
+
+BadApplePC98_Loop91:
+	dc.b nD2, $04, nRst, $02, nG2, $04, nRst, $02
+	dc.b nBb2, $04, nRst, $02, nBb2, $04, nRst, $02
+	sLoop		$00, $04, BadApplePC98_Loop91
+	sJump		BadApplePC98_Jump6
+
+BadApplePC98_PSG2:
+	sModOff
+	sModOff
+	ssDetune	$00
+	sModOff
+
+BadApplePC98_Jump7:
+	dc.b nRst, $7F, $7F, $7F, $0F
+
+BadApplePC98_Loop92:
+	dc.b nBb2, $0C, nRst
+	sLoop		$00, $07, BadApplePC98_Loop92
+	dc.b nBb2, nRst, $09
+
+BadApplePC98_Loop93:
+	dc.b nBb2, $06, nEb2, nF2, nFs2
+	sLoop		$00, $03, BadApplePC98_Loop93
+	dc.b nCs3, nEb3, nBb2, nEb2, nBb2, nEb2, nF2, nFs2
+	dc.b nBb2, nEb2, nF2, nFs2, nBb2, nEb2, nCs3, nEb3
+	dc.b nBb2, nAb2, nFs2, nF2
+
+BadApplePC98_Loop94:
+	dc.b nB1, nB1, nFs2, nB1, nB1, nCs2, nEb2, nFs2
+	sLoop		$00, $03, BadApplePC98_Loop94
+	dc.b nD2, nEb2, nF2, nBb1, nBb1, nAb2, nFs2, nF2
+
+BadApplePC98_Loop95:
+	dc.b nBb2, nEb2, nF2, nFs2
+	sLoop		$00, $03, BadApplePC98_Loop95
+	dc.b nCs3, nEb3, nBb2, nEb2, nBb2, nEb2, nF2, nFs2
+	dc.b nBb2, nEb2, nF2, nFs2, nBb2, nEb2, nCs3, nEb3
+	dc.b nBb2, nAb2, nFs2, nF2
+
+BadApplePC98_Loop96:
+	dc.b nB1, nB1, nFs2, nB1, nB1, nCs2, nEb2, nFs2
+	sLoop		$00, $03, BadApplePC98_Loop96
+	dc.b nD2, nEb2, nF2, nBb1, nBb1, nAb2, nFs2, $03
+	dc.b nRst, $12
+
+BadApplePC98_Loop97:
+	dc.b nEb2, $0C, nF2, nFs2, nBb2
+	sLoop		$00, $06, BadApplePC98_Loop97
+	dc.b nCs2, nEb2, nF2, nAb2, nD2, nEb2, nF2, nAb2
+
+BadApplePC98_Loop98:
+	dc.b nEb2, nF2, nFs2, nBb2
+	sLoop		$00, $06, BadApplePC98_Loop98
+	dc.b nCs2, nEb2, nF2, nAb2, nD2, nEb2, nF2, $06
+	dc.b nFs2, $04, nRst, $02, nFs2, $04
+
+BadApplePC98_Loop99:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $04, BadApplePC98_Loop99
+
+BadApplePC98_Loop100:
+	dc.b nRst, $02, nFs2, $04
+	sLoop		$00, $04, BadApplePC98_Loop100
+
+BadApplePC98_Loop101:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $06, BadApplePC98_Loop101
+	dc.b nRst, $02, nFs2, $04, nRst, $02, nFs2, $04
+
+BadApplePC98_Loop102:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $04, BadApplePC98_Loop102
+	dc.b nRst, $02, nFs2, $04, nRst, $02, nFs2, $04
+	dc.b nRst, $02, nAb2, $04, nRst, $02, nAb2, $04
+
+BadApplePC98_Loop103:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $06, BadApplePC98_Loop103
+	dc.b nRst, $02, nFs2, $04, nRst, $02, nFs2, $04
+
+BadApplePC98_Loop104:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $04, BadApplePC98_Loop104
+
+BadApplePC98_Loop105:
+	dc.b nRst, $02, nFs2, $04
+	sLoop		$00, $04, BadApplePC98_Loop105
+	sLoop		$01, $03, BadApplePC98_Loop103
+
+BadApplePC98_Loop106:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $06, BadApplePC98_Loop106
+	dc.b nRst, $02, nFs2, $04, nRst, $02, nFs2, $04
+
+BadApplePC98_Loop107:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $04, BadApplePC98_Loop107
+	dc.b nRst, $02, nFs2, $04, nRst, $02, nFs2, $04
+	dc.b nRst, $02, nAb2, $04, nRst, $02, nAb2, $04
+
+BadApplePC98_Loop108:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $06, BadApplePC98_Loop108
+	dc.b nRst, $02, nFs2, $04, nRst, $02, nFs2, $04
+
+BadApplePC98_Loop109:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $04, BadApplePC98_Loop109
+
+BadApplePC98_Loop110:
+	dc.b nRst, $02, nFs2, $04
+	sLoop		$00, $04, BadApplePC98_Loop110
+	sLoop		$01, $02, BadApplePC98_Loop108
+
+BadApplePC98_Loop111:
+	dc.b nRst, $02, nBb2, $04
+	sLoop		$00, $06, BadApplePC98_Loop111
+	dc.b nRst, $02, nFs3, $04, nRst, $02, nFs3, $04
+
+BadApplePC98_Loop112:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $04, BadApplePC98_Loop112
+
+BadApplePC98_Loop113:
+	dc.b nRst, $02, nFs3, $04
+	sLoop		$00, $04, BadApplePC98_Loop113
+
+BadApplePC98_Loop114:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $06, BadApplePC98_Loop114
+	dc.b nRst, $02, nFs3, $04, nRst, $02, nFs3, $04
+
+BadApplePC98_Loop115:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $04, BadApplePC98_Loop115
+	dc.b nRst, $02, nFs3, $04, nRst, $02, nFs3, $04
+	dc.b nRst, $02, nAb3, $04, nRst, $02, nAb3, $04
+
+BadApplePC98_Loop116:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $06, BadApplePC98_Loop116
+	dc.b nRst, $02, nFs3, $04, nRst, $02, nFs3, $04
+
+BadApplePC98_Loop117:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $04, BadApplePC98_Loop117
+
+BadApplePC98_Loop118:
+	dc.b nRst, $02, nFs3, $04
+	sLoop		$00, $04, BadApplePC98_Loop118
+	sLoop		$01, $03, BadApplePC98_Loop116
+
+BadApplePC98_Loop119:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $06, BadApplePC98_Loop119
+	dc.b nRst, $02, nFs3, $04, nRst, $02, nFs3, $04
+
+BadApplePC98_Loop120:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $04, BadApplePC98_Loop120
+	dc.b nRst, $02, nFs3, $04, nRst, $02, nFs3, $04
+	dc.b nRst, $02, nAb3, $04, nRst, $02, nAb3, $04
+
+BadApplePC98_Loop121:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $06, BadApplePC98_Loop121
+	dc.b nRst, $02, nFs3, $04, nRst, $02, nFs3, $04
+
+BadApplePC98_Loop122:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $04, BadApplePC98_Loop122
+
+BadApplePC98_Loop123:
+	dc.b nRst, $02, nFs3, $04
+	sLoop		$00, $04, BadApplePC98_Loop123
+	sLoop		$01, $02, BadApplePC98_Loop121
+
+BadApplePC98_Loop124:
+	dc.b nRst, $02, nBb3, $04
+	sLoop		$00, $06, BadApplePC98_Loop124
+
+BadApplePC98_Loop125:
+	dc.b nRst, $02, nEb1, $04, nRst, $02, nBb1, $04
+	dc.b nRst, $02, nEb2, $04, nRst, $02, nEb2, $04
+	sLoop		$00, $02, BadApplePC98_Loop125
+
+BadApplePC98_Loop126:
+	dc.b nRst, $02, nF1, $04, nRst, $02, nC2, $04
+	dc.b nRst, $02, nF2, $04, nRst, $02, nF2, $04
+	sLoop		$00, $02, BadApplePC98_Loop126
+
+BadApplePC98_Loop127:
+	dc.b nRst, $02, nG1, $04, nRst, $02, nD2, $04
+	dc.b nRst, $02, nG2, $04, nRst, $02, nG2, $04
+	sLoop		$00, $03, BadApplePC98_Loop127
+	dc.b nRst, $02, nF1, $04, nRst, $02, nC2, $04
+	dc.b nRst, $02, nF2, $04, nRst, $02, nF2, $04
+	sLoop		$01, $04, BadApplePC98_Loop125
+
+BadApplePC98_Loop128:
+	dc.b nRst, $02, nEb2, $04, nRst, $02, nBb2, $04
+	dc.b nRst, $02, nEb3, $04, nRst, $02, nEb3, $04
+	sLoop		$00, $02, BadApplePC98_Loop128
+
+BadApplePC98_Loop129:
+	dc.b nRst, $02, nF2, $04, nRst, $02, nC3, $04
+	dc.b nRst, $02, nF3, $04, nRst, $02, nF3, $04
+	sLoop		$00, $02, BadApplePC98_Loop129
+
+BadApplePC98_Loop130:
+	dc.b nRst, $02, nG2, $04, nRst, $02, nD3, $04
+	dc.b nRst, $02, nG3, $04, nRst, $02, nG3, $04
+	sLoop		$00, $03, BadApplePC98_Loop130
+	dc.b nRst, $02, nF2, $04, nRst, $02, nC3, $04
+	dc.b nRst, $02, nF3, $04, nRst, $02, nF3, $04
+	sLoop		$01, $03, BadApplePC98_Loop128
+
+BadApplePC98_Loop131:
+	dc.b nRst, $02, nEb2, $04, nRst, $02, nBb2, $04
+	dc.b nRst, $02, nEb3, $04, nRst, $02, nEb3, $04
+	sLoop		$00, $02, BadApplePC98_Loop131
+
+BadApplePC98_Loop132:
+	dc.b nRst, $02, nF2, $04, nRst, $02, nC3, $04
+	dc.b nRst, $02, nF3, $04, nRst, $02, nF3, $04
+	sLoop		$00, $02, BadApplePC98_Loop132
+
+BadApplePC98_Loop133:
+	dc.b nRst, $02, nG2, $04, nRst, $02, nD3, $04
+	dc.b nRst, $02, nG3, $04, nRst, $02, nG3, $04
+	sLoop		$00, $04, BadApplePC98_Loop133
+	dc.b nRst, $02
+	sJump		BadApplePC98_Jump7
+
+BadApplePC98_PSG3:
+	sNoisePSG	$E7
+	ssDetune	$00
+
+BadApplePC98_Jump8:
+	dc.b nRst, $60, $60, $60, $60, $60, $60
+	sVolEnv	v02
+	dc.b nA5
+
+BadApplePC98_Loop134:
+	dc.b $0C, $06, $06, $06, $06, $06, $06
+	sLoop		$00, $0F, BadApplePC98_Loop134
+
+BadApplePC98_Loop135:
+	dc.b $06
+	sLoop		$00, $08, BadApplePC98_Loop135
+
+BadApplePC98_Loop136:
+	dc.b $0C, $06, $06, $06, $06, $06, $06
+	sLoop		$00, $0F, BadApplePC98_Loop136
+
+BadApplePC98_Loop137:
+	dc.b $06
+	sLoop		$00, $07, BadApplePC98_Loop137
+	dc.b $7F, sHold, $7F, sHold, $7F, sHold, $09
+
+BadApplePC98_Loop138:
+	dc.b $0C, $06, $06, $06, $06, $06, $06
+	sLoop		$00, $15, BadApplePC98_Loop138
+	dc.b $0C, $06, $06, $06, $06
+
+BadApplePC98_Loop139:
+	dc.b $06, $12
+	sLoop		$00, $04, BadApplePC98_Loop139
+
+BadApplePC98_Loop140:
+	dc.b $06
+	sLoop		$00, $37, BadApplePC98_Loop140
+	dc.b $12
+
+BadApplePC98_Loop141:
+	dc.b $06
+	sLoop		$00, $3D, BadApplePC98_Loop141
+	dc.b $12
+
+BadApplePC98_Loop142:
+	dc.b $06
+	sLoop		$00, $3D, BadApplePC98_Loop142
+	dc.b $12
+
+BadApplePC98_Loop143:
+	dc.b $06
+	sLoop		$00, $37, BadApplePC98_Loop143
+	dc.b $66
+	sJump		BadApplePC98_Jump8

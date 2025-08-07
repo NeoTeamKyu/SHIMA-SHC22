@@ -1,0 +1,439 @@
+ChineseBicycle_Header:
+	sHeaderInit						; Z80 offset is $B74F
+	sHeaderTempo	$01, $6E	
+	sHeaderCh	$05, $03
+	sHeaderDAC	ChineseBicycle_DAC1
+	sHeaderDAC	ChineseBicycle_DAC2	
+	sHeaderFM	ChineseBicycle_FM1, $0D, $1C
+	sHeaderFM	ChineseBicycle_FM2, $0D, $0B
+	sHeaderFM	ChineseBicycle_FM3, $F5, $10
+	sHeaderFM	ChineseBicycle_FM4, $F5, $19
+	sHeaderFM	ChineseBicycle_FM5, $F5, $16
+	sHeaderPSG	ChineseBicycle_PSG1, $E9, $2E, $00, vNone
+	sHeaderPSG	ChineseBicycle_PSG2, $E9, $2E, $00, vNone
+	sHeaderPSG	ChineseBicycle_PSG3, $F5, $2E, $00, vNone
+
+	; Patch $00
+	; $34
+	; $00, $02, $01, $01,	$1F, $1F, $1F, $1F
+	; $10, $06, $06, $06,	$01, $06, $06, $06
+	; $35, $1A, $15, $1A,	$10, $80, $18, $80
+	spAlgorithm	$04
+	spFeedback	$06
+	spDetune	$00, $00, $00, $00
+	spMultiple	$00, $01, $02, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$10, $06, $06, $06
+	spSustainLv	$03, $01, $01, $01
+	spDecayRt	$01, $06, $06, $06
+	spReleaseRt	$05, $05, $0A, $0A
+	spTotalLv	$10, $18, $00, $00
+
+	; Patch $01
+	; $3A
+	; $02, $07, $01, $02,	$8E, $8E, $8D, $55
+	; $0E, $0E, $0E, $08,	$00, $00, $00, $04
+	; $1F, $FF, $1F, $0F,	$1A, $28, $17, $82
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$02, $01, $07, $02
+	spRateScale	$02, $02, $02, $01
+	spAttackRt	$0E, $0D, $0E, $15
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $0E, $0E, $08
+	spSustainLv	$01, $01, $0F, $00
+	spDecayRt	$00, $00, $00, $04
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$1A, $17, $28, $02
+
+	; Patch $02
+	; $20
+	; $36, $35, $30, $31,	$DF, $DF, $9F, $9F
+	; $07, $06, $09, $0A,	$07, $06, $06, $02
+	; $20, $10, $10, $F8,	$19, $37, $13, $80
+	spAlgorithm	$00
+	spFeedback	$04
+	spDetune	$03, $03, $03, $03
+	spMultiple	$06, $00, $05, $01
+	spRateScale	$03, $02, $03, $02
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $09, $06, $0A
+	spSustainLv	$02, $01, $01, $0F
+	spDecayRt	$07, $06, $06, $02
+	spReleaseRt	$00, $00, $00, $08
+	spTotalLv	$19, $13, $37, $00
+
+	; Patch $03
+	; $0B
+	; $30, $44, $02, $43,	$10, $12, $11, $13
+	; $11, $1F, $1F, $05,	$10, $00, $00, $00
+	; $3A, $0A, $0A, $1A,	$1F, $30, $20, $81
+	spAlgorithm	$03
+	spFeedback	$01
+	spDetune	$03, $00, $04, $04
+	spMultiple	$00, $02, $04, $03
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$10, $11, $12, $13
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$11, $1F, $1F, $05
+	spSustainLv	$03, $00, $00, $01
+	spDecayRt	$10, $00, $00, $00
+	spReleaseRt	$0A, $0A, $0A, $0A
+	spTotalLv	$1F, $20, $30, $01
+
+	; Patch $04
+	; $2C
+	; $02, $03, $00, $04,	$1F, $1F, $1F, $1F
+	; $08, $0F, $08, $0F,	$07, $0C, $07, $13
+	; $18, $18, $18, $18,	$20, $80, $8B, $80
+	spAlgorithm	$04
+	spFeedback	$05
+	spDetune	$00, $00, $00, $00
+	spMultiple	$02, $00, $03, $04
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $08, $0F, $0F
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$07, $07, $0C, $13
+	spReleaseRt	$08, $08, $08, $08
+	spTotalLv	$20, $0B, $00, $00
+
+	; Patch $05
+	; $2D
+	; $7A, $72, $3C, $30,	$1F, $1A, $1F, $1A
+	; $00, $0A, $0A, $0A,	$00, $0E, $0E, $0E
+	; $06, $3F, $0F, $3F,	$1F, $80, $82, $80
+	spAlgorithm	$05
+	spFeedback	$05
+	spDetune	$07, $03, $07, $03
+	spMultiple	$0A, $0C, $02, $00
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1A, $1A
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $0A, $0A, $0A
+	spSustainLv	$00, $00, $03, $03
+	spDecayRt	$00, $0E, $0E, $0E
+	spReleaseRt	$06, $0F, $0F, $0F
+	spTotalLv	$1F, $02, $00, $00
+
+	; Patch $06
+	; $3A
+	; $02, $07, $02, $02,	$8F, $8F, $8F, $8F
+	; $0E, $0E, $0E, $0F,	$00, $00, $00, $0B
+	; $1F, $FF, $1F, $1F,	$1A, $28, $17, $84
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$02, $02, $07, $02
+	spRateScale	$02, $02, $02, $02
+	spAttackRt	$0F, $0F, $0F, $0F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $0E, $0E, $0F
+	spSustainLv	$01, $01, $0F, $01
+	spDecayRt	$00, $00, $00, $0B
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$1A, $17, $28, $04
+
+
+ChineseBicycle_PSG1:
+	sJump		ChineseBicycle_Jump1PSG
+
+ChineseBicycle_PSG2:
+	saVol	$08
+	ssDetune	$01
+	dc.b nRst, $08
+	sJump		ChineseBicycle_Jump1PSG
+
+ChineseBicycle_PSG3:
+	ssDetune	$00
+	sJump		ChineseBicycle_Jump1PSG
+
+ChineseBicycle_Jump1PSG:
+	sVolEnv	v06
+
+ChineseBicycle_Loop2PSG:
+	dc.b nD5, $0C, nE5, $04, nD5, $08, nB4, nA4
+	dc.b nG4, nE4, nG4, nA4, $0C, nB4, $04, nA4
+	dc.b $08, nG4
+	sVolEnv	vNone
+
+ChineseBicycle_Loop1PSG:
+	dc.b nE4, $08, sHold
+	sLoop		$01, $04, ChineseBicycle_Loop1PSG
+	sVolEnv	v06
+	dc.b nB3, $04, nB3, nD4, $08, nE4, nG4, nE4
+	dc.b $04, nE4, nG4, $08, nA4, nB4, nE5, $0C
+	dc.b nD5, $04, nE5, $08, nD5, nE5, nD5, nB4
+	dc.b nA4
+	sLoop		$00, $02, ChineseBicycle_Loop2PSG
+	saVol	-$10
+	sVolEnv	v05
+	dc.b nG4, $18, $10, $08, nA4, nB4, nD5, $20
+	dc.b sHold, $10, nB4, $08, nD5, nE5, $18, nG5
+	dc.b $10, $08, nE5, $02, nG5, nE5, nD5, nB4
+	dc.b $08, nD5, $20, nA4, $20, nG5, $18, $10
+	dc.b $08, nA5, nB5, nE5, $20, sHold, $10, nG5
+	dc.b $02, nA5, nG5, nE5, nG5, $08
+	saVol	$20
+	sVolEnv	vNone
+
+ChineseBicycle_Loop3PSG:
+	dc.b nA5, $10, sHold
+	saVol	-$08
+	sLoop		$00, $04, ChineseBicycle_Loop3PSG
+	dc.b $20, sHold
+
+ChineseBicycle_Loop4PSG:
+	dc.b nA5, $08, sHold
+	saVol	$08
+	sLoop		$00, $04, ChineseBicycle_Loop4PSG
+	saVol	-$20
+	sVolEnv	v05
+	dc.b nG4, $18, $10, $08, nA4, nB4, nD5, $20
+	dc.b sHold, $10, nB4, $08, nD5, nE5, $18, nG5
+	dc.b $10, $08, nE5, $02, nG5, nE5, nD5, nB4
+	dc.b $08, nD5, $20, sHold, $20, nG5, $18, $10
+	dc.b $08, nA5, nB5, nE5, $20, sHold, $10, nG5
+	dc.b $02, nA5, nG5, nE5, nG5, $08
+	sVolEnv	vNone
+	saVol	$20
+
+ChineseBicycle_Loop5PSG:
+	dc.b nA5, $10, sHold
+	saVol	-$08
+	sLoop		$00, $04, ChineseBicycle_Loop5PSG
+	saVol	$18
+
+ChineseBicycle_Loop6PSG:
+	dc.b nD6, $10, sHold
+	saVol	-$08
+	sLoop		$00, $03, ChineseBicycle_Loop6PSG
+	dc.b nD6, $10
+	saVol	$10
+	sJump		ChineseBicycle_Jump1PSG
+
+ChineseBicycle_FM3:
+	sVoice		$01
+	sModAMPS	$0F, $01, $03, $02
+
+ChineseBicycle_Jump2:
+	dc.b nG4, $20, sHold, $10, nE4, nA4, $20, sHold
+	dc.b $10, nG4, $08, nA4, nD4, $20, sHold, $20
+	dc.b nE4, $0C, nA3, $04, nB3, $08, nD4, nE4
+	dc.b nG4, nA4, nB4, nG4, $20, sHold, $10, nE4
+	dc.b nA4, $20, sHold, $10, nG4, $08, nA4, nD4
+	dc.b $20, sHold, $20, nE4, $0C, nA3, $04, nB3
+	dc.b $08, nD4, nB4, nA4, nG4, nA4
+	sPan		spRight
+	saVol		$04
+
+ChineseBicycle_Loop9:
+	sVoice		$06
+	dc.b nG5, $0C, $04, $08, nD5, nG5, $0C, $04
+	dc.b $08, nD5, nD5, $0C, $04, $08, nA4, nD5
+	dc.b $0C, $04, $08, nA4, nE5, $0C, $04, $08
+	dc.b nG5, nE5, $0C, $04, $08, nG5, nD5, $04
+	dc.b nD5, nB4, $08, nA4, nB4, nD5, $04, nD5
+	dc.b nE5, $08, nG5, nA5, $04, nA5
+	sVoice		$01
+	dc.b nG5, $40, nE5, $40, nD5, $40, nD5, $40
+	sLoop		$00, $02, ChineseBicycle_Loop9
+	saVol		$FC
+	sPan		spCenter
+	sJump		ChineseBicycle_Jump2
+
+ChineseBicycle_FM2:
+	sVoice		$02
+
+ChineseBicycle_Loop7:
+	dc.b nG2, $0C, $04, nD2, $08, nG2, nG2, $0C
+	dc.b $04, nD2, $08, nG2, nE2, $0C, $04, nB1
+	dc.b $08, nE2, nE2, $0C, $04, nB1, $08, nE2
+	dc.b nD2, $0C, $04, nA1, $08, nD2, nD2, $0C
+	dc.b $04, nA1, $08, nD2, nC2, $0C, $04, nG1
+	dc.b $08, nC2, nD2, $0C, $04, nA1, $08, nD2
+	sLoop		$00, $02, ChineseBicycle_Loop7
+
+ChineseBicycle_Loop8:
+	dc.b nG2, $0C, $04, nD2, $08, nG2, nG2, $0C
+	dc.b $04, nD2, $08, nG2, nD2, $0C, $04, nA1
+	dc.b $08, nD2, nD2, $0C, $04, nA1, $08, nD2
+	dc.b nE2, $0C, $04, nB1, $08, nE2, nE2, $0C
+	dc.b $04, nB1, $08, nE2, nD2, $0C, $04, nA1
+	dc.b $08, nA1, nD2, $04, nD2, nD2, $08, nA1
+	dc.b nA2, $04, nA2, nG2, $0C, $04, nD2, $08
+	dc.b nD2, nG2, $0C, $04, nD2, $08, nD2, nE2
+	dc.b $0C, $04, nB1, $08, nB1, nE2, $0C, $04
+	dc.b nB1, $08, nB1, nD1, nD2, $04, nD2, nA1
+	dc.b $08, nD2, nD2, $04, nD2, nD2, $08, nA1
+	dc.b nD2, nD1, nD2, $04, nD2, nA1, $08, nD2
+	dc.b nD2, $04, nD2, nD2, $08, nA1, nD2, $04
+	dc.b nD2
+	sLoop		$00, $02, ChineseBicycle_Loop8
+	sJump		ChineseBicycle_Loop7
+
+ChineseBicycle_FM1:
+	sModAMPS	$07, $01, $03, $02
+
+ChineseBicycle_Jump1:
+	sVoice		$00	
+	saVol		-$07
+
+ChineseBicycle_Loop2:
+	dc.b nD5, $0C, nE5, $04, nD5, $08, nB4, nA4
+	dc.b nG4, nE4, nG4, nA4, $0C, nB4, $04, nA4
+	dc.b $08, nG4
+
+ChineseBicycle_Loop1:
+	dc.b nE4, $08, sHold
+	sLoop		$01, $04, ChineseBicycle_Loop1
+	dc.b nB3, $04, nB3, nD4, $08, nE4, nG4, nE4
+	dc.b $04, nE4, nG4, $08, nA4, nB4, nE5, $0C
+	dc.b nD5, $04, nE5, $08, nD5, nE5, nD5, nB4
+	dc.b nA4
+	sLoop		$00, $02, ChineseBicycle_Loop2
+	saVol		$07
+	sVoice		$03
+	dc.b nG4, $18, $10, $08, nA4, nB4, nD5, $20
+	dc.b sHold, $10, nB4, $08, nD5, nE5, $18, nG5
+	dc.b $10, $08, nE5, $02, nG5, nE5, nD5, nB4
+	dc.b $08, nD5, $20, nA4, $20, nG5, $18, $10
+	dc.b $08, nA5, nB5, nE5, $20, sHold, $10, nG5
+	dc.b $02, nA5, nG5, nE5, nG5, $08
+	saVol	$04
+
+ChineseBicycle_Loop3:
+	dc.b nA5, $10, sHold
+	saVol	-$01
+	sLoop		$00, $04, ChineseBicycle_Loop3
+	dc.b $20, sHold
+
+ChineseBicycle_Loop4:
+	dc.b nA5, $08, sHold
+	saVol	$01
+	sLoop		$00, $04, ChineseBicycle_Loop4
+	saVol	-$04
+	dc.b nG4, $18, $10, $08, nA4, nB4, nD5, $20
+	dc.b sHold, $10, nB4, $08, nD5, nE5, $18, nG5
+	dc.b $10, $08, nE5, $02, nG5, nE5, nD5, nB4
+	dc.b $08, nD5, $20, sHold, $20, nG5, $18, $10
+	dc.b $08, nA5, nB5, nE5, $20, sHold, $10, nG5
+	dc.b $02, nA5, nG5, nE5, nG5, $08
+	saVol	$04
+
+ChineseBicycle_Loop5:
+	dc.b nA5, $10, sHold
+	saVol	-$01
+	sLoop		$00, $04, ChineseBicycle_Loop5
+	saVol	$03
+
+ChineseBicycle_Loop6:
+	dc.b nD6, $10, sHold
+	saVol	-$01
+	sLoop		$00, $03, ChineseBicycle_Loop6
+	dc.b nD6, $10
+	sJump		ChineseBicycle_Jump1
+
+ChineseBicycle_FM4:
+	sVoice		$04
+
+ChineseBicycle_Loop10:
+	sPan		spRight
+	dc.b nG6, $04, nG5, $08, $04, nG6, $08, nG5
+	sPan		spLeft
+	dc.b nG6, $04, nG5, $08, $04, nG6, $08, nG5
+	sLoop		$01, $03, ChineseBicycle_Loop10
+	sPan		spRight
+	dc.b nG6, $04, nG5, $08, $04, nG6, $08, nG5
+	dc.b nG6, $04
+	sPan		spLeft
+	dc.b nG5, $08, $04, nG6, $08, nG5, $04, nG5
+	sLoop		$00, $02, ChineseBicycle_FM4
+
+ChineseBicycle_Loop11:
+	sVoice		$01
+	saTranspose	$F4
+	dc.b nG5, $0C, $04, $08, nD5, nG5, $0C, $04
+	dc.b $08, nD5, nD5, $0C, $04, $08, nA4, nD5
+	dc.b $0C, $04, $08, nA4, nE5, $0C, $04, $08
+	dc.b nG5, nE5, $0C, $04, $08, nG5, nD5, $04
+	dc.b nD5, nB4, $08, nA4, nB4, nD5, $04, nD5
+	dc.b nE5, $08, nG5, nA5, $04, nA5
+	saTranspose	$0C
+	dc.b nG4, $40, nE4, $40, nD4, $40
+	sVoice		$05
+	saVol		$FD
+	dc.b nA4, $04, nA4, nB4, $08, nD5, nE5, nD5
+	dc.b $04, nD5, nE5, $08, nA5, nB5
+	saVol		$03
+	sLoop		$00, $02, ChineseBicycle_Loop11
+	sJump		ChineseBicycle_FM4
+
+ChineseBicycle_FM5:
+	sVoice		$01
+	sModAMPS	$0F, $01, $03, $02
+
+ChineseBicycle_Jump3:
+	dc.b nD4, $20, sHold, $10, nB3, nE4, $20, sHold
+	dc.b $10, nD4, $08, nE4, nA3, $20, sHold, $20
+	dc.b nB3, $0C, nE3, $04, nG3, $08, nA3, nB3
+	dc.b nD4, nE4, nG4, nD4, $20, sHold, $10, nB3
+	dc.b nE4, $20, sHold, $10, nD4, $08, nE4, nA3
+	dc.b $20, sHold, $20, nB3, $0C, nE3, $04, nG3
+	dc.b $08, nA3, nG4, nE4, nD4, nE4
+
+ChineseBicycle_Loop12:
+	dc.b nG5, $40, nD5, $40, nE5, $40, nD5, $40
+	dc.b nD5, $40, nB4, $40, nA4, $40, nA3, $40
+	sLoop		$00, $02, ChineseBicycle_Loop12
+	sJump		ChineseBicycle_Jump3
+
+ChineseBicycle_DAC1:
+	sStop
+
+ChineseBicycle_DAC2:
+	dc.b dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dKickS3, $0C
+	dc.b $04, dLooseSnare, $08, dKickS3, dKickS3, $0C, $04, dLooseSnare
+	dc.b $08, dKickS3, dKickS3, $0C, $04, dLooseSnare, $08, dLooseSnare
+	dc.b dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dKickS3, $0C
+	dc.b $04, dLooseSnare, $08, dLooseSnare, dKickS3, $0C, $04, dLooseSnare
+	dc.b $08, dLooseSnare, dLooseSnare, dLooseSnare, $04, dKickS3, dLooseSnare, $08
+	dc.b dLooseSnare, $04, dKickS3, dKickS3, $0C, $04, dLooseSnare, $08
+	dc.b dKickS3, dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dKickS3
+	dc.b $0C, $04, dLooseSnare, $08, dKickS3, dKickS3, $0C, $04
+	dc.b dLooseSnare, $08, dKickS3, dKickS3, $0C, $04, dLooseSnare, $08
+	dc.b dLooseSnare, dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dKickS3
+	dc.b $0C, $04, dLooseSnare, $08, dLooseSnare, dLooseSnare, dLooseSnare, $04
+	dc.b dKickS3, dLooseSnare, $08, dLooseSnare, $04, dKickS3, dKickS3, $0C
+	dc.b $04, dLooseSnare, $08, dKickS3, dKickS3, $0C, $04, dLooseSnare
+	dc.b $08, dKickS3, dKickS3, $0C, $04, dLooseSnare, $08, dKickS3
+	dc.b dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dKickS3, $0C
+	dc.b $04, dLooseSnare, $08, dKickS3, dKickS3, $0C, $04, dLooseSnare
+	dc.b $08, dKickS3, dKickS3, $0C, $04, dLooseSnare, $08, dLooseSnare
+	dc.b dLooseSnare, dLooseSnare, $04, dKickS3, dLooseSnare, $08, dLooseSnare, $04
+	dc.b dKickS3, dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dKickS3
+	dc.b $0C, $04, dLooseSnare, $08, dKickS3, dKickS3, $0C, $04
+	dc.b dLooseSnare, $08, dKickS3, dKickS3, $0C, $04, dLooseSnare, $08
+	dc.b dKickS3, dKickS3, $04, dKickS3, dKickS3, $08, dLooseSnare, dLooseSnare
+	dc.b dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dKickS3, $04
+	dc.b dKickS3, dKickS3, $08, dLooseSnare, dLooseSnare, dLooseSnare, $04, dKickS3
+	dc.b $08, $04, dLooseSnare, $08, $04, dLooseSnare, dKickS3, $0C
+	dc.b $04, dLooseSnare, $08, dKickS3, dKickS3, $0C, $04, dLooseSnare
+	dc.b $08, dKickS3, dKickS3, $0C, $04, dLooseSnare, $08, dKickS3
+	dc.b dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dKickS3, $0C
+	dc.b $04, dLooseSnare, $08, dKickS3, dKickS3, $0C, $04, dLooseSnare
+	dc.b $08, dKickS3, dKickS3, $0C, $04, dLooseSnare, $08, dLooseSnare
+	dc.b dLooseSnare, dLooseSnare, $04, dKickS3, dLooseSnare, $08, dLooseSnare, $04
+	dc.b dKickS3, dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dKickS3
+	dc.b $0C, $04, dLooseSnare, $08, dKickS3, dKickS3, $0C, $04
+	dc.b dLooseSnare, $08, dKickS3, dKickS3, $0C, $04, dLooseSnare, $08
+	dc.b dKickS3, dKickS3, $04, dKickS3, dKickS3, $08, dLooseSnare, dLooseSnare
+	dc.b dKickS3, $0C, $04, dLooseSnare, $08, dKickS3, dLooseSnare, dKickS3
+	dc.b $04, dKickS3, dLooseSnare, $08, dKickS3, $04, dKickS3, dLooseSnare
+	dc.b $08, dKickS3, $04, dKickS3, dLooseSnare, $08, $04, dLooseSnare
+	sJump		ChineseBicycle_DAC2

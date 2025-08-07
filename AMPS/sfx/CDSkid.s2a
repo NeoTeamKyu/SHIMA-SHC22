@@ -1,0 +1,20 @@
+    sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$02
+	sHeaderSFX	$80, $04, .FM4, $F6, $10
+	sHeaderSFX	$80, $05, .FM5, $F7, $10
+
+.FM4	sVoice		pSkidCD
+
+.Loop1	
+	sSpinReset
+	dc.b nBb3, $01, nRst, $01
+	sLoop		$00, $0B, .Loop1
+	sStop	
+
+.FM5	sVoice		pSkidCD
+	dc.b nRst, $01
+
+.Loop2	dc.b nAb3, $01, nRst, $01
+	sLoop		$00, $0B, .Loop2
+	sStop	

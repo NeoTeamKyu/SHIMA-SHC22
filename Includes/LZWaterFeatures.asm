@@ -1,0 +1,527 @@
+WaterTransition_LZ:
+	    dc.w $14    ; # of entries - 1
+        dc.w $62
+        dc.w $68
+        dc.w $7A
+        dc.w $6E
+        dc.w $74
+        dc.w $40
+        dc.w $42
+        dc.w $48
+        dc.w $4E
+        dc.w $54
+        dc.w $5A
+        dc.w 2
+        dc.w 8
+        dc.w $E
+        dc.w $14
+        dc.w $1A
+        dc.w $34
+        dc.w $22
+        dc.w $3A
+        dc.w $2E
+        dc.w $28
+
+; ---------------------------------------------------------------------------
+; Subroutine to	do special water effects in Labyrinth Zone
+; ---------------------------------------------------------------------------
+
+LZWaterFeatures:
+		tst.b   (f_water).w
+		beq.w    @noWater
+		tst.b   (f_nobgscroll).w
+		bne.s	@setheight
+ 	
+		cmpi.b	#6,(v_player+obRoutine).w ; has Sonic just died?
+		bcc.s	@setheight	; if yes, skip other effects
+
+		cmpi.b	#id_HPZ,(v_zone).w
+		beq.s	@hpz
+		cmpi.b	#id_LZ,(v_zone).w
+		bne.s	@setheight
+		bsr.w	LZWindTunnels
+	@hpz:
+		bsr.w	LZWaterSlides
+		cmpi.b	#id_LZ,(v_zone).w
+		bne.s	@setheight
+		bsr.w	LZDynamicWater
+
+@setheight:
+		moveq	#0,d0
+		move.b	(v_oscillate+2).w,d0
+		lsr.w	#1,d0
+		add.w	(v_waterpos2).w,d0
+		move.w	d0,(v_waterpos1).w
+
+@noWater:
+		rts
+; ===========================================================================
+
+; ---------------------------------------------------------------------------
+; Initial water heights (0 means no water)
+; ---------------------------------------------------------------------------
+WaterHeight:
+        dc.w  $600, $600, $000, $000    ; GHZ
+        dc.w  $0B8, $328, $000, $228    ; LZ
+        dc.w  $000, $000, $000, $000    ; MZ
+        dc.w  $000, $000, $000, $000    ; SLZ
+        dc.w  $000, $000, $000, $000    ; SYZ
+        dc.w  $000, $000, $000, $000    ; SBZ
+        dc.w  $600, $390, $390, $000    ; MHZ
+        dc.w  $600, $000, $000, $000    ; TTZ
+        dc.w  $000, $000, $000, $000    ; TMZ
+		zonewarning WaterHeight,8
+
+; ---------------------------------------------------------------------------
+; Initial background heights (0 means no background)
+; ---------------------------------------------------------------------------
+BgHeight:
+        dc.w  $600*3/4-$10, $600*3/4-$10, $000, $000    ; GHZ
+        dc.w  $000, $000, $000, $000    ; LZ
+        dc.w  $000, $000, $000, $000    ; MZ
+        dc.w  $000, $000, $000, $000    ; SLZ
+        dc.w  $000, $000, $000, $000    ; SYZ
+        dc.w  $000, $000, $000, $000    ; SBZ
+        dc.w  $000, $000, $000, $000    ; MHZ
+        dc.w  $000, $000, $000, $000    ; TTZ
+        dc.w  $000, $000, $000, $000    ; TMZ
+		zonewarning BgHeight,8
+
+; ===========================================================================
+
+; ---------------------------------------------------------------------------
+; Labyrinth dynamic water routines
+; ---------------------------------------------------------------------------
+
+LZDynamicWater:
+		moveq	#0,d0
+		move.b	(v_act).w,d0
+		add.w	d0,d0
+		move.w	DynWater_Index(pc,d0.w),d0
+		jsr	DynWater_Index(pc,d0.w)
+		moveq	#0,d1
+		move.b	(f_water).w,d1
+		move.w	(v_waterpos3).w,d0
+		sub.w	(v_waterpos2).w,d0
+		beq.s	@exit		; if water level is correct, branch
+		bcc.s	@movewater	; if water level is too high, branch
+		neg.w	d1		; set water to move up instead
+
+	@movewater:
+		add.w	d1,(v_waterpos2).w ; move water up/down
+
+	@exit:
+		rts
+; ===========================================================================
+DynWater_Index:	dc.w DynWater_LZ1-DynWater_Index
+		dc.w DynWater_LZ2-DynWater_Index
+		dc.w DynWater_LZ3-DynWater_Index
+		dc.w DynWater_SBZ3-DynWater_Index
+; ===========================================================================
+
+DynWater_LZ1:
+		move.w	(v_screenposx).w,d0
+		move.b	(v_wtr_routine).w,d2
+		bne.s	@routine2
+		move.w	#$B8,d1		; water height
+		cmpi.w	#$600,d0	; has screen reached next position?
+		bcs.s	@setwater	; if not, branch
+		move.w	#$108,d1
+		cmpi.w	#$200,(v_player+obY).w ; is Sonic above $200 y-axis?
+		bcs.s	@sonicishigh	; if yes, branch
+		cmpi.w	#$C00,d0
+		bcs.s	@setwater
+		move.w	#$318,d1
+		cmpi.w	#$1080,d0
+		bcs.s	@setwater
+		move.b	#$80,(f_switch+5).w
+		move.w	#$5C8,d1
+		cmpi.w	#$1380,d0
+		bcs.s	@setwater
+		move.w	#$3A8,d1
+		cmp.w	(v_waterpos2).w,d1 ; has water reached last height?
+		bne.s	@setwater	; if not, branch
+		move.b	#1,(v_wtr_routine).w ; use second routine next
+
+	@setwater:
+		move.w	d1,(v_waterpos3).w
+		rts
+; ===========================================================================
+
+@sonicishigh:
+		cmpi.w	#$C80,d0
+		bcs.s	@setwater
+		move.w	#$E8,d1
+		cmpi.w	#$1500,d0
+		bcs.s	@setwater
+		move.w	#$108,d1
+		bra.s	@setwater
+; ===========================================================================
+
+@routine2:
+		subq.b	#1,d2
+		bne.s	@skip
+		cmpi.w	#$2E0,(v_player+obY).w ; is Sonic above $2E0 y-axis?
+		bcc.s	@skip		; if not, branch
+		move.w	#$3A8,d1
+		cmpi.w	#$1300,d0
+		bcs.s	@setwater2
+		move.w	#$108,d1
+		move.b	#2,(v_wtr_routine).w
+
+	@setwater2:
+		move.w	d1,(v_waterpos3).w
+
+	@skip:
+		rts
+; ===========================================================================
+
+DynWater_LZ2:
+		move.w	(v_screenposx).w,d0
+		move.w	#$328,d1
+		cmpi.w	#$500,d0
+		bcs.s	@setwater
+		move.w	#$3C8,d1
+		cmpi.w	#$B00,d0
+		bcs.s	@setwater
+		move.w	#$428,d1
+
+	@setwater:
+		move.w	d1,(v_waterpos3).w
+		rts
+; ===========================================================================
+
+DynWater_LZ3:
+		move.w	(v_screenposx).w,d0
+		move.b	(v_wtr_routine).w,d2
+		bne.s	@routine2
+
+		move.w	#$900,d1
+		cmpi.w	#$600,d0	; has screen reached position?
+		bcs.s	@setwaterlz3	; if not, branch
+		cmpi.w	#$3C0,(v_player+obY).w
+		bcs.s	@setwaterlz3
+		cmpi.w	#$600,(v_player+obY).w ; is Sonic in a y-axis range?
+		bcc.s	@setwaterlz3	; if not, branch
+
+		move.w	#$4C8,d1	; set new water height
+		move.l a1,-(sp)
+		move.l a3,-(sp)
+		lea    (Level_layout_main).w,a3
+		movea.w $14(a3),a1
+		add.w  #$C,a1
+		move.b  #$E0,(a1)+
+		move.b  #$E1,(a1)+
+		move.l (sp)+,a3
+		move.l (sp)+,a1
+		move.b	#1,(v_wtr_routine).w ; use second routine next
+		sfx	sfx_Rumble	; play sound $B7 (rumbling)
+
+	@setwaterlz3:
+		move.w	d1,(v_waterpos3).w
+		move.w	d1,(v_waterpos2).w ; change water height instantly
+		rts	
+; ===========================================================================
+
+@routine2:
+		subq.b	#1,d2
+		bne.s	@routine3
+		move.w	#$4C8,d1
+		cmpi.w	#$770,d0
+		bcs.s	@setwater2
+		move.w	#$308,d1
+		cmpi.w	#$1400,d0
+		bcs.s	@setwater2
+		cmpi.w	#$508,(v_waterpos3).w
+		beq.s	@sonicislow
+		cmpi.w	#$600,(v_player+obY).w ; is Sonic below $600 y-axis?
+		bcc.s	@sonicislow	; if yes, branch
+		cmpi.w	#$280,(v_player+obY).w
+		bcc.s	@setwater2
+
+@sonicislow:
+		move.w	#$508,d1
+		move.w	d1,(v_waterpos2).w
+		cmpi.w	#$1770,d0
+		bcs.s	@setwater2
+		move.b	#2,(v_wtr_routine).w
+
+	@setwater2:
+		move.w	d1,(v_waterpos3).w
+		rts	
+; ===========================================================================
+
+@routine3:
+		subq.b	#1,d2
+		bne.s	@routine4
+		move.w	#$508,d1
+		cmpi.w	#$1860,d0
+		bcs.s	@setwater3
+		move.w	#$188,d1
+		cmpi.w	#$1AF0,d0
+		bcc.s	@loc_3DC6
+		cmp.w	(v_waterpos2).w,d1
+		bne.s	@setwater3
+
+	@loc_3DC6:
+		move.b	#3,(v_wtr_routine).w
+
+	@setwater3:
+		move.w	d1,(v_waterpos3).w
+		rts	
+; ===========================================================================
+
+@routine4:
+		subq.b	#1,d2
+		bne.s	@routine5
+		move.w	#$188,d1
+		cmpi.w	#$1AF0,d0
+		bcs.s	@setwater4
+		move.w	#$900,d1
+		cmpi.w	#$1BC0,d0
+		bcs.s	@setwater4
+		move.b	#4,(v_wtr_routine).w
+		move.w	#$608,(v_waterpos3).w
+		move.w	#$7C0,(v_waterpos2).w
+		move.b	#1,(f_switch+8).w
+		rts	
+; ===========================================================================
+
+@setwater4:
+		move.w	d1,(v_waterpos3).w
+		move.w	d1,(v_waterpos2).w
+		rts	
+; ===========================================================================
+
+@routine5:
+		cmpi.w	#$1E00,d0	; has screen passed final position?
+		bcs.s	@dontset	; if not, branch
+		move.w	#$128,(v_waterpos3).w
+
+	@dontset:
+		rts	
+; ===========================================================================
+
+DynWater_SBZ3:
+		move.w	#$228,d1
+		cmpi.w	#$F00,(v_screenposx).w
+		bcs.s	@setwater
+		move.w	#$4C8,d1
+
+	@setwater:
+		move.w	d1,(v_waterpos3).w
+		rts
+
+; ---------------------------------------------------------------------------
+; Labyrinth Zone "wind tunnels"	subroutine
+; ---------------------------------------------------------------------------
+
+; ||||||||||||||| S U B	R O U T	I N E |||||||||||||||||||||||||||||||||||||||
+
+
+LZWindTunnels:
+		tst.w	(v_debuguse).w	; is debug mode	being used?
+		bne.w	@quit	; if yes, branch
+		lea	(LZWind_Data+8).l,a2
+		moveq	#0,d0
+		move.b	(v_act).w,d0	; get act number
+		lsl.w	#3,d0		; multiply by 8
+		adda.w	d0,a2		; add to address for data
+		moveq	#0,d1
+		tst.b	(v_act).w	; is act number 1?
+		bne.s	@notact1	; if not, branch
+		moveq	#1,d1
+		subq.w	#8,a2		; use different data for act 1
+
+	@notact1:
+		lea	(v_player).w,a1
+
+@chksonic:
+		move.w	obX(a1),d0
+		cmp.w	(a2),d0
+		bcs.w	@chknext
+		cmp.w	4(a2),d0
+		bcc.w	@chknext
+		move.w	obY(a1),d2
+		cmp.w	2(a2),d2
+		bcs.s	@chknext
+		cmp.w	6(a2),d2
+		bcc.s	@chknext	; branch if Sonic is outside a range
+
+		tst.b	mQueue+2.w		; check if any sound was queued
+		bne.s	@skipsound		; if was, skip
+		move.b	#sfx_Waterfall,mQueue+2.w; else, play this again
+
+	@skipsound:
+		tst.b	(f_wtunnelallow).w ; are wind tunnels disabled?
+		bne.w	@quit	; if yes, branch
+		cmpi.b	#4,obRoutine(a1) ; is Sonic hurt/dying?
+		bcc.s	@clrquit	; if yes, branch
+		move.b	#1,(f_wtunnelmode).w
+		subi.w	#$80,d0
+		cmp.w	(a2),d0
+		bcc.s	@movesonic
+		moveq	#2,d0
+		cmpi.b	#1,(v_act).w	; is act number 2?
+		bne.s	@notact2	; if not, branch
+		neg.w	d0
+
+	@notact2:
+		add.w	d0,obY(a1)	; adjust Sonic's y-axis for curve of tunnel
+
+@movesonic:
+		addq.w	#4,obX(a1)
+		move.w	#$300,obVelX(a1) ; move Sonic horizontally
+		move.w	#0,obVelY(a1)
+		move.b	#id_Float2,obAnim(a1)	; use floating animation
+		bset	#1,obStatus(a1)
+		btst	#0,(v_jpadhold2).w ; is up pressed?
+		beq.s	@down		; if not, branch
+		subq.w	#2,obY(a1)	; move Sonic up on pole
+
+	@down:
+		btst	#1,(v_jpadhold2).w ; is down being pressed?
+		beq.s	@end		; if not, branch
+		addq.w	#2,obY(a1)	; move Sonic down on pole
+
+	@end:
+		rts
+; ===========================================================================
+
+@chknext:
+		addq.w	#8,a2		; use second set of values (act 1 only)
+		dbf	d1,@chksonic	; on act 1, repeat for a second tunnel
+		tst.b	(f_wtunnelmode).w ; is Sonic still in a tunnel?
+		beq.s	@quit		; if yes, branch
+		move.b	#id_Walk,obAnim(a1)	; use walking animation
+
+@clrquit:
+		clr.b	(f_wtunnelmode).w ; finish tunnel
+
+@quit:
+		rts
+; End of function LZWindTunnels
+
+; ===========================================================================
+
+		;    left, top,  right, bottom boundaries
+LZWind_Data:
+		dc.w $A80, $300, $C10,  $380 ; act 1 values (set 1)
+		dc.w $F80, $100, $1410,	$180 ; act 1 values (set 2)
+		dc.w $460, $400, $710,  $480 ; act 2 values
+		dc.w $A20, $600, $1610, $6E0 ; act 3 values
+		dc.w $C80, $600, $13D0, $680 ; SBZ act 3 values
+		even
+
+; ---------------------------------------------------------------------------
+; Labyrinth Zone water slide subroutine
+; ---------------------------------------------------------------------------
+
+; ||||||||||||||| S U B	R O U T	I N E |||||||||||||||||||||||||||||||||||||||
+
+
+LZWaterSlides:
+		lea	(v_player).w,a1
+		btst	#1,obStatus(a1)	; is Sonic jumping?
+		bne.s	loc_3F6A	; if not, branch
+		lea	(Level_layout_main).w,a2	; MJ: Load address of layout
+		move.w	obY(a1),d0		; MJ: Load Y position
+		lsr.w	#5,d0 ; Divide by... 32.
+		and.w	(Layout_row_index_mask).w,d0
+		move.w	(a2,d0.w),d0 ; Load something to d0.
+		move.w	obX(a1),d1		; MJ: Load Y position
+		lsr.w	#7,d1			; MJ: divide X position by 80 (00 = 0, 80 = 1, etc)
+		add.w	d1,d0			; MJ: add together
+		movea.w	d0,a2
+		move.b	(a2),d0
+		cmpi.b	#id_HPZ,(v_zone).w
+		beq.s	@hpz
+		lea		Slide_Chunks_End(pc),a2
+		moveq	#Slide_Chunks_End-Slide_Chunks-1,d1
+		bra.s	loc_3F62
+	@hpz:
+		lea		HPZ_Slide_Chunks_End(pc),a2
+		moveq	#HPZ_Slide_Chunks_End-HPZ_Slide_Chunks-1,d1
+
+loc_3F62:
+		cmp.b	-(a2),d0	; MJ: does the chunk match?
+		dbeq	d1,loc_3F62	; MJ: if not, loop
+		beq.s	LZSlide_Move	; MJ: if so, branch
+
+loc_3F6A:
+		tst.b	(f_jumponly).w
+		beq.s	locret_3F7A
+		move.w	#5,$3E(a1)
+		clr.b	(f_jumponly).w
+
+locret_3F7A:
+		rts	
+; ===========================================================================
+
+LZSlide_Move:
+		cmpi.w	#3,d1
+		bcc.s	loc_3F84
+		nop	
+
+loc_3F84:
+		bclr	#0,obStatus(a1)
+		cmpi.b	#id_HPZ,(v_zone).w
+		beq.s	@hpz
+		move.b	Slide_Speeds(pc,d1.w),d0
+		bra.s	@cont
+	@hpz:
+		cmpi.b	#$60,d0
+		bne.s	@notBack
+		move.b	#-$08,d0
+		bra.s	@cont
+	@notBack:
+		move.b	#8,d0
+	@cont:
+		move.b	d0,obInertia(a1)
+		bpl.s	loc_3F9A
+		bset	#0,obStatus(a1)
+
+loc_3F9A:
+		clr.b	obInertia+1(a1)
+		move.b	#id_WaterSlide,obAnim(a1) ; use Sonic's "sliding" animation
+		bclr	#2,obStatus(a1)	; Clear rolling state.
+		jsr		ResetHeight		; Reset player height.
+		move.b	#1,(f_jumponly).w ; lock controls (except jumping)
+
+		tst.b	mQueue+2.w		; check if any sound was queued
+		bne.s	locret_3FBE		; if was, skip
+		move.b	#sfx_Waterfall,mQueue+2.w; else, play this again
+
+locret_3FBE:
+		rts	
+; End of function LZWaterSlides
+
+; ===========================================================================
+; byte_3FC0:
+Slide_Speeds:
+		dc.b	$0A,$0A,$0A,$0A				; MJ: Values for speed, format XX00 = Speed in $14(a-)
+		dc.b	$F6,$F6,$F6,$F6
+		dc.b	$0B,$0B,$0B,$0B
+		dc.b	$F5,$F5,$F5,$F5
+		dc.b	$F4,$F4,$F4,$F4
+		dc.b	$F5
+		even
+
+; byte_3FCF:
+Slide_Chunks:
+		dc.b	$05,$06,$09,$0A				; MJ: Chunks to read (128x128 ID's)
+		dc.b	$E2,$E3,$E4,$E5
+		dc.b	$0B,$0C,$0D,$0E
+		dc.b	$15,$16,$E0,$E1
+		dc.b	$19,$1A,$1B,$1C
+		dc.b	$17
+Slide_Chunks_End
+		even
+
+; byte_3FCF:
+HPZ_Slide_Chunks:
+		dc.b	$60,$61,$62,$63,$64
+		dc.b	$71,$72,$73,$74
+		dc.b	$DD,$DE
+HPZ_Slide_Chunks_End
+		even

@@ -1,0 +1,84 @@
+GoldShield_DPLC:
+GoldShield_DPLC_0: 	dc.w GoldShield_DPLC_22-GoldShield_DPLC
+GoldShield_DPLC_2: 	dc.w GoldShield_DPLC_23-GoldShield_DPLC
+GoldShield_DPLC_4: 	dc.w GoldShield_DPLC_2A-GoldShield_DPLC
+GoldShield_DPLC_6: 	dc.w GoldShield_DPLC_31-GoldShield_DPLC
+GoldShield_DPLC_8: 	dc.w GoldShield_DPLC_38-GoldShield_DPLC
+GoldShield_DPLC_A: 	dc.w GoldShield_DPLC_3F-GoldShield_DPLC
+GoldShield_DPLC_C: 	dc.w GoldShield_DPLC_46-GoldShield_DPLC
+GoldShield_DPLC_E: 	dc.w GoldShield_DPLC_4D-GoldShield_DPLC
+GoldShield_DPLC_10: 	dc.w GoldShield_DPLC_54-GoldShield_DPLC
+GoldShield_DPLC_12: 	dc.w GoldShield_DPLC_5B-GoldShield_DPLC
+GoldShield_DPLC_14: 	dc.w GoldShield_DPLC_62-GoldShield_DPLC
+GoldShield_DPLC_16: 	dc.w GoldShield_DPLC_69-GoldShield_DPLC
+GoldShield_DPLC_18: 	dc.w GoldShield_DPLC_70-GoldShield_DPLC
+GoldShield_DPLC_1A: 	dc.w GoldShield_DPLC_77-GoldShield_DPLC
+GoldShield_DPLC_1C: 	dc.w GoldShield_DPLC_7E-GoldShield_DPLC
+GoldShield_DPLC_1E: 	dc.w GoldShield_DPLC_85-GoldShield_DPLC
+GoldShield_DPLC_20: 	dc.w GoldShield_DPLC_8C-GoldShield_DPLC
+GoldShield_DPLC_22: 	dc.b $0
+GoldShield_DPLC_23: 	dc.b $3
+	dc.b $F0, $0
+	dc.b $F0, $10
+	dc.b $30, $20
+GoldShield_DPLC_2A: 	dc.b $3
+	dc.b $F0, $24
+	dc.b $F0, $34
+	dc.b $30, $44
+GoldShield_DPLC_31: 	dc.b $3
+	dc.b $F0, $48
+	dc.b $F0, $58
+	dc.b $30, $68
+GoldShield_DPLC_38: 	dc.b $3
+	dc.b $F0, $6C
+	dc.b $F0, $7C
+	dc.b $30, $8C
+GoldShield_DPLC_3F: 	dc.b $3
+	dc.b $F0, $90
+	dc.b $F0, $A0
+	dc.b $30, $B0
+GoldShield_DPLC_46: 	dc.b $3
+	dc.b $F0, $B4
+	dc.b $F0, $C4
+	dc.b $30, $D4
+GoldShield_DPLC_4D: 	dc.b $3
+	dc.b $F0, $D8
+	dc.b $F0, $E8
+	dc.b $30, $F8
+GoldShield_DPLC_54: 	dc.b $3
+	dc.b $F0, $FC
+	dc.b $F1, $C
+	dc.b $31, $1C
+GoldShield_DPLC_5B: 	dc.b $3
+	dc.b $F1, $20
+	dc.b $F1, $30
+	dc.b $31, $40
+GoldShield_DPLC_62: 	dc.b $3
+	dc.b $F1, $44
+	dc.b $F1, $54
+	dc.b $31, $64
+GoldShield_DPLC_69: 	dc.b $3
+	dc.b $F1, $68
+	dc.b $F1, $78
+	dc.b $31, $88
+GoldShield_DPLC_70: 	dc.b $3
+	dc.b $F1, $8C
+	dc.b $F1, $9C
+	dc.b $31, $AC
+GoldShield_DPLC_77: 	dc.b $3
+	dc.b $F1, $B0
+	dc.b $F1, $C0
+	dc.b $31, $D0
+GoldShield_DPLC_7E: 	dc.b $3
+	dc.b $F1, $D4
+	dc.b $F1, $E4
+	dc.b $31, $F4
+GoldShield_DPLC_85: 	dc.b $3
+	dc.b $F1, $F8
+	dc.b $F2, $8
+	dc.b $32, $18
+GoldShield_DPLC_8C: 	dc.b $3
+	dc.b $F2, $1C
+	dc.b $F2, $2C
+	dc.b $32, $3C
+	even

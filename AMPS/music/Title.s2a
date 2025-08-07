@@ -1,0 +1,241 @@
+TitleScreenTheme_Header:
+	sHeaderInit
+	sHeaderTempo	$02, $50
+	sHeaderCh	$05, $03
+	sHeaderDAC	TitleScreenTheme_DAC1
+	sHeaderDAC	TitleScreenTheme_DAC2	
+	sHeaderFM	TitleScreenTheme_FM1, $00, $09
+	sHeaderFM	TitleScreenTheme_FM2, $00, $09
+	sHeaderFM	TitleScreenTheme_FM3, $00, $08
+	sHeaderFM	TitleScreenTheme_FM4, $00, $08
+	sHeaderFM	TitleScreenTheme_FM5, $00, $14
+	sHeaderPSG	TitleScreenTheme_PSG1, $0C, $20, $00, vDW1
+	sHeaderPSG	TitleScreenTheme_PSG2, $0C, $20, $00, vDW1
+	sHeaderPSG	TitleScreenTheme_PSG3, $0D, $20, $00, v02
+
+	; Patch $00
+	; $38
+	; $63, $64, $61, $61,	$DA, $DD, $DC, $DF
+	; $88, $85, $84, $8A,	$05, $04, $02, $03
+	; $27, $14, $36, $15,	$1E, $1E, $1E, $00
+	spAlgorithm	$00
+	spFeedback	$07
+	spDetune	$06, $06, $06, $06
+	spMultiple	$03, $01, $04, $01
+	spRateScale	$03, $03, $03, $03
+	spAttackRt	$1A, $1C, $1D, $1F
+	spAmpMod	$01, $01, $01, $01
+	spSustainRt	$08, $04, $05, $0A
+	spSustainLv	$02, $03, $01, $01
+	spDecayRt	$05, $02, $04, $03
+	spReleaseRt	$07, $06, $04, $05
+	spTotalLv	$1E, $1E, $1E, $00
+
+	; Patch $01
+	; $08
+	; $0A, $70, $30, $00,	$1F, $1F, $5F, $5F
+	; $12, $0E, $0A, $0A,	$00, $04, $04, $03
+	; $2F, $2F, $2F, $2F,	$24, $2D, $13, $00
+	spAlgorithm	$00
+	spFeedback	$01
+	spDetune	$00, $03, $07, $00
+	spMultiple	$0A, $00, $00, $00
+	spRateScale	$00, $01, $00, $01
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$12, $0A, $0E, $0A
+	spSustainLv	$02, $02, $02, $02
+	spDecayRt	$00, $04, $04, $03
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$24, $13, $2D, $00
+
+	; Patch $02
+	; $04
+	; $3F, $01, $01, $01,	$1F, $1F, $5F, $5F
+	; $0E, $0A, $09, $0A,	$0F, $0B, $0A, $0A
+	; $2F, $1F, $4F, $1F,	$2C, $0A, $12, $0A
+	spAlgorithm	$04
+	spFeedback	$00
+	spDetune	$03, $00, $00, $00
+	spMultiple	$0F, $01, $01, $01
+	spRateScale	$00, $01, $00, $01
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $09, $0A, $0A
+	spSustainLv	$02, $04, $01, $01
+	spDecayRt	$0F, $0A, $0B, $0A
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$2C, $12, $0A, $0A
+
+TitleScreenTheme_DAC2:
+	sPan		spCenter
+	dc.b dkcHighTom, $02, dkcMidTom, $01, dkcLowTom, $03
+
+TitleScreenTheme_Loop2:
+	dc.b dKcKick, $06, dKcSnare, $03, dKcKick, $06, $03, dKcSnare
+	dc.b $06
+	sLoop		$00, $07, TitleScreenTheme_Loop2
+	dc.b dKcKick, dKcSnare, $03, dKcKick, $06, $03, dKcSnare, dKcSnare
+	dc.b $1B
+	sPan		spCenter
+	sStop
+
+TitleScreenTheme_FM1:
+	sPan		spCenter
+	sVoice		$00
+	dc.b nRst, $06, nA3, $0F, nRst, $03, nA3, nD4
+	dc.b nE4, nD4, nD4, nE4, nRst, nG4, nRst, nA4
+	dc.b $12, nRst, $03, nA4, nRst, nG4, $06, nE4
+	dc.b $03, nRst, nD4, nRst, nD4, nE4, $12, nRst
+	dc.b $03, nA3, nD4, nE4, nD4, nE4, nG4, nRst
+	dc.b nF4, nRst, nE4, $0F, nD4, $0C, nC4, $03
+	dc.b $03, nD4, nA4, nRst, nG4, nRst, nA4, $18
+	dc.b nRst, $03
+	sPan		spCenter
+	sVoice		$00
+	sStop
+
+TitleScreenTheme_FM2:
+	sPan		spCenter
+	sVoice		$01
+	dc.b nRst, $06, nA2, nG2, $03, nA2, $06, $03
+	dc.b nG2, nA2, $06, $06, $03, nG2, $06, nF2
+	dc.b nF3, nD3, $03, nF3, $06, $03, nD3, nF3
+	dc.b $06, $06, $03, nE3, $06, nD3, nD3, nC3
+	dc.b $03, nD3, $06, $03, nC3, nD3, $06, $06
+	dc.b $03, nE3, $06, nA2, nC3, nB2, $03, nC3
+	dc.b $06, $03, nD3, nE3, $06, $06, $03, nG2
+	dc.b $06, $03, nA2, $18, nRst, $03
+	sPan		spCenter
+	sVoice		$01
+	sStop
+
+TitleScreenTheme_FM3:
+	sPan		spLeft
+	sVoice		$02
+	dc.b nRst, $06, nA3, $03, nRst, nG3, $02, nRst
+	dc.b $01, nA3, $02, nRst, $04, nA3, $02, nRst
+	dc.b $04, nA3, $03, nRst, nA3, $02, nRst, $04
+	dc.b nA3, $02, nRst, $01, nG3, $03, $02, nRst
+	dc.b $01, nF3, $03, $01, nRst, $02, nF4, $03
+	dc.b nRst, nE4, $02, nRst, $01, nF4, $02, nRst
+	dc.b $01, nE4, nRst, $02, nF4, nRst, $04, nF4
+	dc.b $03, nRst, nF4, $02, nRst, $04, nF4, $02
+	dc.b nRst, $01, nG4, $03, $02, nRst, $01, nC4
+	dc.b $03, $01, nRst, $02, nD4, $03, nC4, $02
+	dc.b nRst, $01, nD4, $02, nRst, $04, nD4, $01
+	dc.b nRst, $02, nD4, nRst, $01, nC4, $03, nD4
+	dc.b nRst, nD4, $02, nRst, $04, nD4, $02, nRst
+	dc.b $01, nE4, $03, $02, nRst, $01, nA3, $03
+	dc.b $01, nRst, $02, nC4, $06, $02, nRst, $01
+	dc.b nC4, $02, nRst, $04, nD4, $02, nRst, $01
+	dc.b nC4, $02, nRst, $01, nE4, $05, nRst, $01
+	dc.b nE4, $02, nRst, $04, nE4, $02, nRst, $01
+	dc.b nG3, $03, nC4, $02, nRst, $01, nG4, $03
+	dc.b nA4, $18, nRst, $03
+	sVoice		$02
+	sStop
+
+TitleScreenTheme_FM4:
+	sPan		spRight
+	sVoice		$02
+	dc.b nRst, $06, nE3, $03, nRst, nD3, $02, nRst
+	dc.b $01, nE3, $02, nRst, $04, nE3, $02, nRst
+	dc.b $04, nE3, $03, nRst, nE3, $02, nRst, $04
+	dc.b nE3, $02, nRst, $01, nD3, $03, $02, nRst
+	dc.b $01, nC3, $03, $01, nRst, $02, nC4, $03
+	dc.b nRst, nB3, $02, nRst, $01, nC4, $02, nRst
+	dc.b $01, nB3, nRst, $02, nC4, nRst, $04, nC4
+	dc.b $03, nRst, nC4, $02, nRst, $04, nC4, $02
+	dc.b nRst, $01, nB3, $03, $02, nRst, $01, nG3
+	dc.b $03, $01, nRst, $02, nA3, $03, nG3, $02
+	dc.b nRst, $01, nA3, $02, nRst, $04, nA3, $01
+	dc.b nRst, $02, nA3, nRst, $01, nG3, $03, nA3
+	dc.b nRst, nA3, $02, nRst, $04, nA3, $02, nRst
+	dc.b $01, nG3, $03, $02, nRst, $01, nC4, $03
+	dc.b $01, nRst, $02, nA3, $06, $02, nRst, $01
+	dc.b nA3, $02, nRst, $04, nG3, $02, nRst, $01
+	dc.b nF3, $02, nRst, $01, nB3, $05, nRst, $01
+	dc.b nB3, $02, nRst, $04, nB3, $02, nRst, $01
+	dc.b nD4, $03, nG3, $02, nRst, $01, nD4, $03
+	dc.b nE4, $18, nRst, $03
+	sPan		spRight
+	sVoice		$02
+	sStop
+
+TitleScreenTheme_FM5:
+	sPan		spCenter
+	sVoice		$00
+	dc.b nRst, $09, nA3, $0F, nRst, $03, nA3, nD4
+	dc.b nE4, nD4, nD4, nE4, nRst, nG4, nRst, nA4
+	dc.b $12, nRst, $03, nA4, nRst, nG4, $06, nE4
+	dc.b $03, nRst, nD4, nRst, nD4, nE4, $12, nRst
+	dc.b $03, nA3, nD4, nE4, nD4, nE4, nG4, nRst
+	dc.b nF4, nRst, nE4, $0F, nD4, $0C, nC4, $03
+	dc.b $03, nD4, nA4, nRst, nG4, nRst, nA4, $18
+	sPan		spCenter
+	sVoice		$00
+	sStop
+
+TitleScreenTheme_DAC1:
+	dc.b nRst, $06, dKcCrashCymbal, $18, nRst, $7F, $26, dKcCrashCymbal
+	dc.b $1B
+	sStop
+
+TitleScreenTheme_PSG1:
+	dc.b nRst, $06, nA1, $0F, nRst, $03, nA1, nD2
+	dc.b nE2, nD2, nD2, nE2, nRst, nG2, nRst, nA2
+	dc.b $12, nRst, $03, nA2, nRst, nG2, $06, nE2
+	dc.b $03, nRst, nD2, nRst, nD2, nE2, $12, nRst
+	dc.b $03, nA1, nD2, nE2, nD2, nE2, nG2, nRst
+	dc.b nF2, nRst, nE2, $0F, nD2, $0C, nC2, $03
+	dc.b $03, nD2, nA2, nRst, $06
+	saVol	$20
+	dc.b nG2, $03, nRst, nA2, $18
+	sStop
+
+TitleScreenTheme_PSG2:
+	dc.b nRst, $06, nA1, nRst, $03, nA1, $02, nRst
+	dc.b $04, nA1, $02, nRst, $01, nA1, $03, nG1
+	dc.b $02, nRst, $01, nA1, $06, nRst, $03, nA1
+	dc.b $02, nRst, $04, nG1, $02, nRst, $01, nG1
+	dc.b $03, nF1, $02, nRst, $01, nF1, $06, nRst
+	dc.b $03, nF1, $02, nRst, $04, nF1, $02, nRst
+	dc.b $01, nF1, $03, nE1, $02, nRst, $01, nF1
+	dc.b $06, nRst, $03, nF1, $02, nRst, $04, nE1
+	dc.b $02, nRst, $01, nE1, $03, nD1, $02, nRst
+	dc.b $01, nD1, $06, nRst, $03, nD1, $02, nRst
+	dc.b $04, nD1, $02, nRst, $01, nD1, $03, nC1
+	dc.b $02, nRst, $01, nD1, $06, nRst, $03, nD1
+	dc.b $02, nRst, $04, nD1, $02, nRst, $01, nE1
+	dc.b $03, nA0, $02, nRst, $01, nC1, $06, nRst
+	dc.b $03, nC1, $02, nRst, $04, nC1, $02, nRst
+	dc.b $01, nD1, $03, nE1, $06, nRst, nE1, $02
+	dc.b nRst, $04, nG2, $02, nRst, $04, nA2, $18
+	dc.b nRst, $03
+	sStop
+
+TitleScreenTheme_PSG3:
+	sNoisePSG	$E7
+	dc.b nRst, $06, nA5
+
+TitleScreenTheme_Loop1:
+	dc.b $03, $03
+	sVolEnv	v01
+	dc.b $06
+	sVolEnv	v02
+	sLoop		$00, $0D, TitleScreenTheme_Loop1
+	dc.b $04, $02
+	sVolEnv	v01
+	dc.b $06
+	sVolEnv	v02
+	dc.b $03, $03
+	sVolEnv	v01
+	dc.b $06
+	sVolEnv	v02
+	dc.b $03
+	sVolEnv	v01
+	dc.b $03
+	sVolEnv	v02
+	dc.b $1E
+	sStop

@@ -1,0 +1,179 @@
+DPLCS:
+DPLCS_0: 	dc.w DPLCS_14-DPLCS
+DPLCS_2: 	dc.w DPLCS_39-DPLCS
+DPLCS_4: 	dc.w DPLCS_62-DPLCS
+DPLCS_6: 	dc.w DPLCS_85-DPLCS
+DPLCS_8: 	dc.w DPLCS_AC-DPLCS
+DPLCS_A: 	dc.w DPLCS_D1-DPLCS
+DPLCS_C: 	dc.w DPLCS_FA-DPLCS
+DPLCS_E: 	dc.w DPLCS_11D-DPLCS
+DPLCS_10: 	dc.w DPLCS_142-DPLCS
+DPLCS_12: 	dc.w DPLCS_14D-DPLCS
+DPLCS_14: 	dc.b $12
+	dc.b $F0, $0
+	dc.b $F0, $10
+	dc.b $D0, $20
+	dc.b $F0, $2E
+	dc.b $F0, $3E
+	dc.b $F0, $4E
+	dc.b $F0, $5E
+	dc.b $F0, $6E
+	dc.b $F0, $7E
+	dc.b $F0, $8E
+	dc.b $F0, $9E
+	dc.b $F0, $AE
+	dc.b $F0, $BE
+	dc.b $F0, $CE
+	dc.b $F0, $DE
+	dc.b $F0, $EE
+	dc.b $80, $FE
+	dc.b $31, $7
+DPLCS_39: 	dc.b $14
+	dc.b $F1, $B
+	dc.b $F1, $1B
+	dc.b $F1, $2B
+	dc.b $F1, $3B
+	dc.b $71, $4B
+	dc.b $B1, $53
+	dc.b $71, $5F
+	dc.b $21, $67
+	dc.b $F1, $6A
+	dc.b $F1, $7A
+	dc.b $F1, $8A
+	dc.b $F1, $9A
+	dc.b $F1, $AA
+	dc.b $F1, $BA
+	dc.b $F1, $CA
+	dc.b $F1, $DA
+	dc.b $F1, $EA
+	dc.b $F1, $FA
+	dc.b $F2, $A
+	dc.b $52, $1A
+DPLCS_62: 	dc.b $11
+	dc.b $F2, $20
+	dc.b $F2, $30
+	dc.b $F2, $40
+	dc.b $F2, $50
+	dc.b $F2, $60
+	dc.b $F2, $70
+	dc.b $F2, $80
+	dc.b $F2, $90
+	dc.b $F2, $A0
+	dc.b $F2, $B0
+	dc.b $F2, $C0
+	dc.b $F2, $D0
+	dc.b $F2, $E0
+	dc.b $F2, $F0
+	dc.b $F3, $0
+	dc.b $F3, $10
+	dc.b $B3, $20
+DPLCS_85: 	dc.b $13
+	dc.b $F3, $2C
+	dc.b $F3, $3C
+	dc.b $F3, $4C
+	dc.b $F3, $5C
+	dc.b $F3, $6C
+	dc.b $F3, $7C
+	dc.b $F3, $8C
+	dc.b $F3, $9C
+	dc.b $F3, $AC
+	dc.b $F3, $BC
+	dc.b $F3, $CC
+	dc.b $F3, $DC
+	dc.b $F3, $EC
+	dc.b $F3, $FC
+	dc.b $F4, $C
+	dc.b $F4, $1C
+	dc.b $F4, $2C
+	dc.b $F4, $3C
+	dc.b $24, $4C
+DPLCS_AC: 	dc.b $12
+	dc.b $F4, $4F
+	dc.b $F4, $5F
+	dc.b $F4, $6F
+	dc.b $F4, $7F
+	dc.b $F4, $8F
+	dc.b $F4, $9F
+	dc.b $F4, $AF
+	dc.b $F4, $BF
+	dc.b $F4, $CF
+	dc.b $F4, $DF
+	dc.b $F4, $EF
+	dc.b $F4, $FF
+	dc.b $F5, $F
+	dc.b $F5, $1F
+	dc.b $F5, $2F
+	dc.b $D5, $3F
+	dc.b $5, $4F
+	dc.b $15, $4D
+DPLCS_D1: 	dc.b $14
+	dc.b $F5, $50
+	dc.b $F5, $60
+	dc.b $F5, $70
+	dc.b $F5, $80
+	dc.b $F5, $90
+	dc.b $F5, $A0
+	dc.b $F5, $B0
+	dc.b $F5, $C0
+	dc.b $F5, $D0
+	dc.b $F5, $E0
+	dc.b $F5, $F0
+	dc.b $F6, $0
+	dc.b $F6, $10
+	dc.b $F6, $20
+	dc.b $F6, $30
+	dc.b $F6, $40
+	dc.b $F6, $50
+	dc.b $F6, $60
+	dc.b $F6, $70
+	dc.b $6, $80
+DPLCS_FA: 	dc.b $11
+	dc.b $F6, $81
+	dc.b $F6, $91
+	dc.b $F6, $A1
+	dc.b $F6, $B1
+	dc.b $F6, $C1
+	dc.b $F6, $D1
+	dc.b $F6, $E1
+	dc.b $F6, $F1
+	dc.b $F7, $1
+	dc.b $F7, $11
+	dc.b $F7, $21
+	dc.b $F7, $31
+	dc.b $F7, $41
+	dc.b $F7, $51
+	dc.b $F7, $61
+	dc.b $F7, $71
+	dc.b $F7, $81
+DPLCS_11D: 	dc.b $12
+	dc.b $F7, $91
+	dc.b $F7, $A1
+	dc.b $F7, $B1
+	dc.b $F7, $C1
+	dc.b $F7, $D1
+	dc.b $F7, $E1
+	dc.b $F7, $F1
+	dc.b $F8, $1
+	dc.b $F8, $11
+	dc.b $F8, $21
+	dc.b $F8, $31
+	dc.b $F8, $41
+	dc.b $F8, $51
+	dc.b $F8, $61
+	dc.b $F8, $71
+	dc.b $F8, $81
+	dc.b $F8, $91
+	dc.b $C8, $A1
+DPLCS_142: 	dc.b $5
+	dc.b $F8, $AE
+	dc.b $F8, $BE
+	dc.b $F8, $CE
+	dc.b $F8, $DE
+	dc.b $C8, $EE
+DPLCS_14D: 	dc.b $5
+	dc.b $F8, $FB
+	dc.b $F9, $B
+	dc.b $F9, $1B
+	dc.b $F9, $2B
+	dc.b $F9, $3B
+	even

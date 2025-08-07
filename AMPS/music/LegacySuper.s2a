@@ -1,0 +1,277 @@
+LegacySuperSpinGG_Header:
+	sHeaderInit
+	sHeaderTempo	$41, $40
+	sHeaderCh	$05, $03
+	sHeaderDAC	LegacySuperSpinGG_DAC1
+	sHeaderDAC	LegacySuperSpinGG_DAC2
+	sHeaderFM	LegacySuperSpinGG_FM1, $00, $04
+	sHeaderFM	LegacySuperSpinGG_FM2, $00, $0F
+	sHeaderFM	LegacySuperSpinGG_FM3, $00, $0F
+	sHeaderFM	LegacySuperSpinGG_FM4, $00, $13
+	sHeaderFM	LegacySuperSpinGG_FM5, $00, $0F
+	sHeaderPSG	LegacySuperSpinGG_PSG1, $00+$0C, $20, $00, v0D ; the volume envelopes of this and the line below it were changed to v0D from v00
+	sHeaderPSG	LegacySuperSpinGG_PSG2, $00+$0C, $38, $00, v0D ; the $38 used to be $07 but fm said to multiply psg volumes by 8 so
+	sHeaderPSG	LegacySuperSpinGG_PSG3, $00, $20, $00, v02
+
+	; Patch $00
+	; $20
+	; $36, $35, $30, $31,	$DF, $DF, $9F, $9F
+	; $07, $06, $09, $06,	$07, $06, $06, $08
+	; $20, $10, $10, $F8,	$19, $37, $13, $8B
+	spAlgorithm	$00
+	spFeedback	$04
+	spDetune	$03, $03, $03, $03
+	spMultiple	$06, $00, $05, $01
+	spRateScale	$03, $02, $03, $02
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $09, $06, $06
+	spSustainLv	$02, $01, $01, $0F
+	spDecayRt	$07, $06, $06, $08
+	spReleaseRt	$00, $00, $00, $08
+	spTotalLv	$19, $13, $37, $0B
+
+	; Patch $01
+	; $3A
+	; $01, $07, $01, $01,	$8E, $8E, $8D, $53
+	; $0E, $0E, $0E, $03,	$00, $00, $00, $00
+	; $1F, $FF, $1F, $0F,	$18, $28, $27, $97
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $01, $07, $01
+	spRateScale	$02, $02, $02, $01
+	spAttackRt	$0E, $0D, $0E, $13
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $0E, $0E, $03
+	spSustainLv	$01, $01, $0F, $00
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$18, $27, $28, $17
+
+	; Patch $02
+	; $04
+	; $35, $72, $54, $46,	$1F, $1F, $1F, $1F
+	; $07, $0A, $07, $0D,	$00, $0B, $00, $0B
+	; $1F, $0F, $1F, $0F,	$23, $9C, $1D, $88
+	spAlgorithm	$04
+	spFeedback	$00
+	spDetune	$03, $05, $07, $04
+	spMultiple	$05, $04, $02, $06
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $07, $0A, $0D
+	spSustainLv	$01, $01, $00, $00
+	spDecayRt	$00, $00, $0B, $0B
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$23, $1D, $1C, $08
+
+LegacySuperSpinGG_DAC1:
+	sStop
+
+LegacySuperSpinGG_DAC2:
+	sPan		spCenter
+
+LegacySuperSpinGG_Loop14:
+	dc.b dLowKick, $0A, $87
+	sLoop		$00, $07, LegacySuperSpinGG_Loop14
+	dc.b dLowKick, $87, $05, dLowKick, dLowKick, $0A, dDanceSnare, $14
+	dc.b $14, $14, $05, dLowKick, dLowKick, $0A, dDanceSnare, $14
+	dc.b $0A, dHiTimpani, $03, $02, $03, $02, dLowKick, $05
+	dc.b dMidTimpani, $03, $02, $03, $02, dLowKick, $05, dLowTimpani
+	dc.b $03, $02, $03, $02
+
+LegacySuperSpinGG_Loop16:
+	dc.b $86
+
+LegacySuperSpinGG_Loop15:
+	dc.b $0A, dDanceSnare, dLowKick, dDanceSnare, dLowKick, dDanceSnare, dLowKick, $05
+	dc.b $05, dDanceSnare, dLowKick, $0A, $05, dDanceSnare, $0A, dLowKick
+	dc.b dDanceSnare, dLowKick, $05, $05, dDanceSnare, $0A, dLowKick, $05
+	dc.b $05, dDanceSnare, dLowKick
+	sLoop		$00, $02, LegacySuperSpinGG_Loop15
+	sLoop		$01, $04, LegacySuperSpinGG_Loop16
+	sPan		spCenter
+	sJump		LegacySuperSpinGG_DAC2
+
+LegacySuperSpinGG_FM1:
+	sPan		spCenter
+	sVoice		$00
+
+LegacySuperSpinGG_Loop1:
+	dc.b nC3, $0A, nG3, nF3, nG3, nC4, nG3, nF3
+	dc.b nG3, nC3, nG3, nF3, nG3, nBb2, nF3, nEb3
+	dc.b nF3
+	sLoop		$00, $02, LegacySuperSpinGG_Loop1
+
+LegacySuperSpinGG_Loop2:
+	dc.b nC3, $03, nRst, $02, nC3, $03, nRst, $02
+	dc.b nG3, $0A, nF3, nG3, $05, nC4, $0A, nG3
+	dc.b $05, nF3, $0A, nEb3, nF3, nC3, $03, nRst
+	dc.b $02, nC3, $03, nRst, $02, nG3, $0A, nF3
+	dc.b nG3, $05, nBb2, $0A, nC3, $05, nF3, $0A
+	dc.b nEb3, nF3
+	sLoop		$00, $08, LegacySuperSpinGG_Loop2
+	sPan		spCenter
+	sVoice		$00
+	sJump		LegacySuperSpinGG_FM1
+
+LegacySuperSpinGG_FM2:
+	sPan		spCenter
+	sVoice		$01
+	dc.b nRst, $7F, $21, nC5, $05, nEb4, nA4, nEb4
+	dc.b nBb4, nEb4, nA4, nEb4, nRst, nEb5, nD5, nC5
+	dc.b nRst, $0F, nC5, $05, nRst, nEb4, nA4, nEb4
+	dc.b nBb4, nRst, $0A, nBb4, $05, nRst, nEb4, nA4
+	dc.b nEb4, nBb4, nEb4, nA4, nRst, nC5, nEb4, nA4
+	dc.b nEb4, nBb4, nEb4, nA4, nEb4, nRst, nEb5, nD5
+	dc.b nC5, nD5, nRst, $0A, nC5, $05, nRst, nEb4
+	dc.b nA4, nEb4, nBb4, nRst, $0A, nBb4, $05, nRst
+	dc.b nEb4, nA4, nEb4, nBb4, nEb4, nA4, nRst, $0A
+	dc.b nG4, $05, nEb5, nG4, nD5, nG4, nRst, nG4
+	dc.b nC5, nG4, nRst, nG4, nD5, nG4, nEb5, nD5
+	dc.b nC5, nG4, nEb5, nG4, nD5, nG4, nRst, nG4
+	dc.b nC5, nG4, nRst, nF4, nBb4, nF4, nBb4, nF4
+	dc.b nRst, nG4, nEb5, nG4, nD5, nG4, nEb5, nD5
+	dc.b nC5, nG4, nC5, nG4, nD5, nG4, nRst, nG4
+	dc.b nEb5, nG4, nRst, nG4, nD5, nG4, nRst, nG4
+	dc.b nC5, nG4, nRst, nF4, nBb4, nF4, nBb4, nF4
+
+LegacySuperSpinGG_Loop3:
+	dc.b nG4, $0A, nRst, $05, nG4, $0A, nRst, $05
+	dc.b nG4, $2D, nRst, $05, nBb4, $23, nRst, $05
+	dc.b nA4, $23, nRst, $05, nG4, $0A, nRst, $05
+	dc.b nG4, nRst, $0A, nG4, $2D, nRst, $55
+	sLoop		$00, $02, LegacySuperSpinGG_Loop3
+	dc.b nG4, $1E, nC5, nEb5, $14, nD5, $1E, nBb4
+	dc.b nF4, $14
+	sPan		spCenter
+	sVoice		$01
+	sJump		LegacySuperSpinGG_FM2
+
+LegacySuperSpinGG_FM3:
+	sPan		spCenter
+	sVoice		$01
+	dc.b nRst, $7F, $21, nG4, $05, nC4, nF4, nC4
+	dc.b nG4, nC4, nF4, nC4, nRst, nG4, nF4, nEb4
+	dc.b nRst, $0F, nG4, $05, nRst, nC4, nF4, nC4
+	dc.b nG4, nRst, $0A, nG4, $05, nRst, nC4, nF4
+	dc.b nC4, nG4, nC4, nF4, nRst, nG4, nC4, nF4
+	dc.b nC4, nG4, nC4, nF4, nC4, nRst, nG4, nF4
+	dc.b nEb4, nF4
+
+LegacySuperSpinGG_Loop4:
+	dc.b nRst, $0A, nG4, $05, nRst, nC4, nF4, nC4
+	dc.b nG4
+	sLoop		$00, $02, LegacySuperSpinGG_Loop4
+	dc.b nC4, nF4, nRst, $0A, nEb4, $05, nBb4, nEb4
+	dc.b nBb4, nEb4, nRst, nEb4, nBb4, nEb4, nRst, nEb4
+	dc.b nBb4, nEb4, nG4, nF4, nEb4, nEb4, nBb4, nEb4
+	dc.b nBb4, nEb4, nRst, nEb4, nBb4, nEb4, nRst, nD4
+	dc.b nG4, nD4, nG4, nD4, nRst, nEb4, nBb4, nEb4
+	dc.b nBb4, nEb4, nG4, nF4, nEb4, nEb4, nBb4
+
+LegacySuperSpinGG_Loop5:
+	dc.b nEb4, nBb4, nEb4, nRst
+	sLoop		$00, $04, LegacySuperSpinGG_Loop5
+	dc.b nD4, nG4, nD4, nG4, nD4, nC4, $0A, nRst
+	dc.b $05, nD4, $0A, nRst, $05, nEb4, $2D, nRst
+	dc.b $05, nG4, $23, nRst, $05, nF4, $23, nRst
+	dc.b $05, nC4, $0A, nRst, $05, nD4, nRst, $0A
+	dc.b nEb4, $2D, nRst, $55, nC4, $0A, nRst, $05
+	dc.b nD4, $0A, nRst, $05, nEb4, $2D, nRst, $05
+	dc.b nG4, $23, nRst, $05, nF4, $23, nRst, $05
+	dc.b nC4, $0A, nRst, $05, nD4, nRst, $0A, nEb4
+	dc.b $2D, nRst, $7F, $76
+	sPan		spCenter
+	sVoice		$01
+	sJump		LegacySuperSpinGG_FM3
+
+LegacySuperSpinGG_FM4:
+	sPan		spCenter
+	sVoice		$02
+	dc.b nRst, $7F, $21
+
+LegacySuperSpinGG_Loop6:
+	dc.b nC4, $50, nBb3, $28, nG3, nC4, $50, nG3
+	dc.b $23, nRst, $05, nAb3, $28
+	sLoop		$00, $03, LegacySuperSpinGG_Loop6
+	dc.b nRst, $7F, $7F, $7F, $63
+	sPan		spCenter
+	sVoice		$02
+	sJump		LegacySuperSpinGG_FM4
+
+LegacySuperSpinGG_FM5:
+	sPan		spCenter
+	sVoice		$02
+	dc.b nRst, $7F, $21
+
+LegacySuperSpinGG_Loop7:
+	dc.b nG3, $50, nF3, $28, nC3, nG3, $50, nC3
+	dc.b $23, nRst, $05, nEb3, $28
+	sLoop		$00, $03, LegacySuperSpinGG_Loop7
+	dc.b nRst, $7F, $7F, $7F, $63
+	sPan		spCenter
+	sVoice		$02
+	sJump		LegacySuperSpinGG_FM5
+
+LegacySuperSpinGG_PSG1:
+	saVol	$03
+
+LegacySuperSpinGG_Loop8:
+	dc.b nC2, $05, nF1, nG1, nBb1, nEb2, nD2, nC2
+	dc.b nBb1
+	sLoop		$00, $08, LegacySuperSpinGG_Loop8
+
+LegacySuperSpinGG_Loop9:
+	dc.b nC2
+	sLoop		$00, $08, LegacySuperSpinGG_Loop9
+	dc.b nRst
+
+LegacySuperSpinGG_Loop10:
+	dc.b $55
+	sLoop		$00, $08, LegacySuperSpinGG_Loop10
+	dc.b nBb2, $05, nA2, nAb2, nG2, nFs2, nF2, nE2
+	dc.b nEb2, nD2, nCs2, nC2, nB1, nBb1, nA1, nAb1
+	dc.b nG1, nAb1, $4B, nRst, $05, nBb1, $4B, nRst
+	dc.b $05, nC2, $4B, nRst, $05, nF1, $14, nG1
+	dc.b $05, nAb1, nA1, nBb1, nB1, nC2, nCs2, nD2
+	dc.b nEb2, nE2, nF2, $0A, nG2, $1E, nBb2, nC3
+	dc.b $14, nEb3, $1E, nD3, nC3, $14
+	sJump		LegacySuperSpinGG_Loop8
+
+LegacySuperSpinGG_PSG2:
+	dc.b nRst, $02
+
+LegacySuperSpinGG_Loop11:
+	dc.b nC2, $05, nF1, nG1, nBb1, nEb2, nD2, nC2
+	dc.b nBb1
+	sLoop		$00, $08, LegacySuperSpinGG_Loop11
+
+LegacySuperSpinGG_Loop12:
+	dc.b nC2
+	sLoop		$00, $07, LegacySuperSpinGG_Loop12
+	dc.b nRst, nRst, $7E, $7E, $7E, $7E, $7E, $7E
+	dc.b $01, nEb1, $46, nRst, $0A, nF1, $46, nRst
+	dc.b $0A, nG1, $46, nRst, $5A, nD2, $19, nRst
+	dc.b $05, nF2, $19, nRst, $05, nG2, $0F, nRst
+	dc.b $05, nBb2, $19, nRst, $05, nA2, $19, nRst
+	dc.b $05, nG2, $0F, nRst, $08
+	sJump		LegacySuperSpinGG_Loop11
+
+LegacySuperSpinGG_PSG3:
+	saVol	$02
+	sNoisePSG	snWhitePSG3
+	dc.b nA5
+
+LegacySuperSpinGG_Loop13:
+	dc.b $05, $05
+	sVolEnv	v01
+	dc.b $0A
+	sVolEnv	v02
+	sLoop		$00, $4F, LegacySuperSpinGG_Loop13
+	dc.b $05, $05
+	sVolEnv	v01
+	dc.b $0A
+	sJump		LegacySuperSpinGG_PSG3

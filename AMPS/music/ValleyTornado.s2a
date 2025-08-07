@@ -1,0 +1,1958 @@
+ValleyTornado_Header:
+	sHeaderInit
+	sHeaderTempo	$01, $19
+	sHeaderCh		$05, $03
+	sHeaderDAC		ValleyTornado_DAC1,	$00, $00
+	sHeaderDAC		ValleyTornado_DAC2, $00, $00
+	sHeaderFM		ValleyTornado_FM1,	$00, $08
+	sHeaderFM		ValleyTornado_FM2,	$00, $0B
+	sHeaderFM		ValleyTornado_FM3,	$00, $08
+	sHeaderFM		ValleyTornado_FM4,	$00, $0F
+	sHeaderFM		ValleyTornado_FM5,	$00, $0F
+	sHeaderPSG		ValleyTornado_PSG1,	$0C, $03, $00, $00
+	sHeaderPSG		ValleyTornado_PSG2,	$0C, $04, $00, $00
+	sHeaderPSG		ValleyTornado_PSG3,	$00, $03, $00, $00
+
+;	Voice $00
+;	$20
+;	$36, $35, $30, $31, 	$DF, $DF, $9F, $9F, 	$07, $06, $09, $06
+;	$07, $06, $06, $08, 	$20, $10, $10, $F8, 	$19, $37, $13, $00
+	spAlgorithm	$00
+	spFeedback		$04
+	spDetune		$03, $03, $03, $03
+	spMultiple	$06, $00, $05, $01
+	spRateScale	$03, $02, $03, $02
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$07, $09, $06, $06
+	spDecayRt	$07, $06, $06, $08
+	spSustainLv	$02, $01, $01, $0F
+	spReleaseRt   $00, $00, $00, $08
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$19, $13, $37, $00
+
+;	Voice $01
+;	$27
+;	$14, $30, $51, $62, 	$5C, $5C, $5C, $5C, 	$00, $00, $00, $00
+;	$04, $1B, $04, $04, 	$FA, $F8, $F8, $FA, 	$08, $08, $08, $08
+	spAlgorithm	$07
+	spFeedback		$04
+	spDetune		$01, $05, $03, $06
+	spMultiple	$04, $01, $00, $02
+	spRateScale	$01, $01, $01, $01
+	spAttackRt	$1C, $1C, $1C, $1C
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$00, $00, $00, $00
+	spDecayRt	$04, $04, $1B, $04
+	spSustainLv	$0F, $0F, $0F, $0F
+	spReleaseRt   $0A, $08, $08, $0A
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$08, $08, $08, $08
+
+;	Voice $02
+;	$3A
+;	$31, $37, $72, $02, 	$0F, $0B, $0B, $8B, 	$04, $10, $09, $0A
+;	$00, $00, $03, $00, 	$19, $08, $08, $18, 	$1E, $21, $37, $00
+	spAlgorithm	$02
+	spFeedback		$07
+	spDetune		$03, $07, $03, $00
+	spMultiple	$01, $02, $07, $02
+	spRateScale	$00, $00, $00, $02
+	spAttackRt	$0F, $0B, $0B, $0B
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$04, $09, $10, $0A
+	spDecayRt	$00, $03, $00, $00
+	spSustainLv	$01, $00, $00, $01
+	spReleaseRt   $09, $08, $08, $08
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$1E, $37, $21, $00
+
+;	Voice $03
+;	$07
+;	$34, $74, $32, $71, 	$1F, $1F, $1F, $1F, 	$0A, $0A, $05, $03
+;	$00, $00, $00, $00, 	$3F, $3F, $2F, $2F, 	$0A, $0A, $0A, $0A
+	spAlgorithm	$07
+	spFeedback		$00
+	spDetune		$03, $03, $07, $07
+	spMultiple	$04, $02, $04, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$0A, $05, $0A, $03
+	spDecayRt	$00, $00, $00, $00
+	spSustainLv	$03, $02, $03, $02
+	spReleaseRt   $0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$0A, $0A, $0A, $0A
+
+;	Voice $04
+;	$3A
+;	$01, $07, $31, $71, 	$8E, $8E, $8D, $53, 	$0E, $0E, $0E, $07
+;	$00, $00, $00, $00, 	$1F, $FF, $1F, $1F, 	$18, $28, $27, $00
+	spAlgorithm	$02
+	spFeedback		$07
+	spDetune		$00, $03, $00, $07
+	spMultiple	$01, $01, $07, $01
+	spRateScale	$02, $02, $02, $01
+	spAttackRt	$0E, $0D, $0E, $13
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$0E, $0E, $0E, $07
+	spDecayRt	$00, $00, $00, $00
+	spSustainLv	$01, $01, $0F, $01
+	spReleaseRt   $0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$18, $27, $28, $00
+
+;	Voice $05
+;	$3B
+;	$46, $42, $42, $43, 	$10, $12, $19, $4F, 	$08, $05, $01, $01
+;	$01, $01, $01, $01, 	$76, $F1, $F7, $F9, 	$41, $23, $2B, $00
+	spAlgorithm	$03
+	spFeedback		$07
+	spDetune		$04, $04, $04, $04
+	spMultiple	$06, $02, $02, $03
+	spRateScale	$00, $00, $00, $01
+	spAttackRt	$10, $19, $12, $0F
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$08, $01, $05, $01
+	spDecayRt	$01, $01, $01, $01
+	spSustainLv	$07, $0F, $0F, $0F
+	spReleaseRt   $06, $07, $01, $09
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$41, $2B, $23, $00
+
+;	Voice $06
+;	$3A
+;	$61, $69, $62, $64, 	$D9, $DC, $56, $54, 	$0B, $0C, $00, $06
+;	$00, $0C, $00, $00, 	$13, $5B, $1B, $0B, 	$1F, $28, $32, $00
+	spAlgorithm	$02
+	spFeedback		$07
+	spDetune		$06, $06, $06, $06
+	spMultiple	$01, $02, $09, $04
+	spRateScale	$03, $01, $03, $01
+	spAttackRt	$19, $16, $1C, $14
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$0B, $00, $0C, $06
+	spDecayRt	$00, $00, $0C, $00
+	spSustainLv	$01, $01, $05, $00
+	spReleaseRt   $03, $0B, $0B, $0B
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$1F, $32, $28, $00
+
+;	Voice $07
+;	$2C
+;	$71, $71, $31, $31, 	$1F, $12, $1F, $1F, 	$00, $07, $00, $07
+;	$00, $07, $00, $07, 	$00, $38, $00, $38, 	$16, $00, $17, $00
+	spAlgorithm	$04
+	spFeedback		$05
+	spDetune		$07, $03, $07, $03
+	spMultiple	$01, $01, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $12, $1F
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$00, $00, $07, $07
+	spDecayRt	$00, $00, $07, $07
+	spSustainLv	$00, $00, $03, $03
+	spReleaseRt   $00, $00, $08, $08
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$16, $17, $00, $00
+
+;	Voice $08
+;	$3C
+;	$74, $74, $34, $34, 	$10, $0E, $10, $0E, 	$00, $00, $00, $00
+;	$00, $00, $00, $00, 	$02, $06, $02, $06, 	$23, $00, $23, $00
+	spAlgorithm	$04
+	spFeedback		$07
+	spDetune		$07, $03, $07, $03
+	spMultiple	$04, $04, $04, $04
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$10, $10, $0E, $0E
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$00, $00, $00, $00
+	spDecayRt	$00, $00, $00, $00
+	spSustainLv	$00, $00, $00, $00
+	spReleaseRt   $02, $02, $06, $06
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$23, $23, $00, $00
+
+;	Voice $09
+;	$38
+;	$63, $31, $31, $31, 	$10, $13, $1A, $1B, 	$0E, $00, $00, $00
+;	$00, $00, $00, $00, 	$33, $05, $03, $0B, 	$1A, $19, $1A, $00
+	spAlgorithm	$00
+	spFeedback		$07
+	spDetune		$06, $03, $03, $03
+	spMultiple	$03, $01, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$10, $1A, $13, $1B
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$0E, $00, $00, $00
+	spDecayRt	$00, $00, $00, $00
+	spSustainLv	$03, $00, $00, $00
+	spReleaseRt   $03, $03, $05, $0B
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$1A, $1A, $19, $00
+
+;	Voice $0A
+;	$38
+;	$53, $51, $51, $51, 	$DF, $DF, $1F, $1F, 	$07, $0E, $07, $04
+;	$04, $03, $03, $08, 	$F7, $31, $71, $68, 	$1B, $11, $10, $00
+	spAlgorithm	$00
+	spFeedback		$07
+	spDetune		$05, $05, $05, $05
+	spMultiple	$03, $01, $01, $01
+	spRateScale	$03, $00, $03, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$07, $07, $0E, $04
+	spDecayRt	$04, $03, $03, $08
+	spSustainLv	$0F, $07, $03, $06
+	spReleaseRt   $07, $01, $01, $08
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$1B, $10, $11, $00
+
+;	Voice $0B
+;	$3A
+;	$41, $45, $31, $41, 	$59, $59, $5C, $4E, 	$0A, $0B, $0D, $04
+;	$00, $00, $00, $00, 	$15, $58, $26, $06, 	$1D, $0F, $30, $00
+	spAlgorithm	$02
+	spFeedback		$07
+	spDetune		$04, $03, $04, $04
+	spMultiple	$01, $01, $05, $01
+	spRateScale	$01, $01, $01, $01
+	spAttackRt	$19, $1C, $19, $0E
+	spAmpMod		$00, $00, $00, $00
+	spSustainRt	$0A, $0D, $0B, $04
+	spDecayRt	$00, $00, $00, $00
+	spSustainLv	$01, $02, $05, $00
+	spReleaseRt   $05, $06, $08, $06
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$1D, $30, $0F, $00
+
+ValleyTornado_DAC1:
+	sStop
+; DAC Data
+ValleyTornado_DAC2:
+	sPan			spCenter
+
+ValleyTornado_Jump00:
+	dc.b	dkcCrashCymbal, $14, dSnare, $0F, $05, dKick, $14, dSnare, dKick, dSnare, dKick, dSnare
+	dc.b	dKick, dSnare, $0F, $05, dKick, $14, dSnare, dKick, dSnare, dKick, dSnare, $0A
+	dc.b	$05, $05, dKick, $14, dSnare, $0F, $05, dKick, $14, dSnare, dKick, dSnare
+	dc.b	dKick, dSnare, dKick, dSnare, $0F, $05, dKick, $14, dSnare, $28, dHighTom, $05
+	dc.b	$05, $0A, dLowTom, $05, $05, $0A, dMidTom, $05, $05, $0A, dkcCrashCymbal, $14
+	dc.b	dSnare, $0F, $05, dKick, $14, dSnare, dKick, dSnare, $0F, $05, dKick, dSnare
+	dc.b	$0F, $0A, $0A, dKick, $14, dSnare, $0F, $05, dKick, $14, dSnare, dKick
+	dc.b	dSnare, $0F, $05, dKick, $0A, dSnare, dSnare, dKick, $05, dSnare, dKick, $14
+	dc.b	dSnare, $0F, $05, dKick, $14, dSnare, $0A, dKick, dKick, $14, dSnare, $0F
+	dc.b	$05, dKick, $0A, dSnare, dSnare, dKick, dKick, $14, dSnare, $0F, $05, dKick
+	dc.b	$14, dSnare, $0A, dKick, dKick, $14, dSnare, $0F, $05, dKick, dSnare, $0F
+	dc.b	$0F, $05
+
+ValleyTornado_Loop00:
+	dc.b	dKick, $14, dSnare, dKick, $0F, dSnare, dSnare, $0A
+	sLoop			$00, $02, ValleyTornado_Loop00
+	dc.b	dKick, $14, dSnare, dKick, dSnare, dKick, dSnare, dKick, dSnare, $0A
+
+ValleyTornado_Loop01:
+	dc.b	$0A, dKick, $14, dSnare, dKick, $0F, dSnare
+	sLoop			$00, $03, ValleyTornado_Loop01
+	dc.b	dSnare, $0A, $14, dHiTimpani, $05, $05, $05, $05, dLowTom, dLowTom, dLowTom, dLowTom
+	dc.b	dMidTom, dMidTom, dMidTom, dKick
+
+ValleyTornado_Loop02:
+	dc.b	dkcCrashCymbal, $14, dSnare, $0A, dKick, $14, $0A, dSnare, $14
+	dc.b	dKick, $14, dSnare, $0A, dKick, $14, $0A, dSnare, $14
+	dc.b	dKick, dSnare, $0A, dKick, $14, $0A, dSnare, dSnare, dKick, $14, dSnare, $0A
+	dc.b	dKick, $14, $0A, dSnare, $14, dKick, dSnare, $0F, $0F
+
+ValleyTornado_Loop03:
+	dc.b	dKick, $0A, dSnare, $14, dKick, dSnare, $1E
+	sLoop			$00, $02, ValleyTornado_Loop03
+	dc.b	dKick, $0A, dSnare, dSnare, dKick, $14, dSnare, dSnare, $05, $05, $0A, $05
+	dc.b	$05, $0A
+
+ValleyTornado_Loop04:
+	dc.b	dkcCrashCymbal, $14, dSnare, $0F, $05, dKick, $14, dSnare
+	dc.b	dKick, $14, dSnare, $0F, $05, dKick, $14, dSnare
+	dc.b	dKick, $14, dSnare, $0F, $05, dKick, $14, dSnare	
+	dc.b	dKick, dSnare, $0F, $05, dKick, $14, dSnare, $0A, $0A
+
+ValleyTornado_Loop05:
+	dc.b	dKick, $14, dSnare, $0F, $05, dKick, $14, dSnare
+	sLoop			$00, $03, ValleyTornado_Loop05
+	dc.b	dKick, dSnare, $0F, $05, dKick, $14, dSnare, $05, $05, $0A
+
+ValleyTornado_Loop06:
+	dc.b	dkcCrashCymbal, $14, dSnare, $0F, $05, dKick, $14, dSnare
+	dc.b	dKick, $14, dSnare, $0F, $05, dKick, $14, dSnare
+	dc.b	dKick, $14, dSnare, $0F, $05, dKick, $14, dSnare
+	dc.b	dKick, dSnare, $0F, $05, dKick, $14, dSnare, $0A, $0A
+
+ValleyTornado_Loop07:
+	dc.b	dKick, $14, dSnare, $0F, $05, dKick, $14, dSnare
+	sLoop			$00, $02, ValleyTornado_Loop07
+	dc.b	dSnare, dSnare, dSnare, dSnare, dSnare, dSnare, $0F, $0F, $0A, $05, $05, $05
+	dc.b	$05
+	sJump			ValleyTornado_Jump00
+
+; FM1 Data
+ValleyTornado_FM1:
+	sVoice		$01
+	sPan			spLeft
+	sModAMPS		  $0D, $01, $08, $03
+	dc.b	nA4, $0A, nRst, nA4, nRst, $05, nA4, nC5, $0A, nD5, nRst, nA4
+	dc.b	nRst, nA4, $14, $05, nRst, nG4, $0A, nE4, nG4, nA4, $05, nRst
+	dc.b	nA4, $0A, nRst, nA4, nRst, $05, nA4, nC5, $0A, nD5, nRst, nEb5
+	dc.b	$14, nD5, $0A, nC5, nD5, $05, nC5, $0F, nA4, $0A, nG4, nA4
+	dc.b	$05, nRst, nA4, $0A, nRst, nA4, nRst, $05, nA4, nC5, $0A, nD5
+	dc.b	nRst, nA4, nRst, nA4, $14, $05, nRst, nG4, $0A, nE4, nG4, nA4
+	dc.b	$05, nRst, nA4, $0A, nRst, nA4, nRst, $05, nA4, nC5, $0A, nD5
+	dc.b	nRst, nEb5, nRst
+	saVol		$07
+
+ValleyTornado_Loop25:
+	dc.b	nEb5, nRst
+	saVol		$08
+	sLoop			$00, $03, ValleyTornado_Loop25
+	dc.b	nEb5, nRst, $14
+	sVoice		$04
+	sPan			spCenter
+	sModAMPS		  $17, $01, $05, $04
+	saVol		$E2
+	dc.b	nE5, nD5, $0A, nC5, $14, nB4, $28, nC5, $14, nB4, $0A, nA4
+	dc.b	nG4, nA4, $7F, sHold, $21
+	sModOff
+	dc.b	nRst, $14
+	sModOn
+	dc.b	nE5, nD5, $0A, nC5, $14, nB4, $28, $14, nC5, $0A, nD5, nB4
+	dc.b	nE5, $7F, sHold, $0D
+	sVoice		$05
+	saVol		$02
+	dc.b	nD5, $0A, nE5, nF5, $14, nD5, $0A, nB4, $28, nG5, $14, nA5
+	dc.b	$0A, nG5, nF5, nG5, nF5, nE5, nD5, nE5, $32, nD5, $14, nC5
+	dc.b	$3C, nRst, $0A, nB4, nC5, nA4, $3C, nB4, $0A, nC5, nF5, $14
+	dc.b	nE5, $0A, nD5, $14, nC5, nE5, nRst, $0A, nE5, nFs5, nRst, nG5
+	dc.b	nRst
+
+ValleyTornado_Loop26:
+	dc.b	nAb5, nRst
+	saVol		$08
+	sLoop			$00, $04, ValleyTornado_Loop26
+	dc.b	nAb5
+	sVoice		$07
+	sModAMPS		  $10, $01, $03, $05
+	ssDetune		$00
+	saVol		$E4
+	dc.b	nG5, $01, sHold, nAb5, sHold, nA5, $08, nRst, $0A, nA5, nB5, $14
+	dc.b	nC6, nA5, $01, sHold, nBb5, sHold, nB5, $12, nG5, $14, nA5, $0A
+	dc.b	nRst, nE5, nD5, nC5, nC5, $01, sHold, nCs5, sHold, nD5, $30, nC5
+	dc.b	$1E, $01, sHold, nD5, sHold, nE5, $44, nRst, $0A, nG5, $01, sHold
+	dc.b	nAb5, sHold, nA5, $08, nRst, $0A, nA5, nB5, $14, nC6, nC6, $01
+	dc.b	sHold, nCs6, sHold, nD6, $12, nA5, $14, nB5, nRst, $0A, nA5, nB5
+	dc.b	nB5, $02, sHold, nC6, $08, nB5, $0A, nA5, nG5, $14, nE5, $0A
+	dc.b	nB5, nG5, $01, sHold, nAb5, sHold, nA5, $4E, nRst, $0A
+	sVoice		$0B
+	sModAMPS		  $17, $01, $FC, $04
+	saVol		$FA
+	dc.b	nG4, $01, sHold, nAb4, sHold, nA4, $1C, nG4, $1E, nA4, $14, $01
+	dc.b	sHold, nBb4, sHold, nB4, $1C, nC5, $1E, nD5, $0A, $02, sHold, nEb5
+	dc.b	sHold, nE5, $7F, sHold, $13
+	sModOff
+	dc.b	nRst, $14
+	sModOn
+	dc.b	nD5, $01, sHold, nEb5, sHold, nE5, $1C, nD5, $1E, nE5, $14, nEb5
+	dc.b	$01, sHold, nF5, sHold, nG5, $1C, nE5, $1E, nD5, $0A, $02, sHold
+	dc.b	nEb5, sHold, nE5, $7F, sHold, $13
+	sModOff
+	dc.b	nRst, $14
+	sModOn
+	dc.b	nG4, $01, sHold, nAb4, sHold, nA4, $1C, nG4, $1E, nA4, $14, $01
+	dc.b	sHold, nBb4, sHold, nB4, $1C, nC5, $1E, nD5, $0A, $02, sHold, nEb5
+	dc.b	sHold, nE5, $7F, sHold, $13
+	sModOff
+	dc.b	nRst, $14
+	sModOn
+	dc.b	nD5, $01, sHold, nEb5, sHold, nE5, $1C, nD5, $1E, nE5, $14, nEb5
+	dc.b	$01, sHold, nF5, sHold, nG5, $1C, nE5, $1E, nG5, $0A, $03, sHold
+	dc.b	nAb5, $02, sHold, nA5, $7F, sHold, $12
+	sModOff
+	dc.b	nRst, $14
+	saVol		$FF
+	sJump			ValleyTornado_FM1
+
+; FM2 Data
+ValleyTornado_FM2:
+	sPan			spCenter
+	sVoice		$00
+
+ValleyTornado_Jump01:
+	dc.b	nA2, $05
+
+ValleyTornado_Loop1A:
+	dc.b	$05, nA3, $0A, nA2, $05, $0A
+	sLoop			$00, $02, ValleyTornado_Loop1A
+	dc.b	nA3, $05, nC4, $0A, nC3, $05, $05, nC4, $0A, nC3, $05, $0A
+	dc.b	$05, nC4, $0A, nC3, $05, nC4, $0A, nC3, $05, $0A, nD3, $05
+
+ValleyTornado_Loop1B:
+	dc.b	$05, nD4, $0A, nD3, $05, $0A
+	sLoop			$00, $02, ValleyTornado_Loop1B
+	dc.b	nD4, $05, nD3, $0A, nF3, $05, $05, nF4, $0A, nF3, $05, $0A
+	dc.b	$05, nG4, $0A, nG3, $05, $0A, nG4, $05, nG3, $0A, nA2, $05
+
+ValleyTornado_Loop1C:
+	dc.b	$05, nA3, $0A, nA2, $05, $0A
+	sLoop			$00, $02, ValleyTornado_Loop1C
+	dc.b	nA3, $05, nC4, $0A, nC3, $05, $05, nC4, $0A, nC3, $05, $0A
+	dc.b	$05, nC4, $0A, nC3, $05, nC4, $0A, nC3, $05, $0A, nD3, $05
+
+ValleyTornado_Loop1D:
+	dc.b	$05, nD4, $0A, nD3, $05, $0A
+	sLoop			$00, $02, ValleyTornado_Loop1D
+	dc.b	nD4, $05, nD3, $0A, nRst, nF2, $05, $05, nRst, $3C
+
+ValleyTornado_Loop1F:
+	dc.b	nA2
+
+ValleyTornado_Loop1E:
+	dc.b	$0A, $05, $05, nRst, $0A, nA2, $05, $05, $0A, $05, nG2, $0A
+	dc.b	nA2, $05, $0A
+	sLoop			$00, $02, ValleyTornado_Loop1E
+	dc.b	nFs2, nFs2, $05, $05, nRst, $0A, nFs2, $05, $05, $0A, $05, $0A
+	dc.b	$05, $0A, nG2, nG2, $05, $05, nRst, $0A, nG2, $05, $05, $0A
+	dc.b	$05, $0A, $05, $0A
+	sLoop			$01, $02, ValleyTornado_Loop1F
+	dc.b	nD3, $05, nD4, nD3, $0A, $0A, $0A, $0A, $05, nC3, $0A, $05
+	dc.b	nD3, $0A, nE3, $05, nE4, nE3, $0A, $0A, $0A, $0A, $05, nD3
+	dc.b	$0A, $05, nE3, $0A, nA2, $05, nA3, nA2, $0A, $0A, $0A, $0A
+	dc.b	$05, $0A, $05, $0A, $05, nA3, nA2, $0A, $0A, $0A, nE3, nE3
+	dc.b	$05, nD3, $0A, $05, nE3, $0A, nFs3, $05, nFs4, nFs3, $0A, $0A
+	dc.b	$0A, $0A, $05, nE3, $0A, $05, nD3, $0A, nB2, $05, nB3, nB2
+	dc.b	$0A, $0A, $0A, $0A, $05, nA2, $0A, $05, nB2, $0A, nE3, $05
+	dc.b	nE4, nE3, $0A, $0A, $0A, $0A, $05, $0A, $05, $0A, $0A, nRst
+	dc.b	$46, nA2
+
+ValleyTornado_Loop20:
+	dc.b	$05, $05, $0A, $0A, $05, $0A, $05, $0A, $0A, $0A
+	sLoop			$00, $02, ValleyTornado_Loop20
+	dc.b	nFs3, $05, $05, $0A, $0A, $05, $0A, $05, $0A, $0A, $0A, nF3
+	dc.b	$05
+
+ValleyTornado_Loop21:
+	dc.b	$05, $0A, $0A, $05, $0A, $05, $0A, $0A, $0A, nA2, $05
+	sLoop			$00, $02, ValleyTornado_Loop21
+	dc.b	$05, $0A, $0A, $05, $0A, $05, $0A, $0A, $0A, nC3, $05, $05
+	dc.b	$0A, $0A, $05, nD3, $0A, $05, $0A, $0A, $0A, nA2, $05, $05
+	dc.b	$0A, $0A, $05, $0A, $05, $0A, $05, nA3, nA2, $0A, nF2, $05
+	dc.b	$05, $0A, $0A, $05, $0A, $05, $0A, $0A, $0A, nG2, $05
+
+ValleyTornado_Loop22:
+	dc.b	$05, $0A, $0A, $05, $0A, $05, $0A, $0A, $0A, nA2, $05
+	sLoop			$00, $02, ValleyTornado_Loop22
+	dc.b	$05, $0A, $0A, $05, $0A, $05, $0A, nG2, nG2, nF2, $05, $05
+	dc.b	$0A, $0A, $05, $0A, $05, $0A, $0A, $0A, nG2, $05
+
+ValleyTornado_Loop23:
+	dc.b	$05, $0A, $0A, $05, $0A, $05, $0A, $0A, $0A, nD3, $05
+	sLoop			$00, $02, ValleyTornado_Loop23
+	dc.b	$05, $0A, $0A, $05, $0A, nD4, $05, nD3, $0A, nD4, $05, $05
+	dc.b	nD3, $0A, nF2, $05, $05, $0A, $0A, $05, $0A, $05, $0A, $0A
+	dc.b	$0A, nG2, $05
+
+ValleyTornado_Loop24:
+	dc.b	$05, $0A, $0A, $05, $0A, $05, $0A, $0A, $0A, nA2, $05
+	sLoop			$00, $02, ValleyTornado_Loop24
+	dc.b	$05, $0A, $0A, $05, $0A, $05, $0A, nG2, nG2, nF2, $05, $05
+	dc.b	$0A, $0A, $05, $0A, $05, $0A, $0A, $0A, nG2, $05, $05, $0A
+	dc.b	$0A, $05, $0A, $05, $0A, $0A, $0A, nD3, $05, $05, $0A, $0A
+	dc.b	$05, $0A, $05, $0A, $0A, $0A, nE3, $05, $05, $0A, $0A, $05
+	dc.b	nEb3, $0A, $05, $0A, $0A, $0A
+	sJump			ValleyTornado_Jump01
+
+; FM3 Data
+ValleyTornado_FM3:
+	sVoice		$01
+	sPan			spRight
+	sModAMPS		  $0D, $01, $08, $03
+	dc.b	nE4, $0A, nRst, nE4, nRst, $05, nE4, nG4, $0A, nA4, nRst, nE4
+	dc.b	nRst, nE4, $14, $05, nRst, nD4, $0A, nB3, nD4, nE4, $05, nRst
+	dc.b	nE4, $0A, nRst, nE4, nRst, $05, nE4, nG4, $0A, nA4, nRst, nBb4
+	dc.b	$14, nA4, $0A, nG4, nA4, $05, nG4, $0F, nE4, $0A, nD4, nE4
+	dc.b	$05, nRst, nE4, $0A, nRst, nE4, nRst, $05, nE4, nG4, $0A, nA4
+	dc.b	nRst, nE4, nRst, nE4, $14, $05, nRst, nD4, $0A, nB3, nD4, nE4
+	dc.b	$05, nRst, nE4, $0A, nRst, nE4, nRst, $05, nE4, nG4, $0A, nA4
+	dc.b	nRst, nBb4, nRst
+	saVol		$07
+
+ValleyTornado_Loop18:
+	dc.b	nBb4, nRst
+	saVol		$08
+	sLoop			$00, $03, ValleyTornado_Loop18
+	dc.b	nBb4, nRst
+
+ValleyTornado_Loop19:
+	dc.b	$64
+	sLoop			$00, $20, ValleyTornado_Loop19
+	saVol		$E1
+	sJump			ValleyTornado_FM3
+
+; FM4 Data
+ValleyTornado_FM4:
+	sVoice		$02
+	sPan			spCenter
+	dc.b	nC5, $50, nE5, nFs5, nA5, $28, nB5, nC5, $50, nE5, nFs5
+
+ValleyTornado_Loop0B:
+	dc.b	nA5, $0A, nRst
+	saVol		$08
+	sLoop			$00, $03, ValleyTornado_Loop0B
+	dc.b	nA5, nRst, $14
+	sVoice		$03
+	sPan			spLeft
+	saVol		$E8
+	dc.b	nE4, $05, nRst, nE4, nRst, $0F, nD4, nE4, $05, nRst, $0A, nE4
+	dc.b	$05, nRst, $0F, nE4, $05, nRst, nE4, nRst, $0F, nD4, nE4, $05
+	dc.b	nRst, $0A, nD4, $05, nRst, $0F, nD4, $05, nRst, nD4, nRst, $0F
+	dc.b	nC4, nD4, $05, nRst, $0A, nD4, $05, nRst, $0F, nD4, $05, nRst
+	dc.b	nD4, nRst, $0F, nD4, nD4, $05, nRst, $0A, nD4, $05, nRst, $0F
+	dc.b	nE4, $05, nRst, nE4, nRst, $0F, nD4, nE4, $05, nRst, $0A, nE4
+	dc.b	$05, nRst, $0F, nE4, $05, nRst, nE4, nRst, $0F, nD4, nE4, $05
+	dc.b	nRst, $0A, nD4, $05, nRst, $0F, nD4, $05, nRst, nD4, nRst, $0F
+	dc.b	nC4, nD4, $05, nRst, $0A, nD4, $05, nRst, $0F, nD4, $05, nRst
+	dc.b	nD4, nRst, $0F, nD4, nD4, $05, nRst, $0A, nD4
+	sVoice		$06
+	sPan			spRight
+	saVol		$FC
+	dc.b	$05, nRst, $0F, nD4, $05, nRst, $0F, nD4, $05, nRst, $0A, nC4
+	dc.b	$0F, nD4, $05, nRst, nE4, nRst, $0F, nE4, $05, nRst, $0F, nE4
+	dc.b	$05, nRst, $0A, nD4, $0F, nE4, $05, nRst, nE4, nRst, nD4, nRst
+	dc.b	nE4, nRst, nG4, nA4, nRst, nA4, nG4, nRst, nE4, $0A, nD4, $05
+	dc.b	nRst, nE4, nRst, nD4, nRst, nE4, nRst, nG4, nA4, nRst, nA4, nG4
+	dc.b	nRst, nB4, $0A, nA4
+
+ValleyTornado_Loop0C:
+	dc.b	$05, nRst, nD4, nRst, $0F, nD4, $05, nRst, $0F, nD4, $05, nRst
+	dc.b	$0A, nD4, $0F
+	sLoop			$00, $02, ValleyTornado_Loop0C
+	dc.b	$05, nRst
+
+ValleyTornado_Loop0D:
+	dc.b	nE4, nF4
+	sLoop			$00, $08, ValleyTornado_Loop0D
+
+ValleyTornado_Loop0E:
+	dc.b	nE4
+	saVol		$04
+	dc.b	nF4
+	sLoop			$00, $08, ValleyTornado_Loop0E
+	sVoice		$08
+	sPan			spRight
+	saVol		$E4
+	dc.b	nA2, $5A, nRst, $0A, nA2, $14, nG2, nA3, nFs3, $3C, nG3, $0A
+	dc.b	nE3, nG3, $50, nA2, $5A, nRst, $0A, nA2, $14, nE3, nA2, nC3
+	dc.b	nRst, $0A, nD3, $1E, nRst, $0A, nE3, $47
+	sVoice		$0A
+	saVol		$01
+	sPan			spRight
+	sModAMPS		  $01, $01, $DF, $FF
+	dc.b	nA3, $14
+	sModOff
+	dc.b	nF2
+
+ValleyTornado_Loop0F:
+	dc.b	$0A
+	sLoop			$00, $07, ValleyTornado_Loop0F
+	dc.b	$05, nFs2, nG2
+
+ValleyTornado_Loop10:
+	dc.b	$0A
+	sLoop			$00, $08, ValleyTornado_Loop10
+	dc.b	nRst, nA2, nA3, nA2, nA3, nA2, nA3
+	sModAMPS		  $0B, $01, $10, $03
+	dc.b	nG3, $14
+	sModOff
+	dc.b	nA2, $0A, nA3, nA2, nA3, nA2, nA3, nG3
+
+ValleyTornado_Loop11:
+	dc.b	nF2
+	sLoop			$00, $07, ValleyTornado_Loop11
+	dc.b	nF2, $05, nFs2, nG2
+
+ValleyTornado_Loop12:
+	dc.b	$0A
+	sLoop			$00, $08, ValleyTornado_Loop12
+	dc.b	nD3
+	sLoop			$01, $02, ValleyTornado_Loop12
+	dc.b	nD3, nD3, nD3, nD3, nD3, nC3
+
+ValleyTornado_Loop13:
+	dc.b	nF2
+	sLoop			$00, $08, ValleyTornado_Loop13
+
+ValleyTornado_Loop14:
+	dc.b	nG2
+	sLoop			$00, $08, ValleyTornado_Loop14
+	dc.b	nRst, nA2, nA3, nA2, nA3, nA2, nA3
+	sModOn
+	dc.b	nG3, $14
+	sModOff
+	dc.b	nA2, $0A, nA3, nA2, nA3, nA2, nA3, nG3
+
+ValleyTornado_Loop15:
+	dc.b	nF2
+	sLoop			$00, $08, ValleyTornado_Loop15
+
+ValleyTornado_Loop16:
+	dc.b	nG2
+	sLoop			$00, $08, ValleyTornado_Loop16
+
+ValleyTornado_Loop17:
+	dc.b	nD3
+	sLoop			$00, $08, ValleyTornado_Loop17
+	dc.b	nE3, nE3, nE3, nE3, nEb3
+	sModAMPS		  $03, $01, $50, $FF
+	dc.b	$0A
+	sModAMPS		  $01, $01, $E7, $FF
+	dc.b	nEb4, $13
+	sModOff
+	saVol		$FF
+	sJump			ValleyTornado_FM4
+
+; FM5 Data
+ValleyTornado_FM5:
+	sVoice		$02
+	sPan			spCenter
+	dc.b	nE5, $50, nG5, nA5, nC6, $28, nD6, nE5, $50, nG5, nA5
+
+ValleyTornado_Loop08:
+	dc.b	nC6, $0A, nRst
+	saVol		$08
+	sLoop			$00, $03, ValleyTornado_Loop08
+	dc.b	nC6, nRst, $14
+	sVoice		$03
+	sPan			spRight
+	saVol		$E8
+	dc.b	nA4, $05, nRst, nA4, nRst, $0F, nG4, nA4, $05, nRst, $0A, nA4
+	dc.b	$05, nRst, $0F, nA4, $05, nRst, nA4, nRst, $0F, nG4, nA4, $05
+	dc.b	nRst, $0A, nG4, $05, nRst, $0F, nFs4, $05, nRst, nFs4, nRst, $0F
+	dc.b	nE4, nFs4, $05, nRst, $0A, nFs4, $05, nRst, $0F, nG4, $05, nRst
+	dc.b	nG4, nRst, $0F, nFs4, nG4, $05, nRst, $0A, nG4, $05, nRst, $0F
+	dc.b	nA4, $05, nRst, nA4, nRst, $0F, nG4, nA4, $05, nRst, $0A, nA4
+	dc.b	$05, nRst, $0F, nA4, $05, nRst, nA4, nRst, $0F, nG4, nA4, $05
+	dc.b	nRst, $0A, nG4, $05, nRst, $0F, nFs4, $05, nRst, nFs4, nRst, $0F
+	dc.b	nE4, nFs4, $05, nRst, $0A, nFs4, $05, nRst, $0F, nG4, $05, nRst
+	dc.b	nG4, nRst, $0F, nFs4, nG4, $05, nRst, $0A, nG4
+	sVoice		$06
+	sPan			spLeft
+	saVol		$FC
+	dc.b	nF4, $05, nRst, $0F, nF4, $05, nRst, $0F, nF4, $05, nRst, $0A
+	dc.b	nE4, $0F, nF4, $05, nRst, nG4, nRst, $0F, nG4, $05, nRst, $0F
+	dc.b	nG4, $05, nRst, $0A, nF4, $0F, nG4, $05, nRst, nA4, nRst, nG4
+	dc.b	nRst, nA4, nRst, nB4, nC5, nRst, nC5, nB4, nRst, nA4, $0A, nG4
+	dc.b	$05, nRst, nA4, nRst, nG4, nRst, nA4, nRst, nB4, nC5, nRst, nC5
+	dc.b	nB4, nRst, nD5, $0A, nC5, $05, nRst, nFs4, nRst, $0F, nFs4, $05
+	dc.b	nRst, $0F, nFs4, $05, nRst, $0A, nFs4, $0F, $05, nRst, nF4, nRst
+	dc.b	$0F, nF4, $05, nRst, $0F, nF4, $05, nRst, $0A, nF4, $0F, $05
+	dc.b	nRst
+
+ValleyTornado_Loop09:
+	dc.b	nAb4, nA4
+	sLoop			$00, $08, ValleyTornado_Loop09
+
+ValleyTornado_Loop0A:
+	dc.b	nAb4
+	saVol		$04
+	dc.b	nA4
+	sLoop			$00, $08, ValleyTornado_Loop0A
+	sVoice		$08
+	sPan			spLeft
+	saVol		$E4
+	dc.b	nE2, $5A, nRst, $0A, nE2, $14, $14, nC3, nA2, $3C, nC3, $0A
+	dc.b	nB2, nB2, $50, nE2, $5A, nRst, $0A, nE2, $14, nC3, nE2, nA2
+	dc.b	nRst, $0A, nB2, $1E, nRst, $0A, nA2, $46
+	sVoice		$09
+	saVol		$04
+	sPan			spLeft
+	sModAMPS		  $01, $01, $DF, $FF
+	dc.b	nA3, $14
+	sModOff
+	dc.b	nF2, $0A, $0A, nC3, nF2, nC3, nF2, nC3, nF2, $05, nFs2, nG2
+	dc.b	$0A, $0A, nD3, nG2, nD3, nG2, nD3, nG2, nRst, nA2, nE3, nA2
+	dc.b	nE3, nA2, nE3
+	sModAMPS		  $0B, $01, $10, $03
+	dc.b	nD3, $14
+	sModOff
+	dc.b	nA2, $0A, nE3, nA2, nE3, nA2, nE3, nD3, nF2, nF2, nC3, nF2
+	dc.b	nC3, nF2, nC3, nF2, $05, nFs2, nG2, $0A, $0A, nD3, nG2, nD3
+	dc.b	nG2, nD3, nG2, nD3, nD3, nA3, nD3, nA3, nD3, nA3, nD3, nD3
+	dc.b	nD3, nA3, nD3, nA3, nD3, nA3, nG3, nF2, nF2, nC3, nF2, nC3
+	dc.b	nF2, nC3, nF2, $05, nFs2, nG2, $0A, $0A, nD3, nG2, nD3, nG2
+	dc.b	nD3, nG2, nRst, nA2, nE3, nA2, nE3, nA2, nE3
+	sModOn
+	dc.b	nD3, $14
+	sModOff
+	dc.b	nA2, $0A, nE3, nA2, nE3, nA2, nE3, nD3, nF2, nF2, nC3, nF2
+	dc.b	nC3, nF2, nC3, nF2, $05, nFs2, nG2, $0A, $0A, nD3, nG2, nD3
+	dc.b	nG2, nD3, nG2, nD3, nD3, nA3, nD3, nA3, nD3, nA3, nD3, nE3
+	dc.b	nE3, nB3, nE3, nBb3
+	sModAMPS		  $03, $01, $50, $FF
+	dc.b	nEb3
+	sModAMPS		  $01, $01, $E7, $FF
+	dc.b	nEb4, $14
+	sModOff
+	saVol		$FC
+	sJump			ValleyTornado_FM5
+
+; PSG1 Data
+ValleyTornado_PSG1:
+	sVolEnv		vS301
+	dc.b	nA1, $0A, nRst, nA1, nRst, $05, nA1, nC2, $0A, nD2, nRst, nA1
+	dc.b	nRst, nA1, $14, $05, nRst, nG1, $0A, nE1, nG1, nA1, $05, nRst
+	dc.b	nA1, $0A, nRst, nA1, nRst, $05, nA1, nC2, $0A, nD2, nRst, nEb2
+	dc.b	$14, nD2, $0A, nC2, nD2, $05, nC2, $0F, nA1, $0A, nG1, nA1
+	dc.b	$05, nRst, nA1, $0A, nRst, nA1, nRst, $05, nA1, nC2, $0A, nD2
+	dc.b	nRst, nA1, nRst, nA1, $14, $05, nRst, nG1, $0A, nE1, nG1, nA1
+	dc.b	$05, nRst, nA1, $0A, nRst, nA1, nRst, $05, nA1, nC2, $0A, nD2
+	dc.b	nRst
+
+ValleyTornado_Loop55:
+	dc.b	nEb2, nRst
+	saVol		$18
+	sLoop			$00, $03, ValleyTornado_Loop55
+	dc.b	nEb2, nRst
+	saVol		$10
+	dc.b	nEb2, nRst, $1E
+	saVol		-$50
+	dc.b	nE2, $14, nD2, $0A, nC2, $14, nB1, $28, nC2, $14, nB1, $0A
+	dc.b	nA1, nG1, nA1, $7F, sHold, $21, nRst, $14, nE2, nD2, $0A, nC2
+	dc.b	$14, nB1, $28, $14, nC2, $0A, nD2, nB1, nE2, $7F, sHold, $0D
+	dc.b	nD2, $0A, nE2, nF2, $14, nD2, $0A, nB1, $28, nG2, $14, nA2
+	dc.b	$0A, nG2, nF2, nG2, nF2, nE2, nD2, nE2, $32, nD2, $14, nC2
+	dc.b	$3C, nRst, $0A, nB1, nC2, nA1, $3C, nB1, $0A, nC2, nF2, $14
+	dc.b	nE2, $0A, nD2, $14, nC2, nE2, nRst, $0A, nE2, nFs2, nRst, nG2
+	dc.b	nRst
+
+ValleyTornado_Loop56:
+	dc.b	nAb2, nRst
+	saVol		$18
+	sLoop			$00, $03, ValleyTornado_Loop56
+	dc.b	nAb2, nRst
+	saVol		$08
+	dc.b	nAb2
+	ssDetune		$04
+	saVol		-$50
+	dc.b	nA2, $01
+	ssDetune		$02
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $08, nRst, $0A, nA2, nB2, $14, nC3
+	ssDetune		$04
+	dc.b	nB2, $01
+	ssDetune		$02
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $12, nG2, $14, nA2, $0A, nRst, nE2, nD2, nC2
+	ssDetune		$06
+	dc.b	nD2, $01
+	ssDetune		$03
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $30, nC2, $1E, nEb2, $01
+	ssDetune		$05
+	dc.b	sHold, nE2
+	ssDetune		$00
+	dc.b	sHold, $44, nRst, $0A
+	ssDetune		$04
+	dc.b	nA2, $01
+	ssDetune		$02
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $08, nRst, $0A, nA2, nB2, $14, nC3
+	ssDetune		$03
+	dc.b	nD3, $01
+	ssDetune		$02
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $12, nA2, $14, nB2, nRst, $0A, nA2, nB2
+	ssDetune		$01
+	dc.b	nC3, $02
+	ssDetune		$00
+	dc.b	sHold, $08, nB2, $0A, nA2, nG2, $14, nE2, $0A, nB2
+	ssDetune		$04
+	dc.b	nA2, $01
+	ssDetune		$02
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $4E
+	ssDetune		$04
+	saVol		-$08
+	dc.b	$01
+	ssDetune		$02
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $1C, nG2, $1E, nA2, $14
+	ssDetune		$04
+	dc.b	nB2, $01
+	ssDetune		$02
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $1C, nC3, $1E, nD3, $0A
+	ssDetune		$02
+	dc.b	nE3, $02
+	ssDetune		$01
+	dc.b	sHold, $02
+	ssDetune		$00
+	dc.b	sHold, $7F, sHold, $27
+	ssDetune		$02
+	dc.b	$01
+	ssDetune		$01
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $1C, nD3, $1E, nE3, $14, nFs3, $01
+	ssDetune		$02
+	dc.b	sHold, nG3
+	ssDetune		$00
+	dc.b	sHold, $1C, nE3, $1E, nD3, $0A
+	ssDetune		$02
+	dc.b	nE3, $02
+	ssDetune		$01
+	dc.b	sHold, $02
+	ssDetune		$00
+	dc.b	sHold, $7F, sHold, $27
+	ssDetune		$04
+	dc.b	nA2, $01
+	ssDetune		$02
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $1C, nG2, $1E, nA2, $14
+	ssDetune		$04
+	dc.b	nB2, $01
+	ssDetune		$02
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $1C, nC3, $1E, nD3, $0A
+	ssDetune		$02
+	dc.b	nE3, $02
+	ssDetune		$01
+	dc.b	sHold, $02
+	ssDetune		$00
+	dc.b	sHold, $7F, sHold, $27
+	ssDetune		$02
+	dc.b	$01
+	ssDetune		$01
+	dc.b	sHold, $01
+	ssDetune		$00
+	dc.b	sHold, $1C, nD3, $1E, nE3, $14, nFs3, $01
+	ssDetune		$02
+	dc.b	sHold, nG3
+	ssDetune		$00
+	dc.b	sHold, $1C, nE3, $1E, nG3, $0A
+	ssDetune		$01
+	dc.b	nA3, $03
+	ssDetune		$00
+	dc.b	sHold, $02, sHold, $7F, sHold, $26
+	sJump			ValleyTornado_PSG1
+
+; PSG2 Data
+ValleyTornado_PSG2:
+	sVolEnv		vS305
+	dc.b	nA1, $50, nC2, nD2, nF2, $28, nG2, nA1, $50, nC2, nD2
+
+ValleyTornado_Loop39:
+	dc.b	nF2, $0A, nRst
+	saVol		$18
+	sLoop			$00, $03, ValleyTornado_Loop39
+	dc.b	nF2, nRst
+	sVolEnv		v03
+	saVol		-$55
+
+ValleyTornado_Loop3A:
+	dc.b	nE1, $05
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	sLoop			$00, $03, ValleyTornado_Loop3A
+	dc.b	nD1
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nG1, $0A
+	saVol		$18
+	dc.b	nD1, $05
+	saVol		-$18
+	dc.b	nA1, nRst
+
+ValleyTornado_Loop3B:
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nE1
+	sLoop			$00, $04, ValleyTornado_Loop3B
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nD1
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nG1, $0A
+	saVol		$18
+	dc.b	nD1, $05
+	saVol		-$18
+	dc.b	nA1, nRst
+
+ValleyTornado_Loop3C:
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nE1
+	sLoop			$00, $04, ValleyTornado_Loop3C
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nD1
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nG1, $0A
+	saVol		$18
+	dc.b	nD1, $05
+	saVol		-$18
+	dc.b	nA1, nRst
+
+ValleyTornado_Loop3D:
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nE1
+	sLoop			$00, $04, ValleyTornado_Loop3D
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nD1
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nG1, $0A
+	saVol		$18
+	dc.b	nD1, $05
+	saVol		-$18
+	dc.b	nA1, nRst
+
+ValleyTornado_Loop3E:
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nE1
+	sLoop			$00, $04, ValleyTornado_Loop3E
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nD1
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nG1, $0A
+	saVol		$18
+	dc.b	nD1, $05
+	saVol		-$18
+	dc.b	nA1, nRst
+
+ValleyTornado_Loop3F:
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nE1
+	sLoop			$00, $04, ValleyTornado_Loop3F
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nD1
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nG1, $0A
+	saVol		$18
+	dc.b	nD1, $05
+	saVol		-$18
+	dc.b	nA1, nRst
+
+ValleyTornado_Loop40:
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nE1
+	sLoop			$00, $04, ValleyTornado_Loop40
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nD1
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nG1, $0A
+	saVol		$18
+	dc.b	nD1, $05
+	saVol		-$18
+	dc.b	nA1, nRst
+
+ValleyTornado_Loop41:
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nE1
+	sLoop			$00, $04, ValleyTornado_Loop41
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nD1
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nG1, $0A
+	saVol		$18
+	dc.b	nD1, $05
+	saVol		-$18
+	dc.b	nA1, nRst
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+	dc.b	nE1
+	saVol		$18
+	dc.b	nA1
+	saVol		-$18
+
+ValleyTornado_Loop42:
+	dc.b	nD1
+	saVol		$10
+	dc.b	nA1
+	saVol		-$10
+	dc.b	nD2
+	saVol		$10
+	dc.b	nA1
+	saVol		-$10
+	sLoop			$00, $04, ValleyTornado_Loop42
+
+ValleyTornado_Loop43:
+	dc.b	nE1
+	saVol		$10
+	dc.b	nB1
+	saVol		-$10
+	dc.b	nE2
+	saVol		$10
+	dc.b	nB1
+	saVol		-$10
+	sLoop			$00, $04, ValleyTornado_Loop43
+	dc.b	nA0
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nA1
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nC1
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nA1
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nC2
+
+ValleyTornado_Loop44:
+	saVol		$10
+	dc.b	nA1
+	saVol		-$10
+	dc.b	nE1
+	sLoop			$00, $03, ValleyTornado_Loop44
+	saVol		$10
+	dc.b	nC1
+	saVol		-$10
+	dc.b	nA0
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nA1
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nC1
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nA1
+	saVol		$10
+	dc.b	nE1
+
+ValleyTornado_Loop45:
+	saVol		-$10
+	dc.b	nC2
+	saVol		$10
+	dc.b	nA1
+	saVol		-$10
+	dc.b	nE1
+	saVol		$10
+	dc.b	nA1
+	sLoop			$00, $02, ValleyTornado_Loop45
+
+ValleyTornado_Loop46:
+	saVol		-$10
+	dc.b	nD1
+	saVol		$10
+	dc.b	nA1
+	saVol		-$10
+	dc.b	nD2
+	saVol		$10
+	dc.b	nA1
+	sLoop			$00, $08, ValleyTornado_Loop46
+
+ValleyTornado_Loop47:
+	saVol		-$10
+	dc.b	nB0
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nAb1
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nB1
+	saVol		$10
+	dc.b	nAb1
+	saVol		-$10
+	dc.b	nE1
+	saVol		$10
+	dc.b	nAb1
+	sLoop			$00, $02, ValleyTornado_Loop47
+	saVol		-$10
+	dc.b	nE2
+	saVol		$10
+	dc.b	nB1
+	saVol		-$10
+	dc.b	nAb1
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nB1
+	saVol		$10
+	dc.b	nAb1
+	saVol		-$10
+	dc.b	nE1
+	saVol		$10
+	dc.b	nB0
+	saVol		-$10
+	dc.b	nAb1
+	saVol		$10
+	dc.b	nE1
+	saVol		-$10
+	dc.b	nB0
+	saVol		$10
+	dc.b	nAb0
+	saVol		-$10
+	dc.b	nE1
+	saVol		$10
+	dc.b	nB0
+	saVol		-$10
+	dc.b	nAb1
+	saVol		$10
+	dc.b	nE1, nRst
+
+ValleyTornado_Loop48:
+	dc.b	$50
+	sLoop			$00, $08, ValleyTornado_Loop48
+	saVol		-$18
+	dc.b	nF1, $05, nC2, nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nF2
+	saVol		$20
+	dc.b	nA1
+	saVol		-$20
+	dc.b	nC2
+	saVol		$20
+	dc.b	nF1
+	saVol		-$20
+	dc.b	nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nF2, nC2
+	saVol		$20
+	dc.b	nF2
+	saVol		-$20
+	dc.b	nC2, nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nG1, nD2, nG2
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nG2
+	saVol		$20
+	dc.b	nB1
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nG1
+	saVol		-$20
+	dc.b	nG2
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nG2, nD2
+	saVol		$20
+	dc.b	nG2
+	saVol		-$20
+	dc.b	nD2, nG1
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nA0
+	saVol		$20
+	dc.b	nA1
+
+ValleyTornado_Loop49:
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA0
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA0
+	sLoop			$00, $02, ValleyTornado_Loop49
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA0
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nC1
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA1
+	saVol		-$20
+	dc.b	nA0
+	saVol		$20
+	dc.b	nA1
+
+ValleyTornado_Loop4A:
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA0
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA0
+	sLoop			$00, $02, ValleyTornado_Loop4A
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA0
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA1
+	saVol		-$20
+	dc.b	nF1, nC2, nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nF2
+	saVol		$20
+	dc.b	nA1
+	saVol		-$20
+	dc.b	nC2
+	saVol		$20
+	dc.b	nF1
+	saVol		-$20
+	dc.b	nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nF2, nC2
+	saVol		$20
+	dc.b	nF2
+	saVol		-$20
+	dc.b	nC2, nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nG1, nD2, nG2
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nG2
+	saVol		$20
+	dc.b	nB1
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nG1
+	saVol		-$20
+	dc.b	nG2
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nG2, nD2
+	saVol		$20
+	dc.b	nG2
+	saVol		-$20
+	dc.b	nD2, nG1
+
+ValleyTornado_Loop4B:
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nD1
+	sLoop			$00, $02, ValleyTornado_Loop4B
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA2
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nD3
+
+ValleyTornado_Loop4C:
+	saVol		-$20
+	dc.b	nD1
+	saVol		$20
+	dc.b	nD2
+	sLoop			$00, $02, ValleyTornado_Loop4C
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA2
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nD3
+
+ValleyTornado_Loop4D:
+	saVol		-$20
+	dc.b	nD1
+	saVol		$20
+	dc.b	nD2
+	sLoop			$00, $02, ValleyTornado_Loop4D
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA2
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nD3
+
+ValleyTornado_Loop4E:
+	saVol		-$20
+	dc.b	nD1
+	saVol		$20
+	dc.b	nD2
+	sLoop			$00, $02, ValleyTornado_Loop4E
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA2
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nD3
+	saVol		-$20
+	dc.b	nF1, nC2, nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nF2
+	saVol		$20
+	dc.b	nA1
+	saVol		-$20
+	dc.b	nC2
+	saVol		$20
+	dc.b	nF1
+	saVol		-$20
+	dc.b	nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nF2, nC2
+	saVol		$20
+	dc.b	nF2
+	saVol		-$20
+	dc.b	nC2, nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nG1, nD2, nG2
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nG2
+	saVol		$20
+	dc.b	nB1
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nG1
+	saVol		-$20
+	dc.b	nG2
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nG2, nD2
+	saVol		$20
+	dc.b	nG2
+	saVol		-$20
+	dc.b	nD2, nG1
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nA0
+	saVol		$20
+	dc.b	nA1
+
+ValleyTornado_Loop4F:
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA0
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA0
+	sLoop			$00, $02, ValleyTornado_Loop4F
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA0
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nC1
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA1
+	saVol		-$20
+	dc.b	nA0
+	saVol		$20
+	dc.b	nA1
+
+ValleyTornado_Loop50:
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA0
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA0
+	sLoop			$00, $02, ValleyTornado_Loop50
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA0
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nA1
+	saVol		-$20
+	dc.b	nF1, nC2, nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nF2
+	saVol		$20
+	dc.b	nA1
+	saVol		-$20
+	dc.b	nC2
+	saVol		$20
+	dc.b	nF1
+	saVol		-$20
+	dc.b	nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nF2, nC2
+	saVol		$20
+	dc.b	nF2
+	saVol		-$20
+	dc.b	nC2, nF2
+	saVol		$20
+	dc.b	nC2
+	saVol		-$20
+	dc.b	nG1, nD2, nG2
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nG2
+	saVol		$20
+	dc.b	nB1
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nG1
+	saVol		-$20
+	dc.b	nG2
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nG2, nD2
+	saVol		$20
+	dc.b	nG2
+	saVol		-$20
+	dc.b	nD2, nG1
+
+ValleyTornado_Loop51:
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nD1
+	sLoop			$00, $02, ValleyTornado_Loop51
+	saVol		$20
+	dc.b	nD2
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA2
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nD3
+
+ValleyTornado_Loop52:
+	saVol		-$20
+	dc.b	nD1
+	saVol		$20
+	dc.b	nD2
+	sLoop			$00, $02, ValleyTornado_Loop52
+	saVol		-$20
+	dc.b	nA1
+	saVol		$20
+	dc.b	nA2
+	saVol		-$20
+	dc.b	nD2
+	saVol		$20
+	dc.b	nD3
+
+ValleyTornado_Loop53:
+	saVol		-$20
+	dc.b	nE1
+	saVol		$20
+	dc.b	nE2
+	sLoop			$00, $02, ValleyTornado_Loop53
+	saVol		-$20
+	dc.b	nB1
+	saVol		$20
+	dc.b	nB2
+	saVol		-$20
+	dc.b	nE2
+	saVol		$20
+	dc.b	nE3
+
+ValleyTornado_Loop54:
+	saVol		-$20
+	dc.b	nEb1
+	saVol		$20
+	dc.b	nEb2
+	sLoop			$00, $02, ValleyTornado_Loop54
+	saVol		-$20
+	dc.b	nBb1
+	saVol		$20
+	dc.b	nBb2
+	saVol		-$20
+	dc.b	nEb2
+	saVol		$20
+	dc.b	nEb3
+	sJump			ValleyTornado_PSG2
+
+; PSG3 Data
+ValleyTornado_PSG3:
+	sNoisePSG		 snWhitePSG3
+
+ValleyTornado_Jump02:
+	sVolEnv		v01
+	dc.b	nHiHat, $0A
+	sVolEnv		v02
+	saVol		-$08
+
+ValleyTornado_Loop27:
+	dc.b	$05
+	saVol		$10
+	dc.b	$05, $05, $05
+	saVol		-$10
+	sLoop			$00, $06, ValleyTornado_Loop27
+	dc.b	$05
+	saVol		$10
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	dc.b	$05
+	sVolEnv		v02
+	dc.b	$05
+	sVolEnv		v01
+	saVol		-$08
+	dc.b	$0A
+	sVolEnv		v02
+	saVol		-$08
+
+ValleyTornado_Loop28:
+	dc.b	$05
+	saVol		$10
+	dc.b	$05, $05, $05
+	saVol		-$10
+	sLoop			$00, $06, ValleyTornado_Loop28
+	dc.b	$05
+	saVol		$10
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$0A
+	saVol		$08
+	dc.b	$0A
+	sVolEnv		v02
+	saVol		-$08
+
+ValleyTornado_Loop29:
+	dc.b	$05
+	saVol		$10
+	dc.b	$05, $05, $05
+	saVol		-$10
+	sLoop			$00, $06, ValleyTornado_Loop29
+	dc.b	$05
+	saVol		$10
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	dc.b	$05
+	sVolEnv		v02
+	dc.b	$05
+	sVolEnv		v01
+	saVol		-$08
+	dc.b	$0A
+	sVolEnv		v02
+	saVol		-$08
+
+ValleyTornado_Loop2A:
+	dc.b	$05
+	saVol		$10
+	dc.b	$05, $05, $05
+	saVol		-$10
+	sLoop			$00, $03, ValleyTornado_Loop2A
+	dc.b	$05
+	saVol		$10
+	dc.b	$05
+	sVolEnv		v01
+	saVol		-$20
+	dc.b	$14
+	saVol		$20
+	dc.b	$05
+	sVolEnv		v02
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	saVol		$10
+	dc.b	$05
+	sVolEnv		v02
+	saVol		-$10
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	saVol		$20
+	dc.b	$05
+	sVolEnv		v02
+	saVol		-$20
+	dc.b	$05
+
+ValleyTornado_Loop2B:
+	dc.b	$05, $05, $0A
+	sLoop			$00, $10, ValleyTornado_Loop2B
+	sVolEnv		v01
+	dc.b	$05
+	sVolEnv		v02
+
+ValleyTornado_Loop2C:
+	dc.b	$05, $0A, $05
+	sLoop			$00, $10, ValleyTornado_Loop2C
+	dc.b	$05
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	saVol		$08
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	saVol		$08
+	dc.b	$0A
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	saVol		$08
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	sVolEnv		v01
+	saVol		$08
+	dc.b	$0A
+	sVolEnv		v02
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	saVol		$08
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	saVol		$08
+	dc.b	$0A
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	saVol		$08
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	sVolEnv		v01
+	saVol		-$08
+	dc.b	$0A
+	sVolEnv		v02
+
+ValleyTornado_Loop2D:
+	saVol		$08
+	dc.b	$0A
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	saVol		$08
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	sLoop			$00, $02, ValleyTornado_Loop2D
+	sVolEnv		v01
+	saVol		$08
+	dc.b	$0A
+	sVolEnv		v02
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	saVol		$08
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$0A
+	saVol		$10
+	dc.b	$0A
+	saVol		-$08
+	dc.b	$0A
+	sVolEnv		v01
+	dc.b	$05
+	sVolEnv		v02
+	saVol		$08
+	dc.b	$05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$0A
+	sVolEnv		v02
+	saVol		$10
+	dc.b	$46
+
+ValleyTornado_Loop2E:
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$05
+	saVol		$10
+	dc.b	$05
+	sLoop			$00, $07, ValleyTornado_Loop2E
+
+ValleyTornado_Loop2F:
+	dc.b	$05, $05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$05
+	sVolEnv		v02
+	saVol		$10
+	dc.b	$05
+	sLoop			$00, $03, ValleyTornado_Loop2F
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$05
+
+ValleyTornado_Loop30:
+	saVol		$10
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$05
+	sVolEnv		v02
+	sLoop			$00, $03, ValleyTornado_Loop30
+	saVol		$10
+	dc.b	$05, $05, $05
+	saVol		-$10
+	dc.b	$05
+	saVol		$10
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$05
+	sVolEnv		v02
+
+ValleyTornado_Loop31:
+	saVol		$10
+	dc.b	$05, $05, $05
+	saVol		-$10
+	dc.b	$05
+	sLoop			$00, $08, ValleyTornado_Loop31
+	saVol		$10
+	dc.b	$05
+	sVolEnv		v01
+	dc.b	$0A
+	sVolEnv		v02
+	dc.b	$05, $05, $05, $05
+	sVolEnv		v01
+	dc.b	$0A
+	sVolEnv		v02
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$05
+	saVol		$10
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	dc.b	$05
+	sVolEnv		v02
+
+ValleyTornado_Loop32:
+	dc.b	$05, $05, $05
+	saVol		-$10
+	dc.b	$05
+	saVol		$10
+	sLoop			$00, $0F, ValleyTornado_Loop32
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$0A
+	sVolEnv		v02
+	saVol		$10
+
+ValleyTornado_Loop33:
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$05
+	saVol		$10
+	dc.b	$05
+	sLoop			$00, $03, ValleyTornado_Loop33
+	dc.b	$05, $05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$05
+	sVolEnv		v02
+
+ValleyTornado_Loop34:
+	saVol		$10
+	dc.b	$05, $05, $05
+	saVol		-$10
+	dc.b	$05
+	sLoop			$00, $0F, ValleyTornado_Loop34
+	saVol		$10
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$05
+	sVolEnv		v02
+
+ValleyTornado_Loop35:
+	saVol		$10
+	dc.b	$05, $05, $05
+	saVol		-$10
+	dc.b	$05
+	sLoop			$00, $0B, ValleyTornado_Loop35
+	saVol		$10
+	dc.b	$05, $05, $05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$0A
+	sVolEnv		v02
+	saVol		$10
+
+ValleyTornado_Loop36:
+	dc.b	$05, $05
+	saVol		-$10
+	dc.b	$05
+	saVol		$10
+	dc.b	$05
+	sLoop			$00, $03, ValleyTornado_Loop36
+	dc.b	$05, $05
+	sVolEnv		v01
+	saVol		-$10
+	dc.b	$05
+	sVolEnv		v02
+
+ValleyTornado_Loop37:
+	saVol		$10
+	dc.b	$05, $05, $05
+	saVol		-$10
+	dc.b	$05
+	sLoop			$00, $0C, ValleyTornado_Loop37
+
+ValleyTornado_Loop38:
+	saVol		$10
+	dc.b	$05
+	sVolEnv		v01
+	dc.b	$05
+	sVolEnv		v02
+	dc.b	$05
+	saVol		-$10
+	dc.b	$05
+	sLoop			$00, $04, ValleyTornado_Loop38
+	saVol		$10
+	dc.b	$05
+	saVol		-$08
+	sJump			ValleyTornado_Jump02

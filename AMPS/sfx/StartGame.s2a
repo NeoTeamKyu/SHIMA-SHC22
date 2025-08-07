@@ -1,0 +1,43 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$03
+	sHeaderSFX	$80, ctFM3, .FM3, $0A, $00
+	sHeaderSFX	$80, ctFM4, .FM4, $0E, $00
+	sHeaderSFX	$80, ctFM5, .FM5, $08, $00
+
+.FM3	sVoice		pDeath
+	sPan		spCenter
+	dc.b nC5, $02, nD5, $01, nG5, $02, nE5, $01
+	dc.b nG5, $02, nA5, $01
+	saVol		$07
+	dc.b nC5, $02, nD5, $01, nG5, $02, nE5, $01
+	dc.b nG5, $02, nA5, $01
+	saVol		$09
+	dc.b nC5, $02, nD5, $01, nG5, $02, nE5, $01
+	dc.b nG5, $02, nA5, $01
+	sStop
+
+.FM4	sVoice		pDeath
+	dc.b nRst, $05
+	sPan		spLeft
+	dc.b nC5, $01, nD5, $02, nG5, $01, nE5, $02
+	dc.b nG5, $01, nA5, $02
+	saVol		$08
+	dc.b nC5, $01, nD5, $02, nG5, $01, nE5, $02
+	dc.b nG5, $01, nA5, $02
+	saVol		$08
+	dc.b nC5, $01, nD5, $02, nG5, $01, nE5, $02
+	dc.b nG5, $01, nA5, $02
+	sStop
+
+.FM5	sVoice		pDeath
+	sPan		spRight
+	dc.b nG5, $02, nA5, $01, nC6, $02, nA5, $01
+	dc.b nC6, $02, nD6, $01
+	saVol		$08
+	dc.b nG5, $02, nA5, $01, nC6, $02, nA5, $01
+	dc.b nC6, $02, nD6, $01
+	saVol		$09
+	dc.b nG5, $02, nA5, $01, nC6, $02, nA5, $01
+	dc.b nC6, $02, nD6, $01
+	sStop

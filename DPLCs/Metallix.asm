@@ -1,0 +1,96 @@
+Metallix_PLC:
+Metallix_PLC_0: 	dc.w Metallix_PLC_2E-Metallix_PLC
+Metallix_PLC_2: 	dc.w Metallix_PLC_2F-Metallix_PLC
+Metallix_PLC_4: 	dc.w Metallix_PLC_34-Metallix_PLC
+Metallix_PLC_6: 	dc.w Metallix_PLC_39-Metallix_PLC
+Metallix_PLC_8: 	dc.w Metallix_PLC_3E-Metallix_PLC
+Metallix_PLC_A: 	dc.w Metallix_PLC_43-Metallix_PLC
+Metallix_PLC_C: 	dc.w Metallix_PLC_48-Metallix_PLC
+Metallix_PLC_E: 	dc.w Metallix_PLC_4D-Metallix_PLC
+Metallix_PLC_10: 	dc.w Metallix_PLC_52-Metallix_PLC
+Metallix_PLC_12: 	dc.w Metallix_PLC_57-Metallix_PLC
+Metallix_PLC_14: 	dc.w Metallix_PLC_5A-Metallix_PLC
+Metallix_PLC_16: 	dc.w Metallix_PLC_5D-Metallix_PLC
+Metallix_PLC_18: 	dc.w Metallix_PLC_60-Metallix_PLC
+Metallix_PLC_1A: 	dc.w Metallix_PLC_65-Metallix_PLC
+Metallix_PLC_1C: 	dc.w Metallix_PLC_6A-Metallix_PLC
+Metallix_PLC_1E: 	dc.w Metallix_PLC_6F-Metallix_PLC
+Metallix_PLC_20: 	dc.w Metallix_PLC_74-Metallix_PLC
+Metallix_PLC_22: 	dc.w Metallix_PLC_79-Metallix_PLC
+Metallix_PLC_24: 	dc.w Metallix_PLC_7E-Metallix_PLC
+Metallix_PLC_26: 	dc.w Metallix_PLC_83-Metallix_PLC
+Metallix_PLC_28: 	dc.w Metallix_PLC_88-Metallix_PLC
+Metallix_PLC_2A: 	dc.w Metallix_PLC_8F-Metallix_PLC
+Metallix_PLC_2C: 	dc.w Metallix_PLC_9A-Metallix_PLC
+Metallix_PLC_2E: 	dc.b $0
+Metallix_PLC_2F: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $E0, $10
+Metallix_PLC_34: 	dc.b $2
+	dc.b $F0, $1F
+	dc.b $C0, $2F
+Metallix_PLC_39: 	dc.b $2
+	dc.b $F0, $3C
+	dc.b $30, $4C
+Metallix_PLC_3E: 	dc.b $2
+	dc.b $F0, $50
+	dc.b $70, $60
+Metallix_PLC_43: 	dc.b $2
+	dc.b $F0, $68
+	dc.b $90, $78
+Metallix_PLC_48: 	dc.b $2
+	dc.b $F0, $82
+	dc.b $80, $92
+Metallix_PLC_4D: 	dc.b $2
+	dc.b $F0, $9B
+	dc.b $60, $AB
+Metallix_PLC_52: 	dc.b $2
+	dc.b $F0, $B2
+	dc.b $80, $C2
+Metallix_PLC_57: 	dc.b $1
+	dc.b $E0, $CB
+Metallix_PLC_5A: 	dc.b $1
+	dc.b $D0, $DA
+Metallix_PLC_5D: 	dc.b $1
+	dc.b $C0, $E8
+Metallix_PLC_60: 	dc.b $2
+	dc.b $F0, $F5
+	dc.b $A1, $5
+Metallix_PLC_65: 	dc.b $2
+	dc.b $F1, $10
+	dc.b $D1, $20
+Metallix_PLC_6A: 	dc.b $2
+	dc.b $F1, $2E
+	dc.b $81, $3E
+Metallix_PLC_6F: 	dc.b $2
+	dc.b $F1, $47
+	dc.b $81, $57
+Metallix_PLC_74: 	dc.b $2
+	dc.b $F1, $60
+	dc.b $91, $70
+Metallix_PLC_79: 	dc.b $2
+	dc.b $F1, $7A
+	dc.b $A1, $8A
+Metallix_PLC_7E: 	dc.b $2
+	dc.b $F1, $95
+	dc.b $B1, $A5
+Metallix_PLC_83: 	dc.b $2
+	dc.b $F1, $B1
+	dc.b $D1, $C1
+Metallix_PLC_88: 	dc.b $3
+	dc.b $F1, $B1
+	dc.b $D1, $C1
+	dc.b $1, $CF
+Metallix_PLC_8F: 	dc.b $5
+	dc.b $1, $CF
+	dc.b $F1, $B1
+	dc.b $D1, $C1
+	dc.b $F1, $D0
+	dc.b $D1, $E0
+Metallix_PLC_9A: 	dc.b $5
+	dc.b $1, $CF
+	dc.b $F1, $B1
+	dc.b $D1, $C1
+	dc.b $F1, $EE
+	dc.b $C1, $FE
+	even

@@ -1,0 +1,109 @@
+TailsTails_PLC:
+TailsTails_PLC_0: 	dc.w TailsTails_PLC_48-TailsTails_PLC
+TailsTails_PLC_2: 	dc.w TailsTails_PLC_49-TailsTails_PLC
+TailsTails_PLC_4: 	dc.w TailsTails_PLC_4C-TailsTails_PLC
+TailsTails_PLC_6: 	dc.w TailsTails_PLC_4F-TailsTails_PLC
+TailsTails_PLC_8: 	dc.w TailsTails_PLC_52-TailsTails_PLC
+TailsTails_PLC_A: 	dc.w TailsTails_PLC_55-TailsTails_PLC
+TailsTails_PLC_C: 	dc.w TailsTails_PLC_58-TailsTails_PLC
+TailsTails_PLC_E: 	dc.w TailsTails_PLC_5B-TailsTails_PLC
+TailsTails_PLC_10: 	dc.w TailsTails_PLC_5E-TailsTails_PLC
+TailsTails_PLC_12: 	dc.w TailsTails_PLC_61-TailsTails_PLC
+TailsTails_PLC_14: 	dc.w TailsTails_PLC_64-TailsTails_PLC
+TailsTails_PLC_16: 	dc.w TailsTails_PLC_67-TailsTails_PLC
+TailsTails_PLC_18: 	dc.w TailsTails_PLC_6A-TailsTails_PLC
+TailsTails_PLC_1A: 	dc.w TailsTails_PLC_6D-TailsTails_PLC
+TailsTails_PLC_1C: 	dc.w TailsTails_PLC_70-TailsTails_PLC
+TailsTails_PLC_1E: 	dc.w TailsTails_PLC_73-TailsTails_PLC
+TailsTails_PLC_20: 	dc.w TailsTails_PLC_76-TailsTails_PLC
+TailsTails_PLC_22: 	dc.w TailsTails_PLC_79-TailsTails_PLC
+TailsTails_PLC_24: 	dc.w TailsTails_PLC_7C-TailsTails_PLC
+TailsTails_PLC_26: 	dc.w TailsTails_PLC_7F-TailsTails_PLC
+TailsTails_PLC_28: 	dc.w TailsTails_PLC_82-TailsTails_PLC
+TailsTails_PLC_2A: 	dc.w TailsTails_PLC_85-TailsTails_PLC
+TailsTails_PLC_2C: 	dc.w TailsTails_PLC_88-TailsTails_PLC
+TailsTails_PLC_2E: 	dc.w TailsTails_PLC_8B-TailsTails_PLC
+TailsTails_PLC_30: 	dc.w TailsTails_PLC_8E-TailsTails_PLC
+TailsTails_PLC_32: 	dc.w TailsTails_PLC_91-TailsTails_PLC
+TailsTails_PLC_34: 	dc.w TailsTails_PLC_94-TailsTails_PLC
+TailsTails_PLC_36: 	dc.w TailsTails_PLC_97-TailsTails_PLC
+TailsTails_PLC_38: 	dc.w TailsTails_PLC_9A-TailsTails_PLC
+TailsTails_PLC_3A: 	dc.w TailsTails_PLC_9D-TailsTails_PLC
+TailsTails_PLC_3C: 	dc.w TailsTails_PLC_A0-TailsTails_PLC
+TailsTails_PLC_3E: 	dc.w TailsTails_PLC_A3-TailsTails_PLC
+TailsTails_PLC_40: 	dc.w TailsTails_PLC_A6-TailsTails_PLC
+TailsTails_PLC_42: 	dc.w TailsTails_PLC_A9-TailsTails_PLC
+TailsTails_PLC_44: 	dc.w TailsTails_PLC_AC-TailsTails_PLC
+TailsTails_PLC_46: 	dc.w TailsTails_PLC_AF-TailsTails_PLC
+TailsTails_PLC_48: 	dc.b $0
+TailsTails_PLC_49: 	dc.b $1
+	dc.b $50, $0
+TailsTails_PLC_4C: 	dc.b $1
+	dc.b $60, $6
+TailsTails_PLC_4F: 	dc.b $1
+	dc.b $70, $D
+TailsTails_PLC_52: 	dc.b $1
+	dc.b $50, $15
+TailsTails_PLC_55: 	dc.b $1
+	dc.b $70, $1B
+TailsTails_PLC_58: 	dc.b $1
+	dc.b $50, $23
+TailsTails_PLC_5B: 	dc.b $1
+	dc.b $50, $29
+TailsTails_PLC_5E: 	dc.b $1
+	dc.b $50, $2F
+TailsTails_PLC_61: 	dc.b $1
+	dc.b $50, $35
+TailsTails_PLC_64: 	dc.b $1
+	dc.b $50, $3B
+TailsTails_PLC_67: 	dc.b $1
+	dc.b $50, $41
+TailsTails_PLC_6A: 	dc.b $1
+	dc.b $50, $47
+TailsTails_PLC_6D: 	dc.b $1
+	dc.b $50, $4D
+TailsTails_PLC_70: 	dc.b $1
+	dc.b $50, $53
+TailsTails_PLC_73: 	dc.b $1
+	dc.b $50, $59
+TailsTails_PLC_76: 	dc.b $1
+	dc.b $50, $5F
+TailsTails_PLC_79: 	dc.b $1
+	dc.b $50, $65
+TailsTails_PLC_7C: 	dc.b $1
+	dc.b $50, $6B
+TailsTails_PLC_7F: 	dc.b $1
+	dc.b $50, $71
+TailsTails_PLC_82: 	dc.b $1
+	dc.b $50, $77
+TailsTails_PLC_85: 	dc.b $1
+	dc.b $50, $7D
+TailsTails_PLC_88: 	dc.b $1
+	dc.b $30, $83
+TailsTails_PLC_8B: 	dc.b $1
+	dc.b $30, $83
+TailsTails_PLC_8E: 	dc.b $1
+	dc.b $50, $23
+TailsTails_PLC_91: 	dc.b $1
+	dc.b $50, $29
+TailsTails_PLC_94: 	dc.b $1
+	dc.b $50, $2F
+TailsTails_PLC_97: 	dc.b $1
+	dc.b $50, $35
+TailsTails_PLC_9A: 	dc.b $1
+	dc.b $50, $23
+TailsTails_PLC_9D: 	dc.b $1
+	dc.b $50, $29
+TailsTails_PLC_A0: 	dc.b $1
+	dc.b $50, $2F
+TailsTails_PLC_A3: 	dc.b $1
+	dc.b $50, $35
+TailsTails_PLC_A6: 	dc.b $1
+	dc.b $70, $87
+TailsTails_PLC_A9: 	dc.b $1
+	dc.b $30, $8F
+TailsTails_PLC_AC: 	dc.b $1
+	dc.b $10, $93
+TailsTails_PLC_AF: 	dc.b $1
+	dc.b $30, $8F
+	even

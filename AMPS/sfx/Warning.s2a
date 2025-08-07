@@ -1,0 +1,9 @@
+	sHeaderInitSFX	; Z80 offset is $F14B
+	sHeaderPrio	$80
+	sHeaderCh	$01
+	sHeaderSFX	(1<<cfbRun), ctFM4, SFXDE_FM4, $00, $04
+
+SFXDE_FM4:
+	sVoice		pFMWarning
+	dc.b nC7, $06, $40
+	sStop	

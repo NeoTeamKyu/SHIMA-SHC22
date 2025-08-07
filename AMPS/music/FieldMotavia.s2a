@@ -1,0 +1,448 @@
+FieldMotavia_Header:
+	sHeaderInit
+	sHeaderTempo	$02, $2B	
+	sHeaderCh	$05, $03
+	sHeaderDAC	FieldMotavia_DAC1
+	sHeaderDAC	FieldMotavia_DAC2	
+	sHeaderFM	FieldMotavia_FM1, $E8, $13
+	sHeaderFM	FieldMotavia_FM2, $F4, $10
+	sHeaderFM	FieldMotavia_FM3, $E8, $14
+	sHeaderFM	FieldMotavia_FM4, $E8, $14
+	sHeaderFM	FieldMotavia_FM5, $E8, $13
+	sHeaderPSG	FieldMotavia_PSG1, $D0+$0C, $30, $00, v05
+	sHeaderPSG	FieldMotavia_PSG2, $D0+$0C, $30, $00, v05
+	sHeaderPSG	FieldMotavia_PSG3, $D0+$0C, $30, $00, v05
+	
+	; Patch $00
+	; $3F
+	; $01, $01, $01, $01,	$9C, $5B, $1A, $5C
+	; $0A, $0B, $12, $0C,	$0D, $0A, $09, $0B
+	; $3F, $3F, $3F, $3F,	$87, $80, $80, $80
+	spAlgorithm	$07
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $01, $01, $01
+	spRateScale	$02, $00, $01, $01
+	spAttackRt	$1C, $1A, $1B, $1C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $12, $0B, $0C
+	spSustainLv	$03, $03, $03, $03
+	spDecayRt	$0D, $09, $0A, $0B
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$07, $00, $00, $00
+
+	; Patch $01
+	; $3B
+	; $34, $01, $71, $01,	$9B, $1F, $15, $5F
+	; $05, $08, $08, $0A,	$05, $05, $05, $05
+	; $2F, $2F, $5F, $1F,	$27, $15, $1A, $80
+	spAlgorithm	$03
+	spFeedback	$07
+	spDetune	$03, $07, $00, $00
+	spMultiple	$04, $01, $01, $01
+	spRateScale	$02, $00, $00, $01
+	spAttackRt	$1B, $15, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$05, $08, $08, $0A
+	spSustainLv	$02, $05, $02, $01
+	spDecayRt	$05, $05, $05, $05
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$27, $1A, $15, $00
+
+	; Patch $02
+	; $16
+	; $19, $07, $52, $01,	$56, $9A, $1A, $59
+	; $0C, $0B, $0D, $0D,	$0C, $0B, $0E, $0D
+	; $7F, $3F, $5F, $5F,	$10, $8B, $8A, $80
+	spAlgorithm	$06
+	spFeedback	$02
+	spDetune	$01, $05, $00, $00
+	spMultiple	$09, $02, $07, $01
+	spRateScale	$01, $00, $02, $01
+	spAttackRt	$16, $1A, $1A, $19
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0C, $0D, $0B, $0D
+	spSustainLv	$07, $05, $03, $05
+	spDecayRt	$0C, $0E, $0B, $0D
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$10, $0A, $0B, $00
+
+	; Patch $03
+	; $26
+	; $14, $12, $12, $12,	$4F, $10, $11, $13
+	; $0F, $0A, $0A, $0A,	$05, $07, $08, $06
+	; $1F, $1F, $1F, $1F,	$15, $90, $8C, $80
+	spAlgorithm	$06
+	spFeedback	$04
+	spDetune	$01, $01, $01, $01
+	spMultiple	$04, $02, $02, $02
+	spRateScale	$01, $00, $00, $00
+	spAttackRt	$0F, $11, $10, $13
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $0A, $0A, $0A
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$05, $08, $07, $06
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$15, $0C, $10, $00
+
+	; Patch $04
+	; $16
+	; $35, $27, $31, $30,	$7F, $7F, $7F, $7F
+	; $0A, $0C, $07, $09,	$09, $0C, $09, $08
+	; $5F, $5F, $5F, $5F,	$0A, $80, $89, $87
+	spAlgorithm	$06
+	spFeedback	$02
+	spDetune	$03, $03, $02, $03
+	spMultiple	$05, $01, $07, $00
+	spRateScale	$01, $01, $01, $01
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $07, $0C, $09
+	spSustainLv	$05, $05, $05, $05
+	spDecayRt	$09, $09, $0C, $08
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$0A, $09, $00, $07
+
+	; Patch $05
+	; $3D
+	; $13, $02, $51, $04,	$52, $96, $16, $54
+	; $0A, $0A, $0C, $0F,	$0B, $0A, $0D, $0E
+	; $6F, $AF, $5F, $5F,	$18, $96, $99, $80
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$01, $05, $00, $00
+	spMultiple	$03, $01, $02, $04
+	spRateScale	$01, $00, $02, $01
+	spAttackRt	$12, $16, $16, $14
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $0C, $0A, $0F
+	spSustainLv	$06, $05, $0A, $05
+	spDecayRt	$0B, $0D, $0A, $0E
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$18, $19, $16, $00
+
+	; Patch $06
+	; $36
+	; $12, $12, $11, $12,	$56, $09, $09, $0A
+	; $0F, $0A, $0A, $0A,	$05, $07, $08, $06
+	; $1F, $1F, $1F, $1F,	$09, $90, $83, $80
+	spAlgorithm	$06
+	spFeedback	$06
+	spDetune	$01, $01, $01, $01
+	spMultiple	$02, $01, $02, $02
+	spRateScale	$01, $00, $00, $00
+	spAttackRt	$16, $09, $09, $0A
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $0A, $0A, $0A
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$05, $08, $07, $06
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$09, $03, $10, $00	
+
+FieldMotavia_FM5:
+	dc.b nRst, $02
+	sVoice		$03
+	sPan		spLeft
+	sJump		FieldMotavia_Jump3
+
+FieldMotavia_FM1:
+	sVoice		$03
+	sPan		spRight
+
+FieldMotavia_Jump3:
+	sModAMPS	$02, $01, $04, $05
+	dc.b nRst, $24, nB5, $0C
+
+FieldMotavia_Jump1:
+	sCall		FieldMotavia_Call1
+	dc.b nFs6, nB5, $0C
+	sCall		FieldMotavia_Call1
+	dc.b nB6, nB6, $0C
+	sCall		FieldMotavia_Call2
+	dc.b nA6, $24, $06, nRst, $02, nB6, $04, nC7
+	dc.b $18, nB6, $0C, nA6, nG6, $24, nFs6, $08
+	dc.b nE6, $04, nE7, $24, nB6, $0C
+	sCall		FieldMotavia_Call2
+	dc.b nA6, $30, nC7, nB6, sHold, $24, nB5, $0C
+	sJump		FieldMotavia_Jump1
+
+FieldMotavia_Call1:
+	dc.b nE6, $0C, nA6, nG6, nFs6, $04, nE6, nFs6
+	dc.b nD6, $0C, nA5, $18, nB5, $0C, nE6, nA6
+	dc.b nG6, nFs6, $04, nE6, nFs6, nD6, $18, nC6
+	dc.b $0C, nB5, nE6, nA6, nG6, nFs6, $04, nE6
+	dc.b nFs6, nD6, $0C, nA5, nB5, nB5, nC6, nG6
+	dc.b $24, sHold, $24, nC6, $0C, nD6, nA6, $24
+	sRet
+
+FieldMotavia_Call2:
+	dc.b nC7, $18, nG6, nE7, nD7, $0C, nC7, nB6
+	dc.b $03, nC7, nD7, $24, sHold, $06, sHold, $24
+	dc.b nB6, $0C
+	sRet
+
+FieldMotavia_FM2:
+	sVoice		$00
+	saVol		$05
+	dc.b nE3, $06, nRst
+	saVol		$FE
+	dc.b nE3, nRst
+	saVol		$FD
+	dc.b nE3, nRst
+	saVol		$02
+	dc.b nE3, nRst
+	saVol		$FF
+
+FieldMotavia_Jump2:
+	sCall		FieldMotavia_Call3
+	dc.b nB2, nRst, nB2, nRst, nB2, nRst, nB2, nRst
+	sCall		FieldMotavia_Call3
+	dc.b nB2, $04, nC3, $04, nB2, $04, nB2, $03
+	dc.b nRst, $05, nC3, $04, nB2, $03, nRst, $15
+	sCall		FieldMotavia_Call4
+	dc.b nE3, nRst, nE3, nRst, nE3, nRst, nE3, nRst
+	dc.b nE3, nRst, nE3, nRst, nE3, nRst, nE3, nRst
+	sCall		FieldMotavia_Call4
+	dc.b nB2, nRst, nB2, nRst, nB2, nRst, nB2, nRst
+	dc.b nB2, nRst, nB2, nRst, nB2, nRst, nB2, nRst
+	sJump		FieldMotavia_Jump2
+
+FieldMotavia_Call3:
+	dc.b nE3, $06, nRst
+	sLoop		$00, $0C, FieldMotavia_Call3
+	dc.b nD3, $06, nRst, nD3, nRst, nD3, nRst, nD3
+	dc.b nRst
+
+FieldMotavia_Loop1:
+	dc.b nE3, $06, nRst
+	sLoop		$00, $08, FieldMotavia_Loop1
+
+FieldMotavia_Loop2:
+	dc.b nC3, $06, nRst
+	sLoop		$00, $08, FieldMotavia_Loop2
+	dc.b nD3, $06, nRst, nD3, nRst, nD3, nRst, nD3
+	dc.b nRst
+	sRet
+
+FieldMotavia_Call4:
+	dc.b nC3, $06, nRst, nC3, nRst, nC3, nRst, nC3
+	dc.b nRst, nC3, nRst, nC3, nRst, nC3, nRst, nC3
+	dc.b nRst, nG3, nRst, nG3, nRst, nG3, nRst, nG3
+	dc.b nRst, nG3, nRst, nG3, nRst, nG3, nRst, nG3
+	dc.b nRst, nF3, nRst, nF3, nRst, nF3, nRst, nF3
+	dc.b nRst, nF3, nRst, nF3, nRst, nF3, nRst, nF3
+	dc.b nRst
+	sRet
+
+FieldMotavia_FM3:
+	sVoice		$02
+	sModAMPS	$02, $01, $02, $04
+	saVol		$08
+	dc.b nE6, $04
+	saVol		$FF
+	dc.b nE6
+	saVol		$FF
+	dc.b nE6
+	saVol		$FF
+	dc.b nE6
+	saVol		$FE
+	dc.b nE6
+	saVol		$FE
+	dc.b nE6
+	saVol		$FE
+	dc.b nE6
+	saVol		$FE
+	dc.b nE6
+	saVol		$FE
+	dc.b nE6
+	saVol		$02
+	dc.b nE6
+	saVol		$02
+	dc.b nE6
+	saVol		$02
+	dc.b nE6
+	saVol		$FF
+
+FieldMotavia_Loop4:
+	sCall		FieldMotavia_Call5
+	dc.b nE6, $04, nE6, nE6, nE6, nE6, nE6, nE6
+	dc.b nE6, nE6, nE6, nE6, nE6, nD6, $04, nD6
+	dc.b nD6, nD6, nD6, nD6, nD6, nD6, nD6, nD6
+	dc.b nD6, nD6
+	sCall		FieldMotavia_Call5
+
+FieldMotavia_Loop3:
+	dc.b nC6, $04
+	sLoop		$00, $18, FieldMotavia_Loop3
+	dc.b nD6, $04, nD6, nD6, nD6, nD6, nD6, nD6
+	dc.b nD6, nD6, nD6, nD6, nD6, nB5, nB5, nB5
+	dc.b nB5, nB5, nB5, nB5, nC6, nCs6, nD6, nEb6
+	dc.b nE6
+	sLoop		$01, $02, FieldMotavia_Loop4
+	sCall		FieldMotavia_Call6
+	dc.b nE6, nE6, nE6, nF6, nF6, nF6, nG6, nG6
+	dc.b nG6, nE6, nE6, nE6, nE6, nE6, nE6, nE6
+	dc.b nE6, nE6, nE6, nE6, nE6, nE6, nE6, nE6
+	dc.b nG6, nG6, nG6, nFs6, nFs6, nFs6, nE6, nE6
+	dc.b nE6
+	sCall		FieldMotavia_Call6
+	dc.b nF6, nF6, nF6, nF6, nF6, nF6, nF6, nF6
+	dc.b nF6, nE6, nE6, nE6, nE6, nE6, nE6, nE6
+	dc.b nE6, nE6, nE6, nE6, nE6, nEb6, nEb6, nEb6
+	dc.b nEb6, nEb6, nEb6, nEb6, $0C, nRst, $0C
+	sJump		FieldMotavia_Loop4
+
+FieldMotavia_Call5:
+	dc.b nE6, $04, nE6, nE6, nE6, nE6, nE6, nE6
+	dc.b nE6, nE6, nE6, nE6, nE6, nE6, nE6, nE6
+	dc.b nG6, nG6, nG6, nFs6, nFs6, nFs6, nA6, nA6
+	dc.b nA6
+	sRet
+
+FieldMotavia_Call6:
+	dc.b nC6, $04, nC6, nC6, nC6, nC6, nC6, nC6
+	dc.b nC6, nC6, nC6, nC6, nC6, nC6, nC6, nC6
+	dc.b nE6, nE6, nE6, nD6, nD6, nD6, nC6, nC6
+	dc.b nC6, nG6, nG6, nG6, nG6, nG6, nG6, nG6
+	dc.b nG6, nG6, nG6, nG6, nG6, nG6, nG6, nG6
+	dc.b nB6, nB6, nB6, nA6, nA6, nA6, nG6, nG6
+	dc.b nG6, nF6, nF6, nF6, nF6, nF6, nF6, nF6
+	dc.b nF6, nF6, nC6, nC6, nC6, nF6, nF6, nF6
+	sRet
+
+FieldMotavia_FM4:
+	sVoice		$02
+	sModAMPS	$02, $01, $02, $04
+	saVol		$08
+	dc.b nB5, $04
+	saVol		$FF
+	dc.b nB5
+	saVol		$FF
+	dc.b nB5
+	saVol		$FF
+	dc.b nB5
+	saVol		$FE
+	dc.b nB5
+	saVol		$FE
+	dc.b nB5
+	saVol		$FE
+	dc.b nB5
+	saVol		$FE
+	dc.b nB5
+	saVol		$FE
+	dc.b nB5
+	saVol		$02
+	dc.b nB5
+	saVol		$02
+	dc.b nB5
+	saVol		$02
+	dc.b nB5
+	saVol		$FF
+
+FieldMotavia_Loop6:
+	sCall		FieldMotavia_Call7
+	dc.b nB5, $04, nB5, nB5, nB5, nB5, nB5, nB5
+	dc.b nB5, nB5, nB5, nB5, nB5, nA5, $04, nA5
+	dc.b nA5, nA5, nA5, nA5, nA5, nA5, nA5, nA5
+	dc.b nA5, nA5
+	sCall		FieldMotavia_Call7
+
+FieldMotavia_Loop5:
+	dc.b nG5, $04
+	sLoop		$00, $18, FieldMotavia_Loop5
+	dc.b nA5, $04, nA5, nA5, nA5, nA5, nA5, nA5
+	dc.b nA5, nA5, nA5, nA5, nA5, nFs5, nFs5, nFs5
+	dc.b nFs5, nFs5, nFs5, nFs5, nG5, nAb5, nA5, nBb5
+	dc.b nB5
+	sLoop		$01, $02, FieldMotavia_Loop6
+	sCall		FieldMotavia_Call8
+	dc.b nA5, $04, nA5, nA5, nC6, nC6, nC6, nE6
+	dc.b nE6, nE6, nB5, nB5, nB5, nB5, nB5, nB5
+	dc.b nB5, nB5, nB5, nB5, nB5, nB5, nB5, nB5
+	dc.b nB5, nE6, nE6, nE6, nE6, nE6, nE6, nB5
+	dc.b nB5, nB5
+	sCall		FieldMotavia_Call8
+	dc.b nC6, $04, nC6, nC6, nC6, nC6, nC6, nC6
+	dc.b nC6, nC6, nB5, nB5, nB5, nB5, nB5, nB5
+	dc.b nB5, nB5, nB5, nB5, nB5, nB5, nB5, nB5
+	dc.b nB5, nB5, nB5, nB5, nB5, $0C, nRst, $0C
+	sJump		FieldMotavia_Loop6
+
+FieldMotavia_Call7:
+	dc.b nB5, $04, nB5, nB5, nB5, nB5, nB5, nB5
+	dc.b nB5, nB5, nB5, nB5, nB5, nB5, nB5, nB5
+	dc.b nD6, nD6, nD6, nCs6, nCs6, nCs6, nE6, nE6
+	dc.b nE6
+	sRet
+
+FieldMotavia_Call8:
+	dc.b nG5, $04, nG5, nG5, nG5, nG5, nG5, nG5
+	dc.b nG5, nG5, nG5, nG5, nG5, nG5, nG5, nG5
+	dc.b nC6, nC6, nC6, nB5, nB5, nB5, nG5, nG5
+	dc.b nG5, nD6, nD6, nD6, nD6, nD6, nD6, nD6
+	dc.b nD6, nD6, nD6, nD6, nD6, nD6, nD6, nD6
+	dc.b nG6, nG6, nG6, nFs6, nFs6, nFs6, nD6, nD6
+	dc.b nD6, nC6, nC6, nC6, nC6, nC6, nC6, nC6
+	dc.b nC6, nC6, nA5, nA5, nA5, nC6, nC6, nC6
+	sRet
+
+FieldMotavia_PSG1:
+	dc.b nRst, $02
+
+FieldMotavia_PSG2:
+	dc.b nRst, $01
+
+FieldMotavia_PSG3:
+	saVol	$20
+	dc.b nE4, $04, nG4
+	saVol	-$08
+	dc.b nB4, nE5
+	saVol	-$08
+	dc.b nG5, nB5
+	saVol	-$08
+	dc.b nE6, nB5
+	saVol	$08
+	dc.b nG5, nE5
+	saVol	$08
+	dc.b nB4, nG4
+	saVol	-$10
+
+FieldMotavia_Loop7:
+	sCall		FieldMotavia_Call9
+	sCall		FieldMotavia_Call9
+	sCall		FieldMotavia_Call9
+	dc.b nD4, $04, nFs4, nA4, nD5, nFs5, nA5, nD6
+	dc.b nA5, nFs5, nD5, nA4, nFs4
+	sCall		FieldMotavia_Call9
+	sCall		FieldMotavia_Call9
+	dc.b nC4, $04, nE4, nG4, nC5, nE5, nG5, nC6
+	dc.b nG5, nE5, nC5, nG4, nE4, nC4, nE4, nG4
+	dc.b nC5, nE5, nG5, nC6, nG5, nE5, nC5, nG4
+	dc.b nE4, nD4, nFs4, nA4, nD5, nFs5, nA5, nD6
+	dc.b nA5, nFs5, nD5, nA4, nFs4, nB3, nEb4, nFs4
+	dc.b nB4, nEb5, nFs5, nB5, nFs5, nEb5, nB4, nFs4
+	dc.b nEb4
+	sLoop		$00, $02, FieldMotavia_Loop7
+	dc.b nRst, $30, nRst, nRst, nRst, nRst, nRst, nRst
+	dc.b nRst, nRst, nRst, nRst, nRst, nRst, nRst, nRst
+	dc.b nRst
+	sJump		FieldMotavia_Loop7
+
+FieldMotavia_Call9:
+	dc.b nE4, $04, nG4, nB4, nE5, nG5, nB5, nE6
+	dc.b nB5, nG5, nE5, nB4, nG4
+	sRet
+
+FieldMotavia_DAC2:
+	dc.b	nRst, $0C, dRideCymbal, $24
+	sJump            FieldMotavia_DAC2
+	
+FieldMotavia_DAC1:
+	sStop

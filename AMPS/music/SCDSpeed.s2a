@@ -1,0 +1,308 @@
+SCDSpeed_Header:
+	sHeaderInit
+	sHeaderTempo	$43, $03
+	sHeaderCh	$05, $03
+	sHeaderDAC	SCDSpeed_DAC
+	sHeaderDAC	SCDSpeed_DAC2
+	sHeaderFM	SCDSpeed_FM1, $00, $02
+	sHeaderFM	SCDSpeed_FM2, $00, $04
+	sHeaderFM	SCDSpeed_FM3, $00, $09
+	sHeaderFM	SCDSpeed_FM4, $00, $06
+	sHeaderFM	SCDSpeed_FM5, $00, $06
+	sHeaderPSG	SCDSpeed_PSG1, $0C, $2B, $00, vNone
+	sHeaderPSG	SCDSpeed_PSG2, $0C, $20, $00, vNone
+	sHeaderPSG	SCDSpeed_PSG3, $0C, $05, $00, v02
+
+        ; Patch $00
+	; $3A
+	; $61, $3C, $13, $32,	$98, $D8, $9D, $DA
+	; $05, $09, $05, $06,	$03, $01, $04, $04
+	; $1F, $0F, $0F, $AF,	$21, $47, $31, $05
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$06, $01, $03, $03
+	spMultiple	$01, $03, $0C, $02
+	spRateScale	$02, $02, $03, $03
+	spAttackRt	$18, $1D, $18, $1A
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$05, $05, $09, $06
+	spSustainLv	$01, $00, $00, $0A
+	spDecayRt	$03, $04, $01, $04
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$21, $31, $47, $05
+
+	; Patch $01
+	; $38
+	; $33, $01, $51, $01,	$10, $13, $1A, $1B
+	; $0F, $1F, $1F, $1F,	$01, $01, $01, $01
+	; $33, $03, $03, $08,	$19, $1B, $1A, $0E
+	spAlgorithm	$00
+	spFeedback	$07
+	spDetune	$03, $05, $00, $00
+	spMultiple	$03, $01, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$10, $1A, $13, $1B
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $1F, $1F, $1F
+	spSustainLv	$03, $00, $00, $00
+	spDecayRt	$01, $01, $01, $01
+	spReleaseRt	$03, $03, $03, $08
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$19, $1A, $1B, $0E
+
+	; Patch $02
+	; $2C
+	; $72, $78, $34, $34,	$1F, $12, $1F, $12
+	; $00, $0A, $00, $0A,	$00, $00, $00, $00
+	; $0F, $1F, $0F, $1F,	$16, $0C, $17, $0C
+	spAlgorithm	$04
+	spFeedback	$05
+	spDetune	$07, $03, $07, $03
+	spMultiple	$02, $04, $08, $04
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $12, $12
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $00, $0A, $0A
+	spSustainLv	$00, $00, $01, $01
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$16, $17, $0C, $0C
+
+SCDSpeed_DAC:
+	dc.b dCrashCymbal, $06, dSnareS3, dKickS3, $03, $03, dSnareS3, $06
+        dc.b dKickS3, $06, dSnareS3, dKickS3, $03, $03, dSnareS3, $06
+	dc.b dKickS3, $06, dSnareS3, dKickS3, $03, $03, dSnareS3, $06
+	dc.b dKickS3, dSnareS3, dKickS3, $03, $03, dSnareS3, dSnareS3, $02
+	dc.b $01
+
+SCDSpeed_Loop15:
+	dc.b dKickS3, $06, dSnareS3, dKickS3, $03, $03, dSnareS3, $06
+	sLoop		$00, $03, SCDSpeed_Loop15
+	dc.b dKickS3, dSnareS3, dMidTomS2, $03, $02, $01, dSnareS3, $03
+	dc.b dLowTomS2
+
+SCDSpeed_Loop16:
+	dc.b dKickS3, $06, dSnareS3, dKickS3, $03, $03, dSnareS3, $06
+	sLoop		$00, $03, SCDSpeed_Loop16
+	dc.b dKickS3, dSnareS3, dKickS3, $03, $03, dSnareS3, dSnareS3, $02
+	dc.b $01
+
+SCDSpeed_Loop17:
+	dc.b dKickS3, $06, dSnareS3, dKickS3, $03, $03, dSnareS3, $06
+	sLoop		$00, $03, SCDSpeed_Loop17
+	dc.b dKickS3, dKickS3, dSnareS3, $03, $03, dKickS3, dSnareS3
+	sJump		SCDSpeed_DAC
+
+SCDSpeed_FM1:
+	sVoice		$01
+
+SCDSpeed_Jump1:
+	sPan		spCenter, $00
+
+SCDSpeed_Loop2:
+	dc.b nF2, $09
+
+SCDSpeed_Loop1:
+	dc.b nF3, $03, nRst
+	sLoop		$00, $04, SCDSpeed_Loop1
+	dc.b nF3, nEb3, $06, nF3
+	sLoop		$01, $02, SCDSpeed_Loop2
+
+SCDSpeed_Loop4:
+	dc.b nFs2, $09
+
+SCDSpeed_Loop3:
+	dc.b nFs3, $03, nRst
+	sLoop		$00, $04, SCDSpeed_Loop3
+	dc.b nFs3, nE3, $06, nFs3
+	sLoop		$01, $02, SCDSpeed_Loop4
+
+SCDSpeed_Loop6:
+	dc.b nAb2, $09
+
+SCDSpeed_Loop5:
+	dc.b nAb3, $03, nRst
+	sLoop		$00, $04, SCDSpeed_Loop5
+	dc.b nAb3, nFs3, $06, nAb3
+	sLoop		$01, $02, SCDSpeed_Loop6
+	dc.b nBb2, $09
+
+SCDSpeed_Loop7:
+	dc.b nBb3, $03, nRst
+	sLoop		$00, $04, SCDSpeed_Loop7
+	dc.b nBb3, nAb3, $06, nBb3, nBb2, $09, nBb3, $03
+	dc.b nRst, nBb3, nRst, nAb3, nBb3, $18
+	sJump		SCDSpeed_Jump1
+
+SCDSpeed_FM2:
+	sVoice		$00
+
+SCDSpeed_Loop8:
+	dc.b nF1, $03, $03, nEb1, nF1, nRst, nF1, nEb1
+	dc.b nF1, nRst, nF1, nF1, nF1, nEb1, nEb1, nF1
+	dc.b nEb1
+	sLoop		$00, $02, SCDSpeed_Loop8
+
+SCDSpeed_Loop9:
+	dc.b nFs1, nFs1, nE1, nFs1, nRst, nFs1, nE1, nFs1
+	dc.b nRst, nFs1, nFs1, nFs1, nE1, nE1, nFs1, nE1
+	sLoop		$00, $02, SCDSpeed_Loop9
+
+SCDSpeed_Loop10:
+	dc.b nAb1, nAb1, nFs1, nAb1, nRst, nAb1, nFs1, nAb1
+	dc.b nRst, nAb1, nAb1, nAb1, nFs1, nFs1, nAb1, nFs1
+	sLoop		$00, $02, SCDSpeed_Loop10
+	dc.b nBb1, nBb1, nAb1, nBb1, nRst, nBb1, nAb1, nBb1
+	dc.b nRst, nBb1, nBb1, nBb1, nAb1, nAb1, nBb1, nAb1
+	dc.b nBb1, nBb1, nAb1, nBb1, nRst, nBb1, nAb1
+	saVol		$FB
+	dc.b nBb1, nBb1, $0C, $0C
+	saVol		$05
+	sJump		SCDSpeed_FM2
+
+SCDSpeed_FM4:
+	sPan		spCenter, $00
+	sVoice		$02
+
+SCDSpeed_Jump2:
+	dc.b nBb3, $24, nAb3, $0C, nBb3, nAb3, nBb3, nAb3
+	dc.b nB3, $24, nA3, $0C, nB3, nA3, nB3, nA3
+	dc.b nCs4, $24, nB3, $0C, nCs4, nB3, nCs4, nB3
+	dc.b nEb4, $30, $09, nF4, nEb4, $06, nD4, $18
+	sJump		SCDSpeed_Jump2
+
+SCDSpeed_FM5:
+	sPan		spCenter, $00
+	sVoice		$02
+
+SCDSpeed_Jump3:
+	dc.b nF3, $24, $0C, $0C, $0C, $0C, $0C, nFs3
+	dc.b $24, $0C, $0C, $0C, $0C, $0C, nAb3, $24
+	dc.b $0C, $0C, $0C, $0C, $0C, nBb3, $30, $18
+	dc.b $18
+	sJump		SCDSpeed_Jump3
+
+SCDSpeed_PSG1:
+	dc.b nRst, $06
+	sJump SCDSpeed_PSG2
+	sstop
+
+SCDSpeed_PSG2:
+	dc.b nF1, $03
+	saVol		$FF
+	dc.b nBb1
+	saVol		$01
+	dc.b nEb2
+	saVol		$FE
+	dc.b nF2
+	saVol		$FF
+	dc.b nBb2
+	saVol		$FF
+	dc.b nC3
+	saVol		$01
+	dc.b nBb2
+	saVol		$01
+	dc.b nF2
+	saVol		$02
+	sLoop		$00, $04, SCDSpeed_PSG2
+
+SCDSpeed_Loop11:
+	dc.b nFs1
+	saVol		$FF
+	dc.b nB1
+	saVol		$01
+	dc.b nE2
+	saVol		$FE
+	dc.b nFs2
+	saVol		$FF
+	dc.b nB2
+	saVol		$FF
+	dc.b nCs3
+	saVol		$01
+	dc.b nB2
+	saVol		$01
+	dc.b nFs2
+	saVol		$02
+	sLoop		$00, $04, SCDSpeed_Loop11
+
+SCDSpeed_Loop12:
+	dc.b nAb1
+	saVol		$FF
+	dc.b nCs2
+	saVol		$01
+	dc.b nFs2
+	saVol		$FE
+	dc.b nAb2
+	saVol		$FF
+	dc.b nCs3
+	saVol		$FF
+	dc.b nEb3
+	saVol		$01
+	dc.b nCs3
+	saVol		$01
+	dc.b nAb2
+	saVol		$02
+	sLoop		$00, $04, SCDSpeed_Loop12
+
+SCDSpeed_Loop13:
+	dc.b nBb1
+	saVol		$FF
+	dc.b nEb2
+	saVol		$01
+	dc.b nAb2
+	saVol		$FE
+	dc.b nBb2
+	saVol		$FF
+	dc.b nEb3
+	saVol		$FF
+	dc.b nF3
+	saVol		$01
+	dc.b nEb3
+	saVol		$01
+	dc.b nBb2
+	saVol		$02
+	sLoop		$00, $02, SCDSpeed_Loop13
+	dc.b nBb1
+	saVol		$FF
+	dc.b nEb2
+	saVol		$01
+	dc.b nAb2
+	saVol		$FE
+	dc.b nBb2
+	saVol		$FF
+	dc.b nEb3
+	saVol		$FF
+	dc.b nF3
+	saVol		$01
+	dc.b nEb3
+	saVol		$01
+	dc.b nBb2
+	saVol		$FE
+	dc.b nBb1, $18
+	saVol		$04
+	sJump		SCDSpeed_PSG2
+	sstop
+
+SCDSpeed_PSG3:
+	sNoisePSG	$E7
+
+SCDSpeed_Jump4:
+	sVolEnv		v02
+	dc.b nA5
+
+SCDSpeed_Loop14:
+	dc.b $06
+	sLoop		$00, $3C, SCDSpeed_Loop14
+	sVolEnv		v01
+	dc.b $18
+	sJump		SCDSpeed_Jump4
+
+SCDSpeed_FM3:
+        dc.b nRst, $08
+	sJump		SCDSpeed_Jump1
+	sStop
+
+SCDSpeed_DAC2:
+	sStop

@@ -1,0 +1,12 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$01
+	sHeaderSFX	(1<<cfbRun), ctFM3, .FM3, $07, $05
+
+.FM3:
+	sVoice		pScoreTally
+
+.FM3loop:
+	dc.b		nEb5, $09
+	sLoop		$00, $08, .FM3loop
+	sStop

@@ -1,0 +1,16 @@
+[Design]
+Black fox or wolf wearing a purple robe with a yellow belt.
+Possibly has red eyes?
+Animates kind of like Reimu, see Hisoutensoku_Reimu.png in the same folder as this one.
+
+[Fight Details]
+Throws needles and cards. Jumps around the arena, trying to dodge and hit the player. Can throw projectiles from the ground or the air.
+Later fights could have more advanced and harder to dodge attacks.
+Instead of flashing white when hit, should flash transparent like the player does.
+Don't use the "slam" sound from other bosses, use the "thud" sound from Knuckles's S3K fight and have her fall to the ground and get back up.
+Very agile, will require the player to pay attention unlike the wrecking ball boss.
+
+[Music]
+BGZ's fight will use Bad Apple!! (TH04).
+Later fights could use Maiden's Capriccio (TH04).
+If we bring her back for North Island, she'd use Bad Apple!! (Alstroemeria Records feat. Nomico) and Maiden's Capriccio ~ Dream Battle (TH08) instead.

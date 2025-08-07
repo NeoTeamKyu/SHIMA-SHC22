@@ -1,0 +1,105 @@
+FireShield_DPLC:
+FireShield_DPLC_0: 	dc.w FireShield_DPLC_32-FireShield_DPLC
+FireShield_DPLC_2: 	dc.w FireShield_DPLC_35-FireShield_DPLC
+FireShield_DPLC_4: 	dc.w FireShield_DPLC_3A-FireShield_DPLC
+FireShield_DPLC_6: 	dc.w FireShield_DPLC_41-FireShield_DPLC
+FireShield_DPLC_8: 	dc.w FireShield_DPLC_48-FireShield_DPLC
+FireShield_DPLC_A: 	dc.w FireShield_DPLC_4D-FireShield_DPLC
+FireShield_DPLC_C: 	dc.w FireShield_DPLC_54-FireShield_DPLC
+FireShield_DPLC_E: 	dc.w FireShield_DPLC_5B-FireShield_DPLC
+FireShield_DPLC_10: 	dc.w FireShield_DPLC_60-FireShield_DPLC
+FireShield_DPLC_12: 	dc.w FireShield_DPLC_69-FireShield_DPLC
+FireShield_DPLC_14: 	dc.w FireShield_DPLC_6E-FireShield_DPLC
+FireShield_DPLC_16: 	dc.w FireShield_DPLC_73-FireShield_DPLC
+FireShield_DPLC_18: 	dc.w FireShield_DPLC_78-FireShield_DPLC
+FireShield_DPLC_1A: 	dc.w FireShield_DPLC_7D-FireShield_DPLC
+FireShield_DPLC_1C: 	dc.w FireShield_DPLC_82-FireShield_DPLC
+FireShield_DPLC_1E: 	dc.w FireShield_DPLC_89-FireShield_DPLC
+FireShield_DPLC_20: 	dc.w FireShield_DPLC_8C-FireShield_DPLC
+FireShield_DPLC_22: 	dc.w FireShield_DPLC_91-FireShield_DPLC
+FireShield_DPLC_24: 	dc.w FireShield_DPLC_96-FireShield_DPLC
+FireShield_DPLC_26: 	dc.w FireShield_DPLC_9B-FireShield_DPLC
+FireShield_DPLC_28: 	dc.w FireShield_DPLC_A0-FireShield_DPLC
+FireShield_DPLC_2A: 	dc.w FireShield_DPLC_A5-FireShield_DPLC
+FireShield_DPLC_2C: 	dc.w FireShield_DPLC_AA-FireShield_DPLC
+FireShield_DPLC_2E: 	dc.w FireShield_DPLC_B1-FireShield_DPLC
+FireShield_DPLC_30: 	dc.w FireShield_DPLC_B4-FireShield_DPLC
+FireShield_DPLC_32: 	dc.b $1
+	dc.b $F0, $0
+FireShield_DPLC_35: 	dc.b $2
+	dc.b $F0, $10
+	dc.b $80, $20
+FireShield_DPLC_3A: 	dc.b $3
+	dc.b $F0, $29
+	dc.b $F0, $39
+	dc.b $40, $49
+FireShield_DPLC_41: 	dc.b $3
+	dc.b $F0, $4E
+	dc.b $F0, $5E
+	dc.b $20, $6E
+FireShield_DPLC_48: 	dc.b $2
+	dc.b $F0, $71
+	dc.b $50, $81
+FireShield_DPLC_4D: 	dc.b $3
+	dc.b $F0, $4E
+	dc.b $F0, $5E
+	dc.b $20, $6E
+FireShield_DPLC_54: 	dc.b $3
+	dc.b $F0, $29
+	dc.b $F0, $39
+	dc.b $40, $49
+FireShield_DPLC_5B: 	dc.b $2
+	dc.b $A0, $87
+	dc.b $D0, $1B
+FireShield_DPLC_60: 	dc.b $4
+	dc.b $0, $0
+	dc.b $0, $5
+	dc.b $30, $1
+	dc.b $90, $6
+FireShield_DPLC_69: 	dc.b $2
+	dc.b $F0, $92
+	dc.b $90, $A2
+FireShield_DPLC_6E: 	dc.b $2
+	dc.b $F0, $AC
+	dc.b $B0, $BC
+FireShield_DPLC_73: 	dc.b $2
+	dc.b $F0, $C8
+	dc.b $D0, $D8
+FireShield_DPLC_78: 	dc.b $2
+	dc.b $B0, $92
+	dc.b $C0, $9F
+FireShield_DPLC_7D: 	dc.b $2
+	dc.b $F0, $E6
+	dc.b $D0, $F6
+FireShield_DPLC_82: 	dc.b $3
+	dc.b $F1, $4
+	dc.b $F1, $14
+	dc.b $31, $24
+FireShield_DPLC_89: 	dc.b $1
+	dc.b $F1, $28
+FireShield_DPLC_8C: 	dc.b $2
+	dc.b $F1, $38
+	dc.b $41, $48
+FireShield_DPLC_91: 	dc.b $2
+	dc.b $F1, $4D
+	dc.b $51, $5D
+FireShield_DPLC_96: 	dc.b $2
+	dc.b $F1, $63
+	dc.b $D1, $73
+FireShield_DPLC_9B: 	dc.b $2
+	dc.b $F1, $81
+	dc.b $11, $91
+FireShield_DPLC_A0: 	dc.b $2
+	dc.b $F1, $63
+	dc.b $D1, $73
+FireShield_DPLC_A5: 	dc.b $2
+	dc.b $F1, $4D
+	dc.b $51, $5D
+FireShield_DPLC_AA: 	dc.b $3
+	dc.b $21, $38
+	dc.b $81, $44
+	dc.b $81, $3B
+FireShield_DPLC_B1: 	dc.b $1
+	dc.b $F1, $28
+FireShield_DPLC_B4: 	dc.b $0
+	even

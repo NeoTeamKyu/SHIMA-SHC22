@@ -1,0 +1,12 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$01
+	sHeaderSFX	$80, ctFM5, .FM5, $0C, $00
+
+.FM5	sVoice		pDeath
+	dc.b nC5, $02, nG5, $01, nC6, $02
+	saVol		$08
+	dc.b nC5, $01, nG5, $02, nC6, $01
+	saVol		$09
+	dc.b nC5, $02, nG5, $01, nC6, $02
+	sStop

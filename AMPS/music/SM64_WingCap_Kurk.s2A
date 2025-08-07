@@ -1,0 +1,414 @@
+WingCap_Header:
+	sHeaderInit
+	sHeaderTempo	$42, $25
+	sHeaderCh	$05, $03
+	sHeaderDAC	WingCap_DAC1
+	sHeaderDAC	WingCap_DAC2
+	sHeaderFM	WingCap_FM1, $00, $05
+	sHeaderFM	WingCap_FM2, $00, $06
+	sHeaderFM	WingCap_FM3, $00, $08
+	sHeaderFM	WingCap_FM4, $00, $08
+	sHeaderFM	WingCap_FM5, $00, $0A
+	sHeaderPSG	WingCap_PSG1, $0C, $0A, $00, vNone
+	sHeaderPSG	WingCap_PSG2, $0C, $0A, $00, vNone
+	sHeaderPSG	WingCap_PSG3, $0C, $0A, $00, vNone
+        
+	; Patch $00
+	; $2D
+	; $01, $01, $02, $02,	$14, $14, $14, $14
+	; $0A, $0D, $0D, $07,	$05, $07, $07, $07
+	; $1A, $78, $7A, $79,	$21, $08, $08, $08
+	spAlgorithm	$05
+	spFeedback	$05
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $02, $01, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$14, $14, $14, $14
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $0D, $0D, $07
+	spSustainLv	$01, $07, $07, $07
+	spDecayRt	$05, $07, $07, $07
+	spReleaseRt	$0A, $0A, $08, $09
+	spTotalLv	$21, $08, $08, $08
+
+	; Patch $01
+	; $3A
+	; $01, $07, $31, $71,	$8E, $8E, $8D, $53
+	; $0E, $0E, $0E, $06,	$00, $00, $00, $00
+	; $1F, $FF, $1F, $2F,	$18, $28, $27, $00
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$00, $03, $00, $07
+	spMultiple	$01, $01, $07, $01
+	spRateScale	$02, $02, $02, $01
+	spAttackRt	$0E, $0D, $0E, $13
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $0E, $0E, $06
+	spSustainLv	$01, $01, $0F, $02
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$18, $27, $28, $00
+
+	; Patch $02
+	; $2C
+	; $74, $74, $34, $34,	$1F, $12, $1F, $1F
+	; $00, $04, $00, $04,	$00, $09, $00, $09
+	; $00, $08, $00, $08,	$16, $07, $17, $07
+	spAlgorithm	$04
+	spFeedback	$05
+	spDetune	$07, $03, $07, $03
+	spMultiple	$04, $04, $04, $04
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $12, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $00, $04, $04
+	spSustainLv	$00, $00, $00, $00
+	spDecayRt	$00, $00, $09, $09
+	spReleaseRt	$00, $00, $08, $08
+	spTotalLv	$16, $17, $07, $07
+
+	; Patch $03
+	; $3E
+	; $38, $01, $7A, $34,	$59, $D9, $5F, $9C
+	; $0F, $04, $0F, $0A,	$02, $02, $05, $05
+	; $AF, $AF, $66, $66,	$28, $00, $23, $00
+	spAlgorithm	$06
+	spFeedback	$07
+	spDetune	$03, $07, $00, $03
+	spMultiple	$08, $0A, $01, $04
+	spRateScale	$01, $01, $03, $02
+	spAttackRt	$19, $1F, $19, $1C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $0F, $04, $0A
+	spSustainLv	$0A, $06, $0A, $06
+	spDecayRt	$02, $05, $02, $05
+	spReleaseRt	$0F, $06, $0F, $06
+	spTotalLv	$28, $23, $00, $00
+
+WingCap_DAC1:
+
+WingCap_Loop23:
+	dc.b dKickS3
+	dc.b $0C
+	sLoop		$00, $08, WingCap_Loop23
+	dc.b $06
+
+WingCap_Loop24:
+	dc.b dHighCongo, dLowCongo, dLowCongo, $03, $03, dKickS3, $06, dHighCongo
+	dc.b dLowCongo, dLowCongo, dKickS3
+	sLoop		$00, $15, WingCap_Loop24
+	dc.b dHighCongo, dLowCongo, dLowCongo, $03, $03, dKickS3, $06, dHighCongo
+	dc.b dLowCongo, dLowCongo
+	sStop
+WingCap_DAC2:
+	sStop
+
+WingCap_FM1:
+	sVoice		$00
+	dc.b nRst, $60
+	sPan		spCenter
+
+WingCap_Loop1:
+	dc.b nD1, $09, nA1, nC2, $12, nA1, $06, nC2
+	dc.b nC1, $09, nG1, nB1, $12, nG1, $06, nB1
+	sLoop		$00, $03, WingCap_Loop1
+
+WingCap_Loop2:
+	dc.b nD2, $09, nA1, nD2, $12, nA1, $06, nD2
+	dc.b nC2, $09, nG1, nC2, $12, nG1, $06, nC2
+	sLoop		$00, $03, WingCap_Loop2
+
+WingCap_Loop3:
+	dc.b nD1, $09, nA1, nC2, $12, nA1, $06, nC2
+	dc.b nC1, $09, nG1, nB1, $12, nG1, $06, nB1
+	sLoop		$00, $02, WingCap_Loop3
+
+WingCap_Loop4:
+	dc.b nD2, $09, nA1, nD2, $12, nA1, $06, nD2
+	dc.b nC2, $09, nG1, nC2, $12, nG1, $06, nC2
+	sLoop		$00, $03, WingCap_Loop4
+	sStop
+
+WingCap_FM2:
+	sVoice		$01
+	sPan		spCenter
+	dc.b nRst, $7F, $29
+	sPan		spCenter
+	dc.b nG4, $0C, nAb4, nA4, $24
+	saVol		$06
+	dc.b nE5, $0C
+	saVol		$FA
+	dc.b nB4, $24, nG4, $0C, nA4, $24, nE5, $0C
+	dc.b nB4, $18, $09, nC5, nCs5, $06, nD5, $24
+	dc.b nA5, $0C, nE5, $24, nC5, $0C, nD5, $24
+	dc.b nA5, $0C, nE5, $18, nB5, $0C, nG5, nA5
+	dc.b $12, nF5, $06, nE5, $09, nD5, nC5, $06
+
+WingCap_Loop5:
+	dc.b nB4, $24, nG4, $0C, nA4, $24, nE5, $0C
+	sLoop		$00, $02, WingCap_Loop5
+	dc.b nB4, $18, $09, nC5, nCs5, $06, nD5, $24
+	dc.b nA5, $0C, nE5, $24, nC5, $0C, nD5, $24
+	dc.b nA5, $0C, nE5, $18, nB5, $0C, nG5, nA5
+	dc.b $12, nF5, $06, nE5, $09, nD5, nC5, $06
+	dc.b nB4, $24, nG4, $0C
+	sStop
+
+WingCap_FM3:
+	sVoice		$02
+	sPan		spCenter
+
+WingCap_Loop6:
+	dc.b nA2, $30, nG2
+	sLoop		$00, $04, WingCap_Loop6
+	dc.b nF2, nG2, nF2, nG2, nF2, nG2, nA2, nG2
+	dc.b nA2, nG2, nF2, nG2, nF2, nG2, nF2, nG2
+	sStop
+
+WingCap_FM4:
+	sVoice		$02
+	sPan		spCenter
+
+WingCap_Loop7:
+	dc.b nC3, $30, nB2
+	sLoop		$00, $04, WingCap_Loop7
+	dc.b nA2, nB2, nA2, nB2, nA2, nB2, nC3, nB2
+	dc.b nC3, nB2, nA2, nB2, nA2, nB2, nA2, nB2
+	sStop
+
+WingCap_FM5:
+	sPan		spCenter
+	sVoice		$03
+	dc.b nE6, $03, nC6, nA5, nF5
+	saVol		$06
+	dc.b nE6, nC6, nA5, nF5
+	saVol		$04
+	dc.b nE6, nC6, nA5, nF5
+	saVol		$01
+	dc.b nE6, nC6, nA5, nF5
+	saVol		$F5
+	dc.b nD6, nB5, nG5, nE5
+	saVol		$06
+	dc.b nD6, nB5, nG5, nE5
+	saVol		$04
+	dc.b nD6, nB5, nG5, nE5
+	saVol		$01
+	dc.b nD6, nB5, nG5, nE5
+	saVol		$F5
+	dc.b nE6, nC6, nA5, nF5
+	saVol		$06
+	dc.b nE6, nC6, nA5, nF5
+	saVol		$04
+	dc.b nE6, nC6, nA5, nF5
+	saVol		$01
+	dc.b nE6, nC6, nA5, nF5
+	saVol		$F5
+	dc.b nD6, nB5, nG5, nE5
+	saVol		$06
+	dc.b nD6, nB5, nG5, nE5
+	saVol		$04
+	dc.b nD6, nB5, nG5, nE5
+	saVol		$01
+	dc.b nD6, nB5, nG5, nE5, nRst, $7F, $7F, $7F
+	dc.b $4B
+	saVol		$FF
+	dc.b nD6, $03, nB5, nG5, nE5, nC5, nB4, nE5
+	dc.b nG5, nRst, $7F, $7F, $7F, $4B, nD6, $03
+	dc.b nB5, nG5, nE5, nC5, nB4, nE5, nG5
+	sStop
+
+WingCap_PSG1:
+	dc.b nE1, $05, nRst, $01
+	sLoop		$00, $03, WingCap_PSG1
+
+WingCap_Loop9:
+	saVol	$02
+	dc.b nE1, $02, nRst, $01
+	saVol	$FE
+	dc.b nE1, $05, nRst, $01, nE1, $08
+
+WingCap_Loop8:
+	dc.b nRst, $01, nE1, $05
+	sLoop		$00, $05, WingCap_Loop8
+	dc.b nRst, $01
+	sLoop		$01, $03, WingCap_Loop9
+	saVol	$02
+	dc.b nE1, $02, nRst, $01
+	saVol	$FE
+	dc.b nE1, $02
+	saVol	$02
+	dc.b sHold, $03, nRst, $01, nE1, sHold, $01
+	saVol	$01
+	dc.b sHold, $05
+	saVol	$01
+	dc.b sHold, $01, nRst, nE1, sHold, $03
+	saVol	$01
+	dc.b sHold, $01, nRst, nE1, sHold, $02
+	saVol	$01
+	dc.b sHold, $02
+
+WingCap_Loop10:
+	dc.b nRst, $01, nE1, $05
+	sLoop		$00, $03, WingCap_Loop10
+
+WingCap_Loop12:
+	dc.b nRst, $01
+	saVol	$02
+	dc.b nE1, $02, nRst, $01
+	saVol	$FE
+	dc.b nE1, $05, nRst, $01, nE1, $08
+
+WingCap_Loop11:
+	dc.b nRst, $01, nE1, $05
+	sLoop		$00, $05, WingCap_Loop11
+	sLoop		$01, $13, WingCap_Loop12
+	dc.b nRst, $01
+	saVol	$02
+	dc.b nE1, $02, nRst, $01
+	saVol	$FE
+	dc.b nE1, $05, nRst, $01, nE1, $08, nRst, $01
+	dc.b nE1, $05, nRst, $01, nE1, $05, nRst, $01
+	sStop
+
+WingCap_PSG2:
+	dc.b nA1, $05, nRst, $01
+	sLoop		$00, $03, WingCap_PSG2
+	saVol	$02
+	dc.b nA1, $02, nRst, $01
+	saVol	$FE
+	dc.b nA1, $05, nRst, $01, nA1, $08, nRst, $01
+	dc.b nA1, $05, nRst, $01, nA1, $05
+
+WingCap_Loop13:
+	dc.b nRst, $01, nG1, $05
+	sLoop		$00, $03, WingCap_Loop13
+	dc.b nRst, $01
+	saVol	$02
+	dc.b nG1, $02, nRst, $01
+	saVol	$FE
+	dc.b nG1, $05, nRst, $01, nG1, $08, nRst, $01
+	dc.b nG1, $05, nRst, $01, nG1, $05
+
+WingCap_Loop14:
+	dc.b nRst, $01, nA1, $05
+	sLoop		$00, $03, WingCap_Loop14
+	dc.b nRst, $01
+	saVol	$02
+	dc.b nA1, $02, nRst, $01
+	saVol	$FE
+	dc.b nA1, $05, nRst, $01, nA1, $08, nRst, $01
+	dc.b nA1, $05, nRst, $01, nA1, $05
+
+WingCap_Loop15:
+	dc.b nRst, $01, nG1, $05
+	sLoop		$00, $03, WingCap_Loop15
+	dc.b nRst, $01
+	saVol	$02
+	dc.b nG1, $02, nRst, $01
+	saVol	$FE
+	dc.b nG1, $02
+	saVol	$02
+	dc.b sHold, $03, nRst, $01, nG1, sHold, $01
+	saVol	$01
+	dc.b sHold, $05
+	saVol	$01
+	dc.b sHold, $01, nRst, nG1, sHold, $03
+	saVol	$01
+	dc.b sHold, $01, nRst, nG1, sHold, $02
+	saVol	$01
+	dc.b sHold, $02
+
+WingCap_Loop16:
+	dc.b nRst, $01, nA1, $05
+	sLoop		$00, $03, WingCap_Loop16
+	dc.b nRst, $01
+	saVol	$02
+	dc.b nA1, $02, nRst, $01
+	saVol	$FE
+	dc.b nA1, $05, nRst, $01, nA1, $08, nRst, $01
+	dc.b nA1, $05, nRst, $01, nA1, $05
+
+WingCap_Loop17:
+	dc.b nRst, $01, nG1, $05
+	sLoop		$00, $03, WingCap_Loop17
+	dc.b nRst, $01
+	saVol	$02
+	dc.b nG1, $02, nRst, $01
+	saVol	$FE
+	dc.b nG1, $05, nRst, $01, nG1, $08, nRst, $01
+	dc.b nG1, $05, nRst, $01, nG1, $05
+	sLoop		$01, $0A, WingCap_Loop16
+	dc.b nRst, $01
+	sStop
+
+WingCap_PSG3:
+	; dc.b nC2, $05, nRst, $01
+; 	sLoop		$00, $03, WingCap_PSG3
+; 	saVol	$02
+; 	dc.b nC2, $02, nRst, $01
+; 	saVol	$FE
+; 	dc.b nC2, $05, nRst, $01, nC2, $08, nRst, $01
+; 	dc.b nC2, $05, nRst, $01, nC2, $05
+; 
+; WingCap_Loop18:
+; 	dc.b nRst, $01, nB1, $05
+; 	sLoop		$00, $03, WingCap_Loop18
+; 	dc.b nRst, $01
+; 	saVol	$02
+; 	dc.b nB1, $02, nRst, $01
+; 	saVol	$FE
+; 	dc.b nB1, $05, nRst, $01, nB1, $08, nRst, $01
+; 	dc.b nB1, $05, nRst, $01, nB1, $05
+; 
+; WingCap_Loop19:
+; 	dc.b nRst, $01, nC2, $05
+; 	sLoop		$00, $03, WingCap_Loop19
+; 	dc.b nRst, $01
+; 	saVol	$02
+; 	dc.b nC2, $02, nRst, $01
+; 	saVol	$FE
+; 	dc.b nC2, $05, nRst, $01, nC2, $08, nRst, $01
+; 	dc.b nC2, $05, nRst, $01, nC2, $05
+; 
+; WingCap_Loop20:
+; 	dc.b nRst, $01, nB1, $05
+; 	sLoop		$00, $03, WingCap_Loop20
+; 	dc.b nRst, $01
+; 	saVol	$02
+; 	dc.b nB1, $02, nRst, $01
+; 	saVol	$FE
+; 	dc.b nB1, $02
+; 	saVol	$02
+; 	dc.b sHold, $03, nRst, $01, nB1, sHold, $01
+; 	saVol	$01
+; 	dc.b sHold, $05
+; 	saVol	$01
+; 	dc.b sHold, $01, nRst, nB1, sHold, $03
+; 	saVol	$01
+; 	dc.b sHold, $01, nRst, nB1, sHold, $02
+; 	saVol	$01
+; 	dc.b sHold, $02
+; 
+; WingCap_Loop21:
+; 	dc.b nRst, $01, nC2, $05
+; 	sLoop		$00, $03, WingCap_Loop21
+; 	dc.b nRst, $01
+; 	saVol	$02
+; 	dc.b nC2, $02, nRst, $01
+; 	saVol	$FE
+; 	dc.b nC2, $05, nRst, $01, nC2, $08, nRst, $01
+; 	dc.b nC2, $05, nRst, $01, nC2, $05
+; 
+; WingCap_Loop22:
+; 	dc.b nRst, $01, nB1, $05
+; 	dc.b nRst, $01, nB1, $05
+; 	dc.b nRst, $01, nB1, $05
+; 	dc.b nRst, $01
+; 	saVol	$02
+; 	dc.b nB1, $02, nRst, $01
+; 	saVol	$FE
+; 	dc.b nB1, $05, nRst, $01, nB1, $08, nRst, $01
+; 	dc.b nB1, $05, nRst, $01, nB1, $05
+; 	sLoop		$00, $0A, WingCap_Loop21
+; 	dc.b nRst, $01
+	sStop

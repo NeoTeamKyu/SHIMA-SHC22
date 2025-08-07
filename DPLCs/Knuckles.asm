@@ -1,0 +1,646 @@
+Knuckles_PLC:
+Knuckles_PLC_0: 	dc.w Knuckles_PLC_160-Knuckles_PLC
+Knuckles_PLC_2: 	dc.w Knuckles_PLC_161-Knuckles_PLC
+Knuckles_PLC_4: 	dc.w Knuckles_PLC_164-Knuckles_PLC
+Knuckles_PLC_6: 	dc.w Knuckles_PLC_167-Knuckles_PLC
+Knuckles_PLC_8: 	dc.w Knuckles_PLC_16A-Knuckles_PLC
+Knuckles_PLC_A: 	dc.w Knuckles_PLC_16D-Knuckles_PLC
+Knuckles_PLC_C: 	dc.w Knuckles_PLC_172-Knuckles_PLC
+Knuckles_PLC_E: 	dc.w Knuckles_PLC_177-Knuckles_PLC
+Knuckles_PLC_10: 	dc.w Knuckles_PLC_17C-Knuckles_PLC
+Knuckles_PLC_12: 	dc.w Knuckles_PLC_181-Knuckles_PLC
+Knuckles_PLC_14: 	dc.w Knuckles_PLC_186-Knuckles_PLC
+Knuckles_PLC_16: 	dc.w Knuckles_PLC_18B-Knuckles_PLC
+Knuckles_PLC_18: 	dc.w Knuckles_PLC_190-Knuckles_PLC
+Knuckles_PLC_1A: 	dc.w Knuckles_PLC_195-Knuckles_PLC
+Knuckles_PLC_1C: 	dc.w Knuckles_PLC_198-Knuckles_PLC
+Knuckles_PLC_1E: 	dc.w Knuckles_PLC_19F-Knuckles_PLC
+Knuckles_PLC_20: 	dc.w Knuckles_PLC_1A4-Knuckles_PLC
+Knuckles_PLC_22: 	dc.w Knuckles_PLC_1A9-Knuckles_PLC
+Knuckles_PLC_24: 	dc.w Knuckles_PLC_1AE-Knuckles_PLC
+Knuckles_PLC_26: 	dc.w Knuckles_PLC_1B3-Knuckles_PLC
+Knuckles_PLC_28: 	dc.w Knuckles_PLC_1B6-Knuckles_PLC
+Knuckles_PLC_2A: 	dc.w Knuckles_PLC_1B9-Knuckles_PLC
+Knuckles_PLC_2C: 	dc.w Knuckles_PLC_1BC-Knuckles_PLC
+Knuckles_PLC_2E: 	dc.w Knuckles_PLC_1BF-Knuckles_PLC
+Knuckles_PLC_30: 	dc.w Knuckles_PLC_1C4-Knuckles_PLC
+Knuckles_PLC_32: 	dc.w Knuckles_PLC_1C9-Knuckles_PLC
+Knuckles_PLC_34: 	dc.w Knuckles_PLC_1CC-Knuckles_PLC
+Knuckles_PLC_36: 	dc.w Knuckles_PLC_1D1-Knuckles_PLC
+Knuckles_PLC_38: 	dc.w Knuckles_PLC_1D6-Knuckles_PLC
+Knuckles_PLC_3A: 	dc.w Knuckles_PLC_1DB-Knuckles_PLC
+Knuckles_PLC_3C: 	dc.w Knuckles_PLC_1DE-Knuckles_PLC
+Knuckles_PLC_3E: 	dc.w Knuckles_PLC_1E3-Knuckles_PLC
+Knuckles_PLC_40: 	dc.w Knuckles_PLC_1E8-Knuckles_PLC
+Knuckles_PLC_42: 	dc.w Knuckles_PLC_1ED-Knuckles_PLC
+Knuckles_PLC_44: 	dc.w Knuckles_PLC_1F0-Knuckles_PLC
+Knuckles_PLC_46: 	dc.w Knuckles_PLC_1F5-Knuckles_PLC
+Knuckles_PLC_48: 	dc.w Knuckles_PLC_1FA-Knuckles_PLC
+Knuckles_PLC_4A: 	dc.w Knuckles_PLC_1FF-Knuckles_PLC
+Knuckles_PLC_4C: 	dc.w Knuckles_PLC_202-Knuckles_PLC
+Knuckles_PLC_4E: 	dc.w Knuckles_PLC_207-Knuckles_PLC
+Knuckles_PLC_50: 	dc.w Knuckles_PLC_20C-Knuckles_PLC
+Knuckles_PLC_52: 	dc.w Knuckles_PLC_211-Knuckles_PLC
+Knuckles_PLC_54: 	dc.w Knuckles_PLC_214-Knuckles_PLC
+Knuckles_PLC_56: 	dc.w Knuckles_PLC_219-Knuckles_PLC
+Knuckles_PLC_58: 	dc.w Knuckles_PLC_21E-Knuckles_PLC
+Knuckles_PLC_5A: 	dc.w Knuckles_PLC_223-Knuckles_PLC
+Knuckles_PLC_5C: 	dc.w Knuckles_PLC_226-Knuckles_PLC
+Knuckles_PLC_5E: 	dc.w Knuckles_PLC_22B-Knuckles_PLC
+Knuckles_PLC_60: 	dc.w Knuckles_PLC_22E-Knuckles_PLC
+Knuckles_PLC_62: 	dc.w Knuckles_PLC_233-Knuckles_PLC
+Knuckles_PLC_64: 	dc.w Knuckles_PLC_236-Knuckles_PLC
+Knuckles_PLC_66: 	dc.w Knuckles_PLC_23B-Knuckles_PLC
+Knuckles_PLC_68: 	dc.w Knuckles_PLC_240-Knuckles_PLC
+Knuckles_PLC_6A: 	dc.w Knuckles_PLC_245-Knuckles_PLC
+Knuckles_PLC_6C: 	dc.w Knuckles_PLC_248-Knuckles_PLC
+Knuckles_PLC_6E: 	dc.w Knuckles_PLC_24D-Knuckles_PLC
+Knuckles_PLC_70: 	dc.w Knuckles_PLC_252-Knuckles_PLC
+Knuckles_PLC_72: 	dc.w Knuckles_PLC_257-Knuckles_PLC
+Knuckles_PLC_74: 	dc.w Knuckles_PLC_25C-Knuckles_PLC
+Knuckles_PLC_76: 	dc.w Knuckles_PLC_261-Knuckles_PLC
+Knuckles_PLC_78: 	dc.w Knuckles_PLC_266-Knuckles_PLC
+Knuckles_PLC_7A: 	dc.w Knuckles_PLC_26B-Knuckles_PLC
+Knuckles_PLC_7C: 	dc.w Knuckles_PLC_270-Knuckles_PLC
+Knuckles_PLC_7E: 	dc.w Knuckles_PLC_275-Knuckles_PLC
+Knuckles_PLC_80: 	dc.w Knuckles_PLC_27A-Knuckles_PLC
+Knuckles_PLC_82: 	dc.w Knuckles_PLC_27F-Knuckles_PLC
+Knuckles_PLC_84: 	dc.w Knuckles_PLC_284-Knuckles_PLC
+Knuckles_PLC_86: 	dc.w Knuckles_PLC_289-Knuckles_PLC
+Knuckles_PLC_88: 	dc.w Knuckles_PLC_28E-Knuckles_PLC
+Knuckles_PLC_8A: 	dc.w Knuckles_PLC_293-Knuckles_PLC
+Knuckles_PLC_8C: 	dc.w Knuckles_PLC_298-Knuckles_PLC
+Knuckles_PLC_8E: 	dc.w Knuckles_PLC_29D-Knuckles_PLC
+Knuckles_PLC_90: 	dc.w Knuckles_PLC_2A0-Knuckles_PLC
+Knuckles_PLC_92: 	dc.w Knuckles_PLC_2A3-Knuckles_PLC
+Knuckles_PLC_94: 	dc.w Knuckles_PLC_2A6-Knuckles_PLC
+Knuckles_PLC_96: 	dc.w Knuckles_PLC_2A9-Knuckles_PLC
+Knuckles_PLC_98: 	dc.w Knuckles_PLC_2AC-Knuckles_PLC
+Knuckles_PLC_9A: 	dc.w Knuckles_PLC_2B1-Knuckles_PLC
+Knuckles_PLC_9C: 	dc.w Knuckles_PLC_2B6-Knuckles_PLC
+Knuckles_PLC_9E: 	dc.w Knuckles_PLC_2BB-Knuckles_PLC
+Knuckles_PLC_A0: 	dc.w Knuckles_PLC_2C0-Knuckles_PLC
+Knuckles_PLC_A2: 	dc.w Knuckles_PLC_2C5-Knuckles_PLC
+Knuckles_PLC_A4: 	dc.w Knuckles_PLC_2CA-Knuckles_PLC
+Knuckles_PLC_A6: 	dc.w Knuckles_PLC_2CD-Knuckles_PLC
+Knuckles_PLC_A8: 	dc.w Knuckles_PLC_2D2-Knuckles_PLC
+Knuckles_PLC_AA: 	dc.w Knuckles_PLC_2D7-Knuckles_PLC
+Knuckles_PLC_AC: 	dc.w Knuckles_PLC_2DC-Knuckles_PLC
+Knuckles_PLC_AE: 	dc.w Knuckles_PLC_2E1-Knuckles_PLC
+Knuckles_PLC_B0: 	dc.w Knuckles_PLC_2E6-Knuckles_PLC
+Knuckles_PLC_B2: 	dc.w Knuckles_PLC_2E9-Knuckles_PLC
+Knuckles_PLC_B4: 	dc.w Knuckles_PLC_2EC-Knuckles_PLC
+Knuckles_PLC_B6: 	dc.w Knuckles_PLC_2EF-Knuckles_PLC
+Knuckles_PLC_B8: 	dc.w Knuckles_PLC_2F2-Knuckles_PLC
+Knuckles_PLC_BA: 	dc.w Knuckles_PLC_2F5-Knuckles_PLC
+Knuckles_PLC_BC: 	dc.w Knuckles_PLC_2F8-Knuckles_PLC
+Knuckles_PLC_BE: 	dc.w Knuckles_PLC_2FB-Knuckles_PLC
+Knuckles_PLC_C0: 	dc.w Knuckles_PLC_2FE-Knuckles_PLC
+Knuckles_PLC_C2: 	dc.w Knuckles_PLC_301-Knuckles_PLC
+Knuckles_PLC_C4: 	dc.w Knuckles_PLC_304-Knuckles_PLC
+Knuckles_PLC_C6: 	dc.w Knuckles_PLC_307-Knuckles_PLC
+Knuckles_PLC_C8: 	dc.w Knuckles_PLC_30A-Knuckles_PLC
+Knuckles_PLC_CA: 	dc.w Knuckles_PLC_30F-Knuckles_PLC
+Knuckles_PLC_CC: 	dc.w Knuckles_PLC_314-Knuckles_PLC
+Knuckles_PLC_CE: 	dc.w Knuckles_PLC_319-Knuckles_PLC
+Knuckles_PLC_D0: 	dc.w Knuckles_PLC_31E-Knuckles_PLC
+Knuckles_PLC_D2: 	dc.w Knuckles_PLC_323-Knuckles_PLC
+Knuckles_PLC_D4: 	dc.w Knuckles_PLC_326-Knuckles_PLC
+Knuckles_PLC_D6: 	dc.w Knuckles_PLC_32B-Knuckles_PLC
+Knuckles_PLC_D8: 	dc.w Knuckles_PLC_330-Knuckles_PLC
+Knuckles_PLC_DA: 	dc.w Knuckles_PLC_335-Knuckles_PLC
+Knuckles_PLC_DC: 	dc.w Knuckles_PLC_33A-Knuckles_PLC
+Knuckles_PLC_DE: 	dc.w Knuckles_PLC_33F-Knuckles_PLC
+Knuckles_PLC_E0: 	dc.w Knuckles_PLC_344-Knuckles_PLC
+Knuckles_PLC_E2: 	dc.w Knuckles_PLC_349-Knuckles_PLC
+Knuckles_PLC_E4: 	dc.w Knuckles_PLC_34E-Knuckles_PLC
+Knuckles_PLC_E6: 	dc.w Knuckles_PLC_351-Knuckles_PLC
+Knuckles_PLC_E8: 	dc.w Knuckles_PLC_354-Knuckles_PLC
+Knuckles_PLC_EA: 	dc.w Knuckles_PLC_357-Knuckles_PLC
+Knuckles_PLC_EC: 	dc.w Knuckles_PLC_35A-Knuckles_PLC
+Knuckles_PLC_EE: 	dc.w Knuckles_PLC_35D-Knuckles_PLC
+Knuckles_PLC_F0: 	dc.w Knuckles_PLC_360-Knuckles_PLC
+Knuckles_PLC_F2: 	dc.w Knuckles_PLC_365-Knuckles_PLC
+Knuckles_PLC_F4: 	dc.w Knuckles_PLC_36A-Knuckles_PLC
+Knuckles_PLC_F6: 	dc.w Knuckles_PLC_36D-Knuckles_PLC
+Knuckles_PLC_F8: 	dc.w Knuckles_PLC_370-Knuckles_PLC
+Knuckles_PLC_FA: 	dc.w Knuckles_PLC_375-Knuckles_PLC
+Knuckles_PLC_FC: 	dc.w Knuckles_PLC_37A-Knuckles_PLC
+Knuckles_PLC_FE: 	dc.w Knuckles_PLC_37F-Knuckles_PLC
+Knuckles_PLC_100: 	dc.w Knuckles_PLC_382-Knuckles_PLC
+Knuckles_PLC_102: 	dc.w Knuckles_PLC_385-Knuckles_PLC
+Knuckles_PLC_104: 	dc.w Knuckles_PLC_38A-Knuckles_PLC
+Knuckles_PLC_106: 	dc.w Knuckles_PLC_38F-Knuckles_PLC
+Knuckles_PLC_108: 	dc.w Knuckles_PLC_392-Knuckles_PLC
+Knuckles_PLC_10A: 	dc.w Knuckles_PLC_397-Knuckles_PLC
+Knuckles_PLC_10C: 	dc.w Knuckles_PLC_39C-Knuckles_PLC
+Knuckles_PLC_10E: 	dc.w Knuckles_PLC_3A1-Knuckles_PLC
+Knuckles_PLC_110: 	dc.w Knuckles_PLC_3A6-Knuckles_PLC
+Knuckles_PLC_112: 	dc.w Knuckles_PLC_3AB-Knuckles_PLC
+Knuckles_PLC_114: 	dc.w Knuckles_PLC_3B0-Knuckles_PLC
+Knuckles_PLC_116: 	dc.w Knuckles_PLC_3B5-Knuckles_PLC
+Knuckles_PLC_118: 	dc.w Knuckles_PLC_3BA-Knuckles_PLC
+Knuckles_PLC_11A: 	dc.w Knuckles_PLC_3BF-Knuckles_PLC
+Knuckles_PLC_11C: 	dc.w Knuckles_PLC_3C4-Knuckles_PLC
+Knuckles_PLC_11E: 	dc.w Knuckles_PLC_3C9-Knuckles_PLC
+Knuckles_PLC_120: 	dc.w Knuckles_PLC_3CE-Knuckles_PLC
+Knuckles_PLC_122: 	dc.w Knuckles_PLC_3D3-Knuckles_PLC
+Knuckles_PLC_124: 	dc.w Knuckles_PLC_3D8-Knuckles_PLC
+Knuckles_PLC_126: 	dc.w Knuckles_PLC_3DD-Knuckles_PLC
+Knuckles_PLC_128: 	dc.w Knuckles_PLC_3E2-Knuckles_PLC
+Knuckles_PLC_12A: 	dc.w Knuckles_PLC_3E7-Knuckles_PLC
+Knuckles_PLC_12C: 	dc.w Knuckles_PLC_3EC-Knuckles_PLC
+Knuckles_PLC_12E: 	dc.w Knuckles_PLC_3F1-Knuckles_PLC
+Knuckles_PLC_130: 	dc.w Knuckles_PLC_3F6-Knuckles_PLC
+Knuckles_PLC_132: 	dc.w Knuckles_PLC_3FB-Knuckles_PLC
+Knuckles_PLC_134: 	dc.w Knuckles_PLC_3FE-Knuckles_PLC
+Knuckles_PLC_136: 	dc.w Knuckles_PLC_401-Knuckles_PLC
+Knuckles_PLC_138: 	dc.w Knuckles_PLC_404-Knuckles_PLC
+Knuckles_PLC_13A: 	dc.w Knuckles_PLC_407-Knuckles_PLC
+Knuckles_PLC_13C: 	dc.w Knuckles_PLC_40C-Knuckles_PLC
+Knuckles_PLC_13E: 	dc.w Knuckles_PLC_40F-Knuckles_PLC
+Knuckles_PLC_140: 	dc.w Knuckles_PLC_412-Knuckles_PLC
+Knuckles_PLC_142: 	dc.w Knuckles_PLC_415-Knuckles_PLC
+Knuckles_PLC_144: 	dc.w Knuckles_PLC_418-Knuckles_PLC
+Knuckles_PLC_146: 	dc.w Knuckles_PLC_41D-Knuckles_PLC
+Knuckles_PLC_148: 	dc.w Knuckles_PLC_422-Knuckles_PLC
+Knuckles_PLC_14A: 	dc.w Knuckles_PLC_427-Knuckles_PLC
+Knuckles_PLC_14C: 	dc.w Knuckles_PLC_42A-Knuckles_PLC
+Knuckles_PLC_14E: 	dc.w Knuckles_PLC_42F-Knuckles_PLC
+Knuckles_PLC_150: 	dc.w Knuckles_PLC_434-Knuckles_PLC
+Knuckles_PLC_152: 	dc.w Knuckles_PLC_439-Knuckles_PLC
+Knuckles_PLC_154: 	dc.w Knuckles_PLC_43C-Knuckles_PLC
+Knuckles_PLC_156: 	dc.w Knuckles_PLC_43F-Knuckles_PLC
+Knuckles_PLC_158: 	dc.w Knuckles_PLC_444-Knuckles_PLC
+Knuckles_PLC_15A: 	dc.w Knuckles_PLC_449-Knuckles_PLC
+Knuckles_PLC_15C: 	dc.w Knuckles_PLC_44E-Knuckles_PLC
+Knuckles_PLC_15E: 	dc.w Knuckles_PLC_453-Knuckles_PLC
+Knuckles_PLC_160: 	dc.b $0
+Knuckles_PLC_161: 	dc.b $1
+	dc.b $F0, $0
+Knuckles_PLC_164: 	dc.b $1
+	dc.b $F0, $10
+Knuckles_PLC_167: 	dc.b $1
+	dc.b $F0, $20
+Knuckles_PLC_16A: 	dc.b $1
+	dc.b $F0, $30
+Knuckles_PLC_16D: 	dc.b $2
+	dc.b $F0, $40
+	dc.b $0, $50
+Knuckles_PLC_172: 	dc.b $2
+	dc.b $F0, $51
+	dc.b $10, $61
+Knuckles_PLC_177: 	dc.b $2
+	dc.b $F0, $63
+	dc.b $0, $73
+Knuckles_PLC_17C: 	dc.b $2
+	dc.b $F0, $74
+	dc.b $0, $84
+Knuckles_PLC_181: 	dc.b $2
+	dc.b $F0, $85
+	dc.b $0, $95
+Knuckles_PLC_186: 	dc.b $2
+	dc.b $F0, $96
+	dc.b $0, $A6
+Knuckles_PLC_18B: 	dc.b $2
+	dc.b $F0, $A7
+	dc.b $20, $B7
+Knuckles_PLC_190: 	dc.b $2
+	dc.b $F0, $BA
+	dc.b $40, $CA
+Knuckles_PLC_195: 	dc.b $1
+	dc.b $F0, $CF
+Knuckles_PLC_198: 	dc.b $3
+	dc.b $E0, $DF
+	dc.b $0, $EE
+	dc.b $30, $EF
+Knuckles_PLC_19F: 	dc.b $2
+	dc.b $F0, $F3
+	dc.b $31, $3
+Knuckles_PLC_1A4: 	dc.b $2
+	dc.b $F0, $F3
+	dc.b $30, $EF
+Knuckles_PLC_1A9: 	dc.b $2
+	dc.b $F1, $7
+	dc.b $11, $17
+Knuckles_PLC_1AE: 	dc.b $2
+	dc.b $F1, $7
+	dc.b $30, $EF
+Knuckles_PLC_1B3: 	dc.b $1
+	dc.b $F1, $19
+Knuckles_PLC_1B6: 	dc.b $1
+	dc.b $F1, $29
+Knuckles_PLC_1B9: 	dc.b $1
+	dc.b $E1, $39
+Knuckles_PLC_1BC: 	dc.b $1
+	dc.b $B1, $48
+Knuckles_PLC_1BF: 	dc.b $2
+	dc.b $F1, $54
+	dc.b $31, $64
+Knuckles_PLC_1C4: 	dc.b $2
+	dc.b $F1, $68
+	dc.b $31, $78
+Knuckles_PLC_1C9: 	dc.b $1
+	dc.b $E1, $7C
+Knuckles_PLC_1CC: 	dc.b $2
+	dc.b $F1, $8B
+	dc.b $1, $9B
+Knuckles_PLC_1D1: 	dc.b $2
+	dc.b $F1, $9C
+	dc.b $21, $AC
+Knuckles_PLC_1D6: 	dc.b $2
+	dc.b $F1, $AF
+	dc.b $11, $BF
+Knuckles_PLC_1DB: 	dc.b $1
+	dc.b $F1, $C1
+Knuckles_PLC_1DE: 	dc.b $2
+	dc.b $F1, $D1
+	dc.b $1, $E1
+Knuckles_PLC_1E3: 	dc.b $2
+	dc.b $F1, $E2
+	dc.b $1, $F2
+Knuckles_PLC_1E8: 	dc.b $2
+	dc.b $F1, $F3
+	dc.b $32, $3
+Knuckles_PLC_1ED: 	dc.b $1
+	dc.b $E2, $7
+Knuckles_PLC_1F0: 	dc.b $2
+	dc.b $F2, $16
+	dc.b $2, $26
+Knuckles_PLC_1F5: 	dc.b $2
+	dc.b $F2, $27
+	dc.b $42, $37
+Knuckles_PLC_1FA: 	dc.b $2
+	dc.b $F2, $3C
+	dc.b $2, $4C
+Knuckles_PLC_1FF: 	dc.b $1
+	dc.b $E2, $4D
+Knuckles_PLC_202: 	dc.b $2
+	dc.b $F2, $5C
+	dc.b $12, $6C
+Knuckles_PLC_207: 	dc.b $2
+	dc.b $F2, $6E
+	dc.b $32, $7E
+Knuckles_PLC_20C: 	dc.b $2
+	dc.b $F2, $82
+	dc.b $32, $92
+Knuckles_PLC_211: 	dc.b $1
+	dc.b $E2, $96
+Knuckles_PLC_214: 	dc.b $2
+	dc.b $F2, $A5
+	dc.b $2, $B5
+Knuckles_PLC_219: 	dc.b $2
+	dc.b $F2, $B6
+	dc.b $22, $C6
+Knuckles_PLC_21E: 	dc.b $2
+	dc.b $F2, $C9
+	dc.b $12, $D9
+Knuckles_PLC_223: 	dc.b $1
+	dc.b $F2, $DB
+Knuckles_PLC_226: 	dc.b $2
+	dc.b $F2, $EB
+	dc.b $2, $FB
+Knuckles_PLC_22B: 	dc.b $1
+	dc.b $F2, $FC
+Knuckles_PLC_22E: 	dc.b $2
+	dc.b $F3, $C
+	dc.b $43, $1C
+Knuckles_PLC_233: 	dc.b $1
+	dc.b $E3, $21
+Knuckles_PLC_236: 	dc.b $2
+	dc.b $F3, $30
+	dc.b $3, $40
+Knuckles_PLC_23B: 	dc.b $2
+	dc.b $F3, $41
+	dc.b $43, $51
+Knuckles_PLC_240: 	dc.b $2
+	dc.b $F3, $56
+	dc.b $13, $66
+Knuckles_PLC_245: 	dc.b $1
+	dc.b $E3, $68
+Knuckles_PLC_248: 	dc.b $2
+	dc.b $F3, $77
+	dc.b $13, $87
+Knuckles_PLC_24D: 	dc.b $2
+	dc.b $F3, $89
+	dc.b $33, $99
+Knuckles_PLC_252: 	dc.b $2
+	dc.b $F3, $9D
+	dc.b $33, $AD
+Knuckles_PLC_257: 	dc.b $2
+	dc.b $F3, $B1
+	dc.b $23, $C1
+Knuckles_PLC_25C: 	dc.b $2
+	dc.b $F3, $C4
+	dc.b $33, $D4
+Knuckles_PLC_261: 	dc.b $2
+	dc.b $F3, $D8
+	dc.b $33, $E8
+Knuckles_PLC_266: 	dc.b $2
+	dc.b $F3, $EC
+	dc.b $23, $FC
+Knuckles_PLC_26B: 	dc.b $2
+	dc.b $F3, $FF
+	dc.b $14, $F
+Knuckles_PLC_270: 	dc.b $2
+	dc.b $F4, $11
+	dc.b $24, $21
+Knuckles_PLC_275: 	dc.b $2
+	dc.b $F4, $24
+	dc.b $34, $34
+Knuckles_PLC_27A: 	dc.b $2
+	dc.b $F4, $38
+	dc.b $34, $48
+Knuckles_PLC_27F: 	dc.b $2
+	dc.b $F4, $4C
+	dc.b $24, $5C
+Knuckles_PLC_284: 	dc.b $2
+	dc.b $F4, $5F
+	dc.b $34, $6F
+Knuckles_PLC_289: 	dc.b $2
+	dc.b $F4, $73
+	dc.b $34, $83
+Knuckles_PLC_28E: 	dc.b $2
+	dc.b $F4, $87
+	dc.b $24, $97
+Knuckles_PLC_293: 	dc.b $2
+	dc.b $F4, $9A
+	dc.b $14, $AA
+Knuckles_PLC_298: 	dc.b $2
+	dc.b $F4, $AC
+	dc.b $24, $BC
+Knuckles_PLC_29D: 	dc.b $1
+	dc.b $F4, $BF
+Knuckles_PLC_2A0: 	dc.b $1
+	dc.b $F4, $CF
+Knuckles_PLC_2A3: 	dc.b $1
+	dc.b $F4, $DF
+Knuckles_PLC_2A6: 	dc.b $1
+	dc.b $F4, $EF
+Knuckles_PLC_2A9: 	dc.b $1
+	dc.b $F4, $FF
+Knuckles_PLC_2AC: 	dc.b $2
+	dc.b $F5, $F
+	dc.b $35, $1F
+Knuckles_PLC_2B1: 	dc.b $2
+	dc.b $F5, $23
+	dc.b $35, $33
+Knuckles_PLC_2B6: 	dc.b $2
+	dc.b $F5, $37
+	dc.b $25, $47
+Knuckles_PLC_2BB: 	dc.b $2
+	dc.b $F5, $4A
+	dc.b $45, $5A
+Knuckles_PLC_2C0: 	dc.b $2
+	dc.b $F5, $5F
+	dc.b $5, $6F
+Knuckles_PLC_2C5: 	dc.b $2
+	dc.b $F5, $70
+	dc.b $5, $80
+Knuckles_PLC_2CA: 	dc.b $1
+	dc.b $E5, $81
+Knuckles_PLC_2CD: 	dc.b $2
+	dc.b $F5, $90
+	dc.b $5, $A0
+Knuckles_PLC_2D2: 	dc.b $2
+	dc.b $F5, $A1
+	dc.b $45, $B1
+Knuckles_PLC_2D7: 	dc.b $2
+	dc.b $F5, $B6
+	dc.b $75, $C6
+Knuckles_PLC_2DC: 	dc.b $2
+	dc.b $F5, $CE
+	dc.b $45, $DE
+Knuckles_PLC_2E1: 	dc.b $2
+	dc.b $F5, $E3
+	dc.b $45, $F3
+Knuckles_PLC_2E6: 	dc.b $1
+	dc.b $F5, $F8
+Knuckles_PLC_2E9: 	dc.b $1
+	dc.b $F6, $8
+Knuckles_PLC_2EC: 	dc.b $1
+	dc.b $D6, $18
+Knuckles_PLC_2EF: 	dc.b $1
+	dc.b $B6, $26
+Knuckles_PLC_2F2: 	dc.b $1
+	dc.b $D6, $18
+Knuckles_PLC_2F5: 	dc.b $1
+	dc.b $F6, $8
+Knuckles_PLC_2F8: 	dc.b $1
+	dc.b $F6, $32
+Knuckles_PLC_2FB: 	dc.b $1
+	dc.b $F6, $42
+Knuckles_PLC_2FE: 	dc.b $1
+	dc.b $B6, $52
+Knuckles_PLC_301: 	dc.b $1
+	dc.b $F6, $42
+Knuckles_PLC_304: 	dc.b $1
+	dc.b $F6, $32
+Knuckles_PLC_307: 	dc.b $1
+	dc.b $F6, $5E
+Knuckles_PLC_30A: 	dc.b $2
+	dc.b $F6, $6E
+	dc.b $26, $7E
+Knuckles_PLC_30F: 	dc.b $2
+	dc.b $F6, $81
+	dc.b $6, $91
+Knuckles_PLC_314: 	dc.b $2
+	dc.b $F6, $92
+	dc.b $26, $A2
+Knuckles_PLC_319: 	dc.b $2
+	dc.b $F6, $A5
+	dc.b $26, $B5
+Knuckles_PLC_31E: 	dc.b $2
+	dc.b $F6, $B8
+	dc.b $16, $C8
+Knuckles_PLC_323: 	dc.b $1
+	dc.b $F6, $CA
+Knuckles_PLC_326: 	dc.b $2
+	dc.b $F6, $DA
+	dc.b $16, $EA
+Knuckles_PLC_32B: 	dc.b $2
+	dc.b $F6, $EC
+	dc.b $6, $FC
+Knuckles_PLC_330: 	dc.b $2
+	dc.b $F6, $FD
+	dc.b $37, $D
+Knuckles_PLC_335: 	dc.b $2
+	dc.b $F7, $11
+	dc.b $37, $21
+Knuckles_PLC_33A: 	dc.b $2
+	dc.b $F7, $25
+	dc.b $37, $35
+Knuckles_PLC_33F: 	dc.b $2
+	dc.b $F7, $39
+	dc.b $47, $49
+Knuckles_PLC_344: 	dc.b $2
+	dc.b $F7, $4E
+	dc.b $57, $5E
+Knuckles_PLC_349: 	dc.b $2
+	dc.b $F7, $64
+	dc.b $27, $74
+Knuckles_PLC_34E: 	dc.b $1
+	dc.b $D7, $77
+Knuckles_PLC_351: 	dc.b $1
+	dc.b $D7, $85
+Knuckles_PLC_354: 	dc.b $1
+	dc.b $D7, $93
+Knuckles_PLC_357: 	dc.b $1
+	dc.b $D7, $A1
+Knuckles_PLC_35A: 	dc.b $1
+	dc.b $D7, $AF
+Knuckles_PLC_35D: 	dc.b $1
+	dc.b $D7, $BD
+Knuckles_PLC_360: 	dc.b $2
+	dc.b $F7, $CB
+	dc.b $47, $DB
+Knuckles_PLC_365: 	dc.b $2
+	dc.b $F7, $E0
+	dc.b $37, $F0
+Knuckles_PLC_36A: 	dc.b $1
+	dc.b $D7, $F4
+Knuckles_PLC_36D: 	dc.b $1
+	dc.b $F8, $2
+Knuckles_PLC_370: 	dc.b $2
+	dc.b $F8, $12
+	dc.b $8, $22
+Knuckles_PLC_375: 	dc.b $2
+	dc.b $F8, $23
+	dc.b $8, $33
+Knuckles_PLC_37A: 	dc.b $2
+	dc.b $F8, $34
+	dc.b $8, $44
+Knuckles_PLC_37F: 	dc.b $1
+	dc.b $F8, $45
+Knuckles_PLC_382: 	dc.b $1
+	dc.b $F8, $55
+Knuckles_PLC_385: 	dc.b $2
+	dc.b $F8, $65
+	dc.b $28, $75
+Knuckles_PLC_38A: 	dc.b $2
+	dc.b $F8, $78
+	dc.b $8, $88
+Knuckles_PLC_38F: 	dc.b $1
+	dc.b $F8, $89
+Knuckles_PLC_392: 	dc.b $2
+	dc.b $F8, $99
+	dc.b $8, $A9
+Knuckles_PLC_397: 	dc.b $2
+	dc.b $F8, $AA
+	dc.b $18, $BA
+Knuckles_PLC_39C: 	dc.b $2
+	dc.b $F8, $BC
+	dc.b $28, $CC
+Knuckles_PLC_3A1: 	dc.b $2
+	dc.b $F8, $CF
+	dc.b $28, $DF
+Knuckles_PLC_3A6: 	dc.b $2
+	dc.b $F8, $E2
+	dc.b $28, $F2
+Knuckles_PLC_3AB: 	dc.b $2
+	dc.b $F8, $F5
+	dc.b $19, $5
+Knuckles_PLC_3B0: 	dc.b $2
+	dc.b $F9, $7
+	dc.b $9, $17
+Knuckles_PLC_3B5: 	dc.b $2
+	dc.b $F9, $18
+	dc.b $9, $28
+Knuckles_PLC_3BA: 	dc.b $2
+	dc.b $F9, $29
+	dc.b $19, $39
+Knuckles_PLC_3BF: 	dc.b $2
+	dc.b $F9, $3B
+	dc.b $19, $4B
+Knuckles_PLC_3C4: 	dc.b $2
+	dc.b $F9, $4D
+	dc.b $29, $5D
+Knuckles_PLC_3C9: 	dc.b $2
+	dc.b $F9, $60
+	dc.b $29, $70
+Knuckles_PLC_3CE: 	dc.b $2
+	dc.b $F9, $73
+	dc.b $29, $83
+Knuckles_PLC_3D3: 	dc.b $2
+	dc.b $F9, $86
+	dc.b $19, $96
+Knuckles_PLC_3D8: 	dc.b $2
+	dc.b $F9, $98
+	dc.b $9, $A8
+Knuckles_PLC_3DD: 	dc.b $2
+	dc.b $F9, $A9
+	dc.b $19, $B9
+Knuckles_PLC_3E2: 	dc.b $2
+	dc.b $F9, $BB
+	dc.b $19, $CB
+Knuckles_PLC_3E7: 	dc.b $2
+	dc.b $F9, $CD
+	dc.b $19, $DD
+Knuckles_PLC_3EC: 	dc.b $2
+	dc.b $F9, $DF
+	dc.b $29, $EF
+Knuckles_PLC_3F1: 	dc.b $2
+	dc.b $F9, $F2
+	dc.b $A, $2
+Knuckles_PLC_3F6: 	dc.b $2
+	dc.b $FA, $3
+	dc.b $A, $13
+Knuckles_PLC_3FB: 	dc.b $1
+	dc.b $BA, $14
+Knuckles_PLC_3FE: 	dc.b $1
+	dc.b $DA, $20
+Knuckles_PLC_401: 	dc.b $1
+	dc.b $BA, $2E
+Knuckles_PLC_404: 	dc.b $1
+	dc.b $FA, $3A
+Knuckles_PLC_407: 	dc.b $2
+	dc.b $FA, $4A
+	dc.b $2A, $5A
+Knuckles_PLC_40C: 	dc.b $1
+	dc.b $DA, $5D
+Knuckles_PLC_40F: 	dc.b $1
+	dc.b $CA, $6B
+Knuckles_PLC_412: 	dc.b $1
+	dc.b $AA, $78
+Knuckles_PLC_415: 	dc.b $1
+	dc.b $DA, $83
+Knuckles_PLC_418: 	dc.b $2
+	dc.b $FA, $91
+	dc.b $1A, $A1
+Knuckles_PLC_41D: 	dc.b $2
+	dc.b $FA, $A3
+	dc.b $1A, $B3
+Knuckles_PLC_422: 	dc.b $2
+	dc.b $FA, $B5
+	dc.b $1A, $C5
+Knuckles_PLC_427: 	dc.b $1
+	dc.b $FA, $C7
+Knuckles_PLC_42A: 	dc.b $2
+	dc.b $FA, $D7
+	dc.b $6A, $E7
+Knuckles_PLC_42F: 	dc.b $2
+	dc.b $FA, $EE
+	dc.b $6A, $FE
+Knuckles_PLC_434: 	dc.b $2
+	dc.b $FB, $5
+	dc.b $6B, $15
+Knuckles_PLC_439: 	dc.b $1
+	dc.b $EB, $1C
+Knuckles_PLC_43C: 	dc.b $1
+	dc.b $FB, $2B
+Knuckles_PLC_43F: 	dc.b $2
+	dc.b $FB, $3B
+	dc.b $4B, $4B
+Knuckles_PLC_444: 	dc.b $2
+	dc.b $FB, $50
+	dc.b $4B, $60
+Knuckles_PLC_449: 	dc.b $2
+	dc.b $FB, $65
+	dc.b $4B, $75
+Knuckles_PLC_44E: 	dc.b $2
+	dc.b $FB, $7A
+	dc.b $2B, $8A
+Knuckles_PLC_453: 	dc.b $2
+	dc.b $FB, $8D
+	dc.b $1B, $9D
+	even

@@ -1,0 +1,18 @@
+	sHeaderInitSFX
+	sHeaderPrio	$78
+	sHeaderCh	$01
+	sHeaderSFX	(1<<cfbRun), ctFM4, .FM4, $0C, $05
+
+.FM4:
+	sVoice		pRoll
+	dc.b nRst, $01
+	sModAMPS	$02, $01, $09, $00
+	dc.b nCs6, $25
+	sModAMPS	$00, $01, $09, $00
+
+.Loop1:
+	dc.b sHold
+	saVol		$01
+	dc.b nCs6, $02
+	sLoop		$00, $2A, .Loop1
+	sStop

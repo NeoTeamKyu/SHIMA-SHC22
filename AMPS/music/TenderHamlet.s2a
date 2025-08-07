@@ -1,0 +1,541 @@
+TenderHamlet_Header:
+	sHeaderInit
+	sHeaderTempo	$01, $55	
+	sHeaderCh	$05, $03
+	sHeaderDAC	TenderHamlet_DAC1
+	sHeaderDAC	TenderHamlet_DAC2	
+	sHeaderFM	TenderHamlet_FM1, $01, $17
+	sHeaderFM	TenderHamlet_FM2, $E8, $12
+	sHeaderFM	TenderHamlet_FM3, $01, $22
+	sHeaderFM	TenderHamlet_FM4, $00, $15
+	sHeaderFM	TenderHamlet_FM5, $0D, $0E
+	sHeaderPSG	TenderHamlet_PSG1, $D0+$0C, $38, $00, $00
+	sHeaderPSG	TenderHamlet_PSG2, $D0+$0C, $50, $00, $00
+	sHeaderPSG	TenderHamlet_PSG3, $F4+$0C, $30, $00, $00
+
+
+	; Patch $00
+	; $3A
+	; $32, $70, $70, $30,	$9F, $5F, $54, $17
+	; $0D, $14, $0A, $05,	$01, $05, $04, $05
+	; $19, $E9, $19, $07,	$16, $10, $09, $80
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$03, $07, $07, $03
+	spMultiple	$02, $00, $00, $00
+	spRateScale	$02, $01, $01, $00
+	spAttackRt	$1F, $14, $1F, $17
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0D, $0A, $14, $05
+	spSustainLv	$01, $01, $0E, $00
+	spDecayRt	$01, $04, $05, $05
+	spReleaseRt	$09, $09, $09, $07
+	spTotalLv	$16, $09, $10, $00
+
+	; Patch $01
+	; $3A
+	; $94, $B4, $B3, $71,	$1C, $1E, $1E, $1E
+	; $04, $03, $04, $05,	$07, $04, $06, $03
+	; $0F, $3F, $0F, $1F,	$24, $2F, $2A, $80
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$09, $0B, $0B, $07
+	spMultiple	$04, $03, $04, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1C, $1E, $1E, $1E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$04, $04, $03, $05
+	spSustainLv	$00, $00, $03, $01
+	spDecayRt	$07, $06, $04, $03
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$24, $2A, $2F, $00
+
+	; Patch $02
+	; $3A
+	; $61, $08, $51, $02,	$5D, $5D, $5D, $50
+	; $04, $0F, $1F, $1F,	$00, $00, $00, $00
+	; $1F, $5F, $0F, $0F,	$1B, $27, $25, $81
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$06, $05, $00, $00
+	spMultiple	$01, $01, $08, $02
+	spRateScale	$01, $01, $01, $01
+	spAttackRt	$1D, $1D, $1D, $10
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$04, $1F, $0F, $1F
+	spSustainLv	$01, $00, $05, $00
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$1B, $25, $27, $01
+
+	; Patch $03
+	; $2C
+	; $41, $31, $40, $30,	$1F, $1F, $1F, $1F
+	; $0E, $02, $03, $09,	$0E, $06, $03, $04
+	; $1F, $1F, $05, $09,	$0A, $86, $15, $80
+	spAlgorithm	$04
+	spFeedback	$05
+	spDetune	$04, $04, $03, $03
+	spMultiple	$01, $00, $01, $00
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $03, $02, $09
+	spSustainLv	$01, $00, $01, $00
+	spDecayRt	$0E, $03, $06, $04
+	spReleaseRt	$0F, $05, $0F, $09
+	spTotalLv	$0A, $15, $06, $00
+
+	; Patch $04
+	; $3C
+	; $01, $11, $21, $61,	$52, $12, $4F, $14
+	; $0C, $0A, $0A, $02,	$01, $01, $01, $01
+	; $2F, $3F, $5F, $3F,	$20, $80, $13, $87
+	spAlgorithm	$04
+	spFeedback	$07
+	spDetune	$00, $02, $01, $06
+	spMultiple	$01, $01, $01, $01
+	spRateScale	$01, $01, $00, $00
+	spAttackRt	$12, $0F, $12, $14
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0C, $0A, $0A, $02
+	spSustainLv	$02, $05, $03, $03
+	spDecayRt	$01, $01, $01, $01
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$20, $13, $00, $07
+
+	; Patch $05
+	; $40
+	; $33, $20, $31, $22,	$1F, $1F, $1F, $1F
+	; $0F, $0F, $0F, $0F,	$0F, $0F, $0F, $0F
+	; $0F, $0F, $0F, $0F,	$18, $20, $15, $81
+	spAlgorithm	$00
+	spFeedback	$00
+	spDetune	$03, $03, $02, $02
+	spMultiple	$03, $01, $00, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $0F, $0F, $0F
+	spSustainLv	$00, $00, $00, $00
+	spDecayRt	$0F, $0F, $0F, $0F
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$18, $15, $20, $01
+
+	; Patch $06
+	; $2C
+	; $71, $72, $33, $33,	$1F, $1F, $1F, $1F
+	; $00, $00, $00, $00,	$00, $00, $00, $00
+	; $0F, $0F, $0F, $0F,	$1E, $80, $23, $82
+	spAlgorithm	$04
+	spFeedback	$05
+	spDetune	$07, $03, $07, $03
+	spMultiple	$01, $03, $02, $03
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $00, $00, $00
+	spSustainLv	$00, $00, $00, $00
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$1E, $23, $00, $02	
+
+TenderHamlet_FM1:
+	sVoice		$00
+	saVol		$03
+	dc.b nEb4, $30, nRst, $0C, nCs4, $18, nEb4, $0C
+	dc.b nE4, $30, sHold, $30, nEb4, nRst, $0C, nCs4
+	dc.b $18, nEb4, $0C, nE4, $30, sHold, $30
+	saVol		$FD
+	sVoice		$01
+	dc.b nEb4, nRst, $0C, nCs4, $18, nB3, $0C, nCs4
+	dc.b $30, sHold, $0C, nB3, nCs4, nD4, nEb4, $30
+	dc.b nRst, $0C, nCs4, $18, nB3, $0C, nCs4, $30
+	dc.b sHold, $0C, nB3, nCs4, nEb4, nCs4, $30, nRst
+	dc.b $0C, nCs4, nB3, nCs4, nB3, $30, nRst, $0C
+	dc.b nB3, nBb3, nB3, nA3, $30, nRst, $0C, nA3
+	dc.b nA3, nAb3, nG3, $30, nEb4, nEb4, nRst, $0C
+	dc.b nCs4, $18, nB3, $0C, nCs4, $30, sHold, $0C
+	dc.b nB3, nCs4, nD4, nEb4, $30, nRst, $0C, nCs4
+	dc.b $18, nB3, $0C, nCs4, $30, sHold, $0C, nB3
+	dc.b nCs4, nEb4, nB3, $30, nRst, $0C, nB3, nBb3
+	dc.b nB3, nAb3, $30, nRst, $0C, nAb3, nBb3, nB3
+	dc.b nEb3, $30, sHold, $30, nB2, sHold, $30
+	sVoice		$02
+	saTranspose	$FF
+	dc.b nG6, $18, nF6, $06, nRst, nE6, nRst, nD6
+	dc.b $18, nC6, $06, nRst, nD6, nRst, nE6, $08
+	dc.b nC6, $04, nB5, $08, nA5, $34, nG5, $18
+	dc.b nG6, nF6, $06, nRst, nE6, nRst, nD6, $18
+	dc.b nC6, $06, nRst, nD6, nRst, nE6, $08, nC6
+	dc.b $04, nB5, $08, nA5, $34, nB5, $06, nRst
+	dc.b nC6, nRst, nC6, $18, nB5, $06, nRst, nC6
+	dc.b nRst, nD6, $18, nC6, $06, nRst, nD6, nRst
+	dc.b nE6, $08, nF6, $04, nG6, $08, nF6, $04
+	dc.b nE6, $24, $06, nRst, nE6, nRst, nE6, nRst
+	dc.b nG6, $20, nF6, $08, nE6, nD6, $18, nC6
+	dc.b $06, nRst, nD6, nRst, nE6, $60
+	saTranspose	$01
+	dc.b nB5, $06, nBb5, nAb5, nB5, $0C, nBb5, $06
+	dc.b nAb5, nB5, nBb5, nAb5, nFs5, nBb5, $0C, nAb5
+	dc.b $06, nFs5, nBb5, nAb5, $0C, nEb5, $06, nRst
+	dc.b nEb5, nRst, nEb5, nRst, nFs5, $18, nE5, $08
+	dc.b nEb5, nCs5, nEb5, $06, nB4, nAb4, nEb5, $0C
+	dc.b nB4, $06, nAb4, nEb5, nCs5, nBb4, nFs4, nCs5
+	dc.b $0C, nBb4, $06, nFs4, $0C, nAb4, $30, sHold
+	dc.b $30
+	saTranspose	$F3
+	sVoice		$00
+	dc.b nRst, $30, nA5, $04, nG5, nE5, nEb5, nD5
+	dc.b nC5, nD5, nC5, nA4, nE4, nG4, nAb4
+	saTranspose	$0D
+	sJump		TenderHamlet_FM1
+
+TenderHamlet_FM2:
+	sVoice		$03
+
+TenderHamlet_Loop1:
+	sCall		TenderHamlet_Call1
+	sLoop		$00, $04, TenderHamlet_Loop1
+	dc.b nF4, $08, nE4, $04, nF4, nRst, $08, nF4
+	dc.b $0C, nC5, $08, nD5, $04, nF4, nRst, $28
+	dc.b nF4, $04, nE4, $08, nD4, $04, nE4, nRst
+	dc.b $08, nE4, $04, nRst, $08, nB4, nD5, $04
+	dc.b nE4, nRst, $28, nE4, $04, nEb4, $08, nCs4
+	dc.b $04, nEb4, nRst, $08, nEb4, $04, nRst, $08
+	dc.b nBb4, nCs5, $04, nEb4, nRst, $28, nEb4, $04
+	dc.b nE4, $08, nD4, $04, nE4, nRst, $10, nE4
+	dc.b $04, nD4, $08, nE4, $04, $04, nF4, nFs4
+	dc.b nA4, nB4, nD5, nE5, nF5, nAb5, nB5, nD6
+	dc.b nE6
+	sCall		TenderHamlet_Call1
+	sCall		TenderHamlet_Call1
+	dc.b nF4, $08, nE4, $04, nF4, nRst, $08, nF4
+	dc.b $0C, nC5, $08, nD5, $04, nF4, nRst, $28
+	dc.b nF4, $04, nD4, $08, nC4, $04, nD4, nRst
+	dc.b $08, nD4, $04, nRst, $08, nA4, nC5, $04
+	dc.b nD4, nRst, $28, nD4, $04, nE4, $08, nD4
+	dc.b $04, nE4, nRst, $08, nE4, $04, nRst, $08
+	dc.b nB4, nD5, $04, nE4, nRst, $28, nE4, $04
+	dc.b nA4, $08, nG4, $04, nA4, nRst, $08, nA4
+	dc.b $04, nRst, $08, nB4, nC5, $04, nA4, $0C
+	dc.b nB4, nC5, nD5, $08, nE5, $04
+
+TenderHamlet_Loop2:
+	dc.b nF4, $04, nRst, $08, nF4, $04, nRst, $08
+	dc.b nF4, $04, nRst, nC4, nF4, nRst, nC4, nG4
+	dc.b nRst, $08, nG4, $04, nRst, $08, nG4, $04
+	dc.b nRst, nD4, nG4, nRst, nD4, nA4, nRst, $08
+	dc.b nA4, $04, nRst, $08, nA4, $04, nRst, nE4
+	dc.b nA4, nRst, nE4, nA4, nRst, nA4, nB4, nRst
+	dc.b nB4, nC5, nRst, nC5, nC5, nA4, nEb4
+	sLoop		$00, $03, TenderHamlet_Loop2
+	dc.b nBb4, $04, nRst, $08, nBb4, $04, nRst, $08
+	dc.b nBb4, $04, nRst, nF4, nBb4, nRst, nF4, nBb4
+	dc.b nRst, $08, nBb4, $04, nRst, $08, nBb4, $04
+	dc.b nRst, nF4, nBb4, nRst, nF4, nE4, nRst, nE4
+	dc.b nRst, $18, nE4, $04, nRst, nE4, nRst, $20
+	dc.b nRst, $10, nF4, $04, nRst, $08, nF4, $04
+	dc.b nRst, $08, nF4, $04, nRst, $08, nF4, $04
+	dc.b nRst, $08, nG4, $04, nRst, $08, nG4, $04
+	dc.b nRst, $08, nG4, $04, nRst, $08, nG4, $04
+	dc.b nRst, $08, nA4, $04, nRst, $08, nA4, $04
+	dc.b nRst, $08, nA4, $04, nRst, $08, nA4, $04
+	dc.b nRst, nE4, nBb4, nRst, $08, nF4, $04, nRst
+	dc.b $08, nBb4, $04, nRst, nF4, nEb4, $0C, nD4
+	dc.b $04, nRst, $08, nD4, $04, nRst, $08, nD4
+	dc.b $04, nRst, $08, nD4, $04, nRst, $08, nE4
+	dc.b $04, nRst, $08, nE4, $04, nRst, $08, nE4
+	dc.b $04, nRst, $08, nE4, $04, nRst, $08, nF4
+	dc.b $04, nRst, $08, nF4, $04, nRst, $08, nF4
+	dc.b $04, nRst, $08, nF4, $04, nRst, $08, nG4
+	dc.b $04, nRst, $08, nG4, $04, nRst, $08, nG4
+	dc.b $04, nRst, $08, nG4, $04, nRst, $08, nA4
+	dc.b $08, nG4, $04, nA4, nRst, $08, nA4, $0C
+	dc.b nB4, $08, nC5, $04, nA5, $04, nG5, nE5
+	dc.b nEb5, nD5, nC5, nD5, nC5, nA4, nE4, nG4
+	dc.b nAb4
+	sJump		TenderHamlet_Loop1
+
+TenderHamlet_Call1:
+	dc.b nA4, $08, nG4, $04, nA4, nRst, $08, nA4
+	dc.b $0C, nB4, $08, nC5, $04, nA4, nRst, $28
+	dc.b nG4, $04, nA4, $08, nG4, $04, nA4, nRst
+	dc.b $08, nA4, $04, nRst, $08, nB4, nC5, $04
+	dc.b nG4, $0C, $0C, $08, nE4, $04, nG4, $08
+	dc.b nAb4, $04
+	sRet
+
+TenderHamlet_FM5:
+	saTranspose	$E7
+	saVol		$07
+
+TenderHamlet_Loop4:
+	sVoice		$05
+	sCall		TenderHamlet_Call3
+	sLoop		$00, $04, TenderHamlet_Loop4
+	dc.b nF4, $04, nRst, nC5, nF5, nRst, nC5, nC6
+	dc.b nRst, nF4, nD6, nRst, nF4, nE6, nRst, nD6
+	dc.b nC5, nRst, nC6, nRst, $08, nF4, $04, nG4
+	dc.b nRst, nF4, nE4, $08, nB4, $04, nD5, nRst
+	dc.b nE5, nB5, nRst, nB4, nC6, nRst, nE5, nD6
+	dc.b nRst, nC6, nE4, nRst, nB5, nB4, nRst, nE4
+	dc.b nG4, nRst, nE4, nEb5, nF5, nG5, nEb4, nRst
+	dc.b nEb5, nBb5, nRst, nBb4, nC6, nRst, nEb5, nD6
+	dc.b nRst, nC6, nEb4, nRst, nBb5, nEb4, nRst, nEb4
+	dc.b nEb4, nG4, nBb4, nE5, $08, nD5, $04, nE5
+	dc.b nRst, $10, nE5, $04, nD5, nRst, nE5, nE5
+	dc.b nF5, nAb5, nA5, nB5, nD6, nE6, nF6, nAb6
+	dc.b nB6, nD7, nE7
+	sCall		TenderHamlet_Call3
+	sCall		TenderHamlet_Call3
+	dc.b nF4, $04, nRst, nC5, nF5, nRst, nC5, nC6
+	dc.b nRst, nF4, nD6, nRst, nF4, nE6, nRst, nD6
+	dc.b nC5, nRst, nC6, nRst, $08, nF4, $04, nG4
+	dc.b nRst, nF4, nD4, $08, nA4, $04, nC5, nRst
+	dc.b nD5, nA5, nRst, nA4, nB5, nRst, nD5, nC6
+	dc.b nRst, nB5, nD4, nRst, nA5, nA4, nRst, nD4
+	dc.b nF4, nRst, nD4, nE4, $08, nB4, $04, nD5
+	dc.b nRst, nE4, nB5, nRst, nB4, nC6, nRst, nE5
+	dc.b nD6, nRst, nC6, nE4, nRst, nB5, nB4, nRst
+	dc.b nE4, nF4, nRst, nAb4, nA3, $04, nRst, nE4
+	dc.b nA4, nRst, nC5, nA5, nRst, nG4, nA3, nRst
+	dc.b nE4, nE6, nRst, $08, nA3, $04, nRst, nE6
+	dc.b nRst, $08, nG4, $04, nE6, nRst, nG4
+	saTranspose	$F4
+	saVol		$07
+	sVoice		$06
+	dc.b nF5, $04, nRst, $08, nC6, $06, nRst, nF5
+	dc.b $04, nRst, nC6, $0C, nF5, $04, nG5, nRst
+	dc.b $08, nD6, $06, nRst, nG5, $04, nRst, nD6
+	dc.b $0C, nG5, $04, nA5, nRst, $08, nE6, $06
+	dc.b nRst, nA5, $04, nRst, nE6, $0C, nA5, $04
+	dc.b nE6, $0C, nA5, $04, nRst, nF6, $0C, nA5
+	dc.b $04, nE6, $0C, nF5, $04, nRst, $08, nC6
+	dc.b $06, nRst, nF5, $04, nRst, nC6, $0C, nF5
+	dc.b $04, nG5, nRst, $08, nD6, $06, nRst, nG5
+	dc.b $04, nRst, nD6, $0C, nG5, $04, nA5, nRst
+	dc.b $08, nE6, $06, nRst, nA5, $04, nRst, nE6
+	dc.b $0C, nA5, $04, nE6, $0C, nA5, $04, nRst
+	dc.b nF6, $0C, nA5, $04, nE6, $0C, nF5, $04
+	dc.b nRst, $08, nC6, $06, nRst, nF5, $04, nRst
+	dc.b nC6, $0C, nF5, $04, nG5, nRst, $08, nD6
+	dc.b $06, nRst, nG5, $04, nRst, nD6, $0C, nG5
+	dc.b $04, nA5, nRst, $08, nE6, $06, nRst, nA5
+	dc.b $04, nRst, nE6, $0C, nA5, $04, nE6, $0C
+	dc.b nA5, $04, nRst, nF6, $0C, nA5, $04, nE6
+	dc.b $0C, nBb5, $04, nRst, $08, nF6, $04, nRst
+	dc.b $08, nBb5, $04, nRst, nF6, $0C, nBb5, $04
+	dc.b nF6, $0C, nBb5, $04, nRst, nG6, $0C, nBb5
+	dc.b $04, nF6, $0C, nB5, $04, nRst, nB5, nRst
+	dc.b $18, nB5, $04, nRst, nB5, nRst, $30
+	saVol		$F9
+	saTranspose	$19
+	sVoice		$04
+	sPan		spRight
+	dc.b nAb3, $30, nBb3, nB3, nCs4, nEb4, nCs4, nB3
+	dc.b nBb3
+	sPan		spCenter
+	dc.b nB3, $30, sHold, $30
+	saTranspose	$F3
+	sJump		TenderHamlet_Loop4
+
+TenderHamlet_Call3:
+	dc.b nA3, $04, nRst, nE4, nA4, nRst, nC5, nA5
+	dc.b nRst, nG4, nA3, nRst, nE4, nE6, nRst, $08
+	dc.b nA3, $04, nRst, nE6, nRst, $08, nG4, $04
+	dc.b nE6, nRst, nG4, nA4, nRst, nA3, nRst, $08
+	dc.b nC5, $04, nE4, $0C, nE5, $04, nRst, nA3
+	dc.b nF6, nRst, $08, nA4, $04, nRst, nF6, nRst
+	dc.b $08, nF4, $04, nE4, $08, nF4, $04
+	sRet
+
+TenderHamlet_FM4:
+	sVoice		$05
+	saTranspose	$F4
+
+TenderHamlet_Loop3:
+	sCall		TenderHamlet_Call2
+	sLoop		$00, $04, TenderHamlet_Loop3
+	dc.b nRst, $18, nA5, $04, nRst, $08, nB5, $04
+	dc.b nRst, $08, nC6, $04, nRst, nB5, nRst, $08
+	dc.b nA5, $04, nRst, $18, $18, nG5, $04, nRst
+	dc.b $08, nA5, $04, nRst, $08, nB5, $04, nRst
+	dc.b nA5, nRst, $08, nG5, $04, nRst, $18, $18
+	dc.b nG5, $04, nRst, $08, nA5, $04, nRst, $08
+	dc.b nBb5, $04, nRst, nA5, nRst, $08, nG5, $04
+	dc.b nRst, $18, nAb4, $08, nF4, $04, nAb4, nRst
+	dc.b $10, nAb4, $04, nF4, nRst, nAb4, nAb4, nB4
+	dc.b nC5, nD5, nE5, nF5, nAb5, nB5, nD6, nE6
+	dc.b nF6, nAb6
+	sCall		TenderHamlet_Call2
+	sCall		TenderHamlet_Call2
+	dc.b nRst, $18, nA5, $04, nRst, $08, nB5, $04
+	dc.b nRst, $08, nC6, $04, nRst, nB5, nRst, $08
+	dc.b nA5, $04, nRst, $18, $18, nF5, $04, nRst
+	dc.b $08, nG5, $04, nRst, $08, nA5, $04, nRst
+	dc.b nG5, nRst, $08, nF5, $04, nRst, $18, $18
+	dc.b nAb5, $04, nRst, $08, nA5, $04, nRst, $08
+	dc.b nB5, $04, nRst, nA5, nRst, $08, nAb5, $04
+	dc.b nRst, $18, nRst, $18, nE5, $04, nRst, $14
+	dc.b nC6, $04, nRst, $10, nC6, $04, nRst, $0C
+	dc.b nC6, $04, nRst, $08
+	saTranspose	$F4
+	saVol		$07
+	sVoice		$06
+	dc.b nRst, $0C, nA5, $06, nRst, $0E, nA5, $0C
+	dc.b nRst, $10, nB5, $06, nRst, $0E, nB5, $0C
+	dc.b nRst, $04, $0C, nC6, $06, nRst, $0E, nC6
+	dc.b $0C, nRst, $04, nC6, $0C, nRst, $08, nD6
+	dc.b $0C, nRst, $04, nC6, $0C, nRst, nA5, $06
+	dc.b nRst, $0E, nA5, $0C, nRst, $10, nB5, $06
+	dc.b nRst, $0E, nB5, $0C, nRst, $04, $0C, nC6
+	dc.b $06, nRst, $0E, nC6, $0C, nRst, $04, nC6
+	dc.b $0C, nRst, $08, nD6, $0C, nRst, $04, nC6
+	dc.b $0C, nRst, nA5, $06, nRst, $0E, nA5, $0C
+	dc.b nRst, $10, nB5, $06, nRst, $0E, nB5, $0C
+	dc.b nRst, $04, $0C, nC6, $06, nRst, $0E, nC6
+	dc.b $0C, nRst, $04, nC6, $0C, nRst, $08, nD6
+	dc.b $0C, nRst, $04, nC6, $0C, nRst, nD6, $04
+	dc.b nRst, $10, nD6, $0C, nRst, $04, nD6, $0C
+	dc.b nRst, $08, nE6, $0C, nRst, $04, nD6, $0C
+	dc.b nAb5, $04, nRst, nAb5, nRst, $18, nAb5, $04
+	dc.b nRst, nAb5, nRst, $30
+	saTranspose	$18
+	sVoice		$04
+	sPan		spLeft
+	dc.b nF3, $30, nG3, nA3, nBb3, nC4, nB3, nA3
+	dc.b nG3
+	sPan		spCenter
+	dc.b nA3, $30, sHold, $30
+	saTranspose	$F4
+	saVol		$F9
+	sVoice		$05
+	sJump		TenderHamlet_Loop3
+
+TenderHamlet_Call2:
+	dc.b nRst, $18, nE5, $04, nRst, $14, nC6, $04
+	dc.b nRst, $10, nC6, $04, nRst, $0C, nC6, $04
+	dc.b nRst, $08, $24, nA4, $04, nRst, $08, nD6
+	dc.b $04, nRst, $10, nD6, $04, nRst, $18
+	sRet
+
+TenderHamlet_FM3:
+	sModAMPS	$25, $01, $02, $0B
+	dc.b nRst, $0C
+	sJump		TenderHamlet_FM1
+
+TenderHamlet_PSG2:
+	dc.b nRst, $08
+
+TenderHamlet_PSG1:
+	sVolEnv	v0A
+
+TenderHamlet_Loop5:
+	dc.b nRst, $30
+	sLoop		$00, $38, TenderHamlet_Loop5
+	dc.b nC6, $04, nA5, nF5, nC6, nA5, nF5, nC6
+	dc.b nA5, nF5, nC6, nA5, nF5, nD6, nB5, nG5
+	dc.b nD6, nB5, nG5, nD6, nB5, nG5, nD6, nB5
+	dc.b nG5, nE6, nC6, nA5, nE6, nC6, nA5, nE6
+	dc.b nC6, nA5, nE6, nC6, nA5, nF6, nD6, nBb5
+	dc.b nF6, nD6, nBb5, nF6, nD6, nBb5, nF6, nD6
+	dc.b nBb5, nC6, nA5, nF5, nC6, nA5, nF5, nC6
+	dc.b nA5, nF5, nC6, nA5, nF5, nD6, nB5, nG5
+	dc.b nD6, nB5, nG5, nD6, nB5, nG5, nD6, nB5
+	dc.b nG5, nE6, nC6, nA5, nE6, nC6, nA5, nE6
+	dc.b nC6, nA5, nE6, nC6, nA5, nE6, nB5, nG5
+	dc.b nE6, nB5, nG5, nE6, nB5, nG5, nE6, nB5
+	dc.b nG5, nRst, $30, nRst
+	sJump		TenderHamlet_Loop5
+
+TenderHamlet_PSG3:
+	sNoisePSG	snWhitePSG3
+	sVolEnv	v07
+
+TenderHamlet_Jump1:
+	dc.b nF6, $08, $04, $08, $04, $08, $04, $08
+	dc.b $04, $08, $04, $04, $04, $04, $08, $04
+	sVolEnv	v01
+	dc.b nF6, $0C
+	sVolEnv	v02
+	dc.b nF6, $08, $04, $08, $04, $08, $04, $04
+	dc.b $04, $04, $08, $04
+	sVolEnv	v01
+	dc.b nF6, $0C
+	sVolEnv	v02
+	dc.b nF6, $08, $04
+	sVolEnv	v01
+	dc.b nF6, $0C
+	sVolEnv	v02
+	sJump		TenderHamlet_Jump1
+
+TenderHamlet_DAC2:
+	sCall		TenderHamlet_Call4
+	sCall		TenderHamlet_Call5
+	sCall		TenderHamlet_Call4
+	sCall		TenderHamlet_Call6
+	sLoop		$00, $02, TenderHamlet_DAC2
+	sCall		TenderHamlet_Call4
+	sCall		TenderHamlet_Call5
+	sCall		TenderHamlet_Call4
+	sCall		TenderHamlet_Call7
+	sCall		TenderHamlet_Call4
+	sCall		TenderHamlet_Call5
+	sCall		TenderHamlet_Call4
+	sCall		TenderHamlet_Call6
+	sCall		TenderHamlet_Call4
+	sCall		TenderHamlet_Call5
+	sCall		TenderHamlet_Call4
+	sCall		TenderHamlet_Call7
+
+TenderHamlet_Loop6:
+	sCall		TenderHamlet_Call8
+	sLoop		$00, $03, TenderHamlet_Loop6
+	dc.b dKick, $0C, $0C, dSnareS3, $08, dKick, $0C, $04
+	dc.b $0C, $0C, dSnareS3, $08, $04, $04, $04, $04
+	dc.b dKick, $08, $10, dSnareS3, $0C, dKick, $08, $0C
+	dc.b dSnareS3, $04, $0C, $0C, $08, dKick, $04, dKick
+	dc.b $0C, $0C, dSnareS3, $08, dKick, $0C, dSnareS3, $04
+	dc.b dKick, $0C, $0C, dSnareS3, dSnareS3, $08, $04, dKick
+	dc.b $0C, $0C, dSnareS3, $08, dKick, $0C, $04, dSnareS3
+	dc.b $0C, dKick, dSnareS3, $08, $04, dKick, $08, dSnareS3
+	dc.b $04, dKick, $0C, $0C, dSnareS3, $08, dKick, $0C
+	dc.b dSnareS3, $04, dKick, $0C, $0C, dSnareS3, dSnareS3, $08
+	dc.b $04, dKick, $0C, $0C, dSnareS3, $08, $04, $04
+	dc.b $04, $04, dMidTom, dMidTom, dKick, dHighTom, dHighTom, dKick
+	dc.b dSnareS3, dSnareS3, dSnareS3, dKick, dKick, dKick
+	sCall		TenderHamlet_Call7
+	sJump		TenderHamlet_DAC2
+
+TenderHamlet_Call4:
+	dc.b dKick, $08, $04, $20, $04, $0C, $0C, dSnareS3
+	dc.b $18
+	sRet
+
+TenderHamlet_Call5:
+	dc.b dKick, $08, $04, $20, $04, $0C, $0C, dSnareS3
+	dc.b $14, $04
+	sRet
+
+TenderHamlet_Call6:
+	dc.b dKick, $08, $04, $20, $04, $0C, $0C, dSnareS3
+	dc.b dKick, $04, $04, $04
+	sRet
+
+TenderHamlet_Call7:
+	dc.b dKick, $08, $04, $0C, dSnareS3, $08, dKick, $04
+	dc.b $08, $04, dSnareS3, dSnareS3, dSnareS3, dHiTomS2, dHiTomS2, dHiTomS2
+	dc.b dMidTom, dMidTom, dMidTom, dHighTom, dHighTom, dHighTom
+	sRet
+
+TenderHamlet_Call8:
+	dc.b dKick, $0C, $0C, dSnareS3, $08, dKick, $0C, $04
+	dc.b $0C, $0C, dSnareS3, $18, dKick, $0C, $0C, dSnareS3
+	dc.b $08, dKick, $0C, $04, $08, dSnareS3, $04, dKick
+	dc.b $0C, dSnareS3, dSnareS3, $08, $04
+	sRet
+
+TenderHamlet_DAC1:
+	sStop
+

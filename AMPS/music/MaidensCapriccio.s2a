@@ -1,0 +1,1699 @@
+MaidensCapriccio_Header:
+	sHeaderInit
+	sHeaderTempo	$01, $00
+	sHeaderCh	$05, $03
+	sHeaderDAC	MaidensCapriccio_DAC1
+	sHeaderDAC	MaidensCapriccio_DAC2
+	sHeaderFM	MaidensCapriccio_FM1, $00, $00
+	sHeaderFM	MaidensCapriccio_FM2, $00, $00
+	sHeaderFM	MaidensCapriccio_FM3, $00, $00
+	sHeaderFM	MaidensCapriccio_FM4, $00, $00
+	sHeaderFM	MaidensCapriccio_FM5, $00, $00
+	sHeaderPSG	MaidensCapriccio_PSG1, $00+$0C, $10, $00, vNone
+	sHeaderPSG	MaidensCapriccio_PSG2, $00+$0C, $10, $00, vNone
+	sHeaderPSG	MaidensCapriccio_PSG3, $00, $18, $00, vNone
+
+	; Patch $00
+	; $3A
+	; $78, $01, $00, $11,	$1F, $1F, $1F, $1F
+	; $12, $0C, $0C, $10,	$04, $04, $04, $04
+	; $85, $25, $25, $16,	$1E, $32, $14, $00
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$07, $00, $00, $01
+	spMultiple	$08, $00, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$12, $0C, $0C, $10
+	spSustainLv	$08, $02, $02, $01
+	spDecayRt	$04, $04, $04, $04
+	spReleaseRt	$05, $05, $05, $06
+	spTotalLv	$1E, $14, $32, $00
+
+	; Patch $01
+	; $3D
+	; $71, $71, $71, $71,	$1F, $1F, $1F, $1F
+	; $00, $0E, $0E, $0E,	$00, $03, $03, $03
+	; $00, $3F, $3F, $3F,	$1D, $00, $00, $00
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$07, $07, $07, $07
+	spMultiple	$01, $01, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $0E, $0E, $0E
+	spSustainLv	$00, $03, $03, $03
+	spDecayRt	$00, $03, $03, $03
+	spReleaseRt	$00, $0F, $0F, $0F
+	spTotalLv	$1D, $00, $00, $00
+
+	; Patch $02
+	; $3D
+	; $74, $14, $14, $12,	$1F, $1F, $1F, $1F
+	; $02, $02, $00, $06,	$06, $06, $06, $06
+	; $68, $68, $68, $68,	$1D, $00, $00, $00
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$07, $01, $01, $01
+	spMultiple	$04, $04, $04, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$02, $00, $02, $06
+	spSustainLv	$06, $06, $06, $06
+	spDecayRt	$06, $06, $06, $06
+	spReleaseRt	$08, $08, $08, $08
+	spTotalLv	$1D, $00, $00, $00
+
+	; Patch $03
+	; $3C
+	; $0C, $34, $36, $02,	$15, $18, $15, $18
+	; $04, $0C, $04, $0C,	$02, $04, $02, $04
+	; $24, $26, $24, $26,	$28, $00, $23, $00
+	spAlgorithm	$04
+	spFeedback	$07
+	spDetune	$00, $03, $03, $00
+	spMultiple	$0C, $06, $04, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$15, $15, $18, $18
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$04, $04, $0C, $0C
+	spSustainLv	$02, $02, $02, $02
+	spDecayRt	$02, $02, $04, $04
+	spReleaseRt	$04, $04, $06, $06
+	spTotalLv	$28, $23, $00, $00
+
+	; Patch $04
+	; $33
+	; $06, $32, $31, $02,	$18, $1A, $1A, $1A
+	; $08, $08, $08, $00,	$01, $03, $03, $00
+	; $18, $38, $38, $09,	$0D, $1E, $1C, $00
+	spAlgorithm	$03
+	spFeedback	$06
+	spDetune	$00, $03, $03, $00
+	spMultiple	$06, $01, $02, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$18, $1A, $1A, $1A
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $08, $08, $00
+	spSustainLv	$01, $03, $03, $00
+	spDecayRt	$01, $03, $03, $00
+	spReleaseRt	$08, $08, $08, $09
+	spTotalLv	$0D, $1C, $1E, $00
+
+MaidensCapriccio_FM1:
+	sVoice		$00
+	saVol		$11
+	sPan		spCenter
+	dc.b nFs3, $0C, nRst, nFs3, nRst, nFs3, $12, nFs3
+	dc.b nFs3, $0C, nRst, nAb3, nAb3, nRst, nAb3, $12
+	dc.b nAb3, nAb3, $0C, nF3, nRst, nF3, nRst, nF3
+	dc.b $12, nF3, nF3, $0C, nRst, nF3, nF3, nRst
+	dc.b nF3, $12, nF3, nF3, $06, nF3, nFs3, $0C
+	dc.b nRst, nFs3, nRst, nFs3, $12, nFs3, nFs3, $0C
+	dc.b nRst, nAb3, nAb3, nRst, nAb3, $12, nAb3, nAb3
+	dc.b $0C, nBb3, nRst, nBb3, nRst, nBb3, $12, nBb3
+	dc.b nBb3, $0C, nRst, nBb3, nBb3, nRst, nBb3, $12
+	dc.b nBb3, nBb3, $06, nBb3
+
+MaidensCapriccio_Loop1:
+	dc.b nFs3, $0C, nCs4, nFs3, nCs4, nAb3, $12, nEb4
+	dc.b nBb3, $18, nF4, $0C, nBb3, nF4, nBb3, nF4
+	dc.b nBb3, nF4
+	sLoop		$00, $03, MaidensCapriccio_Loop1
+	dc.b nFs3, nCs4, nFs3, nCs4, nAb3, $12, nEb4, nA3
+	dc.b $18, nEb4, $0C, nA3, nEb4, nA3, nEb4, nA3
+	dc.b nEb4
+
+MaidensCapriccio_Loop4:
+	dc.b nB2
+
+MaidensCapriccio_Loop2:
+	dc.b $06, nB2, nFs3, nB2, nB2, nFs3, nB2, nB2
+	sLoop		$00, $03, MaidensCapriccio_Loop2
+	dc.b nA2, nA2, nE3, nA2, nA2, nE3, nA2, nA2
+
+MaidensCapriccio_Loop3:
+	dc.b nG2, nG2, nD3, nG2, nG2, nD3, nG2, nG2
+	sLoop		$00, $03, MaidensCapriccio_Loop3
+	dc.b nG2, nG2, nD3, nG2, nA2, nE3, nA2, nA2
+	sLoop		$01, $02, MaidensCapriccio_Loop4
+
+MaidensCapriccio_Loop5:
+	dc.b nFs3, nFs3, nB3, nFs3, nFs3, nB3, nFs3, nFs3
+	sLoop		$00, $03, MaidensCapriccio_Loop5
+	dc.b nFs3, nFs3, nB3, nFs3, nE3, nCs4, nE3, nE3
+
+MaidensCapriccio_Loop6:
+	dc.b nG3, nG3, nD4, nG3, nG3, nD4, nG3, nG3
+	sLoop		$00, $03, MaidensCapriccio_Loop6
+	dc.b nG3, nG3, nD4, nG3, nA3, nE4, nA3, nA3
+
+MaidensCapriccio_Loop7:
+	dc.b nB3, nB3, nFs4, nB3, nB3, nFs4, nB3, nB3
+	sLoop		$00, $03, MaidensCapriccio_Loop7
+	dc.b nB3, nB3, nFs4, nB3, nA3, nE4, nA3, nA3
+
+MaidensCapriccio_Loop8:
+	dc.b nG3, nG3, nD4, nG3, nG3, nD4, nG3, nG3
+	sLoop		$00, $03, MaidensCapriccio_Loop8
+	dc.b nG3, nG3, nD4, nG3, nA3, nA3, nE4
+
+MaidensCapriccio_Loop9:
+	dc.b nA3
+
+MaidensCapriccio_Loop10:
+	dc.b nD3, nD3
+	sLoop		$00, $03, MaidensCapriccio_Loop9
+	sLoop		$01, $03, MaidensCapriccio_Loop10
+	dc.b nC3, nC3, nG3, nC3, nC3, nG3, nC3, nC3
+
+MaidensCapriccio_Loop11:
+	dc.b nBb2, nBb2, nF3, nBb2, nBb2, nF3, nBb2, nBb2
+	sLoop		$00, $03, MaidensCapriccio_Loop11
+	dc.b nBb2, nBb2, nF3, nBb2, nC3, nG3, nC3, nC3
+	sLoop		$02, $02, MaidensCapriccio_Loop10
+
+MaidensCapriccio_Loop12:
+	dc.b nA3, nA3, nD4, nA3, nA3, nD4, nA3, nA3
+	sLoop		$00, $03, MaidensCapriccio_Loop12
+	dc.b nA3, nA3, nD4, nA3, nG3, nE4, nG3, nG3
+
+MaidensCapriccio_Loop13:
+	dc.b nBb3, nBb3, nF4, nBb3, nBb3, nF4, nBb3, nBb3
+	sLoop		$00, $03, MaidensCapriccio_Loop13
+	dc.b nBb3, nBb3, nF4, nBb3, nC4, nG4, nC4, nC4
+
+MaidensCapriccio_Loop14:
+	dc.b nD4, nD4, nA4, nD4, nD4, nA4, nD4, nD4
+	sLoop		$00, $03, MaidensCapriccio_Loop14
+	dc.b nD4, nD4, nA4, nD4, nC4, nG4, nC4, nC4
+
+MaidensCapriccio_Loop15:
+	dc.b nBb3, nBb3, nF4, nBb3, nBb3, nF4, nBb3, nBb3
+	sLoop		$00, $03, MaidensCapriccio_Loop15
+	dc.b nBb3, nBb3, nF4, nBb3, nC4, nG4, nC4, nC4
+	dc.b nRst, $30
+	saVol		$EF
+	sPan		spCenter
+	sJump		MaidensCapriccio_FM1
+
+MaidensCapriccio_FM2:
+	sPan		spCenter
+	dc.b nRst, $7F, $7F, $7F, $7F, $7F, $55
+	sVoice		$02
+	saVol		$14
+	dc.b nCs3, $18, nEb3, nF3, $30, nEb3, $18, nF3
+	dc.b $0C, nBb2, $3C, $0C, nC3, nCs3, nEb3, nF3
+	dc.b $18, nBb3, nAb3, nBb3, $0C, nF3, $3C, $0C
+	dc.b nEb3, nCs3, nC3, nBb3, $30, nC4, $24, nCs4
+	dc.b $3C, $0C, nC4, nBb3, nC4, nCs4, $30, nEb4
+	dc.b $24, nC4, $18, $0C, nC4, nC4, nC4, nC4
+	dc.b nCs4, nEb4, nFs3, $24, nB3, $0C, nFs3, $30
+	dc.b nD4, nCs4, $0C, nD4, nA3, nB3, nFs3, $24
+	dc.b nB3, $0C, nFs3, $30, nD4, $60, nFs3, $24
+	dc.b nB3, $0C, nFs3, $30, nD4, nCs4, $0C, nD4
+	dc.b nFs4, nA3, nB3, $24, nFs4, $0C, nB3, $7F
+	dc.b sHold, $11, nD4, $24, nFs4, $0C, nD4, $30
+	dc.b nB4, nA4, $0C, nE4, nCs4, nE4, nD4, $24
+	dc.b nFs4, $0C, nD4, $30, nB4, $60, nD4, $24
+	dc.b nFs4, $0C, nD4, $30, nB4, nCs5, $0C, nD5
+	dc.b nFs5, nA4, nB3, $24, nFs4, $0C, nB3, $7F
+	dc.b sHold, $11, nA3, $24, nD4, $0C, nA3, $30
+	dc.b nF4, nE4, $0C, nF4, nC4, nD4, nA3, $24
+	dc.b nD4, $0C, nA3, $30, nF4, $60, nA3, $24
+	dc.b nD4, $0C, nA3, $30, nF4, nE4, $0C, nF4
+	dc.b nA4, nC4, nD4, $24, nA4, $0C, nD4, $7F
+	dc.b sHold, $11, nF4, $24, nA4, $0C, nF4, $30
+	dc.b nD5, nC5, $0C, nG4, nE4, nG4, nF4, $24
+	dc.b nA4, $0C, nF4, $30, nD5, $60, nF4, $24
+	dc.b nA4, $0C, nF4, $30, nD5, nE5, $0C, nF5
+	dc.b nA5, nC5, nD4, $24, nA4, $0C, nD4, $7F
+	dc.b sHold, $11, nRst, $18
+	sVoice		$04
+	saVol		$01
+	ssDetune	$F6
+	dc.b nD4, $01, sHold
+	ssDetune	$EC
+	dc.b $01, sHold
+	ssDetune	$0B
+	dc.b nCs4, sHold
+	ssDetune	$01
+	dc.b $01, sHold
+	ssDetune	$F7
+	dc.b $01, sHold
+	ssDetune	$13
+	dc.b nC4, sHold
+	ssDetune	$09
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$F6
+	dc.b $01, sHold
+	ssDetune	$EC
+	dc.b $01, sHold
+	ssDetune	$E2
+	dc.b $01, sHold
+	ssDetune	$16
+	dc.b nB3, sHold
+	ssDetune	$0C
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01, sHold
+	ssDetune	$F8
+	dc.b $01, sHold
+	ssDetune	$EE
+	dc.b $01, sHold
+	ssDetune	$E4
+	dc.b $01, sHold
+	ssDetune	$1E
+	dc.b nBb3, sHold
+	ssDetune	$14
+	dc.b $01, sHold
+	ssDetune	$0A
+	dc.b $01, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$F6
+	dc.b $01, sHold
+	ssDetune	$EC
+	dc.b $01
+	sVoice		$00
+	saVol		$EB
+	sPan		spCenter
+	ssDetune	$00
+	sJump		MaidensCapriccio_FM2
+
+MaidensCapriccio_FM3:
+	sPan		spCenter
+	dc.b nRst, $7F, $7F, $7F, $7F, $7F, $7F, $06
+	sVoice		$02
+	saVol		$14
+	dc.b nCs3, $30, nC3, $18, nCs3, $0C, nF2, $3C
+	dc.b $0C, nAb2, nBb2, nC3, nCs3, $18, nF3, nEb3
+	dc.b nF3, $0C, nCs3, $3C, $0C, nC3, nBb2, nAb2
+	dc.b nCs3, $30, nEb3, $24, nF3, $3C, $0C, nEb3
+	dc.b nCs3, nEb3, nF3, $30, nAb3, $24, nA3, $18
+	dc.b $0C, nA3, nA3, nA3, nA3, nBb3, nC4, nD3
+	dc.b $24, nFs3, $0C, nD3, $30, nFs3, nE3, $0C
+	dc.b nFs3, nCs3, nD3, nB2, $24, nFs3, $0C, nD3
+	dc.b $30, nFs3, $24, nB3, $06, nCs4, nFs4, nB3
+	dc.b nD4, nFs3, nD4, nE4, nB3, nE3, nD3, $24
+	dc.b nFs3, $0C, nD3, $30, nFs3, nE3, $0C, nFs3
+	dc.b nA3, nCs3, nD3, $24, nB3, $0C, nD3, $54
+	dc.b nB3, $06, nCs4, nD4, nCs4, nB3, nFs3, nA3
+	dc.b nD3, nCs3, nB2, nFs3, $24, nB3, $0C, nFs3
+	dc.b $30, nD4, nCs4, $0C, nA3, nE3, nA3, nFs3
+	dc.b $24, nB3, $0C, nFs3, $30, nD4, $24, nB3
+	dc.b $06, nCs4, nFs4, nB3, nD4, nFs3, nD4, nE4
+	dc.b nB3, nE4, nFs3, $24, nB3, $0C, nFs3, $30
+	dc.b nD4, nA3, $0C, nB3, nD4, nFs3, nD3, $24
+	dc.b nB3, $0C, nD3, $54, nB3, $06, nCs4, nD4
+	dc.b nCs4, nB3, nFs3, nA3, nD3, nCs3, nB2, nF3
+	dc.b $24, nA3, $0C, nF3, $30, nA3, nG3, $0C
+	dc.b nA3, nE3, nF3, nD3, $24, nA3, $0C, nF3
+	dc.b $30, nA3, $24, nD4, $06, nE4, nA4, nD4
+	dc.b nF4, nA3, nF4, nG4, nD4, nG3, nF3, $24
+	dc.b nA3, $0C, nF3, $30, nA3, nG3, $0C, nA3
+	dc.b nC4, nE3, nF3, $24, nD4, $0C, nF3, $54
+	dc.b nD4, $06, nE4, nF4, nE4, nD4, nA3, nC4
+	dc.b nF3, nE3, nD3, nA3, $24, nD4, $0C, nA3
+	dc.b $30, nF4, nE4, $0C, nC4, nG3, nC4, nA3
+	dc.b $24, nD4, $0C, nA3, $30, nF4, $24, nD4
+	dc.b $06, nE4, nA4, nD4, nF4, nA3, nF4, nG4
+	dc.b nD4, nG3, nA3, $24, nD4, $0C, nA3, $30
+	dc.b nF4, nC4, $0C, nD4, nF4, nA3, nF3, $24
+	dc.b nD4, $0C, nF3, $54, nD4, $06, nE4, nF4
+	dc.b nE4, nD4, nA3, nC4, nF3, nE3, nD3, nRst
+	dc.b $18
+	sVoice		$04
+	saVol		$01
+	ssDetune	$F6
+	dc.b nA3, $01, sHold
+	ssDetune	$EC
+	dc.b $01, sHold
+	ssDetune	$E2
+	dc.b $01, sHold
+	ssDetune	$15
+	dc.b nAb3, sHold
+	ssDetune	$0B
+	dc.b $01, sHold
+	ssDetune	$01
+	dc.b $01, sHold
+	ssDetune	$F7
+	dc.b $01, sHold
+	ssDetune	$ED
+	dc.b $01, sHold
+	ssDetune	$1C
+	dc.b nG3, sHold
+	ssDetune	$12
+	dc.b $01, sHold
+	ssDetune	$08
+	dc.b $01, sHold
+	ssDetune	$FE
+	dc.b $01, sHold
+	ssDetune	$F4
+	dc.b $01, sHold
+	ssDetune	$EA
+	dc.b $01, sHold
+	ssDetune	$17
+	dc.b nFs3, sHold
+	ssDetune	$0D
+	dc.b $01, sHold
+	ssDetune	$03
+	dc.b $01, sHold
+	ssDetune	$F9
+	dc.b $01, sHold
+	ssDetune	$EF
+	dc.b $01, sHold
+	ssDetune	$18
+	dc.b nF3, sHold
+	ssDetune	$0E
+	dc.b $01, sHold
+	ssDetune	$04
+	dc.b $01, sHold
+	ssDetune	$FA
+	dc.b $01, sHold
+	ssDetune	$F0
+	dc.b $01
+	sVoice		$00
+	saVol		$EB
+	sPan		spCenter
+	ssDetune	$00
+	sJump		MaidensCapriccio_FM3
+
+MaidensCapriccio_FM4:
+	sVoice		$01
+	saVol		$16
+	sPan		spRight
+	dc.b nBb3, $0C, nRst, nBb3, nRst, nBb3, $12, nBb3
+	dc.b nBb3, $0C, nRst, nAb3, nAb3, nRst, nAb3, $12
+	dc.b nAb3, nAb3, $0C, nF3, nRst, nF3, nRst, nF3
+	dc.b $12, nF3, nF3, $0C, nRst, nF3, nF3, nRst
+	dc.b nF3, $12, nF3, nF3, $06, nF3, nBb3, $0C
+	dc.b nRst, nBb3, nRst, nBb3, $12, nBb3, nBb3, $0C
+	dc.b nRst, nC4, nC4, nRst, nC4, $12, nC4, nC4
+	dc.b $0C, nBb3, nRst, nBb3, nRst, nBb3, $12, nBb3
+	dc.b nBb3, $0C, nRst, nBb3, nBb3, nRst, nBb3, $12
+	dc.b nBb3, nBb3, $06, nBb3
+	sVoice		$03
+	saVol		$02
+	sPan		spLeft
+	dc.b nF3, $0C, nRst, nF3, nRst, nEb3, $12, nEb3
+	dc.b nF3, $0C, nRst, nF3, nF3, nF3, nAb3, nFs3
+	dc.b nF3, nEb3, nRst, nF3, nEb3, nF3, nEb3, $12
+	dc.b nEb3, nCs3, $3C, nRst, $0C, nCs3, nCs3, nCs3
+	dc.b nF3, nRst, nF3, nRst, nEb3, $12, nEb3, nF3
+	dc.b $0C, nRst, nF3, nF3, nF3, nAb3, nFs3, nF3
+	dc.b nEb3, nRst, nF3, nEb3, nF3, nEb3, $12, nEb3
+	dc.b nC3, $3C, nRst, $0C, nC3, nCs3, nEb3, nD2
+	dc.b $18, nB1, nCs2, nD2, nFs2, nB2, nCs3, nA2
+	dc.b nB2, nCs3, nD3, nFs3, nE3, $0C, nFs3, nB2
+	dc.b nB2, $06, nCs3, nFs3, nB2, nD3, nFs2, nD3
+	dc.b nE3, nB2, nE2, nB2, $18, nCs3, nD3, nFs3
+	dc.b nB3, nFs3, nE3, nD3, nB2, nCs3, nD3, nFs3
+	dc.b nE3, $0C, nFs3, nB2, nB2, $06, nCs3, nD3
+	dc.b nCs3, nB2, nFs2, nA2, nD2, nCs2, nB1
+	saVol		$04
+
+MaidensCapriccio_Loop16:
+	dc.b nB2, nD3, nE3, nFs3
+	sLoop		$00, $06, MaidensCapriccio_Loop16
+	dc.b nA2, nCs3, nD3, nE3, nA2, nCs3, nD3, nE3
+
+MaidensCapriccio_Loop17:
+	dc.b nB2, nD3, nE3, nFs3
+	sLoop		$00, $05, MaidensCapriccio_Loop17
+	dc.b nB2, nD3, nFs3, nA3, nD4, nFs4, nB3, nD3
+	dc.b nB3, nCs4, nFs3, nCs3
+
+MaidensCapriccio_Loop18:
+	dc.b nB3, nD4, nE4, nFs4
+	sLoop		$00, $07, MaidensCapriccio_Loop18
+	dc.b nA3, nCs4, nD4, nE4
+
+MaidensCapriccio_Loop19:
+	dc.b nB3, nD4, nE4, nFs4
+	sLoop		$00, $05, MaidensCapriccio_Loop19
+	dc.b nB3, nD4, nFs4, nA4, nB4, nA4, nFs4, nD4
+	dc.b nFs4, nB3, nA3, nFs3
+	saVol		$FD
+	dc.b nD2, $18, nA2, nC2, nD2, nF2, nA2, nC3
+	dc.b nG2, nA2, nC3, nD3, nF3, nE3, $0C, nF3
+	dc.b nA2, nA2, $06, nC3, nF3, nA3, nD3, nF2
+	dc.b nD3, nE3, nA2, nE2, nA2, $18, nC3, nD3
+	dc.b nF3, nA3, nF3, nE3, nD3, nA3, nC4, nD4
+	dc.b nF4, nE3, $0C, nF3, nA3, nA3, $06, nC4
+	dc.b nD4, nC4, nA3, nF3, nA3, nD3, nC3, nA2
+	saVol		$03
+
+MaidensCapriccio_Loop20:
+	dc.b nD3, nF3, nG3, nA3
+	sLoop		$00, $06, MaidensCapriccio_Loop20
+	dc.b nC3, nE3, nF3, nG3, nC3, nE3, nF3, nG3
+
+MaidensCapriccio_Loop21:
+	dc.b nD3, nF3, nG3, nA3
+	sLoop		$00, $05, MaidensCapriccio_Loop21
+	dc.b nD3, nF3, nA3, nC4, nF4, nA3, nD4, nF3
+	dc.b nD4, nE4, nA3, nE3
+
+MaidensCapriccio_Loop22:
+	dc.b nD4, nF4, nG4, nA4
+	sLoop		$00, $07, MaidensCapriccio_Loop22
+	dc.b nC4, nE4, nF4, nG4
+
+MaidensCapriccio_Loop23:
+	dc.b nD4, nF4, nG4, nA4
+	sLoop		$00, $05, MaidensCapriccio_Loop23
+	dc.b nD4, nF4, nA4, nC5, nD5, nC5, nA4, nF4
+	dc.b nA4, nD4, nC4, nA3, nRst, $30
+	sVoice		$00
+	saVol		$E4
+	sPan		spCenter
+	sJump		MaidensCapriccio_FM4
+
+MaidensCapriccio_FM5:
+	sVoice		$01
+	saVol		$16
+	sPan		spRight
+	dc.b nCs3, $0C, nRst, nCs3, nRst, nCs3, $12, nCs3
+	dc.b nCs3, $0C, nRst, nC3, nC3, nRst, nC3, $12
+	dc.b nC3, nC3, $0C, nC3, nRst, nBb2, nRst, nBb2
+	dc.b $12, nBb2, nBb2, $0C, nRst, nBb2, nBb2, nRst
+	dc.b nBb2, $12, nBb2, nBb2, $06, nBb2, nCs3, $0C
+	dc.b nRst, nCs3, nRst, nCs3, $12, nCs3, nCs3, $0C
+	dc.b nRst, nEb3, nEb3, nRst, nEb3, $12, nEb3, nEb3
+	dc.b $0C, nF3, nRst, nF3, nRst, nF3, $12, nF3
+	dc.b nF3, $0C, nRst, nF3, nF3, nRst, nF3, $12
+	dc.b nF3, nF3, $06, nF3
+	sVoice		$03
+	saVol		$02
+	dc.b nCs4, $0C, nRst, nCs4, nRst, nC4, $12, nC4
+	dc.b nCs4, $0C, nRst, nCs4, nCs4, nEb4, nF4, nEb4
+	dc.b nCs4, nC4, nRst, nCs4, nC4, nCs4, nC4, $12
+	dc.b nC4, nBb3, $3C, nRst, $0C, nBb3, nBb3, nC4
+	dc.b nCs4, nRst, nCs4, nRst, nC4, $12, nC4, nCs4
+	dc.b $0C, nRst, nCs4, nCs4, nEb4, nF4, nEb4, nCs4
+	dc.b nC4, nRst, nCs4, nC4, nCs4, nC4, $12, nC4
+	dc.b nA3, $3C, nRst, $0C, nA3, nBb3, nC4, nB1
+	dc.b $18, nFs1, nA1, nB1, nD2, nFs2, nA2, nE2
+	dc.b nFs2, nA2, nB2, nD3, nCs3, $0C, nD3, nFs2
+	dc.b nFs2, $06, nA2, nD3, nFs2, nB2, nD2, nB2
+	dc.b nCs3, nF2, nCs2, nFs2, $18, nA2, nB2, nD3
+	dc.b nFs3, nD3, nCs3, nB2, nFs3, nA3, nB2, nD4
+	dc.b nCs4, $0C, nD4, nFs3, nFs3, $06, nA3, nB3
+	dc.b nA3, nFs3, nD3, nFs3, nB2, nA2, nFs2
+	saVol		$04
+
+MaidensCapriccio_Loop24:
+	dc.b nFs3, nB3, nCs4, nD4
+	sLoop		$00, $06, MaidensCapriccio_Loop24
+	dc.b nFs3, nA3, nB3, nCs4, nFs3, nA3, nB3, nCs4
+
+MaidensCapriccio_Loop25:
+	dc.b nFs3, nB3, nCs4, nD4
+	sLoop		$00, $05, MaidensCapriccio_Loop25
+	dc.b nFs3, nB3, nB3, nCs4, nFs4, nB3, nD4, nFs3
+	dc.b nD4, nE4, nB3, nFs3
+
+MaidensCapriccio_Loop26:
+	dc.b nFs3, nB3, nCs4, nD4
+	sLoop		$00, $07, MaidensCapriccio_Loop26
+	dc.b nFs3, nA3, nB3, nCs4
+
+MaidensCapriccio_Loop27:
+	dc.b nFs3, nB3, nCs4, nD4
+	sLoop		$00, $05, MaidensCapriccio_Loop27
+	dc.b nFs3, nB3, nB3, nCs4, nD4, nCs4, nB3, nFs3
+	dc.b nA3, nD3, nCs3, nB2
+	saVol		$FD
+	dc.b nF2, $18, nD3, nE2, nF2, nA2, nD3, nE3
+	dc.b nC3, nD3, nE3, nF3, nA3, nG3, $0C, nA3
+	dc.b nD3, nD3, $06, nE3, nA3, nD3, nF3, nA2
+	dc.b nF3, nG3, nD3, nG2, nD3, $18, nE3, nF3
+	dc.b nA3, nD4, nA3, nG3, nF3, nD3, nE3, nF3
+	dc.b nA3, nG3, $0C, nA3, nD3, nD3, $06, nE3
+	dc.b nF3, nE3, nD3, nA2, nC3, nF2, nE2, nD2
+	saVol		$03
+
+MaidensCapriccio_Loop28:
+	dc.b nA3, nD4, nE4, nF4
+	sLoop		$00, $06, MaidensCapriccio_Loop28
+	dc.b nA3, nC4, nD4, nE4, nA3, nC4, nD4, nE4
+
+MaidensCapriccio_Loop29:
+	dc.b nA3, nD4, nE4, nF4
+	sLoop		$00, $05, MaidensCapriccio_Loop29
+	dc.b nA3, nD4, nD4, nE4, nA3, nD4, nF4, nA2
+	dc.b nF4, nG4, nD4, nG3
+
+MaidensCapriccio_Loop30:
+	dc.b nA3, nD4, nE4, nF4
+	sLoop		$00, $07, MaidensCapriccio_Loop30
+	dc.b nA3, nC4, nD4, nE4
+
+MaidensCapriccio_Loop31:
+	dc.b nA3, nD4, nE4, nF4
+	sLoop		$00, $05, MaidensCapriccio_Loop31
+	dc.b nA3, nD4, nD4, nE4, nF4, nE4, nD4, nA3
+	dc.b nC4, nF3, nE3, nD3, nRst, $30
+	sVoice		$00
+	saVol		$E4
+	sPan		spCenter
+	sJump		MaidensCapriccio_FM5
+
+MaidensCapriccio_PSG1:
+	ssDetune	$01
+	dc.b nBb1, $0C, nRst
+	ssDetune	$01
+	dc.b nBb1, nRst
+	ssDetune	$01
+	dc.b nBb1, $30, nRst, $0C
+	ssDetune	$00
+	dc.b nAb1, $18, nRst, $0C
+	ssDetune	$00
+	dc.b nAb1, $30, nF1, $0C, nRst, nF1, nRst, nF1
+	dc.b $30, nRst, $0C, nF1, $18, nRst, $0C, nF1
+	dc.b $30
+	ssDetune	$01
+	dc.b nBb1, $0C, nRst
+	ssDetune	$01
+	dc.b nBb1, nRst
+	ssDetune	$01
+	dc.b nBb1, $30, nRst, $0C
+	ssDetune	$00
+	dc.b nC2, $18, nRst, $0C
+	ssDetune	$00
+	dc.b nC2, $30
+	ssDetune	$01
+	dc.b nBb1, $0C, nRst
+	ssDetune	$01
+	dc.b nBb1, nRst
+	ssDetune	$01
+	dc.b nBb1, $30, nRst, $0C
+	ssDetune	$01
+	dc.b nBb1, $18, nRst, $0C
+	ssDetune	$01
+	dc.b nBb1, $30
+	saVol	$01
+	ssDetune	$00
+	dc.b nCs3, $0C, nRst
+	ssDetune	$00
+	dc.b nCs3, nRst, nC3, $24, nCs3, $0C, nRst, nCs3
+	dc.b $18, nEb3, $0C, nF3, nEb3, nCs3, nC3, nRst
+	dc.b nCs3, nC3, nCs3, nC3, $24, nBb2, $3C, nRst
+	dc.b $0C, nBb2, $18, nC3, $0C, nCs3, nRst, nCs3
+	dc.b nRst, nC3, $24, nCs3, $0C, nRst, nCs3, $18
+	dc.b nEb3, $0C, nF3, nEb3, nCs3, nC3, nRst, nCs3
+	dc.b nC3, nCs3, nC3, $24, nA2, $3C, nRst, $0C
+	dc.b nA2, nBb2, nC3, nD1, $18
+	ssDetune	$01
+	dc.b nB0, nCs1
+	ssDetune	$00
+	dc.b nD1, nFs1
+	ssDetune	$01
+	dc.b nB1, nCs2
+	ssDetune	$00
+	dc.b nA1
+	ssDetune	$01
+	dc.b nB1, nCs2
+	ssDetune	$00
+	dc.b nD2, nFs2
+	ssDetune	$01
+	dc.b nE2, $0C
+	ssDetune	$00
+	dc.b nFs2
+	ssDetune	$01
+	dc.b nB1, $12, nCs2, $06
+	ssDetune	$00
+	dc.b nFs2
+	ssDetune	$01
+	dc.b nB1
+	ssDetune	$00
+	dc.b nD2, nFs1, nD2
+	ssDetune	$01
+	dc.b nE2, nB1
+	ssDetune	$00
+	dc.b nE1
+	ssDetune	$01
+	dc.b nB1, $18, nCs2
+	ssDetune	$00
+	dc.b nD2, nFs2, nB2, nFs2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$01
+	dc.b nB1, nCs2
+	ssDetune	$00
+	dc.b nD2, nFs2
+	ssDetune	$01
+	dc.b nE2, $0C
+	ssDetune	$00
+	dc.b nFs2
+	ssDetune	$01
+	dc.b nB1, $12, nCs2, $06
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$01
+	dc.b nCs2, nB1
+	ssDetune	$00
+	dc.b nFs1, nA1, nD1
+	ssDetune	$01
+	dc.b nCs1, nB0
+	saVol	$02
+
+MaidensCapriccio_Loop32:
+	dc.b nB1
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nFs2
+	ssDetune	$01
+	sLoop		$00, $05, MaidensCapriccio_Loop32
+	dc.b nB1
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nFs2, nA1
+	ssDetune	$01
+	dc.b nCs2
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nA1
+	ssDetune	$01
+	dc.b nCs2
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$01
+	dc.b nE2
+
+MaidensCapriccio_Loop33:
+	dc.b nB1
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nFs2
+	ssDetune	$01
+	sLoop		$00, $05, MaidensCapriccio_Loop33
+	dc.b nB1
+	ssDetune	$00
+	dc.b nD2, nFs2, nA2, nD3, nFs2, nB2, nD2, nB2
+	dc.b nCs3, nFs2
+	ssDetune	$01
+	dc.b nCs2
+
+MaidensCapriccio_Loop34:
+	ssDetune	$00
+	dc.b nB2, nD3, nE3
+	ssDetune	$01
+	dc.b nFs3
+	sLoop		$00, $07, MaidensCapriccio_Loop34
+	ssDetune	$00
+	dc.b nA2, nCs3, nD3, nE3
+
+MaidensCapriccio_Loop35:
+	dc.b nB2, nD3, nE3
+	ssDetune	$01
+	dc.b nFs3
+	ssDetune	$00
+	sLoop		$00, $05, MaidensCapriccio_Loop35
+	dc.b nB2, nD3
+	ssDetune	$01
+	dc.b nFs3
+	ssDetune	$00
+	dc.b nA3, nB3, nA3
+	ssDetune	$01
+	dc.b nFs3
+	ssDetune	$00
+	dc.b nD3
+	ssDetune	$01
+	dc.b nFs3
+	ssDetune	$00
+	dc.b nB2, nA2, nFs2
+	saVol	$FE
+	dc.b nF1, $18, nD1, nE1, nF1, nA1, nD2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nC2, nD2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nF2, nA2, nG2, $0C, nA2, nD2, $12
+	ssDetune	$01
+	dc.b nE2, $06
+	ssDetune	$00
+	dc.b nA2, nD2, nF2, nA1, nF2, nG2, nD2, nG1
+	dc.b nD2, $18
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nF2, nA2, nD3, nA2, nG2, nF2, nD2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nF2, nA2, nG2, $0C, nA2, nD2, $12
+	ssDetune	$01
+	dc.b nE2, $06
+	ssDetune	$00
+	dc.b nF2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nD2, nA1, nC2, nF1, nE1, nD1
+	saVol	$02
+
+MaidensCapriccio_Loop36:
+	dc.b nA2, nD3, nE3, nF3
+	sLoop		$00, $06, MaidensCapriccio_Loop36
+	dc.b nA2, nC3, nD3, nE3, nA2, nC3, nD3, nE3
+	dc.b nA2, nD3, nE3, nF3, nA2, nD3, nE3, $0C
+
+MaidensCapriccio_Loop37:
+	dc.b nA2, $06, nD3, nE3, nF3
+	sLoop		$00, $03, MaidensCapriccio_Loop37
+	dc.b nA2, nD3, $0C, nE3, $06, nA3, nD3, nF3
+	dc.b nA2, nF3, nG3, nD3, nG2
+
+MaidensCapriccio_Loop38:
+	dc.b nA2, nD3, nE3, nF3
+	sLoop		$00, $07, MaidensCapriccio_Loop38
+	dc.b nA2, nC3, nD3, nE3
+
+MaidensCapriccio_Loop39:
+	dc.b nA2, nD3, nE3, nF3
+	sLoop		$00, $05, MaidensCapriccio_Loop39
+	dc.b nA2, nD3, $0C, nE3, $06, nF3, nE3, nD3
+	dc.b nA2, nC3, nF2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nD2, nRst, $30
+	saVol	$FB
+	sJump		MaidensCapriccio_PSG1
+
+MaidensCapriccio_PSG2:
+	ssDetune	$01
+	dc.b nCs1, $0C, nRst
+	ssDetune	$01
+	dc.b nCs1, nRst
+	ssDetune	$01
+	dc.b nCs1, $30, nRst, $0C, nC1, $18, nRst, $0C
+	dc.b nC1, $3C, nRst, $0C, nBb0, nRst, nBb0, $30
+	dc.b nRst, $0C, nBb0, $18, nRst, $0C, nBb0, $30
+	dc.b nCs1, $0C, nRst, nCs1, nRst, nCs1, $30, nRst
+	dc.b $0C, nEb1, $18, nRst, $0C, nEb1, $30
+	ssDetune	$00
+	dc.b nF1, $0C, nRst
+	ssDetune	$00
+	dc.b nF1, nRst
+	ssDetune	$00
+	dc.b nF1, $30, nRst, $0C
+	ssDetune	$00
+	dc.b nF1, $18, nRst, $0C
+	ssDetune	$00
+	dc.b nF1, $30
+	saVol	$01
+	dc.b nF2, $0C, nRst, nF2, nRst, nEb2, $24, nF2
+	dc.b $0C, nRst, nF2, $24, nAb2, $0C, nFs2, nF2
+	dc.b nEb2, nRst, nF2, nEb2, nF2, nEb2, $24
+	ssDetune	$01
+	dc.b nCs2, $3C, nRst, $0C
+	ssDetune	$01
+	dc.b nCs2, $18
+	ssDetune	$00
+	dc.b nEb2, $0C, nF2, nRst, nF2, nRst, nEb2, $24
+	dc.b nF2, $0C, nRst, nF2, $24, nAb2, $0C, nFs2
+	dc.b nF2, nEb2, nRst, nF2, nEb2, nF2, nEb2, $24
+	dc.b nC2, $3C, nRst, $0C, nC2
+	ssDetune	$01
+	dc.b nCs2
+	ssDetune	$00
+	dc.b nEb2
+	saVol	$FD
+	ssDetune	$01
+	dc.b nB0, $18
+	saVol	$03
+	dc.b nFs0, nA0, nB0
+	ssDetune	$00
+	dc.b nD1, nFs1, nA1, nE1, nFs1, nA1
+	ssDetune	$01
+	dc.b nB1
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$01
+	dc.b nCs2, $0C
+	ssDetune	$00
+	dc.b nD2, nFs1, $12, nA1, $06, nD2, nFs1
+	ssDetune	$01
+	dc.b nB1
+	ssDetune	$00
+	dc.b nD1
+	ssDetune	$01
+	dc.b nB1, nCs2
+	ssDetune	$00
+	dc.b nFs1
+	ssDetune	$01
+	dc.b nCs1
+	ssDetune	$00
+	dc.b nFs1, $18, nA1
+	ssDetune	$01
+	dc.b nB1
+	ssDetune	$00
+	dc.b nD2, nFs2, nD2
+	ssDetune	$01
+	dc.b nCs2, nB1
+	ssDetune	$00
+	dc.b nFs2, nA2, nB2, nD3, nCs3, $0C, nD3, nFs2
+	dc.b $12, nA2, $06, nB2, nA2, nFs2, nD2, nFs2
+	ssDetune	$01
+	dc.b nB1
+	ssDetune	$00
+	dc.b nA1, nFs1
+	saVol	$02
+
+MaidensCapriccio_Loop40:
+	dc.b nFs2, nB2, nCs3, nD3
+	sLoop		$00, $06, MaidensCapriccio_Loop40
+	dc.b nFs2, nA2, nB2, nCs3, nFs2, nA2, nB2, nCs3
+
+MaidensCapriccio_Loop41:
+	dc.b nFs2, nB2, nCs3, nD3
+	sLoop		$00, $05, MaidensCapriccio_Loop41
+	dc.b nFs2, nB2, $0C, nCs3, $06
+	ssDetune	$01
+	dc.b nFs3
+	ssDetune	$00
+	dc.b nB2, nD3, nFs2, nD3, nE3, nB2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+
+MaidensCapriccio_Loop42:
+	dc.b nFs2, nB2, nCs3, nD3
+	sLoop		$00, $07, MaidensCapriccio_Loop42
+	dc.b nFs2, nA2, nB2, nCs3
+
+MaidensCapriccio_Loop43:
+	dc.b nFs2, nB2, nCs3, nD3
+	sLoop		$00, $05, MaidensCapriccio_Loop43
+	dc.b nFs2, nB2, $0C, nCs3, $06, nD3, nCs3, nB2
+	dc.b nFs2, nA2, nD2
+	ssDetune	$01
+	dc.b nCs2, nB1
+	saVol	$FE
+	ssDetune	$00
+	dc.b nD1, $18
+	ssDetune	$01
+	dc.b nA0, nC1
+	ssDetune	$00
+	dc.b nD1, nF1, nA1, nC2, nG1, nA1, nC2, nD2
+	dc.b nF2
+	ssDetune	$01
+	dc.b nE2, $0C
+	ssDetune	$00
+	dc.b nF2, nA1, $12, nC2, $06, nF2, nA1, nD2
+	dc.b nF1, nD2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nA1, nE1, nA1, $18, nC2, nD2, nF2, nA2
+	dc.b nF2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nD2, nA2, nC3, nD3, nF3, nE3, $0C, nF3
+	dc.b nA2, $12, nC3, $06, nD3, nC3, nA2, nF2
+	dc.b nA2, nD2, nC2, nA1
+	saVol	$02
+
+MaidensCapriccio_Loop44:
+	dc.b nD2, nF2, nG2, nA2
+	sLoop		$00, $06, MaidensCapriccio_Loop44
+
+MaidensCapriccio_Loop45:
+	dc.b nC2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+	dc.b nF2, nG2
+	sLoop		$00, $02, MaidensCapriccio_Loop45
+
+MaidensCapriccio_Loop46:
+	dc.b nD2, nF2, nG2, nA2
+	sLoop		$00, $05, MaidensCapriccio_Loop46
+	dc.b nD2, nF2, nA2, nC3, nF3, nA2, nD3, nF2
+	dc.b nD3, nE3, nA2
+	ssDetune	$01
+	dc.b nE2
+	ssDetune	$00
+
+MaidensCapriccio_Loop47:
+	dc.b nD3, nF3, nG3, nA3
+	sLoop		$00, $07, MaidensCapriccio_Loop47
+	dc.b nC3, nE3, nF3, nG3
+
+MaidensCapriccio_Loop48:
+	dc.b nD3, nF3, nG3, nA3
+	sLoop		$00, $05, MaidensCapriccio_Loop48
+	dc.b nD3, nF3, nA3
+	ssDetune	$FF
+	dc.b nC4
+	ssDetune	$00
+	dc.b nD4
+	ssDetune	$FF
+	dc.b nC4
+	ssDetune	$00
+	dc.b nA3, nF3, nA3, nD3, nC3, nA2, nRst, $30
+	saVol	$FB
+	sJump		MaidensCapriccio_PSG2
+
+MaidensCapriccio_PSG3:
+	dc.b nRst, $7F, $53
+	saVol	$04
+	sNoisePSG	snWhitePSG3
+
+MaidensCapriccio_Loop49:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $14
+	sLoop		$00, $03, MaidensCapriccio_Loop49
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $32
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $20
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $7F, $55
+
+MaidensCapriccio_Loop50:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $14
+	sLoop		$00, $03, MaidensCapriccio_Loop50
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $32
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $20
+
+MaidensCapriccio_Loop51:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $83, MaidensCapriccio_Loop51
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop52:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop52
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop53:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop53
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop54:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop54
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop55:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop55
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop56:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop56
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop57:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop57
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop58:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop58
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop59:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop59
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop60:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop60
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop61:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop61
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop62:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop62
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop63:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop63
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop64:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop64
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop65:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop65
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop66:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop66
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop67:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop67
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop68:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop68
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop69:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop69
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop70:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop70
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop71:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop71
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop72:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop72
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop73:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop73
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop74:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop74
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop75:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop75
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop76:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop76
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop77:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop77
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop78:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop78
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $32
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $20
+
+MaidensCapriccio_Loop79:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $03, MaidensCapriccio_Loop79
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop80:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop80
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop81:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop81
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop82:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop82
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop83:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop83
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop84:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop84
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop85:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop85
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop86:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop86
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop87:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop87
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop88:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop88
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop89:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop89
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop90:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop90
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop91:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop91
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop92:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop92
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop93:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop93
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop94:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop94
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop95:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop95
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop96:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop96
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop97:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop97
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop98:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop98
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop99:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop99
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop100:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop100
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop101:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop101
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop102:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop102
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop103:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop103
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop104:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop104
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop105:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop105
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop106:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop106
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $7F, $7F, $7F, $35
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $20
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $7F, $13
+
+MaidensCapriccio_Loop107:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $20
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $32
+	sLoop		$00, $02, MaidensCapriccio_Loop107
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $20
+
+MaidensCapriccio_Loop108:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $03, MaidensCapriccio_Loop108
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop109:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop109
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop110:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop110
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop111:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop111
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop112:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop112
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop113:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop113
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop114:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop114
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop115:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop115
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop116:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop116
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop117:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop117
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop118:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop118
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop119:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop119
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop120:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop120
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop121:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop121
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop122:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop122
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop123:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop123
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop124:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop124
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop125:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop125
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop126:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop126
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop127:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop127
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop128:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop128
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop129:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop129
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop130:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop130
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop131:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop131
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop132:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop132
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop133:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop133
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop134:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop134
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+
+MaidensCapriccio_Loop135:
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	sLoop		$00, $02, MaidensCapriccio_Loop135
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $08
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $32
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $20
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $02
+	ssDetune	$01
+	dc.b nHiHat, $04, nRst, $32
+	saVol	$FC
+	sJump		MaidensCapriccio_PSG3
+
+MaidensCapriccio_DAC1:
+	sStop
+
+MaidensCapriccio_DAC2:
+	dc.b dSnareS3, $18, $0C, dKickS3, $06, dKickS3, dKickS3, dKickS3
+	dc.b dSnareS3, dKickS3, dKickS3, dSnareS3, dKickS3, dKickS3, dKickS3, dKickS3
+	dc.b dSnareS3, $18
+
+MaidensCapriccio_Loop136:
+	dc.b dKickS3, $06, dKickS3, dSnareS3
+	sLoop		$00, $03, MaidensCapriccio_Loop136
+	dc.b dKickS3, dKickS3
+
+MaidensCapriccio_Loop137:
+	dc.b dKickS3, dSnareS3, $0C, dKickS3, $06
+	sLoop		$00, $03, MaidensCapriccio_Loop137
+	dc.b dKickS3, dSnareS3, $0C, $06, dKickS3, dKickS3, dSnareS3, dKickS3
+	dc.b dKickS3, dSnareS3, $0C, dKickS3, $06, dSnareS3, dSnareS3, dSnareS3
+	dc.b dSnareS3, dSnareS3, dKickS3, dKickS3
+	sLoop		$01, $02, MaidensCapriccio_DAC2
+
+MaidensCapriccio_Loop138:
+	dc.b dKickS3, $18, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3, dKickS3
+	dc.b dSnareS3, $0C, $06, dSnareS3
+	sLoop		$00, $03, MaidensCapriccio_Loop138
+	dc.b dKickS3, $18, dSnareS3, dKickS3, dSnareS3, dSnareS3, $0C
+
+MaidensCapriccio_Loop139:
+	dc.b dSnareS3, dKickS3
+	sLoop		$00, $1F, MaidensCapriccio_Loop139
+	dc.b dSnareS3, dSnareS3, $06, dKickS3, dKickS3, dSnareS3, dKickS3, dKickS3
+	dc.b dSnareS3, $0C, dKickS3, $06, dSnareS3, dSnareS3, dSnareS3, dSnareS3
+	dc.b dSnareS3, dKickS3, dKickS3
+
+MaidensCapriccio_Loop140:
+	dc.b dKickS3, $0C, dSnareS3
+	sLoop		$00, $1C, MaidensCapriccio_Loop140
+	dc.b dSnareS3
+
+MaidensCapriccio_Loop141:
+	dc.b $06
+	sLoop		$00, $0E, MaidensCapriccio_Loop141
+	dc.b dKickS3, dKickS3, $7F, nRst, nRst, $28, dSnareS3, $06
+	dc.b dKickS3, dKickS3, dSnareS3, dKickS3, dKickS3, dSnareS3, $0C, dKickS3
+	dc.b $06, dSnareS3, dSnareS3, dSnareS3, dSnareS3, dSnareS3, dKickS3, dKickS3
+	dc.b $36, $06, dKickS3, dSnareS3, dSnareS3, dKickS3, dKickS3, dSnareS3
+	dc.b dSnareS3, dSnareS3, dKickS3, dKickS3, dSnareS3, dKickS3, dKickS3, dSnareS3
+	dc.b $0C, dKickS3, $06, dSnareS3, dSnareS3, dSnareS3, dSnareS3, dSnareS3
+	dc.b dKickS3, dKickS3, dKickS3, dKickS3
+
+MaidensCapriccio_Loop143:
+	dc.b dSnareS3
+
+MaidensCapriccio_Loop142:
+	dc.b dSnareS3, dKickS3, dKickS3
+	sLoop		$00, $03, MaidensCapriccio_Loop142
+	sLoop		$01, $02, MaidensCapriccio_Loop143
+	dc.b dSnareS3, $0C, dKickS3, $06, dSnareS3, dSnareS3, dSnareS3, dSnareS3
+	dc.b dSnareS3, dKickS3, dKickS3
+
+MaidensCapriccio_Loop144:
+	dc.b dKickS3, $0C, dSnareS3
+	sLoop		$00, $1C, MaidensCapriccio_Loop144
+	dc.b dSnareS3, $06, dKickS3, dKickS3, dSnareS3, dKickS3, dKickS3, dSnareS3
+	dc.b $0C, dKickS3, $06, dSnareS3, dSnareS3, dSnareS3, dSnareS3, dSnareS3
+	dc.b dKickS3, dKickS3, $1E, $06, dKickS3, dKickS3, dKickS3
+	sJump		MaidensCapriccio_DAC2
+

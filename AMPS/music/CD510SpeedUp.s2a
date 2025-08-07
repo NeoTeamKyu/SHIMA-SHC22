@@ -1,0 +1,447 @@
+SpeedUpASIA_Header:
+	sHeaderInit
+	sHeaderTempo	$41, $6B
+	sHeaderCh	$05, $03
+	sHeaderDAC	SpeedUpASIA_DAC1
+	sHeaderDAC	SpeedUpASIA_DAC2
+	sHeaderFM	SpeedUpASIA_FM1, $02, $0D
+	sHeaderFM	SpeedUpASIA_FM2, $02, $0F
+	sHeaderFM	SpeedUpASIA_FM3, $02, $12
+	sHeaderFM	SpeedUpASIA_FM4, $02, $0E
+	sHeaderFM	SpeedUpASIA_FM5, $02, $0E
+	sHeaderPSG	SpeedUpASIA_PSG1, $0E, $1C, $00, $00
+	sHeaderPSG	SpeedUpASIA_PSG2, $0E, $20, $00, $00
+	sHeaderPSG	SpeedUpASIA_PSG3, $0D, $10, $00, v02
+
+	; Patch $00
+	; $3D
+	; $01, $02, $02, $02,	$10, $50, $50, $50
+	; $07, $08, $08, $08,	$01, $00, $00, $00
+	; $20, $17, $17, $17,	$1C, $08, $08, $08
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $02, $02, $02
+	spRateScale	$00, $01, $01, $01
+	spAttackRt	$10, $10, $10, $10
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $08, $08, $08
+	spSustainLv	$02, $01, $01, $01
+	spDecayRt	$01, $00, $00, $00
+	spReleaseRt	$00, $07, $07, $07
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$1C, $08, $08, $08
+
+	; Patch $01
+	; $3D
+	; $01, $02, $02, $02,	$10, $50, $50, $50
+	; $07, $08, $08, $08,	$01, $00, $00, $00
+	; $20, $17, $17, $17,	$1C, $08, $08, $08
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $02, $02, $02
+	spRateScale	$00, $01, $01, $01
+	spAttackRt	$10, $10, $10, $10
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $08, $08, $08
+	spSustainLv	$02, $01, $01, $01
+	spDecayRt	$01, $00, $00, $00
+	spReleaseRt	$00, $07, $07, $07
+	spSSGEG		$00, $00, $00, $00
+	spTotalLv	$1C, $08, $08, $08
+
+SpeedUpASIA_DAC2:
+	dc.b dkcCrashCymbal, $0C
+
+SpeedUpASIA_Loop211:
+	dc.b dKick, $0C
+	sLoop		$00, $1E, SpeedUpASIA_Loop211
+	saVol		$03	
+	dc.b $03, dSnare, dSnare, dSnare
+
+SpeedUpASIA_Loop31:
+	dc.b dkcCrashCymbal, $0C, dSnare, $06, dKick, $03, dSnare, dKick
+	dc.b dSnare, dKick, dKick, dSnare, $06, dKick
+	
+SpeedUpASIA_Loop311:	
+	dc.b dKick, $09, dKick, $03, dSnare, $06, dKick, $03, dSnare, dKick
+	dc.b dSnare, dKick, dKick, dSnare, $06, dKick
+	sLoop		$00, $06, SpeedUpASIA_Loop311
+	dc.b dKick, $09, $03, dSnare, $06, dKick, $03, $03
+	dc.b dSnare, $06, $06, $03, $03, $03, $03
+	sJump	SpeedUpASIA_Loop31
+
+SpeedUpASIA_FM1:
+	sPan		spCenter
+	sVoice		$00
+
+SpeedUpASIA_Loop1:
+	dc.b nE5, $03, nRst, nE5, nRst, nF5, $06, nE5
+	dc.b $03, nRst
+	ssDetune	$05
+	dc.b nB4, $01
+	ssDetune	$11
+	dc.b sHold, $01
+	ssDetune	$F9
+	dc.b sHold, nC5
+	ssDetune	$00
+	dc.b sHold, $06, nG4, $09, nE5, $0C, $03, nRst
+	dc.b nF5, $06, nE5, $03, nRst, nC5, $15, nRst
+	dc.b $03, nE5, nRst, nE5, nRst
+	ssDetune	$07
+	dc.b nE5, $01
+	ssDetune	$17
+	dc.b sHold, $01
+	ssDetune	$F7
+	dc.b sHold, nF5
+	ssDetune	$00
+	dc.b sHold, $03, nE5, nRst, nC5, $09, nG4, nE5
+	dc.b $0C, nF5, $03, nRst
+	ssDetune	$08
+	dc.b nF5, $01
+	ssDetune	$19
+	dc.b sHold, $01
+	ssDetune	$F7
+	dc.b sHold, nFs5
+	ssDetune	$00
+	dc.b sHold, $03, nG5, nRst, nC5, $15, nRst, $03
+	dc.b nG5, nRst, nG5, nRst
+	ssDetune	$07
+	dc.b nE5, $01
+	ssDetune	$17
+	dc.b sHold, $01
+	ssDetune	$F7
+	dc.b sHold, nF5
+	ssDetune	$00
+	dc.b sHold, $03, nE5, nC5, $09, nA4, $0A, nRst
+	dc.b $02, nG5, $0C, $03, nRst, nF5, $06, nE5
+	dc.b $03, nC5, $09, nA4, $06
+	ssDetune	$05
+	dc.b nB4, $01
+	ssDetune	$11
+	dc.b sHold, $01
+	ssDetune	$F9
+	dc.b sHold, nC5
+	ssDetune	$00
+	dc.b sHold, $03, nD5, $06
+	ssDetune	$06
+	dc.b $01
+	ssDetune	$14
+	dc.b sHold, $01
+	ssDetune	$F8
+	dc.b sHold, nEb5
+	ssDetune	$00
+	dc.b sHold, $1B, nD5, $0A, nRst, $02, nEb5, $06
+	ssDetune	$07
+	dc.b nE5, $01
+	ssDetune	$17
+	dc.b sHold, $01
+	ssDetune	$F7
+	dc.b sHold, nF5
+	ssDetune	$00
+	dc.b sHold, $06, nEb5, $09, nF5, $06
+	ssDetune	$08
+	dc.b nFs5, $01
+	ssDetune	$1B
+	dc.b sHold, $01
+	ssDetune	$F6
+	dc.b sHold, nG5
+	ssDetune	$00
+	dc.b sHold, $12, nRst, $03
+	sLoop		$00, $02, SpeedUpASIA_Loop1
+	sJump		SpeedUpASIA_Loop1
+
+SpeedUpASIA_FM2:
+	sPan		spCenter
+	sVoice		$00
+	sPan		spCenter
+
+SpeedUpASIA_Loop2:
+	dc.b nE4, $03, nRst, nE4, nRst, nF4, $06, nE4
+	dc.b $03, nRst
+	ssDetune	$05
+	dc.b nB3, $01
+	ssDetune	$11
+	dc.b sHold, $01
+	ssDetune	$F9
+	dc.b sHold, nC4
+	ssDetune	$00
+	dc.b sHold, $06, nG3, $09, nE4, $0C, $03, nRst
+	dc.b nF4, $06, nE4, $03, nRst, nC4, $15, nRst
+	dc.b $03, nE4, nRst, nE4, nRst
+	ssDetune	$07
+	dc.b nE4, $01
+	ssDetune	$17
+	dc.b sHold, $01
+	ssDetune	$F7
+	dc.b sHold, nF4
+	ssDetune	$00
+	dc.b sHold, $03, nE4, nRst, nC4, $09, nG3, nE4
+	dc.b $0C, nF4, $03, nRst
+	ssDetune	$08
+	dc.b nF4, $01
+	ssDetune	$19
+	dc.b sHold, $01
+	ssDetune	$F7
+	dc.b sHold, nFs4
+	ssDetune	$00
+	dc.b sHold, $03, nG4, nRst, nC4, $15, nRst, $03
+	dc.b nG4, nRst, nG4, nRst
+	ssDetune	$07
+	dc.b nE4, $01
+	ssDetune	$17
+	dc.b sHold, $01
+	ssDetune	$F7
+	dc.b sHold, nF4
+	ssDetune	$00
+	dc.b sHold
+	dc.b 	$03, nE4, nC4, $09, nA3, $0A, nRst
+	dc.b $02, nG4, $0C, $03, nRst, nF4, $06, nE4
+	dc.b $03, nC4, $09, nA3, $06
+	ssDetune	$05
+	dc.b nB3, $01
+	ssDetune	$11
+	dc.b sHold, $01
+	ssDetune	$F9
+	dc.b sHold, nC4
+	ssDetune	$00
+	dc.b sHold, $03, nD4, $06
+	ssDetune	$06
+	dc.b $01
+	ssDetune	$14
+	dc.b sHold, $01
+	ssDetune	$F8
+	dc.b sHold, nEb4
+	ssDetune	$00
+	dc.b sHold, $1B, nD4, $0A, nRst, $02, nEb4, $06
+	ssDetune	$07
+	dc.b nE4, $01
+	ssDetune	$17
+	dc.b sHold, $01
+	ssDetune	$F7
+	dc.b sHold, nF4
+	ssDetune	$00
+	dc.b sHold, $06, nEb4, $09, nF4, $06
+	ssDetune	$08
+	dc.b nFs4, $01
+	ssDetune	$1B
+	dc.b sHold, $01
+	ssDetune	$F6
+	dc.b sHold, nG4
+	ssDetune	$00
+	dc.b sHold, $12, $03
+	sLoop		$00, $02, SpeedUpASIA_Loop2
+	sPan		spCenter
+	sJump		SpeedUpASIA_Loop2
+
+SpeedUpASIA_FM3:
+	sPan		spCenter
+	sVoice		$00
+	sPan		spCenter
+	dc.b $7F, $7F, $7F, $03 
+
+SpeedUpASIA_FM3loop:	
+	dc.b	nC4, nRst, nG3, nRst
+	dc.b nBb3, $06, nC4, $03, nRst, nE4, $09, nG3
+	dc.b nC4, $0C, nG3, $03, nRst, nBb3, $06, nC4
+	dc.b $03, nRst, nE4, $15, nRst, $03, nC4, nRst
+	dc.b nG3, nRst, nBb3, $06, nC4, $03, nRst, nE4
+	dc.b $09, nG3, nC4, $0C, nG3, $03, nRst, nE3
+	dc.b $06, nBb3, $03, nRst, nG3, $15, nRst, $03
+	dc.b nE4, nRst, nE4, nRst, nG4, $06, nE4, $03
+	dc.b nA4, $09, nC4, $0A, nRst, $02, nE4, $0C
+	dc.b $03, nRst, nG4, $06, nE4, $03, nA4, $09
+	dc.b nG4, $06, nF4, nE4, nAb4, $1E, nG4, $0A
+	dc.b nRst, $02, nF4, $06, nEb4, $09, nF4, nEb4
+	dc.b $06, nD4, $15, nRst, $03
+	sJump	SpeedUpASIA_FM3loop
+
+SpeedUpASIA_FM4:
+	sPan		spCenter
+	sVoice		$01
+	sPan		spCenter
+
+SpeedUpASIA_Loop3:
+	dc.b nC2, $03, nRst
+	sLoop		$00, $10, SpeedUpASIA_Loop3
+
+SpeedUpASIA_Loop4:
+	dc.b nBb1, nRst
+	sLoop		$00, $10, SpeedUpASIA_Loop4
+
+SpeedUpASIA_Loop5:
+	dc.b nA1, nRst
+	sLoop		$00, $10, SpeedUpASIA_Loop5
+
+SpeedUpASIA_Loop6:
+	dc.b nAb1, nRst
+	sLoop		$00, $09, SpeedUpASIA_Loop6
+	dc.b nAb2, nRst, nAb1, nRst, nAb2, nRst, nBb1, nRst
+	dc.b nBb2, nRst, nBb1, nRst, nBb2
+
+SpeedUpASIA_Loop7:
+	dc.b nRst, nC2, nRst, nC3
+	sLoop		$00, $08, SpeedUpASIA_Loop7
+
+SpeedUpASIA_Loop8:
+	dc.b nRst, nBb1, nRst, nBb2
+	sLoop		$00, $08, SpeedUpASIA_Loop8
+
+SpeedUpASIA_Loop9:
+	dc.b nRst, nA1, nRst, nA2
+	sLoop		$00, $08, SpeedUpASIA_Loop9
+
+SpeedUpASIA_Loop10:
+	dc.b nRst, nAb1, nRst, nAb2
+	sLoop		$00, $06, SpeedUpASIA_Loop10
+	dc.b nRst, nBb1, nRst, nBb2, nRst, nBb1, nRst, nBb2
+	sJump		SpeedUpASIA_Loop7
+
+SpeedUpASIA_FM5:
+	sPan		spCenter
+	sVoice		$00
+	sPan		spCenter
+
+SpeedUpASIA_Loop11:
+	dc.b nC2, $03, nRst
+	sLoop		$00, $10, SpeedUpASIA_Loop11
+
+SpeedUpASIA_Loop12:
+	dc.b nBb1, nRst
+	sLoop		$00, $10, SpeedUpASIA_Loop12
+
+SpeedUpASIA_Loop13:
+	dc.b nA1, nRst
+	sLoop		$00, $10, SpeedUpASIA_Loop13
+
+SpeedUpASIA_Loop14:
+	dc.b nAb1, nRst
+	sLoop		$00, $09, SpeedUpASIA_Loop14
+	dc.b nAb2, nRst, nAb1, nRst, nAb2, nRst, nBb1, nRst
+	dc.b nBb2, nRst, nBb1, nRst, nBb2
+
+SpeedUpASIA_Loop15:
+	dc.b nRst, nC2, nRst, nC3
+	sLoop		$00, $08, SpeedUpASIA_Loop15
+
+SpeedUpASIA_Loop16:
+	dc.b nRst, nBb1, nRst, nBb2
+	sLoop		$00, $08, SpeedUpASIA_Loop16
+
+SpeedUpASIA_Loop17:
+	dc.b nRst, nA1, nRst, nA2
+	sLoop		$00, $08, SpeedUpASIA_Loop17
+
+SpeedUpASIA_Loop18:
+	dc.b nRst, nAb1, nRst, nAb2
+	sLoop		$00, $06, SpeedUpASIA_Loop18
+	dc.b nRst, nBb1, nRst, nBb2, nRst, nBb1, nRst, nBb2
+	sPan		spCenter
+	sJump		SpeedUpASIA_Loop15
+
+SpeedUpASIA_PSG1:
+	sVolEnv	$00
+
+SpeedUpASIA_Loop19:
+	dc.b nC2, $03, nE2, nG2, nC3
+	sLoop		$00, $07, SpeedUpASIA_Loop19
+	dc.b nE3, nG3, nC4, nG3
+	sLoop		$01, $02, SpeedUpASIA_Loop19
+
+SpeedUpASIA_Loop20:
+	dc.b nC2, nF2, nG2, nC3
+	sLoop		$00, $07, SpeedUpASIA_Loop20
+	dc.b nF3, nG3, nC4, nG3
+
+SpeedUpASIA_Loop21:
+	dc.b nC2, nEb2, nAb2, nC3
+	sLoop		$00, $06, SpeedUpASIA_Loop21
+	dc.b nC2, nD2, nG2, nC3, nD3, nG3, nC4, nG3
+	sLoop		$02, $02, SpeedUpASIA_Loop19
+	sJump	SpeedUpASIA_Loop19
+
+SpeedUpASIA_PSG3:
+	sNoisePSG	$E7
+	dc.b  nA5
+
+SpeedUpASIA_Loop22:
+	dc.b $06, $06
+	sVolEnv	v01
+	dc.b nEb5, $03
+	sVolEnv	v02
+	dc.b nA5, nA5, nA5, $06, $09
+	sVolEnv	v01
+	dc.b nEb5, $06
+	sVolEnv	v02
+	dc.b nA5, $03, $03
+	sLoop		$00, $08, SpeedUpASIA_Loop22
+
+SpeedUpASIA_Loop24:
+	dc.b $06, $03, $03
+	sVolEnv	v01
+	sVolEnv	v02
+
+SpeedUpASIA_Loop23:
+	dc.b $03, $03, $03, $03, $03, $03, $03, $03
+	sVolEnv	v01
+	dc.b $06
+	sVolEnv	v02
+	dc.b $03, $03
+	sLoop		$00, $07, SpeedUpASIA_Loop24
+	dc.b $06, $03, $03
+	sVolEnv	v01
+	sVolEnv	v02
+
+SpeedUpASIA_Loop25:
+	dc.b $03
+	sLoop		$00, $08, SpeedUpASIA_Loop25
+	sVolEnv	v01
+	dc.b $06
+	sVolEnv	v02
+	sJump	SpeedUpASIA_Loop24
+
+SpeedUpASIA_DAC1:
+	sStop
+		
+		
+SpeedUpASIA_PSG2:
+	sVolEnv	$00
+	dc.b $7F, $7F, $7F, $03
+
+SpeedUpASIA_PSG2loop:	
+	ssDetune	$00
+	dc.b  $01, nE3, sHold, $18
+	ssDetune	$01
+	dc.b sHold, $27
+	ssDetune	$02
+	dc.b sHold, $21
+	ssDetune	$FD
+	dc.b sHold, nEb3, $06
+	ssDetune	$FE
+	dc.b sHold, $26
+	ssDetune	$FF
+	dc.b sHold, $25
+	ssDetune	$00
+	dc.b sHold, $0C, nG2, $14
+	ssDetune	$01
+	dc.b sHold, $19
+	ssDetune	$02
+	dc.b sHold, $17
+	ssDetune	$03
+	dc.b sHold, $15
+	ssDetune	$04
+	dc.b sHold, $0A
+	ssDetune	$FC
+	dc.b sHold, nFs2, $0E
+	ssDetune	$FD
+	dc.b sHold, $16
+	ssDetune	$FE
+	dc.b sHold, $15
+	ssDetune	$FF
+	dc.b sHold, $18
+	ssDetune	$00
+	dc.b sHold, $0D
+	sVolEnv	$00
+	sJump	SpeedUpASIA_PSG2loop
+	

@@ -1,0 +1,1 @@
+These can be loaded in GIMP using the "Open..." menu, and selecting Raw Image Data as the format. Width is 8, height is whatever the hell you want. Or just use Tile Molester/YY-CHR, either or.

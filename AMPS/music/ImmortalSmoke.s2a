@@ -1,0 +1,1770 @@
+ImmortalSmoke_Header:
+	sHeaderTempo	$02, $01
+	sHeaderCh	$05, $03
+	sHeaderDAC	ImmortalSmoke_DAC1, $00, $00
+	sHeaderDAC	ImmortalSmoke_DAC2, $00, $00
+	sHeaderFM	ImmortalSmoke_FM1, $00, $09
+	sHeaderFM	ImmortalSmoke_FM2, $00, $12
+	sHeaderFM	ImmortalSmoke_FM3, $00, $16
+	sHeaderFM	ImmortalSmoke_FM4, $00, $16
+	sHeaderFM	ImmortalSmoke_FM5, $00, $1F
+	sHeaderPSG	ImmortalSmoke_PSG1, $0C, $08, $00, v05
+	sHeaderPSG	ImmortalSmoke_PSG2, $0C, $10, $00, v08
+	sHeaderPSG	ImmortalSmoke_PSG3, $0C, $10, $00, v08
+
+ImmortalSmoke_Patches:
+	; Patch $00
+	; $3A
+	; $08, $31, $30, $41,	$1F, $1F, $1F, $1F
+	; $12, $0C, $0C, $10,	$04, $04, $04, $04
+	; $85, $25, $25, $16,	$1E, $32, $14, $00
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$00, $03, $03, $04
+	spMultiple	$08, $00, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$12, $0C, $0C, $10
+	spSustainLv	$08, $02, $02, $01
+	spDecayRt	$04, $04, $04, $04
+	spReleaseRt	$05, $05, $05, $06
+	spTotalLv	$1E, $14, $32, $00
+
+	; Patch $01
+	; $3D
+	; $74, $72, $34, $72,	$12, $18, $18, $18
+	; $00, $0A, $0A, $0A,	$00, $04, $04, $04
+	; $05, $16, $16, $16,	$22, $00, $00, $00
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$07, $03, $07, $07
+	spMultiple	$04, $04, $02, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$12, $18, $18, $18
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $0A, $0A, $0A
+	spSustainLv	$00, $01, $01, $01
+	spDecayRt	$00, $04, $04, $04
+	spReleaseRt	$05, $06, $06, $06
+	spTotalLv	$22, $00, $00, $00
+
+	; Patch $02
+	; $3C
+	; $78, $74, $34, $32,	$1F, $1F, $1F, $1F
+	; $00, $00, $00, $00,	$00, $00, $00, $00
+	; $F0, $F8, $F0, $F8,	$1D, $00, $1C, $00
+	spAlgorithm	$04
+	spFeedback	$07
+	spDetune	$07, $03, $07, $03
+	spMultiple	$08, $04, $04, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $00, $00, $00
+	spSustainLv	$0F, $0F, $0F, $0F
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$00, $00, $08, $08
+	spTotalLv	$1D, $1C, $00, $00
+
+	; Patch $03
+	; $3A
+	; $42, $56, $32, $24,	$8E, $51, $14, $11
+	; $06, $08, $07, $04,	$02, $02, $01, $01
+	; $16, $19, $26, $28,	$19, $1F, $2A, $00
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$04, $03, $05, $02
+	spMultiple	$02, $02, $06, $04
+	spRateScale	$02, $00, $01, $00
+	spAttackRt	$0E, $14, $11, $11
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$06, $07, $08, $04
+	spSustainLv	$01, $02, $01, $02
+	spDecayRt	$02, $01, $02, $01
+	spReleaseRt	$06, $06, $09, $08
+	spTotalLv	$19, $2A, $1F, $00
+
+	; Patch $04
+	; $3A
+	; $71, $0C, $03, $31,	$DF, $DF, $DF, $9F
+	; $05, $05, $05, $07,	$02, $02, $02, $02
+	; $11, $11, $11, $25,	$28, $28, $28, $00
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$07, $00, $00, $03
+	spMultiple	$01, $03, $0C, $01
+	spRateScale	$03, $03, $03, $02
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$05, $05, $05, $07
+	spSustainLv	$01, $01, $01, $02
+	spDecayRt	$02, $02, $02, $02
+	spReleaseRt	$01, $01, $01, $05
+	spTotalLv	$28, $28, $28, $00
+
+	; Patch $05
+	; $36
+	; $36, $32, $03, $71,	$12, $12, $12, $12
+	; $00, $02, $02, $02,	$00, $01, $01, $01
+	; $09, $39, $39, $39,	$23, $00, $00, $00
+	spAlgorithm	$06
+	spFeedback	$06
+	spDetune	$03, $00, $03, $07
+	spMultiple	$06, $03, $02, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$12, $12, $12, $12
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $02, $02, $02
+	spSustainLv	$00, $03, $03, $03
+	spDecayRt	$00, $01, $01, $01
+	spReleaseRt	$09, $09, $09, $09
+	spTotalLv	$23, $00, $00, $00
+
+ImmortalSmoke_DAC1:
+	dc.b nRst, $7F, $7F, $66
+	ssTempo		$00
+	dc.b $04, dKick, $03, $03, $06, $06, dLooseSnare, $03
+	dc.b $03, $06, $03, $03
+
+ImmortalSmoke_Jump91:
+	dc.b dKick, $0C, dKcSnare, dKick, dKcSnare, dKick, dKcSnare, dKick
+	dc.b dKcSnare, $06, dKick, $03, $03, $0C, $0C, $0C
+	dc.b $0C, $0C, dKcSnare, dKick, dKcSnare, dLooseSnare, $06, dKcSnare
+	dc.b dKick, $03, $03, dKcSnare, $06, dKick, dKcSnare, dKick
+	dc.b $03, $03, dKcSnare, $06, dLooseSnare, dKcSnare, dKick, $03
+	dc.b $03, dKcSnare, dKcSnare, dKick, $06, dKcSnare, dKick, $03
+	dc.b $03, dKcSnare, $06, dLooseSnare, dKcSnare, dKick, $03, $03
+	dc.b dKcSnare, $06, dKick, dKcSnare, dKick, $03, $03, dKcSnare
+	dc.b $06, dKick, $01
+	ssTempo		$01
+	dc.b nRst, $05, dKcSnare, $06, dKick, $03, $03
+	ssTempo		$02
+	dc.b $01
+	ssTempo		$03
+	dc.b nRst
+	ssTempo		$05
+	dc.b $01, dKick
+	ssTempo		$07
+	dc.b nRst
+	ssTempo		$09
+	dc.b $01
+	ssTempo		$0A
+	dc.b dKick
+	ssTempo		$0C
+	dc.b nRst
+	ssTempo		$0D
+	dc.b $01, dKick
+	ssTempo		$0F
+	dc.b nRst
+	ssTempo		$11
+	dc.b $01
+	ssTempo		$12
+	dc.b dKick
+	ssTempo		$15
+	dc.b nRst, $02, dKick, $01
+	ssTempo		$17
+	dc.b nRst
+	ssTempo		$1A
+	dc.b $01
+	ssTempo		$1C
+	dc.b dKick, $02
+	ssTempo		$20
+	dc.b nRst, $04
+	ssTempo		$25
+	dc.b dKick
+	ssTempo		$2B
+	dc.b nRst, $02
+	ssTempo		$01
+	dc.b dKick, $0C, dKcSnare, $06, dKick, dKick, dKick, dKcSnare
+	dc.b $03, dKick, dKick, dKick, dKick, $06, $06, dKcSnare
+	dc.b dKick, dKick, dKick, dKcSnare, $03, dKick, dKick, dKick
+	dc.b dKick, $0C, dKcSnare, $06, dKick, dKick, dKick, dKcSnare
+	dc.b $03, dKick, dKick, dKick, dKick, $06, $06, dKcSnare
+	dc.b dKick, dKick, dKcSnare, $03, $03, $03, dKick, dKcSnare
+	dc.b dKick, dKick, $06, dKcSnare, dKcSnare, dKick, dKick, $03
+	dc.b $09, dKcSnare, $03, dKick, dKick, dKick, dKick, $06
+	dc.b $06, dKcSnare, dKick, dKick, $03, $03, dKcSnare, dKcSnare
+	dc.b dKcSnare, dKick, dKcSnare, dKick, dKick, $06, dKcSnare, dKcSnare
+	dc.b dKcSnare, $03, $03, dKick, dKick, $09, dKcSnare, $03
+	dc.b dKick, dKcSnare, dKick, dKick, $06, dKcSnare, dKcSnare, dKcSnare
+	dc.b dKick, $03, $03, dKcSnare, $06, $03, $03, $03
+
+ImmortalSmoke_LoopA1:
+	dc.b $03, dKick, $06, dKcSnare, dKick, $03, $03, dKcSnare
+	dc.b dKcSnare, dKick, $06, dKcSnare, $03, $03, dKick, dKick
+	dc.b dKcSnare
+	sLoop		$00, $07, ImmortalSmoke_LoopA1
+	dc.b dKcSnare, dCrashCymbal, $06, dKcSnare, dKick, $03, $03, dKcSnare
+	dc.b dKcSnare, dKick, $06, dKcSnare, $03, $03, dKick, dKick
+	dc.b dKcSnare
+
+ImmortalSmoke_LoopA2:
+	dc.b dKcSnare, dKick, $0C
+	sLoop		$00, $10, ImmortalSmoke_LoopA2
+	dc.b dKcSnare, $06, dKick, $03, $03
+
+ImmortalSmoke_LoopA3:
+	dc.b dLooseSnare, $06, dKcSnare, dKick, dKcSnare
+	sLoop		$00, $09, ImmortalSmoke_LoopA3
+	dc.b dLooseSnare, dKcSnare, $03, $03, dKick, $06, dKcSnare, dLooseSnare
+	dc.b dKcSnare, dKick, dKcSnare, dLooseSnare, dKcSnare, $03, $03, dKick
+	dc.b $06, dKcSnare, $03, $03, dLooseSnare, $06, dKcSnare, dKick
+	dc.b dKcSnare, dKick, dKcSnare, $03, $03, dKick, $06, dKcSnare
+	dc.b dKick, dKcSnare, dKick, dKcSnare, dKick, dKcSnare, $03, $03
+	dc.b $03, $03, $03, $03, $12, $0C, dKick, $03
+	dc.b $03, $06, $03, $0F, dKcSnare
+
+ImmortalSmoke_LoopA4:
+	dc.b $18
+	sLoop		$00, $07, ImmortalSmoke_LoopA4
+	dc.b $0C
+
+ImmortalSmoke_LoopA5:
+	dc.b dKick, dKcSnare
+	sLoop		$00, $05, ImmortalSmoke_LoopA5
+	dc.b dKick, $06, dKcSnare, dKcSnare, $0C, dKick, dKick, $03
+	dc.b $09, $06, dLooseSnare, dKcSnare
+
+ImmortalSmoke_LoopA6:
+	dc.b dKcSnare, $03, $03, dKick, $06, dKcSnare, dKick, $03
+	dc.b $03, dKcSnare, dKcSnare, dKick, $06, dKcSnare, $03, $03
+	dc.b dKick, dKick
+	sLoop		$00, $07, ImmortalSmoke_LoopA6
+	dc.b dKcSnare, dKcSnare, dKick, $06, dKcSnare, dKick, $03, $03
+	dc.b dKcSnare, dKcSnare, dLooseSnare, $06, $03, dKcSnare, dKick, dKick
+	dc.b dKcSnare, dKcSnare
+
+ImmortalSmoke_LoopA7:
+	dc.b dKick, $06, dKcSnare, $0C, $06
+	sLoop		$00, $07, ImmortalSmoke_LoopA7
+
+ImmortalSmoke_LoopA8:
+	dc.b dKick, dKcSnare
+	sLoop		$00, $32, ImmortalSmoke_LoopA8
+	dc.b dLooseSnare, $0C, $09, $09, $06, $03, $03, $03
+	dc.b $03, dKick, $06, $06, dKcSnare, $03, $03, $03
+	dc.b $0F
+
+ImmortalSmoke_LoopA9:
+	dc.b $0C, dKick, $06, $06, dKcSnare, $03, $03, $03
+	dc.b $09, $03, $03
+	sLoop		$00, $02, ImmortalSmoke_LoopA9
+	dc.b $03, $03, $03, $03, dKick, $06, $06, dKcSnare
+	dc.b $03, $03, $03, $09, $03, $03, $03, $03
+	dc.b $03, $03, dKick, $06, $06, dKcSnare, $03, $03
+	dc.b $03, $03, dKick, $06, dKcSnare, $03, $03, $06
+	dc.b $06, dKick, dKcSnare
+
+ImmortalSmoke_LoopA10:
+	dc.b dKcSnare, $03, $03, $03, $03, dKick, $06, dKcSnare
+	dc.b $03, $03, $03, $03, $03, $03, dKick, $06
+	dc.b $06
+	sLoop		$00, $02, ImmortalSmoke_LoopA10
+	dc.b dKcSnare, $03, $03, $03, $03, dKick, $06, dKcSnare
+	dc.b $03, $03, $03, $03, $03, $03
+
+ImmortalSmoke_LoopA11:
+	dc.b dKick, $06, dKcSnare
+	sLoop		$00, $0F, ImmortalSmoke_LoopA11
+	dc.b dKick, $03, dKcSnare, dKcSnare
+
+ImmortalSmoke_LoopA12:
+	dc.b dKcSnare, dKick, $06
+	sLoop		$00, $0C, ImmortalSmoke_LoopA12
+	dc.b dKcSnare, dLooseSnare, dKcSnare, dKick, dKcSnare, dCrashCymbal, dKcSnare, dKcSnare
+	dc.b $03, $03, $03
+
+ImmortalSmoke_LoopA13:
+	dc.b $03, dKick, $06, dKcSnare, dKick, $03, $03, dKcSnare
+	dc.b dKcSnare, dKick, $06, dKcSnare, $03, $03, dKick, dKick
+	dc.b dKcSnare
+	sLoop		$00, $07, ImmortalSmoke_LoopA13
+	dc.b dKcSnare, dLooseSnare, $06, dKcSnare, dKick, $03, $03, dKcSnare
+	dc.b dKcSnare, dLooseSnare, dLooseSnare, dKcSnare
+
+ImmortalSmoke_LoopA14:
+	dc.b dKcSnare, dKick, dKick, dKcSnare, dKcSnare, dKick, $06, dKcSnare
+	dc.b dKick, $03, $03, dKcSnare, dKcSnare, dKick, $06, dKcSnare
+	dc.b $03
+	sLoop		$00, $07, ImmortalSmoke_LoopA14
+	dc.b $03, dKick, dKick, dKcSnare, dKcSnare, dLooseSnare, $06, dKcSnare
+	dc.b dLooseSnare, $03, dKick, dKcSnare, dKcSnare, dLooseSnare, dLooseSnare, dLooseSnare
+	dc.b dLooseSnare, dLooseSnare, dKick, dLooseSnare, dKcSnare, $7F, nRst, nRst
+	dc.b $61
+	ssTempo		$00
+	dc.b dKick, $03, $03, $06, $06, dLooseSnare, $03
+	dc.b $03, $06, $03, $03
+	sJump		ImmortalSmoke_Jump91
+
+ImmortalSmoke_DAC2:
+	dc.b nRst, $7F, $7F, $66
+	dc.b $16, dHighTom, $03, $03, dMidTom, dMidTom, dLowTom, dLowTom
+
+ImmortalSmoke_Jump8:
+	dc.b nRst, $6C, dKcSnare, $18, $0C, dLooseSnare, dLooseSnare, dLooseSnare
+	dc.b dLooseSnare, $03, $03, $06, dCrashCymbal, $0C, dLooseSnare, dLooseSnare
+	dc.b dLooseSnare, dCrashCymbal, dLooseSnare, dLooseSnare, dLooseSnare, dCrashCymbal, dLooseSnare, dLooseSnare
+	dc.b dLooseSnare, $03, dKcSnare, $09, dCrashCymbal, $01
+	dc.b nRst, $0B, dLooseSnare, $06
+	dc.b dKcSnare, $01
+	dc.b nRst, nRst
+	dc.b dKcSnare
+	dc.b nRst, nRst
+	dc.b dKcSnare
+	dc.b nRst, nRst
+	dc.b dKcSnare
+	dc.b nRst, nRst
+	dc.b dKcSnare
+	dc.b nRst, $02, dKcSnare, $01
+	dc.b nRst, nRst
+	dc.b dKcSnare, $02
+	dc.b nRst, $04
+	dc.b dKcSnare
+	dc.b nRst, $02
+	dc.b dCrashCymbal, $0C, dLooseSnare, $18, $18, $12, dKcSnare, $03
+	dc.b $03, dLooseSnare, $06, dKcSnare, $12, dLooseSnare, $18, $18
+	dc.b $12, dKcSnare, $06, dLooseSnare, dKcSnare, dCrashCymbal, $0C, dLooseSnare
+	dc.b $18, $12, dKcSnare, $06, dLooseSnare, $18, $06, dKcSnare
+	dc.b dCrashCymbal, $0C, dLooseSnare, $06, dKcSnare, $12, dLooseSnare, $06
+	dc.b dKcSnare, $0C, dLooseSnare, $03, $03, $06, $06
+
+ImmortalSmoke_Loop90:
+	dc.b $03
+	sLoop		$00, $08, ImmortalSmoke_Loop90
+	dc.b dCrashCymbal, $30, $30, $30, $30, $30, $30, $18
+	dc.b $18, nRst, $08
+	saVol		$1A
+	dc.b dLooseSnare
+
+ImmortalSmoke_Loop91:
+	dc.b $02
+	saVol		$FF
+	dc.b $01
+	saVol		$FF
+	sLoop		$00, $0D, ImmortalSmoke_Loop91
+	dc.b $7F, nRst, nRst, $77, dLooseSnare, $06, $03, $03
+	dc.b dCrashCymbal
+
+ImmortalSmoke_Loop92:
+	dc.b $18
+	sLoop		$00, $0C, ImmortalSmoke_Loop92
+	dc.b $12, dLooseSnare, $06, dCrashCymbal, dLooseSnare, $03, $03, $06
+	dc.b $06, dCrashCymbal, dLooseSnare, dLooseSnare, $03, $03, $06, dCrashCymbal
+	dc.b dLooseSnare, $03, $03, $03, $03, $03, $03, dCrashCymbal
+	dc.b $24, dKcSnare, $06, $03, $7F, nRst, nRst, $55
+	dc.b dKcSnare, $0C, $0C, $0C, dLooseSnare, $06, $03, $03
+	dc.b dCrashCymbal, $30, $30, $30, $30, $30, $30, $18
+	dc.b $18, $0C
+	saVol		$08
+	dc.b dLooseSnare
+
+ImmortalSmoke_Loop93:
+	dc.b $02
+	saVol		$FF
+	dc.b $01
+	saVol		$FF
+	sLoop		$00, $04, ImmortalSmoke_Loop93
+	dc.b dCrashCymbal, $0C, dLooseSnare, $06, $06, dCrashCymbal, $7F, nRst
+	dc.b $3B, dKcSnare
+
+ImmortalSmoke_Loop94:
+	dc.b $06, dCrashCymbal, $60, $42, dLooseSnare, $03, $03, $06
+	dc.b $06, $03, $03
+	sLoop		$00, $02, ImmortalSmoke_Loop94
+	dc.b $06, dCrashCymbal, $60, $30, nRst, $06
+	saVol		$18
+	dc.b dLooseSnare
+
+ImmortalSmoke_Loop95:
+	dc.b $02
+	saVol		$FF
+	dc.b $01
+	saVol		$FF
+	sLoop		$00, $0E, ImmortalSmoke_Loop95
+	dc.b dLowTom, $03, $03, dMidTom, dMidTom, dHighTom, dHighTom, dHighTom
+	dc.b dMidTom, dMidTom, dMidTom, dLowTom, dLowTom, dLowTom, dLowTom, dLowerTom
+	dc.b dLowerTom, $7F, nRst, $7A, dKcSnare, $7F, nRst, nRst
+	dc.b $40, dKcSnare, $6C, dCrashCymbal, $30, $0C, dLooseSnare, nRst
+	dc.b $06
+	saVol		$0C
+	dc.b dLooseSnare
+
+ImmortalSmoke_Loop96:
+	dc.b $02
+	saVol		$FF
+	dc.b $01
+	saVol		$FF
+	sLoop		$00, $06, ImmortalSmoke_Loop96
+	dc.b dCrashCymbal, $30, $30, $30, $30, $30, $30
+	dc.b $18, $15, dLooseSnare, $03, dCrashCymbal, $0C, dLooseSnare, dCrashCymbal
+	dc.b $06, dLooseSnare, $03, $03, $06, $06, dCrashCymbal, $30
+	dc.b $30, $30, $30, $30, $30, $18, $18, $18
+	dc.b $18, $7F, nRst, nRst, $70, dHighTom, $03, $03
+	dc.b dMidTom, dMidTom, dLowTom, dLowTom
+	sJump		ImmortalSmoke_Jump8
+
+ImmortalSmoke_FM1:
+	sPan		spCenter
+	sVoice		$00
+	dc.b nRst, $7F, $7F, $7F, $0F
+
+ImmortalSmoke_Loop1:
+	dc.b nCs3, $03, nE3, nAb3, nCs4
+	sLoop		$00, $03, ImmortalSmoke_Loop1
+	dc.b nCs3, nE3, nA3, nE4
+
+ImmortalSmoke_Loop2:
+	dc.b nC3, nEb3, nFs3, nC4
+	sLoop		$00, $03, ImmortalSmoke_Loop2
+	dc.b nCs3, nE3, nAb3, nCs4
+	sLoop		$01, $04, ImmortalSmoke_Loop1
+
+ImmortalSmoke_Loop6:
+	dc.b nE3, $06, nB3, nE3, nB3, nFs3, nCs4, nFs3
+	dc.b nCs4
+
+ImmortalSmoke_Loop3:
+	dc.b nAb3, nEb4
+	sLoop		$00, $04, ImmortalSmoke_Loop3
+	dc.b nE3, nB3, nE3, nB3, nFs3, nCs4, nFs3, nCs4
+
+ImmortalSmoke_Loop4:
+	dc.b nEb3, nBb3
+	sLoop		$00, $04, ImmortalSmoke_Loop4
+	dc.b nCs3, nAb3, nCs3, nAb3
+
+ImmortalSmoke_Loop5:
+	dc.b nEb3, nBb3, nEb3, nBb3, nE3, nB3, nE3, nB3
+	sLoop		$00, $02, ImmortalSmoke_Loop5
+	dc.b nFs3, nCs4, nFs3, nCs4, nAb3, nE4, nBb3, nFs4
+	dc.b nC4, nAb4, nC5, nEb5
+	sLoop		$01, $02, ImmortalSmoke_Loop6
+
+ImmortalSmoke_Loop7:
+	dc.b nE3, $03, nG3, nB3, nE4
+	sLoop		$00, $03, ImmortalSmoke_Loop7
+	dc.b nE3, nG3, nC4, nG4
+
+ImmortalSmoke_Loop8:
+	dc.b nEb3, nFs3, nA3, nEb4
+	sLoop		$00, $03, ImmortalSmoke_Loop8
+	dc.b nE3, nG3, nB3, nE4
+	sLoop		$01, $08, ImmortalSmoke_Loop7
+	dc.b nRst, $30, nFs3, $06, nCs4, $12, nAb3, $06
+	dc.b nEb4, $12, nBb3, $06, nF4, $2A, nFs3, $06
+	dc.b nCs4, $12, nAb3, $06, nEb4, $12, nF3, $06
+	dc.b nC4, $1E, nF3, $06, nC4, nEb3, nBb3, nEb3
+	dc.b nBb3
+
+ImmortalSmoke_Loop9:
+	dc.b nF3, nC4, nF3, nC4, nFs3, nCs4, nFs3, nCs4
+	sLoop		$00, $02, ImmortalSmoke_Loop9
+	dc.b nAb3, nEb4, nAb3, nEb4, nBb3, nFs4, nC4, nAb4
+	dc.b nD4, nBb4, nD5, nF5, nFs3, nCs4, nFs3, nCs4
+	dc.b nAb3, nEb4, nAb3, nEb4
+
+ImmortalSmoke_Loop10:
+	dc.b nBb3, nF4
+	sLoop		$00, $04, ImmortalSmoke_Loop10
+	dc.b nFs3, nCs4, nFs3, nCs4, nAb3, nEb4, nAb3, nEb4
+
+ImmortalSmoke_Loop11:
+	dc.b nF3, nC4
+	sLoop		$00, $04, ImmortalSmoke_Loop11
+	dc.b nEb3, nBb3, nEb3, nBb3
+
+ImmortalSmoke_Loop12:
+	dc.b nF3, nC4, nF3, nC4, nFs3, nCs4, nFs3, nCs4
+	sLoop		$00, $02, ImmortalSmoke_Loop12
+	dc.b nAb3, nEb4, nAb3, nEb4, nBb3, nFs4, nC4, nAb4
+	dc.b nD4, nBb4, nD5, nF5
+
+ImmortalSmoke_Loop16:
+	dc.b nEb3, nBb3, nEb3, nBb3, nF3, nC4, nF3, nC4
+
+ImmortalSmoke_Loop13:
+	dc.b nG3, nD4
+	sLoop		$00, $04, ImmortalSmoke_Loop13
+	dc.b nEb3, nBb3, nEb3, nBb3, nF3, nC4, nF3, nC4
+
+ImmortalSmoke_Loop14:
+	dc.b nD3, nA3
+	sLoop		$00, $04, ImmortalSmoke_Loop14
+	dc.b nC3, nG3, nC3, nG3
+
+ImmortalSmoke_Loop15:
+	dc.b nD3, nA3, nD3, nA3, nEb3, nBb3, nEb3, nBb3
+	sLoop		$00, $02, ImmortalSmoke_Loop15
+	dc.b nF3, nC4, nF3, nC4, nG3, nEb4, nA3, nF4
+	dc.b nB3, nG4, nB4, nD5
+	sLoop		$01, $02, ImmortalSmoke_Loop16
+	dc.b nRst, $30, nE3, $06, nB3, $12, nFs3, $06
+	dc.b nCs4, $12, nAb3, $06, nEb4, $2A, nE3, $06
+	dc.b nB3, $12, nFs3, $06, nCs4, $12, nEb3, $06
+	dc.b nBb3, $1E, nEb3, $06, nBb3
+
+ImmortalSmoke_Loop20:
+	dc.b nCs3, nAb3, nCs3, nAb3
+
+ImmortalSmoke_Loop17:
+	dc.b nEb3, nBb3, nEb3, nBb3, nE3, nB3, nE3, nB3
+	sLoop		$00, $02, ImmortalSmoke_Loop17
+	dc.b nFs3, nCs4, nFs3, nCs4, nAb3, nE4, nBb3, nFs4
+	dc.b nC4, nAb4, nC5, nEb5, nE3, nB3, nE3, nB3
+	dc.b nFs3, nCs4, nFs3, nCs4
+
+ImmortalSmoke_Loop18:
+	dc.b nAb3, nEb4
+	sLoop		$00, $04, ImmortalSmoke_Loop18
+	dc.b nE3, nB3, nE3, nB3, nFs3, nCs4, nFs3, nCs4
+
+ImmortalSmoke_Loop19:
+	dc.b nEb3, nBb3
+	sLoop		$00, $04, ImmortalSmoke_Loop19
+	sLoop		$01, $03, ImmortalSmoke_Loop20
+	dc.b nCs3, nAb3, nCs3, nAb3
+
+ImmortalSmoke_Loop21:
+	dc.b nEb3, nBb3, nEb3, nBb3, nE3, nB3, nE3, nB3
+	sLoop		$00, $02, ImmortalSmoke_Loop21
+	dc.b nFs3, nCs4, nFs3, nCs4, nAb3, nE4, nBb3, nFs4
+	dc.b nC4, nAb4, nC5, nEb5, nRst, $7F, $7F, $7F
+	dc.b $03
+	sJump		ImmortalSmoke_Loop1
+
+ImmortalSmoke_FM2:
+	sPan		spCenter
+	sVoice		$01
+	dc.b nCs3, $06, nE3
+	sVoice		$01
+	dc.b nFs3, $18, nAb3, $06, nA3, nCs4, $0C, nFs3
+	dc.b $1E, nCs4, $06, nFs4, nAb4, nA4, $0C, nFs4
+	dc.b nAb4, nE4, nCs4, $30, nFs3, $18, nAb3, $06
+	dc.b nA3, nCs4, $0C, nFs3, $18, nF3, nFs3, $06
+	dc.b nAb3, nA3, nCs4, nA3, nAb3, nFs3, nAb3, nA3
+	dc.b nB3, nCs4, nE4, nFs4, $18
+
+ImmortalSmoke_Jump1:
+	dc.b nRst, $7F, $7F, $76, nEb3, $06, nFs3
+
+ImmortalSmoke_Loop22:
+	dc.b nAb3, $18, nBb3, $06, nB3, nEb4, $0C, nAb3
+	dc.b $1E, nEb4, $06, nAb4, nBb4, nB4, $0C, nAb4
+	dc.b nBb4, nFs4, nEb4, $30, nAb3, $18, nBb3, $06
+	dc.b nB3, nEb4, $0C, nAb3, $18, nG3, nAb3, $06
+	dc.b nBb3, nB3, nEb4, nB3, nBb3, nAb3, nBb3, nB3
+	dc.b nCs4, nEb4, nFs4, nAb4, $18
+	sLoop		$00, $02, ImmortalSmoke_Loop22
+	dc.b nRst, $60, $60, $60, $60, $60, $60
+	sVoice		$04
+
+ImmortalSmoke_Loop23:
+	dc.b nE4, $03, nFs4, nG4, nB4, nE5, nFs5, nG5
+	dc.b nB5, nE4, nFs4, nG4, nC5, nE5, nFs5, nG5
+	dc.b nC6, nEb6, nA5, nG5, nFs5, nEb5, nFs5, nEb5
+	dc.b nA4, nG4, nA4, nB4, nE5, nFs5, nE5, nA4
+	dc.b nG4
+	sLoop		$00, $02, ImmortalSmoke_Loop23
+	dc.b nRst, $30
+	sVoice		$05
+	saVol		$09
+	dc.b nF5, $03
+	saVol		$F6
+	dc.b nCs5, nC5, nCs5, nBb4, nF4, nBb4, nF4, nEb4
+	dc.b nF4, nCs4, nC4, nCs4, nC4, nBb3, nF3, nBb2
+	dc.b nC3, nCs3, nF3, nCs3, nF3, nBb3, nC4, nBb3
+	dc.b nC4, nCs4, nF4, nEb4, nF4, nBb4, nC5, nF5
+	dc.b nCs5, nC5, nCs5, nBb4, nAb4, nBb4, nAb4, nF4
+	dc.b nAb4, nF4, nEb4, nF4, nC4, nAb3, nF3, nC3
+	dc.b nF3, nA3, nBb3, nA3, nC4, nF4, nA4, nBb4
+	dc.b nA4, nBb4, nC5, nBb4, nEb5, nC5, nBb4, nF5
+	dc.b nCs5, nC5, nBb4, nF4, nEb4, nCs4, nC4, nC3
+	dc.b nF3, nA3, nC4, nA3, nC4, nF4, nA4, nBb4
+	dc.b nFs4, nBb4, nCs5, nBb4, nCs5, nFs5, nCs5, nC5
+	dc.b nA4, nF4, nA4, nF4, nC4, nA3, nF3, nFs2
+	dc.b nAb2, nBb2, nCs3, nFs3, nAb3, nBb3, nCs4, nAb2
+	dc.b nBb2, nC3, nEb3, nAb3, nBb3, nC4, nEb4, nFs3
+	dc.b nCs4, nFs4, nBb4, nAb3, nEb4, nAb4, nC5, nBb3
+	dc.b nF4, nBb4, nC5, nF5, nEb5, nD5, nBb4, nF5
+	dc.b nCs5, nC5, nCs5, nBb4, nF4, nBb4, nF4, nEb4
+	dc.b nF4, nCs4, nC4, nCs4, nC4, nBb3, nF3, nBb2
+	dc.b nC3, nCs3, nF3, nCs3, nF3, nBb3, nC4, nBb3
+	dc.b nC4, nCs4, nF4, nEb4, nF4, nBb4, nC5, nF5
+	dc.b nCs5, nC5, nCs5, nBb4, nAb4, nBb4, nAb4, nF4
+	dc.b nAb4, nF4, nEb4, nF4, nC4, nAb3, nF3, nC3
+	dc.b nF3, nA3, nBb3, nA3, nC4, nF4, nA4, nBb4
+	dc.b nA4, nBb4, nC5, nBb4, nEb5, nC5, nBb4, nF5
+	dc.b nCs5, nC5, nBb4, nF4, nEb4, nCs4, nC4, nC3
+	dc.b nF3, nA3, nC4, nA3, nC4, nF4, nA4, nBb4
+	dc.b nFs4, nBb4, nCs5, nBb4, nCs5, nFs5, nCs5, nC5
+	dc.b nA4, nF4, nA4, nF4, nC4, nA3, nF3, nFs2
+	dc.b nAb2, nBb2, nCs3, nFs3, nAb3, nBb3, nCs4, nAb2
+	dc.b nBb2, nC3, nEb3, nAb3, nBb3, nC4, nEb4, nFs3
+	dc.b nCs4, nFs4, nBb4, nAb3, nEb4, nAb4, nC5, nBb3
+	dc.b nF4, nBb4, nC5, nF5, nEb5, nD5, nBb4
+	sVoice		$01
+	saVol		$01
+	dc.b nG3, $18, nA3, $06, nBb3, nD4, $0C, nG3
+	dc.b $1E, nD4, $06, nG4, nA4, nBb4, $0C, nG4
+	dc.b nA4, nF4, nD4, $30, nG3, $18, nA3, $06
+	dc.b nBb3, nD4, $0C, nG3, $18, nFs3, nG3, $06
+	dc.b nA3, nBb3, nD4, nBb3, nA3, nG3, nA3, nBb3
+	dc.b nC4, nD4, nF4, nG4, $18
+	sVoice		$05
+	saVol		$FF
+	dc.b nD6, $03, nBb5, nA5, nBb5, nG5, nD5, nG5
+	dc.b nD5, nC5, nD5, nBb4, nA4, nBb4, nA4, nG4
+	dc.b nD4, nG3, nA3, nBb3, nD4, nBb3, nD4, nG4
+	dc.b nA4, nG4, nA4, nBb4, nD5, nC5, nD5, nG5
+	dc.b nA5, nD6, nBb5, nA5, nBb5, nG5, nF5, nG5
+	dc.b nF5, nD5, nF5, nD5, nC5, nD5, nA4, nF4
+	dc.b nD4, nA3, nD4, nFs4, nG4, nFs4, nA4, nD5
+	dc.b nFs5, nG5, nFs5, nG5, nA5, nG5, nC6, nA5
+	dc.b nG5, nD6, nBb5, nA5, nG5, nD5, nC5, nBb4
+	dc.b nA4, nA3, nD4, nFs4, nA4, nFs4, nA4, nD5
+	dc.b nFs5, nG5, nEb5, nG5, nBb5, nG5, nBb5, nEb6
+	dc.b nBb5, nA5, nFs5, nD5, nFs5, nD5, nA4, nFs4
+	dc.b nD4, nEb3, nF3, nG3, nBb3, nEb4, nF4, nG4
+	dc.b nBb4, nF3, nG3, nA3, nC4, nF4, nG4, nA4
+	dc.b nC5, nEb4, nBb4, nEb5, nG5, nF4, nC5, nF5
+	dc.b nA5, nG4, nD5, nG5, nA5, nD6, nC6, nB5
+	dc.b nG5, nRst, $30
+
+ImmortalSmoke_Loop24:
+	dc.b nEb6, $03, nB5, nBb5, nB5, nAb5, nEb5, nAb5
+	dc.b nEb5, nCs5, nEb5, nB4, nBb4, nB4, nBb4, nAb4
+	dc.b nEb4, nAb3, nBb3, nB3, nEb4, nB3, nEb4, nAb4
+	dc.b nBb4, nAb4, nBb4, nB4, nEb5, nCs5, nEb5, nAb5
+	dc.b nBb5, nEb6, nB5, nBb5, nB5, nAb5, nFs5, nAb5
+	dc.b nFs5, nEb5, nFs5, nEb5, nCs5, nEb5, nBb4, nFs4
+	dc.b nEb4, nBb3, nEb4, nG4, nAb4, nG4, nBb4, nEb5
+	dc.b nG5, nAb5, nG5, nAb5, nBb5, nAb5, nCs6, nBb5
+	dc.b nAb5, nEb6, nB5, nBb5, nAb5, nEb5, nCs5, nB4
+	dc.b nBb4, nBb3, nEb4, nG4, nBb4, nG4, nBb4, nEb5
+	dc.b nG5, nAb5, nE5, nAb5, nB5, nAb5, nB5, nE6
+	dc.b nB5, nBb5, nG5, nEb5, nG5, nEb5, nBb4, nG4
+	dc.b nEb4, nE3, nFs3, nAb3, nB3, nE4, nFs4, nAb4
+	dc.b nB4, nFs3, nAb3, nBb3, nCs4, nFs4, nAb4, nBb4
+	dc.b nCs5, nE4, nB4, nE5, nAb5, nFs4, nCs5, nFs5
+	dc.b nBb5, nAb4, nEb5, nAb5, nBb5, nEb6, nCs6, nC6
+	dc.b nAb5
+	sLoop		$00, $04, ImmortalSmoke_Loop24
+	sVoice		$01
+	saVol		$01
+	dc.b nFs3, $18, nAb3, $06, nA3, nCs4, $0C, nFs3
+	dc.b $1E, nCs4, $06, nFs4, nAb4, nA4, $0C, nFs4
+	dc.b nAb4, nE4, nCs4, $30, nFs3, $18, nAb3, $06
+	dc.b nA3, nCs4, $0C, nFs3, $18, nF3, nFs3, $06
+	dc.b nAb3, nA3, nCs4, nA3, nAb3, nFs3, nAb3, nA3
+	dc.b nB3, nCs4, nE4, nFs4, $18
+	sJump		ImmortalSmoke_Jump1
+
+ImmortalSmoke_FM3:
+	sPan		spRight
+	sVoice		$02
+	dc.b nRst, $7F, $4D, nFs3, $18, nF3, nFs3, nF3
+	dc.b nFs3, nE3, nFs3, $0C, nAb3, nBb3, $18
+	sVoice		$03
+
+ImmortalSmoke_Jump2:
+	saVol		$FC
+	dc.b nAb3
+
+ImmortalSmoke_Loop25:
+	dc.b $24, nA3, $0C, nFs3, $24, nAb3, $0C
+	sLoop		$00, $03, ImmortalSmoke_Loop25
+	dc.b $18, nA3, nFs3, nAb3, nAb2, nBb2, nEb3, $30
+	dc.b nAb2, $18, nBb2, nEb3, nBb2, nB2, nBb2, nB2
+	dc.b nBb2, nB2, nBb2, nB2, $0C, nCs3, nEb3, $18
+	dc.b nE3, nFs3, nAb3, $30, nE3, $18, nFs3, nG3
+	dc.b nEb3, nAb3, nG3, nAb3, nG3, nAb3, nFs3, nAb3
+	dc.b $0C, nBb3, nC4, $18, nB3
+
+ImmortalSmoke_Loop26:
+	dc.b $24, nC4, $0C, nA3, $24, nB3, $0C
+	sLoop		$00, $03, ImmortalSmoke_Loop26
+
+ImmortalSmoke_Loop27:
+	dc.b $18, nC4, nA3, nB3
+	sLoop		$00, $05, ImmortalSmoke_Loop27
+	dc.b nRst, $30, nBb2, $18, nC3, nF3, $30, nBb2
+	dc.b $18, nC3, nF3, nC3, nCs3, nC3, nCs3, nC3
+	dc.b nCs3, nC3, nCs3, $0C, nEb3, nF3, $18, nFs3
+	dc.b nAb3, nBb3, $30, nFs3, $18, nAb3, nA3, nF3
+	dc.b nBb3, nA3, nBb3, nA3, nBb3, nAb3, nBb3, $0C
+	dc.b nC4, nD4, $18, nG2, nA2, nD3, $30, nG2
+	dc.b $18, nA2, nD3, nA2, nBb2, nA2, nBb2, nA2
+	dc.b nBb2, nA2, nBb2, $0C, nC3, nD3, $18, nEb3
+	dc.b nF3, nG3, $30, nEb3, $18, nF3, nFs3, nD3
+	dc.b nG3, nFs3, nG3, nFs3, nG3, nF3, nG3, $0C
+	dc.b nA3, nB3, $18, nRst, $30
+	sPan		spCenter
+	dc.b nAb2, $18, nBb2, nEb3, $30, nAb2, $18, nBb2
+	dc.b nEb3, nBb2, nB2, nBb2, nB2, nBb2, nB2, nBb2
+	dc.b nB2, $0C, nCs3, nEb3, $18
+	sPan		spRight
+	dc.b nE3, nFs3, nAb3
+	dc.b $30, nE3, $18, nFs3, nG3, nEb3, nAb3, nG3
+	dc.b nAb3, nG3, nAb3, nFs3, nAb3, $0C, nBb3, nC4
+	dc.b $18
+	sPan		spCenter
+	dc.b nAb2, $18, nBb2, nEb3, $30, nAb2, $18, nBb2
+	dc.b nEb3, nBb2, nB2, nBb2, nB2, nBb2, nB2, nBb2
+	dc.b nB2, $0C, nCs3, nEb3, $18
+	sPan		spRight
+	dc.b nE3, nFs3, nAb3
+	dc.b $30, nE3, $18, nFs3, nG3, nEb3, nAb3, nG3
+	dc.b nAb3, nG3, nAb3, nFs3, nAb3, $0C, nBb3, nC4
+	dc.b $18
+	dc.b nRst, $7F, $41
+	sVoice		$02
+	saVol		$04
+	dc.b nFs3, $18, nF3, nFs3, nF3, nFs3, nE3, nFs3
+	dc.b $0C, nAb3, nBb3, $18
+	sJump		ImmortalSmoke_Jump2
+
+ImmortalSmoke_FM4:
+	sPan		spLeft
+	dc.b nRst, $0C
+	sVoice		$02
+	dc.b $7F, $41, nA2, $18, nAb2, nA2, nAb2, nA2
+	dc.b nAb2, nA2, $0C, nB2, nCs3, $18
+	sVoice		$03
+
+ImmortalSmoke_Jump3:
+	saVol		$FC
+	dc.b nCs3
+
+ImmortalSmoke_Loop29:
+	dc.b $24, $0C, nC3, $24, nCs3, $0C
+	sLoop		$00, $03, ImmortalSmoke_Loop29
+	dc.b $18, $18, nC3, nCs3, nE2, nFs2, nAb2, $30
+	dc.b nE2, $18, nFs2, nG2, nEb2, nAb2, nG2, nAb2
+	dc.b nG2, nAb2, nFs2, nAb2, $0C, nBb2, nC3, $18
+	dc.b nAb2, nBb2, nEb3, $30, nAb2, $18, nBb2, nEb3
+	dc.b nBb2, nB2, nBb2, nB2, nBb2, nB2, nBb2, nB2
+	dc.b $0C, nCs3, nEb3, $18, nE3
+
+ImmortalSmoke_Loop30:
+	dc.b $24, $0C, nEb3, $24, nE3, $0C
+	sLoop		$00, $03, ImmortalSmoke_Loop30
+
+ImmortalSmoke_Loop31:
+	dc.b $18, $18, nEb3, nE3
+	sLoop		$00, $05, ImmortalSmoke_Loop31
+	dc.b nRst, $30, nFs2, $18, nAb2, nBb2, $30, nFs2
+	dc.b $18, nAb2, nA2, nF2, nBb2, nA2, nBb2, nA2
+	dc.b nBb2, nAb2, nBb2, $0C, nC3, nD3, $18, nBb2
+	dc.b nC3, nF3, $30, nBb2, $18, nC3, nF3, nC3
+	dc.b nCs3, nC3, nCs3, nC3, nCs3, nC3, nCs3, $0C
+	dc.b nEb3, nF3, $18, nEb2, nF2, nG2, $30, nEb2
+	dc.b $18, nF2, nFs2, nD2, nG2, nFs2, nG2, nFs2
+	dc.b nG2, nF2, nG2, $0C, nA2, nB2, $18, nG2
+	dc.b nA2, nD3, $30, nG2, $18, nA2, nD3, nA2
+	dc.b nBb2, nA2, nBb2, nA2, nBb2, nA2, nBb2, $0C
+	dc.b nC3, nD3, $18, nRst, $30
+
+ImmortalSmoke_Loop32:
+	sVoice		$01
+	dc.b nE3, $18, nFs3, $06, nAb3, nB3, $0C, nEb3
+	dc.b $1E, nB3, $06, nEb4, $0C, $0C, nB3, nCs4
+	dc.b nBb3, nG3, $30, nE3, $18, nFs3, $06, nAb3
+	dc.b nBb3, $0C, nB2, $18, nBb2, nB2, $06, nCs3
+	dc.b nEb3, nAb3, nEb3, nCs3, nB2, nCs3, nEb3, nAb3
+	dc.b nBb3, nCs4, nEb4, $18
+	sVoice		$03
+	dc.b nAb2, nBb2, nEb3, $30, nAb2, $18, nBb2, nEb3
+	dc.b nBb2, nB2, nBb2, nB2, nBb2, nB2, nBb2, nB2
+	dc.b $0C, nCs3, nEb3, $18
+	sLoop		$00, $02, ImmortalSmoke_Loop32
+	dc.b nRst, $7F, $41
+	sVoice		$02
+	saVol		$04
+	dc.b nA2, $18, nAb2, nA2, nAb2, nA2, nAb2, nA2
+	dc.b $0C, nB2, nCs3, $18
+	sJump		ImmortalSmoke_Jump3
+
+ImmortalSmoke_FM5:
+	sPan		spCenter
+	ssDetune	$FD
+	sVoice		$01
+	dc.b nRst, $09, nCs3, $03
+	dc.b sHold, $03, nE3, $06, nFs3, $18, nAb3, $06
+	dc.b nA3, nCs4, $0C, nFs3, $1E, nCs4, $06, nFs4
+	dc.b nAb4, nA4, $0C, nFs4, nAb4, nE4, nCs4, $30
+	dc.b nFs3, $18, nAb3, $06, nA3, nCs4, $0C, nFs3
+	dc.b $18, nF3, nFs3, $06, nAb3, nA3, nCs4, nA3
+	dc.b nAb3, nFs3, nAb3, nA3, nB3, nCs4, nE4, nFs4
+	dc.b $18
+
+ImmortalSmoke_Jump4:
+	dc.b nRst, $7F, $7F, $76, nEb3, $06, nFs3
+
+ImmortalSmoke_Loop33:
+	dc.b nAb3, $18, nBb3, $06, nB3, nEb4, $0C, nAb3
+	dc.b $1E, nEb4, $06, nAb4, nBb4, nB4, $0C, nAb4
+	dc.b nBb4, nFs4, nEb4, $30, nAb3, $18, nBb3, $06
+	dc.b nB3, nEb4, $0C, nAb3, $18, nG3, nAb3, $06
+	dc.b nBb3, nB3, nEb4, nB3, nBb3, nAb3, nBb3, nB3
+	dc.b nCs4, nEb4, nFs4, nAb4, $18
+	sLoop		$00, $02, ImmortalSmoke_Loop33
+	dc.b nRst
+
+ImmortalSmoke_Loop34:
+	dc.b $51
+	sLoop		$00, $07, ImmortalSmoke_Loop34
+	sVoice		$04
+	saVol		$F0
+
+ImmortalSmoke_Loop35:
+	dc.b nB3, $03, $03, nE4, nG4, nB4, nB4, nE5
+	dc.b nG5, nC4, nC4, nE4, nG4, nC5, nC5, nE5
+	dc.b nG5, nA5, nFs5, nE5, nEb5, nA4, nEb5, nA4
+	dc.b nFs4, nE4, nFs4, nG4, nB4, nEb5, nB4, nFs4
+	dc.b nE4
+	sLoop		$00, $02, ImmortalSmoke_Loop35
+	dc.b nRst, $30
+	sVoice		$05
+	dc.b $09
+	saVol		$1D
+	dc.b nF6, $03
+	saVol		$F5
+	dc.b nCs6, nC6, nCs6, nBb5, nF5, nBb5, nF5, nEb5
+	dc.b nF5, nCs5, nC5, nCs5, nC5, nBb4, nF4, nBb3
+	dc.b nC4, nCs4, nF4, nCs4, nF4, nBb4, nC5, nBb4
+	dc.b nC5, nCs5, nF5, nEb5, nF5, nBb5, nC6, nF6
+	dc.b nCs6, nC6, nCs6, nBb5, nAb5, nBb5, nAb5, nF5
+	dc.b nAb5, nF5, nEb5, nF5, nC5, nAb4, nF4, nC4
+	dc.b nF4, nA4, nBb4, nA4, nC5, nF5, nA5, nBb5
+	dc.b nA5, nBb5, nC6, nBb5, nEb6, nC6, nBb5, nF6
+	dc.b nCs6, nC6, nBb5, nF5, nEb5, nCs5, nC5, nC4
+	dc.b nF4, nA4, nC5, nA4, nC5, nF5, nA5, nBb5
+	dc.b nFs5, nBb5, nCs6, nBb5, nCs6, nFs6, nCs6, nC6
+	dc.b nA5, nF5, nA5, nF5, nC5, nA4, nF4, nFs3
+	dc.b nAb3, nBb3, nCs4, nFs4, nAb4, nBb4, nCs5, nAb3
+	dc.b nBb3, nC4, nEb4, nAb4, nBb4, nC5, nEb5, nFs4
+	dc.b nCs5, nFs5, nBb5, nAb4, nEb5, nAb5, nC6, nBb4
+	dc.b nF5, nBb5, nC6, nF6, nEb6, nD6, nBb5, nF6
+	dc.b nCs6, nC6, nCs6, nBb5, nF5, nBb5, nF5, nEb5
+	dc.b nF5, nCs5, nC5, nCs5, nC5, nBb4, nF4, nBb3
+	dc.b nC4, nCs4, nF4, nCs4, nF4, nBb4, nC5, nBb4
+	dc.b nC5, nCs5, nF5, nEb5, nF5, nBb5, nC6, nF6
+	dc.b nCs6, nC6, nCs6, nBb5, nAb5, nBb5, nAb5, nF5
+	dc.b nAb5, nF5, nEb5, nF5, nC5, nAb4, nF4, nC4
+	dc.b nF4, nA4, nBb4, nA4, nC5, nF5, nA5, nBb5
+	dc.b nA5, nBb5, nC6, nBb5, nEb6, nC6, nBb5, nF6
+	dc.b nCs6, nC6, nBb5, nF5, nEb5, nCs5, nC5, nC4
+	dc.b nF4, nA4, nC5, nA4, nC5, nF5, nA5, nBb5
+	dc.b nFs5, nBb5, nCs6, nBb5, nCs6, nFs6, nCs6, nC6
+	dc.b nA5, nF5, nA5, nF5, nC5, nA4, nF4, nFs3
+	dc.b nAb3, nBb3, nCs4, nFs4, nAb4, nBb4, nCs5, nAb3
+	dc.b nBb3, nC4, nEb4, nAb4, nBb4, nC5, nEb5, nFs4
+	dc.b nCs5, nFs5, nBb5, nAb4, nEb5, nAb5, nC6, nBb4
+	dc.b nF5, nBb5, nC6, nF6
+	sVoice		$01
+	dc.b nEb6, nD6, nBb5
+	saVol		$FE
+	dc.b nG3, $18, nA3, $06, nBb3, nD4, $0C, nG3
+	dc.b $1E, nD4, $06, nG4, nA4, nBb4, $0C, nG4
+	dc.b nA4, nF4, nD4, $30, nG3, $18, nA3, $06
+	dc.b nBb3, nD4, $0C, nG3, $18, nFs3, nG3, $06
+	dc.b nA3, nBb3, nD4, nBb3, nA3, nG3, nA3, nBb3
+	dc.b nC4, nD4, nF4, nG4, $0F
+	saVol		$F0
+	dc.b nG3, $18, nA3, $06, nBb3, nD4, $0C, nG3
+	dc.b $1E, nD4, $06, nG4, nA4, nBb4, $0C, nG4
+	dc.b nA4, nF4, nD4, $30, nG3, $18, nA3, $06
+	dc.b nBb3, nD4, $0C, nG3, $18, nFs3, nG3, $06
+	dc.b nA3, nBb3, nD4, nBb3, nA3, nG3, nA3, nBb3
+	dc.b nC4, nD4, nF4, nG4, $18, nRst, $30
+
+ImmortalSmoke_Loop36:
+	sPan		spRight
+	dc.b nAb3, $18, nBb3, $06, nB3, nEb4, $0C, nAb3
+	dc.b $1E, nEb4, $06, nAb4, nBb4, nB4, $0C, nAb4
+	dc.b nBb4, nFs4, nEb4, $30, nAb3, $18, nBb3, $06
+	dc.b nB3, nEb4, $0C, nAb3, $18, nG3, nAb3, $06
+	dc.b nBb3, nB3, nEb4, nB3, nBb3, nAb3, nBb3, nB3
+	dc.b nCs4, nEb4, nFs4, nAb4, $18
+	sPan		spCenter
+	dc.b nAb3, $18, nBb3, $06, nB3, nEb4, $0C, nAb3
+	dc.b $1E, nEb4, $06, nAb4, nBb4, nB4, $0C, nAb4
+	dc.b nBb4, nFs4, nEb4, $30, nAb3, $18, nBb3, $06
+	dc.b nB3, nEb4, $0C, nAb3, $18, nG3, nAb3, $06
+	dc.b nBb3, nB3, nEb4, nB3, nBb3, nAb3, nBb3, nB3
+	dc.b nCs4, nEb4, nFs4, nAb4, $18
+	sPan		spRight
+	dc.b nAb3, $18, nBb3, $06, nB3, nEb4, $0C, nAb3
+	dc.b $1E, nEb4, $06, nAb4, nBb4, nB4, $0C, nAb4
+	dc.b nBb4, nFs4, nEb4, $30, nAb3, $18, nBb3, $06
+	dc.b nB3, nEb4, $0C, nAb3, $18, nG3, nAb3, $06
+	dc.b nBb3, nB3, nEb4, nB3, nBb3, nAb3, nBb3, nB3
+	dc.b nCs4, nEb4, nFs4, nAb4, $18
+	sPan		spCenter
+	dc.b nAb3, $18, nBb3, $06, nB3, nEb4, $0C, nAb3
+	dc.b $1E, nEb4, $06, nAb4, nBb4, nB4, $0C, nAb4
+	dc.b nBb4, nFs4, nEb4, $30, nAb3, $18, nBb3, $06
+	dc.b nB3, nEb4, $0C, nAb3, $18, nG3, nAb3, $06
+	dc.b nBb3, nB3, nEb4, nB3, nBb3, nAb3, nBb3, nB3
+	dc.b nCs4, nEb4, nFs4, nAb4, $18
+	dc.b nRst, $09
+	saVol		$10
+	dc.b nFs3, $18, nAb3, $06, nA3, nCs4, $0C, nFs3
+	dc.b $1E, nCs4, $06, nFs4, nAb4, nA4, $0C, nFs4
+	dc.b nAb4, nE4, nCs4, $30, nFs3, $18, nAb3, $06
+	dc.b nA3, nCs4, $0C, nFs3, $18, nF3, nFs3, $06
+	dc.b nAb3, nA3, nCs4, nA3, nAb3, nFs3, nAb3, nA3
+	dc.b nB3, nCs4, nE4, nFs4, $18
+	sJump		ImmortalSmoke_Jump4
+
+ImmortalSmoke_PSG1:
+	sModAMPS	$01, $03, $01, $03
+	sModOn
+	dc.b nRst, $0C, nD0, $06, nA0, nD1, nA1, nE0
+	dc.b nB0, nE1, nB1, nFs0, nCs1, nFs1, nCs2, $1E
+	dc.b nFs0, $06, nD1, nFs1, nD2, nAb0, nE1, nAb1
+	dc.b nE2, nCs0, nAb0, nCs1, nAb1, nCs1, nAb0, nCs0
+	dc.b nAb0, nC0, nFs0, nB0, nFs1
+
+ImmortalSmoke_Loop37:
+	dc.b nCs0, nAb0, nCs1, nAb1, nD0, nA0, nD1, nA1
+	sLoop		$00, $02, ImmortalSmoke_Loop37
+	dc.b nE0, nB0, nE1, nB1, nD0, nD1, nE0, nE1
+	dc.b nFs0, nBb0, nCs1, nFs1
+
+ImmortalSmoke_Jump5:
+;	saVol		$F8
+
+ImmortalSmoke_Loop39:
+	dc.b nCs3, $02
+	saVol		$08
+	dc.b $01, $02
+	saVol		$08
+	dc.b $01, $02, $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02, $01, $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop38:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop38
+	dc.b $02
+	saVol		$08
+	dc.b $01, $02, nRst, $3D
+	saVol		$98
+	sLoop		$01, $02, ImmortalSmoke_Loop39
+	dc.b nCs3, $02
+	saVol		$08
+	dc.b $01, $02
+	saVol		$08
+	dc.b $01, $02, $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02, $01, $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop40:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop40
+	dc.b $02
+	saVol		$08
+	dc.b $01, $02, nRst, $3D
+	saVol		$A0
+	dc.b nCs3, $02, $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop41:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $03, ImmortalSmoke_Loop41
+	dc.b $02
+	saVol		$10
+	dc.b $01
+	saVol		$08
+	dc.b $02, nRst, $01
+	saVol		$A0
+	dc.b nCs3, $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop42:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $03, ImmortalSmoke_Loop42
+	dc.b $02
+	saVol		$10
+	dc.b $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01, nRst, $03
+	saVol		$A0
+	dc.b nC3, $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop43:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop43
+
+ImmortalSmoke_Loop44:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$10
+	sLoop		$00, $02, ImmortalSmoke_Loop44
+	dc.b $02
+	saVol		$08
+	dc.b $01, nRst, $06
+	saVol		$A0
+	dc.b nCs3, $02, $01
+	saVol		$08
+	dc.b $02
+
+ImmortalSmoke_Loop45:
+	dc.b $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop45
+	dc.b $01, $02
+	saVol		$10
+	dc.b $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$10
+	dc.b $02
+	saVol		$08
+	dc.b $01, nRst, $03
+	saVol		$A0
+
+ImmortalSmoke_Loop47:
+	dc.b nE0, $06, nB0, nE1, nB1, nFs0, nCs1, nFs1
+	dc.b nCs2, nAb0, nEb1, nAb1, nEb2, $1E, nAb0, $06
+	dc.b nE1, nAb1, nE2, nBb0, nFs1, nBb1, nFs2, nEb0
+	dc.b nBb0, nEb1, nBb1, nEb1, nBb0, nEb0, nBb0, nCs0
+	dc.b nAb0, nCs1, nAb1
+
+ImmortalSmoke_Loop46:
+	dc.b nEb0, nBb0, nEb1, nBb1, nE0, nB0, nE1, nB1
+	sLoop		$00, $02, ImmortalSmoke_Loop46
+	dc.b nFs0, nCs1, nFs1, nCs2, nE0, nE1, nFs0, nFs1
+	dc.b nAb0, nC1, nEb1, nAb1
+	sLoop		$01, $02, ImmortalSmoke_Loop47
+	saVol		$F8
+
+ImmortalSmoke_Loop49:
+	dc.b nE3, $02
+	saVol		$08
+	dc.b $01, $02
+	saVol		$08
+	dc.b $01, $02, $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02, $01, $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop48:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop48
+	dc.b $02
+	saVol		$08
+	dc.b $01, $02, nRst, $3D
+	saVol		$98
+	sLoop		$01, $02, ImmortalSmoke_Loop49
+	dc.b nE3, $02
+	saVol		$08
+	dc.b $01, $02
+	saVol		$08
+	dc.b $01, $02, $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02, $01, $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop50:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop50
+	dc.b $02
+	saVol		$08
+	dc.b $01, $02, nRst, $3D
+	saVol		$A0
+	dc.b nE3, $02, $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop51:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $03, ImmortalSmoke_Loop51
+	dc.b $02
+	saVol		$10
+	dc.b $01
+	saVol		$08
+	dc.b $02, nRst, $01
+	saVol		$A0
+	dc.b nE3, $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop52:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $03, ImmortalSmoke_Loop52
+	dc.b $02
+	saVol		$10
+	dc.b $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01, nRst, $03
+	saVol		$A0
+	dc.b nEb3, $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop53:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop53
+
+ImmortalSmoke_Loop54:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$10
+	sLoop		$00, $02, ImmortalSmoke_Loop54
+	dc.b $02
+	saVol		$08
+	dc.b $01, nRst, $06
+	saVol		$A0
+	dc.b nE3, $02, $01
+	saVol		$08
+	dc.b $02
+
+ImmortalSmoke_Loop55:
+	dc.b $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop55
+	dc.b $01, $02
+	saVol		$10
+	dc.b $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$10
+	dc.b $02
+	saVol		$08
+	dc.b $01, nRst, $03
+
+ImmortalSmoke_Loop58:
+	saVol		$98
+	dc.b nE3, $02
+	saVol		$08
+	dc.b $01, $02
+	saVol		$08
+	dc.b $01, $02, $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02, $01, $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop56:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop56
+	dc.b $02
+	saVol		$08
+	dc.b $01, $02, nRst, $0D
+	saVol		$98
+	dc.b nEb3, $02
+	saVol		$08
+	dc.b $01, $02
+	saVol		$08
+	dc.b $01, $02, $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02, $01, $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop57:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop57
+	dc.b $02
+	saVol		$08
+	dc.b $01, $02, nRst, $0D
+	sLoop		$01, $03, ImmortalSmoke_Loop58
+	saVol		$A0
+	dc.b nE3, $02, $01
+	saVol		$08
+	dc.b $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop59:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $03, ImmortalSmoke_Loop59
+	dc.b $02
+	saVol		$10
+	dc.b $01
+	saVol		$08
+	dc.b $02, nRst, $01
+	saVol		$A0
+	dc.b nE3, $02, $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop60:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $03, ImmortalSmoke_Loop60
+	dc.b $02
+	saVol		$10
+	dc.b $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01, nRst, $03
+	saVol		$A0
+	dc.b nEb3, $02
+	saVol		$08
+	dc.b $01
+
+ImmortalSmoke_Loop61:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop61
+
+ImmortalSmoke_Loop62:
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$10
+	sLoop		$00, $02, ImmortalSmoke_Loop62
+	dc.b $02
+	saVol		$08
+	dc.b $01, nRst, $06
+	saVol		$A0
+	dc.b nE3, $02, $01
+	saVol		$08
+	dc.b $02
+
+ImmortalSmoke_Loop63:
+	dc.b $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	sLoop		$00, $02, ImmortalSmoke_Loop63
+	dc.b $01, $02
+	saVol		$10
+	dc.b $01
+	saVol		$08
+	dc.b $02
+	saVol		$08
+	dc.b $01
+	saVol		$10
+	dc.b $02
+	saVol		$08
+	dc.b $01, nRst, $33
+	saVol		$98
+
+ImmortalSmoke_Loop65:
+	dc.b nFs0, $06, nCs1, nFs1, nCs2, nAb0, nEb1, nAb1
+	dc.b nEb2, nBb0, nF1, nBb1, nF2, $1E, nBb0, $06
+	dc.b nFs1, nBb1, nFs2, nC1, nAb1, nC2, nAb2, nF0
+	dc.b nC1, nF1, nC2, nF1, nC1, nF0, nC1, nEb0
+	dc.b nBb0, nEb1, nBb1
+
+ImmortalSmoke_Loop64:
+	dc.b nF0, nC1, nF1, nC2, nFs0, nCs1, nFs1, nCs2
+	sLoop		$00, $02, ImmortalSmoke_Loop64
+	dc.b nAb0, nEb1, nAb1, nEb2, nFs0, nFs1, nAb0, nAb1
+	dc.b nBb0, nD1, nF1, nBb1
+	sLoop		$01, $02, ImmortalSmoke_Loop65
+
+ImmortalSmoke_Loop67:
+	dc.b nEb0, nBb0, nEb1, nBb1, nF0, nC1, nF1, nC2
+	dc.b nG0, nD1, nG1, nD2, $1E, nG0, $06, nEb1
+	dc.b nG1, nEb2, nA0, nF1, nA1, nF2, nD0, nA0
+	dc.b nD1, nA1, nD1, nA0, nD0, nA0, nC0, nG0
+	dc.b nC1, nG1
+
+ImmortalSmoke_Loop66:
+	dc.b nD0, nA0, nD1, nA1, nEb0, nBb0, nEb1, nBb1
+	sLoop		$00, $02, ImmortalSmoke_Loop66
+	dc.b nF0, nC1, nF1, nC2, nEb0, nEb1, nF0, nF1
+	dc.b nG0, nB0, nD1, nG1
+	sLoop		$01, $02, ImmortalSmoke_Loop67
+	dc.b nRst, $30
+
+ImmortalSmoke_Loop69:
+	dc.b nE0, $06, nB0, nE1, nB1, nFs0, nCs1, nFs1
+	dc.b nCs2, nAb0, nEb1, nAb1, nEb2, $1E, nAb0, $06
+	dc.b nE1, nAb1, nE2, nBb0, nFs1, nBb1, nFs2, nEb0
+	dc.b nBb0, nEb1, nBb1, nEb1, nBb0, nEb0, nBb0, nCs0
+	dc.b nAb0, nCs1, nAb1
+
+ImmortalSmoke_Loop68:
+	dc.b nEb0, nBb0, nEb1, nBb1, nE0, nB0, nE1, nB1
+	sLoop		$00, $02, ImmortalSmoke_Loop68
+	dc.b nFs0, nCs1, nFs1, nCs2, nE0, nE1, nFs0, nFs1
+	dc.b nAb0, nC1, nEb1, nAb1
+	sLoop		$01, $04, ImmortalSmoke_Loop69
+	dc.b nD0, nA0, nD1, nA1, nE0, nB0, nE1, nB1
+	dc.b nFs0, nCs1, nFs1, nCs2, $1E, nFs0, $06, nD1
+	dc.b nFs1, nD2, nAb0, nE1, nAb1, nE2, nCs0, nAb0
+	dc.b nCs1, nAb1, nCs1, nAb0, nCs0, nAb0, nC0, nFs0
+	dc.b nB0, nFs1
+
+ImmortalSmoke_Loop70:
+	dc.b nCs0, nAb0, nCs1, nAb1, nD0, nA0, nD1, nA1
+	sLoop		$00, $02, ImmortalSmoke_Loop70
+	dc.b nE0, nB0, nE1, nB1, nD0, nD1, nE0, nE1
+	dc.b nFs0, nBb0, nCs1, nFs1
+	sJump		ImmortalSmoke_Jump5
+
+ImmortalSmoke_PSG2:
+	dc.b nCs2, $06, nE2, nFs2, $18, nAb2, $06, nA2
+	dc.b nCs3, $0C, nFs2, $1E, nCs3, $06, nFs3, nAb3
+	dc.b nA3, $0C, nFs3, nAb3, nE3, nCs3, $30, nFs2
+	dc.b $18, nAb2, $06, nA2, nCs3, $0C, nFs2, $18
+	dc.b nF2, nFs2, $06, nAb2, nA2, nCs3, nA2, nAb2
+	dc.b nFs2, nAb2, nA2, nB2, nCs3, nE3, nFs3, $18
+
+ImmortalSmoke_Jump6:
+;	saVol		$18
+
+ImmortalSmoke_Loop71:
+	dc.b nE2, $03, nCs2, nAb1, nEb2, nE2, nAb2, nE2
+	dc.b nAb1, nCs2, nEb2, nE2, nAb2, nA2, nE2, nFs2
+	dc.b nCs2, nEb2, nC2, nFs2, nEb2, nC2, nEb2, nFs2
+	dc.b nEb2, nFs2, nEb2, nC2, nEb2, nAb1, nCs2, nE2
+	dc.b nAb2
+	sLoop		$00, $03, ImmortalSmoke_Loop71
+	dc.b nCs2, nEb2, nE2, nAb2, nCs3, nEb3, nE3, nAb3
+	dc.b nCs2, nEb2, nE2, nA2, nCs3, nEb3, nE3, nA3
+	dc.b nC4, nFs3, nE3, nEb3, nC3, nEb3, nC3, nFs2
+	dc.b nE2, nFs2, nAb2, nC3, nRst, $0C
+;	saVol		$E8
+	dc.b nAb1, $18, nBb1, $06, nB1, nEb2, $0C, nAb1
+	dc.b $1E, nEb2, $06, nAb2, nBb2, nB2, $0C, nAb2
+	dc.b nBb2, nFs2, nEb2, $30, nAb1, $18, nBb1, $06
+	dc.b nB1, nEb2, $0C, nAb1, $18, nG1, nAb1, $06
+	dc.b nBb1, nB1, nEb2, nB1, nBb1, nAb1, nBb1, nB1
+	dc.b nCs2, nEb2, nFs2, nAb2, $18, nAb1, $03, nRst
+	dc.b nAb2, nRst, nAb1, nRst, nAb2, nRst, nAb1, nRst
+	dc.b $06, nAb2, $03, nFs2, nFs1, nFs1, nFs2, nAb1
+	dc.b nRst, nAb2, nRst, nAb1, nRst, nAb2, nRst, nAb1
+	dc.b nRst, nAb2, nAb1, nRst, nAb2, nAb1, nRst, nAb1
+	dc.b nRst, nAb2, nRst, nAb1, nRst, nAb2, nRst, nBb1
+	dc.b nRst, nBb2, nRst, nBb1, nRst, nBb2, nRst, nG1
+	dc.b nRst, nG2, nRst, nG1, nRst, nG2, nRst, nG1
+	dc.b nRst, $06, nG2, $03, nEb2, nEb1, nEb1, nEb2
+
+ImmortalSmoke_Loop72:
+	dc.b nAb1, nRst, nAb2, nRst, nAb1, nRst, nAb2, nRst
+	dc.b nG1, nRst, nG2, nRst, nBb1, nRst, nBb2, nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop72
+	dc.b nAb1, nRst, nAb2, nRst, nAb1, nRst, nAb2, nAb2
+	dc.b nFs1, nRst, nFs2, nRst, nBb1, nBb2, nB2, nCs3
+	dc.b nAb1, nRst, nAb2, nRst, nBb1, nRst, nBb2, nRst
+	dc.b nC2, nRst, nC2, nC3, nC2, nC2, nC3, nC2
+;	saVol		$18
+	dc.b nG2, nE2, nB1, nFs2, nG2, nB2, nG2, nB1
+	dc.b nE2, nFs2, nG2, nB2, nC3, nG2, nA2, nE2
+	dc.b nFs2, nA1
+
+ImmortalSmoke_Loop73:
+	dc.b nA2, nFs2, nEb2, nFs2, nA2, nFs2, nA2, nFs2
+	dc.b nEb2, nFs2, nB1, nE2, nG2, nB2, nG2, nE2
+	dc.b nB1, nFs2, nG2, nB2, nG2, nB1, nE2, nFs2
+	dc.b nG2, nB2, nC3, nG2, nA2, nE2, nFs2, nEb2
+	sLoop		$00, $02, ImmortalSmoke_Loop73
+	dc.b nA2, nFs2, nEb2, nFs2, nA2, nFs2, nA2, nFs2
+	dc.b nEb2, nFs2, nB1, nE2, nG2, nB2, nE2, nFs2
+	dc.b nG2, nB2, nE3, nFs3, nG3, nB3, nE2, nFs2
+	dc.b nG2, nC3, nE3, nFs3, nG3, nC4, nEb4, nA3
+	dc.b nG3, nFs3, nEb3, nFs3, nEb3, nA2, nG2, nA2
+	dc.b nB2, nE3, nFs3, nE3, nA2, nG2
+
+ImmortalSmoke_Loop74:
+	dc.b nG2, nE2, nB1, nFs2, nG2, nB2, nG2, nB1
+	dc.b nE2, nFs2, nG2, nB2, nC3, nG2, nA2, nE2
+	dc.b nFs2, nEb2, nA2, nFs2, nEb2, nFs2, nA2, nFs2
+	dc.b nA2, nFs2, nEb2, nFs2, nB1, nE2, nG2, nB2
+	sLoop		$00, $03, ImmortalSmoke_Loop74
+	dc.b nE2, nFs2, nG2, nB2, nE3, nFs3, nG3, nB3
+	dc.b nE2, nFs2, nG2, nC3, nE3, nFs3, nG3, nC4
+	dc.b nEb4, nA3, nG3, nFs3, nEb3, nFs3, nEb3, nA2
+	dc.b nG2, nA2, nB2, nE3, nFs3, nE3, nA2, nG2
+	dc.b nRst, $7F, $71
+;	saVol		$E8
+
+ImmortalSmoke_Loop75:
+	dc.b nBb1, $03, nRst, nBb2, nRst, nBb1, nRst, nBb2
+	dc.b nRst, nA1, nRst, nA2, nRst, nC2, nRst, nC3
+	dc.b nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop75
+	dc.b nBb1, nRst, nBb2, nRst, nBb1, nRst, nBb2, nBb2
+	dc.b nAb1, nRst, nAb2, nRst, nC2, nC3, nCs3, nEb3
+	dc.b nBb1, nRst, nBb2, nRst, nC2, nRst, nC3, nRst
+	dc.b nD2, nRst, nD2, nD3, nD2, nD2, nD3, nD2
+	dc.b nBb1, nRst, nBb2, nRst, nBb1, nRst, nBb2, nRst
+	dc.b nBb1, nRst, $06, nBb2, $03, nAb2, nAb1, nAb1
+	dc.b nAb2, nBb1, nRst, nBb2, nRst, nBb1, nRst, nBb2
+	dc.b nRst, nBb1, nRst, nBb2, nBb1, nRst, nBb2, nBb1
+	dc.b nRst, nBb1, nRst, nBb2, nRst, nBb1, nRst, nBb2
+	dc.b nRst, nC2, nRst, nC3, nRst, nC2, nRst, nC3
+	dc.b nRst, nA1, nRst, nA2, nRst, nA1, nRst, nA2
+	dc.b nRst, nA1, nRst, $06, nA2, $03, nF3, nF2
+	dc.b nF2, nF3
+
+ImmortalSmoke_Loop76:
+	dc.b nBb1, nRst, nBb2, nRst, nBb1, nRst, nBb2, nRst
+	dc.b nA1, nRst, nA2, nRst, nC2, nRst, nC3, nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop76
+	dc.b nBb1, nRst, nBb2, nRst, nBb1, nRst, nBb2, nBb2
+	dc.b nAb1, nRst, nAb2, nRst, nC2, nC3, nCs3, nEb3
+	dc.b nBb1, nRst, nBb2, nRst, nC2, nRst, nC3, nRst
+	dc.b nD2, nRst, nD2, nD3, nD2, nD2, nD3, nD2
+
+ImmortalSmoke_Loop78:
+	dc.b nG1, nRst, nG2, nRst, nG1, nRst, nG2, nRst
+	dc.b nG1, nRst, $06, nG2, $03, nF2, nF1, nF1
+	dc.b nF2, nG1, nRst, nG2, nRst, nG1, nRst, nG2
+	dc.b nRst, nG1, nRst, nG2, nG1, nRst, nG2, nG1
+	dc.b nRst, nG1, nRst, nG2, nRst, nG1, nRst, nG2
+	dc.b nRst, nA1, nRst, nA2, nRst, nA1, nRst, nA2
+	dc.b nRst, nFs1, nRst, nFs2, nRst, nFs1, nRst, nFs2
+	dc.b nRst, nFs1, nRst, $06, nFs2, $03, nD2, nD1
+	dc.b nD1, nD2
+
+ImmortalSmoke_Loop77:
+	dc.b nG1, nRst, nG2, nRst, nG1, nRst, nG2, nRst
+	dc.b nFs1, nRst, nFs2, nRst, nA1, nRst, nA2, nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop77
+	dc.b nG1, nRst, nG2, nRst, nG1, nRst, nG2, nG2
+	dc.b nF1, nRst, nF2, nRst, nA1, nA2, nBb2, nC3
+	dc.b nG1, nRst, nG2, nRst, nA1, nRst, nA2, nRst
+	dc.b nB1, nRst, nB1, nB2, nB1, nB1, nB2, nB1
+	sLoop		$01, $02, ImmortalSmoke_Loop78
+	dc.b nRst, $30
+
+ImmortalSmoke_Loop80:
+	dc.b nAb1, $03, nRst, nAb2, nRst, nAb1, nRst, nAb2
+	dc.b nRst, nAb1, nRst, $06, nAb2, $03, nFs2, nFs1
+	dc.b nFs1, nFs2, nAb1, nRst, nAb2, nRst, nAb1, nRst
+	dc.b nAb2, nRst, nAb1, nRst, nAb2, nAb1, nRst, nAb2
+	dc.b nAb1, nRst, nAb1, nRst, nAb2, nRst, nAb1, nRst
+	dc.b nAb2, nRst, nBb1, nRst, nBb2, nRst, nBb1, nRst
+	dc.b nBb2, nRst, nG1, nRst, nG2, nRst, nG1, nRst
+	dc.b nG2, nRst, nG1, nRst, $06, nG2, $03, nEb2
+	dc.b nEb1, nEb1, nEb2
+
+ImmortalSmoke_Loop79:
+	dc.b nAb1, nRst, nAb2, nRst, nAb1, nRst, nAb2, nRst
+	dc.b nG1, nRst, nG2, nRst, nBb1, nRst, nBb2, nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop79
+	dc.b nAb1, nRst, nAb2, nRst, nAb1, nRst, nAb2, nAb2
+	dc.b nFs1, nRst, nFs2, nRst, nBb1, nBb2, nB2, nCs3
+	dc.b nAb1, nRst, nAb2, nRst, nBb1, nRst, nBb2, nRst
+	dc.b nC2, nRst, nC2, nC3, nC2, nC2, nC3, nC2
+	sLoop		$01, $03, ImmortalSmoke_Loop80
+	dc.b nAb1, nRst, nAb2, nRst, nAb1, nRst, nAb2, nRst
+	dc.b nAb1, nRst, $06, nAb2, $03, nFs2, nFs1, nFs1
+	dc.b nFs2, nAb1, nRst, nAb2, nRst, nAb1, nRst, nAb2
+	dc.b nRst, nAb1, nRst, nAb2, nAb1, nRst, nAb2, nAb1
+	dc.b nRst, nAb1, nRst, nAb2, nRst, nAb1, nRst, nAb2
+	dc.b nRst, nBb1, nRst, nBb2, nRst, nBb1, nRst, nBb2
+	dc.b nRst, nG1, nRst, nG2, nRst, nG1, nRst, nG2
+	dc.b nRst, nG1, nRst, $06, nG2, $03, nEb2, nEb1
+	dc.b nEb1, nEb2, nAb1, nRst, nAb2, nRst, nAb1, nRst
+	dc.b nAb2, nRst, nG1, nRst, nG2, nRst, nBb1, nRst
+	dc.b nBb2, nRst, nAb1, nRst, nAb2, nRst, nAb1, nRst
+	dc.b nAb2, nRst, nG1, nRst, nG2, nRst, nBb1, nRst
+	dc.b nG2, nRst, nAb1, nRst, nAb2, nRst, nAb1, nRst
+	dc.b nAb2, nAb2, nFs1, nRst, nFs2, nRst, nBb1, nBb2
+	dc.b nB2, nCs3, nAb1, nRst, nAb2, nRst, nBb1, nRst
+	dc.b nBb2, nRst, nC2, nRst, nC2, nC3, nC2, nC2
+	dc.b nC3, nC2, nFs1, $18, nAb1, $06, nA1, nCs2
+	dc.b $0C, nFs1, $1E, nCs2, $06, nFs2, nAb2, nA2
+	dc.b $0C, nFs2, nAb2, nE2, nCs2, $30, nFs1, $18
+	dc.b nAb1, $06, nA1, nCs2, $0C, nFs1, $18, nF1
+	dc.b nFs1, $06, nAb1, nA1, nCs2, nA1, nAb1, nFs1
+	dc.b nAb1, nA1, nB1, nCs2, nE2, nFs2, $18
+	sJump		ImmortalSmoke_Jump6
+
+ImmortalSmoke_PSG3:
+	dc.b nCs0, $06, nE0, nFs0, $18, nAb0, $06, nA0
+	dc.b nCs1, $0C, nFs0, $1E, nCs1, $06, nFs1, nAb1
+	dc.b nA1, $0C, nFs1, nAb1, nE1, nCs1, $30, nFs0
+	dc.b $18, nAb0, $06, nA0, nCs1, $0C, nFs0, $18
+	dc.b nF0, nFs0, $06, nAb0, nA0, nCs1, nA0, nAb0
+	dc.b nFs0, nAb0, nA0, nB0, nCs1, nE1, nFs1, $18
+
+ImmortalSmoke_Jump7:
+;	saVol		$18
+
+ImmortalSmoke_Loop81:
+	dc.b nCs2, $03, nAb1, nE1, nAb1, nAb1, nE2, nCs2
+	dc.b nE1, nAb1, nAb1, nCs2, nE2, nE2, nCs2, nEb2
+	dc.b nA1, nC2, nFs1, nEb2, nC2, nFs1, nC2, nEb2
+	dc.b nC2, nEb2, nC2, nFs1, nC2, nE1, nAb1, nCs2
+	dc.b nE2
+	sLoop		$00, $03, ImmortalSmoke_Loop81
+	dc.b nAb1, nAb1, nCs2, nE2, nAb2, nAb2, nCs3, nE3
+	dc.b nA1, nA1, nCs2, nE2, nA2, nA2, nCs3, nE3
+	dc.b nFs3, nEb3, nCs3, nC3, nFs2, nC3, nFs2, nEb2
+	dc.b nCs2, nEb2, nE2, nAb2, nC3, nAb2, nEb2, nCs2
+;	saVol		$E8
+	dc.b nAb0, $18, nBb0, $06, nB0, nEb1, $0C, nAb0
+	dc.b $1E, nEb1, $06, nAb1, nBb1, nB1, $0C, nAb1
+	dc.b nBb1, nFs1, nEb1, $30, nAb0, $18, nBb0, $06
+	dc.b nB0, nEb1, $0C, nAb0, $18, nG0, nAb0, $06
+	dc.b nBb0, nB0, nEb1, nB0, nBb0, nAb0, nBb0, nB0
+	dc.b nCs1, nEb1, nFs1, nAb1, $18, nE1, $03, nRst
+	dc.b nE2, nRst, nE1, nRst, nE2, nRst, nE1, nRst
+	dc.b $06, nE2, $03, nCs2, nCs1, nCs1, nCs2, nEb1
+	dc.b nRst, nEb2, nRst, nEb1, nRst, nEb2, nRst, nEb1
+	dc.b nRst, nEb2, nAb1, nRst, nEb2, nEb1, nRst, nE1
+	dc.b nRst, nE2, nRst, nE1, nRst, nE2, nRst, nFs1
+	dc.b nRst, nFs2, nRst, nFs1, nRst, nFs2, nRst, nEb1
+	dc.b nRst, nEb2, nRst, nEb1, nRst, nEb2, nRst, nEb1
+	dc.b nRst, $06, nEb2, $03, nBb1, nBb0, nBb0, nBb1
+
+ImmortalSmoke_Loop82:
+	dc.b nE1, nRst, nE2, nRst, nE1, nRst, nE2, nRst
+	dc.b nEb1, nRst, nEb2, nRst, nG1, nRst, nG2, nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop82
+	dc.b nE1, nRst, nE2, nRst, nE1, nRst, nE2, nE2
+	dc.b nCs1, nRst, nCs2, nRst, nFs1, nFs2, nAb2, nBb2
+	dc.b nE1, nRst, nE2, nRst, nFs1, nRst, nFs2, nRst
+	dc.b nAb1, nRst, nAb1, nAb2, nAb1, nAb1, nAb2, nAb1
+;	saVol		$18
+
+ImmortalSmoke_Loop83:
+	dc.b nE2, nB1, nG1, nB1, nB1, nG2, nE2, nG1
+	dc.b nB1, nB1, nE2, nG2, nG2, nE2, nFs2, nC2
+	dc.b nEb2, nA1, nFs2, nEb2, nA1, nEb2, nFs2, nEb2
+	dc.b nFs2, nEb2, nA1, nEb2, nG1, nB1, nE2, nG2
+	sLoop		$00, $03, ImmortalSmoke_Loop83
+	dc.b nB1, nB1, nE2, nG2, nB2, nB2, nE3, nG3
+	dc.b nC2, nC2, nE2, nG2, nC3, nC3, nE3, nG3
+	dc.b nA3, nFs3, nE3, nEb3, nA2, nEb3, nA2, nFs2
+	dc.b nE2, nFs2, nG2, nB2, nEb3, nB2, nFs2, nE2
+
+ImmortalSmoke_Loop183:
+	dc.b nE2, nB1, nG1, nB1, nB1, nG2, nE2, nG1
+	dc.b nB1, nB1, nE2, nG2, nG2, nE2, nFs2, nC2
+	dc.b nEb2, nA1, nFs2, nEb2, nA1, nEb2, nFs2, nEb2
+	dc.b nFs2, nEb2, nA1, nEb2, nG1, nB1, nE2, nG2
+	sLoop		$00, $03, ImmortalSmoke_Loop183
+	dc.b nB1, nB1, nE2, nG2, nB2, nB2, nE3, nG3
+	dc.b nC2, nC2, nE2, nG2, nC3, nC3, nE3, nG3
+	dc.b nA3, nFs3, nE3, nEb3, nA2, nEb3, nA2, nFs2
+	dc.b nE2, nFs2, nG2, nB2, nEb3, nB2, nFs2, nE2
+	dc.b nRst, $7F, $71
+;	saVol		$E8
+
+ImmortalSmoke_Loop84:
+	dc.b nFs1, $03, nRst, nFs2, nRst, nFs1, nRst, nFs2
+	dc.b nRst, nF1, nRst, nF2, nRst, nA1, nRst, nA2
+	dc.b nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop84
+	dc.b nFs1, nRst, nFs2, nRst, nFs1, nRst, nFs2, nFs2
+	dc.b nEb1, nRst, nEb2, nRst, nAb1, nAb2, nBb2, nC3
+	dc.b nFs1, nRst, nFs2, nRst, nAb1, nRst, nAb2, nRst
+	dc.b nBb1, nRst, nBb1, nBb2, nBb1, nBb1, nBb2, nBb1
+	dc.b nFs1, nRst, nFs2, nRst, nFs1, nRst, nFs2, nRst
+	dc.b nFs1, nRst, $06, nFs2, $03, nEb2, nEb1, nEb1
+	dc.b nEb2, nF1, nRst, nF2, nRst, nF1, nRst, nF2
+	dc.b nRst, nF1, nRst, nF2, nF1, nRst, nF2, nF1
+	dc.b nRst, nFs1, nRst, nFs2, nRst, nFs1, nRst, nFs2
+	dc.b nRst, nAb1, nRst, nAb2, nRst, nAb1, nRst, nAb2
+	dc.b nRst, nF1, nRst, nF2, nRst, nF1, nRst, nF2
+	dc.b nRst, nF1, nRst, $06, nF2, $03, nC3, nF2
+	dc.b nF2, nC3
+
+ImmortalSmoke_Loop85:
+	dc.b nFs1, nRst, nFs2, nRst, nFs1, nRst, nFs2, nRst
+	dc.b nF1, nRst, nF2, nRst, nA1, nRst, nA2, nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop85
+	dc.b nFs1, nRst, nFs2, nRst, nFs1, nRst, nFs2, nFs2
+	dc.b nEb1, nRst, nEb2, nRst, nAb1, nAb2, nBb2, nC3
+	dc.b nFs1, nRst, nFs2, nRst, nAb1, nRst, nAb2, nRst
+	dc.b nBb1, nRst, nBb1, nBb2, nBb1, nBb1, nBb2, nBb1
+	dc.b nEb1, nRst, nEb2, nRst, nEb1, nRst, nEb2, nRst
+	dc.b nEb1, nRst, $06, nEb2, $03, nC2, nC1, nC1
+	dc.b nC2, nD1, nRst, nD2, nRst, nD1, nRst, nD2
+	dc.b nRst, nD1, nRst, nD2, nD1, nRst, nD2, nD1
+	dc.b nRst, nEb1, nRst, nEb2, nRst, nEb1, nRst, nEb2
+	dc.b nRst, nF1, nRst, nF2, nRst, nF1, nRst, nF2
+	dc.b nRst, nD1, nRst, nD2, nRst, nD1, nRst, nD2
+	dc.b nRst, nD1, nRst, $06, nD2, $03, nA1, nA0
+	dc.b nD1, nA1
+
+ImmortalSmoke_Loop86:
+	dc.b nEb1, nRst, nEb2, nRst, nEb1, nRst, nEb2, nRst
+	dc.b nD1, nRst, nD2, nRst, nFs1, nRst, nFs2, nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop86
+	dc.b nEb1, nRst, nEb2, nRst, nEb1, nRst, nEb2, nEb2
+	dc.b nC1, nRst, nC2, nRst, nF1, nF2, nG2, nA2
+	dc.b nEb1, nRst, nEb2, nRst, nF1, nRst, nF2, nRst
+	dc.b nG1, nRst, nG1, nG2, nG1, nG1, nG2, nG1
+	dc.b nEb1, nRst, nEb2, nRst, nEb1, nRst, nEb2, nRst
+	dc.b nEb1, nRst, $06, nEb2, $03, nC2, nC1, nC1
+	dc.b nC2, nD1, nRst, nD2, nRst, nD1, nRst, nD2
+	dc.b nRst, nD1, nRst, nD2, nD1, nRst, nD2, nD1
+	dc.b nRst, nEb1, nRst, nEb2, nRst, nEb1, nRst, nEb2
+	dc.b nRst, nF1, nRst, nF2, nRst, nF1, nRst, nF2
+	dc.b nRst, nD1, nRst, nD2, nRst, nD1, nRst, nD2
+	dc.b nRst, nD1, nRst, $06, nD2, $03, $03, nA0
+	dc.b nD1, nA1
+
+ImmortalSmoke_Loop87:
+	dc.b nEb1, nRst, nEb2, nRst, nEb1, nRst, nEb2, nRst
+	dc.b nD1, nRst, nD2, nRst, nFs1, nRst, nFs2, nRst
+	sLoop		$00, $02, ImmortalSmoke_Loop87
+	dc.b nEb1, nRst, nEb2, nRst, nEb1, nRst, nEb2, nEb2
+	dc.b nC1, nRst, nC2, nRst, nF1, nF2, nG2, nA2
+	dc.b nEb1, nRst, nEb2, nRst, nF1, nRst, nF2, nRst
+	dc.b nG1, nRst, nG1, nG2, nG1, nG1, nG2, nG1
+	dc.b nRst, $30
+
+ImmortalSmoke_Loop89:
+	dc.b nE1, $03, nRst, nE2, nRst, nE1, nRst, nE2
+	dc.b nRst, nE1, nRst, $06, nE2, $03, nCs2, nCs1
+	dc.b nCs1, nCs2, nEb1, nRst, nEb2, nRst, nEb1, nRst
+	dc.b nEb2, nRst, nEb1, nRst, nEb2, nEb1, nRst, nEb2
+	dc.b nEb1, nRst, nE1, nRst, nE2, nRst, nE1, nRst
+	dc.b nE2, nRst, nFs1, nRst, nFs2, nRst, nFs1, nRst
+	dc.b nFs2, nRst, nEb1, nRst, nEb2, nRst, nEb1, nRst
+	dc.b nEb2, nRst, nEb1, nRst, $06, nEb2, $03, nBb1
+	dc.b nBb0, nBb0, nBb1
+
+ImmortalSmoke_Loop88:
+	dc.b nE1, nRst, nE2, nRst, nE1, nRst, nE2, nRst
+	dc.b nEb1, nRst, nEb2, nRst, nG1, nRst, nG2, nRst
+	dc.b nE1, nRst, nE2, nRst, nE1, nRst, nE2, nRst
+	dc.b nEb1, nRst, nEb2, nRst, nG1, nRst, nG2, nRst
+	dc.b nE1, nRst, nE2, nRst, nE1, nRst, nE2, nE2
+	dc.b nCs1, nRst, nCs2, nRst, nFs1, nFs2, nAb2, nBb2
+	dc.b nE1, nRst, nE2, nRst, nFs1, nRst, nFs2, nRst
+	dc.b nAb1, nRst, nAb1, nAb2, nAb1, nAb1, nAb2, nAb1
+	sLoop		$00, $04, ImmortalSmoke_Loop89
+	dc.b nFs0, $18, nAb0, $06, nA0, nCs1, $0C, nFs0
+	dc.b $1E, nCs1, $06, nFs1, nAb1, nA1, $0C, nFs1
+	dc.b nAb1, nE1, nCs1, $30, nFs0, $18, nAb0, $06
+	dc.b nA0, nCs1, $0C, nFs0, $18, nF0, nFs0, $06
+	dc.b nAb0, nA0, nCs1, nA0, nAb0, nFs0, nAb0, nA0
+	dc.b nB0, nCs1, nE1, nFs1, $18
+	sJump		ImmortalSmoke_Jump7

@@ -1,0 +1,11 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$01
+	sHeaderSFX	$80, ctFM5, .FM5, $00, $07
+
+.FM5
+	sSpinRev
+	sVoice		pDiamonds
+	dc.b nA3, $15
+	sSpinReset
+	sStop

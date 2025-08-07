@@ -1,0 +1,513 @@
+Thriller_Header:
+	sHeaderInit
+	sHeaderTempo	$02, $33	
+	sHeaderCh	$05, $03
+	sHeaderDAC	Thriller_DAC1	
+	sHeaderDAC	Thriller_DAC2
+	sHeaderFM	Thriller_FM1, $E7, $12
+	sHeaderFM	Thriller_FM2, $F3, $0A
+	sHeaderFM	Thriller_FM3, $DB, $26
+	sHeaderFM	Thriller_FM4, $DB, $26
+	sHeaderFM	Thriller_FM5, $E7, $26
+	sHeaderPSG	Thriller_PSG1, $CF+$0C, $30, $00, vNone
+	sHeaderPSG	Thriller_PSG2, $CF+$0C, $30, $00, vNone
+	sHeaderPSG	Thriller_PSG3, $0D, $38, $00, vNone
+
+	; Patch $00
+	; $3D
+	; $01, $01, $01, $01,	$8E, $52, $14, $4C
+	; $08, $08, $0E, $03,	$00, $00, $00, $00
+	; $1F, $1F, $1F, $1F,	$1B, $80, $80, $9B
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $01, $01, $01
+	spRateScale	$02, $00, $01, $01
+	spAttackRt	$0E, $14, $12, $0C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $0E, $08, $03
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$1B, $00, $00, $1B
+
+	; Patch $01
+	; $18
+	; $37, $30, $30, $31,	$9E, $DC, $1C, $9C
+	; $0D, $06, $04, $01,	$08, $0A, $03, $05
+	; $BF, $BF, $3F, $2F,	$2C, $22, $14, $80
+	spAlgorithm	$00
+	spFeedback	$03
+	spDetune	$03, $03, $03, $03
+	spMultiple	$07, $00, $00, $01
+	spRateScale	$02, $00, $03, $02
+	spAttackRt	$1E, $1C, $1C, $1C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0D, $04, $06, $01
+	spSustainLv	$0B, $03, $0B, $02
+	spDecayRt	$08, $03, $0A, $05
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$2C, $14, $22, $00
+
+	; Patch $02
+	; $3D
+	; $01, $02, $02, $02,	$14, $0E, $8C, $0E
+	; $08, $05, $02, $05,	$00, $00, $00, $00
+	; $1F, $1F, $1F, $1F,	$1A, $92, $A7, $80
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $02, $02, $02
+	spRateScale	$00, $02, $00, $00
+	spAttackRt	$14, $0C, $0E, $0E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $02, $05, $05
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$1A, $27, $12, $00
+
+	; Patch $03
+	; $28
+	; $39, $35, $30, $31,	$DF, $DF, $9F, $9F
+	; $0C, $07, $0A, $0A,	$07, $07, $07, $09
+	; $2F, $1F, $1F, $FF,	$17, $32, $14, $80
+	spAlgorithm	$00
+	spFeedback	$05
+	spDetune	$03, $03, $03, $03
+	spMultiple	$09, $00, $05, $01
+	spRateScale	$03, $02, $03, $02
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0C, $0A, $07, $0A
+	spSustainLv	$02, $01, $01, $0F
+	spDecayRt	$07, $07, $07, $09
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$17, $14, $32, $00
+
+	; Patch $04
+	; $1C
+	; $01, $01, $01, $01,	$9F, $DF, $9F, $5F
+	; $0F, $12, $06, $06,	$00, $07, $0B, $07
+	; $FF, $2F, $FF, $FF,	$18, $87, $11, $80
+	spAlgorithm	$04
+	spFeedback	$03
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $01, $01, $01
+	spRateScale	$02, $02, $03, $01
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $06, $12, $06
+	spSustainLv	$0F, $0F, $02, $0F
+	spDecayRt	$00, $0B, $07, $07
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$18, $11, $07, $00
+
+	; Patch $05
+	; $3C
+	; $31, $52, $50, $30,	$52, $53, $52, $53
+	; $08, $00, $08, $00,	$04, $00, $04, $00
+	; $1F, $0F, $1F, $0F,	$1A, $80, $16, $80
+	spAlgorithm	$04
+	spFeedback	$07
+	spDetune	$03, $05, $05, $03
+	spMultiple	$01, $00, $02, $00
+	spRateScale	$01, $01, $01, $01
+	spAttackRt	$12, $12, $13, $13
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $08, $00, $00
+	spSustainLv	$01, $01, $00, $00
+	spDecayRt	$04, $04, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$1A, $16, $00, $00	
+
+Thriller_FM1:
+	sVoice		$05
+	saTranspose	$0C
+	dc.b nD7, $09, nC7, $03, sHold, $24, nC7, $0C
+	dc.b nB6, $0C, nA6, $18, sHold, $30, sHold, $30
+	saTranspose	$F4
+
+Thriller_Loop1:
+	dc.b nRst, $30
+	sLoop		$00, $02, Thriller_Loop1
+
+Thriller_Jump1:
+	sVoice		$00
+	sModAMPS	$15, $01, $06, $05
+	dc.b nRst, $1E, nC6, $06, nD6, nE6, $03, nF6
+	dc.b $03, sHold, $18, nD6, $03, nC6, $03, nA5
+	dc.b $06, nRst, $09, nD6, $03, nC6, $06, nD6
+	dc.b nD6, nC6, nD6, nC6, nD6, nF6, $03, nD6
+	dc.b $06, nC6, $03, nA5, $06, sHold, $18, nRst
+	dc.b $0C, nRst, $1E, nC6, $06, nD6, nE6, $03
+	dc.b nF6, $03, sHold, $18, nD6, $03, nC6, $03
+	dc.b nA5, $06, nRst, $09, nD6, $03, nC6, $06
+	dc.b nD6, nD6, nC6, nD6, nC6, nD6, nF6, $03
+	dc.b nD6, $06, nC6, $03, nA5, $06, sHold, $0C
+	dc.b nRst, $06, nD6, nF6, $06, nA6, $03, nG6
+	dc.b $06, nF6, $03, nD6, $06, sHold, $18, nRst
+	dc.b $03, nD6, $09, nG6, $03, nF6, $06, nF6
+	dc.b nF6, nE6, nD6, nD6, nE6, nF6, $03, sHold
+	dc.b $06, nD6, $06, sHold, $24, nRst, $1E, nD6
+	dc.b $06, nF6, nA6, $03, nG6, $06, nF6, $03
+	dc.b nD6, $06, sHold, $18, nRst, $03, nG6, $09
+	dc.b nG6, $03, nF6, $06, nF6, nF6, nE6, nD6
+	dc.b nD6, $06, nE6, nF6, $03, sHold, $0C, nRst
+	dc.b $0C, nF6, $06, nG6, nF6, nA6, $03, nF6
+	dc.b $03, nG6, $0C, nRst, $12, nA6, $06, nC7
+	dc.b nA6
+	sVoice		$00
+	sModAMPS	$15, $01, $06, $05
+	dc.b nD7, $09, nC7, $1B, nRst, $0C, nC7, $0C
+	dc.b nB6, $0C, nA6, $0C, nRst, $06, nA6, nA6
+	dc.b $06, nA6, nG6, nF6, $03, nF6, $09, nD6
+	dc.b $06, nF6, $06, nG6, $03, nA6, $03, sHold
+	dc.b $06, nG6, $06, nG6, nF6, $03, nG6, $03
+	dc.b nRst, $06, nA6, $06, nC7, nA6, nD7, $09
+	dc.b nC7, $1B, nRst, $0C, nC7, $0C, nB6, $0C
+	dc.b nA6, $0C, nRst, $06, nA6, nA6, nG6, nG6
+	dc.b nF6, $03, nF6, $03, sHold, $06, nD6, $06
+	dc.b nF6, nG6
+	sVoice		$00
+	dc.b nRst, $06, nF6, nD6, nRst, nAb6, nF6, nRst
+	dc.b nC7, nD7, $0C, sHold, $06, nC7, $03, nA6
+	dc.b $09, nG6, $06, nF6, $0C, sHold, $12, nD6
+	dc.b $06, sHold, $18, nRst, $30, nRst, $30
+	sJump		Thriller_Jump1
+
+Thriller_FM2:
+	sVoice		$01
+	dc.b nD4, $09, nF4, $03, sHold, $24, nF4, $0C
+	dc.b nG4, $0C, nD4, $18
+
+Thriller_Loop2:
+	dc.b nC4, $06, nD4, nF4, nG4, nD4
+	ssTickMulCh	$01
+	dc.b nRst, $07
+	saVol		$04
+	sGate	$06
+	dc.b nD3, $05
+	sGate	$03
+	dc.b nD3, $06
+	saVol		$FC
+	sGate	$00
+	dc.b nRst, $0D, nD4, $05
+	ssTickMulCh	$02
+	sLoop		$00, $04, Thriller_Loop2
+
+Thriller_Jump2:
+	sVoice		$01
+
+Thriller_Loop3:
+	dc.b nC4, $06, nD4, nF4, nG4, nD4
+	ssTickMulCh	$01
+	dc.b nRst, $07
+	saVol		$04
+	sGate	$06
+	dc.b nD3, $05
+	sGate	$03
+	dc.b nD3, $06
+	saVol		$FC
+	sGate	$00
+	dc.b nRst, $0D, nD4, $05
+	ssTickMulCh	$02
+	sLoop		$00, $10, Thriller_Loop3
+	sVoice		$01
+
+Thriller_Loop4:
+	dc.b nC4, $06, nD4, nF4, nG4, nD4
+	ssTickMulCh	$01
+	dc.b nRst, $07
+	saVol		$04
+	sGate	$06
+	dc.b nD3, $05
+	sGate	$03
+	dc.b nD3, $06
+	saVol		$FC
+	sGate	$00
+	dc.b nRst, $0D, nD4, $05
+	ssTickMulCh	$02
+	sLoop		$00, $06, Thriller_Loop4
+	dc.b nC4, $06, nD4, nF4, nG4, nD4, nRst, $03
+	dc.b nD3, nD3, nRst, nD4, sHold, nC4
+	sVoice		$01
+	dc.b nBb3, $06, nRst, $0C, nG3, $06, nRst, $0C
+	dc.b nC4, $06, nRst, $06
+
+Thriller_Loop5:
+	dc.b nC4, $06, nD4, nF4, nG4, nD4
+	ssTickMulCh	$01
+	dc.b nRst, $07
+	saVol		$04
+	sGate	$06
+	dc.b nD3, $05
+	sGate	$03
+	dc.b nD3, $06
+	saVol		$FC
+	sGate	$00
+	dc.b nRst, $0D, nD4, $05
+	ssTickMulCh	$02
+	sLoop		$00, $04, Thriller_Loop5
+	sJump		Thriller_Jump2
+
+Thriller_FM3:
+	sVoice		$02
+	sVoice		$05
+	saTranspose	$0C
+	saVol		$EE
+	dc.b nD7, $09, nC7, $03, sHold, $24, nC7, $0C
+	dc.b nB6, $0C, nA6, $18, sHold, $30, sHold, $30
+	saVol		$12
+	saTranspose	$F4
+
+Thriller_Loop6:
+	dc.b nRst, $30
+	sLoop		$00, $02, Thriller_Loop6
+
+Thriller_Jump3:
+	sVoice		$02
+	sPan		spRight
+
+Thriller_Loop7:
+	dc.b nB6, $60, nC7
+	sLoop		$00, $02, Thriller_Loop7
+	dc.b nD7, $60, nF7, nG7, nF7, $30, nE7
+	sPan		spRight
+	sVoice		$00
+	sModAMPS	$15, $01, $06, $05
+	saVol		$EC
+	dc.b nF7, $09, nF7, $1B, nRst, $0C, nF7, $0C
+	dc.b nD7, $0C, nC7, $18
+	saVol		$14
+	sVoice		$02
+	sModOff
+	dc.b nD7, $30, nF7, $30
+	sVoice		$00
+	sModAMPS	$15, $01, $06, $05
+	saVol		$EC
+	dc.b nF7, $09, nF7, $1B, nRst, $0C, nF7, $0C
+	dc.b nD7, $0C, nC7, $18
+	saVol		$14
+	sVoice		$02
+	sModOff
+	dc.b nD7, $30
+	sPan		spCenter
+	sVoice		$05
+	saVol		$EA
+	saTranspose	$18
+	dc.b nAb6, $06, nRst, $0C, nF6, $06, nRst, $0C
+	dc.b nF6, $06, nRst, $06
+	saTranspose	$E8
+	saVol		$16
+
+Thriller_Loop8:
+	dc.b nRst, $30
+	sLoop		$00, $04, Thriller_Loop8
+	sJump		Thriller_Jump3
+
+Thriller_FM4:
+	sVoice		$02
+	sVoice		$05
+	sPan		spRight
+	saTranspose	$18
+	saVol		$EE
+	dc.b nA6, $09, nA6, $03, sHold, $24, nA6, $0C
+	dc.b nG6, $0C, nF6, $18, sHold, $30, sHold, $30
+	saVol		$12
+	saTranspose	$E8
+
+Thriller_Loop9:
+	dc.b nRst, $30
+	sLoop		$00, $02, Thriller_Loop9
+
+Thriller_Jump4:
+	sPan		spCenter
+	sVoice		$02
+
+Thriller_Loop10:
+	dc.b nG6, $30, sHold, $30, nA6, $30, sHold, $30
+	sLoop		$00, $02, Thriller_Loop10
+	saTranspose	$18
+	saVol		$EA
+	sPan		spLeft
+	sVoice		$03
+
+Thriller_Loop11:
+	dc.b nRst, $06, nA5, $03, nG5, $03, nA5, $03
+	dc.b nRst, $03, nA5, $03, nG5, $03, nA5, $03
+	dc.b nRst, $03, nA5, $03, nG5, $03, nA5, $03
+	dc.b nC6, $03, nRst, $03, nD6, $03
+	sLoop		$00, $08, Thriller_Loop11
+	saTranspose	$E8
+	saVol		$16
+	sPan		spRight
+	sVoice		$04
+	saVol		$EA
+	saTranspose	$0C
+
+Thriller_Loop12:
+	dc.b sHold, $06, nD6, $03, nC6, $03, nD6, $03
+	dc.b nD6, nRst, nC6, $03, nD6, $06, nF6, nG6
+	dc.b $02, sHold, nA6, $04, nG6, $06
+	sLoop		$00, $07, Thriller_Loop12
+	saVol		$16
+	saTranspose	$F4
+	sVoice		$05
+	saVol		$EA
+	saTranspose	$18
+	dc.b nD6, $06, nRst, $0C, nB5, $06, nRst, $0C
+	dc.b nBb5, $06, nRst, $06
+	saTranspose	$E8
+	saVol		$16
+	saTranspose	$18
+	saVol		$EA
+	sPan		spLeft
+	sVoice		$03
+
+Thriller_Loop13:
+	dc.b nRst, $06, nA5, $03, nG5, $03, nA5, $03
+	dc.b nRst, $03, nA5, $03, nG5, $03, nA5, $03
+	dc.b nRst, $03, nA5, $03, nG5, $03, nA5, $03
+	dc.b nC6, $03, nRst, $03, nD6, $03
+	sLoop		$00, $04, Thriller_Loop13
+	saTranspose	$E8
+	saVol		$16
+	sJump		Thriller_Jump4
+
+Thriller_FM5:
+	sVoice		$05
+	sPan		spLeft
+	saTranspose	$0C
+	saVol		$EE
+	dc.b nF6, $09, nF6, $03, sHold, $24, nF6, $0C
+	dc.b nD6, $0C, nD6, $18, sHold, $30, sHold, $30
+	saVol		$12
+	saTranspose	$F4
+
+Thriller_Loop14:
+	dc.b nRst, $30
+	sLoop		$00, $02, Thriller_Loop14
+
+Thriller_Jump5:
+	sVoice		$02
+	sPan		spLeft
+
+Thriller_Loop15:
+	dc.b nD6, $60, nF6
+	sLoop		$00, $02, Thriller_Loop15
+	dc.b nG6, nA6, nB6, nA6, $30, nG6
+	sPan		spLeft
+	sVoice		$00
+	sModAMPS	$15, $01, $06, $05
+	saVol		$EC
+	dc.b nA6, $09, nA6, $1B, nRst, $0C, nA6, $0C
+	dc.b nG6, $0C, nF6, $18
+	saVol		$14
+	sVoice		$02
+	sModOff
+	dc.b nG6, $30, nF6, $30
+	sVoice		$00
+	sModAMPS	$15, $01, $06, $05
+	saVol		$EC
+	dc.b nA6, $09, nA6, $1B, nRst, $0C, nA6, $0C
+	dc.b nG6, $0C, nF6, $18
+	saVol		$14
+	sVoice		$02
+	sModOff
+	dc.b nG6, $30
+	sPan		spLeft
+	sVoice		$05
+	saVol		$EA
+	saTranspose	$18
+	dc.b nF5, $06, nRst, $0C, nD5, $06, nRst, $0C
+	dc.b nD5, $06, nRst, $06
+	saTranspose	$E8
+	saVol		$16
+
+Thriller_Loop16:
+	dc.b nRst, $30
+	sLoop		$00, $04, Thriller_Loop16
+	sJump		Thriller_Jump5
+
+Thriller_PSG1:
+	dc.b nRst, $30
+	sLoop		$00, $06, Thriller_PSG1
+
+Thriller_Loop17:
+	dc.b nG4, $60, nA4
+	sLoop		$00, $02, Thriller_Loop17
+	dc.b nB4, $60, nC5, nD5, nD5, $30, nC5, nA5
+	dc.b $09, nA5, $03, sHold, $24, nA5, $0C, nG5
+	dc.b $0C, nF5, $18, nB4, $30, nBb4, $30, nA5
+	dc.b $09, nA5, $03, sHold, $24, nA5, $0C, nG5
+	dc.b $0C, nF5, $18, nB4, $30, nBb5, $06, nRst
+	dc.b $0C, nG5, $06, nRst, $0C, nG5, $06, nRst
+	dc.b $06
+
+Thriller_Loop18:
+	dc.b nRst, $30
+	sLoop		$00, $04, Thriller_Loop18
+	sJump		Thriller_Loop17
+
+Thriller_PSG2:
+	dc.b nRst, $30
+	sLoop		$00, $06, Thriller_PSG2
+
+Thriller_Loop19:
+	dc.b nD4, $60, nF4
+	sLoop		$00, $02, Thriller_Loop19
+	dc.b nG4, $60, nA4, nB4, nBb4, $30, nA4, nF5
+	dc.b $09, nF5, $03, sHold, $24, nF5, $0C, nD5
+	dc.b $0C, nC5, $18, nG4, $30, nG4, $30, nF5
+	dc.b $09, nF5, $03, sHold, $24, nF5, $0C, nD5
+	dc.b $0C, nC5, $18, nG4, $30, nF5, $06, nRst
+	dc.b $0C, nD5, $06, nRst, $0C, nD5, $06, nRst
+	dc.b $06
+
+Thriller_Loop20:
+	dc.b nRst, $30
+	sLoop		$00, $04, Thriller_Loop20
+	sJump		Thriller_Loop19
+
+Thriller_PSG3:
+	sNoisePSG	snWhitePSG3
+	saVol	-$18
+	dc.b nA5, $09, $27, $0C, $0C, $09
+	saVol	$18
+	sGate	$02
+	dc.b $03, $06, $03, $03
+
+Thriller_Jump6:
+	sNoisePSG	snWhitePSG3
+	sGate	$02
+	dc.b nA5, $06, $06
+	sGate	$06
+	dc.b $06
+	sGate	$02
+	dc.b $03, $03
+	sGate	$02
+	dc.b nA5, $06, $03, $03
+	sGate	$0A
+	dc.b $06
+	sGate	$02
+	dc.b $06
+	sJump		Thriller_Jump6
+
+Thriller_DAC2:
+	dc.b dKick, $09, $27, $0C, $0C, $09, dLooseSnare, $03
+	dc.b $06, dRideCymbal, $03, dLooseSnare
+
+Thriller_Jump7:
+	dc.b dKick, $06, dRideCymbal, dKick, dRideCymbal, dKick, dRideCymbal, dLooseSnare
+	dc.b dRideCymbal
+	sJump		Thriller_Jump7
+
+Thriller_DAC1:
+	sStop

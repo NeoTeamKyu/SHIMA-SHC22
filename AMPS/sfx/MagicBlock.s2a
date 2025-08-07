@@ -1,0 +1,29 @@
+	sHeaderInitSFX
+	sHeaderPrio	$7A
+	sHeaderCh	$02
+	sHeaderSFX	(1<<cfbRun), ctFM5, .FM5, $00, $07
+	sHeaderSFX	(1<<cfbRun), ctPSG3, .PSG3, $00, $10
+
+.FM5:
+	sVoice		pMagicBlock
+;	sPitchSlide	$01	; Would use ssPortamento. Turning that back off for now. It's in macro.asm.
+	dc.b nC5, $10, $1E
+	saVol		$11
+	dc.b nG5, $10, $08
+	saVol		$0F
+	dc.b nG5, $10, $08
+	sStop
+
+.PSG3:
+	sNoisePSG	$E7
+	dc.b nG6, $02
+
+.Loop1:
+	saVol		$08
+	dc.b nG6, $07
+	sLoop		$00, $04, .Loop1
+	saVol		$18
+	dc.b nG6, $08
+	saVol		$18
+	dc.b nG6, $06
+	sStop

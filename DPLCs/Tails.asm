@@ -1,0 +1,537 @@
+Tails_PLC:
+Tails_PLC_0: 	dc.w Tails_PLC_146-Tails_PLC
+Tails_PLC_2: 	dc.w Tails_PLC_147-Tails_PLC
+Tails_PLC_4: 	dc.w Tails_PLC_14A-Tails_PLC
+Tails_PLC_6: 	dc.w Tails_PLC_14D-Tails_PLC
+Tails_PLC_8: 	dc.w Tails_PLC_150-Tails_PLC
+Tails_PLC_A: 	dc.w Tails_PLC_153-Tails_PLC
+Tails_PLC_C: 	dc.w Tails_PLC_156-Tails_PLC
+Tails_PLC_E: 	dc.w Tails_PLC_159-Tails_PLC
+Tails_PLC_10: 	dc.w Tails_PLC_15C-Tails_PLC
+Tails_PLC_12: 	dc.w Tails_PLC_15F-Tails_PLC
+Tails_PLC_14: 	dc.w Tails_PLC_162-Tails_PLC
+Tails_PLC_16: 	dc.w Tails_PLC_167-Tails_PLC
+Tails_PLC_18: 	dc.w Tails_PLC_16C-Tails_PLC
+Tails_PLC_1A: 	dc.w Tails_PLC_16F-Tails_PLC
+Tails_PLC_1C: 	dc.w Tails_PLC_172-Tails_PLC
+Tails_PLC_1E: 	dc.w Tails_PLC_177-Tails_PLC
+Tails_PLC_20: 	dc.w Tails_PLC_17A-Tails_PLC
+Tails_PLC_22: 	dc.w Tails_PLC_17D-Tails_PLC
+Tails_PLC_24: 	dc.w Tails_PLC_180-Tails_PLC
+Tails_PLC_26: 	dc.w Tails_PLC_185-Tails_PLC
+Tails_PLC_28: 	dc.w Tails_PLC_18A-Tails_PLC
+Tails_PLC_2A: 	dc.w Tails_PLC_18D-Tails_PLC
+Tails_PLC_2C: 	dc.w Tails_PLC_190-Tails_PLC
+Tails_PLC_2E: 	dc.w Tails_PLC_195-Tails_PLC
+Tails_PLC_30: 	dc.w Tails_PLC_19A-Tails_PLC
+Tails_PLC_32: 	dc.w Tails_PLC_19F-Tails_PLC
+Tails_PLC_34: 	dc.w Tails_PLC_1A2-Tails_PLC
+Tails_PLC_36: 	dc.w Tails_PLC_1A7-Tails_PLC
+Tails_PLC_38: 	dc.w Tails_PLC_1AC-Tails_PLC
+Tails_PLC_3A: 	dc.w Tails_PLC_1AF-Tails_PLC
+Tails_PLC_3C: 	dc.w Tails_PLC_1B2-Tails_PLC
+Tails_PLC_3E: 	dc.w Tails_PLC_1B7-Tails_PLC
+Tails_PLC_40: 	dc.w Tails_PLC_1BA-Tails_PLC
+Tails_PLC_42: 	dc.w Tails_PLC_1BD-Tails_PLC
+Tails_PLC_44: 	dc.w Tails_PLC_1C0-Tails_PLC
+Tails_PLC_46: 	dc.w Tails_PLC_1C5-Tails_PLC
+Tails_PLC_48: 	dc.w Tails_PLC_1CA-Tails_PLC
+Tails_PLC_4A: 	dc.w Tails_PLC_1CF-Tails_PLC
+Tails_PLC_4C: 	dc.w Tails_PLC_1D4-Tails_PLC
+Tails_PLC_4E: 	dc.w Tails_PLC_1D9-Tails_PLC
+Tails_PLC_50: 	dc.w Tails_PLC_1DE-Tails_PLC
+Tails_PLC_52: 	dc.w Tails_PLC_1E3-Tails_PLC
+Tails_PLC_54: 	dc.w Tails_PLC_1E6-Tails_PLC
+Tails_PLC_56: 	dc.w Tails_PLC_1E9-Tails_PLC
+Tails_PLC_58: 	dc.w Tails_PLC_1EC-Tails_PLC
+Tails_PLC_5A: 	dc.w Tails_PLC_1EF-Tails_PLC
+Tails_PLC_5C: 	dc.w Tails_PLC_1F2-Tails_PLC
+Tails_PLC_5E: 	dc.w Tails_PLC_1F7-Tails_PLC
+Tails_PLC_60: 	dc.w Tails_PLC_1FA-Tails_PLC
+Tails_PLC_62: 	dc.w Tails_PLC_1FD-Tails_PLC
+Tails_PLC_64: 	dc.w Tails_PLC_200-Tails_PLC
+Tails_PLC_66: 	dc.w Tails_PLC_203-Tails_PLC
+Tails_PLC_68: 	dc.w Tails_PLC_206-Tails_PLC
+Tails_PLC_6A: 	dc.w Tails_PLC_209-Tails_PLC
+Tails_PLC_6C: 	dc.w Tails_PLC_20C-Tails_PLC
+Tails_PLC_6E: 	dc.w Tails_PLC_211-Tails_PLC
+Tails_PLC_70: 	dc.w Tails_PLC_214-Tails_PLC
+Tails_PLC_72: 	dc.w Tails_PLC_217-Tails_PLC
+Tails_PLC_74: 	dc.w Tails_PLC_21A-Tails_PLC
+Tails_PLC_76: 	dc.w Tails_PLC_21F-Tails_PLC
+Tails_PLC_78: 	dc.w Tails_PLC_224-Tails_PLC
+Tails_PLC_7A: 	dc.w Tails_PLC_229-Tails_PLC
+Tails_PLC_7C: 	dc.w Tails_PLC_22E-Tails_PLC
+Tails_PLC_7E: 	dc.w Tails_PLC_231-Tails_PLC
+Tails_PLC_80: 	dc.w Tails_PLC_236-Tails_PLC
+Tails_PLC_82: 	dc.w Tails_PLC_23B-Tails_PLC
+Tails_PLC_84: 	dc.w Tails_PLC_240-Tails_PLC
+Tails_PLC_86: 	dc.w Tails_PLC_245-Tails_PLC
+Tails_PLC_88: 	dc.w Tails_PLC_24A-Tails_PLC
+Tails_PLC_8A: 	dc.w Tails_PLC_24F-Tails_PLC
+Tails_PLC_8C: 	dc.w Tails_PLC_254-Tails_PLC
+Tails_PLC_8E: 	dc.w Tails_PLC_259-Tails_PLC
+Tails_PLC_90: 	dc.w Tails_PLC_25E-Tails_PLC
+Tails_PLC_92: 	dc.w Tails_PLC_263-Tails_PLC
+Tails_PLC_94: 	dc.w Tails_PLC_268-Tails_PLC
+Tails_PLC_96: 	dc.w Tails_PLC_26B-Tails_PLC
+Tails_PLC_98: 	dc.w Tails_PLC_26E-Tails_PLC
+Tails_PLC_9A: 	dc.w Tails_PLC_271-Tails_PLC
+Tails_PLC_9C: 	dc.w Tails_PLC_274-Tails_PLC
+Tails_PLC_9E: 	dc.w Tails_PLC_277-Tails_PLC
+Tails_PLC_A0: 	dc.w Tails_PLC_27C-Tails_PLC
+Tails_PLC_A2: 	dc.w Tails_PLC_281-Tails_PLC
+Tails_PLC_A4: 	dc.w Tails_PLC_286-Tails_PLC
+Tails_PLC_A6: 	dc.w Tails_PLC_28B-Tails_PLC
+Tails_PLC_A8: 	dc.w Tails_PLC_28E-Tails_PLC
+Tails_PLC_AA: 	dc.w Tails_PLC_291-Tails_PLC
+Tails_PLC_AC: 	dc.w Tails_PLC_294-Tails_PLC
+Tails_PLC_AE: 	dc.w Tails_PLC_297-Tails_PLC
+Tails_PLC_B0: 	dc.w Tails_PLC_29A-Tails_PLC
+Tails_PLC_B2: 	dc.w Tails_PLC_29D-Tails_PLC
+Tails_PLC_B4: 	dc.w Tails_PLC_2A0-Tails_PLC
+Tails_PLC_B6: 	dc.w Tails_PLC_2A3-Tails_PLC
+Tails_PLC_B8: 	dc.w Tails_PLC_2A6-Tails_PLC
+Tails_PLC_BA: 	dc.w Tails_PLC_2A9-Tails_PLC
+Tails_PLC_BC: 	dc.w Tails_PLC_2AC-Tails_PLC
+Tails_PLC_BE: 	dc.w Tails_PLC_2AF-Tails_PLC
+Tails_PLC_C0: 	dc.w Tails_PLC_2B2-Tails_PLC
+Tails_PLC_C2: 	dc.w Tails_PLC_2B5-Tails_PLC
+Tails_PLC_C4: 	dc.w Tails_PLC_2B8-Tails_PLC
+Tails_PLC_C6: 	dc.w Tails_PLC_2BB-Tails_PLC
+Tails_PLC_C8: 	dc.w Tails_PLC_2BE-Tails_PLC
+Tails_PLC_CA: 	dc.w Tails_PLC_2C1-Tails_PLC
+Tails_PLC_CC: 	dc.w Tails_PLC_2C4-Tails_PLC
+Tails_PLC_CE: 	dc.w Tails_PLC_2C7-Tails_PLC
+Tails_PLC_D0: 	dc.w Tails_PLC_2CA-Tails_PLC
+Tails_PLC_D2: 	dc.w Tails_PLC_2CD-Tails_PLC
+Tails_PLC_D4: 	dc.w Tails_PLC_2D0-Tails_PLC
+Tails_PLC_D6: 	dc.w Tails_PLC_2D3-Tails_PLC
+Tails_PLC_D8: 	dc.w Tails_PLC_2D6-Tails_PLC
+Tails_PLC_DA: 	dc.w Tails_PLC_2DB-Tails_PLC
+Tails_PLC_DC: 	dc.w Tails_PLC_2DE-Tails_PLC
+Tails_PLC_DE: 	dc.w Tails_PLC_2E1-Tails_PLC
+Tails_PLC_E0: 	dc.w Tails_PLC_2E4-Tails_PLC
+Tails_PLC_E2: 	dc.w Tails_PLC_2E7-Tails_PLC
+Tails_PLC_E4: 	dc.w Tails_PLC_2EA-Tails_PLC
+Tails_PLC_E6: 	dc.w Tails_PLC_2ED-Tails_PLC
+Tails_PLC_E8: 	dc.w Tails_PLC_2F0-Tails_PLC
+Tails_PLC_EA: 	dc.w Tails_PLC_2F3-Tails_PLC
+Tails_PLC_EC: 	dc.w Tails_PLC_2F6-Tails_PLC
+Tails_PLC_EE: 	dc.w Tails_PLC_2F9-Tails_PLC
+Tails_PLC_F0: 	dc.w Tails_PLC_2FC-Tails_PLC
+Tails_PLC_F2: 	dc.w Tails_PLC_2FF-Tails_PLC
+Tails_PLC_F4: 	dc.w Tails_PLC_302-Tails_PLC
+Tails_PLC_F6: 	dc.w Tails_PLC_305-Tails_PLC
+Tails_PLC_F8: 	dc.w Tails_PLC_308-Tails_PLC
+Tails_PLC_FA: 	dc.w Tails_PLC_30B-Tails_PLC
+Tails_PLC_FC: 	dc.w Tails_PLC_30E-Tails_PLC
+Tails_PLC_FE: 	dc.w Tails_PLC_311-Tails_PLC
+Tails_PLC_100: 	dc.w Tails_PLC_314-Tails_PLC
+Tails_PLC_102: 	dc.w Tails_PLC_317-Tails_PLC
+Tails_PLC_104: 	dc.w Tails_PLC_31A-Tails_PLC
+Tails_PLC_106: 	dc.w Tails_PLC_31D-Tails_PLC
+Tails_PLC_108: 	dc.w Tails_PLC_320-Tails_PLC
+Tails_PLC_10A: 	dc.w Tails_PLC_323-Tails_PLC
+Tails_PLC_10C: 	dc.w Tails_PLC_326-Tails_PLC
+Tails_PLC_10E: 	dc.w Tails_PLC_329-Tails_PLC
+Tails_PLC_110: 	dc.w Tails_PLC_32C-Tails_PLC
+Tails_PLC_112: 	dc.w Tails_PLC_32F-Tails_PLC
+Tails_PLC_114: 	dc.w Tails_PLC_332-Tails_PLC
+Tails_PLC_116: 	dc.w Tails_PLC_335-Tails_PLC
+Tails_PLC_118: 	dc.w Tails_PLC_338-Tails_PLC
+Tails_PLC_11A: 	dc.w Tails_PLC_33D-Tails_PLC
+Tails_PLC_11C: 	dc.w Tails_PLC_342-Tails_PLC
+Tails_PLC_11E: 	dc.w Tails_PLC_345-Tails_PLC
+Tails_PLC_120: 	dc.w Tails_PLC_348-Tails_PLC
+Tails_PLC_122: 	dc.w Tails_PLC_34B-Tails_PLC
+Tails_PLC_124: 	dc.w Tails_PLC_34E-Tails_PLC
+Tails_PLC_126: 	dc.w Tails_PLC_351-Tails_PLC
+Tails_PLC_128: 	dc.w Tails_PLC_354-Tails_PLC
+Tails_PLC_12A: 	dc.w Tails_PLC_357-Tails_PLC
+Tails_PLC_12C: 	dc.w Tails_PLC_35A-Tails_PLC
+Tails_PLC_12E: 	dc.w Tails_PLC_35D-Tails_PLC
+Tails_PLC_130: 	dc.w Tails_PLC_360-Tails_PLC
+Tails_PLC_132: 	dc.w Tails_PLC_363-Tails_PLC
+Tails_PLC_134: 	dc.w Tails_PLC_366-Tails_PLC
+Tails_PLC_136: 	dc.w Tails_PLC_369-Tails_PLC
+Tails_PLC_138: 	dc.w Tails_PLC_36C-Tails_PLC
+Tails_PLC_13A: 	dc.w Tails_PLC_36F-Tails_PLC
+Tails_PLC_13C: 	dc.w Tails_PLC_374-Tails_PLC
+Tails_PLC_13E: 	dc.w Tails_PLC_379-Tails_PLC
+Tails_PLC_140: 	dc.w Tails_PLC_37E-Tails_PLC
+Tails_PLC_142: 	dc.w Tails_PLC_381-Tails_PLC
+Tails_PLC_144: 	dc.w Tails_PLC_386-Tails_PLC
+Tails_PLC_146: 	dc.b $0
+Tails_PLC_147: 	dc.b $1
+	dc.b $A0, $0
+Tails_PLC_14A: 	dc.b $1
+	dc.b $A0, $B
+Tails_PLC_14D: 	dc.b $1
+	dc.b $A0, $16
+Tails_PLC_150: 	dc.b $1
+	dc.b $A0, $21
+Tails_PLC_153: 	dc.b $1
+	dc.b $B0, $2C
+Tails_PLC_156: 	dc.b $1
+	dc.b $B0, $38
+Tails_PLC_159: 	dc.b $1
+	dc.b $B0, $44
+Tails_PLC_15C: 	dc.b $1
+	dc.b $B0, $50
+Tails_PLC_15F: 	dc.b $1
+	dc.b $B0, $5C
+Tails_PLC_162: 	dc.b $2
+	dc.b $F0, $68
+	dc.b $10, $78
+Tails_PLC_167: 	dc.b $2
+	dc.b $F0, $7A
+	dc.b $0, $8A
+Tails_PLC_16C: 	dc.b $1
+	dc.b $D0, $8B
+Tails_PLC_16F: 	dc.b $1
+	dc.b $F0, $99
+Tails_PLC_172: 	dc.b $2
+	dc.b $F0, $A9
+	dc.b $0, $B9
+Tails_PLC_177: 	dc.b $1
+	dc.b $F0, $BA
+Tails_PLC_17A: 	dc.b $1
+	dc.b $D0, $CA
+Tails_PLC_17D: 	dc.b $1
+	dc.b $F0, $D8
+Tails_PLC_180: 	dc.b $2
+	dc.b $F0, $E8
+	dc.b $10, $F8
+Tails_PLC_185: 	dc.b $2
+	dc.b $F0, $FA
+	dc.b $1, $A
+Tails_PLC_18A: 	dc.b $1
+	dc.b $F1, $B
+Tails_PLC_18D: 	dc.b $1
+	dc.b $F1, $1B
+Tails_PLC_190: 	dc.b $2
+	dc.b $F1, $2B
+	dc.b $1, $3B
+Tails_PLC_195: 	dc.b $2
+	dc.b $F1, $3C
+	dc.b $1, $4C
+Tails_PLC_19A: 	dc.b $2
+	dc.b $F1, $4D
+	dc.b $1, $5D
+Tails_PLC_19F: 	dc.b $1
+	dc.b $F1, $5E
+Tails_PLC_1A2: 	dc.b $2
+	dc.b $F1, $6E
+	dc.b $11, $7E
+Tails_PLC_1A7: 	dc.b $2
+	dc.b $F1, $80
+	dc.b $1, $90
+Tails_PLC_1AC: 	dc.b $1
+	dc.b $D1, $91
+Tails_PLC_1AF: 	dc.b $1
+	dc.b $F1, $9F
+Tails_PLC_1B2: 	dc.b $2
+	dc.b $F1, $AF
+	dc.b $1, $BF
+Tails_PLC_1B7: 	dc.b $1
+	dc.b $F1, $C0
+Tails_PLC_1BA: 	dc.b $1
+	dc.b $D1, $D0
+Tails_PLC_1BD: 	dc.b $1
+	dc.b $F1, $DE
+Tails_PLC_1C0: 	dc.b $2
+	dc.b $F1, $EE
+	dc.b $11, $FE
+Tails_PLC_1C5: 	dc.b $2
+	dc.b $F2, $0
+	dc.b $2, $10
+Tails_PLC_1CA: 	dc.b $2
+	dc.b $F2, $11
+	dc.b $2, $21
+Tails_PLC_1CF: 	dc.b $2
+	dc.b $F2, $22
+	dc.b $2, $32
+Tails_PLC_1D4: 	dc.b $2
+	dc.b $F2, $33
+	dc.b $2, $43
+Tails_PLC_1D9: 	dc.b $2
+	dc.b $F2, $44
+	dc.b $2, $54
+Tails_PLC_1DE: 	dc.b $2
+	dc.b $F2, $55
+	dc.b $2, $65
+Tails_PLC_1E3: 	dc.b $1
+	dc.b $F2, $66
+Tails_PLC_1E6: 	dc.b $1
+	dc.b $E2, $76
+Tails_PLC_1E9: 	dc.b $1
+	dc.b $D2, $85
+Tails_PLC_1EC: 	dc.b $1
+	dc.b $D2, $93
+Tails_PLC_1EF: 	dc.b $1
+	dc.b $E2, $A1
+Tails_PLC_1F2: 	dc.b $2
+	dc.b $F2, $B0
+	dc.b $2, $C0
+Tails_PLC_1F7: 	dc.b $1
+	dc.b $E2, $C1
+Tails_PLC_1FA: 	dc.b $1
+	dc.b $D2, $D0
+Tails_PLC_1FD: 	dc.b $1
+	dc.b $E2, $DE
+Tails_PLC_200: 	dc.b $1
+	dc.b $E2, $ED
+Tails_PLC_203: 	dc.b $1
+	dc.b $D2, $FC
+Tails_PLC_206: 	dc.b $1
+	dc.b $D3, $A
+Tails_PLC_209: 	dc.b $1
+	dc.b $E3, $18
+Tails_PLC_20C: 	dc.b $2
+	dc.b $F3, $27
+	dc.b $3, $37
+Tails_PLC_211: 	dc.b $1
+	dc.b $E3, $38
+Tails_PLC_214: 	dc.b $1
+	dc.b $D3, $47
+Tails_PLC_217: 	dc.b $1
+	dc.b $E3, $55
+Tails_PLC_21A: 	dc.b $2
+	dc.b $F3, $64
+	dc.b $3, $74
+Tails_PLC_21F: 	dc.b $2
+	dc.b $F3, $75
+	dc.b $13, $85
+Tails_PLC_224: 	dc.b $2
+	dc.b $F3, $87
+	dc.b $13, $97
+Tails_PLC_229: 	dc.b $2
+	dc.b $F3, $99
+	dc.b $3, $A9
+Tails_PLC_22E: 	dc.b $1
+	dc.b $F3, $AA
+Tails_PLC_231: 	dc.b $2
+	dc.b $F3, $BA
+	dc.b $3, $CA
+Tails_PLC_236: 	dc.b $2
+	dc.b $F3, $CB
+	dc.b $13, $DB
+Tails_PLC_23B: 	dc.b $2
+	dc.b $F3, $DD
+	dc.b $3, $ED
+Tails_PLC_240: 	dc.b $2
+	dc.b $F3, $EE
+	dc.b $3, $FE
+Tails_PLC_245: 	dc.b $2
+	dc.b $F3, $FF
+	dc.b $14, $F
+Tails_PLC_24A: 	dc.b $2
+	dc.b $F4, $11
+	dc.b $14, $21
+Tails_PLC_24F: 	dc.b $2
+	dc.b $F4, $23
+	dc.b $4, $33
+Tails_PLC_254: 	dc.b $2
+	dc.b $F4, $34
+	dc.b $4, $44
+Tails_PLC_259: 	dc.b $2
+	dc.b $F4, $45
+	dc.b $4, $55
+Tails_PLC_25E: 	dc.b $2
+	dc.b $F4, $56
+	dc.b $14, $66
+Tails_PLC_263: 	dc.b $2
+	dc.b $F4, $68
+	dc.b $4, $78
+Tails_PLC_268: 	dc.b $1
+	dc.b $F4, $79
+Tails_PLC_26B: 	dc.b $1
+	dc.b $F4, $89
+Tails_PLC_26E: 	dc.b $1
+	dc.b $F4, $99
+Tails_PLC_271: 	dc.b $1
+	dc.b $F4, $A9
+Tails_PLC_274: 	dc.b $1
+	dc.b $F4, $B9
+Tails_PLC_277: 	dc.b $2
+	dc.b $F4, $C9
+	dc.b $4, $D9
+Tails_PLC_27C: 	dc.b $2
+	dc.b $F4, $DA
+	dc.b $4, $EA
+Tails_PLC_281: 	dc.b $2
+	dc.b $F4, $EB
+	dc.b $24, $FB
+Tails_PLC_286: 	dc.b $2
+	dc.b $F4, $FE
+	dc.b $25, $E
+Tails_PLC_28B: 	dc.b $1
+	dc.b $A5, $11
+Tails_PLC_28E: 	dc.b $1
+	dc.b $85, $1C
+Tails_PLC_291: 	dc.b $1
+	dc.b $F5, $25
+Tails_PLC_294: 	dc.b $1
+	dc.b $F5, $35
+Tails_PLC_297: 	dc.b $1
+	dc.b $E5, $45
+Tails_PLC_29A: 	dc.b $1
+	dc.b $E5, $54
+Tails_PLC_29D: 	dc.b $1
+	dc.b $D5, $63
+Tails_PLC_2A0: 	dc.b $1
+	dc.b $B5, $71
+Tails_PLC_2A3: 	dc.b $1
+	dc.b $A5, $7D
+Tails_PLC_2A6: 	dc.b $1
+	dc.b $B5, $88
+Tails_PLC_2A9: 	dc.b $1
+	dc.b $A5, $94
+Tails_PLC_2AC: 	dc.b $1
+	dc.b $B5, $9F
+Tails_PLC_2AF: 	dc.b $1
+	dc.b $C5, $AB
+Tails_PLC_2B2: 	dc.b $1
+	dc.b $B5, $B8
+Tails_PLC_2B5: 	dc.b $1
+	dc.b $B5, $C4
+Tails_PLC_2B8: 	dc.b $1
+	dc.b $B5, $D0
+Tails_PLC_2BB: 	dc.b $1
+	dc.b $B5, $DC
+Tails_PLC_2BE: 	dc.b $1
+	dc.b $C5, $E8
+Tails_PLC_2C1: 	dc.b $1
+	dc.b $C5, $F5
+Tails_PLC_2C4: 	dc.b $1
+	dc.b $A6, $2
+Tails_PLC_2C7: 	dc.b $1
+	dc.b $A6, $D
+Tails_PLC_2CA: 	dc.b $1
+	dc.b $E6, $18
+Tails_PLC_2CD: 	dc.b $1
+	dc.b $D6, $27
+Tails_PLC_2D0: 	dc.b $1
+	dc.b $D6, $35
+Tails_PLC_2D3: 	dc.b $1
+	dc.b $F6, $43
+Tails_PLC_2D6: 	dc.b $2
+	dc.b $F6, $53
+	dc.b $6, $63
+Tails_PLC_2DB: 	dc.b $1
+	dc.b $F6, $64
+Tails_PLC_2DE: 	dc.b $1
+	dc.b $E6, $74
+Tails_PLC_2E1: 	dc.b $1
+	dc.b $C6, $83
+Tails_PLC_2E4: 	dc.b $1
+	dc.b $F6, $90
+Tails_PLC_2E7: 	dc.b $1
+	dc.b $D6, $A0
+Tails_PLC_2EA: 	dc.b $1
+	dc.b $E6, $AE
+Tails_PLC_2ED: 	dc.b $1
+	dc.b $E6, $BD
+Tails_PLC_2F0: 	dc.b $1
+	dc.b $B6, $CC
+Tails_PLC_2F3: 	dc.b $1
+	dc.b $C6, $D8
+Tails_PLC_2F6: 	dc.b $1
+	dc.b $C6, $E5
+Tails_PLC_2F9: 	dc.b $1
+	dc.b $C6, $F2
+Tails_PLC_2FC: 	dc.b $1
+	dc.b $C6, $FF
+Tails_PLC_2FF: 	dc.b $1
+	dc.b $B7, $C
+Tails_PLC_302: 	dc.b $1
+	dc.b $C7, $18
+Tails_PLC_305: 	dc.b $1
+	dc.b $C7, $25
+Tails_PLC_308: 	dc.b $1
+	dc.b $C7, $32
+Tails_PLC_30B: 	dc.b $1
+	dc.b $C7, $3F
+Tails_PLC_30E: 	dc.b $1
+	dc.b $D7, $4C
+Tails_PLC_311: 	dc.b $1
+	dc.b $B7, $5A
+Tails_PLC_314: 	dc.b $1
+	dc.b $E7, $66
+Tails_PLC_317: 	dc.b $1
+	dc.b $F7, $75
+Tails_PLC_31A: 	dc.b $1
+	dc.b $F7, $85
+Tails_PLC_31D: 	dc.b $1
+	dc.b $D7, $95
+Tails_PLC_320: 	dc.b $1
+	dc.b $E7, $A3
+Tails_PLC_323: 	dc.b $1
+	dc.b $E7, $B2
+Tails_PLC_326: 	dc.b $1
+	dc.b $F7, $C1
+Tails_PLC_329: 	dc.b $1
+	dc.b $E7, $D1
+Tails_PLC_32C: 	dc.b $1
+	dc.b $E7, $E0
+Tails_PLC_32F: 	dc.b $1
+	dc.b $D7, $EF
+Tails_PLC_332: 	dc.b $1
+	dc.b $E7, $FD
+Tails_PLC_335: 	dc.b $1
+	dc.b $F8, $C
+Tails_PLC_338: 	dc.b $2
+	dc.b $F8, $1C
+	dc.b $28, $2C
+Tails_PLC_33D: 	dc.b $2
+	dc.b $F8, $2F
+	dc.b $18, $3F
+Tails_PLC_342: 	dc.b $1
+	dc.b $E8, $41
+Tails_PLC_345: 	dc.b $1
+	dc.b $E8, $50
+Tails_PLC_348: 	dc.b $1
+	dc.b $D8, $5F
+Tails_PLC_34B: 	dc.b $1
+	dc.b $D8, $6D
+Tails_PLC_34E: 	dc.b $1
+	dc.b $C8, $7B
+Tails_PLC_351: 	dc.b $1
+	dc.b $A8, $88
+Tails_PLC_354: 	dc.b $1
+	dc.b $88, $93
+Tails_PLC_357: 	dc.b $1
+	dc.b $B8, $9C
+Tails_PLC_35A: 	dc.b $1
+	dc.b $D8, $A8
+Tails_PLC_35D: 	dc.b $1
+	dc.b $F8, $B6
+Tails_PLC_360: 	dc.b $1
+	dc.b $F8, $C6
+Tails_PLC_363: 	dc.b $1
+	dc.b $A8, $D6
+Tails_PLC_366: 	dc.b $1
+	dc.b $88, $E1
+Tails_PLC_369: 	dc.b $1
+	dc.b $B8, $EA
+Tails_PLC_36C: 	dc.b $1
+	dc.b $B8, $F6
+Tails_PLC_36F: 	dc.b $2
+	dc.b $F9, $2
+	dc.b $29, $12
+Tails_PLC_374: 	dc.b $2
+	dc.b $F9, $15
+	dc.b $29, $25
+Tails_PLC_379: 	dc.b $2
+	dc.b $F9, $28
+	dc.b $29, $38
+Tails_PLC_37E: 	dc.b $1
+	dc.b $89, $3B
+Tails_PLC_381: 	dc.b $2
+	dc.b $F9, $44
+	dc.b $9, $54
+Tails_PLC_386: 	dc.b $2
+	dc.b $F9, $55
+	dc.b $9, $65
+	even

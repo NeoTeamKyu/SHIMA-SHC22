@@ -1,0 +1,595 @@
+DarkLegacy_PLC:
+DarkLegacy_PLC_0: 	dc.w DarkLegacy_PLC_144-DarkLegacy_PLC
+DarkLegacy_PLC_2: 	dc.w DarkLegacy_PLC_145-DarkLegacy_PLC
+DarkLegacy_PLC_4: 	dc.w DarkLegacy_PLC_14A-DarkLegacy_PLC
+DarkLegacy_PLC_6: 	dc.w DarkLegacy_PLC_14F-DarkLegacy_PLC
+DarkLegacy_PLC_8: 	dc.w DarkLegacy_PLC_154-DarkLegacy_PLC
+DarkLegacy_PLC_A: 	dc.w DarkLegacy_PLC_159-DarkLegacy_PLC
+DarkLegacy_PLC_C: 	dc.w DarkLegacy_PLC_15E-DarkLegacy_PLC
+DarkLegacy_PLC_E: 	dc.w DarkLegacy_PLC_163-DarkLegacy_PLC
+DarkLegacy_PLC_10: 	dc.w DarkLegacy_PLC_166-DarkLegacy_PLC
+DarkLegacy_PLC_12: 	dc.w DarkLegacy_PLC_167-DarkLegacy_PLC
+DarkLegacy_PLC_14: 	dc.w DarkLegacy_PLC_168-DarkLegacy_PLC
+DarkLegacy_PLC_16: 	dc.w DarkLegacy_PLC_16D-DarkLegacy_PLC
+DarkLegacy_PLC_18: 	dc.w DarkLegacy_PLC_172-DarkLegacy_PLC
+DarkLegacy_PLC_1A: 	dc.w DarkLegacy_PLC_177-DarkLegacy_PLC
+DarkLegacy_PLC_1C: 	dc.w DarkLegacy_PLC_17C-DarkLegacy_PLC
+DarkLegacy_PLC_1E: 	dc.w DarkLegacy_PLC_17F-DarkLegacy_PLC
+DarkLegacy_PLC_20: 	dc.w DarkLegacy_PLC_184-DarkLegacy_PLC
+DarkLegacy_PLC_22: 	dc.w DarkLegacy_PLC_189-DarkLegacy_PLC
+DarkLegacy_PLC_24: 	dc.w DarkLegacy_PLC_18E-DarkLegacy_PLC
+DarkLegacy_PLC_26: 	dc.w DarkLegacy_PLC_191-DarkLegacy_PLC
+DarkLegacy_PLC_28: 	dc.w DarkLegacy_PLC_196-DarkLegacy_PLC
+DarkLegacy_PLC_2A: 	dc.w DarkLegacy_PLC_19B-DarkLegacy_PLC
+DarkLegacy_PLC_2C: 	dc.w DarkLegacy_PLC_1A0-DarkLegacy_PLC
+DarkLegacy_PLC_2E: 	dc.w DarkLegacy_PLC_1A5-DarkLegacy_PLC
+DarkLegacy_PLC_30: 	dc.w DarkLegacy_PLC_1AA-DarkLegacy_PLC
+DarkLegacy_PLC_32: 	dc.w DarkLegacy_PLC_1AF-DarkLegacy_PLC
+DarkLegacy_PLC_34: 	dc.w DarkLegacy_PLC_1B4-DarkLegacy_PLC
+DarkLegacy_PLC_36: 	dc.w DarkLegacy_PLC_1B9-DarkLegacy_PLC
+DarkLegacy_PLC_38: 	dc.w DarkLegacy_PLC_1BE-DarkLegacy_PLC
+DarkLegacy_PLC_3A: 	dc.w DarkLegacy_PLC_1C3-DarkLegacy_PLC
+DarkLegacy_PLC_3C: 	dc.w DarkLegacy_PLC_1C8-DarkLegacy_PLC
+DarkLegacy_PLC_3E: 	dc.w DarkLegacy_PLC_1CB-DarkLegacy_PLC
+DarkLegacy_PLC_40: 	dc.w DarkLegacy_PLC_1D0-DarkLegacy_PLC
+DarkLegacy_PLC_42: 	dc.w DarkLegacy_PLC_1D5-DarkLegacy_PLC
+DarkLegacy_PLC_44: 	dc.w DarkLegacy_PLC_1DA-DarkLegacy_PLC
+DarkLegacy_PLC_46: 	dc.w DarkLegacy_PLC_1DD-DarkLegacy_PLC
+DarkLegacy_PLC_48: 	dc.w DarkLegacy_PLC_1E2-DarkLegacy_PLC
+DarkLegacy_PLC_4A: 	dc.w DarkLegacy_PLC_1E7-DarkLegacy_PLC
+DarkLegacy_PLC_4C: 	dc.w DarkLegacy_PLC_1EC-DarkLegacy_PLC
+DarkLegacy_PLC_4E: 	dc.w DarkLegacy_PLC_1F1-DarkLegacy_PLC
+DarkLegacy_PLC_50: 	dc.w DarkLegacy_PLC_1F6-DarkLegacy_PLC
+DarkLegacy_PLC_52: 	dc.w DarkLegacy_PLC_1FB-DarkLegacy_PLC
+DarkLegacy_PLC_54: 	dc.w DarkLegacy_PLC_200-DarkLegacy_PLC
+DarkLegacy_PLC_56: 	dc.w DarkLegacy_PLC_205-DarkLegacy_PLC
+DarkLegacy_PLC_58: 	dc.w DarkLegacy_PLC_20A-DarkLegacy_PLC
+DarkLegacy_PLC_5A: 	dc.w DarkLegacy_PLC_20F-DarkLegacy_PLC
+DarkLegacy_PLC_5C: 	dc.w DarkLegacy_PLC_214-DarkLegacy_PLC
+DarkLegacy_PLC_5E: 	dc.w DarkLegacy_PLC_219-DarkLegacy_PLC
+DarkLegacy_PLC_60: 	dc.w DarkLegacy_PLC_21E-DarkLegacy_PLC
+DarkLegacy_PLC_62: 	dc.w DarkLegacy_PLC_223-DarkLegacy_PLC
+DarkLegacy_PLC_64: 	dc.w DarkLegacy_PLC_228-DarkLegacy_PLC
+DarkLegacy_PLC_66: 	dc.w DarkLegacy_PLC_22D-DarkLegacy_PLC
+DarkLegacy_PLC_68: 	dc.w DarkLegacy_PLC_232-DarkLegacy_PLC
+DarkLegacy_PLC_6A: 	dc.w DarkLegacy_PLC_237-DarkLegacy_PLC
+DarkLegacy_PLC_6C: 	dc.w DarkLegacy_PLC_23C-DarkLegacy_PLC
+DarkLegacy_PLC_6E: 	dc.w DarkLegacy_PLC_241-DarkLegacy_PLC
+DarkLegacy_PLC_70: 	dc.w DarkLegacy_PLC_248-DarkLegacy_PLC
+DarkLegacy_PLC_72: 	dc.w DarkLegacy_PLC_24D-DarkLegacy_PLC
+DarkLegacy_PLC_74: 	dc.w DarkLegacy_PLC_252-DarkLegacy_PLC
+DarkLegacy_PLC_76: 	dc.w DarkLegacy_PLC_257-DarkLegacy_PLC
+DarkLegacy_PLC_78: 	dc.w DarkLegacy_PLC_25C-DarkLegacy_PLC
+DarkLegacy_PLC_7A: 	dc.w DarkLegacy_PLC_25F-DarkLegacy_PLC
+DarkLegacy_PLC_7C: 	dc.w DarkLegacy_PLC_262-DarkLegacy_PLC
+DarkLegacy_PLC_7E: 	dc.w DarkLegacy_PLC_265-DarkLegacy_PLC
+DarkLegacy_PLC_80: 	dc.w DarkLegacy_PLC_268-DarkLegacy_PLC
+DarkLegacy_PLC_82: 	dc.w DarkLegacy_PLC_26B-DarkLegacy_PLC
+DarkLegacy_PLC_84: 	dc.w DarkLegacy_PLC_26E-DarkLegacy_PLC
+DarkLegacy_PLC_86: 	dc.w DarkLegacy_PLC_273-DarkLegacy_PLC
+DarkLegacy_PLC_88: 	dc.w DarkLegacy_PLC_278-DarkLegacy_PLC
+DarkLegacy_PLC_8A: 	dc.w DarkLegacy_PLC_27B-DarkLegacy_PLC
+DarkLegacy_PLC_8C: 	dc.w DarkLegacy_PLC_27E-DarkLegacy_PLC
+DarkLegacy_PLC_8E: 	dc.w DarkLegacy_PLC_281-DarkLegacy_PLC
+DarkLegacy_PLC_90: 	dc.w DarkLegacy_PLC_284-DarkLegacy_PLC
+DarkLegacy_PLC_92: 	dc.w DarkLegacy_PLC_287-DarkLegacy_PLC
+DarkLegacy_PLC_94: 	dc.w DarkLegacy_PLC_28A-DarkLegacy_PLC
+DarkLegacy_PLC_96: 	dc.w DarkLegacy_PLC_28D-DarkLegacy_PLC
+DarkLegacy_PLC_98: 	dc.w DarkLegacy_PLC_292-DarkLegacy_PLC
+DarkLegacy_PLC_9A: 	dc.w DarkLegacy_PLC_297-DarkLegacy_PLC
+DarkLegacy_PLC_9C: 	dc.w DarkLegacy_PLC_29A-DarkLegacy_PLC
+DarkLegacy_PLC_9E: 	dc.w DarkLegacy_PLC_29F-DarkLegacy_PLC
+DarkLegacy_PLC_A0: 	dc.w DarkLegacy_PLC_2A4-DarkLegacy_PLC
+DarkLegacy_PLC_A2: 	dc.w DarkLegacy_PLC_2A9-DarkLegacy_PLC
+DarkLegacy_PLC_A4: 	dc.w DarkLegacy_PLC_2AE-DarkLegacy_PLC
+DarkLegacy_PLC_A6: 	dc.w DarkLegacy_PLC_2B3-DarkLegacy_PLC
+DarkLegacy_PLC_A8: 	dc.w DarkLegacy_PLC_2B8-DarkLegacy_PLC
+DarkLegacy_PLC_AA: 	dc.w DarkLegacy_PLC_2BD-DarkLegacy_PLC
+DarkLegacy_PLC_AC: 	dc.w DarkLegacy_PLC_2C2-DarkLegacy_PLC
+DarkLegacy_PLC_AE: 	dc.w DarkLegacy_PLC_2C7-DarkLegacy_PLC
+DarkLegacy_PLC_B0: 	dc.w DarkLegacy_PLC_2CC-DarkLegacy_PLC
+DarkLegacy_PLC_B2: 	dc.w DarkLegacy_PLC_2D1-DarkLegacy_PLC
+DarkLegacy_PLC_B4: 	dc.w DarkLegacy_PLC_2D6-DarkLegacy_PLC
+DarkLegacy_PLC_B6: 	dc.w DarkLegacy_PLC_2DB-DarkLegacy_PLC
+DarkLegacy_PLC_B8: 	dc.w DarkLegacy_PLC_2DE-DarkLegacy_PLC
+DarkLegacy_PLC_BA: 	dc.w DarkLegacy_PLC_2E1-DarkLegacy_PLC
+DarkLegacy_PLC_BC: 	dc.w DarkLegacy_PLC_2E6-DarkLegacy_PLC
+DarkLegacy_PLC_BE: 	dc.w DarkLegacy_PLC_2E9-DarkLegacy_PLC
+DarkLegacy_PLC_C0: 	dc.w DarkLegacy_PLC_2EC-DarkLegacy_PLC
+DarkLegacy_PLC_C2: 	dc.w DarkLegacy_PLC_2EF-DarkLegacy_PLC
+DarkLegacy_PLC_C4: 	dc.w DarkLegacy_PLC_2F2-DarkLegacy_PLC
+DarkLegacy_PLC_C6: 	dc.w DarkLegacy_PLC_2F5-DarkLegacy_PLC
+DarkLegacy_PLC_C8: 	dc.w DarkLegacy_PLC_2F8-DarkLegacy_PLC
+DarkLegacy_PLC_CA: 	dc.w DarkLegacy_PLC_2FB-DarkLegacy_PLC
+DarkLegacy_PLC_CC: 	dc.w DarkLegacy_PLC_2FE-DarkLegacy_PLC
+DarkLegacy_PLC_CE: 	dc.w DarkLegacy_PLC_301-DarkLegacy_PLC
+DarkLegacy_PLC_D0: 	dc.w DarkLegacy_PLC_304-DarkLegacy_PLC
+DarkLegacy_PLC_D2: 	dc.w DarkLegacy_PLC_309-DarkLegacy_PLC
+DarkLegacy_PLC_D4: 	dc.w DarkLegacy_PLC_30E-DarkLegacy_PLC
+DarkLegacy_PLC_D6: 	dc.w DarkLegacy_PLC_313-DarkLegacy_PLC
+DarkLegacy_PLC_D8: 	dc.w DarkLegacy_PLC_316-DarkLegacy_PLC
+DarkLegacy_PLC_DA: 	dc.w DarkLegacy_PLC_31B-DarkLegacy_PLC
+DarkLegacy_PLC_DC: 	dc.w DarkLegacy_PLC_320-DarkLegacy_PLC
+DarkLegacy_PLC_DE: 	dc.w DarkLegacy_PLC_325-DarkLegacy_PLC
+DarkLegacy_PLC_E0: 	dc.w DarkLegacy_PLC_32A-DarkLegacy_PLC
+DarkLegacy_PLC_E2: 	dc.w DarkLegacy_PLC_32F-DarkLegacy_PLC
+DarkLegacy_PLC_E4: 	dc.w DarkLegacy_PLC_334-DarkLegacy_PLC
+DarkLegacy_PLC_E6: 	dc.w DarkLegacy_PLC_339-DarkLegacy_PLC
+DarkLegacy_PLC_E8: 	dc.w DarkLegacy_PLC_33E-DarkLegacy_PLC
+DarkLegacy_PLC_EA: 	dc.w DarkLegacy_PLC_343-DarkLegacy_PLC
+DarkLegacy_PLC_EC: 	dc.w DarkLegacy_PLC_348-DarkLegacy_PLC
+DarkLegacy_PLC_EE: 	dc.w DarkLegacy_PLC_34D-DarkLegacy_PLC
+DarkLegacy_PLC_F0: 	dc.w DarkLegacy_PLC_352-DarkLegacy_PLC
+DarkLegacy_PLC_F2: 	dc.w DarkLegacy_PLC_357-DarkLegacy_PLC
+DarkLegacy_PLC_F4: 	dc.w DarkLegacy_PLC_35C-DarkLegacy_PLC
+DarkLegacy_PLC_F6: 	dc.w DarkLegacy_PLC_361-DarkLegacy_PLC
+DarkLegacy_PLC_F8: 	dc.w DarkLegacy_PLC_366-DarkLegacy_PLC
+DarkLegacy_PLC_FA: 	dc.w DarkLegacy_PLC_36B-DarkLegacy_PLC
+DarkLegacy_PLC_FC: 	dc.w DarkLegacy_PLC_370-DarkLegacy_PLC
+DarkLegacy_PLC_FE: 	dc.w DarkLegacy_PLC_375-DarkLegacy_PLC
+DarkLegacy_PLC_100: 	dc.w DarkLegacy_PLC_37A-DarkLegacy_PLC
+DarkLegacy_PLC_102: 	dc.w DarkLegacy_PLC_37D-DarkLegacy_PLC
+DarkLegacy_PLC_104: 	dc.w DarkLegacy_PLC_382-DarkLegacy_PLC
+DarkLegacy_PLC_106: 	dc.w DarkLegacy_PLC_387-DarkLegacy_PLC
+DarkLegacy_PLC_108: 	dc.w DarkLegacy_PLC_38C-DarkLegacy_PLC
+DarkLegacy_PLC_10A: 	dc.w DarkLegacy_PLC_391-DarkLegacy_PLC
+DarkLegacy_PLC_10C: 	dc.w DarkLegacy_PLC_394-DarkLegacy_PLC
+DarkLegacy_PLC_10E: 	dc.w DarkLegacy_PLC_397-DarkLegacy_PLC
+DarkLegacy_PLC_110: 	dc.w DarkLegacy_PLC_39A-DarkLegacy_PLC
+DarkLegacy_PLC_112: 	dc.w DarkLegacy_PLC_39F-DarkLegacy_PLC
+DarkLegacy_PLC_114: 	dc.w DarkLegacy_PLC_3A4-DarkLegacy_PLC
+DarkLegacy_PLC_116: 	dc.w DarkLegacy_PLC_3A7-DarkLegacy_PLC
+DarkLegacy_PLC_118: 	dc.w DarkLegacy_PLC_3AA-DarkLegacy_PLC
+DarkLegacy_PLC_11A: 	dc.w DarkLegacy_PLC_3AD-DarkLegacy_PLC
+DarkLegacy_PLC_11C: 	dc.w DarkLegacy_PLC_3B2-DarkLegacy_PLC
+DarkLegacy_PLC_11E: 	dc.w DarkLegacy_PLC_3B7-DarkLegacy_PLC
+DarkLegacy_PLC_120: 	dc.w DarkLegacy_PLC_3BA-DarkLegacy_PLC
+DarkLegacy_PLC_122: 	dc.w DarkLegacy_PLC_3BD-DarkLegacy_PLC
+DarkLegacy_PLC_124: 	dc.w DarkLegacy_PLC_3C0-DarkLegacy_PLC
+DarkLegacy_PLC_126: 	dc.w DarkLegacy_PLC_3C3-DarkLegacy_PLC
+DarkLegacy_PLC_128: 	dc.w DarkLegacy_PLC_3C6-DarkLegacy_PLC
+DarkLegacy_PLC_12A: 	dc.w DarkLegacy_PLC_3CB-DarkLegacy_PLC
+DarkLegacy_PLC_12C: 	dc.w DarkLegacy_PLC_3CE-DarkLegacy_PLC
+DarkLegacy_PLC_12E: 	dc.w DarkLegacy_PLC_3D1-DarkLegacy_PLC
+DarkLegacy_PLC_130: 	dc.w DarkLegacy_PLC_3D4-DarkLegacy_PLC
+DarkLegacy_PLC_132: 	dc.w DarkLegacy_PLC_3D7-DarkLegacy_PLC
+DarkLegacy_PLC_134: 	dc.w DarkLegacy_PLC_3DA-DarkLegacy_PLC
+DarkLegacy_PLC_136: 	dc.w DarkLegacy_PLC_3DF-DarkLegacy_PLC
+DarkLegacy_PLC_138: 	dc.w DarkLegacy_PLC_3E4-DarkLegacy_PLC
+DarkLegacy_PLC_13A: 	dc.w DarkLegacy_PLC_3E9-DarkLegacy_PLC
+DarkLegacy_PLC_13C: 	dc.w DarkLegacy_PLC_3EE-DarkLegacy_PLC
+DarkLegacy_PLC_13E: 	dc.w DarkLegacy_PLC_3F1-DarkLegacy_PLC
+DarkLegacy_PLC_140: 	dc.w DarkLegacy_PLC_3F6-DarkLegacy_PLC
+DarkLegacy_PLC_142: 	dc.w DarkLegacy_PLC_3FB-DarkLegacy_PLC
+DarkLegacy_PLC_144: 	dc.b $0
+DarkLegacy_PLC_145: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $0, $10
+DarkLegacy_PLC_14A: 	dc.b $2
+	dc.b $F0, $11
+	dc.b $10, $21
+DarkLegacy_PLC_14F: 	dc.b $2
+	dc.b $F0, $23
+	dc.b $10, $33
+DarkLegacy_PLC_154: 	dc.b $2
+	dc.b $F0, $35
+	dc.b $0, $45
+DarkLegacy_PLC_159: 	dc.b $2
+	dc.b $F0, $46
+	dc.b $0, $56
+DarkLegacy_PLC_15E: 	dc.b $2
+	dc.b $F0, $57
+	dc.b $0, $67
+DarkLegacy_PLC_163: 	dc.b $1
+	dc.b $F0, $68
+DarkLegacy_PLC_166: 	dc.b $0
+DarkLegacy_PLC_167: 	dc.b $0
+DarkLegacy_PLC_168: 	dc.b $2
+	dc.b $F0, $78
+	dc.b $10, $88
+DarkLegacy_PLC_16D: 	dc.b $2
+	dc.b $F0, $8A
+	dc.b $0, $9A
+DarkLegacy_PLC_172: 	dc.b $2
+	dc.b $F0, $9B
+	dc.b $50, $AB
+DarkLegacy_PLC_177: 	dc.b $2
+	dc.b $F0, $B1
+	dc.b $20, $C1
+DarkLegacy_PLC_17C: 	dc.b $1
+	dc.b $F0, $C4
+DarkLegacy_PLC_17F: 	dc.b $2
+	dc.b $F0, $D4
+	dc.b $30, $E4
+DarkLegacy_PLC_184: 	dc.b $2
+	dc.b $F0, $E8
+	dc.b $50, $F8
+DarkLegacy_PLC_189: 	dc.b $2
+	dc.b $F0, $FE
+	dc.b $31, $E
+DarkLegacy_PLC_18E: 	dc.b $1
+	dc.b $F1, $12
+DarkLegacy_PLC_191: 	dc.b $2
+	dc.b $F1, $22
+	dc.b $11, $32
+DarkLegacy_PLC_196: 	dc.b $2
+	dc.b $F1, $34
+	dc.b $41, $44
+DarkLegacy_PLC_19B: 	dc.b $2
+	dc.b $F1, $49
+	dc.b $41, $59
+DarkLegacy_PLC_1A0: 	dc.b $2
+	dc.b $F1, $5E
+	dc.b $1, $6E
+DarkLegacy_PLC_1A5: 	dc.b $2
+	dc.b $F1, $6F
+	dc.b $31, $7F
+DarkLegacy_PLC_1AA: 	dc.b $2
+	dc.b $F1, $83
+	dc.b $61, $93
+DarkLegacy_PLC_1AF: 	dc.b $2
+	dc.b $F1, $9A
+	dc.b $41, $AA
+DarkLegacy_PLC_1B4: 	dc.b $2
+	dc.b $F1, $AF
+	dc.b $1, $BF
+DarkLegacy_PLC_1B9: 	dc.b $2
+	dc.b $F1, $C0
+	dc.b $21, $D0
+DarkLegacy_PLC_1BE: 	dc.b $2
+	dc.b $F1, $D3
+	dc.b $51, $E3
+DarkLegacy_PLC_1C3: 	dc.b $2
+	dc.b $F1, $E9
+	dc.b $21, $F9
+DarkLegacy_PLC_1C8: 	dc.b $1
+	dc.b $F1, $FC
+DarkLegacy_PLC_1CB: 	dc.b $2
+	dc.b $F2, $C
+	dc.b $32, $1C
+DarkLegacy_PLC_1D0: 	dc.b $2
+	dc.b $F2, $20
+	dc.b $52, $30
+DarkLegacy_PLC_1D5: 	dc.b $2
+	dc.b $F2, $36
+	dc.b $32, $46
+DarkLegacy_PLC_1DA: 	dc.b $1
+	dc.b $F2, $4A
+DarkLegacy_PLC_1DD: 	dc.b $2
+	dc.b $F2, $5A
+	dc.b $12, $6A
+DarkLegacy_PLC_1E2: 	dc.b $2
+	dc.b $F2, $6C
+	dc.b $42, $7C
+DarkLegacy_PLC_1E7: 	dc.b $2
+	dc.b $F2, $81
+	dc.b $42, $91
+DarkLegacy_PLC_1EC: 	dc.b $2
+	dc.b $F2, $96
+	dc.b $2, $A6
+DarkLegacy_PLC_1F1: 	dc.b $2
+	dc.b $F2, $A7
+	dc.b $32, $B7
+DarkLegacy_PLC_1F6: 	dc.b $2
+	dc.b $F2, $BB
+	dc.b $62, $CB
+DarkLegacy_PLC_1FB: 	dc.b $2
+	dc.b $F2, $D2
+	dc.b $42, $E2
+DarkLegacy_PLC_200: 	dc.b $2
+	dc.b $F2, $E7
+	dc.b $2, $F7
+DarkLegacy_PLC_205: 	dc.b $2
+	dc.b $F2, $F8
+	dc.b $23, $8
+DarkLegacy_PLC_20A: 	dc.b $2
+	dc.b $F3, $B
+	dc.b $23, $1B
+DarkLegacy_PLC_20F: 	dc.b $2
+	dc.b $F3, $1E
+	dc.b $23, $2E
+DarkLegacy_PLC_214: 	dc.b $2
+	dc.b $F3, $31
+	dc.b $23, $41
+DarkLegacy_PLC_219: 	dc.b $2
+	dc.b $F3, $44
+	dc.b $23, $54
+DarkLegacy_PLC_21E: 	dc.b $2
+	dc.b $F3, $57
+	dc.b $33, $67
+DarkLegacy_PLC_223: 	dc.b $2
+	dc.b $F3, $6B
+	dc.b $43, $7B
+DarkLegacy_PLC_228: 	dc.b $2
+	dc.b $F3, $80
+	dc.b $33, $90
+DarkLegacy_PLC_22D: 	dc.b $2
+	dc.b $F3, $94
+	dc.b $43, $A4
+DarkLegacy_PLC_232: 	dc.b $2
+	dc.b $F3, $A9
+	dc.b $23, $B9
+DarkLegacy_PLC_237: 	dc.b $2
+	dc.b $F3, $BC
+	dc.b $23, $CC
+DarkLegacy_PLC_23C: 	dc.b $2
+	dc.b $F3, $CF
+	dc.b $23, $DF
+DarkLegacy_PLC_241: 	dc.b $3
+	dc.b $F3, $E2
+	dc.b $13, $F2
+	dc.b $3, $F4
+DarkLegacy_PLC_248: 	dc.b $2
+	dc.b $F3, $F5
+	dc.b $34, $5
+DarkLegacy_PLC_24D: 	dc.b $2
+	dc.b $F4, $9
+	dc.b $34, $19
+DarkLegacy_PLC_252: 	dc.b $2
+	dc.b $F4, $1D
+	dc.b $34, $2D
+DarkLegacy_PLC_257: 	dc.b $2
+	dc.b $F4, $31
+	dc.b $44, $41
+DarkLegacy_PLC_25C: 	dc.b $1
+	dc.b $E4, $46
+DarkLegacy_PLC_25F: 	dc.b $1
+	dc.b $E4, $55
+DarkLegacy_PLC_262: 	dc.b $1
+	dc.b $E4, $64
+DarkLegacy_PLC_265: 	dc.b $1
+	dc.b $E4, $73
+DarkLegacy_PLC_268: 	dc.b $1
+	dc.b $E4, $82
+DarkLegacy_PLC_26B: 	dc.b $1
+	dc.b $E4, $91
+DarkLegacy_PLC_26E: 	dc.b $2
+	dc.b $F4, $A0
+	dc.b $14, $B0
+DarkLegacy_PLC_273: 	dc.b $2
+	dc.b $F4, $B2
+	dc.b $14, $C2
+DarkLegacy_PLC_278: 	dc.b $1
+	dc.b $F4, $C4
+DarkLegacy_PLC_27B: 	dc.b $1
+	dc.b $E4, $D4
+DarkLegacy_PLC_27E: 	dc.b $1
+	dc.b $F4, $E3
+DarkLegacy_PLC_281: 	dc.b $1
+	dc.b $F4, $F3
+DarkLegacy_PLC_284: 	dc.b $1
+	dc.b $F5, $3
+DarkLegacy_PLC_287: 	dc.b $1
+	dc.b $F5, $13
+DarkLegacy_PLC_28A: 	dc.b $1
+	dc.b $F5, $23
+DarkLegacy_PLC_28D: 	dc.b $2
+	dc.b $F5, $33
+	dc.b $25, $43
+DarkLegacy_PLC_292: 	dc.b $2
+	dc.b $F5, $46
+	dc.b $15, $56
+DarkLegacy_PLC_297: 	dc.b $1
+	dc.b $F5, $58
+DarkLegacy_PLC_29A: 	dc.b $2
+	dc.b $F5, $68
+	dc.b $5, $78
+DarkLegacy_PLC_29F: 	dc.b $2
+	dc.b $F5, $79
+	dc.b $35, $89
+DarkLegacy_PLC_2A4: 	dc.b $2
+	dc.b $F5, $8D
+	dc.b $25, $9D
+DarkLegacy_PLC_2A9: 	dc.b $2
+	dc.b $F5, $A0
+	dc.b $35, $B0
+DarkLegacy_PLC_2AE: 	dc.b $2
+	dc.b $F5, $B4
+	dc.b $55, $C4
+DarkLegacy_PLC_2B3: 	dc.b $2
+	dc.b $F5, $CA
+	dc.b $15, $DA
+DarkLegacy_PLC_2B8: 	dc.b $2
+	dc.b $F5, $DC
+	dc.b $45, $EC
+DarkLegacy_PLC_2BD: 	dc.b $2
+	dc.b $F5, $F1
+	dc.b $26, $1
+DarkLegacy_PLC_2C2: 	dc.b $2
+	dc.b $F6, $4
+	dc.b $36, $14
+DarkLegacy_PLC_2C7: 	dc.b $2
+	dc.b $F6, $18
+	dc.b $46, $28
+DarkLegacy_PLC_2CC: 	dc.b $2
+	dc.b $F6, $2D
+	dc.b $26, $3D
+DarkLegacy_PLC_2D1: 	dc.b $2
+	dc.b $F6, $40
+	dc.b $26, $50
+DarkLegacy_PLC_2D6: 	dc.b $2
+	dc.b $F6, $53
+	dc.b $36, $63
+DarkLegacy_PLC_2DB: 	dc.b $1
+	dc.b $F6, $67
+DarkLegacy_PLC_2DE: 	dc.b $1
+	dc.b $D6, $77
+DarkLegacy_PLC_2E1: 	dc.b $2
+	dc.b $F6, $85
+	dc.b $6, $95
+DarkLegacy_PLC_2E6: 	dc.b $1
+	dc.b $D6, $96
+DarkLegacy_PLC_2E9: 	dc.b $1
+	dc.b $F6, $A4
+DarkLegacy_PLC_2EC: 	dc.b $1
+	dc.b $C6, $B4
+DarkLegacy_PLC_2EF: 	dc.b $1
+	dc.b $B6, $C1
+DarkLegacy_PLC_2F2: 	dc.b $1
+	dc.b $C6, $B4
+DarkLegacy_PLC_2F5: 	dc.b $1
+	dc.b $F6, $A4
+DarkLegacy_PLC_2F8: 	dc.b $1
+	dc.b $D6, $CD
+DarkLegacy_PLC_2FB: 	dc.b $1
+	dc.b $D6, $DB
+DarkLegacy_PLC_2FE: 	dc.b $1
+	dc.b $D6, $CD
+DarkLegacy_PLC_301: 	dc.b $1
+	dc.b $F6, $E9
+DarkLegacy_PLC_304: 	dc.b $2
+	dc.b $F6, $F9
+	dc.b $37, $9
+DarkLegacy_PLC_309: 	dc.b $2
+	dc.b $F7, $D
+	dc.b $17, $1D
+DarkLegacy_PLC_30E: 	dc.b $2
+	dc.b $F7, $1F
+	dc.b $17, $2F
+DarkLegacy_PLC_313: 	dc.b $1
+	dc.b $E7, $31
+DarkLegacy_PLC_316: 	dc.b $2
+	dc.b $F7, $40
+	dc.b $7, $50
+DarkLegacy_PLC_31B: 	dc.b $2
+	dc.b $F7, $51
+	dc.b $17, $61
+DarkLegacy_PLC_320: 	dc.b $2
+	dc.b $F7, $63
+	dc.b $17, $73
+DarkLegacy_PLC_325: 	dc.b $2
+	dc.b $C7, $63
+	dc.b $47, $75
+DarkLegacy_PLC_32A: 	dc.b $2
+	dc.b $F7, $7A
+	dc.b $57, $8A
+DarkLegacy_PLC_32F: 	dc.b $2
+	dc.b $F7, $90
+	dc.b $47, $A0
+DarkLegacy_PLC_334: 	dc.b $2
+	dc.b $F7, $A5
+	dc.b $57, $B5
+DarkLegacy_PLC_339: 	dc.b $2
+	dc.b $F7, $BB
+	dc.b $47, $CB
+DarkLegacy_PLC_33E: 	dc.b $2
+	dc.b $F7, $D0
+	dc.b $57, $E0
+DarkLegacy_PLC_343: 	dc.b $2
+	dc.b $F7, $E6
+	dc.b $57, $F6
+DarkLegacy_PLC_348: 	dc.b $2
+	dc.b $F7, $FC
+	dc.b $48, $C
+DarkLegacy_PLC_34D: 	dc.b $2
+	dc.b $F8, $11
+	dc.b $58, $21
+DarkLegacy_PLC_352: 	dc.b $2
+	dc.b $F8, $27
+	dc.b $58, $37
+DarkLegacy_PLC_357: 	dc.b $2
+	dc.b $F8, $3D
+	dc.b $48, $4D
+DarkLegacy_PLC_35C: 	dc.b $2
+	dc.b $F8, $52
+	dc.b $58, $62
+DarkLegacy_PLC_361: 	dc.b $2
+	dc.b $F8, $68
+	dc.b $48, $78
+DarkLegacy_PLC_366: 	dc.b $2
+	dc.b $F8, $7D
+	dc.b $58, $8D
+DarkLegacy_PLC_36B: 	dc.b $2
+	dc.b $F8, $93
+	dc.b $58, $A3
+DarkLegacy_PLC_370: 	dc.b $2
+	dc.b $F8, $A9
+	dc.b $48, $B9
+DarkLegacy_PLC_375: 	dc.b $2
+	dc.b $F8, $BE
+	dc.b $58, $CE
+DarkLegacy_PLC_37A: 	dc.b $1
+	dc.b $B8, $D4
+DarkLegacy_PLC_37D: 	dc.b $2
+	dc.b $F8, $E0
+	dc.b $28, $F0
+DarkLegacy_PLC_382: 	dc.b $2
+	dc.b $F8, $F3
+	dc.b $39, $3
+DarkLegacy_PLC_387: 	dc.b $2
+	dc.b $F9, $7
+	dc.b $39, $17
+DarkLegacy_PLC_38C: 	dc.b $2
+	dc.b $F9, $1B
+	dc.b $49, $2B
+DarkLegacy_PLC_391: 	dc.b $1
+	dc.b $E9, $30
+DarkLegacy_PLC_394: 	dc.b $1
+	dc.b $E9, $3F
+DarkLegacy_PLC_397: 	dc.b $1
+	dc.b $E9, $4E
+DarkLegacy_PLC_39A: 	dc.b $2
+	dc.b $F9, $5D
+	dc.b $9, $6D
+DarkLegacy_PLC_39F: 	dc.b $2
+	dc.b $F9, $6E
+	dc.b $9, $7E
+DarkLegacy_PLC_3A4: 	dc.b $1
+	dc.b $E9, $7F
+DarkLegacy_PLC_3A7: 	dc.b $1
+	dc.b $E9, $8E
+DarkLegacy_PLC_3AA: 	dc.b $1
+	dc.b $F9, $9D
+DarkLegacy_PLC_3AD: 	dc.b $2
+	dc.b $F9, $AD
+	dc.b $39, $BD
+DarkLegacy_PLC_3B2: 	dc.b $2
+	dc.b $F9, $C1
+	dc.b $9, $D1
+DarkLegacy_PLC_3B7: 	dc.b $1
+	dc.b $E9, $D2
+DarkLegacy_PLC_3BA: 	dc.b $1
+	dc.b $A9, $E1
+DarkLegacy_PLC_3BD: 	dc.b $1
+	dc.b $D9, $EC
+DarkLegacy_PLC_3C0: 	dc.b $1
+	dc.b $B9, $FA
+DarkLegacy_PLC_3C3: 	dc.b $1
+	dc.b $EA, $6
+DarkLegacy_PLC_3C6: 	dc.b $2
+	dc.b $FA, $15
+	dc.b $2A, $25
+DarkLegacy_PLC_3CB: 	dc.b $1
+	dc.b $CA, $28
+DarkLegacy_PLC_3CE: 	dc.b $1
+	dc.b $CA, $35
+DarkLegacy_PLC_3D1: 	dc.b $1
+	dc.b $BA, $42
+DarkLegacy_PLC_3D4: 	dc.b $1
+	dc.b $CA, $4E
+DarkLegacy_PLC_3D7: 	dc.b $1
+	dc.b $EA, $5B
+DarkLegacy_PLC_3DA: 	dc.b $2
+	dc.b $FA, $6A
+	dc.b $1A, $7A
+DarkLegacy_PLC_3DF: 	dc.b $2
+	dc.b $FA, $7C
+	dc.b $3A, $8C
+DarkLegacy_PLC_3E4: 	dc.b $2
+	dc.b $FA, $90
+	dc.b $4A, $A0
+DarkLegacy_PLC_3E9: 	dc.b $2
+	dc.b $FA, $A5
+	dc.b $4A, $B5
+DarkLegacy_PLC_3EE: 	dc.b $1
+	dc.b $FA, $BA
+DarkLegacy_PLC_3F1: 	dc.b $2
+	dc.b $FA, $CA
+	dc.b $3A, $DA
+DarkLegacy_PLC_3F6: 	dc.b $2
+	dc.b $FA, $DE
+	dc.b $3A, $EE
+DarkLegacy_PLC_3FB: 	dc.b $2
+	dc.b $FA, $F2
+	dc.b $2B, $2
+	even

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ObjDef xmlns="http://www.sonicretro.org" Name="Gameroid" RememberState="true" Image="img1">
+  <Images>
+    <ImageFromMappings id="img1">
+      <ArtFile filename="../art/nemesis/Enemy Gameroid.bin"/>
+      <MapFile type="ASM" filename="../Mappings/Gameroid.asm" frame="0" startpal="0"/>
+    </ImageFromMappings>
+    <ImageFromMappings id="img2">
+      <ArtFile filename="../art/nemesis/Enemy Gameroid.bin"/>
+      <MapFile type="ASM" filename="../Mappings/Gameroid.asm" frame="8" startpal="0"/>
+    </ImageFromMappings>
+  </Images>
+  <Subtypes>
+    <Subtype id="00" name="Normal" image="img1"/>
+    <Subtype id="01" name="Water-based platform" image="img2"/>
+  </Subtypes>
+</ObjDef>

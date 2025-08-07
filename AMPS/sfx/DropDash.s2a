@@ -1,0 +1,20 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$01
+	sHeaderSFX	$80, ctFM4, .FM4, $00, $06	; Volume (last variable) was originally $0D, as it was in S3D, but it was too quiet for SHIMA.
+
+.FM4	; Fiiine. There, it's the fuckin' one from S3D. Happy?
+	sVoice		pS3DDropDash
+	dc.b nRst, $01, nCs6, $02, sHold, nD6, $01, sHold
+	dc.b nE6, sHold, nF6, sHold, nFs6, sHold, nG6, sHold
+	dc.b nAb6, sHold, nA6, sHold, nBb6, sHold
+	ssDetune	$37
+	dc.b $01, sHold
+	ssDetune	$00
+	dc.b nB6
+
+.Loop1
+	saVol		$01
+	dc.b sHold, nC7, $02
+	sLoop		$00, $2A, .Loop1
+	sStop

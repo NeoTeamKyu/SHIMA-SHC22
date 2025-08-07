@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjDef xmlns="http://www.sonicretro.org" Name="Invisible lava marker" Image="img1" Debug="true">
+  <Images>
+    <ImageFromMappings id="img1">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="Binary" filename="Common/Invisible lava marker map.bin" frame="0" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="img2">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="Binary" filename="Common/Invisible lava marker map.bin" frame="1" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="img3">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="Binary" filename="Common/Invisible lava marker map.bin" frame="2" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="img4">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="Binary" filename="Common/Invisible lava marker map.bin" frame="3" startpal="0" />
+    </ImageFromMappings>
+  </Images>
+  <Subtypes>
+    <Subtype id="00" name="Small" image="img1" />
+    <Subtype id="01" name="Medium" image="img2" />
+    <Subtype id="02" name="Large" image="img3" />
+    <Subtype id="F0" name="Water" image="img4" />
+  </Subtypes>
+</ObjDef>

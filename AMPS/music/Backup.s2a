@@ -1,0 +1,12 @@
+Backup_Header:
+	sHeaderInit
+	sHeaderTempo	$41, $80
+	sHeaderCh	$00, $00
+	sHeaderDAC	Backup_DAC1
+	sHeaderDAC	Backup_DAC2
+
+Backup_DAC1:
+	sStop
+
+Backup_DAC2:
+	sBackup

@@ -1,0 +1,890 @@
+GameOver_Header:
+	sHeaderInit
+	sHeaderTempo	$01, $00
+	sHeaderCh	$05, $03
+	sHeaderDAC	GameOver_DAC1
+	sHeaderDAC	GameOver_DAC2	
+	sHeaderFM	GameOver_FM1, $00, $00
+	sHeaderFM	GameOver_FM2, $00, $00
+	sHeaderFM	GameOver_FM3, $00, $00
+	sHeaderFM	GameOver_FM4, $00, $00
+	sHeaderFM	GameOver_FM5, $00, $00
+	sHeaderPSG	GameOver_PSG1, $0C, $00, $00, vNone
+	sHeaderPSG	GameOver_PSG2, $0C, $00, $00, vNone
+	sHeaderPSG	GameOver_PSG3, $00, $00, $00, vNone
+
+	; Patch $00
+	; $38
+	; $73, $03, $02, $31,	$DF, $DF, $DF, $DF
+	; $07, $05, $05, $0A,	$03, $03, $03, $03
+	; $23, $13, $25, $27,	$1E, $1E, $1E, $00
+	spAlgorithm	$00
+	spFeedback	$07
+	spDetune	$07, $00, $00, $03
+	spMultiple	$03, $02, $03, $01
+	spRateScale	$03, $03, $03, $03
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $05, $05, $0A
+	spSustainLv	$02, $02, $01, $02
+	spDecayRt	$03, $03, $03, $03
+	spReleaseRt	$03, $05, $03, $07
+	spTotalLv	$1E, $1E, $1E, $00
+
+	; Patch $01
+	; $20
+	; $02, $11, $32, $31,	$1F, $1F, $14, $12
+	; $02, $03, $04, $04,	$01, $02, $03, $03
+	; $20, $20, $20, $27,	$21, $14, $1F, $00
+	spAlgorithm	$00
+	spFeedback	$04
+	spDetune	$00, $03, $01, $03
+	spMultiple	$02, $02, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $14, $1F, $12
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$02, $04, $03, $04
+	spSustainLv	$02, $02, $02, $02
+	spDecayRt	$01, $03, $02, $03
+	spReleaseRt	$00, $00, $00, $07
+	spTotalLv	$21, $1F, $14, $00
+
+	; Patch $02
+	; $3D
+	; $01, $02, $02, $02,	$10, $50, $50, $50
+	; $07, $08, $08, $08,	$01, $00, $00, $00
+	; $24, $18, $18, $18,	$1C, $00, $00, $00
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $02, $02, $02
+	spRateScale	$00, $01, $01, $01
+	spAttackRt	$10, $10, $10, $10
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $08, $08, $08
+	spSustainLv	$02, $01, $01, $01
+	spDecayRt	$01, $00, $00, $00
+	spReleaseRt	$04, $08, $08, $08
+	spTotalLv	$1C, $00, $00, $00
+
+	; Patch $03
+	; $00
+	; $00, $00, $00, $00,	$00, $00, $00, $00
+	; $00, $00, $00, $00,	$00, $00, $00, $00
+	; $0F, $0F, $0F, $0F,	$7F, $7F, $7F, $00
+	spAlgorithm	$00
+	spFeedback	$00
+	spDetune	$00, $00, $00, $00
+	spMultiple	$00, $00, $00, $00
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$00, $00, $00, $00
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $00, $00, $00
+	spSustainLv	$00, $00, $00, $00
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$7F, $7F, $7F, $00
+
+	; Patch $04
+	; $38
+	; $73, $03, $02, $31,	$DF, $DF, $DF, $DF
+	; $07, $05, $05, $0A,	$03, $03, $03, $03
+	; $0F, $0F, $0F, $0F,	$7F, $7F, $7F, $00
+	spAlgorithm	$00
+	spFeedback	$07
+	spDetune	$07, $00, $00, $03
+	spMultiple	$03, $02, $03, $01
+	spRateScale	$03, $03, $03, $03
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $05, $05, $0A
+	spSustainLv	$00, $00, $00, $00
+	spDecayRt	$03, $03, $03, $03
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$7F, $7F, $7F, $00
+
+GameOver_DAC1:
+GameOver_DAC2:
+GameOver_PSG3:
+	sStop
+
+GameOver_FM1:
+	sVoice		$00
+	saVol		$10
+	sPan		spCenter
+	dc.b nF5
+
+GameOver_Loop1:
+	dc.b $01, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	sLoop		$00, $02, GameOver_Loop1
+	dc.b $01, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nBb5, $02
+
+GameOver_Loop2:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $02, GameOver_Loop2
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nC6, $02
+
+GameOver_Loop3:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $02, GameOver_Loop3
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nEb6, $02
+
+GameOver_Loop4:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $02, GameOver_Loop4
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nF6, $02
+
+GameOver_Loop5:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop5
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02
+	ssDetune	$00
+	dc.b nEb6
+
+GameOver_Loop6:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop6
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nC6, $02
+
+GameOver_Loop7:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop7
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nEb6, $02
+
+GameOver_Loop8:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop8
+
+GameOver_Loop9:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nF6, $02, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $02, GameOver_Loop9
+
+GameOver_Loop10:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop10
+	sVoice		$04
+	saVol		$6F
+	dc.b nRst, $4A
+	sStop
+
+GameOver_FM2:
+	sVoice		$00
+	saVol		$12
+	sPan		spRight
+	dc.b nRst, $08, nF5, $02
+
+GameOver_Loop11:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $02, GameOver_Loop11
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nBb5, $02
+
+GameOver_Loop12:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $02, GameOver_Loop12
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nC6, $02
+
+GameOver_Loop13:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $02, GameOver_Loop13
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nEb6, $02
+
+GameOver_Loop14:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop14
+	dc.b nF6, $02
+
+GameOver_Loop15:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop15
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, nEb6, $02
+
+GameOver_Loop16:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop16
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nC6, $02
+
+GameOver_Loop17:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop17
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nEb6, $02
+
+GameOver_Loop18:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $03, GameOver_Loop18
+
+GameOver_Loop19:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b nF6, $02
+	sLoop		$00, $02, GameOver_Loop19
+
+GameOver_Loop20:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $01
+	sLoop		$00, $04, GameOver_Loop20
+	sVoice		$04
+	saVol		$6D
+	dc.b nRst, $44
+	sStop
+
+GameOver_FM3:
+	sVoice		$01
+	saVol		$17
+	sPan		spLeft
+	dc.b nF3, $05
+
+GameOver_Loop21:
+	dc.b sHold
+	ssDetune	$01
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FF
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $04, sHold
+	ssDetune	$FF
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02
+	sLoop		$00, $04, GameOver_Loop21
+	dc.b sHold
+	ssDetune	$01
+	dc.b $05
+
+GameOver_Loop22:
+	dc.b sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FF
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $04, sHold
+	ssDetune	$FF
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$01
+	dc.b $04
+	sLoop		$00, $05, GameOver_Loop22
+	dc.b sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FF
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $04, sHold
+	ssDetune	$FF
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $03
+
+GameOver_Loop23:
+	dc.b sHold
+	ssDetune	$01
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FF
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $04, sHold
+	ssDetune	$FF
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02
+	sLoop		$00, $03, GameOver_Loop23
+	dc.b sHold
+	ssDetune	$01
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FF
+	dc.b $03
+
+GameOver_Loop24:
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $04, sHold
+	ssDetune	$FF
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$01
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FF
+	dc.b $02
+	sLoop		$00, $03, GameOver_Loop24
+	dc.b sHold
+	ssDetune	$FE
+	dc.b $04, sHold
+	ssDetune	$FF
+	dc.b $01
+	sStop
+
+GameOver_FM4:
+	sVoice		$01
+	saVol		$17
+	sPan		spRight
+	dc.b nBb3, $05
+
+GameOver_Loop25:
+	dc.b sHold
+	ssDetune	$03
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FD
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02
+	sLoop		$00, $05, GameOver_Loop25
+	dc.b sHold
+	ssDetune	$03
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $03
+
+GameOver_Loop26:
+	dc.b sHold
+	ssDetune	$FD
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$03
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02
+	sLoop		$00, $07, GameOver_Loop26
+	dc.b sHold
+	ssDetune	$FD
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$03
+	dc.b $03, sHold, nC4, $02
+
+GameOver_Loop27:
+	dc.b sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FD
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$03
+	dc.b $04
+	sLoop		$00, $04, GameOver_Loop27
+	dc.b sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FD
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $03
+
+GameOver_Loop28:
+	dc.b sHold
+	ssDetune	$03
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FD
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $02
+	sLoop		$00, $04, GameOver_Loop28
+	dc.b sHold
+	ssDetune	$03
+	dc.b $04, sHold
+	ssDetune	$00
+	dc.b $01
+	sStop
+
+GameOver_FM5:
+	sVoice		$02
+	saVol		$1A
+	sPan		spCenter
+	dc.b nFs1, $19
+
+GameOver_Loop29:
+	dc.b sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$04
+	dc.b $04, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$FC
+	dc.b $04, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02
+	sLoop		$00, $02, GameOver_Loop29
+	dc.b sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$04
+	dc.b $05
+
+GameOver_Loop30:
+	dc.b sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$FC
+	dc.b $04, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$04
+	dc.b $04
+	sLoop		$00, $02, GameOver_Loop30
+	dc.b sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $01
+	ssDetune	$00
+	dc.b $0C, nBb1, nC2, nEb1, $0D, nF1, $19, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$04
+	dc.b $04, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$FC
+	dc.b $04, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$04
+	dc.b $04, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $03
+
+GameOver_Loop31:
+	dc.b sHold
+	ssDetune	$FC
+	dc.b $04, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$04
+	dc.b $04, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$FE
+	dc.b $02
+	sLoop		$00, $02, GameOver_Loop31
+	dc.b sHold
+	ssDetune	$FC
+	dc.b $04, sHold
+	ssDetune	$FE
+	dc.b $02, sHold
+	ssDetune	$00
+	dc.b $02, sHold
+	ssDetune	$02
+	dc.b $02, sHold
+	ssDetune	$04
+	dc.b $03
+	sStop
+
+GameOver_PSG1:
+	dc.b nRst, $02
+	saVol	$28
+	dc.b nF1, $07
+	ssDetune	$02
+	dc.b $03
+	saVol	$08
+
+GameOver_Loop32:
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FE
+	dc.b $04
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$02
+	dc.b $04
+	sLoop		$00, $02, GameOver_Loop32
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FE
+	dc.b $04
+	saVol	$08
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$02
+	dc.b $04
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FE
+	dc.b nF1
+	saVol	$08
+	ssDetune	$FE
+	dc.b nF1
+	ssDetune	$00
+	dc.b nF1
+	ssDetune	$02
+	dc.b $04
+	ssDetune	$00
+	dc.b $02
+	saVol	$10
+	ssDetune	$FE
+	dc.b $01
+	saVol	$08
+	ssDetune	$FE
+	dc.b nF1
+	saVol	$08
+	ssDetune	$FE
+	dc.b nF1, nRst, $09
+	ssDetune	$00
+	dc.b nF1, $01, nRst, $7F, $4B
+	sStop
+
+GameOver_PSG2:
+	dc.b nRst, $03
+	saVol	$28
+	dc.b nBb0, $06
+	ssDetune	$01
+	dc.b $03
+	saVol	$08
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$00
+	dc.b nBb0
+	ssDetune	$FF
+	dc.b $05
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b $05
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b $05
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$FF
+	dc.b $04
+	saVol	$08
+	ssDetune	$FF
+	dc.b $01
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$01
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$FF
+	dc.b $02
+	saVol	$08
+	ssDetune	$FF
+	dc.b $03
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b $05
+	ssDetune	$00
+	dc.b $02
+	saVol	$18
+	ssDetune	$FF
+	dc.b $01
+	saVol	$08
+	ssDetune	$FF
+	dc.b nBb0, nRst, $7F, $55
+	sStop

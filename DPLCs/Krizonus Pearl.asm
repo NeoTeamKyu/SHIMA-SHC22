@@ -1,0 +1,40 @@
+KPearl_PLC:
+KPearl_PLC_0: 	dc.w KPearl_PLC_1A-KPearl_PLC
+KPearl_PLC_2: 	dc.w KPearl_PLC_1B-KPearl_PLC
+KPearl_PLC_4: 	dc.w KPearl_PLC_1E-KPearl_PLC
+KPearl_PLC_6: 	dc.w KPearl_PLC_21-KPearl_PLC
+KPearl_PLC_8: 	dc.w KPearl_PLC_24-KPearl_PLC
+KPearl_PLC_A: 	dc.w KPearl_PLC_27-KPearl_PLC
+KPearl_PLC_C: 	dc.w KPearl_PLC_2A-KPearl_PLC
+KPearl_PLC_E: 	dc.w KPearl_PLC_2D-KPearl_PLC
+KPearl_PLC_10: 	dc.w KPearl_PLC_30-KPearl_PLC
+KPearl_PLC_12: 	dc.w KPearl_PLC_33-KPearl_PLC
+KPearl_PLC_14: 	dc.w KPearl_PLC_36-KPearl_PLC
+KPearl_PLC_16: 	dc.w KPearl_PLC_39-KPearl_PLC
+KPearl_PLC_18: 	dc.w KPearl_PLC_3C-KPearl_PLC
+KPearl_PLC_1A: 	dc.b $0
+KPearl_PLC_1B: 	dc.b $1
+	dc.b $30, $0
+KPearl_PLC_1E: 	dc.b $1
+	dc.b $30, $4
+KPearl_PLC_21: 	dc.b $1
+	dc.b $30, $8
+KPearl_PLC_24: 	dc.b $1
+	dc.b $30, $C
+KPearl_PLC_27: 	dc.b $1
+	dc.b $30, $10
+KPearl_PLC_2A: 	dc.b $1
+	dc.b $30, $14
+KPearl_PLC_2D: 	dc.b $1
+	dc.b $30, $18
+KPearl_PLC_30: 	dc.b $1
+	dc.b $30, $1C
+KPearl_PLC_33: 	dc.b $1
+	dc.b $30, $20
+KPearl_PLC_36: 	dc.b $1
+	dc.b $30, $20
+KPearl_PLC_39: 	dc.b $1
+	dc.b $30, $20
+KPearl_PLC_3C: 	dc.b $1
+	dc.b $30, $20
+	even

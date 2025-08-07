@@ -1,0 +1,672 @@
+CreditsTheme_Header:
+	sHeaderInit
+	sHeaderTempo	$02, $25	
+	sHeaderCh	$05, $03
+	sHeaderDAC	CreditsTheme_DAC1
+	sHeaderDAC	CreditsTheme_DAC2	
+	sHeaderFM	CreditsTheme_FM1, $00, $14
+	sHeaderFM	CreditsTheme_FM2, $00, $14
+	sHeaderFM	CreditsTheme_FM3, $00, $04
+	sHeaderFM	CreditsTheme_FM4, $00, $14
+	sHeaderFM	CreditsTheme_FM5, $00, $14
+	sHeaderPSG	CreditsTheme_PSG1, $DC+$0C, $48, $00, vNone
+	sHeaderPSG	CreditsTheme_PSG2, $DC+$0C, $48, $00, vNone
+	sHeaderPSG	CreditsTheme_PSG3, $0D, $18, $00, v03
+
+	; Patch $00
+	; $1C
+	; $3F, $01, $31, $31,	$1F, $1B, $1E, $1E
+	; $0F, $07, $06, $07,	$00, $0A, $00, $00
+	; $8A, $86, $F6, $F7,	$26, $92, $18, $80
+	spAlgorithm	$04
+	spFeedback	$03
+	spDetune	$03, $03, $00, $03
+	spMultiple	$0F, $01, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1E, $1B, $1E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $06, $07, $07
+	spSustainLv	$08, $0F, $08, $0F
+	spDecayRt	$00, $00, $0A, $00
+	spReleaseRt	$0A, $06, $06, $07
+	spTotalLv	$26, $18, $12, $00
+
+	; Patch $01
+	; $1C
+	; $3F, $01, $31, $31,	$1F, $1B, $1E, $1E
+	; $0F, $07, $06, $07,	$00, $0A, $00, $00
+	; $8A, $86, $F6, $F7,	$26, $92, $18, $80
+	spAlgorithm	$04
+	spFeedback	$03
+	spDetune	$03, $03, $00, $03
+	spMultiple	$0F, $01, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1E, $1B, $1E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $06, $07, $07
+	spSustainLv	$08, $0F, $08, $0F
+	spDecayRt	$00, $00, $0A, $00
+	spReleaseRt	$0A, $06, $06, $07
+	spTotalLv	$26, $18, $12, $00
+
+	; Patch $02
+	; $3D
+	; $03, $01, $02, $00,	$1F, $1F, $1F, $1F
+	; $08, $05, $05, $00,	$00, $00, $00, $00
+	; $24, $24, $24, $14,	$1A, $00, $00, $0A
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$03, $02, $01, $00
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $05, $05, $00
+	spSustainLv	$02, $02, $02, $01
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$04, $04, $04, $04
+	spTotalLv	$1A, $00, $00, $0A
+
+	; Patch $03
+	; $3D
+	; $01, $03, $01, $02,	$10, $0D, $0D, $0E
+	; $07, $1F, $1F, $1F,	$00, $00, $00, $00
+	; $1F, $0F, $0F, $0F,	$17, $8D, $8C, $8C
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $01, $03, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$10, $0D, $0D, $0E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $1F, $1F, $1F
+	spSustainLv	$01, $00, $00, $00
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$17, $0C, $0D, $0C
+
+	; Patch $04
+	; $04
+	; $31, $52, $41, $72,	$0D, $0D, $0D, $0D
+	; $02, $02, $02, $02,	$00, $00, $00, $00
+	; $1F, $1F, $1F, $1F,	$2D, $31, $1E, $00
+	spAlgorithm	$04
+	spFeedback	$00
+	spDetune	$03, $04, $05, $07
+	spMultiple	$01, $01, $02, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$0D, $0D, $0D, $0D
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$02, $02, $02, $02
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$2D, $1E, $31, $00
+
+	; Patch $05
+	; $3D
+	; $01, $02, $02, $02,	$1F, $0E, $8D, $8D
+	; $0C, $0D, $0D, $0D,	$00, $0F, $0F, $0F
+	; $02, $16, $17, $16,	$1F, $04, $04, $03
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $02, $02, $02
+	spRateScale	$00, $02, $00, $02
+	spAttackRt	$1F, $0D, $0E, $0D
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0C, $0D, $0D, $0D
+	spSustainLv	$00, $01, $01, $01
+	spDecayRt	$00, $0F, $0F, $0F
+	spReleaseRt	$02, $07, $06, $06
+	spTotalLv	$1F, $04, $04, $03
+
+	; Patch $06
+	; $20
+	; $72, $31, $00, $00,	$9F, $D8, $DC, $DF
+	; $10, $0A, $04, $04,	$0F, $08, $08, $08
+	; $50, $50, $B0, $B6,	$20, $2B, $14, $00
+	spAlgorithm	$00
+	spFeedback	$04
+	spDetune	$07, $00, $03, $00
+	spMultiple	$02, $00, $01, $00
+	spRateScale	$02, $03, $03, $03
+	spAttackRt	$1F, $1C, $18, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$10, $04, $0A, $04
+	spSustainLv	$05, $0B, $05, $0B
+	spDecayRt	$0F, $08, $08, $08
+	spReleaseRt	$00, $00, $00, $06
+	spTotalLv	$20, $14, $2B, $00
+
+	; Patch $07
+	; $3D
+	; $01, $02, $02, $02,	$1F, $08, $8A, $0A
+	; $08, $08, $08, $08,	$00, $01, $00, $00
+	; $02, $16, $17, $16,	$1F, $88, $88, $87
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $02, $02, $02
+	spRateScale	$00, $02, $00, $00
+	spAttackRt	$1F, $0A, $08, $0A
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $08, $08, $08
+	spSustainLv	$00, $01, $01, $01
+	spDecayRt	$00, $00, $01, $00
+	spReleaseRt	$02, $07, $06, $06
+	spTotalLv	$1F, $08, $08, $07
+
+	; Patch $08
+	; $3D
+	; $01, $02, $02, $02,	$14, $0E, $0C, $0E
+	; $08, $07, $05, $07,	$00, $04, $04, $04
+	; $1B, $1D, $1D, $1D,	$1A, $12, $27, $00
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $02, $02, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$14, $0C, $0E, $0E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $05, $07, $07
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$00, $04, $04, $04
+	spReleaseRt	$0B, $0D, $0D, $0D
+	spTotalLv	$1A, $27, $12, $00
+
+	; Patch $09
+	; $1C
+	; $3F, $01, $31, $31,	$1F, $1B, $1E, $1E
+	; $0F, $0B, $06, $0A,	$00, $0A, $00, $06
+	; $8A, $8F, $F6, $FF,	$26, $92, $18, $00
+	spAlgorithm	$04
+	spFeedback	$03
+	spDetune	$03, $03, $00, $03
+	spMultiple	$0F, $01, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1E, $1B, $1E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $06, $0B, $0A
+	spSustainLv	$08, $0F, $08, $0F
+	spDecayRt	$00, $00, $0A, $06
+	spReleaseRt	$0A, $06, $0F, $0F
+	spTotalLv	$26, $18, $12, $00
+
+	; Patch $0A
+	; $3D
+	; $01, $03, $01, $02,	$10, $0D, $0D, $0E
+	; $07, $1F, $1F, $1F,	$00, $00, $00, $00
+	; $1F, $0F, $0F, $0F,	$17, $8D, $8C, $8C
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $01, $03, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$10, $0D, $0D, $0E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $1F, $1F, $1F
+	spSustainLv	$01, $00, $00, $00
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$17, $0C, $0D, $0C
+
+
+CreditsTheme_FM1:
+	sVoice		$01
+	dc.b nC4, $20, nE3, $0C, nE3, nC4, $08, nBb3
+	dc.b $20, nD3, $0C, nD3, nBb3, $08, nAb3, $20
+	dc.b nC3, $0C, nC3, nC3, $08, $20, nC3
+	sVoice		$09
+	dc.b nC4, $10, nC4, nC4, nC4, nBb3, nBb3, nBb3
+	dc.b nBb3, nAb3, nAb3, nAb3, nAb3, nG3, nG3, nG3
+	dc.b nG4, nC4, nC4, nC4, nC4, nBb3, nBb3, nBb3
+	dc.b nBb3, nAb3, nAb3, nAb3, nAb3, nG3, $20, nE3
+
+CreditsTheme_Jump1:
+	sVoice		$02
+	dc.b nD4, $20, $0C, nBb3, nF4, $08, nE4, $20
+	dc.b nC4, nD4, nBb3, $10, nF4, nE4, $20, nC5
+	dc.b nD4, nD4, $0C, nBb3, nF4, $08, nE4, $20
+	dc.b nC4, nC4, nB3, $18, nD3, $04, nD3, nC4
+	dc.b $20, nG4
+	sVoice		$0A
+	sPan		spRight
+	saVol		$FC
+	saTranspose	$0C
+	dc.b nG2, $10, nC3, nG3, nC3, nBb2, nF3, nBb3
+	dc.b nF3, nAb3, nC3, nAb2, nAb3, nG3, nC3, nG2
+	dc.b nG3, nG2, nC3, nG3, nC3, nBb2, nF3, nBb3
+	dc.b nF3, nAb3, nC3, nAb2, nAb3, nG3, nC3, nG3
+	dc.b $20
+	sPan		spCenter
+	saVol		$04
+	saTranspose	$F4
+	sJump		CreditsTheme_Jump1
+
+CreditsTheme_FM2:
+	sVoice		$01
+	dc.b nE4, $20, nC4, $0C, nG3, nE4, $08, nD4
+	dc.b $20, nBb3, $0C, nG3, nD4, $08, nC4, $20
+	dc.b nAb3, $0C, nG3, nF3, $08, $20, nE3
+	sVoice		$04
+	saVol		$FE
+	dc.b nE5, nC5, $0C, nG4, nE5, $08, nD5, $20
+	dc.b nF5, $0C, nE5, nF5, $08, nC5, $20, $0C
+	dc.b nAb4, nG4, $08, nE5, $20, sHold, nE5, nE5
+	dc.b nC5, $0C, nG4, nE5, $08, nD5, $20, nF5
+	dc.b $0C, nE5, nF5, $08, nC5, $20, nAb5, $0C
+	dc.b nG5, nF5, $08, $20, nE5
+	saVol		$02
+
+CreditsTheme_Jump2:
+	sVoice		$02
+	sModAMPS	$41, $02, $03, $04
+	saVol		$07
+	sPan		spLeft
+	ssDetune	$FF
+	dc.b nRst, $04, nD4, $20, $0C, nBb3, nF4, $08
+	dc.b nE4, $20, nC4, nD4, nBb3, $10, nF4, nE4
+	dc.b $20, nC5, nD4, nD4, $0C, nBb3, nF4, $08
+	dc.b nE4, $20, nC4, nC4, nB3, $18, nD3, $04
+	dc.b nD3, nC4, $20, nG4, $1C
+	ssDetune	$00
+	saVol		$F9
+	sPan		spCenter
+	sVoice		$08
+	sModAMPS	$41, $02, $02, $03
+	saVol		$FA
+	dc.b nE5, $20, nC5, $0C, nG4, nE5, $08, nD5
+	dc.b $20, nF5, $0C, nE5, nF5, $08, nC5, $20
+	dc.b $0C, nAb4, nG4, $08, nE5, $20, sHold, nE5
+	dc.b nE5, nC5, $0C, nG4, nE5, $08, nD5, $20
+	dc.b nF5, $0C, nE5, nF5, $08, nC5, $20, nAb5
+	dc.b $0C, nG5, nF5, $08, $20, nE5
+	saVol		$06
+	sJump		CreditsTheme_Jump2
+
+CreditsTheme_FM3:
+	dc.b nRst, $20
+	sLoop		$00, $07, CreditsTheme_FM3
+	sVoice		$06
+	dc.b nRst, $1C, nBb0, $04, sHold, nC2, nC2, nRst
+	dc.b $18, nRst, $1C, nBb0, $04, nBb1, nBb1, nRst
+	dc.b $18, nC1, $0C, nG1, nC1, $08, nAb1, $04
+	dc.b nAb1, nRst, $18, nRst, $1C, nC1, $04, nC1
+	dc.b nC1, nRst, $18, nRst, $20, nC2, $04, nC2
+	dc.b nRst, $18, nRst, $1C, nBb0, $04, nBb1, nBb1
+	dc.b nRst, $18, nC1, $0C, nG1, nC1, $08, nAb1
+	dc.b $04, nAb1, nRst, $18, nRst, $1C, nC1, $04
+	dc.b nC1, nC1, nRst, $18, nC1, $20
+	sVoice		$06
+
+CreditsTheme_Jump3:
+	dc.b nD2, $04, nRst, nD2, $08, nD2, $04, nRst
+	dc.b nD2, $08, nD2, $04, nRst, nD2, $08, nD2
+	dc.b $04, nRst, nD2, $08, nC2, $04, nRst, nC2
+	dc.b $08, nC2, $04, nRst, nC2, $08, nC2, $04
+	dc.b nRst, nG1, $08, nC1, $04, nRst, nC2, $08
+	dc.b nBb1, $04, nRst, nBb1, $08, nBb1, $04, nRst
+	dc.b nBb1, $08, nBb1, $04, nRst, nBb1, $08, nBb1
+	dc.b $04, nRst, nBb1, $08, nC2, $04, nRst, nC2
+	dc.b $08, nC2, $04, nRst, nC2, $08, nC2, $04
+	dc.b nRst, nG1, $08, nE2, $04, nRst, nC2, $08
+	dc.b nBb1, $04, nRst, nBb1, $08, nBb1, $04, nRst
+	dc.b nBb1, $08, nBb1, $04, nRst, nBb1, $08, nBb1
+	dc.b $04, nRst, nBb1, $08, nA1, $04, nRst, nA1
+	dc.b $08, nA1, $04, nRst, nA1, $08, nA1, $04
+	dc.b nRst, nA1, $08, nA1, $04, nRst, nA1, $08
+	dc.b nG1, $04, nRst, nG1, $08, nG1, $04, nRst
+	dc.b nG1, nG1, nG2, nRst, nG2, $08, nG2, $04
+	dc.b nRst, nG2, $08, nG1, $04, nRst, nG1, $08
+	dc.b nG1, $04, nRst, nG1, nG1, nG2, nRst, nG2
+	dc.b $08, nG2, $04, nRst, nG2, $08, nC2, $04
+	dc.b nRst, nC2, $08, nC2, $04, nRst, nC2, $08
+	dc.b nC2, $04, nRst, nC2, $08, nC2, $04, nRst
+	dc.b nC2, $08, nBb1, $04, nRst, nBb1, $08, nBb1
+	dc.b $04, nRst, nBb1, $08, nBb1, $04, nRst, nBb1
+	dc.b $08, nBb1, $04, nRst, nBb1, $08, nAb1, $04
+	dc.b nRst, nAb1, $08, nAb1, $04, nRst, nAb1, $08
+	dc.b nAb1, $04, nRst, nAb1, $08, nAb1, $04, nRst
+	dc.b nAb1, $08, nC1, $04, nRst, nC1, $08, nC1
+	dc.b $04, nRst, nC1, $08, nC1, $04, nRst, nC1
+	dc.b $08, nC1, $04, nRst, nC1, $08, nC2, $04
+	dc.b nRst, nC2, $08, nC2, $04, nRst, nC2, $08
+	dc.b nC2, $04, nRst, nC2, $08, nC2, $04, nRst
+	dc.b nC2, $08, nBb1, $04, nRst, nBb1, $08, nBb1
+	dc.b $04, nRst, nBb1, $08, nBb1, $04, nRst, nBb1
+	dc.b $08, nBb1, $04, nRst, nBb1, $08, nAb1, $04
+	dc.b nRst, nAb1, $08, nAb1, $04, nRst, nAb1, $08
+	dc.b nAb1, $04, nRst, nAb1, $08, nAb1, $04, nRst
+	dc.b nAb1, $08
+	saTranspose	$0C
+	dc.b nC1, $04, nRst, nC1, $08, nC1, $04, nRst
+	dc.b nC1, $08, $0C, nC1, nC1, $08
+	saTranspose	$F4
+	sJump		CreditsTheme_Jump3
+
+CreditsTheme_FM4:
+	sVoice		$01
+	dc.b nG3, $20
+	saVol		$09
+	dc.b nRst, $06, nC4, $0C, nG3, nE4, $02
+	saVol		$F7
+	dc.b nG3, $20
+	saVol		$09
+	dc.b nRst, $06, nBb3, $0C, nG3, nD4, $02
+	saVol		$F7
+	dc.b nF3, $20
+	saVol		$09
+	dc.b nRst, $06, nAb3, $0C, nG3, nF3, $02
+	saVol		$F7
+	dc.b nG3, $20, nG3
+	sVoice		$09
+	dc.b nG3, $10, nG3, nG3, nG3, nG3, nG3, nG3
+	dc.b nG3, nC3, nC3, nC3, nC3, nC3, nC3, nC4
+	dc.b nC4, nG3, nG3, nG3, nG3, nG3, nG3, nG3
+	dc.b nG3, nC3, nC3, nC3, nC3, nC3, $20, nC3
+
+CreditsTheme_Jump4:
+	sVoice		$02
+	dc.b nBb3, $20, nF3, nC4, nC3, $0C, nG2, nE3
+	dc.b $08, nBb3, $20, nD4, $10, nC4, nC4, $20
+	dc.b nE4, nBb3, nF3, nC4, nA3, nG3, nG3, $18
+	dc.b nG2, $04, nG2, nG3, $20, nB3
+	sVoice		$0A
+	sPan		spRight
+	saVol		$FC
+	saTranspose	$0C
+	dc.b nC2, $10, nG2, nC3, nG2, nF2, nBb2, nF3
+	dc.b nBb2, nC3, nAb2, nC2, nC3, nC3, nG2, nC2
+	dc.b nC3, nC2, nG2, nC3, nG2, nF2, nBb2, nF3
+	dc.b nBb2, nC3, nAb2, nC2, nC3, nC3, nG2, nC3
+	dc.b $20
+	sPan		spCenter
+	saVol		$04
+	saTranspose	$F4
+	sJump		CreditsTheme_Jump4
+
+CreditsTheme_FM5:
+	sVoice		$01
+	saVol		$09
+	sPan		spRight
+	dc.b nRst, $06, nC4, $20, nE3, $0C, nE3, nC4
+	dc.b $08, nBb3, $20, nD3, $0C, nD3, nBb3, $08
+	dc.b nAb3, $20, nC3, $0C, nC3, nC3, $08, $20
+	dc.b $1A
+	saVol		$F7
+	sPan		spCenter
+	sVoice		$04
+	saVol		$04
+	ssDetune	$02
+	sPan		spRight
+	dc.b nRst, $06, nE5, $20, nC5, $0C, nG4, nE5
+	dc.b $08, nD5, $20, nF5, $0C, nE5, nF5, $08
+	dc.b nC5, $20, $0C, nAb4, nG4, $08, nE5, $20
+	dc.b sHold, nE5, nE5, nC5, $0C, nG4, nE5, $08
+	dc.b nD5, $20, nF5, $0C, nE5, nF5, $08, nC5
+	dc.b $20, nAb5, $0C, nG5, nF5, $08, $20, sHold
+	dc.b nE5, $1A
+	ssDetune	$00
+	sPan		spCenter
+	saVol		$FC
+	sVoice		$02
+	dc.b nBb2, $20, nF2, nC3, nC2, $0C, nG1, nE2
+	dc.b $08, nBb2, $20, nD3, $10, nC3, nC3, $20
+	dc.b nE3, nBb2, nF2, nC3, nA2, nG2, nG2, $18
+	dc.b nG1, $04, nG1, nG2, $20, nB2
+
+CreditsTheme_Jump5:
+	sPan		spLeft
+
+CreditsTheme_Loop4:
+	sVoice		$03
+
+CreditsTheme_Loop1:
+	dc.b nC4, $04, nG4, nC5, nG4
+	sLoop		$02, $04, CreditsTheme_Loop1
+
+CreditsTheme_Loop2:
+	dc.b nD4, $04, nF4, nBb4, nF4
+	sLoop		$02, $04, CreditsTheme_Loop2
+
+CreditsTheme_Loop3:
+	dc.b nAb3, $04, nC4, nAb4, nC4
+	sLoop		$02, $04, CreditsTheme_Loop3
+	dc.b nG3, $04, nC4, nG3, nC4, nG4, nC5, nG4
+	dc.b nC5, nE5, nC5, nG4, nE4, nC4, nG3, nE3
+	dc.b nC3
+	sLoop		$01, $02, CreditsTheme_Loop4
+	sPan		spLeft
+	saTranspose	$0C
+	saVol		$06
+
+CreditsTheme_Loop5:
+	sVoice		$05
+	dc.b nD4, $04, nBb3, nF3, nD3, nD4, nBb3, nD4
+	dc.b nF4
+	sLoop		$02, $02, CreditsTheme_Loop5
+	sVoice		$07
+	dc.b nE5, $04, nC5, nE4, nC4, nE4, nC4, nE3
+	dc.b nC3, nE3, nC3, nE3, nC4, nE4, nC4, nE4
+	dc.b nG4
+	sLoop		$01, $02, CreditsTheme_Loop5
+	sVoice		$05
+	dc.b nD4, $04, nBb3, nD4, nF4, nD4, nBb3, nF4
+	dc.b nD4, nF3, nD3, nF3, nBb3, nF3, nD3, nF3
+	dc.b nBb3
+	sVoice		$07
+	dc.b nE4, nC4, nG3, nF3, nE3, nC3, nG2, nF2
+	dc.b nE4, nC4, nG3, nE3, nF3, nE3, nF3, nG3
+
+CreditsTheme_Loop6:
+	sVoice		$05
+	dc.b nC4, $02, nRst, nB3, nRst
+	sVoice		$07
+	dc.b nC4, $02, nRst, nB3, nRst
+	sLoop		$01, $06, CreditsTheme_Loop6
+	dc.b nC4, $02, nRst, nB3, nRst, nC4, nRst, nD4
+	dc.b nRst, nC5, nRst, nB4, nRst, nC5, nRst, nG5
+	dc.b nRst
+	saTranspose	$F4
+	saVol		$FA
+	sJump		CreditsTheme_Jump5
+
+CreditsTheme_PSG1:
+	ssDetune	$01
+	dc.b nRst, $06
+	saVol	$08
+
+CreditsTheme_PSG2:
+	dc.b nRst, $20
+	sLoop		$00, $08, CreditsTheme_PSG2
+	sModAMPS	$31, $02, $01, $02
+	dc.b nE5, $20, nC5, $0C, nG4, nE5, $08, nD5
+	dc.b $20, nF5, $0C, nE5, nF5, $08, nC5, $20
+	dc.b $0C, nAb4, nG4, $08, nE5, $20, sHold, nE5
+	dc.b nE5, nC5, $0C, nG4, nE5, $08, nD5, $20
+	dc.b nF5, $0C, nE5, nF5, $08, nC5, $20, nAb5
+	dc.b $0C, nG5, nF5, $08, $20, sHold, nE5
+	saVol	-$20
+
+CreditsTheme_Jump6:
+	sModAMPS	$31, $02, $02, $03
+	dc.b nD4, $20, $0C, nBb3, nF4, $08, nE4, $20
+	dc.b nC4, nD4, nBb3, $10, nF4, nE4, $20, nC5
+	dc.b nD4, nD4, $0C, nBb3, nF4, $08, nE4, $20
+	dc.b nC4, nC4, nB3, $18, nD3, $02, nRst, nD3
+	dc.b nRst, nC4, $20, nG4, $20
+	sModAMPS	$31, $02, $01, $02
+	dc.b nE5, $20, nC5, $0C, nG4, nE5, $08, nD5
+	dc.b $20, nF5, $0C, nE5, nF5, $08, nC5, $20
+	dc.b $0C, nAb4, nG4, $08, nE5, $20, sHold, nE5
+	dc.b nE5, nC5, $0C, nG4, nE5, $08, nD5, $20
+	dc.b nF5, $0C, nE5, nF5, $08, nC5, $20, nAb5
+	dc.b $0C, nG5, nF5, $08, $20, sHold, nE5
+	sJump		CreditsTheme_Jump6
+
+CreditsTheme_PSG3:
+	sNoisePSG	$E7
+
+CreditsTheme_Loop7:
+	dc.b nRst, $20
+	sLoop		$00, $07, CreditsTheme_Loop7
+	dc.b nRst, $20
+
+CreditsTheme_Loop8:
+	dc.b nRst, $20, nRst, nRst, nRst
+	sLoop		$00, $03, CreditsTheme_Loop8
+	dc.b nRst, $20, nRst, nRst, nRst
+
+CreditsTheme_Jump7:
+	sVolEnv	v08
+	saVol	-$10
+	dc.b nAb5, $20
+	saVol	$10
+	sVolEnv	v03
+	dc.b nA5, $10
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04, nA5, nA5, $10, nA5, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04
+	sVolEnv	v01
+	dc.b nA5
+	sVolEnv	v03
+	dc.b nA5, $10, nA5, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04
+	sVolEnv	v01
+	dc.b nA5
+	sVolEnv	v03
+	dc.b nA5, $10, nA5, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04
+	sVolEnv	v01
+	dc.b nA5
+	sVolEnv	v03
+	dc.b nA5, $10, nA5, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04
+	sVolEnv	v01
+	dc.b nA5
+	sVolEnv	v03
+	dc.b nA5, $10, nA5, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04
+	sVolEnv	v01
+	dc.b nA5
+	sVolEnv	v03
+	sVolEnv	v03
+	saVol	-$08
+	dc.b nA5, $08, nA5
+	sVolEnv	v01
+	dc.b nA5
+	sVolEnv	v03
+	dc.b nA5, $04, nA5, nA5, nA5, $0C
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04, nA5, nA5, $08, nA5
+	sVolEnv	v01
+	dc.b nA5
+	sVolEnv	v03
+	dc.b nA5, $04, nA5, nA5, nA5, $0C
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04, nA5
+	saVol	$08
+	sVolEnv	v08
+	saVol	-$10
+	dc.b nAb5, $20
+	saVol	$10
+	sVolEnv	v03
+	dc.b nA5, $08, $04, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04, nA5, nA5, $08, $04, nA5, nA5
+	dc.b $08, $04, nA5, nA5, $08, $04, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04, nA5
+
+CreditsTheme_Loop9:
+	dc.b nA5, $08, $04, nA5, nA5, $08, $04, nA5
+	dc.b nA5, $08, $04, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04, nA5, nA5, $08, $04, nA5, nA5
+	dc.b $08, $04, nA5, nA5, $08, $04, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04, nA5
+	sLoop		$01, $02, CreditsTheme_Loop9
+	dc.b nA5, $08, $04, nA5, nA5, $08, $04, nA5
+	dc.b nA5, $08, $04, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04, nA5, nA5, $08, $04, nA5, nA5
+	dc.b $08, $04, nA5, nA5, $08, $04, nA5
+	sVolEnv	v01
+	dc.b nA5, $08
+	sVolEnv	v03
+	dc.b nA5, $04, nA5
+	sVolEnv	v03
+	sJump		CreditsTheme_Jump7
+
+CreditsTheme_DAC2:
+	dc.b nRst, $20
+	sLoop		$00, $07, CreditsTheme_DAC2
+	dc.b nRst, $08, dKick, dHiTomS2, $06, dMidTomS2, dLowTomS2, $04
+
+CreditsTheme_Loop10:
+	dc.b dKick, $04, $0C, dLooseSnare, $10, nRst, $04, dKick
+	dc.b $08, $04, dLooseSnare, $10, dKick, $04, $0C, dLooseSnare
+	dc.b $10, nRst, $04, dKick, $08, $04, dLooseSnare, $10
+	sLoop		$00, $03, CreditsTheme_Loop10
+	dc.b dKick, $04, $0C, dLooseSnare, $10, nRst, $04, dKick
+	dc.b $08, $04, dLooseSnare, $10, dKick, $04, dKick, nRst
+	dc.b $18, dKick, $20
+
+CreditsTheme_Loop11:
+	dc.b dKick, $10, dLooseSnare, dKick, $0C, $04, dLooseSnare, $10
+	dc.b dKick, dLooseSnare, dKick, $0C, $04, dLooseSnare, $10
+	sLoop		$01, $02, CreditsTheme_Loop11
+	dc.b dKick, $10, dLooseSnare, dKick, $0C, $04, dLooseSnare, $10
+	dc.b dKick, dLooseSnare, dKick, $0C, $04, dLooseSnare, $08, dMidTomS2
+	dc.b $04, dLowTomS2, dKick, $10, dLooseSnare, dKick, $04, dLooseSnare
+	dc.b $08, dKick, $04, dLooseSnare, $10, dKick, dLooseSnare, dKick
+	dc.b $04, dLooseSnare, $0C, $08, $04, dLooseSnare
+
+CreditsTheme_Loop12:
+	dc.b dKick, $10, dLooseSnare
+	sLoop		$01, $07, CreditsTheme_Loop12
+	dc.b dKick, $10, dLooseSnare, $08, dHiTomS2, $04, dLowTomS2
+
+CreditsTheme_Loop13:
+	dc.b dKick, $10, dLooseSnare
+	sLoop		$01, $04, CreditsTheme_Loop13
+	dc.b dKick, $10, dLooseSnare, dKick, $08, nRst, dLooseSnare, $10
+	dc.b dKick, dLooseSnare, dKick, $04, dLooseSnare, nRst, $08, dLooseSnare
+	dc.b dLooseSnare, $04, dLooseSnare
+	sJump		CreditsTheme_Loop11
+	
+CreditsTheme_DAC1:
+	sStop	

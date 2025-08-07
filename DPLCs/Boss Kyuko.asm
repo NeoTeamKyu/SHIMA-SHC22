@@ -1,0 +1,234 @@
+BKyuko_DPLC:
+BKyuko_DPLC_0: 	dc.w BKyuko_DPLC_80-BKyuko_DPLC
+BKyuko_DPLC_2: 	dc.w BKyuko_DPLC_81-BKyuko_DPLC
+BKyuko_DPLC_4: 	dc.w BKyuko_DPLC_88-BKyuko_DPLC
+BKyuko_DPLC_6: 	dc.w BKyuko_DPLC_8F-BKyuko_DPLC
+BKyuko_DPLC_8: 	dc.w BKyuko_DPLC_96-BKyuko_DPLC
+BKyuko_DPLC_A: 	dc.w BKyuko_DPLC_9D-BKyuko_DPLC
+BKyuko_DPLC_C: 	dc.w BKyuko_DPLC_A4-BKyuko_DPLC
+BKyuko_DPLC_E: 	dc.w BKyuko_DPLC_AB-BKyuko_DPLC
+BKyuko_DPLC_10: 	dc.w BKyuko_DPLC_B2-BKyuko_DPLC
+BKyuko_DPLC_12: 	dc.w BKyuko_DPLC_B9-BKyuko_DPLC
+BKyuko_DPLC_14: 	dc.w BKyuko_DPLC_BC-BKyuko_DPLC
+BKyuko_DPLC_16: 	dc.w BKyuko_DPLC_BF-BKyuko_DPLC
+BKyuko_DPLC_18: 	dc.w BKyuko_DPLC_C4-BKyuko_DPLC
+BKyuko_DPLC_1A: 	dc.w BKyuko_DPLC_C9-BKyuko_DPLC
+BKyuko_DPLC_1C: 	dc.w BKyuko_DPLC_CC-BKyuko_DPLC
+BKyuko_DPLC_1E: 	dc.w BKyuko_DPLC_D1-BKyuko_DPLC
+BKyuko_DPLC_20: 	dc.w BKyuko_DPLC_D6-BKyuko_DPLC
+BKyuko_DPLC_22: 	dc.w BKyuko_DPLC_DB-BKyuko_DPLC
+BKyuko_DPLC_24: 	dc.w BKyuko_DPLC_DE-BKyuko_DPLC
+BKyuko_DPLC_26: 	dc.w BKyuko_DPLC_E1-BKyuko_DPLC
+BKyuko_DPLC_28: 	dc.w BKyuko_DPLC_E6-BKyuko_DPLC
+BKyuko_DPLC_2A: 	dc.w BKyuko_DPLC_EB-BKyuko_DPLC
+BKyuko_DPLC_2C: 	dc.w BKyuko_DPLC_F0-BKyuko_DPLC
+BKyuko_DPLC_2E: 	dc.w BKyuko_DPLC_F5-BKyuko_DPLC
+BKyuko_DPLC_30: 	dc.w BKyuko_DPLC_F8-BKyuko_DPLC
+BKyuko_DPLC_32: 	dc.w BKyuko_DPLC_FB-BKyuko_DPLC
+BKyuko_DPLC_34: 	dc.w BKyuko_DPLC_FE-BKyuko_DPLC
+BKyuko_DPLC_36: 	dc.w BKyuko_DPLC_101-BKyuko_DPLC
+BKyuko_DPLC_38: 	dc.w BKyuko_DPLC_104-BKyuko_DPLC
+BKyuko_DPLC_3A: 	dc.w BKyuko_DPLC_107-BKyuko_DPLC
+BKyuko_DPLC_3C: 	dc.w BKyuko_DPLC_10A-BKyuko_DPLC
+BKyuko_DPLC_3E: 	dc.w BKyuko_DPLC_10D-BKyuko_DPLC
+BKyuko_DPLC_40: 	dc.w BKyuko_DPLC_110-BKyuko_DPLC
+BKyuko_DPLC_42: 	dc.w BKyuko_DPLC_113-BKyuko_DPLC
+BKyuko_DPLC_44: 	dc.w BKyuko_DPLC_116-BKyuko_DPLC
+BKyuko_DPLC_46: 	dc.w BKyuko_DPLC_11B-BKyuko_DPLC
+BKyuko_DPLC_48: 	dc.w BKyuko_DPLC_120-BKyuko_DPLC
+BKyuko_DPLC_4A: 	dc.w BKyuko_DPLC_125-BKyuko_DPLC
+BKyuko_DPLC_4C: 	dc.w BKyuko_DPLC_12A-BKyuko_DPLC
+BKyuko_DPLC_4E: 	dc.w BKyuko_DPLC_12F-BKyuko_DPLC
+BKyuko_DPLC_50: 	dc.w BKyuko_DPLC_132-BKyuko_DPLC
+BKyuko_DPLC_52: 	dc.w BKyuko_DPLC_135-BKyuko_DPLC
+BKyuko_DPLC_54: 	dc.w BKyuko_DPLC_138-BKyuko_DPLC
+BKyuko_DPLC_56: 	dc.w BKyuko_DPLC_13B-BKyuko_DPLC
+BKyuko_DPLC_58: 	dc.w BKyuko_DPLC_13E-BKyuko_DPLC
+BKyuko_DPLC_5A: 	dc.w BKyuko_DPLC_141-BKyuko_DPLC
+BKyuko_DPLC_5C: 	dc.w BKyuko_DPLC_144-BKyuko_DPLC
+BKyuko_DPLC_5E: 	dc.w BKyuko_DPLC_147-BKyuko_DPLC
+BKyuko_DPLC_60: 	dc.w BKyuko_DPLC_14A-BKyuko_DPLC
+BKyuko_DPLC_62: 	dc.w BKyuko_DPLC_14F-BKyuko_DPLC
+BKyuko_DPLC_64: 	dc.w BKyuko_DPLC_154-BKyuko_DPLC
+BKyuko_DPLC_66: 	dc.w BKyuko_DPLC_159-BKyuko_DPLC
+BKyuko_DPLC_68: 	dc.w BKyuko_DPLC_15C-BKyuko_DPLC
+BKyuko_DPLC_6A: 	dc.w BKyuko_DPLC_15F-BKyuko_DPLC
+BKyuko_DPLC_6C: 	dc.w BKyuko_DPLC_162-BKyuko_DPLC
+BKyuko_DPLC_6E: 	dc.w BKyuko_DPLC_165-BKyuko_DPLC
+BKyuko_DPLC_70: 	dc.w BKyuko_DPLC_16A-BKyuko_DPLC
+BKyuko_DPLC_72: 	dc.w BKyuko_DPLC_16F-BKyuko_DPLC
+BKyuko_DPLC_74: 	dc.w BKyuko_DPLC_172-BKyuko_DPLC
+BKyuko_DPLC_76: 	dc.w BKyuko_DPLC_177-BKyuko_DPLC
+BKyuko_DPLC_78: 	dc.w BKyuko_DPLC_17C-BKyuko_DPLC
+BKyuko_DPLC_7A: 	dc.w BKyuko_DPLC_181-BKyuko_DPLC
+BKyuko_DPLC_7C: 	dc.w BKyuko_DPLC_186-BKyuko_DPLC
+BKyuko_DPLC_7E: 	dc.w BKyuko_DPLC_18B-BKyuko_DPLC
+BKyuko_DPLC_80: 	dc.b $0
+BKyuko_DPLC_81: 	dc.b $3
+	dc.b $F0, $0
+	dc.b $40, $10
+	dc.b $0, $15
+BKyuko_DPLC_88: 	dc.b $3
+	dc.b $F0, $16
+	dc.b $40, $26
+	dc.b $0, $15
+BKyuko_DPLC_8F: 	dc.b $3
+	dc.b $F0, $2B
+	dc.b $40, $3B
+	dc.b $0, $15
+BKyuko_DPLC_96: 	dc.b $3
+	dc.b $F0, $40
+	dc.b $40, $50
+	dc.b $0, $15
+BKyuko_DPLC_9D: 	dc.b $3
+	dc.b $F0, $55
+	dc.b $30, $65
+	dc.b $0, $15
+BKyuko_DPLC_A4: 	dc.b $3
+	dc.b $F0, $69
+	dc.b $20, $79
+	dc.b $0, $15
+BKyuko_DPLC_AB: 	dc.b $3
+	dc.b $F0, $7C
+	dc.b $30, $8C
+	dc.b $0, $15
+BKyuko_DPLC_B2: 	dc.b $3
+	dc.b $F0, $90
+	dc.b $40, $A0
+	dc.b $0, $15
+BKyuko_DPLC_B9: 	dc.b $1
+	dc.b $E0, $A5
+BKyuko_DPLC_BC: 	dc.b $1
+	dc.b $E0, $B4
+BKyuko_DPLC_BF: 	dc.b $2
+	dc.b $F0, $C3
+	dc.b $20, $D3
+BKyuko_DPLC_C4: 	dc.b $2
+	dc.b $F0, $D6
+	dc.b $0, $E6
+BKyuko_DPLC_C9: 	dc.b $1
+	dc.b $E0, $E7
+BKyuko_DPLC_CC: 	dc.b $2
+	dc.b $F0, $F6
+	dc.b $11, $6
+BKyuko_DPLC_D1: 	dc.b $2
+	dc.b $F1, $8
+	dc.b $31, $18
+BKyuko_DPLC_D6: 	dc.b $2
+	dc.b $F1, $1C
+	dc.b $11, $2C
+BKyuko_DPLC_DB: 	dc.b $1
+	dc.b $D1, $2E
+BKyuko_DPLC_DE: 	dc.b $1
+	dc.b $E1, $3C
+BKyuko_DPLC_E1: 	dc.b $2
+	dc.b $F1, $4B
+	dc.b $11, $5B
+BKyuko_DPLC_E6: 	dc.b $2
+	dc.b $F1, $5D
+	dc.b $11, $6D
+BKyuko_DPLC_EB: 	dc.b $2
+	dc.b $F1, $6F
+	dc.b $11, $7F
+BKyuko_DPLC_F0: 	dc.b $2
+	dc.b $F1, $81
+	dc.b $11, $91
+BKyuko_DPLC_F5: 	dc.b $1
+	dc.b $F1, $93
+BKyuko_DPLC_F8: 	dc.b $1
+	dc.b $F1, $A3
+BKyuko_DPLC_FB: 	dc.b $1
+	dc.b $F1, $B3
+BKyuko_DPLC_FE: 	dc.b $1
+	dc.b $F1, $C3
+BKyuko_DPLC_101: 	dc.b $1
+	dc.b $F1, $D3
+BKyuko_DPLC_104: 	dc.b $1
+	dc.b $F1, $E3
+BKyuko_DPLC_107: 	dc.b $1
+	dc.b $F1, $F3
+BKyuko_DPLC_10A: 	dc.b $1
+	dc.b $E2, $3
+BKyuko_DPLC_10D: 	dc.b $1
+	dc.b $F2, $12
+BKyuko_DPLC_110: 	dc.b $1
+	dc.b $B2, $22
+BKyuko_DPLC_113: 	dc.b $1
+	dc.b $A2, $2E
+BKyuko_DPLC_116: 	dc.b $2
+	dc.b $F2, $39
+	dc.b $32, $49
+BKyuko_DPLC_11B: 	dc.b $2
+	dc.b $F2, $4D
+	dc.b $12, $5D
+BKyuko_DPLC_120: 	dc.b $2
+	dc.b $F2, $5F
+	dc.b $22, $6F
+BKyuko_DPLC_125: 	dc.b $2
+	dc.b $F2, $72
+	dc.b $52, $82
+BKyuko_DPLC_12A: 	dc.b $2
+	dc.b $F2, $88
+	dc.b $22, $98
+BKyuko_DPLC_12F: 	dc.b $1
+	dc.b $F2, $9B
+BKyuko_DPLC_132: 	dc.b $1
+	dc.b $D2, $AB
+BKyuko_DPLC_135: 	dc.b $1
+	dc.b $A2, $B9
+BKyuko_DPLC_138: 	dc.b $1
+	dc.b $A2, $C4
+BKyuko_DPLC_13B: 	dc.b $1
+	dc.b $A2, $B9
+BKyuko_DPLC_13E: 	dc.b $1
+	dc.b $D2, $AB
+BKyuko_DPLC_141: 	dc.b $1
+	dc.b $B2, $CF
+BKyuko_DPLC_144: 	dc.b $1
+	dc.b $A2, $DB
+BKyuko_DPLC_147: 	dc.b $1
+	dc.b $B2, $CF
+BKyuko_DPLC_14A: 	dc.b $2
+	dc.b $F2, $E6
+	dc.b $2, $F6
+BKyuko_DPLC_14F: 	dc.b $2
+	dc.b $F2, $F7
+	dc.b $13, $7
+BKyuko_DPLC_154: 	dc.b $2
+	dc.b $F3, $9
+	dc.b $13, $19
+BKyuko_DPLC_159: 	dc.b $1
+	dc.b $F3, $1B
+BKyuko_DPLC_15C: 	dc.b $1
+	dc.b $D3, $2B
+BKyuko_DPLC_15F: 	dc.b $1
+	dc.b $F3, $39
+BKyuko_DPLC_162: 	dc.b $1
+	dc.b $D3, $49
+BKyuko_DPLC_165: 	dc.b $2
+	dc.b $F3, $57
+	dc.b $13, $67
+BKyuko_DPLC_16A: 	dc.b $2
+	dc.b $F3, $69
+	dc.b $13, $79
+BKyuko_DPLC_16F: 	dc.b $1
+	dc.b $F3, $7B
+BKyuko_DPLC_172: 	dc.b $2
+	dc.b $F3, $8B
+	dc.b $33, $9B
+BKyuko_DPLC_177: 	dc.b $2
+	dc.b $F3, $9F
+	dc.b $3, $AF
+BKyuko_DPLC_17C: 	dc.b $2
+	dc.b $F3, $B0
+	dc.b $3, $C0
+BKyuko_DPLC_181: 	dc.b $2
+	dc.b $F3, $C1
+	dc.b $3, $D1
+BKyuko_DPLC_186: 	dc.b $2
+	dc.b $F3, $D2
+	dc.b $3, $E2
+BKyuko_DPLC_18B: 	dc.b $2
+	dc.b $F3, $E3
+	dc.b $13, $F3
+	even

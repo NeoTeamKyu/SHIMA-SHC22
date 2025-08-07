@@ -1,0 +1,896 @@
+SouthTownTheme_Header:
+	sHeaderInit
+	sHeaderTempo	$01, $40	
+	sHeaderCh	$05, $03
+	sHeaderDAC	SouthTownTheme_DAC1
+	sHeaderDAC	SouthTownTheme_DAC2	
+	sHeaderFM	SouthTownTheme_FM1, $00, $10
+	sHeaderFM	SouthTownTheme_FM2, $00, $10
+	sHeaderFM	SouthTownTheme_FM3, $00, $10
+	sHeaderFM	SouthTownTheme_FM4, $00, $10
+	sHeaderFM	SouthTownTheme_FM5, $00, $10
+	sHeaderPSG	SouthTownTheme_PSG1, $D0+$0C, $08, $00, vNone
+	sHeaderPSG	SouthTownTheme_PSG2, $D0+$0C, $10, $00, vNone
+	sHeaderPSG	SouthTownTheme_PSG3, $0D, $00, $00, vDyHe03
+
+	; Patch $00
+	; $3A
+	; $32, $11, $32, $11,	$20, $0F, $8F, $0F
+	; $03, $0A, $03, $0A,	$02, $04, $03, $02
+	; $A3, $77, $A3, $77,	$1E, $00, $28, $85
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$03, $03, $01, $01
+	spMultiple	$02, $02, $01, $01
+	spRateScale	$00, $02, $00, $00
+	spAttackRt	$00, $0F, $0F, $0F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$03, $03, $0A, $0A
+	spSustainLv	$0A, $0A, $07, $07
+	spDecayRt	$02, $03, $04, $02
+	spReleaseRt	$03, $03, $07, $07
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$1E, $28, $00, $05
+
+	; Patch $01
+	; $3D
+	; $01, $21, $51, $01,	$12, $14, $14, $0F
+	; $0A, $05, $05, $05,	$00, $00, $00, $00
+	; $26, $28, $28, $18,	$19, $80, $80, $80
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $05, $02, $00
+	spMultiple	$01, $01, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$12, $14, $14, $0F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $05, $05, $05
+	spSustainLv	$02, $02, $02, $01
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$06, $08, $08, $08
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$19, $00, $00, $00
+
+	; Patch $02
+	; $16
+	; $7A, $74, $3C, $31,	$1F, $1F, $1F, $1F
+	; $0A, $08, $0C, $0A,	$07, $0A, $07, $05
+	; $25, $A7, $A7, $55,	$14, $85, $8A, $80
+	spAlgorithm	$06
+	spFeedback	$02
+	spDetune	$07, $03, $07, $03
+	spMultiple	$0A, $0C, $04, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $0C, $08, $0A
+	spSustainLv	$02, $0A, $0A, $05
+	spDecayRt	$07, $07, $0A, $05
+	spReleaseRt	$05, $07, $07, $05
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$14, $0A, $05, $00
+
+	; Patch $03
+	; $0C
+	; $00, $00, $06, $01,	$1B, $5A, $DA, $59
+	; $0A, $06, $0A, $0F,	$0A, $09, $09, $0C
+	; $14, $17, $02, $A3,	$13, $80, $15, $80
+	spAlgorithm	$04
+	spFeedback	$01
+	spDetune	$00, $00, $00, $00
+	spMultiple	$00, $06, $00, $01
+	spRateScale	$00, $03, $01, $01
+	spAttackRt	$1B, $1A, $1A, $19
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $0A, $06, $0F
+	spSustainLv	$01, $00, $01, $0A
+	spDecayRt	$0A, $09, $09, $0C
+	spReleaseRt	$04, $02, $07, $03
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$13, $15, $00, $00
+
+	; Patch $04
+	; $3C
+	; $21, $02, $01, $62,	$CF, $0D, $CF, $0C
+	; $00, $04, $00, $04,	$00, $00, $00, $00
+	; $02, $37, $02, $38,	$1E, $80, $1F, $80
+	spAlgorithm	$04
+	spFeedback	$07
+	spDetune	$02, $00, $00, $06
+	spMultiple	$01, $01, $02, $02
+	spRateScale	$03, $03, $00, $00
+	spAttackRt	$0F, $0F, $0D, $0C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$00, $00, $04, $04
+	spSustainLv	$00, $00, $03, $03
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$02, $02, $07, $08
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$1E, $1F, $00, $00
+
+	; Patch $05
+	; $3E
+	; $34, $00, $75, $03,	$5E, $DF, $5F, $9C
+	; $0F, $04, $0F, $0A,	$02, $02, $05, $05
+	; $77, $72, $AA, $F6,	$26, $80, $A3, $80
+	spAlgorithm	$06
+	spFeedback	$07
+	spDetune	$03, $07, $00, $00
+	spMultiple	$04, $05, $00, $03
+	spRateScale	$01, $01, $03, $02
+	spAttackRt	$1E, $1F, $1F, $1C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $0F, $04, $0A
+	spSustainLv	$07, $0A, $07, $0F
+	spDecayRt	$02, $05, $02, $05
+	spReleaseRt	$07, $0A, $02, $06
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$26, $23, $00, $00
+
+	; Patch $06
+	; $3C
+	; $0B, $02, $0A, $02,	$1F, $1E, $1F, $1F
+	; $0F, $0E, $11, $10,	$13, $0F, $11, $0E
+	; $24, $07, $17, $08,	$20, $80, $1B, $80
+	spAlgorithm	$04
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$0B, $0A, $02, $02
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1E, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $11, $0E, $10
+	spSustainLv	$02, $01, $00, $00
+	spDecayRt	$13, $11, $0F, $0E
+	spReleaseRt	$04, $07, $07, $08
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$20, $1B, $00, $00
+
+	; Patch $07
+	; $3B
+	; $06, $36, $63, $33,	$DF, $54, $D0, $8F
+	; $09, $07, $0B, $04,	$03, $00, $00, $00
+	; $EF, $FF, $2F, $0F,	$26, $28, $26, $80
+	spAlgorithm	$03
+	spFeedback	$07
+	spDetune	$00, $06, $03, $03
+	spMultiple	$06, $03, $06, $03
+	spRateScale	$03, $03, $01, $02
+	spAttackRt	$1F, $10, $14, $0F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$09, $0B, $07, $04
+	spSustainLv	$0E, $02, $0F, $00
+	spDecayRt	$03, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$26, $26, $28, $00
+
+	; Patch $08
+	; $3D
+	; $61, $01, $01, $01,	$8E, $52, $14, $4C
+	; $08, $08, $0E, $03,	$00, $00, $00, $00
+	; $1F, $1F, $1F, $1F,	$19, $80, $80, $80
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$06, $00, $00, $00
+	spMultiple	$01, $01, $01, $01
+	spRateScale	$02, $00, $01, $01
+	spAttackRt	$0E, $14, $12, $0C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $0E, $08, $03
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$19, $00, $00, $00
+
+	; Patch $09
+	; $35
+	; $44, $71, $01, $31,	$1F, $1F, $1F, $1F
+	; $14, $14, $1F, $1F,	$0C, $00, $00, $07
+	; $2F, $0F, $1F, $1F,	$15, $03, $04, $83
+	spAlgorithm	$05
+	spFeedback	$06
+	spDetune	$04, $00, $07, $03
+	spMultiple	$04, $01, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$14, $1F, $14, $1F
+	spSustainLv	$02, $01, $00, $01
+	spDecayRt	$0C, $00, $00, $07
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$15, $04, $03, $03
+
+	; Patch $0A
+	; $3D
+	; $71, $01, $31, $01,	$0F, $50, $50, $50
+	; $0F, $08, $08, $08,	$00, $00, $00, $00
+	; $14, $17, $17, $17,	$17, $82, $82, $82
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$07, $03, $00, $00
+	spMultiple	$01, $01, $01, $01
+	spRateScale	$00, $01, $01, $01
+	spAttackRt	$0F, $10, $10, $10
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $08, $08, $08
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$04, $07, $07, $07
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$17, $02, $02, $02
+
+	; Patch $0B
+	; $1C
+	; $6B, $33, $37, $92,	$DF, $DF, $5F, $DF
+	; $0E, $07, $10, $0F,	$00, $0B, $05, $04
+	; $FF, $17, $AF, $1F,	$14, $80, $27, $85
+	spAlgorithm	$04
+	spFeedback	$03
+	spDetune	$06, $03, $03, $09
+	spMultiple	$0B, $07, $03, $02
+	spRateScale	$03, $01, $03, $03
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $10, $07, $0F
+	spSustainLv	$0F, $0A, $01, $01
+	spDecayRt	$00, $05, $0B, $04
+	spReleaseRt	$0F, $0F, $07, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$14, $27, $00, $05
+
+	; Patch $0C
+	; $16
+	; $7A, $74, $3C, $31,	$1F, $1F, $1F, $1F
+	; $0A, $07, $0C, $06,	$07, $0A, $07, $05
+	; $25, $A7, $A7, $55,	$14, $85, $8A, $80
+	spAlgorithm	$06
+	spFeedback	$02
+	spDetune	$07, $03, $07, $03
+	spMultiple	$0A, $0C, $04, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $0C, $07, $06
+	spSustainLv	$02, $0A, $0A, $05
+	spDecayRt	$07, $07, $0A, $05
+	spReleaseRt	$05, $07, $07, $05
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$14, $0A, $05, $00
+
+	; Patch $0D
+	; $35
+	; $31, $38, $30, $31,	$9E, $D8, $DF, $DC
+	; $0E, $0A, $01, $05,	$08, $08, $08, $08
+	; $B6, $B6, $B6, $B6,	$14, $87, $80, $80
+	spAlgorithm	$05
+	spFeedback	$06
+	spDetune	$03, $03, $03, $03
+	spMultiple	$01, $00, $08, $01
+	spRateScale	$02, $03, $03, $03
+	spAttackRt	$1E, $1F, $18, $1C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $01, $0A, $05
+	spSustainLv	$0B, $0B, $0B, $0B
+	spDecayRt	$08, $08, $08, $08
+	spReleaseRt	$06, $06, $06, $06
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$14, $00, $07, $00
+
+	; Patch $0E
+	; $18
+	; $32, $30, $30, $30,	$9E, $DC, $1C, $9A
+	; $0D, $06, $04, $01,	$08, $0A, $03, $05
+	; $B6, $B6, $36, $26,	$2C, $22, $14, $80
+	spAlgorithm	$00
+	spFeedback	$03
+	spDetune	$03, $03, $03, $03
+	spMultiple	$02, $00, $00, $00
+	spRateScale	$02, $00, $03, $02
+	spAttackRt	$1E, $1C, $1C, $1A
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0D, $04, $06, $01
+	spSustainLv	$0B, $03, $0B, $02
+	spDecayRt	$08, $03, $0A, $05
+	spReleaseRt	$06, $06, $06, $06
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$2C, $14, $22, $00
+
+	; Patch $0F
+	; $3E
+	; $34, $00, $75, $02,	$5E, $DF, $5F, $9C
+	; $0F, $04, $0F, $0A,	$02, $02, $05, $05
+	; $77, $72, $AA, $F6,	$26, $80, $A3, $80
+	spAlgorithm	$06
+	spFeedback	$07
+	spDetune	$03, $07, $00, $00
+	spMultiple	$04, $05, $00, $02
+	spRateScale	$01, $01, $03, $02
+	spAttackRt	$1E, $1F, $1F, $1C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0F, $0F, $04, $0A
+	spSustainLv	$07, $0A, $07, $0F
+	spDecayRt	$02, $05, $02, $05
+	spReleaseRt	$07, $0A, $02, $06
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$26, $23, $00, $00
+
+	; Patch $10
+	; $3A
+	; $20, $23, $20, $01,	$1E, $1F, $1F, $1F
+	; $0A, $0A, $0B, $0A,	$05, $07, $0A, $08
+	; $A4, $85, $96, $77,	$21, $25, $28, $80
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$02, $02, $02, $00
+	spMultiple	$00, $00, $03, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1E, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0A, $0B, $0A, $0A
+	spSustainLv	$0A, $09, $08, $07
+	spDecayRt	$05, $0A, $07, $08
+	spReleaseRt	$04, $06, $05, $07
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$21, $28, $25, $00
+
+	; Patch $11
+	; $3D
+	; $01, $41, $22, $53,	$8E, $52, $14, $4C
+	; $08, $08, $0E, $03,	$00, $00, $00, $00
+	; $1F, $1F, $1F, $1F,	$1B, $80, $80, $80
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$00, $02, $04, $05
+	spMultiple	$01, $02, $01, $03
+	spRateScale	$02, $00, $01, $01
+	spAttackRt	$0E, $14, $12, $0C
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $0E, $08, $03
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$1B, $00, $00, $00	
+
+SouthTownTheme_FM1:
+	saVol		$03
+	sVoice		$01
+	dc.b nA5, $06, nG5, nF5, nG5, nA5, nG5, nF5
+	dc.b nG5, nA5, nG5, nF5, nE5, $1E, nA5, $06
+	dc.b nG5, nF5, nG5, nA5, nG5, nF5, nG5, nA5
+	dc.b nG5, nF5, nD6, $1E
+	saVol		$FD
+	sPan		spRight
+	saVol		$F7
+	sModAMPS	$0D, $02, $03, $05
+	sVoice		$02
+	dc.b nC4, $06, nD4, $0C, nA4, nE5, $18, nD5
+	dc.b $12, nFs4, $18, nC4, $06, nD4, $0C, nA4
+	dc.b nE5, $18, nD5, $12, nFs4, $18
+	sPan		spCenter
+	saVol		$09
+	sModAMPS	$11, $01, $04, $05
+	saVol		$01
+	sVoice		$11
+	dc.b nG4, $18, nBb4, nD5, nFs5, nG5, $1E, nA5
+	dc.b $06, nG5, nFs5, $30, sHold, $06, nBb5, $18
+	dc.b nA5, nG5, nD5, nC5, $1E, nD5, $06, nC5
+	dc.b nBb4, $1E, nA4, $18, nBb4, nD5, nG5, nA5
+	dc.b nBb5, $1E, nC6, $06, nBb5, nA5, $30, sHold
+	dc.b $06, nD5, $18, nC5, nBb4, nD5, nC5, $1E
+	dc.b nD5, $06, nC5, nBb4, $1E, nA4, $18
+	saVol		$FF
+	saTranspose	$F9
+	sGate	$06
+	sModAMPS	$0D, $01, $04, $06
+	sVoice		$07
+	dc.b nD5, $06, $06, nRst, $06, nD5, nRst, nD5
+	dc.b nD5, nC5, nRst, nC5, nRst, nC5, nC5, nC5
+	dc.b nRst, nC5, nRst, nC5, nC5, nB4, nRst, nB4
+	dc.b nRst, nB4, nD5, nD5, nRst, nD5, nRst, nD5
+	dc.b nD5, nC5, nRst, nC5, nRst, nF5, nC5, nC5
+	dc.b nRst, nC5, nRst, nC5, nC5, nB4, nRst, nB4
+	dc.b nRst, nB4
+	sGate	$00
+	saTranspose	$07
+	sModAMPS	$11, $01, $04, $05
+	saVol		$01
+	sVoice		$09
+	dc.b nRst, $0C, nBb4, nC5, $06, nD5, $0C, nG5
+	dc.b nG5, $06, nRst, nF5, $1E, nBb5, $0C, nA5
+	dc.b nG5, nF5, $06, nD5, $30, sHold, $06, nRst
+	dc.b $0C, nBb4, nC5, $06, nD5, nRst, nG5, nRst
+	dc.b nG5, nRst, nG5, nRst, nG5, nRst, nF5, nD6
+	dc.b $12, nC6, $03, nD6, nC6, $12, nD5, $03
+	dc.b nG5, nC6, $12, nB5, $03, nA5, nB5, $18
+	saVol		$FF
+	sPan		spRight
+	saVol		$F7
+	sModAMPS	$0D, $02, $03, $05
+	sVoice		$02
+	dc.b nC5, $06, nD5, $0C, nA5, nE6, $12, nD6
+	dc.b $0C, nFs5, $12
+	sPan		spCenter
+	saVol		$09
+	sModAMPS	$13, $01, $04, $06
+	saVol		$01
+	sVoice		$01
+	sModAMPS	$13, $01, $8F, $60
+	dc.b nG5, $12
+	sModAMPS	$13, $01, $04, $06
+	dc.b nF5, $06, nRst, nEb5, $08, nRst, $04, nD5
+	dc.b $06, nRst, nD5, nEb5, $1E, nRst, $06, nG5
+	dc.b $12, nF5, $06, nRst, nEb5, $08, nRst, $04
+	dc.b nD5, $06, nRst, nD5, nEb5, $1E, nRst, $06
+	dc.b nG5, $12, nF5, $06, nRst, nEb5, $08, nRst
+	dc.b $04, nD5, $06, nRst, nD5, nEb5, $12, nBb5
+	dc.b $0C, nG5, $12, nF5, $06, nRst, $0C, nBb5
+	dc.b nG5, $12, nF5, $1E, nRst, $08
+	sModAMPS	$13, $01, $8F, $60
+	dc.b nG5, $10
+	sModAMPS	$13, $01, $04, $06
+	dc.b nF5, $08, nRst, $04, nEb5, $08, nRst, $04
+	dc.b nD5, $08, nRst, $04, nD5, $08, nEb5, $1C
+	sModAMPS	$13, $01, $9F, $60
+	dc.b nRst, $08, nG5, $10
+	sModAMPS	$13, $01, $04, $06
+	dc.b nF5, $08, nRst, $04, nEb5, $08, nRst, $04
+	dc.b nD5, $08, nRst, $04, nD5, $08, nEb5, $1C
+	sModAMPS	$13, $01, $9F, $60
+	dc.b nRst, $08, nG5, $10
+	sModAMPS	$13, $01, $04, $06
+	dc.b nF5, $08, nRst, $04, nEb5, $08, nRst, $04
+	dc.b nD5, $08, nRst, $04, nD5, $08, nEb5, $10
+	dc.b nBb5, $0C, nG5, $18, nF5, nG5, nD5, nF5
+	dc.b sHold, nF5, $12, nE5, $03, nD5, nE5, $24
+	saVol		$FF
+	saVol		$03
+	dc.b nD5, $03, nE5, nF5, nG5
+	saVol		$FD
+	sJump		SouthTownTheme_FM1
+	dc.b $F2	; Unused
+
+SouthTownTheme_FM2:
+	sVoice		$00
+	dc.b nD4, $18, nC4, $18, nBb3, $12, nA3, $1E
+	dc.b nD4, $18, nC4, nBb3, $12, nA3, $1E, nRst
+	dc.b $09
+	sPan		spLeft
+	sModAMPS	$0B, $02, $03, $05
+	sVoice		$02
+	dc.b nG3, $06, nA3, $0C, nE4, nB4, $18, nA4
+	dc.b $12, nD4, $18, nG3, $06, nA3, $0C, nE4
+	dc.b nB4, $18, nA4, $12, nD4, $0F
+	sPan		spCenter
+	saVol		$FA
+
+SouthTownTheme_Loop1:
+	sVoice		$0E
+	dc.b nG3, $0C, nG4, $06, nRst, nF3, $0C, nF4
+	dc.b $06, nRst, nE3, $0C, nE4, $06, nRst, nEb3
+	dc.b $0C, nEb4, $06, nRst, nD3, $0C, nD4, $06
+	dc.b nRst, nE3, $0C, nE4, $06, nRst, nFs3, $0C
+	dc.b nFs4, $06, nRst, nD3, $0C, nD4, $06, nRst
+	dc.b nEb3, $0C, nEb4, $06, nRst, nF3, $0C, nF4
+	dc.b $06, nRst, nG3, $0C, nG4, $06, nRst, nAb3
+	dc.b $0C, nAb4, $06, nRst, nA3, $0C, nA4, $06
+	dc.b nRst, nG3, $0C, nG4, $06, nRst, nFs3, $0C
+	dc.b nFs4, $06, nRst, nD3, $0C, nD4, $06, nRst
+	sLoop		$00, $02, SouthTownTheme_Loop1
+	sVoice		$10
+	sModAMPS	$0B, $02, $03, $05
+	saVol		$FE
+	dc.b nEb4, $0C, nG4, nEb4, nF4, nA4, nF4, nD4
+	dc.b nA3, nD3, nG3, nD4, nG4, nEb4, nBb4, nG4
+	dc.b nA4, nC4, nF4, nD4, nE4, $06, nF4, nG4
+	dc.b nA4, nG4, $0C, nD4, nG3
+	sModOff
+	saVol		$02
+	sVoice		$0E
+	dc.b nEb3, $0C, nEb4, $06, nRst, nEb3, $0C, nEb4
+	dc.b $06, nRst, nF3, $0C, nF4, $06, nRst, nF3
+	dc.b $0C, nF4, $06, nRst, nD3, $0C, nD4, $06
+	dc.b nRst, nD3, $0C, nD4, $06, nRst, nG3, $0C
+	dc.b nG4, $06, nRst, nG3, $0C, nG4, $06, nRst
+	dc.b nEb3, $0C, nEb4, $06, nRst, nEb3, $0C, nEb4
+	dc.b $06, nRst, nF3, $0C, nF4, $06, nRst, nF3
+	dc.b $0C, nF4, $06, nRst, nD3, $0C, nD4, $06
+	dc.b nRst, nD3, $0C, nD4, $06, nRst, nG3, $0C
+	dc.b nG4, $06, nRst, nG3, $0C, nG4, $06, nRst
+	saVol		$06
+	dc.b nRst, $09
+	sPan		spLeft
+	sModAMPS	$0B, $02, $03, $05
+	sVoice		$02
+	dc.b nG4, $06, nA4, $0C, nE5, nB5, $12, nA5
+	dc.b $0C, nD5, $03
+	sPan		spCenter
+	saVol		$FE
+	sVoice		$0D
+	dc.b nC4, $0C, nD4, nEb4, nF4, nG4, nF4, nEb4
+	dc.b nD4, nBb3, nD4, nEb4, nF4, nG4, nF4, nEb4
+	dc.b nD4, nAb3, nD4, nEb4, nF4, nG4, nF4, nEb4
+	dc.b nD4, nBb3, nD4, nEb4, nF4, nG4, nF4, nEb4
+	dc.b nD4, nC4, nD4, nEb4, nF4, nG4, nF4, nEb4
+	dc.b nD4, nBb3, nD4, nEb4, nF4, nG4, nF4, nEb4
+	dc.b nD4, nAb3, nD4, nEb4, nF4, nG4, nF4, nEb4
+	dc.b nD4, nBb3, nD4, nEb4, nF4, nG4, nF4, nEb4
+	dc.b nD4, nC4, $06, nRst, nC4, $0C, nF4, $06
+	sModAMPS	$06, $01, $09, $07
+	dc.b nG4, $18
+	sModOff
+	dc.b nC4, $0C, nRst, $06
+	sVoice		$0E
+	saVol		$FC
+	dc.b nC4, $0C, sHold, nB3, $01, sHold, nBb3, sHold
+	dc.b nA3, sHold, nAb3, sHold, nG3, sHold, nFs3, sHold
+	dc.b nF3, sHold, nE3, sHold, nEb3, $01, sHold, nD3
+	dc.b sHold, nCs3, sHold, nC3
+	saVol		$06
+	sJump		SouthTownTheme_FM2
+	dc.b $F2	; Unused
+
+SouthTownTheme_FM3:
+	saVol		$03
+	sVoice		$0A
+	dc.b nF5, $06, nE5, $06, nD5, nE5, nF5, nE5
+	dc.b nD5, nE5, nF5, nE5, nD5, nC5, $1E, nF5
+	dc.b $06, nE5, nD5, nE5, nF5, nE5, nD5, nE5
+	dc.b nF5, nE5, nD5, nFs5, $1E
+	saVol		$FD
+	sPan		spLeft
+	saVol		$F7
+	sModAMPS	$0B, $02, $03, $05
+	sVoice		$02
+	dc.b nG3, $06, nA3, $0C, nE4, nB4, $18, nA4
+	dc.b $12, nD4, $18, nG3, $06, nA3, $0C, nE4
+	dc.b nB4, $18, nA4, $12, nD4, $18
+	sPan		spCenter
+	saVol		$09
+	sModAMPS	$0C, $01, $04, $06
+	saVol		$FF
+	sVoice		$05
+	dc.b nRst, $09, nD5, $03, nG5, nBb5, $09, nRst
+	dc.b nC5, $03, nF5, nA5, $09, nRst, nBb4, $03
+	dc.b nE5, nG5, $09, nRst, nA4, $03, nEb5, nG5
+	dc.b nA4, nD5, nG5, nRst, nG5, nRst, $09, nG5
+	dc.b $03, nRst, $09, nG5, $03, nRst, nG5, nRst
+	dc.b nA4, nD5, nFs5, nRst, nFs5, nRst, $09, nFs5
+	dc.b $03, nRst, $09, nFs5, $03, nRst, $09, nFs5
+	dc.b $03, nRst, nRst, $06, nBb5, $03, nG5, nD5
+	dc.b $0C, nRst, $06, nA5, $03, nF5, nC5, $0C
+	dc.b nRst, $09, nG5, $03, nD5, nBb4, $09, nRst
+	dc.b $06, nD5, $03, nAb4, nEb4, $0C, nE5, $04
+	dc.b nC5, nA4, nE4, nC4, nE4, nA4, nC5, nE5
+	dc.b nA5, nC6, nE6, nFs5, nD5, nA4, nFs4, nD4
+	dc.b nA3, nD4, nFs4, nA4, nD5, nFs5, nA5, nG4
+	dc.b nG5, nG4, nG5, nG4, nG5, nBb4, nBb5, nBb4
+	dc.b nBb5, nBb4, nBb5, nD5, nD6, nD5, nD6, nD5
+	dc.b nD6, nFs5, nFs6, nFs5, nFs6, nFs5, nFs6, nG5
+	dc.b nG6, nG5, nG6, nG5, nG6, nG5, $06, nA5
+	dc.b nG5, nFs5, nFs5, $04, nFs6, nFs5, nFs6, nFs5
+	dc.b nFs6, nFs5, nFs6, nFs5, nFs6, nFs5, nFs6, nBb5
+	dc.b nBb6, nBb5, nBb6, nBb5, nBb6, nA5, nA6, nA5
+	dc.b nA6, nA5, nA6, nG5, nG6, nG5, nG6, nG5
+	dc.b nG6, nD5, nD6, nD5, nD6, nD5, nD6, nC5
+	dc.b nC6, nC5, nC6, nC5, nC6, nC5, $06, nD5
+	dc.b nC5, nBb4, nBb4, $04, nBb5, nBb4, nBb5, nBb4
+	dc.b nBb5, nA4, nA5, nA4, nA5, nA4, nA5
+	saVol		$01
+	saTranspose	$ED
+	sGate	$06
+	sModAMPS	$06, $01, $03, $04
+	sVoice		$07
+	dc.b nBb5, $06, nBb5, nRst, nBb5, nRst, nBb5, nBb5
+	dc.b nA5, nRst, nA5, nRst, nA5, nA5, nA5, nRst
+	dc.b nA5, nRst, nA5, nA5, nG5, nRst, nG5, nRst
+	dc.b nG5, nBb5, nBb5, nRst, nBb5, nRst, nBb5, nBb5
+	dc.b nA5, nRst, nA5, nRst, nC6, nA5, nA5, nRst
+	dc.b nA5, nRst, nA5, nA5, nG5, nRst, nG5, nRst
+	dc.b nD6
+	saVol		$FA
+	sModAMPS	$06, $01, $04, $04
+	sVoice		$07
+	sGate	$07
+	dc.b nD5, nBb4, $0C, nG4, nBb4, nD5, $06, nD5
+	dc.b nC5, $0C, nC5, nC5, nC5, $06, nC5, nA4
+	dc.b $0C, nF4, nA4, nC5, $06, nC5, nB4, $0C
+	sGate	$00
+	dc.b nB4, $06
+	saTranspose	$13
+	saVol		$06
+	sModAMPS	$0B, $01, $04, $06
+	saVol		$04
+	sVoice		$04
+	dc.b nG5, $04, nA5, nBb5, nC6, nD6, nF6, nG6
+	dc.b $18, nF6, nD6, nC6
+	saVol		$FC
+	saVol		$FD
+	sVoice		$0C
+	dc.b nC5, $06, nA4, $0C, nF4, nA4, nC5, $06
+	dc.b nC5, nB4, $0C, nB4, nB4, nB4, $06
+	saVol		$03
+	sPan		spLeft
+	saVol		$F7
+	sModAMPS	$0B, $02, $03, $05
+	sVoice		$02
+	dc.b nG4, nA4, $0C, nE5, nB5, $12, nA5, $0C
+	dc.b nD5
+	sPan		spCenter
+	saVol		$09
+	sModAMPS	$0C, $01, $04, $06
+	saVol		$FD
+	sVoice		$0F
+	dc.b nC5, $04, nEb5, nC5, nG4, nBb4, nB4, nC5
+	dc.b $08, nC6, $04, nEb5, $08, nEb6, $04, nF5
+	dc.b $08, nF6, $04, nFs5, $08, nFs6, $04, nG5
+	dc.b $08, nG6, $04, nBb5, $08, nBb6, $04, nC6
+	dc.b nEb6, nC6, nG5, nBb5, nB5, nC6, $08, nBb5
+	dc.b nRst, $04, nBb6, nG5, $08, nG6, $04, nFs5
+	dc.b $08, nFs6, $04, nF5, $08, nF6, $04, nEb5
+	dc.b $08, nEb6, $04, nC5, nEb5, nC5, nG4, nBb4
+	dc.b nB4, nC5, $08, nC6, $04, nEb5, $08, nEb6
+	dc.b $04, nF5, $08, nF6, $04, nFs5, $08, nFs6
+	dc.b $04, nG5, $08, nG6, $04, nBb5, $08, nBb6
+	dc.b $04, nC6, nEb6, nC6, nG5, nBb5, nB5, nC6
+	dc.b $08, nG6, $10, nEb6, $0C, nD6, nC6, $08
+	dc.b nBb5, $04
+	saVol		$03
+	sVoice		$08
+	dc.b nG5, nAb5, nBb5, nC6, nRst
+	saVol		$FF
+	sVoice		$03
+	dc.b nC5, $0C, nBb4, $04, nC5, $08, nEb5, $04
+	dc.b nRst, $08, nC5, $04, nG5, nRst, $08, nG4
+	dc.b $04, nRst, $08
+	saVol		$01
+	sVoice		$08
+	dc.b nC6, nF6, $04, nRst, $08, nEb6, $0C
+	saVol		$FF
+	sVoice		$03
+	dc.b nC5, nBb4, $04, nC5, $08, nEb5, $04, nRst
+	dc.b $08, nC5, $04, nG5, nRst, $08, nG4, $04
+	dc.b nRst, $08
+	saVol		$01
+	sVoice		$08
+	dc.b nC6, nF6, $04, nRst, $08, nEb6, $0C
+	saVol		$FF
+	sVoice		$03
+	dc.b nC5, nBb4, $04, nC5, $08, nEb5, $04, nRst
+	dc.b $08, nC5, $04, nG5, nRst, $08, nG4, $04
+	dc.b nRst, $08
+	saVol		$01
+	saTranspose	$F4
+	sVoice		$02
+	dc.b nG6, $0C, nG5, nEb5, $18, nD5, nEb5, nF5
+	dc.b nF6, nD6, nC6, $0C, nC7, $18
+	saTranspose	$0C
+	saVol		$03
+	sVoice		$0A
+	dc.b nG4, $03, nC5, nD5, nE5
+	saVol		$FD
+	sJump		SouthTownTheme_FM3
+	dc.b $F2	; Unused
+
+SouthTownTheme_FM4:
+	dc.b nRst, $06
+	saVol		$08
+	sJump		SouthTownTheme_FM3
+	dc.b $F2	; Unused
+
+SouthTownTheme_FM5:
+	dc.b nRst, $09
+	saVol		$0C
+	sJump		SouthTownTheme_FM1
+	dc.b $F2	; Unused
+
+SouthTownTheme_PSG1:
+	sVolEnv	v05
+	sModAMPS	$12, $02, $02, $03
+	dc.b nBb4, $18, nA4, nG4, $12, nF4, $1E, nBb4
+	dc.b $18, nA4, nG4, $12, nFs4, $1E, nRst, $30
+	dc.b nRst, nRst, nRst
+	sVolEnv	v07
+	dc.b nBb4, $18, nD5, nG5, nA5, nBb5, $1E, nC6
+	dc.b $06, nBb5, nA5, $30, sHold, $06, nD6, $18
+	dc.b nC6, nBb5
+	saVol	$08
+	dc.b nD6, nC6, $1E, nD6, $06, nC6, nBb5, $1E
+	dc.b nA5, $18
+	saVol	-$08
+	dc.b nG4, nBb4, nD5, nFs5, nG5, $1E, nA5, $06
+	dc.b nG5, nFs5, $30, sHold, $06
+	saVol	$08
+	dc.b nD6, $18, nC6, nBb5, nD6
+	saVol	-$08
+	dc.b nG6, $1E, nA6, $06, nG6, nFs6, $1E, nD6
+	dc.b $18
+	saTranspose	$0C
+	sVolEnv	v05
+	dc.b nRst, $0C, nG5, nD5, $06, nRst, $12, nF5
+	dc.b $0C, nC5, $06, nRst, $12, nF5, $0C, nC5
+	dc.b $06, nRst, nC5, $03, nD5, nC5, nD5, nC5
+	dc.b nD5, nC5, nB4, $0F, nG4, $06, nD5, nG5
+	dc.b $0C, nD5, $06, nRst, nF4, nC5, nF5, $0C
+	dc.b nC5, $06, nRst, nF4, nC5, nF5, $0C, nC5
+	dc.b $06, nRst, nC5, $03, nD5, nC5, nD5, nC5
+	dc.b nD5, nC5, nB4, $0F
+	saTranspose	$F4
+	sVolEnv	v08
+	dc.b nBb5, $06, nRst, nG5, $0C, nA5, $06, nBb5
+	dc.b $0C, nD6, $06, nRst, nD6, nRst, nC6, $1E
+	dc.b nD7, $06, nRst, nC7, nRst, nBb6, nRst, nA6
+	dc.b nG6, $30, sHold, $06, nRst, $0C, nG5, nA5
+	dc.b $06, nBb5, $0C, nD6, $06, nRst, nD6, nRst
+	dc.b nD6, nRst, nD6, nRst, nC6, nD6, $12, nC6
+	dc.b $03, nD6, nC6, $12, nD5, $03, nG5, nC6
+	dc.b $12, nB5, $03, nA5, nB5, $18, nRst, $30
+	dc.b nRst, $18
+	sVolEnv	v07
+	sModAMPS	$11, $01, $10, $60
+	dc.b nRst, $06, nEb6, $12
+	sModAMPS	$12, $02, $02, $03
+	dc.b nD6, $06, nRst, nC6, $08, nRst, $04, nBb5
+	dc.b $06, nRst, nBb5, nC6, $1E, nRst, $06, nEb6
+	dc.b $12, nD6, $06, nRst, nC6, $08, nRst, $04
+	dc.b nBb5, $06, nRst, nBb5, nC6, $1E, nRst, $06
+	dc.b nEb6, $12, nD6, $06, nRst, nC6, $08, nRst
+	dc.b $04, nBb5, $06, nRst, nBb5, nC6, $12, nG5
+	dc.b $0C, nEb6, $12, nD6, $06, nRst, $0C, nG5
+	dc.b nEb6, $12, nD6
+	sVolEnv	v05
+	dc.b nD7, $06, nEb7, $03, nF7, nG7, $08
+	sVolEnv	v07
+	sModAMPS	$11, $01, $10, $60
+	dc.b nEb6, $10
+	sModAMPS	$12, $02, $02, $03
+	dc.b nD6, $08, nRst, $04, nC6, $08, nRst, $04
+	dc.b nBb5, $08, nRst, $04, nBb5, $08, nC6, $04
+	sVolEnv	v05
+	dc.b nG6, $08, nC7, $04, nRst, $08, nBb6, $0C
+	sVolEnv	v07
+	sModAMPS	$11, $01, $10, $60
+	dc.b nEb6, $10
+	sModAMPS	$12, $02, $02, $03
+	dc.b nD6, $08, nRst, $04, nC6, $08, nRst, $04
+	dc.b nBb5, $08, nRst, $04, nBb5, $08, nC6, $04
+	sVolEnv	v05
+	dc.b nG6, $08, nC7, $04, nRst, $08, nBb6, $0C
+	sVolEnv	v07
+	sModAMPS	$11, $01, $10, $60
+	dc.b nEb6, $10
+	sModAMPS	$12, $02, $02, $03
+	dc.b nD6, $08, nRst, $04, nC6, $08, nRst, $04
+	dc.b nBb5, $08, nRst, $04, nBb5, $08, nC6, $10
+	dc.b nG5, $0C, nEb6, $18, nD6, nEb6, nBb5
+	sVolEnv	v0C
+	dc.b nD6, sHold, nD6, $12
+	sVolEnv	v07
+	dc.b nC6, $03, nB5, nC6, $24, nD6, $03, nE6
+	dc.b nF6, nG6
+	sJump		SouthTownTheme_PSG1
+	dc.b $F2	; Unused
+
+SouthTownTheme_PSG2:
+	dc.b nRst, $06
+	saVol	$10
+	sJump		SouthTownTheme_PSG1
+	dc.b $F2	; Unused
+
+SouthTownTheme_PSG3:
+	sNoisePSG	$E7
+	dc.b nRst, $30, nRst, $24, nA5, $04, nRst, $08
+	dc.b nRst, $30, nRst, nRst, $06, nA5, nA5, nRst
+	dc.b $18, nA5, $06, nRst, $0C, nA5, $06, nRst
+	dc.b $0C, nA5, $06, nRst, $0C, nRst, $06, nA5
+	dc.b nA5, nRst, $18, nA5, $06, nRst, $0C, nA5
+	dc.b $06, nRst, $0C, nA5, $06, nRst, $0C, nA5
+	dc.b nA5, nA5, nRst, $14, nA5, $0C, nRst, $04
+	dc.b nA5, $0C, nA5, nA5, nA5, nA5, $18, nRst
+	dc.b $08, nA5, $0C, nRst, $04, nA5, $0C, nA5
+	dc.b nA5, nA5, nA5, $18, nRst, $08, nA5, $0C
+	dc.b nRst, $04, nA5, $0C, nA5, nA5, nA5, nA5
+	dc.b $18, nRst, $08, nA5, $0C, nRst, $04, nA5
+	dc.b $0C, nA5, nA5, nA5, nA5, nRst, $14, nA5
+	dc.b $0C, nRst, $04, nA5, $0C, nA5, nA5, nA5
+	dc.b nA5, $18, nRst, $08, nA5, $0C, nRst, $04
+	dc.b nA5, $0C, nA5, nA5, nA5, nA5, $18, nRst
+	dc.b $08, nA5, $0C, nRst, $04, nA5, $0C, nA5
+	dc.b nA5, nA5, nA5, $18, nRst, $08, nA5, $0C
+	dc.b nRst, $04, nA5, $0C, nA5, nRst, $1E, nA5
+	dc.b $06, nRst, $1E, nA5, $06, nRst, $18, nRst
+	dc.b $06, nA5, nRst, $1E, nA5, $06, nRst, $1E
+	dc.b nA5, $06, nRst, $0C, nRst, $12, nA5, $06
+	dc.b nRst, $1E, nA5, $06, nRst, $24, nA5, $0C
+	dc.b nA5, nA5, nA5, nA5, nA5, nA5, nA5, nA5
+	dc.b nA5, nA5, nA5, nA5, nA5, nA5, nA5, nA5
+	dc.b nA5, nA5, nA5, nA5, nA5, nA5, nA5, nA5
+	dc.b nA5, nA5, nA5, nA5, nA5, nA5, nA5, nRst
+	dc.b nA5, $18, $0C, nA5, nA5, nA5, nA5, nA5
+	dc.b $08, $04, nA5, $0C, nA5, nA5, nA5, $08
+	dc.b $04, nA5, $0C, nA5, nA5, nA5, $08, $04
+	dc.b nA5, $0C, nA5, nA5, nA5, $08, $04, nA5
+	dc.b $0C, nA5, nA5, nA5, $08, $04, nA5, $0C
+	dc.b nA5, nA5, nA5, $08, $04, nA5, $0C, nA5
+	dc.b nA5, nA5, $08, $04, nA5, $0C, nA5, nA5
+	dc.b nA5, $08, $04, nA5, $0C, nA5, nA5, nA5
+	dc.b $08, $04, nA5, $0C, nA5, nA5, nA5, $08
+	dc.b $04, nA5, $0C, nA5, nA5, nA5, $08, $04
+	dc.b nA5, $0C, nA5, nA5, nA5, $08, $04, nA5
+	dc.b $0C, nA5, nA5, nA5, $08, $04, nA5, $0C
+	dc.b nA5, nA5, nA5, $08, $04, nA5, $0C, nA5
+	dc.b nA5, nA5, $08, $04, nA5, $0C, nA5, nA5
+	dc.b nA5, $08, $04, nA5, $0C, nA5, nA5, nA5
+	dc.b $08, $04, nA5, $0C, nRst, $08, nA5, $10
+	dc.b $18
+	sJump		SouthTownTheme_PSG3
+	dc.b $F2	; Unused
+
+SouthTownTheme_DAC1:
+	sStop
+
+SouthTownTheme_DAC2:
+	dc.b dKickS3, $18, dKickS3, dKickS3, $12, dKickS3, dDanceKick, $08
+	dc.b dLooseSnare, $04, dKickS3, $18, dKickS3, dKickS3, $12, dLooseSnare
+	dc.b $06, dKickS3, $08, dLooseSnare, $04, dLooseSnare, dFloorTomS2, dMidTom
+	dc.b dKickS3, $1E, $06, $0C, dHighTom, $12, dMidTom, dFloorTomS2
+	dc.b $04, dKickS3, dKickS3, dKickS3, $1E, $06, dKickS3, nRst
+	dc.b dHighTom, $12, dMidTom, dFloorTomS2, $03, dLooseSnare, dLooseSnare, dLooseSnare
+
+SouthTownTheme_Loop2:
+	dc.b dKickS3, $08, $04, dLooseSnare, $0C, dKickS3, dLooseSnare, dKickS3
+	dc.b dLooseSnare, dKickS3, dLooseSnare, dKickS3, $08, $04, dLooseSnare, $0C
+	dc.b dKickS3, dLooseSnare, dKickS3, dLooseSnare, dKickS3, dLooseSnare, $08, $04
+	sLoop		$00, $03, SouthTownTheme_Loop2
+	dc.b dKickS3, $08, $04, dLooseSnare, $0C, dKickS3, dLooseSnare, dKickS3
+	dc.b dLooseSnare, dKickS3, dLooseSnare, dKickS3, $08, $04, dLooseSnare, $0C
+	dc.b dKickS3, dLooseSnare, dKickS3, dLooseSnare, dKickS3, $08, $04, dLooseSnare
+	dc.b $08, dKickS3, $04, dKickS3, $06, dKick, $06, dKickS3
+	dc.b $06, nRst, $0C, dKickS3, $06, dKick, $06, nRst
+	dc.b $0C, dKickS3, $06, dKick, $06, dKickS3, $06, dKickS3
+	dc.b dKick, $06, dKickS3, $06, nRst, nRst, dKickS3, dKick
+	dc.b $06, nRst, $0C, dKickS3, $06
+
+SouthTownTheme_Loop3:
+	dc.b dKick, $06, dKickS3, $06, dKickS3, dKick, $06, dKickS3
+	dc.b $06, nRst
+	sLoop		$00, $03, SouthTownTheme_Loop3
+	dc.b dKick, $06, dKickS3, $06, dKickS3, dKick, $06, dKickS3
+	dc.b $06, dKickS3, dLooseSnare, $04, dLooseSnare, dLooseSnare, dKickS3, $0C
+	dc.b dLooseSnare, dKickS3, dLooseSnare, dKickS3, $0C, dLooseSnare, dKickS3, $04
+	dc.b dKickS3, dKickS3, dLooseSnare, $0C, dKickS3, dLooseSnare, dKickS3, $04
+	dc.b dKickS3, dKickS3, dLooseSnare, $0C, dKickS3, $06, dDanceKick, dMidTom
+	dc.b $0C, dFloorTomS2, $04, dHighTom, dMidTom, dLowTom, dKickS3, dKickS3
+	dc.b dKickS3, $0C, dLooseSnare, dKickS3, dLooseSnare, dKickS3, dLooseSnare, dKickS3
+	dc.b dLooseSnare, dKickS3, dLooseSnare, dKickS3, $06, dDanceKick, dMidTom, $0C
+	dc.b dKickS3, $04, dKickS3, dKickS3, dLooseSnare, $0C, dKickS3, $06
+	dc.b dMidTom, dLowTom, $0C, dKickS3, dKickS3, dKickS3, dKickS3, dLooseSnare
+	dc.b $04, dLooseSnare, dLooseSnare, dLooseSnare, dLooseSnare, dLooseSnare, dKickS3, $08
+	dc.b dKickS3, $04, dLooseSnare, $0C, dKickS3, dLooseSnare, dKickS3, $04
+	dc.b dLowerTom, dLooseSnare, dKickS3, $08, dLooseSnare, $04, $0C, dKickS3
+	dc.b $08, dLowTom, $04, dKickS3, $0C, dLooseSnare, dKickS3, dLooseSnare
+	dc.b dLooseSnare, $04, dKickS3, dLooseSnare, dKickS3, $08, dLooseSnare, $04
+	dc.b dLooseSnare, $0C, dKickS3, $08, dLowTom, $04, dKickS3, $08
+	dc.b dKickS3, $04, dLooseSnare, $0C, dKickS3, dLooseSnare, dKickS3, $08
+	dc.b dLooseSnare, $04, dKickS3, $08, dLooseSnare, $04, dLooseSnare, $0C
+	dc.b dKickS3, $08, dLowTom, $04, dKickS3, $0C, dLooseSnare, dKickS3
+	dc.b dLooseSnare, dLooseSnare, $04, dKickS3, dLooseSnare, dKickS3, $08, dLooseSnare
+	dc.b $04, dLooseSnare, dKickS3, dLooseSnare, dKickS3, $08, dLowTom, $04
+	dc.b dKickS3, $08, dKickS3, $04, dLooseSnare, $0C, dKickS3, dLooseSnare
+	dc.b dKickS3, $04, dLowerTom, dLooseSnare, dKickS3, $08, dLooseSnare, $04
+	dc.b dLooseSnare, $0C, dKickS3, $08, dLowTom, $04, dKickS3, $0C
+	dc.b dLooseSnare, dKickS3, dLooseSnare, dLooseSnare, $04, dKickS3, dLooseSnare, dKickS3
+	dc.b $08, dLooseSnare, $04, $0C, dKickS3, $08, dLowTom, $04
+	dc.b dKickS3, $08, $04, dLooseSnare, $0C, dKickS3, dLooseSnare, dKickS3
+	dc.b $04, dLowerTom, dLooseSnare, dKickS3, $08, dLooseSnare, $04, $0C
+	dc.b dKickS3, $08, dLowTom, $04, dLooseSnare, dKickS3, dLooseSnare, dKickS3
+	dc.b $08, dLooseSnare, $04, dLooseSnare, $0C, dKickS3, $08, dLowTom
+	dc.b $04, dLooseSnare, dKickS3, dLooseSnare, dKickS3, $08, dLooseSnare, $04
+	dc.b dLooseSnare, $0C, dKickS3, $08, dLowTom, $04, dKickS3, dKickS3
+	dc.b dKickS3, dLooseSnare, dLooseSnare, dLooseSnare, dKickS3, dKickS3, dKickS3, dLooseSnare
+	dc.b dLooseSnare, dLooseSnare, dHighTom, $14, dKickS3, $04, dMidTom, $18
+	sJump		SouthTownTheme_DAC2
+	dc.b $F2	; Unused

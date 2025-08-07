@@ -1,0 +1,49 @@
+Countdown_PLC:
+Countdown_PLC_0: 	dc.w Countdown_PLC_20-Countdown_PLC
+Countdown_PLC_2: 	dc.w Countdown_PLC_23-Countdown_PLC
+Countdown_PLC_4: 	dc.w Countdown_PLC_26-Countdown_PLC
+Countdown_PLC_6: 	dc.w Countdown_PLC_29-Countdown_PLC
+Countdown_PLC_8: 	dc.w Countdown_PLC_2C-Countdown_PLC
+Countdown_PLC_A: 	dc.w Countdown_PLC_2F-Countdown_PLC
+Countdown_PLC_C: 	dc.w Countdown_PLC_32-Countdown_PLC
+Countdown_PLC_E: 	dc.w Countdown_PLC_35-Countdown_PLC
+Countdown_PLC_10: 	dc.w Countdown_PLC_38-Countdown_PLC
+Countdown_PLC_12: 	dc.w Countdown_PLC_3B-Countdown_PLC
+Countdown_PLC_14: 	dc.w Countdown_PLC_3E-Countdown_PLC
+Countdown_PLC_16: 	dc.w Countdown_PLC_41-Countdown_PLC
+Countdown_PLC_18: 	dc.w Countdown_PLC_44-Countdown_PLC
+Countdown_PLC_1A: 	dc.w Countdown_PLC_47-Countdown_PLC
+Countdown_PLC_1C: 	dc.w Countdown_PLC_4A-Countdown_PLC
+Countdown_PLC_1E: 	dc.w Countdown_PLC_4D-Countdown_PLC
+Countdown_PLC_20: 	dc.b $1
+	dc.b $0, $0
+Countdown_PLC_23: 	dc.b $1
+	dc.b $0, $1
+Countdown_PLC_26: 	dc.b $1
+	dc.b $0, $2
+Countdown_PLC_29: 	dc.b $1
+	dc.b $30, $3
+Countdown_PLC_2C: 	dc.b $1
+	dc.b $30, $7
+Countdown_PLC_2F: 	dc.b $1
+	dc.b $50, $B
+Countdown_PLC_32: 	dc.b $1
+	dc.b $50, $11
+Countdown_PLC_35: 	dc.b $1
+	dc.b $50, $17
+Countdown_PLC_38: 	dc.b $1
+	dc.b $50, $1D
+Countdown_PLC_3B: 	dc.b $1
+	dc.b $50, $23
+Countdown_PLC_3E: 	dc.b $1
+	dc.b $50, $29
+Countdown_PLC_41: 	dc.b $1
+	dc.b $50, $2F
+Countdown_PLC_44: 	dc.b $1
+	dc.b $50, $35
+Countdown_PLC_47: 	dc.b $1
+	dc.b $50, $3B
+Countdown_PLC_4A: 	dc.b $1
+	dc.b $50, $41
+Countdown_PLC_4D: 	dc.b $0
+	even

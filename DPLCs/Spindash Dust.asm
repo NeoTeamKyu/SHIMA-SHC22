@@ -1,0 +1,101 @@
+Dust_PLC:
+Dust_PLC_0: 	dc.w Dust_PLC_46-Dust_PLC
+Dust_PLC_2: 	dc.w Dust_PLC_47-Dust_PLC
+Dust_PLC_4: 	dc.w Dust_PLC_4A-Dust_PLC
+Dust_PLC_6: 	dc.w Dust_PLC_4D-Dust_PLC
+Dust_PLC_8: 	dc.w Dust_PLC_50-Dust_PLC
+Dust_PLC_A: 	dc.w Dust_PLC_53-Dust_PLC
+Dust_PLC_C: 	dc.w Dust_PLC_56-Dust_PLC
+Dust_PLC_E: 	dc.w Dust_PLC_59-Dust_PLC
+Dust_PLC_10: 	dc.w Dust_PLC_5C-Dust_PLC
+Dust_PLC_12: 	dc.w Dust_PLC_5D-Dust_PLC
+Dust_PLC_14: 	dc.w Dust_PLC_5E-Dust_PLC
+Dust_PLC_16: 	dc.w Dust_PLC_61-Dust_PLC
+Dust_PLC_18: 	dc.w Dust_PLC_64-Dust_PLC
+Dust_PLC_1A: 	dc.w Dust_PLC_69-Dust_PLC
+Dust_PLC_1C: 	dc.w Dust_PLC_6C-Dust_PLC
+Dust_PLC_1E: 	dc.w Dust_PLC_6F-Dust_PLC
+Dust_PLC_20: 	dc.w Dust_PLC_72-Dust_PLC
+Dust_PLC_22: 	dc.w Dust_PLC_75-Dust_PLC
+Dust_PLC_24: 	dc.w Dust_PLC_76-Dust_PLC
+Dust_PLC_26: 	dc.w Dust_PLC_77-Dust_PLC
+Dust_PLC_28: 	dc.w Dust_PLC_78-Dust_PLC
+Dust_PLC_2A: 	dc.w Dust_PLC_79-Dust_PLC
+Dust_PLC_2C: 	dc.w Dust_PLC_7C-Dust_PLC
+Dust_PLC_2E: 	dc.w Dust_PLC_7F-Dust_PLC
+Dust_PLC_30: 	dc.w Dust_PLC_82-Dust_PLC
+Dust_PLC_32: 	dc.w Dust_PLC_85-Dust_PLC
+Dust_PLC_34: 	dc.w Dust_PLC_88-Dust_PLC
+Dust_PLC_36: 	dc.w Dust_PLC_8B-Dust_PLC
+Dust_PLC_38: 	dc.w Dust_PLC_8E-Dust_PLC
+Dust_PLC_3A: 	dc.w Dust_PLC_91-Dust_PLC
+Dust_PLC_3C: 	dc.w Dust_PLC_94-Dust_PLC
+Dust_PLC_3E: 	dc.w Dust_PLC_97-Dust_PLC
+Dust_PLC_40: 	dc.w Dust_PLC_9A-Dust_PLC
+Dust_PLC_42: 	dc.w Dust_PLC_9D-Dust_PLC
+Dust_PLC_44: 	dc.w Dust_PLC_A0-Dust_PLC
+Dust_PLC_46: 	dc.b $0
+Dust_PLC_47: 	dc.b $1
+	dc.b $10, $0
+Dust_PLC_4A: 	dc.b $1
+	dc.b $10, $2
+Dust_PLC_4D: 	dc.b $1
+	dc.b $60, $4
+Dust_PLC_50: 	dc.b $1
+	dc.b $50, $B
+Dust_PLC_53: 	dc.b $1
+	dc.b $A0, $11
+Dust_PLC_56: 	dc.b $1
+	dc.b $50, $1C
+Dust_PLC_59: 	dc.b $1
+	dc.b $30, $22
+Dust_PLC_5C: 	dc.b $0
+Dust_PLC_5D: 	dc.b $0
+Dust_PLC_5E: 	dc.b $1
+	dc.b $40, $26
+Dust_PLC_61: 	dc.b $1
+	dc.b $50, $2B
+Dust_PLC_64: 	dc.b $2
+	dc.b $30, $31
+	dc.b $10, $35
+Dust_PLC_69: 	dc.b $1
+	dc.b $60, $37
+Dust_PLC_6C: 	dc.b $1
+	dc.b $70, $3E
+Dust_PLC_6F: 	dc.b $1
+	dc.b $80, $46
+Dust_PLC_72: 	dc.b $1
+	dc.b $60, $4F
+Dust_PLC_75: 	dc.b $0
+Dust_PLC_76: 	dc.b $0
+Dust_PLC_77: 	dc.b $0
+Dust_PLC_78: 	dc.b $0
+Dust_PLC_79: 	dc.b $1
+	dc.b $F0, $56
+Dust_PLC_7C: 	dc.b $1
+	dc.b $30, $66
+Dust_PLC_7F: 	dc.b $1
+	dc.b $40, $6A
+Dust_PLC_82: 	dc.b $1
+	dc.b $70, $6F
+Dust_PLC_85: 	dc.b $1
+	dc.b $70, $77
+Dust_PLC_88: 	dc.b $1
+	dc.b $80, $7F
+Dust_PLC_8B: 	dc.b $1
+	dc.b $80, $88
+Dust_PLC_8E: 	dc.b $1
+	dc.b $80, $91
+Dust_PLC_91: 	dc.b $1
+	dc.b $40, $9A
+Dust_PLC_94: 	dc.b $1
+	dc.b $40, $9F
+Dust_PLC_97: 	dc.b $1
+	dc.b $A0, $A4
+Dust_PLC_9A: 	dc.b $1
+	dc.b $B0, $AF
+Dust_PLC_9D: 	dc.b $1
+	dc.b $A0, $BB
+Dust_PLC_A0: 	dc.b $1
+	dc.b $50, $C6
+	even

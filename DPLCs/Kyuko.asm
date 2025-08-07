@@ -1,0 +1,513 @@
+Kyuko_PLC:
+Kyuko_PLC_0: 	dc.w Kyuko_PLC_118-Kyuko_PLC
+Kyuko_PLC_2: 	dc.w Kyuko_PLC_119-Kyuko_PLC
+Kyuko_PLC_4: 	dc.w Kyuko_PLC_11E-Kyuko_PLC
+Kyuko_PLC_6: 	dc.w Kyuko_PLC_123-Kyuko_PLC
+Kyuko_PLC_8: 	dc.w Kyuko_PLC_128-Kyuko_PLC
+Kyuko_PLC_A: 	dc.w Kyuko_PLC_12D-Kyuko_PLC
+Kyuko_PLC_C: 	dc.w Kyuko_PLC_132-Kyuko_PLC
+Kyuko_PLC_E: 	dc.w Kyuko_PLC_137-Kyuko_PLC
+Kyuko_PLC_10: 	dc.w Kyuko_PLC_13C-Kyuko_PLC
+Kyuko_PLC_12: 	dc.w Kyuko_PLC_141-Kyuko_PLC
+Kyuko_PLC_14: 	dc.w Kyuko_PLC_146-Kyuko_PLC
+Kyuko_PLC_16: 	dc.w Kyuko_PLC_14B-Kyuko_PLC
+Kyuko_PLC_18: 	dc.w Kyuko_PLC_150-Kyuko_PLC
+Kyuko_PLC_1A: 	dc.w Kyuko_PLC_155-Kyuko_PLC
+Kyuko_PLC_1C: 	dc.w Kyuko_PLC_158-Kyuko_PLC
+Kyuko_PLC_1E: 	dc.w Kyuko_PLC_15B-Kyuko_PLC
+Kyuko_PLC_20: 	dc.w Kyuko_PLC_160-Kyuko_PLC
+Kyuko_PLC_22: 	dc.w Kyuko_PLC_165-Kyuko_PLC
+Kyuko_PLC_24: 	dc.w Kyuko_PLC_168-Kyuko_PLC
+Kyuko_PLC_26: 	dc.w Kyuko_PLC_16B-Kyuko_PLC
+Kyuko_PLC_28: 	dc.w Kyuko_PLC_170-Kyuko_PLC
+Kyuko_PLC_2A: 	dc.w Kyuko_PLC_175-Kyuko_PLC
+Kyuko_PLC_2C: 	dc.w Kyuko_PLC_178-Kyuko_PLC
+Kyuko_PLC_2E: 	dc.w Kyuko_PLC_17B-Kyuko_PLC
+Kyuko_PLC_30: 	dc.w Kyuko_PLC_180-Kyuko_PLC
+Kyuko_PLC_32: 	dc.w Kyuko_PLC_185-Kyuko_PLC
+Kyuko_PLC_34: 	dc.w Kyuko_PLC_18A-Kyuko_PLC
+Kyuko_PLC_36: 	dc.w Kyuko_PLC_18F-Kyuko_PLC
+Kyuko_PLC_38: 	dc.w Kyuko_PLC_194-Kyuko_PLC
+Kyuko_PLC_3A: 	dc.w Kyuko_PLC_199-Kyuko_PLC
+Kyuko_PLC_3C: 	dc.w Kyuko_PLC_19C-Kyuko_PLC
+Kyuko_PLC_3E: 	dc.w Kyuko_PLC_19F-Kyuko_PLC
+Kyuko_PLC_40: 	dc.w Kyuko_PLC_1A4-Kyuko_PLC
+Kyuko_PLC_42: 	dc.w Kyuko_PLC_1A9-Kyuko_PLC
+Kyuko_PLC_44: 	dc.w Kyuko_PLC_1AC-Kyuko_PLC
+Kyuko_PLC_46: 	dc.w Kyuko_PLC_1AF-Kyuko_PLC
+Kyuko_PLC_48: 	dc.w Kyuko_PLC_1B4-Kyuko_PLC
+Kyuko_PLC_4A: 	dc.w Kyuko_PLC_1B9-Kyuko_PLC
+Kyuko_PLC_4C: 	dc.w Kyuko_PLC_1BC-Kyuko_PLC
+Kyuko_PLC_4E: 	dc.w Kyuko_PLC_1BF-Kyuko_PLC
+Kyuko_PLC_50: 	dc.w Kyuko_PLC_1C4-Kyuko_PLC
+Kyuko_PLC_52: 	dc.w Kyuko_PLC_1C9-Kyuko_PLC
+Kyuko_PLC_54: 	dc.w Kyuko_PLC_1CE-Kyuko_PLC
+Kyuko_PLC_56: 	dc.w Kyuko_PLC_1D3-Kyuko_PLC
+Kyuko_PLC_58: 	dc.w Kyuko_PLC_1D8-Kyuko_PLC
+Kyuko_PLC_5A: 	dc.w Kyuko_PLC_1DD-Kyuko_PLC
+Kyuko_PLC_5C: 	dc.w Kyuko_PLC_1E2-Kyuko_PLC
+Kyuko_PLC_5E: 	dc.w Kyuko_PLC_1E7-Kyuko_PLC
+Kyuko_PLC_60: 	dc.w Kyuko_PLC_1EC-Kyuko_PLC
+Kyuko_PLC_62: 	dc.w Kyuko_PLC_1F1-Kyuko_PLC
+Kyuko_PLC_64: 	dc.w Kyuko_PLC_1F6-Kyuko_PLC
+Kyuko_PLC_66: 	dc.w Kyuko_PLC_1FB-Kyuko_PLC
+Kyuko_PLC_68: 	dc.w Kyuko_PLC_200-Kyuko_PLC
+Kyuko_PLC_6A: 	dc.w Kyuko_PLC_205-Kyuko_PLC
+Kyuko_PLC_6C: 	dc.w Kyuko_PLC_20A-Kyuko_PLC
+Kyuko_PLC_6E: 	dc.w Kyuko_PLC_20F-Kyuko_PLC
+Kyuko_PLC_70: 	dc.w Kyuko_PLC_214-Kyuko_PLC
+Kyuko_PLC_72: 	dc.w Kyuko_PLC_219-Kyuko_PLC
+Kyuko_PLC_74: 	dc.w Kyuko_PLC_21E-Kyuko_PLC
+Kyuko_PLC_76: 	dc.w Kyuko_PLC_223-Kyuko_PLC
+Kyuko_PLC_78: 	dc.w Kyuko_PLC_226-Kyuko_PLC
+Kyuko_PLC_7A: 	dc.w Kyuko_PLC_229-Kyuko_PLC
+Kyuko_PLC_7C: 	dc.w Kyuko_PLC_22C-Kyuko_PLC
+Kyuko_PLC_7E: 	dc.w Kyuko_PLC_22F-Kyuko_PLC
+Kyuko_PLC_80: 	dc.w Kyuko_PLC_234-Kyuko_PLC
+Kyuko_PLC_82: 	dc.w Kyuko_PLC_237-Kyuko_PLC
+Kyuko_PLC_84: 	dc.w Kyuko_PLC_23A-Kyuko_PLC
+Kyuko_PLC_86: 	dc.w Kyuko_PLC_23D-Kyuko_PLC
+Kyuko_PLC_88: 	dc.w Kyuko_PLC_242-Kyuko_PLC
+Kyuko_PLC_8A: 	dc.w Kyuko_PLC_247-Kyuko_PLC
+Kyuko_PLC_8C: 	dc.w Kyuko_PLC_24A-Kyuko_PLC
+Kyuko_PLC_8E: 	dc.w Kyuko_PLC_24F-Kyuko_PLC
+Kyuko_PLC_90: 	dc.w Kyuko_PLC_254-Kyuko_PLC
+Kyuko_PLC_92: 	dc.w Kyuko_PLC_259-Kyuko_PLC
+Kyuko_PLC_94: 	dc.w Kyuko_PLC_25E-Kyuko_PLC
+Kyuko_PLC_96: 	dc.w Kyuko_PLC_263-Kyuko_PLC
+Kyuko_PLC_98: 	dc.w Kyuko_PLC_268-Kyuko_PLC
+Kyuko_PLC_9A: 	dc.w Kyuko_PLC_26B-Kyuko_PLC
+Kyuko_PLC_9C: 	dc.w Kyuko_PLC_26E-Kyuko_PLC
+Kyuko_PLC_9E: 	dc.w Kyuko_PLC_271-Kyuko_PLC
+Kyuko_PLC_A0: 	dc.w Kyuko_PLC_274-Kyuko_PLC
+Kyuko_PLC_A2: 	dc.w Kyuko_PLC_277-Kyuko_PLC
+Kyuko_PLC_A4: 	dc.w Kyuko_PLC_27A-Kyuko_PLC
+Kyuko_PLC_A6: 	dc.w Kyuko_PLC_27D-Kyuko_PLC
+Kyuko_PLC_A8: 	dc.w Kyuko_PLC_280-Kyuko_PLC
+Kyuko_PLC_AA: 	dc.w Kyuko_PLC_283-Kyuko_PLC
+Kyuko_PLC_AC: 	dc.w Kyuko_PLC_286-Kyuko_PLC
+Kyuko_PLC_AE: 	dc.w Kyuko_PLC_289-Kyuko_PLC
+Kyuko_PLC_B0: 	dc.w Kyuko_PLC_28C-Kyuko_PLC
+Kyuko_PLC_B2: 	dc.w Kyuko_PLC_291-Kyuko_PLC
+Kyuko_PLC_B4: 	dc.w Kyuko_PLC_296-Kyuko_PLC
+Kyuko_PLC_B6: 	dc.w Kyuko_PLC_29B-Kyuko_PLC
+Kyuko_PLC_B8: 	dc.w Kyuko_PLC_2A0-Kyuko_PLC
+Kyuko_PLC_BA: 	dc.w Kyuko_PLC_2A5-Kyuko_PLC
+Kyuko_PLC_BC: 	dc.w Kyuko_PLC_2A8-Kyuko_PLC
+Kyuko_PLC_BE: 	dc.w Kyuko_PLC_2AD-Kyuko_PLC
+Kyuko_PLC_C0: 	dc.w Kyuko_PLC_2B2-Kyuko_PLC
+Kyuko_PLC_C2: 	dc.w Kyuko_PLC_2B7-Kyuko_PLC
+Kyuko_PLC_C4: 	dc.w Kyuko_PLC_2BC-Kyuko_PLC
+Kyuko_PLC_C6: 	dc.w Kyuko_PLC_2C1-Kyuko_PLC
+Kyuko_PLC_C8: 	dc.w Kyuko_PLC_2C6-Kyuko_PLC
+Kyuko_PLC_CA: 	dc.w Kyuko_PLC_2CB-Kyuko_PLC
+Kyuko_PLC_CC: 	dc.w Kyuko_PLC_2D0-Kyuko_PLC
+Kyuko_PLC_CE: 	dc.w Kyuko_PLC_2D5-Kyuko_PLC
+Kyuko_PLC_D0: 	dc.w Kyuko_PLC_2DA-Kyuko_PLC
+Kyuko_PLC_D2: 	dc.w Kyuko_PLC_2DF-Kyuko_PLC
+Kyuko_PLC_D4: 	dc.w Kyuko_PLC_2E4-Kyuko_PLC
+Kyuko_PLC_D6: 	dc.w Kyuko_PLC_2E9-Kyuko_PLC
+Kyuko_PLC_D8: 	dc.w Kyuko_PLC_2EE-Kyuko_PLC
+Kyuko_PLC_DA: 	dc.w Kyuko_PLC_2F3-Kyuko_PLC
+Kyuko_PLC_DC: 	dc.w Kyuko_PLC_2F8-Kyuko_PLC
+Kyuko_PLC_DE: 	dc.w Kyuko_PLC_2FD-Kyuko_PLC
+Kyuko_PLC_E0: 	dc.w Kyuko_PLC_302-Kyuko_PLC
+Kyuko_PLC_E2: 	dc.w Kyuko_PLC_307-Kyuko_PLC
+Kyuko_PLC_E4: 	dc.w Kyuko_PLC_30C-Kyuko_PLC
+Kyuko_PLC_E6: 	dc.w Kyuko_PLC_311-Kyuko_PLC
+Kyuko_PLC_E8: 	dc.w Kyuko_PLC_316-Kyuko_PLC
+Kyuko_PLC_EA: 	dc.w Kyuko_PLC_31B-Kyuko_PLC
+Kyuko_PLC_EC: 	dc.w Kyuko_PLC_320-Kyuko_PLC
+Kyuko_PLC_EE: 	dc.w Kyuko_PLC_325-Kyuko_PLC
+Kyuko_PLC_F0: 	dc.w Kyuko_PLC_328-Kyuko_PLC
+Kyuko_PLC_F2: 	dc.w Kyuko_PLC_32B-Kyuko_PLC
+Kyuko_PLC_F4: 	dc.w Kyuko_PLC_330-Kyuko_PLC
+Kyuko_PLC_F6: 	dc.w Kyuko_PLC_333-Kyuko_PLC
+Kyuko_PLC_F8: 	dc.w Kyuko_PLC_336-Kyuko_PLC
+Kyuko_PLC_FA: 	dc.w Kyuko_PLC_339-Kyuko_PLC
+Kyuko_PLC_FC: 	dc.w Kyuko_PLC_33C-Kyuko_PLC
+Kyuko_PLC_FE: 	dc.w Kyuko_PLC_33F-Kyuko_PLC
+Kyuko_PLC_100: 	dc.w Kyuko_PLC_344-Kyuko_PLC
+Kyuko_PLC_102: 	dc.w Kyuko_PLC_347-Kyuko_PLC
+Kyuko_PLC_104: 	dc.w Kyuko_PLC_34A-Kyuko_PLC
+Kyuko_PLC_106: 	dc.w Kyuko_PLC_34D-Kyuko_PLC
+Kyuko_PLC_108: 	dc.w Kyuko_PLC_350-Kyuko_PLC
+Kyuko_PLC_10A: 	dc.w Kyuko_PLC_353-Kyuko_PLC
+Kyuko_PLC_10C: 	dc.w Kyuko_PLC_358-Kyuko_PLC
+Kyuko_PLC_10E: 	dc.w Kyuko_PLC_35D-Kyuko_PLC
+Kyuko_PLC_110: 	dc.w Kyuko_PLC_362-Kyuko_PLC
+Kyuko_PLC_112: 	dc.w Kyuko_PLC_365-Kyuko_PLC
+Kyuko_PLC_114: 	dc.w Kyuko_PLC_368-Kyuko_PLC
+Kyuko_PLC_116: 	dc.w Kyuko_PLC_36D-Kyuko_PLC
+Kyuko_PLC_118: 	dc.b $0
+Kyuko_PLC_119: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $40, $10
+Kyuko_PLC_11E: 	dc.b $2
+	dc.b $F0, $15
+	dc.b $40, $25
+Kyuko_PLC_123: 	dc.b $2
+	dc.b $F0, $2A
+	dc.b $40, $3A
+Kyuko_PLC_128: 	dc.b $2
+	dc.b $F0, $3F
+	dc.b $40, $4F
+Kyuko_PLC_12D: 	dc.b $2
+	dc.b $F0, $54
+	dc.b $30, $64
+Kyuko_PLC_132: 	dc.b $2
+	dc.b $F0, $68
+	dc.b $20, $78
+Kyuko_PLC_137: 	dc.b $2
+	dc.b $F0, $7B
+	dc.b $30, $8B
+Kyuko_PLC_13C: 	dc.b $2
+	dc.b $F0, $8F
+	dc.b $40, $9F
+Kyuko_PLC_141: 	dc.b $2
+	dc.b $F0, $A4
+	dc.b $0, $B4
+Kyuko_PLC_146: 	dc.b $2
+	dc.b $F0, $B5
+	dc.b $0, $C5
+Kyuko_PLC_14B: 	dc.b $2
+	dc.b $F0, $C6
+	dc.b $30, $D6
+Kyuko_PLC_150: 	dc.b $2
+	dc.b $F0, $DA
+	dc.b $0, $EA
+Kyuko_PLC_155: 	dc.b $1
+	dc.b $E0, $EB
+Kyuko_PLC_158: 	dc.b $1
+	dc.b $E0, $FA
+Kyuko_PLC_15B: 	dc.b $2
+	dc.b $F1, $9
+	dc.b $21, $19
+Kyuko_PLC_160: 	dc.b $2
+	dc.b $F1, $1C
+	dc.b $1, $2C
+Kyuko_PLC_165: 	dc.b $1
+	dc.b $F1, $2D
+Kyuko_PLC_168: 	dc.b $1
+	dc.b $E1, $3D
+Kyuko_PLC_16B: 	dc.b $2
+	dc.b $F1, $4C
+	dc.b $11, $5C
+Kyuko_PLC_170: 	dc.b $2
+	dc.b $F1, $5E
+	dc.b $21, $6E
+Kyuko_PLC_175: 	dc.b $1
+	dc.b $E1, $71
+Kyuko_PLC_178: 	dc.b $1
+	dc.b $F1, $80
+Kyuko_PLC_17B: 	dc.b $2
+	dc.b $F1, $90
+	dc.b $11, $A0
+Kyuko_PLC_180: 	dc.b $2
+	dc.b $F1, $A2
+	dc.b $11, $B2
+Kyuko_PLC_185: 	dc.b $2
+	dc.b $F1, $B4
+	dc.b $11, $C4
+Kyuko_PLC_18A: 	dc.b $2
+	dc.b $F1, $C6
+	dc.b $1, $D6
+Kyuko_PLC_18F: 	dc.b $2
+	dc.b $F1, $D7
+	dc.b $31, $E7
+Kyuko_PLC_194: 	dc.b $2
+	dc.b $F1, $EB
+	dc.b $1, $FB
+Kyuko_PLC_199: 	dc.b $1
+	dc.b $E1, $FC
+Kyuko_PLC_19C: 	dc.b $1
+	dc.b $E2, $B
+Kyuko_PLC_19F: 	dc.b $2
+	dc.b $F2, $1A
+	dc.b $22, $2A
+Kyuko_PLC_1A4: 	dc.b $2
+	dc.b $F2, $2D
+	dc.b $2, $3D
+Kyuko_PLC_1A9: 	dc.b $1
+	dc.b $F2, $3E
+Kyuko_PLC_1AC: 	dc.b $1
+	dc.b $E2, $4E
+Kyuko_PLC_1AF: 	dc.b $2
+	dc.b $F2, $5D
+	dc.b $12, $6D
+Kyuko_PLC_1B4: 	dc.b $2
+	dc.b $F2, $6F
+	dc.b $22, $7F
+Kyuko_PLC_1B9: 	dc.b $1
+	dc.b $E2, $82
+Kyuko_PLC_1BC: 	dc.b $1
+	dc.b $F2, $91
+Kyuko_PLC_1BF: 	dc.b $2
+	dc.b $F2, $A1
+	dc.b $12, $B1
+Kyuko_PLC_1C4: 	dc.b $2
+	dc.b $F2, $B3
+	dc.b $12, $C3
+Kyuko_PLC_1C9: 	dc.b $2
+	dc.b $F2, $C5
+	dc.b $12, $D5
+Kyuko_PLC_1CE: 	dc.b $2
+	dc.b $F2, $D7
+	dc.b $2, $E7
+Kyuko_PLC_1D3: 	dc.b $2
+	dc.b $F2, $E8
+	dc.b $22, $F8
+Kyuko_PLC_1D8: 	dc.b $2
+	dc.b $F2, $FB
+	dc.b $13, $B
+Kyuko_PLC_1DD: 	dc.b $2
+	dc.b $F3, $D
+	dc.b $13, $1D
+Kyuko_PLC_1E2: 	dc.b $2
+	dc.b $F3, $1F
+	dc.b $13, $2F
+Kyuko_PLC_1E7: 	dc.b $2
+	dc.b $F3, $31
+	dc.b $23, $41
+Kyuko_PLC_1EC: 	dc.b $2
+	dc.b $F3, $44
+	dc.b $23, $54
+Kyuko_PLC_1F1: 	dc.b $2
+	dc.b $F3, $57
+	dc.b $13, $67
+Kyuko_PLC_1F6: 	dc.b $2
+	dc.b $F3, $69
+	dc.b $13, $79
+Kyuko_PLC_1FB: 	dc.b $2
+	dc.b $F3, $7B
+	dc.b $23, $8B
+Kyuko_PLC_200: 	dc.b $2
+	dc.b $F3, $8E
+	dc.b $13, $9E
+Kyuko_PLC_205: 	dc.b $2
+	dc.b $F3, $A0
+	dc.b $13, $B0
+Kyuko_PLC_20A: 	dc.b $2
+	dc.b $F3, $B2
+	dc.b $13, $C2
+Kyuko_PLC_20F: 	dc.b $2
+	dc.b $F3, $C4
+	dc.b $23, $D4
+Kyuko_PLC_214: 	dc.b $2
+	dc.b $F3, $D7
+	dc.b $23, $E7
+Kyuko_PLC_219: 	dc.b $2
+	dc.b $F3, $EA
+	dc.b $13, $FA
+Kyuko_PLC_21E: 	dc.b $2
+	dc.b $F3, $FC
+	dc.b $14, $C
+Kyuko_PLC_223: 	dc.b $1
+	dc.b $E4, $E
+Kyuko_PLC_226: 	dc.b $1
+	dc.b $E4, $1D
+Kyuko_PLC_229: 	dc.b $1
+	dc.b $E4, $2C
+Kyuko_PLC_22C: 	dc.b $1
+	dc.b $E4, $3B
+Kyuko_PLC_22F: 	dc.b $2
+	dc.b $F4, $4A
+	dc.b $14, $5A
+Kyuko_PLC_234: 	dc.b $1
+	dc.b $E4, $5C
+Kyuko_PLC_237: 	dc.b $1
+	dc.b $E4, $6B
+Kyuko_PLC_23A: 	dc.b $1
+	dc.b $F4, $7A
+Kyuko_PLC_23D: 	dc.b $2
+	dc.b $F4, $8A
+	dc.b $4, $9A
+Kyuko_PLC_242: 	dc.b $2
+	dc.b $F4, $9B
+	dc.b $4, $AB
+Kyuko_PLC_247: 	dc.b $1
+	dc.b $C4, $AC
+Kyuko_PLC_24A: 	dc.b $2
+	dc.b $F4, $B9
+	dc.b $44, $C9
+Kyuko_PLC_24F: 	dc.b $2
+	dc.b $F4, $CE
+	dc.b $24, $DE
+Kyuko_PLC_254: 	dc.b $2
+	dc.b $F4, $E1
+	dc.b $24, $F1
+Kyuko_PLC_259: 	dc.b $2
+	dc.b $F4, $F4
+	dc.b $15, $4
+Kyuko_PLC_25E: 	dc.b $2
+	dc.b $F5, $6
+	dc.b $25, $16
+Kyuko_PLC_263: 	dc.b $2
+	dc.b $F5, $19
+	dc.b $25, $29
+Kyuko_PLC_268: 	dc.b $1
+	dc.b $E5, $2C
+Kyuko_PLC_26B: 	dc.b $1
+	dc.b $D5, $3B
+Kyuko_PLC_26E: 	dc.b $1
+	dc.b $E5, $49
+Kyuko_PLC_271: 	dc.b $1
+	dc.b $D5, $58
+Kyuko_PLC_274: 	dc.b $1
+	dc.b $E5, $66
+Kyuko_PLC_277: 	dc.b $1
+	dc.b $E5, $75
+Kyuko_PLC_27A: 	dc.b $1
+	dc.b $C5, $84
+Kyuko_PLC_27D: 	dc.b $1
+	dc.b $C5, $91
+Kyuko_PLC_280: 	dc.b $1
+	dc.b $C5, $9E
+Kyuko_PLC_283: 	dc.b $1
+	dc.b $E5, $AB
+Kyuko_PLC_286: 	dc.b $1
+	dc.b $D5, $BA
+Kyuko_PLC_289: 	dc.b $1
+	dc.b $F5, $C8
+Kyuko_PLC_28C: 	dc.b $2
+	dc.b $F5, $D8
+	dc.b $15, $E8
+Kyuko_PLC_291: 	dc.b $2
+	dc.b $F5, $EA
+	dc.b $25, $FA
+Kyuko_PLC_296: 	dc.b $2
+	dc.b $F5, $FD
+	dc.b $16, $D
+Kyuko_PLC_29B: 	dc.b $2
+	dc.b $F6, $F
+	dc.b $16, $1F
+Kyuko_PLC_2A0: 	dc.b $2
+	dc.b $F6, $21
+	dc.b $6, $31
+Kyuko_PLC_2A5: 	dc.b $1
+	dc.b $D6, $32
+Kyuko_PLC_2A8: 	dc.b $2
+	dc.b $F6, $40
+	dc.b $6, $50
+Kyuko_PLC_2AD: 	dc.b $2
+	dc.b $86, $32
+	dc.b $46, $51
+Kyuko_PLC_2B2: 	dc.b $2
+	dc.b $F6, $56
+	dc.b $46, $66
+Kyuko_PLC_2B7: 	dc.b $2
+	dc.b $F6, $6B
+	dc.b $26, $7B
+Kyuko_PLC_2BC: 	dc.b $2
+	dc.b $F6, $7E
+	dc.b $46, $8E
+Kyuko_PLC_2C1: 	dc.b $2
+	dc.b $F6, $93
+	dc.b $16, $A3
+Kyuko_PLC_2C6: 	dc.b $2
+	dc.b $F6, $A5
+	dc.b $6, $B5
+Kyuko_PLC_2CB: 	dc.b $2
+	dc.b $F6, $B6
+	dc.b $16, $C6
+Kyuko_PLC_2D0: 	dc.b $2
+	dc.b $F6, $C8
+	dc.b $16, $D8
+Kyuko_PLC_2D5: 	dc.b $2
+	dc.b $F6, $DA
+	dc.b $6, $EA
+Kyuko_PLC_2DA: 	dc.b $2
+	dc.b $F6, $EB
+	dc.b $16, $FB
+Kyuko_PLC_2DF: 	dc.b $2
+	dc.b $F6, $FD
+	dc.b $17, $D
+Kyuko_PLC_2E4: 	dc.b $2
+	dc.b $F7, $F
+	dc.b $17, $1F
+Kyuko_PLC_2E9: 	dc.b $2
+	dc.b $F7, $21
+	dc.b $37, $31
+Kyuko_PLC_2EE: 	dc.b $2
+	dc.b $F7, $35
+	dc.b $27, $45
+Kyuko_PLC_2F3: 	dc.b $2
+	dc.b $F7, $48
+	dc.b $27, $58
+Kyuko_PLC_2F8: 	dc.b $2
+	dc.b $F7, $5B
+	dc.b $27, $6B
+Kyuko_PLC_2FD: 	dc.b $2
+	dc.b $F7, $6E
+	dc.b $7, $7E
+Kyuko_PLC_302: 	dc.b $2
+	dc.b $F7, $7F
+	dc.b $17, $8F
+Kyuko_PLC_307: 	dc.b $2
+	dc.b $F7, $91
+	dc.b $17, $A1
+Kyuko_PLC_30C: 	dc.b $2
+	dc.b $F7, $A3
+	dc.b $17, $B3
+Kyuko_PLC_311: 	dc.b $2
+	dc.b $F7, $B5
+	dc.b $37, $C5
+Kyuko_PLC_316: 	dc.b $2
+	dc.b $F7, $C9
+	dc.b $27, $D9
+Kyuko_PLC_31B: 	dc.b $2
+	dc.b $F7, $DC
+	dc.b $27, $EC
+Kyuko_PLC_320: 	dc.b $2
+	dc.b $F7, $EF
+	dc.b $27, $FF
+Kyuko_PLC_325: 	dc.b $1
+	dc.b $F8, $2
+Kyuko_PLC_328: 	dc.b $1
+	dc.b $F8, $12
+Kyuko_PLC_32B: 	dc.b $2
+	dc.b $F8, $22
+	dc.b $8, $32
+Kyuko_PLC_330: 	dc.b $1
+	dc.b $E8, $33
+Kyuko_PLC_333: 	dc.b $1
+	dc.b $B8, $42
+Kyuko_PLC_336: 	dc.b $1
+	dc.b $C8, $4E
+Kyuko_PLC_339: 	dc.b $1
+	dc.b $C8, $5B
+Kyuko_PLC_33C: 	dc.b $1
+	dc.b $E8, $68
+Kyuko_PLC_33F: 	dc.b $2
+	dc.b $F8, $77
+	dc.b $18, $87
+Kyuko_PLC_344: 	dc.b $1
+	dc.b $E8, $89
+Kyuko_PLC_347: 	dc.b $1
+	dc.b $C8, $98
+Kyuko_PLC_34A: 	dc.b $1
+	dc.b $C8, $A5
+Kyuko_PLC_34D: 	dc.b $1
+	dc.b $D8, $B2
+Kyuko_PLC_350: 	dc.b $1
+	dc.b $F8, $C0
+Kyuko_PLC_353: 	dc.b $2
+	dc.b $F8, $D0
+	dc.b $28, $E0
+Kyuko_PLC_358: 	dc.b $2
+	dc.b $F8, $E3
+	dc.b $18, $F3
+Kyuko_PLC_35D: 	dc.b $2
+	dc.b $F8, $F5
+	dc.b $29, $5
+Kyuko_PLC_362: 	dc.b $1
+	dc.b $E9, $8
+Kyuko_PLC_365: 	dc.b $1
+	dc.b $E9, $17
+Kyuko_PLC_368: 	dc.b $2
+	dc.b $E9, $8
+	dc.b $19, $26
+Kyuko_PLC_36D: 	dc.b $2
+	dc.b $F9, $17
+	dc.b $9, $27
+	even

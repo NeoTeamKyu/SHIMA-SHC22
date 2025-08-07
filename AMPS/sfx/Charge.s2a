@@ -1,0 +1,19 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$01
+
+	sHeaderSFX	$80, ctFM4, PeeloutCharge_FM4, $00, $05
+
+; FM4 Data
+PeeloutCharge_FM4:
+	sVoice	pPeelout1
+	dc.b	nRst, $01
+	sModAMPS	$02, $01, $09, $FF
+	dc.b	nCs6, $22
+	sModOn
+	saVol	$02
+	sModOff
+
+PeeloutCharge_Jump00:
+	dc.b	sHold, nAb6, $02
+	sJump	PeeloutCharge_Jump00

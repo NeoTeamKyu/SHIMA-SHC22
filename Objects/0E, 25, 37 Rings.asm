@@ -1,0 +1,363 @@
+; ---------------------------------------------------------------------------
+; Object 0E - rings
+; ---------------------------------------------------------------------------
+
+AttractedRings:
+		moveq	#0,d0
+		move.b	obRoutine(a0),d0
+		move.w	ARing_Index(pc,d0.w),d1
+		jmp		ARing_Index(pc,d1.w)
+; ===========================================================================
+ARing_Index:
+		dc.w Ring_Main-ARing_Index
+		dc.w Ring_Attract-ARing_Index
+		dc.w Ring_Collect-ARing_Index
+		dc.w Ring_Sparkle-ARing_Index
+		dc.w Ring_Delete-ARing_Index
+; ===========================================================================
+; and... that's it, I hope. It *should* be, anyway!
+Ring_Attract:
+		bsr.w	Ring_Move
+;		movea.w	$34(a0),a1
+        cmpi.b  #shID_Elec,(v_shield).w ; check Sonic has lightning shield
+        beq.s   @sub3	; This check was inverted.
+		move.b	#id_RingLoss,(a0)
+		move.b	#2,obRoutine(a0)
+		move.b	#-1,(v_ani3_time).w
+
+	@sub3:
+		move.b	(v_ani1_frame).w,obFrame(a0)
+		move.w	$32(a0),d0
+		jmp		DisplaySprite
+
+Ring_Move:	; Routine $A
+;		movea.w	$34(a0),a1
+		move.w	#$30,d1	; horizontal
+		move.w	(v_player+obX).w,d0
+		cmp.w	obX(a0),d0
+		bcc.s	@a11
+		neg.w	d1
+		tst.w	obVelX(a0)
+		bmi.s	@a21
+		add.w	d1,d1
+		add.w	d1,d1
+		bra.s	@a21
+; ===========================================================================
+
+	@a11:
+		tst.w	obVelX(a0)
+		bpl.s	@a21
+		add.w	d1,d1
+		add.w	d1,d1
+
+	@a21:
+		add.w	d1,obVelX(a0)
+		move.w	#$30,d1	; vertical
+		move.w	(v_player+obY).w,d0
+		cmp.w	obY(a0),d0
+		bhs.s	@a31
+		neg.w	d1
+		tst.w	obVelY(a0)
+		bmi.s	@a41
+		add.w	d1,d1
+		add.w	d1,d1
+		bra.s	@a41
+
+	@a31:
+		tst.w	obVelY(a0)
+		bpl.s	@a41
+		add.w	d1,d1
+		add.w	d1,d1
+
+	@a41:
+		add.w	d1,obVelY(a0)
+		jmp		(SpeedToPos).l
+; ---------------------------------------------------------------------------
+; Object 25 - rings
+; ---------------------------------------------------------------------------
+
+Rings:
+		moveq	#0,d0
+		move.b	obRoutine(a0),d0
+		move.w	Ring_Index(pc,d0.w),d1
+		jmp	Ring_Index(pc,d1.w)
+; ===========================================================================
+Ring_Index:
+ptr_Ring_Main:		dc.w Ring_Main-Ring_Index
+ptr_Ring_Animate:	dc.w Ring_Animate-Ring_Index
+ptr_Ring_Collect:	dc.w Ring_Collect-Ring_Index
+ptr_Ring_Sparkle:	dc.w Ring_Sparkle-Ring_Index
+ptr_Ring_Delete:	dc.w Ring_Delete-Ring_Index
+
+id_Ring_Main:		equ ptr_Ring_Main-Ring_Index	; 0
+id_Ring_Animate:		equ ptr_Ring_Animate-Ring_Index	; 2
+id_Ring_Collect:		equ ptr_Ring_Collect-Ring_Index	; 4
+id_Ring_Sparkle:		equ ptr_Ring_Sparkle-Ring_Index	; 6
+id_Ring_Delete:		equ ptr_Ring_Delete-Ring_Index	; 8
+; ===========================================================================
+
+Ring_Main:	; Routine 0
+		addq.b	#2,obRoutine(a0)
+		move.w	obX(a0),$32(a0)
+		move.l	#Map_Ring,obMap(a0)
+		move.w	#$2000+vramRing,obGfx(a0)
+		move.b	#4,obRender(a0)
+		move.w	#$100,obPriority(a0)
+		move.b	#$47,obColType(a0)
+		move.b	#8,obActWid(a0)
+		move.b	#8,obHeight(a0)
+		move.b	#8,obWidth(a0)
+
+Ring_Animate:	; Routine 2
+		move.b	(v_ani1_frame).w,obFrame(a0) ; set frame ; Comment this out if you're messing with dynamic art.
+		move.w	$32(a0),d0
+		jmp		RememberState
+; ===========================================================================
+
+Ring_Collect:	; Routine 4
+		addq.b	#2,obRoutine(a0)
+		move.b	#0,obColType(a0)
+		move.w	#$80,obPriority(a0)
+		subq.w	#1,(Perfect_rings_left).w
+		bsr.w	CollectRing
+
+Ring_Sparkle:	; Routine 6
+		lea	(Ani_Ring).l,a1
+		bsr.w	AnimateSprite
+		bra.w	DisplaySprite
+; ===========================================================================
+
+Ring_Delete:	; Routine 8
+		bra.w	DeleteObject
+
+; ||||||||||||||| S U B	R O U T	I N E |||||||||||||||||||||||||||||||||||||||
+
+
+CollectRing:
+		addq.w	#1,(v_rings).w	; add 1 to rings
+		ori.b	#1,(f_ringcount).w ; update the rings counter
+		moveq	#sfx_RingRight,d0; play ring sound
+		btst	#bitLives,(v_miscOptions).w	; Did the player turn off lives?
+		bne.s	@playsnd	; They won't be losing any anyway, so go away.
+		cmpi.w	#100,(v_rings).w ; do you have < 100 rings?
+		bcs.s	@playsnd	; if yes, branch
+		bset	#1,(v_lifecount).w ; update lives counter
+		beq.s	@got100
+		cmpi.w	#200,(v_rings).w ; do you have < 200 rings?
+		bcs.s	@playsnd	; if yes, branch
+		bset	#2,(v_lifecount).w ; update lives counter
+		bne.s	@playsnd
+
+	@got100:
+		addq.b	#1,(v_lives).w	; add 1 to the number of lives you have
+		addq.b	#1,(f_lifecount).w ; update the lives counter
+		moveq	#mus_ExtraLife,d0; play extra life music
+
+	@playsnd:
+		move.b	d0,mQueue+2.w
+		rts
+; End of function CollectRing
+
+; ===========================================================================
+; ---------------------------------------------------------------------------
+; Object 37 - rings flying out of Sonic	when he's hit
+; ---------------------------------------------------------------------------
+
+RingLoss:
+		moveq	#0,d0
+		move.b	obRoutine(a0),d0
+		move.w	RLoss_Index(pc,d0.w),d1
+		jmp	RLoss_Index(pc,d1.w)
+; ===========================================================================
+RLoss_Index:	dc.w RLoss_Count-RLoss_Index
+		dc.w RLoss_Bounce-RLoss_Index
+		dc.w RLoss_Collect-RLoss_Index
+		dc.w RLoss_Sparkle-RLoss_Index
+		dc.w RLoss_Delete-RLoss_Index
+; ===========================================================================
+
+RLoss_Count:	; Routine 0
+		movea.l	a0,a1
+		moveq	#0,d5
+		move.w	(v_rings).w,d5	; check number of rings you have
+        lea     SpillRingData,a3        ; load the address of the array in a3
+        moveq   #20,d0                  ; lose a max of 20 rings
+        lea     (v_player).w,a2    ; a2=character
+        btst    #6,obStatus(a2)           ; is Sonic underwater?
+        beq.s   @cont                       ; if not, branch
+        lea    SpillRingData_Water,a3        ; load the UNDERWATER address of the array in a3
+        moveq   #8,d0                   ; lose a max of 8 rings underwater
+@cont:
+        cmp.w   d0,d5
+        bcs.s   @belowmax
+        move.w  d0,d5
+
+@belowmax:
+        subq.w  #1,d5
+        move.w  #$288,d4
+		bra.s	@makerings
+; ===========================================================================
+
+	@loop:
+		bsr.w	FindFreeObj
+		bne.w	@resetcounter
+
+@makerings:
+		move.b	#id_RingLoss,0(a1) ; load bouncing ring object
+		addq.b	#2,obRoutine(a1)
+		move.b	#8,obHeight(a1)
+		move.b	#8,obWidth(a1)
+		move.w	obX(a0),obX(a1)
+		move.w	obY(a0),obY(a1)
+		move.l	#Map_Ring,obMap(a1)
+		move.w	#$2000+vramRing,obGfx(a1)
+		move.b	#4,obRender(a1)
+		move.w	#$180,obPriority(a1)
+		move.b	#$47,obColType(a1)
+		move.b	#8,obActWid(a1)
+		tst.b	(f_water).w		; Does the level have water?
+		beq.s	@skiphalvingvel		; If not, branch and skip underwater checks
+		move.w	(v_waterpos1).w,d6	; Move water level to d6
+		cmp.w	$C(a0),d6		; Is the ring object underneath the water level?
+		bgt.s	@skiphalvingvel		; If not, branch and skip underwater commands
+		asr.w	d0			; Half d0. Makes the ring's x_vel bounce to the left/right slower
+		asr.w	d1			; Half d1. Makes the ring's y_vel bounce up/down slower
+
+@skiphalvingvel:		
+		move.w  (a3)+,x_vel(a1)         ; move the data contained in the array to the x velocity and increment the address in a3
+		move.w  (a3)+,y_vel(a1)         ; move the data contained in the array to the y velocity and increment the address in a3		  
+		dbf	d5,@loop	; repeat for number of rings (max 31)
+
+@resetcounter:
+		move.w	#0,(v_rings).w	; reset number of rings to zero
+		move.b	#$80,(f_ringcount).w ; update ring counter
+		move.b	#0,(v_lifecount).w
+		moveq   #-1,d0                  ; Move #-1 to d0
+		move.b  d0,obDelayAni(a0)       ; Move d0 to new timer
+		move.b  d0,(v_ani3_time).w      ; Move d0 to old timer (for animated purposes)
+		sfx	sfx_RingLoss,0,0,0	; play ring loss sound
+
+RLoss_Bounce:	; Routine 2
+		move.b	(v_ani3_frame).w,obFrame(a0)
+		bsr.w	SpeedToPos
+		addi.w	#$18,obVelY(a0)
+		tst.b	(f_water).w		; Does the level have water?
+		beq.s	@skipbounceslow		; If not, branch and skip underwater checks
+		move.w	(v_waterpos1).w,d6	; Move water level to d6
+		cmp.w	obY(a0),d6		; Is the ring object underneath the water level?
+		bgt.s	@skipbounceslow		; If not, branch and skip underwater commands
+		subi.w	#$E,obVelY(a0)		; Reduce gravity by $E ($18-$E=$A), giving the underwater effect
+
+@skipbounceslow:
+		bmi.s	@chkdel
+		move.b	(v_vbla_byte).w,d0
+		add.b	d7,d0
+		andi.b	#3,d0
+		bne.s	@chkdel
+		jsr	(ObjFloorDist).l
+		tst.w	d1
+		bpl.s	@chkdel
+		add.w	d1,obY(a0)
+		move.w	obVelY(a0),d0
+		asr.w	#2,d0
+		sub.w	d0,obVelY(a0)
+		neg.w	obVelY(a0)
+
+	@chkdel:
+		subq.b  #1,obDelayAni(a0)  ; Subtract 1   ; RHS Ring Timer fix
+        beq.w   DeleteObject       ; If 0, delete ; RHS Ring Timer fix
+		move.w	(v_limitbtm2).w,d0
+		addi.w	#$E0,d0
+		cmp.w	obY(a0),d0	   ; has object moved below level boundary?
+		bcs.w	RLoss_Delete	   ; if yes, branch
+		cmpi.b  #shID_Elec,(v_shield).w
+		bne.s	@skip
+		tst.b	obRender(a0)
+		bpl.s	@skip
+
+		lea (v_player).w,a1
+
+		move.w	obX(a1),d0	; load Sonic's x-axis position
+		sub.w	obX(a0),d0
+		bpl.s	@a1
+		neg.w	d0
+
+	@a1:
+		cmpi.w	#$A0,d0
+		bhi.s	@skip
+
+		move.w	obY(a1),d0	; load Sonic's y-axis position
+		sub.w	obY(a0),d0
+		bpl.s	@a2
+		neg.w	d0
+
+	@a2:
+		cmpi.w	#$A0,d0
+		bhi.s	@skip
+
+		move.b	#2,obRoutine(a0)
+		move.b	#id_AttractedRings,(a0)
+
+	@skip:
+        lea     (v_spritequeue).w,a1
+        adda.w  #$80,a1
+        cmpi.w  #$7E,(a1)
+        bcc.s   @cont
+        addq.w  #2,(a1)
+        adda.w  (a1),a1
+        move.w  a0,(a1)
+@cont:
+        rts
+; ===========================================================================
+
+RLoss_Collect:	; Routine 4
+		addq.b	#2,obRoutine(a0)
+		move.b	#0,obColType(a0)
+		move.w	#$80,obPriority(a0)
+		bsr.w	CollectRing
+
+RLoss_Sparkle:	; Routine 6
+		lea	(Ani_Ring).l,a1
+		bsr.w	AnimateSprite
+		lea     v_spritequeue+$180,a1
+        cmpi.w  #$7E,(a1)
+        bcc.s   @cont
+        addq.w  #2,(a1)
+        adda.w  (a1),a1
+        move.w  a0,(a1)
+@cont:
+        rts
+; ===========================================================================
+
+RLoss_Delete:	; Routine 8
+		bra.w	DeleteObject
+		
+; ----------------------------------------------------------------------------------------------
+; Ring Spawn Array ; You can change it to spill 20 or more rings if you know what you're doing.
+; ----------------------------------------------------------------------------------------------
+
+SpillRingData:  dc.w    $FF3C,$FC14, $00C4,$FC14, $FDC8,$FCB0, $0238,$FCB0 ; 4
+                dc.w    $FCB0,$FDC8, $0350,$FDC8, $FC14,$FF3C, $03EC,$FF3C ; 8
+                dc.w    $FC14,$00C4, $03EC,$00C4, $FCB0,$0238, $0350,$0238 ; 12
+                dc.w    $FDC8,$0350, $0238,$0350, $FF3C,$03EC, $00C4,$03EC ; 16
+                dc.w    $FF9E,$FE0A, $0062,$FE0A, $FEE4,$FE58, $011C,$FE58 ; 20
+                dc.w    $FE58,$FEE4, $01A8,$FEE4, $FE0A,$FF9E, $01F6,$FF9E ; 24
+                dc.w    $FE0A,$0062, $01F6,$0062, $FE58,$011C, $01A8,$011C ; 28
+                dc.w    $FEE4,$01A8, $011C,$01A8, $FF9E,$0156, $0062,$0156 ; 32
+                even
+; ===========================================================================
+; -------------------------------------------------------------------------------------
+; Ring Spawn Array - Underwater - same thing as I said above. Edit at your own risk!!!
+; -------------------------------------------------------------------------------------
+
+SpillRingData_Water:
+				dc.w    $FF9C,$FE08, $0064,$FE08, $FEE4,$FE58, $011C,$FE58 ; 4
+                dc.w    $FE58,$FEE4, $01A8,$FEE4, $FE08,$FF9C, $01F8,$FF9C ; 8
+                dc.w    $FE08,$0060, $01F8,$0060, $FE58,$011C, $01A8,$011C ; 12
+                dc.w    $FEE4,$01A8, $011C,$01A8, $FF9C,$01F4, $0064,$01F4 ; 16
+                dc.w    $FFCE,$FF04, $0032,$FF04, $FF72,$FF2C, $008E,$FF2C ; 20
+                dc.w    $FF2C,$FF72, $00D4,$FF72, $FF04,$FFCE, $00FC,$FFCE ; 24
+                dc.w    $FF04,$0030, $00FC,$0030, $FF2C,$008E, $00D4,$008E ; 28
+                dc.w    $FF72,$00D4, $008E,$00D4, $FFCE,$00FA, $0032,$00FA ; 32
+                even
+; ===========================================================================		

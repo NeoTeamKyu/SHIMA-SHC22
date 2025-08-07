@@ -1,0 +1,967 @@
+ExtraLifeUR_Header:
+	sHeaderInit
+	sHeaderTempo	$41, $01	
+	sHeaderCh	$05, $03
+	sHeaderDAC	ExtraLifeUR_DAC1
+	sHeaderDAC	ExtraLifeUR_DAC2	
+	sHeaderFM	ExtraLifeUR_FM1, $00, $00
+	sHeaderFM	ExtraLifeUR_FM2, $00, $00
+	sHeaderFM	ExtraLifeUR_FM3, $00, $00
+	sHeaderFM	ExtraLifeUR_FM4, $00, $00
+	sHeaderFM	ExtraLifeUR_FM5, $00, $00
+	sHeaderPSG	ExtraLifeUR_PSG1, $0C, $20, $00, vNone
+	sHeaderPSG	ExtraLifeUR_PSG2, $0C, $20, $00, vNone
+	sHeaderPSG	ExtraLifeUR_PSG3, $0D, $28, $00, vNone
+
+	; Patch $00
+	; $3C
+	; $31, $52, $50, $30,	$52, $53, $52, $53
+	; $08, $00, $08, $00,	$04, $00, $04, $00
+	; $10, $07, $10, $07,	$1A, $00, $16, $00
+	spAlgorithm	$04
+	spFeedback	$07
+	spDetune	$03, $05, $05, $03
+	spMultiple	$01, $00, $02, $00
+	spRateScale	$01, $01, $01, $01
+	spAttackRt	$12, $12, $13, $13
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$08, $08, $00, $00
+	spSustainLv	$01, $01, $00, $00
+	spDecayRt	$04, $04, $00, $00
+	spReleaseRt	$00, $00, $07, $07
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$1A, $16, $00, $00
+
+	; Patch $01
+	; $34
+	; $33, $01, $7E, $74,	$5B, $9F, $5F, $1F
+	; $04, $07, $07, $08,	$00, $00, $00, $00
+	; $F6, $F7, $E4, $F7,	$23, $00, $29, $07
+	spAlgorithm	$04
+	spFeedback	$06
+	spDetune	$03, $07, $00, $07
+	spMultiple	$03, $0E, $01, $04
+	spRateScale	$01, $01, $02, $00
+	spAttackRt	$1B, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$04, $07, $07, $08
+	spSustainLv	$0F, $0E, $0F, $0F
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$06, $04, $07, $07
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$23, $29, $00, $07
+
+	; Patch $02
+	; $3B
+	; $07, $34, $32, $01,	$1F, $14, $5F, $5F
+	; $02, $02, $03, $04,	$01, $01, $02, $03
+	; $13, $13, $13, $17,	$1E, $28, $28, $00
+	spAlgorithm	$03
+	spFeedback	$07
+	spDetune	$00, $03, $03, $00
+	spMultiple	$07, $02, $04, $01
+	spRateScale	$00, $01, $00, $01
+	spAttackRt	$1F, $1F, $14, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$02, $03, $02, $04
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$01, $02, $01, $03
+	spReleaseRt	$03, $03, $03, $07
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$1E, $28, $28, $00
+
+	; Patch $03
+	; $08
+	; $7A, $30, $00, $70,	$1F, $1F, $5F, $5F
+	; $12, $0E, $0A, $0A,	$00, $04, $04, $03
+	; $2F, $2F, $2F, $2F,	$24, $2D, $13, $00
+	spAlgorithm	$00
+	spFeedback	$01
+	spDetune	$07, $00, $03, $07
+	spMultiple	$0A, $00, $00, $00
+	spRateScale	$00, $01, $00, $01
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$12, $0A, $0E, $0A
+	spSustainLv	$02, $02, $02, $02
+	spDecayRt	$00, $04, $04, $03
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$24, $13, $2D, $00
+
+ExtraLifeUR_FM1:
+	sPan		spCenter
+	dc.b nRst, $19
+	sVoice		$03
+	saVol		$0B
+	dc.b nA3, $14, nG3, $13, nA3, $0D, nB3, $13
+	dc.b nA3, nB3, $0D, nG3, $7A, nRst, $3A
+	sStop
+
+ExtraLifeUR_FM2:
+	sVoice		$00
+	saVol		$16
+	sPan		spCenter
+	dc.b nG3, $06
+	saVol		$FF
+	dc.b nD4
+	sVoice		$01
+	saVol		$F8
+	dc.b nF4, $07
+	saVol		$FF
+	dc.b nFs4, $06
+	saVol		$FE
+	dc.b nG4, $14, nFs4, $13, nG4, $0D, nA4, $13
+	dc.b nG4, nA4, $0D, nB4, $7A, nRst, $3A
+	sStop
+
+ExtraLifeUR_FM3:
+	sPan		spCenter
+	dc.b nRst, $0C
+	sVoice		$02
+	saVol		$16
+	dc.b nF5, $07
+	saVol		$FF
+	dc.b nFs5, $06
+	saVol		$FE
+	dc.b nG5, $34, nC6, $33, nD6, $07, nE6, $06
+	dc.b nD6, nE6, $07, nD6, $06, nE6, $07, nD6
+	dc.b $06, nE6, $07, nD6, $40, nRst
+	sStop
+
+ExtraLifeUR_FM4:
+	sPan		spCenter
+	dc.b nRst, $19
+	sVoice		$00
+	saVol		$11
+	sPan		spLeft
+	dc.b nG4, $1A, nRst, nA4, $19, nRst, $1A, nG4
+	dc.b $7A, nRst, $3A
+	sStop
+
+ExtraLifeUR_FM5:
+	sPan		spCenter
+	dc.b nRst, $19
+	sVoice		$00
+	saVol		$11
+	sPan		spRight
+	dc.b nC5, $1A, nRst, nD5, $19, nRst, $1A, nB4
+	dc.b $7A, nRst, $3A
+	sStop
+
+ExtraLifeUR_PSG1:
+	saVol	$06
+	dc.b nG1, $06
+	saVol	$FF
+	dc.b nD2
+	saVol	$FF
+	dc.b nF2, $07
+	saVol	$FF
+	dc.b nFs2, $06, nG2, $02
+	ssDetune	$FF
+	dc.b $01
+	ssDetune	$FE
+	dc.b $02
+	ssDetune	$FF
+	dc.b $01
+	ssDetune	$00
+	dc.b nG2
+	ssDetune	$01
+	dc.b nG2
+	ssDetune	$02
+	dc.b nG2
+	ssDetune	$03
+	dc.b $03
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$01
+	dc.b nG2
+	ssDetune	$00
+	dc.b nG2
+	ssDetune	$FF
+	dc.b $02
+	ssDetune	$FE
+	dc.b $01
+	ssDetune	$FF
+	dc.b $02
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$02
+	dc.b $02
+	ssDetune	$03
+	dc.b $03
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $01
+	ssDetune	$FE
+	dc.b $02
+	ssDetune	$FF
+	dc.b $01
+	ssDetune	$00
+	dc.b nG2
+	ssDetune	$01
+	dc.b nG2
+	ssDetune	$02
+	dc.b nG2
+	ssDetune	$03
+	dc.b $03
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$01
+	dc.b nG2
+	ssDetune	$00
+	dc.b nG2
+	ssDetune	$FF
+	dc.b $02
+	ssDetune	$FE
+	dc.b $01
+	ssDetune	$FF
+	dc.b $02
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$02
+	dc.b nG2
+	ssDetune	$03
+	dc.b $03
+	ssDetune	$00
+	dc.b nA2, $01
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$02
+	dc.b nA2
+	ssDetune	$03
+	dc.b nA2
+	ssDetune	$02
+	dc.b nA2
+	ssDetune	$00
+	dc.b nA2
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b nA2
+	ssDetune	$02
+	dc.b nA2
+	ssDetune	$03
+	dc.b $03
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$01
+	dc.b nA2
+	ssDetune	$00
+	dc.b nA2
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$03
+	dc.b $03
+	ssDetune	$02
+	dc.b $02
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$FF
+	dc.b $05
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b nA2
+	ssDetune	$02
+	dc.b nA2
+	ssDetune	$03
+	dc.b $02
+	ssDetune	$00
+	dc.b nD3
+	ssDetune	$FF
+	dc.b $03
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$02
+	dc.b $05
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $03
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$02
+	dc.b $04
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $03
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$02
+	dc.b $05
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $03
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b $02
+	ssDetune	$02
+	dc.b $04
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $03
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$02
+	dc.b $05
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$00
+	dc.b nD3
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b $02
+	ssDetune	$02
+	dc.b $04
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $03
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$02
+	dc.b $05
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b $02
+	ssDetune	$02
+	dc.b $04
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $03
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$02
+	dc.b $04, nRst, $3C
+	sStop
+
+ExtraLifeUR_PSG2:
+	dc.b nRst, $19
+	saVol	$03
+	dc.b nC2, $01
+	ssDetune	$FF
+	dc.b nC2
+	ssDetune	$FE
+	dc.b nC2
+	ssDetune	$FD
+	dc.b $02
+	ssDetune	$FE
+	dc.b $01
+	ssDetune	$FF
+	dc.b nC2
+	ssDetune	$01
+	dc.b nC2
+	ssDetune	$03
+	dc.b nC2
+	ssDetune	$04
+	dc.b nC2
+	ssDetune	$05
+	dc.b nC2
+	ssDetune	$04
+	dc.b nC2
+	ssDetune	$03
+	dc.b nC2
+	ssDetune	$02
+	dc.b nC2
+	ssDetune	$FF
+	dc.b nC2
+	ssDetune	$FE
+	dc.b $02
+	ssDetune	$FD
+	dc.b $01
+	ssDetune	$FE
+	dc.b nC2
+	ssDetune	$FF
+	dc.b nC2
+	ssDetune	$00
+	dc.b nC2
+	ssDetune	$02
+	dc.b nC2
+	ssDetune	$03
+	dc.b nC2
+	ssDetune	$05
+	dc.b $02
+	ssDetune	$04
+	dc.b $01
+	ssDetune	$02
+	dc.b nC2
+	ssDetune	$00
+	dc.b nC2
+	ssDetune	$FF
+	dc.b nC2
+	ssDetune	$FE
+	dc.b nC2
+	ssDetune	$FD
+	dc.b $02
+	ssDetune	$FE
+	dc.b $01
+	ssDetune	$00
+	dc.b nC2
+	ssDetune	$01
+	dc.b nC2
+	ssDetune	$03
+	dc.b nC2
+	ssDetune	$04
+	dc.b nC2
+	ssDetune	$05
+	dc.b nC2
+	ssDetune	$04
+	dc.b nC2
+	ssDetune	$03
+	dc.b nC2
+	ssDetune	$02
+	dc.b nC2
+	ssDetune	$FF
+	dc.b nC2
+	ssDetune	$FE
+	dc.b $02
+	ssDetune	$FD
+	dc.b $01
+	ssDetune	$FE
+	dc.b nC2
+	ssDetune	$FF
+	dc.b nC2
+	ssDetune	$01
+	dc.b nC2
+	ssDetune	$02
+	dc.b nC2
+	ssDetune	$04
+	dc.b nC2
+	ssDetune	$05
+	dc.b $02
+	ssDetune	$00
+	dc.b nD2, $01
+	ssDetune	$FE
+	dc.b $04
+	ssDetune	$FF
+	dc.b $01
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$02
+	dc.b nD2
+	ssDetune	$03
+	dc.b nD2
+	ssDetune	$04
+	dc.b $02
+	ssDetune	$03
+	dc.b $01
+	ssDetune	$02
+	dc.b nD2
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$FF
+	dc.b nD2
+	ssDetune	$FE
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b nD2
+	ssDetune	$03
+	dc.b nD2
+	ssDetune	$04
+	dc.b $03
+	ssDetune	$03
+	dc.b $01
+	ssDetune	$01
+	dc.b nD2
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$FE
+	dc.b $04
+	ssDetune	$FF
+	dc.b $01
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$02
+	dc.b nD2
+	ssDetune	$03
+	dc.b nD2
+	ssDetune	$04
+	dc.b $02
+	ssDetune	$03
+	dc.b $01
+	ssDetune	$02
+	dc.b nD2
+	ssDetune	$00
+	dc.b nD2
+	ssDetune	$FF
+	dc.b nD2
+	ssDetune	$FE
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b nD2
+	ssDetune	$03
+	dc.b nD2
+	ssDetune	$04
+	dc.b $02
+	ssDetune	$00
+	dc.b nB2
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b nB2
+	ssDetune	$02
+	dc.b $02
+	ssDetune	$03
+	dc.b nB2
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$01
+	dc.b nB2
+	ssDetune	$00
+	dc.b nB2
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$02
+	dc.b nB2
+	ssDetune	$03
+	dc.b $02
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$01
+	dc.b nB2
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$FF
+	dc.b $04
+
+ExtraLifeUR_Loop1:
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b nB2
+	ssDetune	$02
+	dc.b nB2
+	ssDetune	$03
+	dc.b $02
+	ssDetune	$02
+	dc.b nB2
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$00
+	dc.b nB2
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b $02
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$03
+	dc.b $02
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$01
+	dc.b nB2
+	ssDetune	$00
+	dc.b nB2
+	ssDetune	$FF
+	dc.b $05
+	sLoop		$00, $02, ExtraLifeUR_Loop1
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b nB2
+	ssDetune	$02
+	dc.b nB2
+	ssDetune	$03
+	dc.b $02
+	ssDetune	$02
+	dc.b nB2
+	ssDetune	$00
+	dc.b nB2
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $01
+	ssDetune	$01
+	dc.b nB2
+	ssDetune	$02
+	dc.b nB2
+	ssDetune	$03
+	dc.b $03
+	ssDetune	$02
+	dc.b $01
+	ssDetune	$01
+	dc.b nB2
+	ssDetune	$00
+	dc.b nB2
+	ssDetune	$FF
+	dc.b $04
+	ssDetune	$00
+	dc.b $02
+	ssDetune	$01
+	dc.b $01
+	ssDetune	$02
+	dc.b nB2
+	ssDetune	$03
+	dc.b $02
+	ssDetune	$02
+	dc.b $01, nRst, $3C
+	sStop
+
+ExtraLifeUR_PSG3:
+	dc.b nRst, $19
+	sNoisePSG	$E7
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$F9
+	ssDetune	$01
+	dc.b $03
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	saVol	$05
+	ssDetune	$01
+	dc.b nA5, nRst
+	saVol	$FB
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$05
+	ssDetune	$01
+	dc.b nA5, nRst, $02
+	saVol	$F2
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$05
+	ssDetune	$01
+	dc.b $01
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$FA
+	ssDetune	$01
+	dc.b $03
+
+ExtraLifeUR_Loop2:
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	sLoop		$00, $03, ExtraLifeUR_Loop2
+	saVol	$FA
+	ssDetune	$01
+	dc.b $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5, nRst, $02
+	saVol	$F3
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$05
+	ssDetune	$01
+	dc.b nA5
+	saVol	$FA
+	ssDetune	$01
+	dc.b $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5, nRst
+	saVol	$F2
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	saVol	$05
+	ssDetune	$01
+	dc.b nA5
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$FA
+	ssDetune	$01
+	dc.b $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$05
+	ssDetune	$01
+	dc.b nA5
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5, nRst
+	saVol	$FA
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$05
+	ssDetune	$01
+	dc.b $01, nRst, $02
+	saVol	$F3
+	ssDetune	$01
+	dc.b nA5, $03
+
+ExtraLifeUR_Loop3:
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	sLoop		$00, $03, ExtraLifeUR_Loop3
+	saVol	$FC
+	ssDetune	$01
+	dc.b $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5, nRst
+	saVol	$FB
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5, nRst
+	saVol	$F2
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$F9
+	ssDetune	$01
+	dc.b $03
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	saVol	$05
+	ssDetune	$01
+	dc.b nA5, nRst
+	saVol	$F3
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$05
+	ssDetune	$01
+	dc.b nA5
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5, nRst, $06
+	saVol	$F9
+	ssDetune	$01
+	dc.b nA5, $03
+
+ExtraLifeUR_Loop4:
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	sLoop		$00, $03, ExtraLifeUR_Loop4
+	saVol	$FA
+	ssDetune	$01
+	dc.b $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5, nRst, $02
+	saVol	$F3
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$05
+	ssDetune	$01
+	dc.b nA5, nRst, $07
+	saVol	$FD
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$03
+	ssDetune	$01
+	dc.b $01, nRst, $02
+	saVol	$FE
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01, nRst, $03
+	saVol	$F6
+	ssDetune	$01
+	dc.b nA5
+	saVol	$05
+	ssDetune	$01
+	dc.b $01
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$03
+	ssDetune	$01
+	dc.b nA5
+	saVol	$FA
+	ssDetune	$01
+	dc.b $03
+
+ExtraLifeUR_Loop5:
+	saVol	$03
+	ssDetune	$01
+	dc.b $01
+	sLoop		$00, $03, ExtraLifeUR_Loop5
+	saVol	$FA
+	ssDetune	$01
+	dc.b $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5, nRst, $02
+	saVol	$FC
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$03
+	ssDetune	$01
+	dc.b $01, nRst, $02
+	saVol	$FD
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01
+	saVol	$04
+	ssDetune	$01
+	dc.b nA5, nRst, $02
+	saVol	$FC
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$03
+	ssDetune	$01
+	dc.b $01, nRst, $02
+	saVol	$FE
+	ssDetune	$01
+	dc.b nA5, $03
+	saVol	$01
+	ssDetune	$01
+	dc.b $01, nRst, $03
+
+ExtraLifeUR_Loop6:
+	ssDetune	$01
+	dc.b nA5, nRst
+	saVol	$01
+	sLoop		$00, $02, ExtraLifeUR_Loop6
+	ssDetune	$01
+	dc.b nA5, nRst, $44
+	sStop
+
+ExtraLifeUR_DAC2:
+	dc.b dKick, $06, dKick, dSnareS1, $07, $06, $0D, dKick
+	dc.b $07, dSnareS1, $06, $0D, dKick, dSnareS1, dKick, $0C
+	dc.b dSnareS1, $0D, dSnareS1, dHiTimpani, dLowTimpani, dHiTimpani, dLowTimpani, dHiTimpani
+	dc.b $5C
+	sBackup
+
+ExtraLifeUR_DAC1:
+	sStop

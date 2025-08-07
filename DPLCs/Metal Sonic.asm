@@ -1,0 +1,563 @@
+MetalSonic_PLC:
+MetalSonic_PLC_0: 	dc.w MetalSonic_PLC_126-MetalSonic_PLC
+MetalSonic_PLC_2: 	dc.w MetalSonic_PLC_127-MetalSonic_PLC
+MetalSonic_PLC_4: 	dc.w MetalSonic_PLC_12C-MetalSonic_PLC
+MetalSonic_PLC_6: 	dc.w MetalSonic_PLC_131-MetalSonic_PLC
+MetalSonic_PLC_8: 	dc.w MetalSonic_PLC_136-MetalSonic_PLC
+MetalSonic_PLC_A: 	dc.w MetalSonic_PLC_13B-MetalSonic_PLC
+MetalSonic_PLC_C: 	dc.w MetalSonic_PLC_140-MetalSonic_PLC
+MetalSonic_PLC_E: 	dc.w MetalSonic_PLC_145-MetalSonic_PLC
+MetalSonic_PLC_10: 	dc.w MetalSonic_PLC_14A-MetalSonic_PLC
+MetalSonic_PLC_12: 	dc.w MetalSonic_PLC_14F-MetalSonic_PLC
+MetalSonic_PLC_14: 	dc.w MetalSonic_PLC_154-MetalSonic_PLC
+MetalSonic_PLC_16: 	dc.w MetalSonic_PLC_157-MetalSonic_PLC
+MetalSonic_PLC_18: 	dc.w MetalSonic_PLC_15A-MetalSonic_PLC
+MetalSonic_PLC_1A: 	dc.w MetalSonic_PLC_15D-MetalSonic_PLC
+MetalSonic_PLC_1C: 	dc.w MetalSonic_PLC_162-MetalSonic_PLC
+MetalSonic_PLC_1E: 	dc.w MetalSonic_PLC_165-MetalSonic_PLC
+MetalSonic_PLC_20: 	dc.w MetalSonic_PLC_16A-MetalSonic_PLC
+MetalSonic_PLC_22: 	dc.w MetalSonic_PLC_16F-MetalSonic_PLC
+MetalSonic_PLC_24: 	dc.w MetalSonic_PLC_174-MetalSonic_PLC
+MetalSonic_PLC_26: 	dc.w MetalSonic_PLC_177-MetalSonic_PLC
+MetalSonic_PLC_28: 	dc.w MetalSonic_PLC_17C-MetalSonic_PLC
+MetalSonic_PLC_2A: 	dc.w MetalSonic_PLC_181-MetalSonic_PLC
+MetalSonic_PLC_2C: 	dc.w MetalSonic_PLC_186-MetalSonic_PLC
+MetalSonic_PLC_2E: 	dc.w MetalSonic_PLC_18B-MetalSonic_PLC
+MetalSonic_PLC_30: 	dc.w MetalSonic_PLC_190-MetalSonic_PLC
+MetalSonic_PLC_32: 	dc.w MetalSonic_PLC_195-MetalSonic_PLC
+MetalSonic_PLC_34: 	dc.w MetalSonic_PLC_19A-MetalSonic_PLC
+MetalSonic_PLC_36: 	dc.w MetalSonic_PLC_19D-MetalSonic_PLC
+MetalSonic_PLC_38: 	dc.w MetalSonic_PLC_1A0-MetalSonic_PLC
+MetalSonic_PLC_3A: 	dc.w MetalSonic_PLC_1A5-MetalSonic_PLC
+MetalSonic_PLC_3C: 	dc.w MetalSonic_PLC_1AA-MetalSonic_PLC
+MetalSonic_PLC_3E: 	dc.w MetalSonic_PLC_1AD-MetalSonic_PLC
+MetalSonic_PLC_40: 	dc.w MetalSonic_PLC_1B2-MetalSonic_PLC
+MetalSonic_PLC_42: 	dc.w MetalSonic_PLC_1B7-MetalSonic_PLC
+MetalSonic_PLC_44: 	dc.w MetalSonic_PLC_1BC-MetalSonic_PLC
+MetalSonic_PLC_46: 	dc.w MetalSonic_PLC_1BF-MetalSonic_PLC
+MetalSonic_PLC_48: 	dc.w MetalSonic_PLC_1C4-MetalSonic_PLC
+MetalSonic_PLC_4A: 	dc.w MetalSonic_PLC_1C9-MetalSonic_PLC
+MetalSonic_PLC_4C: 	dc.w MetalSonic_PLC_1CE-MetalSonic_PLC
+MetalSonic_PLC_4E: 	dc.w MetalSonic_PLC_1D3-MetalSonic_PLC
+MetalSonic_PLC_50: 	dc.w MetalSonic_PLC_1D8-MetalSonic_PLC
+MetalSonic_PLC_52: 	dc.w MetalSonic_PLC_1DD-MetalSonic_PLC
+MetalSonic_PLC_54: 	dc.w MetalSonic_PLC_1E2-MetalSonic_PLC
+MetalSonic_PLC_56: 	dc.w MetalSonic_PLC_1E5-MetalSonic_PLC
+MetalSonic_PLC_58: 	dc.w MetalSonic_PLC_1EA-MetalSonic_PLC
+MetalSonic_PLC_5A: 	dc.w MetalSonic_PLC_1EF-MetalSonic_PLC
+MetalSonic_PLC_5C: 	dc.w MetalSonic_PLC_1F2-MetalSonic_PLC
+MetalSonic_PLC_5E: 	dc.w MetalSonic_PLC_1F7-MetalSonic_PLC
+MetalSonic_PLC_60: 	dc.w MetalSonic_PLC_1FC-MetalSonic_PLC
+MetalSonic_PLC_62: 	dc.w MetalSonic_PLC_201-MetalSonic_PLC
+MetalSonic_PLC_64: 	dc.w MetalSonic_PLC_206-MetalSonic_PLC
+MetalSonic_PLC_66: 	dc.w MetalSonic_PLC_20D-MetalSonic_PLC
+MetalSonic_PLC_68: 	dc.w MetalSonic_PLC_214-MetalSonic_PLC
+MetalSonic_PLC_6A: 	dc.w MetalSonic_PLC_21B-MetalSonic_PLC
+MetalSonic_PLC_6C: 	dc.w MetalSonic_PLC_21E-MetalSonic_PLC
+MetalSonic_PLC_6E: 	dc.w MetalSonic_PLC_223-MetalSonic_PLC
+MetalSonic_PLC_70: 	dc.w MetalSonic_PLC_228-MetalSonic_PLC
+MetalSonic_PLC_72: 	dc.w MetalSonic_PLC_22D-MetalSonic_PLC
+MetalSonic_PLC_74: 	dc.w MetalSonic_PLC_232-MetalSonic_PLC
+MetalSonic_PLC_76: 	dc.w MetalSonic_PLC_239-MetalSonic_PLC
+MetalSonic_PLC_78: 	dc.w MetalSonic_PLC_240-MetalSonic_PLC
+MetalSonic_PLC_7A: 	dc.w MetalSonic_PLC_247-MetalSonic_PLC
+MetalSonic_PLC_7C: 	dc.w MetalSonic_PLC_24A-MetalSonic_PLC
+MetalSonic_PLC_7E: 	dc.w MetalSonic_PLC_24D-MetalSonic_PLC
+MetalSonic_PLC_80: 	dc.w MetalSonic_PLC_250-MetalSonic_PLC
+MetalSonic_PLC_82: 	dc.w MetalSonic_PLC_253-MetalSonic_PLC
+MetalSonic_PLC_84: 	dc.w MetalSonic_PLC_256-MetalSonic_PLC
+MetalSonic_PLC_86: 	dc.w MetalSonic_PLC_259-MetalSonic_PLC
+MetalSonic_PLC_88: 	dc.w MetalSonic_PLC_25E-MetalSonic_PLC
+MetalSonic_PLC_8A: 	dc.w MetalSonic_PLC_263-MetalSonic_PLC
+MetalSonic_PLC_8C: 	dc.w MetalSonic_PLC_268-MetalSonic_PLC
+MetalSonic_PLC_8E: 	dc.w MetalSonic_PLC_26D-MetalSonic_PLC
+MetalSonic_PLC_90: 	dc.w MetalSonic_PLC_272-MetalSonic_PLC
+MetalSonic_PLC_92: 	dc.w MetalSonic_PLC_277-MetalSonic_PLC
+MetalSonic_PLC_94: 	dc.w MetalSonic_PLC_27C-MetalSonic_PLC
+MetalSonic_PLC_96: 	dc.w MetalSonic_PLC_27F-MetalSonic_PLC
+MetalSonic_PLC_98: 	dc.w MetalSonic_PLC_284-MetalSonic_PLC
+MetalSonic_PLC_9A: 	dc.w MetalSonic_PLC_289-MetalSonic_PLC
+MetalSonic_PLC_9C: 	dc.w MetalSonic_PLC_28E-MetalSonic_PLC
+MetalSonic_PLC_9E: 	dc.w MetalSonic_PLC_293-MetalSonic_PLC
+MetalSonic_PLC_A0: 	dc.w MetalSonic_PLC_298-MetalSonic_PLC
+MetalSonic_PLC_A2: 	dc.w MetalSonic_PLC_29B-MetalSonic_PLC
+MetalSonic_PLC_A4: 	dc.w MetalSonic_PLC_2A0-MetalSonic_PLC
+MetalSonic_PLC_A6: 	dc.w MetalSonic_PLC_2A3-MetalSonic_PLC
+MetalSonic_PLC_A8: 	dc.w MetalSonic_PLC_2A6-MetalSonic_PLC
+MetalSonic_PLC_AA: 	dc.w MetalSonic_PLC_2A9-MetalSonic_PLC
+MetalSonic_PLC_AC: 	dc.w MetalSonic_PLC_2AC-MetalSonic_PLC
+MetalSonic_PLC_AE: 	dc.w MetalSonic_PLC_2B1-MetalSonic_PLC
+MetalSonic_PLC_B0: 	dc.w MetalSonic_PLC_2B6-MetalSonic_PLC
+MetalSonic_PLC_B2: 	dc.w MetalSonic_PLC_2BB-MetalSonic_PLC
+MetalSonic_PLC_B4: 	dc.w MetalSonic_PLC_2C0-MetalSonic_PLC
+MetalSonic_PLC_B6: 	dc.w MetalSonic_PLC_2C5-MetalSonic_PLC
+MetalSonic_PLC_B8: 	dc.w MetalSonic_PLC_2CA-MetalSonic_PLC
+MetalSonic_PLC_BA: 	dc.w MetalSonic_PLC_2CF-MetalSonic_PLC
+MetalSonic_PLC_BC: 	dc.w MetalSonic_PLC_2D4-MetalSonic_PLC
+MetalSonic_PLC_BE: 	dc.w MetalSonic_PLC_2D9-MetalSonic_PLC
+MetalSonic_PLC_C0: 	dc.w MetalSonic_PLC_2DE-MetalSonic_PLC
+MetalSonic_PLC_C2: 	dc.w MetalSonic_PLC_2E3-MetalSonic_PLC
+MetalSonic_PLC_C4: 	dc.w MetalSonic_PLC_2E8-MetalSonic_PLC
+MetalSonic_PLC_C6: 	dc.w MetalSonic_PLC_2EF-MetalSonic_PLC
+MetalSonic_PLC_C8: 	dc.w MetalSonic_PLC_2F4-MetalSonic_PLC
+MetalSonic_PLC_CA: 	dc.w MetalSonic_PLC_2F9-MetalSonic_PLC
+MetalSonic_PLC_CC: 	dc.w MetalSonic_PLC_2FC-MetalSonic_PLC
+MetalSonic_PLC_CE: 	dc.w MetalSonic_PLC_2FF-MetalSonic_PLC
+MetalSonic_PLC_D0: 	dc.w MetalSonic_PLC_302-MetalSonic_PLC
+MetalSonic_PLC_D2: 	dc.w MetalSonic_PLC_305-MetalSonic_PLC
+MetalSonic_PLC_D4: 	dc.w MetalSonic_PLC_308-MetalSonic_PLC
+MetalSonic_PLC_D6: 	dc.w MetalSonic_PLC_30B-MetalSonic_PLC
+MetalSonic_PLC_D8: 	dc.w MetalSonic_PLC_312-MetalSonic_PLC
+MetalSonic_PLC_DA: 	dc.w MetalSonic_PLC_317-MetalSonic_PLC
+MetalSonic_PLC_DC: 	dc.w MetalSonic_PLC_31E-MetalSonic_PLC
+MetalSonic_PLC_DE: 	dc.w MetalSonic_PLC_325-MetalSonic_PLC
+MetalSonic_PLC_E0: 	dc.w MetalSonic_PLC_32C-MetalSonic_PLC
+MetalSonic_PLC_E2: 	dc.w MetalSonic_PLC_333-MetalSonic_PLC
+MetalSonic_PLC_E4: 	dc.w MetalSonic_PLC_33A-MetalSonic_PLC
+MetalSonic_PLC_E6: 	dc.w MetalSonic_PLC_341-MetalSonic_PLC
+MetalSonic_PLC_E8: 	dc.w MetalSonic_PLC_348-MetalSonic_PLC
+MetalSonic_PLC_EA: 	dc.w MetalSonic_PLC_34F-MetalSonic_PLC
+MetalSonic_PLC_EC: 	dc.w MetalSonic_PLC_356-MetalSonic_PLC
+MetalSonic_PLC_EE: 	dc.w MetalSonic_PLC_35D-MetalSonic_PLC
+MetalSonic_PLC_F0: 	dc.w MetalSonic_PLC_364-MetalSonic_PLC
+MetalSonic_PLC_F2: 	dc.w MetalSonic_PLC_36B-MetalSonic_PLC
+MetalSonic_PLC_F4: 	dc.w MetalSonic_PLC_372-MetalSonic_PLC
+MetalSonic_PLC_F6: 	dc.w MetalSonic_PLC_377-MetalSonic_PLC
+MetalSonic_PLC_F8: 	dc.w MetalSonic_PLC_37C-MetalSonic_PLC
+MetalSonic_PLC_FA: 	dc.w MetalSonic_PLC_381-MetalSonic_PLC
+MetalSonic_PLC_FC: 	dc.w MetalSonic_PLC_386-MetalSonic_PLC
+MetalSonic_PLC_FE: 	dc.w MetalSonic_PLC_389-MetalSonic_PLC
+MetalSonic_PLC_100: 	dc.w MetalSonic_PLC_38C-MetalSonic_PLC
+MetalSonic_PLC_102: 	dc.w MetalSonic_PLC_38F-MetalSonic_PLC
+MetalSonic_PLC_104: 	dc.w MetalSonic_PLC_392-MetalSonic_PLC
+MetalSonic_PLC_106: 	dc.w MetalSonic_PLC_395-MetalSonic_PLC
+MetalSonic_PLC_108: 	dc.w MetalSonic_PLC_398-MetalSonic_PLC
+MetalSonic_PLC_10A: 	dc.w MetalSonic_PLC_39D-MetalSonic_PLC
+MetalSonic_PLC_10C: 	dc.w MetalSonic_PLC_3A0-MetalSonic_PLC
+MetalSonic_PLC_10E: 	dc.w MetalSonic_PLC_3A3-MetalSonic_PLC
+MetalSonic_PLC_110: 	dc.w MetalSonic_PLC_3A6-MetalSonic_PLC
+MetalSonic_PLC_112: 	dc.w MetalSonic_PLC_3A9-MetalSonic_PLC
+MetalSonic_PLC_114: 	dc.w MetalSonic_PLC_3AC-MetalSonic_PLC
+MetalSonic_PLC_116: 	dc.w MetalSonic_PLC_3B1-MetalSonic_PLC
+MetalSonic_PLC_118: 	dc.w MetalSonic_PLC_3B4-MetalSonic_PLC
+MetalSonic_PLC_11A: 	dc.w MetalSonic_PLC_3B9-MetalSonic_PLC
+MetalSonic_PLC_11C: 	dc.w MetalSonic_PLC_3BE-MetalSonic_PLC
+MetalSonic_PLC_11E: 	dc.w MetalSonic_PLC_3C3-MetalSonic_PLC
+MetalSonic_PLC_120: 	dc.w MetalSonic_PLC_3C6-MetalSonic_PLC
+MetalSonic_PLC_122: 	dc.w MetalSonic_PLC_3C9-MetalSonic_PLC
+MetalSonic_PLC_124: 	dc.w MetalSonic_PLC_3CC-MetalSonic_PLC
+MetalSonic_PLC_126: 	dc.b $0
+MetalSonic_PLC_127: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $0, $10
+MetalSonic_PLC_12C: 	dc.b $2
+	dc.b $F0, $11
+	dc.b $0, $21
+MetalSonic_PLC_131: 	dc.b $2
+	dc.b $F0, $22
+	dc.b $10, $32
+MetalSonic_PLC_136: 	dc.b $2
+	dc.b $F0, $34
+	dc.b $10, $44
+MetalSonic_PLC_13B: 	dc.b $2
+	dc.b $F0, $46
+	dc.b $10, $56
+MetalSonic_PLC_140: 	dc.b $2
+	dc.b $F0, $58
+	dc.b $10, $68
+MetalSonic_PLC_145: 	dc.b $2
+	dc.b $F0, $6A
+	dc.b $10, $7A
+MetalSonic_PLC_14A: 	dc.b $2
+	dc.b $F0, $7C
+	dc.b $10, $8C
+MetalSonic_PLC_14F: 	dc.b $2
+	dc.b $F0, $8E
+	dc.b $0, $9E
+MetalSonic_PLC_154: 	dc.b $1
+	dc.b $F0, $9F
+MetalSonic_PLC_157: 	dc.b $1
+	dc.b $E0, $AF
+MetalSonic_PLC_15A: 	dc.b $1
+	dc.b $F0, $BE
+MetalSonic_PLC_15D: 	dc.b $2
+	dc.b $F0, $CE
+	dc.b $0, $DE
+MetalSonic_PLC_162: 	dc.b $1
+	dc.b $F0, $DF
+MetalSonic_PLC_165: 	dc.b $2
+	dc.b $F0, $EF
+	dc.b $0, $FF
+MetalSonic_PLC_16A: 	dc.b $2
+	dc.b $F1, $0
+	dc.b $31, $10
+MetalSonic_PLC_16F: 	dc.b $2
+	dc.b $F1, $14
+	dc.b $31, $24
+MetalSonic_PLC_174: 	dc.b $1
+	dc.b $D1, $28
+MetalSonic_PLC_177: 	dc.b $2
+	dc.b $F1, $36
+	dc.b $1, $46
+MetalSonic_PLC_17C: 	dc.b $2
+	dc.b $F1, $47
+	dc.b $11, $57
+MetalSonic_PLC_181: 	dc.b $2
+	dc.b $F1, $59
+	dc.b $21, $69
+MetalSonic_PLC_186: 	dc.b $2
+	dc.b $F1, $6C
+	dc.b $1, $7C
+MetalSonic_PLC_18B: 	dc.b $2
+	dc.b $F1, $7D
+	dc.b $21, $8D
+MetalSonic_PLC_190: 	dc.b $2
+	dc.b $F1, $90
+	dc.b $41, $A0
+MetalSonic_PLC_195: 	dc.b $2
+	dc.b $F1, $A5
+	dc.b $41, $B5
+MetalSonic_PLC_19A: 	dc.b $1
+	dc.b $F1, $BA
+MetalSonic_PLC_19D: 	dc.b $1
+	dc.b $F1, $CA
+MetalSonic_PLC_1A0: 	dc.b $2
+	dc.b $F1, $DA
+	dc.b $31, $EA
+MetalSonic_PLC_1A5: 	dc.b $2
+	dc.b $F1, $EE
+	dc.b $1, $FE
+MetalSonic_PLC_1AA: 	dc.b $1
+	dc.b $F1, $FF
+MetalSonic_PLC_1AD: 	dc.b $2
+	dc.b $F2, $F
+	dc.b $2, $1F
+MetalSonic_PLC_1B2: 	dc.b $2
+	dc.b $F2, $20
+	dc.b $32, $30
+MetalSonic_PLC_1B7: 	dc.b $2
+	dc.b $F2, $34
+	dc.b $32, $44
+MetalSonic_PLC_1BC: 	dc.b $1
+	dc.b $D2, $48
+MetalSonic_PLC_1BF: 	dc.b $2
+	dc.b $F2, $56
+	dc.b $2, $66
+MetalSonic_PLC_1C4: 	dc.b $2
+	dc.b $F2, $67
+	dc.b $12, $77
+MetalSonic_PLC_1C9: 	dc.b $2
+	dc.b $F2, $79
+	dc.b $22, $89
+MetalSonic_PLC_1CE: 	dc.b $2
+	dc.b $F2, $8C
+	dc.b $2, $9C
+MetalSonic_PLC_1D3: 	dc.b $2
+	dc.b $F2, $9D
+	dc.b $22, $AD
+MetalSonic_PLC_1D8: 	dc.b $2
+	dc.b $F2, $B0
+	dc.b $42, $C0
+MetalSonic_PLC_1DD: 	dc.b $2
+	dc.b $F2, $C5
+	dc.b $42, $D5
+MetalSonic_PLC_1E2: 	dc.b $1
+	dc.b $F2, $DA
+MetalSonic_PLC_1E5: 	dc.b $2
+	dc.b $F2, $EA
+	dc.b $2, $FA
+MetalSonic_PLC_1EA: 	dc.b $2
+	dc.b $F2, $FB
+	dc.b $13, $B
+MetalSonic_PLC_1EF: 	dc.b $1
+	dc.b $F3, $D
+MetalSonic_PLC_1F2: 	dc.b $2
+	dc.b $F3, $D
+	dc.b $33, $1D
+MetalSonic_PLC_1F7: 	dc.b $2
+	dc.b $F3, $D
+	dc.b $33, $21
+MetalSonic_PLC_1FC: 	dc.b $2
+	dc.b $F3, $D
+	dc.b $53, $25
+MetalSonic_PLC_201: 	dc.b $2
+	dc.b $F3, $2B
+	dc.b $3, $3B
+MetalSonic_PLC_206: 	dc.b $3
+	dc.b $F3, $2B
+	dc.b $3, $3B
+	dc.b $33, $1D
+MetalSonic_PLC_20D: 	dc.b $3
+	dc.b $F3, $2B
+	dc.b $3, $3B
+	dc.b $33, $21
+MetalSonic_PLC_214: 	dc.b $3
+	dc.b $F3, $2B
+	dc.b $3, $3B
+	dc.b $53, $25
+MetalSonic_PLC_21B: 	dc.b $1
+	dc.b $F3, $3C
+MetalSonic_PLC_21E: 	dc.b $2
+	dc.b $F3, $3C
+	dc.b $33, $1D
+MetalSonic_PLC_223: 	dc.b $2
+	dc.b $F3, $3C
+	dc.b $33, $21
+MetalSonic_PLC_228: 	dc.b $2
+	dc.b $F3, $3C
+	dc.b $53, $25
+MetalSonic_PLC_22D: 	dc.b $2
+	dc.b $F3, $4C
+	dc.b $3, $5C
+MetalSonic_PLC_232: 	dc.b $3
+	dc.b $F3, $4C
+	dc.b $3, $5C
+	dc.b $33, $1D
+MetalSonic_PLC_239: 	dc.b $3
+	dc.b $F3, $4C
+	dc.b $3, $5C
+	dc.b $33, $21
+MetalSonic_PLC_240: 	dc.b $3
+	dc.b $F3, $4C
+	dc.b $3, $5C
+	dc.b $53, $25
+MetalSonic_PLC_247: 	dc.b $1
+	dc.b $F3, $5D
+MetalSonic_PLC_24A: 	dc.b $1
+	dc.b $F3, $6D
+MetalSonic_PLC_24D: 	dc.b $1
+	dc.b $F3, $7D
+MetalSonic_PLC_250: 	dc.b $1
+	dc.b $F3, $8D
+MetalSonic_PLC_253: 	dc.b $1
+	dc.b $F3, $9D
+MetalSonic_PLC_256: 	dc.b $1
+	dc.b $E0, $AF
+MetalSonic_PLC_259: 	dc.b $2
+	dc.b $E0, $AF
+	dc.b $33, $1D
+MetalSonic_PLC_25E: 	dc.b $2
+	dc.b $E0, $AF
+	dc.b $33, $21
+MetalSonic_PLC_263: 	dc.b $2
+	dc.b $E0, $AF
+	dc.b $53, $25
+MetalSonic_PLC_268: 	dc.b $2
+	dc.b $F3, $AD
+	dc.b $23, $BD
+MetalSonic_PLC_26D: 	dc.b $2
+	dc.b $F3, $C0
+	dc.b $23, $D0
+MetalSonic_PLC_272: 	dc.b $2
+	dc.b $F3, $D3
+	dc.b $13, $E3
+MetalSonic_PLC_277: 	dc.b $2
+	dc.b $F3, $E5
+	dc.b $13, $F5
+MetalSonic_PLC_27C: 	dc.b $1
+	dc.b $F3, $F7
+MetalSonic_PLC_27F: 	dc.b $2
+	dc.b $F4, $7
+	dc.b $24, $17
+MetalSonic_PLC_284: 	dc.b $2
+	dc.b $F4, $1A
+	dc.b $14, $2A
+MetalSonic_PLC_289: 	dc.b $2
+	dc.b $F4, $2C
+	dc.b $14, $3C
+MetalSonic_PLC_28E: 	dc.b $2
+	dc.b $F4, $3E
+	dc.b $24, $4E
+MetalSonic_PLC_293: 	dc.b $2
+	dc.b $F4, $51
+	dc.b $4, $61
+MetalSonic_PLC_298: 	dc.b $1
+	dc.b $E4, $62
+MetalSonic_PLC_29B: 	dc.b $2
+	dc.b $F4, $51
+	dc.b $4, $61
+MetalSonic_PLC_2A0: 	dc.b $1
+	dc.b $F4, $71
+MetalSonic_PLC_2A3: 	dc.b $1
+	dc.b $F4, $81
+MetalSonic_PLC_2A6: 	dc.b $1
+	dc.b $F4, $71
+MetalSonic_PLC_2A9: 	dc.b $1
+	dc.b $D4, $91
+MetalSonic_PLC_2AC: 	dc.b $2
+	dc.b $F4, $9F
+	dc.b $4, $AF
+MetalSonic_PLC_2B1: 	dc.b $2
+	dc.b $F4, $B0
+	dc.b $24, $C0
+MetalSonic_PLC_2B6: 	dc.b $2
+	dc.b $F4, $C3
+	dc.b $14, $D3
+MetalSonic_PLC_2BB: 	dc.b $2
+	dc.b $F4, $D5
+	dc.b $14, $E5
+MetalSonic_PLC_2C0: 	dc.b $2
+	dc.b $F4, $E7
+	dc.b $14, $F7
+MetalSonic_PLC_2C5: 	dc.b $2
+	dc.b $F4, $F9
+	dc.b $5, $9
+MetalSonic_PLC_2CA: 	dc.b $2
+	dc.b $F5, $A
+	dc.b $15, $1A
+MetalSonic_PLC_2CF: 	dc.b $2
+	dc.b $F5, $1C
+	dc.b $5, $2C
+MetalSonic_PLC_2D4: 	dc.b $2
+	dc.b $F5, $2D
+	dc.b $55, $3D
+MetalSonic_PLC_2D9: 	dc.b $2
+	dc.b $F5, $43
+	dc.b $55, $53
+MetalSonic_PLC_2DE: 	dc.b $2
+	dc.b $F5, $44
+	dc.b $45, $54
+MetalSonic_PLC_2E3: 	dc.b $2
+	dc.b $F5, $59
+	dc.b $25, $69
+MetalSonic_PLC_2E8: 	dc.b $3
+	dc.b $15, $6C
+	dc.b $F5, $59
+	dc.b $25, $69
+MetalSonic_PLC_2EF: 	dc.b $2
+	dc.b $F5, $6E
+	dc.b $25, $7E
+MetalSonic_PLC_2F4: 	dc.b $2
+	dc.b $F5, $81
+	dc.b $15, $91
+MetalSonic_PLC_2F9: 	dc.b $1
+	dc.b $D5, $93
+MetalSonic_PLC_2FC: 	dc.b $1
+	dc.b $D5, $A1
+MetalSonic_PLC_2FF: 	dc.b $1
+	dc.b $D5, $AF
+MetalSonic_PLC_302: 	dc.b $1
+	dc.b $D5, $BD
+MetalSonic_PLC_305: 	dc.b $1
+	dc.b $D5, $CB
+MetalSonic_PLC_308: 	dc.b $1
+	dc.b $D5, $D9
+MetalSonic_PLC_30B: 	dc.b $3
+	dc.b $F5, $E7
+	dc.b $25, $F7
+	dc.b $33, $1D
+MetalSonic_PLC_312: 	dc.b $2
+	dc.b $E5, $E7
+	dc.b $75, $FA
+MetalSonic_PLC_317: 	dc.b $3
+	dc.b $F5, $E7
+	dc.b $25, $F7
+	dc.b $53, $25
+MetalSonic_PLC_31E: 	dc.b $3
+	dc.b $F5, $E7
+	dc.b $25, $F7
+	dc.b $36, $2
+MetalSonic_PLC_325: 	dc.b $3
+	dc.b $F6, $6
+	dc.b $16, $16
+	dc.b $33, $1D
+MetalSonic_PLC_32C: 	dc.b $3
+	dc.b $F6, $6
+	dc.b $16, $16
+	dc.b $33, $21
+MetalSonic_PLC_333: 	dc.b $3
+	dc.b $F6, $6
+	dc.b $16, $16
+	dc.b $53, $25
+MetalSonic_PLC_33A: 	dc.b $3
+	dc.b $F6, $6
+	dc.b $16, $16
+	dc.b $36, $2
+MetalSonic_PLC_341: 	dc.b $3
+	dc.b $F6, $18
+	dc.b $16, $28
+	dc.b $33, $1D
+MetalSonic_PLC_348: 	dc.b $3
+	dc.b $F6, $18
+	dc.b $16, $28
+	dc.b $33, $21
+MetalSonic_PLC_34F: 	dc.b $3
+	dc.b $F6, $18
+	dc.b $16, $28
+	dc.b $53, $25
+MetalSonic_PLC_356: 	dc.b $3
+	dc.b $F6, $18
+	dc.b $16, $28
+	dc.b $36, $2
+MetalSonic_PLC_35D: 	dc.b $3
+	dc.b $F6, $2A
+	dc.b $16, $3A
+	dc.b $33, $1D
+MetalSonic_PLC_364: 	dc.b $3
+	dc.b $F6, $2A
+	dc.b $16, $3A
+	dc.b $33, $21
+MetalSonic_PLC_36B: 	dc.b $3
+	dc.b $F6, $2A
+	dc.b $16, $3A
+	dc.b $53, $25
+MetalSonic_PLC_372: 	dc.b $2
+	dc.b $F6, $2A
+	dc.b $56, $3C
+MetalSonic_PLC_377: 	dc.b $2
+	dc.b $F6, $42
+	dc.b $26, $52
+MetalSonic_PLC_37C: 	dc.b $2
+	dc.b $F6, $55
+	dc.b $26, $65
+MetalSonic_PLC_381: 	dc.b $2
+	dc.b $F6, $68
+	dc.b $16, $78
+MetalSonic_PLC_386: 	dc.b $1
+	dc.b $F6, $7A
+MetalSonic_PLC_389: 	dc.b $1
+	dc.b $D6, $8A
+MetalSonic_PLC_38C: 	dc.b $1
+	dc.b $B6, $98
+MetalSonic_PLC_38F: 	dc.b $1
+	dc.b $D6, $A4
+MetalSonic_PLC_392: 	dc.b $1
+	dc.b $B6, $B2
+MetalSonic_PLC_395: 	dc.b $1
+	dc.b $D6, $BE
+MetalSonic_PLC_398: 	dc.b $2
+	dc.b $F6, $CC
+	dc.b $16, $DC
+MetalSonic_PLC_39D: 	dc.b $1
+	dc.b $D6, $DE
+MetalSonic_PLC_3A0: 	dc.b $1
+	dc.b $B6, $EC
+MetalSonic_PLC_3A3: 	dc.b $1
+	dc.b $C6, $F8
+MetalSonic_PLC_3A6: 	dc.b $1
+	dc.b $D7, $5
+MetalSonic_PLC_3A9: 	dc.b $1
+	dc.b $F7, $13
+MetalSonic_PLC_3AC: 	dc.b $2
+	dc.b $F7, $23
+	dc.b $7, $33
+MetalSonic_PLC_3B1: 	dc.b $1
+	dc.b $B7, $34
+MetalSonic_PLC_3B4: 	dc.b $2
+	dc.b $F7, $40
+	dc.b $7, $50
+MetalSonic_PLC_3B9: 	dc.b $2
+	dc.b $F7, $51
+	dc.b $57, $61
+MetalSonic_PLC_3BE: 	dc.b $2
+	dc.b $F7, $67
+	dc.b $57, $77
+MetalSonic_PLC_3C3: 	dc.b $1
+	dc.b $36, $2
+MetalSonic_PLC_3C6: 	dc.b $1
+	dc.b $53, $25
+MetalSonic_PLC_3C9: 	dc.b $1
+	dc.b $33, $21
+MetalSonic_PLC_3CC: 	dc.b $1
+	dc.b $33, $1D
+	even

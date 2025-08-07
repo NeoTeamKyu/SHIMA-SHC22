@@ -1,0 +1,10 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh   $01
+
+	sHeaderSFX $80, ctFM4, PeeloutStop_FM4,	$00, $00
+
+; FM4 Data
+PeeloutStop_FM4:
+	sSpinReset
+	sStop

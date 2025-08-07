@@ -1,0 +1,10 @@
+	sHeaderInitSFX
+	sHeaderPrio	$7D
+	sHeaderCh	$01
+	sHeaderSFX	(1<<cfbRun), ctFM5, .FM5, $00, $02
+
+.FM5:
+	sVoice		pEnterSS
+	sModAMPS	$00, $01, $50, $02
+	dc.b nEb6, $65
+	sStop

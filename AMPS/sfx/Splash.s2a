@@ -1,0 +1,22 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$02
+	sHeaderSFX	$A1, ctPSG3, .PSG3, $00+$0C, $00
+	sHeaderSFX	$80, ctFM5, .FM5, $00, $03
+
+.PSG3:
+	sVolEnv		v0D
+	sNoisePSG	snWhitePSG3
+	dc.b nF5, $05, nA5, $05, sHold
+
+.Loop1:
+	dc.b nA5, $07
+	saVol		$08
+	dc.b sHold
+	sLoop		$00, $0C, .Loop1
+	sStop
+
+.FM5:
+	sVoice		pSplash
+	dc.b nCs3, $14
+	sStop

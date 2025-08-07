@@ -1,0 +1,478 @@
+Amy_PLC:
+Amy_PLC_0: 	dc.w Amy_PLC_126-Amy_PLC
+Amy_PLC_2: 	dc.w Amy_PLC_127-Amy_PLC
+Amy_PLC_4: 	dc.w Amy_PLC_12A-Amy_PLC
+Amy_PLC_6: 	dc.w Amy_PLC_12D-Amy_PLC
+Amy_PLC_8: 	dc.w Amy_PLC_130-Amy_PLC
+Amy_PLC_A: 	dc.w Amy_PLC_133-Amy_PLC
+Amy_PLC_C: 	dc.w Amy_PLC_136-Amy_PLC
+Amy_PLC_E: 	dc.w Amy_PLC_139-Amy_PLC
+Amy_PLC_10: 	dc.w Amy_PLC_13C-Amy_PLC
+Amy_PLC_12: 	dc.w Amy_PLC_13F-Amy_PLC
+Amy_PLC_14: 	dc.w Amy_PLC_142-Amy_PLC
+Amy_PLC_16: 	dc.w Amy_PLC_145-Amy_PLC
+Amy_PLC_18: 	dc.w Amy_PLC_148-Amy_PLC
+Amy_PLC_1A: 	dc.w Amy_PLC_14B-Amy_PLC
+Amy_PLC_1C: 	dc.w Amy_PLC_14E-Amy_PLC
+Amy_PLC_1E: 	dc.w Amy_PLC_151-Amy_PLC
+Amy_PLC_20: 	dc.w Amy_PLC_154-Amy_PLC
+Amy_PLC_22: 	dc.w Amy_PLC_157-Amy_PLC
+Amy_PLC_24: 	dc.w Amy_PLC_15A-Amy_PLC
+Amy_PLC_26: 	dc.w Amy_PLC_15D-Amy_PLC
+Amy_PLC_28: 	dc.w Amy_PLC_160-Amy_PLC
+Amy_PLC_2A: 	dc.w Amy_PLC_163-Amy_PLC
+Amy_PLC_2C: 	dc.w Amy_PLC_166-Amy_PLC
+Amy_PLC_2E: 	dc.w Amy_PLC_169-Amy_PLC
+Amy_PLC_30: 	dc.w Amy_PLC_16C-Amy_PLC
+Amy_PLC_32: 	dc.w Amy_PLC_16F-Amy_PLC
+Amy_PLC_34: 	dc.w Amy_PLC_172-Amy_PLC
+Amy_PLC_36: 	dc.w Amy_PLC_175-Amy_PLC
+Amy_PLC_38: 	dc.w Amy_PLC_178-Amy_PLC
+Amy_PLC_3A: 	dc.w Amy_PLC_17B-Amy_PLC
+Amy_PLC_3C: 	dc.w Amy_PLC_17E-Amy_PLC
+Amy_PLC_3E: 	dc.w Amy_PLC_181-Amy_PLC
+Amy_PLC_40: 	dc.w Amy_PLC_184-Amy_PLC
+Amy_PLC_42: 	dc.w Amy_PLC_187-Amy_PLC
+Amy_PLC_44: 	dc.w Amy_PLC_18A-Amy_PLC
+Amy_PLC_46: 	dc.w Amy_PLC_18D-Amy_PLC
+Amy_PLC_48: 	dc.w Amy_PLC_190-Amy_PLC
+Amy_PLC_4A: 	dc.w Amy_PLC_193-Amy_PLC
+Amy_PLC_4C: 	dc.w Amy_PLC_196-Amy_PLC
+Amy_PLC_4E: 	dc.w Amy_PLC_199-Amy_PLC
+Amy_PLC_50: 	dc.w Amy_PLC_19C-Amy_PLC
+Amy_PLC_52: 	dc.w Amy_PLC_19F-Amy_PLC
+Amy_PLC_54: 	dc.w Amy_PLC_1A2-Amy_PLC
+Amy_PLC_56: 	dc.w Amy_PLC_1A5-Amy_PLC
+Amy_PLC_58: 	dc.w Amy_PLC_1A8-Amy_PLC
+Amy_PLC_5A: 	dc.w Amy_PLC_1AB-Amy_PLC
+Amy_PLC_5C: 	dc.w Amy_PLC_1AE-Amy_PLC
+Amy_PLC_5E: 	dc.w Amy_PLC_1B1-Amy_PLC
+Amy_PLC_60: 	dc.w Amy_PLC_1B4-Amy_PLC
+Amy_PLC_62: 	dc.w Amy_PLC_1B7-Amy_PLC
+Amy_PLC_64: 	dc.w Amy_PLC_1BA-Amy_PLC
+Amy_PLC_66: 	dc.w Amy_PLC_1BD-Amy_PLC
+Amy_PLC_68: 	dc.w Amy_PLC_1C2-Amy_PLC
+Amy_PLC_6A: 	dc.w Amy_PLC_1C5-Amy_PLC
+Amy_PLC_6C: 	dc.w Amy_PLC_1CA-Amy_PLC
+Amy_PLC_6E: 	dc.w Amy_PLC_1CD-Amy_PLC
+Amy_PLC_70: 	dc.w Amy_PLC_1D0-Amy_PLC
+Amy_PLC_72: 	dc.w Amy_PLC_1D3-Amy_PLC
+Amy_PLC_74: 	dc.w Amy_PLC_1D6-Amy_PLC
+Amy_PLC_76: 	dc.w Amy_PLC_1D9-Amy_PLC
+Amy_PLC_78: 	dc.w Amy_PLC_1DC-Amy_PLC
+Amy_PLC_7A: 	dc.w Amy_PLC_1DF-Amy_PLC
+Amy_PLC_7C: 	dc.w Amy_PLC_1E2-Amy_PLC
+Amy_PLC_7E: 	dc.w Amy_PLC_1E5-Amy_PLC
+Amy_PLC_80: 	dc.w Amy_PLC_1E8-Amy_PLC
+Amy_PLC_82: 	dc.w Amy_PLC_1EB-Amy_PLC
+Amy_PLC_84: 	dc.w Amy_PLC_1EE-Amy_PLC
+Amy_PLC_86: 	dc.w Amy_PLC_1F1-Amy_PLC
+Amy_PLC_88: 	dc.w Amy_PLC_1F4-Amy_PLC
+Amy_PLC_8A: 	dc.w Amy_PLC_1F7-Amy_PLC
+Amy_PLC_8C: 	dc.w Amy_PLC_1FA-Amy_PLC
+Amy_PLC_8E: 	dc.w Amy_PLC_1FD-Amy_PLC
+Amy_PLC_90: 	dc.w Amy_PLC_200-Amy_PLC
+Amy_PLC_92: 	dc.w Amy_PLC_203-Amy_PLC
+Amy_PLC_94: 	dc.w Amy_PLC_208-Amy_PLC
+Amy_PLC_96: 	dc.w Amy_PLC_20B-Amy_PLC
+Amy_PLC_98: 	dc.w Amy_PLC_214-Amy_PLC
+Amy_PLC_9A: 	dc.w Amy_PLC_217-Amy_PLC
+Amy_PLC_9C: 	dc.w Amy_PLC_21C-Amy_PLC
+Amy_PLC_9E: 	dc.w Amy_PLC_221-Amy_PLC
+Amy_PLC_A0: 	dc.w Amy_PLC_224-Amy_PLC
+Amy_PLC_A2: 	dc.w Amy_PLC_227-Amy_PLC
+Amy_PLC_A4: 	dc.w Amy_PLC_22A-Amy_PLC
+Amy_PLC_A6: 	dc.w Amy_PLC_22D-Amy_PLC
+Amy_PLC_A8: 	dc.w Amy_PLC_230-Amy_PLC
+Amy_PLC_AA: 	dc.w Amy_PLC_233-Amy_PLC
+Amy_PLC_AC: 	dc.w Amy_PLC_236-Amy_PLC
+Amy_PLC_AE: 	dc.w Amy_PLC_239-Amy_PLC
+Amy_PLC_B0: 	dc.w Amy_PLC_23C-Amy_PLC
+Amy_PLC_B2: 	dc.w Amy_PLC_23F-Amy_PLC
+Amy_PLC_B4: 	dc.w Amy_PLC_244-Amy_PLC
+Amy_PLC_B6: 	dc.w Amy_PLC_249-Amy_PLC
+Amy_PLC_B8: 	dc.w Amy_PLC_24E-Amy_PLC
+Amy_PLC_BA: 	dc.w Amy_PLC_253-Amy_PLC
+Amy_PLC_BC: 	dc.w Amy_PLC_258-Amy_PLC
+Amy_PLC_BE: 	dc.w Amy_PLC_25D-Amy_PLC
+Amy_PLC_C0: 	dc.w Amy_PLC_262-Amy_PLC
+Amy_PLC_C2: 	dc.w Amy_PLC_267-Amy_PLC
+Amy_PLC_C4: 	dc.w Amy_PLC_26C-Amy_PLC
+Amy_PLC_C6: 	dc.w Amy_PLC_271-Amy_PLC
+Amy_PLC_C8: 	dc.w Amy_PLC_276-Amy_PLC
+Amy_PLC_CA: 	dc.w Amy_PLC_27B-Amy_PLC
+Amy_PLC_CC: 	dc.w Amy_PLC_280-Amy_PLC
+Amy_PLC_CE: 	dc.w Amy_PLC_285-Amy_PLC
+Amy_PLC_D0: 	dc.w Amy_PLC_28A-Amy_PLC
+Amy_PLC_D2: 	dc.w Amy_PLC_28F-Amy_PLC
+Amy_PLC_D4: 	dc.w Amy_PLC_292-Amy_PLC
+Amy_PLC_D6: 	dc.w Amy_PLC_297-Amy_PLC
+Amy_PLC_D8: 	dc.w Amy_PLC_29C-Amy_PLC
+Amy_PLC_DA: 	dc.w Amy_PLC_29F-Amy_PLC
+Amy_PLC_DC: 	dc.w Amy_PLC_2A4-Amy_PLC
+Amy_PLC_DE: 	dc.w Amy_PLC_2A7-Amy_PLC
+Amy_PLC_E0: 	dc.w Amy_PLC_2AA-Amy_PLC
+Amy_PLC_E2: 	dc.w Amy_PLC_2AD-Amy_PLC
+Amy_PLC_E4: 	dc.w Amy_PLC_2B2-Amy_PLC
+Amy_PLC_E6: 	dc.w Amy_PLC_2B7-Amy_PLC
+Amy_PLC_E8: 	dc.w Amy_PLC_2BC-Amy_PLC
+Amy_PLC_EA: 	dc.w Amy_PLC_2C1-Amy_PLC
+Amy_PLC_EC: 	dc.w Amy_PLC_2C6-Amy_PLC
+Amy_PLC_EE: 	dc.w Amy_PLC_2CB-Amy_PLC
+Amy_PLC_F0: 	dc.w Amy_PLC_2CE-Amy_PLC
+Amy_PLC_F2: 	dc.w Amy_PLC_2D1-Amy_PLC
+Amy_PLC_F4: 	dc.w Amy_PLC_2D4-Amy_PLC
+Amy_PLC_F6: 	dc.w Amy_PLC_2D7-Amy_PLC
+Amy_PLC_F8: 	dc.w Amy_PLC_2DA-Amy_PLC
+Amy_PLC_FA: 	dc.w Amy_PLC_2DF-Amy_PLC
+Amy_PLC_FC: 	dc.w Amy_PLC_2E2-Amy_PLC
+Amy_PLC_FE: 	dc.w Amy_PLC_2E5-Amy_PLC
+Amy_PLC_100: 	dc.w Amy_PLC_2E8-Amy_PLC
+Amy_PLC_102: 	dc.w Amy_PLC_2EB-Amy_PLC
+Amy_PLC_104: 	dc.w Amy_PLC_2EE-Amy_PLC
+Amy_PLC_106: 	dc.w Amy_PLC_2F1-Amy_PLC
+Amy_PLC_108: 	dc.w Amy_PLC_2F4-Amy_PLC
+Amy_PLC_10A: 	dc.w Amy_PLC_2F7-Amy_PLC
+Amy_PLC_10C: 	dc.w Amy_PLC_2FA-Amy_PLC
+Amy_PLC_10E: 	dc.w Amy_PLC_2FD-Amy_PLC
+Amy_PLC_110: 	dc.w Amy_PLC_300-Amy_PLC
+Amy_PLC_112: 	dc.w Amy_PLC_303-Amy_PLC
+Amy_PLC_114: 	dc.w Amy_PLC_306-Amy_PLC
+Amy_PLC_116: 	dc.w Amy_PLC_309-Amy_PLC
+Amy_PLC_118: 	dc.w Amy_PLC_30E-Amy_PLC
+Amy_PLC_11A: 	dc.w Amy_PLC_311-Amy_PLC
+Amy_PLC_11C: 	dc.w Amy_PLC_314-Amy_PLC
+Amy_PLC_11E: 	dc.w Amy_PLC_317-Amy_PLC
+Amy_PLC_120: 	dc.w Amy_PLC_31A-Amy_PLC
+Amy_PLC_122: 	dc.w Amy_PLC_31D-Amy_PLC
+Amy_PLC_124: 	dc.w Amy_PLC_322-Amy_PLC
+Amy_PLC_126: 	dc.b $0
+Amy_PLC_127: 	dc.b $1
+	dc.b $E0, $0
+Amy_PLC_12A: 	dc.b $1
+	dc.b $C0, $F
+Amy_PLC_12D: 	dc.b $1
+	dc.b $C0, $1C
+Amy_PLC_130: 	dc.b $1
+	dc.b $C0, $29
+Amy_PLC_133: 	dc.b $1
+	dc.b $B0, $36
+Amy_PLC_136: 	dc.b $1
+	dc.b $E0, $42
+Amy_PLC_139: 	dc.b $1
+	dc.b $E0, $51
+Amy_PLC_13C: 	dc.b $1
+	dc.b $E0, $60
+Amy_PLC_13F: 	dc.b $1
+	dc.b $E0, $6F
+Amy_PLC_142: 	dc.b $1
+	dc.b $D0, $7E
+Amy_PLC_145: 	dc.b $1
+	dc.b $D0, $8C
+Amy_PLC_148: 	dc.b $1
+	dc.b $E0, $9A
+Amy_PLC_14B: 	dc.b $1
+	dc.b $E0, $A9
+Amy_PLC_14E: 	dc.b $1
+	dc.b $C0, $B8
+Amy_PLC_151: 	dc.b $1
+	dc.b $E0, $C5
+Amy_PLC_154: 	dc.b $1
+	dc.b $D0, $D4
+Amy_PLC_157: 	dc.b $1
+	dc.b $D0, $E2
+Amy_PLC_15A: 	dc.b $1
+	dc.b $E0, $F0
+Amy_PLC_15D: 	dc.b $1
+	dc.b $E0, $FF
+Amy_PLC_160: 	dc.b $1
+	dc.b $E1, $E
+Amy_PLC_163: 	dc.b $1
+	dc.b $E1, $1D
+Amy_PLC_166: 	dc.b $1
+	dc.b $D1, $2C
+Amy_PLC_169: 	dc.b $1
+	dc.b $D1, $3A
+Amy_PLC_16C: 	dc.b $1
+	dc.b $E1, $48
+Amy_PLC_16F: 	dc.b $1
+	dc.b $E1, $57
+Amy_PLC_172: 	dc.b $1
+	dc.b $C1, $66
+Amy_PLC_175: 	dc.b $1
+	dc.b $E1, $73
+Amy_PLC_178: 	dc.b $1
+	dc.b $D1, $82
+Amy_PLC_17B: 	dc.b $1
+	dc.b $D1, $90
+Amy_PLC_17E: 	dc.b $1
+	dc.b $D1, $9E
+Amy_PLC_181: 	dc.b $1
+	dc.b $E1, $AC
+Amy_PLC_184: 	dc.b $1
+	dc.b $D1, $BB
+Amy_PLC_187: 	dc.b $1
+	dc.b $E1, $C9
+Amy_PLC_18A: 	dc.b $1
+	dc.b $E1, $D8
+Amy_PLC_18D: 	dc.b $1
+	dc.b $D1, $E7
+Amy_PLC_190: 	dc.b $1
+	dc.b $E1, $F5
+Amy_PLC_193: 	dc.b $1
+	dc.b $E2, $4
+Amy_PLC_196: 	dc.b $1
+	dc.b $D2, $13
+Amy_PLC_199: 	dc.b $1
+	dc.b $E2, $21
+Amy_PLC_19C: 	dc.b $1
+	dc.b $D2, $30
+Amy_PLC_19F: 	dc.b $1
+	dc.b $E2, $3E
+Amy_PLC_1A2: 	dc.b $1
+	dc.b $E2, $4D
+Amy_PLC_1A5: 	dc.b $1
+	dc.b $D2, $5C
+Amy_PLC_1A8: 	dc.b $1
+	dc.b $E2, $6A
+Amy_PLC_1AB: 	dc.b $1
+	dc.b $E2, $79
+Amy_PLC_1AE: 	dc.b $1
+	dc.b $A2, $88
+Amy_PLC_1B1: 	dc.b $1
+	dc.b $A2, $93
+Amy_PLC_1B4: 	dc.b $1
+	dc.b $A2, $9E
+Amy_PLC_1B7: 	dc.b $1
+	dc.b $A2, $A9
+Amy_PLC_1BA: 	dc.b $1
+	dc.b $F2, $B4
+Amy_PLC_1BD: 	dc.b $2
+	dc.b $B2, $C4
+	dc.b $22, $D0
+Amy_PLC_1C2: 	dc.b $1
+	dc.b $F2, $D3
+Amy_PLC_1C5: 	dc.b $2
+	dc.b $B2, $E3
+	dc.b $22, $EF
+Amy_PLC_1CA: 	dc.b $1
+	dc.b $F2, $F2
+Amy_PLC_1CD: 	dc.b $1
+	dc.b $B3, $2
+Amy_PLC_1D0: 	dc.b $1
+	dc.b $C3, $E
+Amy_PLC_1D3: 	dc.b $1
+	dc.b $B3, $1B
+Amy_PLC_1D6: 	dc.b $1
+	dc.b $B3, $27
+Amy_PLC_1D9: 	dc.b $1
+	dc.b $B3, $33
+Amy_PLC_1DC: 	dc.b $1
+	dc.b $B3, $3F
+Amy_PLC_1DF: 	dc.b $1
+	dc.b $A3, $4B
+Amy_PLC_1E2: 	dc.b $1
+	dc.b $A3, $56
+Amy_PLC_1E5: 	dc.b $1
+	dc.b $B3, $61
+Amy_PLC_1E8: 	dc.b $1
+	dc.b $D3, $6D
+Amy_PLC_1EB: 	dc.b $1
+	dc.b $C3, $7B
+Amy_PLC_1EE: 	dc.b $1
+	dc.b $C3, $88
+Amy_PLC_1F1: 	dc.b $1
+	dc.b $C3, $95
+Amy_PLC_1F4: 	dc.b $1
+	dc.b $C3, $A2
+Amy_PLC_1F7: 	dc.b $1
+	dc.b $F3, $AF
+Amy_PLC_1FA: 	dc.b $1
+	dc.b $C3, $BF
+Amy_PLC_1FD: 	dc.b $1
+	dc.b $E3, $CC
+Amy_PLC_200: 	dc.b $1
+	dc.b $C3, $DB
+Amy_PLC_203: 	dc.b $2
+	dc.b $F3, $E8
+	dc.b $3, $F8
+Amy_PLC_208: 	dc.b $1
+	dc.b $C3, $F9
+Amy_PLC_20B: 	dc.b $4
+	dc.b $14, $6
+	dc.b $84, $8
+	dc.b $4, $11
+	dc.b $54, $12
+Amy_PLC_214: 	dc.b $1
+	dc.b $F4, $18
+Amy_PLC_217: 	dc.b $2
+	dc.b $F4, $28
+	dc.b $4, $38
+Amy_PLC_21C: 	dc.b $2
+	dc.b $F4, $39
+	dc.b $24, $49
+Amy_PLC_221: 	dc.b $1
+	dc.b $F4, $4C
+Amy_PLC_224: 	dc.b $1
+	dc.b $A4, $5C
+Amy_PLC_227: 	dc.b $1
+	dc.b $54, $67
+Amy_PLC_22A: 	dc.b $1
+	dc.b $14, $6D
+Amy_PLC_22D: 	dc.b $1
+	dc.b $B3, $3F
+Amy_PLC_230: 	dc.b $1
+	dc.b $A3, $56
+Amy_PLC_233: 	dc.b $1
+	dc.b $C4, $6F
+Amy_PLC_236: 	dc.b $1
+	dc.b $D4, $7C
+Amy_PLC_239: 	dc.b $1
+	dc.b $C4, $8A
+Amy_PLC_23C: 	dc.b $1
+	dc.b $B4, $97
+Amy_PLC_23F: 	dc.b $2
+	dc.b $F4, $A3
+	dc.b $14, $B3
+Amy_PLC_244: 	dc.b $2
+	dc.b $F4, $B5
+	dc.b $24, $C5
+Amy_PLC_249: 	dc.b $2
+	dc.b $F4, $C8
+	dc.b $44, $D8
+Amy_PLC_24E: 	dc.b $2
+	dc.b $F4, $DD
+	dc.b $44, $ED
+Amy_PLC_253: 	dc.b $2
+	dc.b $F4, $F2
+	dc.b $45, $2
+Amy_PLC_258: 	dc.b $2
+	dc.b $F5, $7
+	dc.b $35, $17
+Amy_PLC_25D: 	dc.b $2
+	dc.b $F5, $1B
+	dc.b $25, $2B
+Amy_PLC_262: 	dc.b $2
+	dc.b $F5, $2E
+	dc.b $95, $3E
+Amy_PLC_267: 	dc.b $2
+	dc.b $F5, $48
+	dc.b $85, $58
+Amy_PLC_26C: 	dc.b $2
+	dc.b $F5, $61
+	dc.b $65, $71
+Amy_PLC_271: 	dc.b $2
+	dc.b $F5, $78
+	dc.b $45, $88
+Amy_PLC_276: 	dc.b $2
+	dc.b $F5, $78
+	dc.b $45, $88
+Amy_PLC_27B: 	dc.b $2
+	dc.b $F5, $78
+	dc.b $45, $88
+Amy_PLC_280: 	dc.b $2
+	dc.b $F5, $78
+	dc.b $45, $88
+Amy_PLC_285: 	dc.b $2
+	dc.b $F5, $8D
+	dc.b $35, $9D
+Amy_PLC_28A: 	dc.b $2
+	dc.b $F5, $A1
+	dc.b $25, $B1
+Amy_PLC_28F: 	dc.b $1
+	dc.b $C5, $B4
+Amy_PLC_292: 	dc.b $2
+	dc.b $F5, $A1
+	dc.b $25, $B1
+Amy_PLC_297: 	dc.b $2
+	dc.b $F5, $C1
+	dc.b $25, $D1
+Amy_PLC_29C: 	dc.b $1
+	dc.b $B5, $D4
+Amy_PLC_29F: 	dc.b $2
+	dc.b $F5, $C1
+	dc.b $25, $D1
+Amy_PLC_2A4: 	dc.b $1
+	dc.b $C5, $E0
+Amy_PLC_2A7: 	dc.b $1
+	dc.b $B5, $ED
+Amy_PLC_2AA: 	dc.b $1
+	dc.b $D5, $F9
+Amy_PLC_2AD: 	dc.b $2
+	dc.b $F6, $7
+	dc.b $6, $17
+Amy_PLC_2B2: 	dc.b $2
+	dc.b $F6, $18
+	dc.b $6, $28
+Amy_PLC_2B7: 	dc.b $2
+	dc.b $F6, $29
+	dc.b $36, $39
+Amy_PLC_2BC: 	dc.b $2
+	dc.b $F6, $3D
+	dc.b $66, $4D
+Amy_PLC_2C1: 	dc.b $2
+	dc.b $F6, $54
+	dc.b $56, $64
+Amy_PLC_2C6: 	dc.b $2
+	dc.b $F6, $6A
+	dc.b $6, $7A
+Amy_PLC_2CB: 	dc.b $1
+	dc.b $E6, $7B
+Amy_PLC_2CE: 	dc.b $1
+	dc.b $F6, $8A
+Amy_PLC_2D1: 	dc.b $1
+	dc.b $E6, $9A
+Amy_PLC_2D4: 	dc.b $1
+	dc.b $F6, $A9
+Amy_PLC_2D7: 	dc.b $1
+	dc.b $E6, $B9
+Amy_PLC_2DA: 	dc.b $2
+	dc.b $F6, $C8
+	dc.b $6, $D8
+Amy_PLC_2DF: 	dc.b $1
+	dc.b $C6, $D9
+Amy_PLC_2E2: 	dc.b $1
+	dc.b $D6, $E6
+Amy_PLC_2E5: 	dc.b $1
+	dc.b $C6, $F4
+Amy_PLC_2E8: 	dc.b $1
+	dc.b $D7, $1
+Amy_PLC_2EB: 	dc.b $1
+	dc.b $C7, $F
+Amy_PLC_2EE: 	dc.b $1
+	dc.b $D7, $1C
+Amy_PLC_2F1: 	dc.b $1
+	dc.b $C7, $2A
+Amy_PLC_2F4: 	dc.b $1
+	dc.b $D7, $37
+Amy_PLC_2F7: 	dc.b $1
+	dc.b $B7, $45
+Amy_PLC_2FA: 	dc.b $1
+	dc.b $B7, $51
+Amy_PLC_2FD: 	dc.b $1
+	dc.b $B7, $5D
+Amy_PLC_300: 	dc.b $1
+	dc.b $B7, $69
+Amy_PLC_303: 	dc.b $1
+	dc.b $B7, $75
+Amy_PLC_306: 	dc.b $1
+	dc.b $D7, $81
+Amy_PLC_309: 	dc.b $2
+	dc.b $F7, $8F
+	dc.b $27, $9F
+Amy_PLC_30E: 	dc.b $1
+	dc.b $E7, $A2
+Amy_PLC_311: 	dc.b $1
+	dc.b $D7, $B1
+Amy_PLC_314: 	dc.b $1
+	dc.b $E7, $BF
+Amy_PLC_317: 	dc.b $1
+	dc.b $B7, $CE
+Amy_PLC_31A: 	dc.b $1
+	dc.b $C7, $DA
+Amy_PLC_31D: 	dc.b $2
+	dc.b $87, $F6
+	dc.b $57, $FF
+Amy_PLC_322: 	dc.b $1
+	dc.b $E7, $E7
+	even

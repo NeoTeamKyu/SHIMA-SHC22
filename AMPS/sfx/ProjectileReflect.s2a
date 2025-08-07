@@ -1,0 +1,8 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$01
+	sHeaderSFX	$80, ctFM5, .FM5, $00, $08
+
+.FM5:	sVoice		pProjectileReflect
+	dc.b nC7, $05
+	sStop

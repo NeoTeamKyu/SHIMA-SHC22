@@ -1,0 +1,16 @@
+	sHeaderInitSFX
+	sHeaderPrio	$40
+	sHeaderCh	$01
+	sHeaderSFX	$80, ctFM4, .FM4, $00, $10
+
+.FM4	sVoice		pArrowFire
+	dc.b nG6, $04
+
+.Loop1	dc.b sHold, $04
+	sCont		.Loop1
+
+.Loop2	dc.b sHold, $01
+	saVol		$01
+	sLoop		$00, $22, .Loop2
+	dc.b nRst, $01
+	sStop

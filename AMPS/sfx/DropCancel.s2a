@@ -1,0 +1,8 @@
+	sHeaderInitSFX	; cancels Drop Dash sound
+	sHeaderPrio	$70
+	sHeaderCh	$01
+	sHeaderSFX	$80, ctFM4, .FM4, $FE, $00
+
+.FM4	; Fuck you, we vroomin'.
+	dc.b nRst, $01
+	sStop

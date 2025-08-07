@@ -1,0 +1,9 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$01
+	sHeaderSFX	$80, ctFM4, .FM4, $03, $00
+
+.FM4:
+	sVoice	pBallDeflect
+	dc.b	nEb5, $10
+	sStop

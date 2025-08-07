@@ -1,0 +1,287 @@
+icescapeK_Header:
+	sHeaderInit
+	sHeaderTempo	$01, $30
+	sHeaderCh	$05, $03
+	sHeaderDAC	icescapeK_DAC
+	sHeaderDAC	icescapeK_DAC2
+	sHeaderFM	icescapeK_FM1, $00, $05
+	sHeaderFM	icescapeK_FM2, $00, $00
+	sHeaderFM	icescapeK_FM3, $00, $17-$0C
+	sHeaderFM	icescapeK_FM4, $00, $08
+	sHeaderFM	icescapeK_FM5, $00, $08
+	sHeaderPSG	icescapeK_PSG1, $0C, $10+$0C, $00, v01
+	sHeaderPSG	icescapeK_PSG2, $0C, $06+$0C, $00, v01
+	sHeaderPSG	icescapeK_PSG3, $0C, $15+$0C, $00, v01
+
+        ; Patch $00
+	; $20
+	; $36, $35, $30, $31,	$DF, $DF, $5C, $9F
+	; $07, $06, $09, $06,	$07, $06, $06, $08
+	; $20, $10, $10, $F8,	$19, $37, $13, $00
+	spAlgorithm	$00
+	spFeedback	$04
+	spDetune	$03, $03, $03, $03
+	spMultiple	$06, $00, $05, $01
+	spRateScale	$03, $01, $03, $02
+	spAttackRt	$1F, $1C, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$07, $09, $06, $06
+	spSustainLv	$02, $01, $01, $0F
+	spDecayRt	$07, $06, $06, $08
+	spReleaseRt	$00, $00, $00, $08
+	spTotalLv	$19, $13, $37, $00
+
+	; Patch $01
+	; $34
+	; $33, $41, $7E, $74,	$5B, $9F, $5F, $1F
+	; $04, $07, $07, $08,	$00, $00, $00, $00
+	; $FF, $FF, $EF, $FF,	$23, $00, $29, $07
+	spAlgorithm	$04
+	spFeedback	$06
+	spDetune	$03, $07, $04, $07
+	spMultiple	$03, $0E, $01, $04
+	spRateScale	$01, $01, $02, $00
+	spAttackRt	$1B, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$04, $07, $07, $08
+	spSustainLv	$0F, $0E, $0F, $0F
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$23, $29, $00, $07
+
+	; Patch $02
+	; $33
+	; $05, $23, $31, $71,	$1D, $1D, $1D, $1D
+	; $06, $07, $06, $09,	$05, $04, $04, $03
+	; $5F, $5F, $3F, $7F,	$24, $25, $23, $08
+	spAlgorithm	$03
+	spFeedback	$06
+	spDetune	$00, $03, $02, $07
+	spMultiple	$05, $01, $03, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1D, $1D, $1D, $1D
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$06, $06, $07, $09
+	spSustainLv	$05, $03, $05, $07
+	spDecayRt	$05, $04, $04, $03
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$24, $23, $25, $08
+	
+	; Patch $03
+	; $3A
+	; $01, $07, $31, $71,	$8E, $8E, $8D, $53
+	; $0E, $0E, $0E, $06,	$00, $00, $00, $00
+	; $1F, $FF, $1F, $2F,	$18, $28, $27, $00
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$00, $03, $00, $07
+	spMultiple	$01, $01, $07, $01
+	spRateScale	$02, $02, $02, $01
+	spAttackRt	$0E, $0D, $0E, $13
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0E, $0E, $0E, $06
+	spSustainLv	$01, $01, $0F, $02
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spTotalLv	$18, $27, $28, $00
+
+icescapeK_DAC:
+	dc.b nRst, $78, $78, $78, $78, $78, $78, dMidHeavyTom
+	dc.b $12, dLowHeavyTom, dLowerHeavyTom, $0C
+
+icescapeK_Loop29:
+	dc.b dDanceKick, dDanceKick, dHeavySnare, $12, dDanceKick, dDanceKick, $0C, dHeavySnare
+	dc.b dDanceKick
+	sJump	icescapeK_Loop29
+	sStop
+
+icescapeK_DAC2:
+	dc.b nRst, $78, $78, $78, $78, $78, $78, nRst
+	dc.b $12, nRst, nRst, $0C
+icescapeK_DAC2_Loop:
+	dc.b dHighEchoClap, $0C, dSideStick, $18, dSideStick, dSideStick, dSideStick, $0C
+	dc.b dLowEchoClap, $0C, dSideStick, $18, dSideStick, dSideStick, dSideStick, $0C
+	sJump	icescapeK_DAC2_Loop
+
+icescapeK_FM1:
+	sVoice		$00
+	dc.b nRst, $7F, $7F, $7F, $03
+	dc.b nG2, $24
+	dc.b nD3, $30
+	dc.b nG2, $0C, nE2, $24
+	dc.b nB2, $30
+	dc.b $0C, nD2, $12, $12
+	dc.b nA2, $30
+	dc.b nD2, $0C
+	dc.b $12, $12
+	dc.b nC3, $24
+	dc.b nB2, $18
+icescapeK_Loop1:
+	dc.b nA2, $24, nE3
+	dc.b nE2, $18
+	dc.b nA2, $24, nE3
+	dc.b nE2, $18, nF2, $12, $12
+	dc.b nC3, $24
+	dc.b nF2, $0C, nC2, nF2, $18, $0C
+	dc.b nC3, $24
+	dc.b nF2, $18
+        dc.b nG2, $24
+	dc.b nD3, $30
+	dc.b nG2, $0C, nE2, $24
+	dc.b nB2, $30
+	dc.b $0C, nD2, $12, $12
+	dc.b nA2, $30
+	dc.b nD2, $0C
+	dc.b $12, $12
+	dc.b nC3, $24
+	dc.b nB2, $18
+	sJump	icescapeK_Loop1
+
+icescapeK_FM2:
+	sVoice		$01
+	dc.b nRst, $78, $78, $78, $78, $78, $78
+	dc.b nRst, $12, nRst, nRst, $0C
+
+icescapeK_Loop2:
+	dc.b nRst, $0C
+	sVoice		$01
+	saVol	$0C
+	dc.b nE5, $54, nRst, $30, nE5, $12, nD5, nC5
+	dc.b $0C, nE5, $12, nA4, nA4, $3C, nRst, $48
+	dc.b nA4, $0C, $0C
+	dc.b nB4, $48, nRst, $60
+	dc.b nB4, $18
+	dc.b nA4, $60, nRst, $48
+	dc.b nA4, $18
+	dc.b nE5, $60, nRst, $30, nE5, $12, nD5, nC5
+	dc.b $0C, nE5, $12, nA4, nA4, nRst
+	dc.b nG4, $0C, nA4, $24, nRst, $30
+	dc.b nA4, $18
+	dc.b nB4, nRst, $3C
+	dc.b nB4, $0C
+	dc.b nC5, $18, nRst
+	dc.b nB4, nRst
+	dc.b nA4, $60, nRst, $7F, $11
+	saVol		-$06
+	sVoice		$03
+	dc.b nE5, $12, nF5, nG5, $0C, nE5, $60, nRst
+	dc.b $30, nE5, $12, nD5, nC5, $0C, nE5, $60
+	dc.b nD5, nB4, nA4, $7F, sHold, $11, nRst, $60
+	dc.b nE5, $12, nF5, nG5, $0C, nE5, $60, nRst
+	dc.b $30, nE5, $12, nD5, nC5, $0C, nE5, $60
+	dc.b nD5, nB4, nA4, $7F, sHold, $11, nRst, $30
+	saVol		-$06
+	sJump icescapeK_Loop2
+
+icescapeK_FM3:
+	sPan		spRight
+	sVoice		$01
+	dc.b nRst, $78, $78, $78, $78, $78, $78
+	dc.b nRst, $12, nRst, nRst, $0C
+	dc.b nRst, $12
+	sJump icescapeK_Loop2
+
+
+icescapeK_FM4:
+	sVoice		$02
+
+icescapeK_Loop4:
+	dc.b nA4, $60, $60, nF4, nF4, nG4, nE4, nD4, nD4
+	sJump	icescapeK_Loop4
+
+icescapeK_FM5:
+	sVoice		$02
+
+icescapeK_Loop5:
+	dc.b nE4, $60, $60, nC4, nC4, nD4, nB3, nA3, nA3
+	sJump	icescapeK_Loop5
+
+icescapeK_PSG1:
+	dc.b nRst, $09
+	sJump icescapeK_PSG2
+	sStop
+
+icescapeK_PSG2:
+	dc.b nE1, $06, nA1, nC2, nE2, nF2, nE2, nC2
+	dc.b nA1
+	sLoop		$00, $04, icescapeK_PSG2
+
+icescapeK_Loop16:
+	dc.b nC1, nF1, nA1, nC2, nD2, nC2, nA1, nF1
+	sLoop		$00, $04, icescapeK_Loop16
+
+icescapeK_Loop17:
+	dc.b nD1, nG1, nB1, nD2, nE2, nD2, nB1, nG1
+	sLoop		$00, $02, icescapeK_Loop17
+
+icescapeK_Loop18:
+	dc.b nB0, nE1, nG1, nB1, nD2, nB1, nG1, nE1
+	sLoop		$00, $02, icescapeK_Loop18
+
+icescapeK_Loop19:
+	dc.b nA0, nD1, nF1, nA1, nC2, nA1, nF1, nD1
+	sLoop		$00, $04, icescapeK_Loop19
+	sJump	icescapeK_PSG2
+
+icescapeK_PSG3:
+	dc.b nE2, $03, nRst, nA2, nRst, nC3, nRst, nE3
+	dc.b nRst, nF3, nRst, nE3, nRst, nC3, nRst, nA2
+	dc.b nRst
+	sLoop		$00, $04, icescapeK_PSG3
+
+icescapeK_Loop20:
+	dc.b nC2, nRst, nF2, nRst, nA2, nRst, nC3, nRst
+	dc.b nD3, nRst, nC3, nRst, nA2, nRst, nF2, nRst
+	sLoop		$00, $04, icescapeK_Loop20
+
+icescapeK_Loop21:
+	dc.b nD2, nRst, nG2, nRst, nB2, nRst, nD3, nRst
+	dc.b nE3, nRst, nD3, nRst, nB2, nRst, nG2, nRst
+	sLoop		$00, $02, icescapeK_Loop21
+
+icescapeK_Loop22:
+	dc.b nB1, nRst, nE2, nRst, nG2, nRst, nB2, nRst
+	dc.b nD3, nRst, nB2, nRst, nG2, nRst, nE2, nRst
+	sLoop		$00, $02, icescapeK_Loop22
+
+icescapeK_Loop23:
+	dc.b nA1, nRst, nD2, nRst, nF2, nRst, nA2, nRst
+	dc.b nC3, nRst, nA2, nRst, nF2, nRst, nD2, nRst
+	sLoop		$00, $04, icescapeK_Loop23
+	sLoop		$00, $05, icescapeK_PSG3
+
+icescapeK_Loop24:
+	dc.b nE2, nRst, nA2, nRst, nC3, nRst, nE3, nRst
+	dc.b nF3, nRst, nE3, nRst, nC3, nRst, nA2, nRst
+	sLoop		$00, $04, icescapeK_Loop24
+
+icescapeK_Loop25:
+	dc.b nC2, nRst, nF2, nRst, nA2, nRst, nC3, nRst
+	dc.b nD3, nRst, nC3, nRst, nA2, nRst, nF2, nRst
+	sLoop		$00, $04, icescapeK_Loop25
+
+icescapeK_Loop26:
+	dc.b nD2, nRst, nG2, nRst, nB2, nRst, nD3, nRst
+	dc.b nE3, nRst, nD3, nRst, nB2, nRst, nG2, nRst
+	sLoop		$00, $02, icescapeK_Loop26
+
+icescapeK_Loop27:
+	dc.b nB1, nRst, nE2, nRst, nG2, nRst, nB2, nRst
+	dc.b nD3, nRst, nB2, nRst, nG2, nRst, nE2, nRst
+	sLoop		$00, $02, icescapeK_Loop27
+
+icescapeK_Loop28:
+	dc.b nA1, nRst, nD2, nRst, nF2, nRst, nA2, nRst
+	dc.b nC3, nRst, nA2, nRst, nF2, nRst, nD2, nRst
+	sLoop		$00, $03, icescapeK_Loop28
+	dc.b nA1, nRst, nD2, nRst, nF2, nRst, nA2, nRst
+	dc.b nC3, nRst, nA2, nRst, nF2, nRst, nD2, nRst
+	dc.b $33
+	saVol	$01
+	dc.b nE2, $12, nF2, nG2, $0C, nE2, $60, nRst
+	dc.b $30, nE2, $12, nD2, nC2, $0C, nE2, $60
+	dc.b nD2, nB1, nA1, $7F, sHold, $11, nRst, $60
+	dc.b nE2, $12, nF2, nG2, $0C, nE2, $60, nRst
+	dc.b $30, nE2, $12, nD2, nC2, $0C, nE2, $60
+	dc.b nD2, nB1, nA1, $7F, sHold, $11
+	sJump	icescapeK_PSG3

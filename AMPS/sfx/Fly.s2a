@@ -1,0 +1,8 @@
+    sHeaderInitSFX
+    sHeaderPrio $70
+    sHeaderCh   $01
+    sHeaderSFX  $A1, ctFM4, .FM4, $0A, $0B
+
+.FM4    sVoice  pFly
+    dc.b    nE2, $06, $06, $06
+    sStop

@@ -1,0 +1,623 @@
+Legacy_PLC:
+Legacy_PLC_0: 	dc.w Legacy_PLC_14C-Legacy_PLC
+Legacy_PLC_2: 	dc.w Legacy_PLC_14D-Legacy_PLC
+Legacy_PLC_4: 	dc.w Legacy_PLC_152-Legacy_PLC
+Legacy_PLC_6: 	dc.w Legacy_PLC_15D-Legacy_PLC
+Legacy_PLC_8: 	dc.w Legacy_PLC_164-Legacy_PLC
+Legacy_PLC_A: 	dc.w Legacy_PLC_16B-Legacy_PLC
+Legacy_PLC_C: 	dc.w Legacy_PLC_170-Legacy_PLC
+Legacy_PLC_E: 	dc.w Legacy_PLC_175-Legacy_PLC
+Legacy_PLC_10: 	dc.w Legacy_PLC_17C-Legacy_PLC
+Legacy_PLC_12: 	dc.w Legacy_PLC_181-Legacy_PLC
+Legacy_PLC_14: 	dc.w Legacy_PLC_186-Legacy_PLC
+Legacy_PLC_16: 	dc.w Legacy_PLC_18B-Legacy_PLC
+Legacy_PLC_18: 	dc.w Legacy_PLC_190-Legacy_PLC
+Legacy_PLC_1A: 	dc.w Legacy_PLC_195-Legacy_PLC
+Legacy_PLC_1C: 	dc.w Legacy_PLC_19A-Legacy_PLC
+Legacy_PLC_1E: 	dc.w Legacy_PLC_19F-Legacy_PLC
+Legacy_PLC_20: 	dc.w Legacy_PLC_1A4-Legacy_PLC
+Legacy_PLC_22: 	dc.w Legacy_PLC_1A9-Legacy_PLC
+Legacy_PLC_24: 	dc.w Legacy_PLC_1AE-Legacy_PLC
+Legacy_PLC_26: 	dc.w Legacy_PLC_1B3-Legacy_PLC
+Legacy_PLC_28: 	dc.w Legacy_PLC_1B8-Legacy_PLC
+Legacy_PLC_2A: 	dc.w Legacy_PLC_1BD-Legacy_PLC
+Legacy_PLC_2C: 	dc.w Legacy_PLC_1C2-Legacy_PLC
+Legacy_PLC_2E: 	dc.w Legacy_PLC_1C7-Legacy_PLC
+Legacy_PLC_30: 	dc.w Legacy_PLC_1CC-Legacy_PLC
+Legacy_PLC_32: 	dc.w Legacy_PLC_1D1-Legacy_PLC
+Legacy_PLC_34: 	dc.w Legacy_PLC_1D6-Legacy_PLC
+Legacy_PLC_36: 	dc.w Legacy_PLC_1DB-Legacy_PLC
+Legacy_PLC_38: 	dc.w Legacy_PLC_1E0-Legacy_PLC
+Legacy_PLC_3A: 	dc.w Legacy_PLC_1E5-Legacy_PLC
+Legacy_PLC_3C: 	dc.w Legacy_PLC_1EA-Legacy_PLC
+Legacy_PLC_3E: 	dc.w Legacy_PLC_1ED-Legacy_PLC
+Legacy_PLC_40: 	dc.w Legacy_PLC_1F2-Legacy_PLC
+Legacy_PLC_42: 	dc.w Legacy_PLC_1F7-Legacy_PLC
+Legacy_PLC_44: 	dc.w Legacy_PLC_1FC-Legacy_PLC
+Legacy_PLC_46: 	dc.w Legacy_PLC_1FF-Legacy_PLC
+Legacy_PLC_48: 	dc.w Legacy_PLC_204-Legacy_PLC
+Legacy_PLC_4A: 	dc.w Legacy_PLC_209-Legacy_PLC
+Legacy_PLC_4C: 	dc.w Legacy_PLC_20E-Legacy_PLC
+Legacy_PLC_4E: 	dc.w Legacy_PLC_213-Legacy_PLC
+Legacy_PLC_50: 	dc.w Legacy_PLC_218-Legacy_PLC
+Legacy_PLC_52: 	dc.w Legacy_PLC_21D-Legacy_PLC
+Legacy_PLC_54: 	dc.w Legacy_PLC_222-Legacy_PLC
+Legacy_PLC_56: 	dc.w Legacy_PLC_227-Legacy_PLC
+Legacy_PLC_58: 	dc.w Legacy_PLC_22C-Legacy_PLC
+Legacy_PLC_5A: 	dc.w Legacy_PLC_231-Legacy_PLC
+Legacy_PLC_5C: 	dc.w Legacy_PLC_236-Legacy_PLC
+Legacy_PLC_5E: 	dc.w Legacy_PLC_23B-Legacy_PLC
+Legacy_PLC_60: 	dc.w Legacy_PLC_240-Legacy_PLC
+Legacy_PLC_62: 	dc.w Legacy_PLC_245-Legacy_PLC
+Legacy_PLC_64: 	dc.w Legacy_PLC_24A-Legacy_PLC
+Legacy_PLC_66: 	dc.w Legacy_PLC_24F-Legacy_PLC
+Legacy_PLC_68: 	dc.w Legacy_PLC_254-Legacy_PLC
+Legacy_PLC_6A: 	dc.w Legacy_PLC_259-Legacy_PLC
+Legacy_PLC_6C: 	dc.w Legacy_PLC_25E-Legacy_PLC
+Legacy_PLC_6E: 	dc.w Legacy_PLC_263-Legacy_PLC
+Legacy_PLC_70: 	dc.w Legacy_PLC_268-Legacy_PLC
+Legacy_PLC_72: 	dc.w Legacy_PLC_26D-Legacy_PLC
+Legacy_PLC_74: 	dc.w Legacy_PLC_272-Legacy_PLC
+Legacy_PLC_76: 	dc.w Legacy_PLC_277-Legacy_PLC
+Legacy_PLC_78: 	dc.w Legacy_PLC_27C-Legacy_PLC
+Legacy_PLC_7A: 	dc.w Legacy_PLC_27F-Legacy_PLC
+Legacy_PLC_7C: 	dc.w Legacy_PLC_282-Legacy_PLC
+Legacy_PLC_7E: 	dc.w Legacy_PLC_285-Legacy_PLC
+Legacy_PLC_80: 	dc.w Legacy_PLC_288-Legacy_PLC
+Legacy_PLC_82: 	dc.w Legacy_PLC_28B-Legacy_PLC
+Legacy_PLC_84: 	dc.w Legacy_PLC_28E-Legacy_PLC
+Legacy_PLC_86: 	dc.w Legacy_PLC_293-Legacy_PLC
+Legacy_PLC_88: 	dc.w Legacy_PLC_298-Legacy_PLC
+Legacy_PLC_8A: 	dc.w Legacy_PLC_29B-Legacy_PLC
+Legacy_PLC_8C: 	dc.w Legacy_PLC_29E-Legacy_PLC
+Legacy_PLC_8E: 	dc.w Legacy_PLC_2A1-Legacy_PLC
+Legacy_PLC_90: 	dc.w Legacy_PLC_2A4-Legacy_PLC
+Legacy_PLC_92: 	dc.w Legacy_PLC_2A7-Legacy_PLC
+Legacy_PLC_94: 	dc.w Legacy_PLC_2AA-Legacy_PLC
+Legacy_PLC_96: 	dc.w Legacy_PLC_2AD-Legacy_PLC
+Legacy_PLC_98: 	dc.w Legacy_PLC_2B2-Legacy_PLC
+Legacy_PLC_9A: 	dc.w Legacy_PLC_2B7-Legacy_PLC
+Legacy_PLC_9C: 	dc.w Legacy_PLC_2BA-Legacy_PLC
+Legacy_PLC_9E: 	dc.w Legacy_PLC_2BF-Legacy_PLC
+Legacy_PLC_A0: 	dc.w Legacy_PLC_2C4-Legacy_PLC
+Legacy_PLC_A2: 	dc.w Legacy_PLC_2C9-Legacy_PLC
+Legacy_PLC_A4: 	dc.w Legacy_PLC_2CE-Legacy_PLC
+Legacy_PLC_A6: 	dc.w Legacy_PLC_2D3-Legacy_PLC
+Legacy_PLC_A8: 	dc.w Legacy_PLC_2D8-Legacy_PLC
+Legacy_PLC_AA: 	dc.w Legacy_PLC_2DD-Legacy_PLC
+Legacy_PLC_AC: 	dc.w Legacy_PLC_2E2-Legacy_PLC
+Legacy_PLC_AE: 	dc.w Legacy_PLC_2E7-Legacy_PLC
+Legacy_PLC_B0: 	dc.w Legacy_PLC_2EC-Legacy_PLC
+Legacy_PLC_B2: 	dc.w Legacy_PLC_2F1-Legacy_PLC
+Legacy_PLC_B4: 	dc.w Legacy_PLC_2F6-Legacy_PLC
+Legacy_PLC_B6: 	dc.w Legacy_PLC_2FB-Legacy_PLC
+Legacy_PLC_B8: 	dc.w Legacy_PLC_300-Legacy_PLC
+Legacy_PLC_BA: 	dc.w Legacy_PLC_303-Legacy_PLC
+Legacy_PLC_BC: 	dc.w Legacy_PLC_308-Legacy_PLC
+Legacy_PLC_BE: 	dc.w Legacy_PLC_30B-Legacy_PLC
+Legacy_PLC_C0: 	dc.w Legacy_PLC_30E-Legacy_PLC
+Legacy_PLC_C2: 	dc.w Legacy_PLC_311-Legacy_PLC
+Legacy_PLC_C4: 	dc.w Legacy_PLC_314-Legacy_PLC
+Legacy_PLC_C6: 	dc.w Legacy_PLC_317-Legacy_PLC
+Legacy_PLC_C8: 	dc.w Legacy_PLC_31A-Legacy_PLC
+Legacy_PLC_CA: 	dc.w Legacy_PLC_31D-Legacy_PLC
+Legacy_PLC_CC: 	dc.w Legacy_PLC_320-Legacy_PLC
+Legacy_PLC_CE: 	dc.w Legacy_PLC_323-Legacy_PLC
+Legacy_PLC_D0: 	dc.w Legacy_PLC_326-Legacy_PLC
+Legacy_PLC_D2: 	dc.w Legacy_PLC_32B-Legacy_PLC
+Legacy_PLC_D4: 	dc.w Legacy_PLC_330-Legacy_PLC
+Legacy_PLC_D6: 	dc.w Legacy_PLC_335-Legacy_PLC
+Legacy_PLC_D8: 	dc.w Legacy_PLC_338-Legacy_PLC
+Legacy_PLC_DA: 	dc.w Legacy_PLC_33D-Legacy_PLC
+Legacy_PLC_DC: 	dc.w Legacy_PLC_342-Legacy_PLC
+Legacy_PLC_DE: 	dc.w Legacy_PLC_347-Legacy_PLC
+Legacy_PLC_E0: 	dc.w Legacy_PLC_34C-Legacy_PLC
+Legacy_PLC_E2: 	dc.w Legacy_PLC_351-Legacy_PLC
+Legacy_PLC_E4: 	dc.w Legacy_PLC_356-Legacy_PLC
+Legacy_PLC_E6: 	dc.w Legacy_PLC_35B-Legacy_PLC
+Legacy_PLC_E8: 	dc.w Legacy_PLC_360-Legacy_PLC
+Legacy_PLC_EA: 	dc.w Legacy_PLC_365-Legacy_PLC
+Legacy_PLC_EC: 	dc.w Legacy_PLC_36A-Legacy_PLC
+Legacy_PLC_EE: 	dc.w Legacy_PLC_36F-Legacy_PLC
+Legacy_PLC_F0: 	dc.w Legacy_PLC_374-Legacy_PLC
+Legacy_PLC_F2: 	dc.w Legacy_PLC_379-Legacy_PLC
+Legacy_PLC_F4: 	dc.w Legacy_PLC_37E-Legacy_PLC
+Legacy_PLC_F6: 	dc.w Legacy_PLC_385-Legacy_PLC
+Legacy_PLC_F8: 	dc.w Legacy_PLC_38A-Legacy_PLC
+Legacy_PLC_FA: 	dc.w Legacy_PLC_38F-Legacy_PLC
+Legacy_PLC_FC: 	dc.w Legacy_PLC_394-Legacy_PLC
+Legacy_PLC_FE: 	dc.w Legacy_PLC_399-Legacy_PLC
+Legacy_PLC_100: 	dc.w Legacy_PLC_39E-Legacy_PLC
+Legacy_PLC_102: 	dc.w Legacy_PLC_3A1-Legacy_PLC
+Legacy_PLC_104: 	dc.w Legacy_PLC_3A6-Legacy_PLC
+Legacy_PLC_106: 	dc.w Legacy_PLC_3AB-Legacy_PLC
+Legacy_PLC_108: 	dc.w Legacy_PLC_3B0-Legacy_PLC
+Legacy_PLC_10A: 	dc.w Legacy_PLC_3B5-Legacy_PLC
+Legacy_PLC_10C: 	dc.w Legacy_PLC_3B8-Legacy_PLC
+Legacy_PLC_10E: 	dc.w Legacy_PLC_3BB-Legacy_PLC
+Legacy_PLC_110: 	dc.w Legacy_PLC_3BE-Legacy_PLC
+Legacy_PLC_112: 	dc.w Legacy_PLC_3C3-Legacy_PLC
+Legacy_PLC_114: 	dc.w Legacy_PLC_3C8-Legacy_PLC
+Legacy_PLC_116: 	dc.w Legacy_PLC_3CB-Legacy_PLC
+Legacy_PLC_118: 	dc.w Legacy_PLC_3CE-Legacy_PLC
+Legacy_PLC_11A: 	dc.w Legacy_PLC_3D1-Legacy_PLC
+Legacy_PLC_11C: 	dc.w Legacy_PLC_3D6-Legacy_PLC
+Legacy_PLC_11E: 	dc.w Legacy_PLC_3DB-Legacy_PLC
+Legacy_PLC_120: 	dc.w Legacy_PLC_3DE-Legacy_PLC
+Legacy_PLC_122: 	dc.w Legacy_PLC_3E1-Legacy_PLC
+Legacy_PLC_124: 	dc.w Legacy_PLC_3E4-Legacy_PLC
+Legacy_PLC_126: 	dc.w Legacy_PLC_3E7-Legacy_PLC
+Legacy_PLC_128: 	dc.w Legacy_PLC_3EA-Legacy_PLC
+Legacy_PLC_12A: 	dc.w Legacy_PLC_3EF-Legacy_PLC
+Legacy_PLC_12C: 	dc.w Legacy_PLC_3F2-Legacy_PLC
+Legacy_PLC_12E: 	dc.w Legacy_PLC_3F5-Legacy_PLC
+Legacy_PLC_130: 	dc.w Legacy_PLC_3F8-Legacy_PLC
+Legacy_PLC_132: 	dc.w Legacy_PLC_3FB-Legacy_PLC
+Legacy_PLC_134: 	dc.w Legacy_PLC_3FE-Legacy_PLC
+Legacy_PLC_136: 	dc.w Legacy_PLC_403-Legacy_PLC
+Legacy_PLC_138: 	dc.w Legacy_PLC_408-Legacy_PLC
+Legacy_PLC_13A: 	dc.w Legacy_PLC_40D-Legacy_PLC
+Legacy_PLC_13C: 	dc.w Legacy_PLC_412-Legacy_PLC
+Legacy_PLC_13E: 	dc.w Legacy_PLC_415-Legacy_PLC
+Legacy_PLC_140: 	dc.w Legacy_PLC_41A-Legacy_PLC
+Legacy_PLC_142: 	dc.w Legacy_PLC_41F-Legacy_PLC
+Legacy_PLC_144: 	dc.w Legacy_PLC_424-Legacy_PLC
+Legacy_PLC_146: 	dc.w Legacy_PLC_427-Legacy_PLC
+Legacy_PLC_148: 	dc.w Legacy_PLC_42A-Legacy_PLC
+Legacy_PLC_14A: 	dc.w Legacy_PLC_42F-Legacy_PLC
+Legacy_PLC_14C: 	dc.b $0
+Legacy_PLC_14D: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $0, $10
+Legacy_PLC_152: 	dc.b $5
+	dc.b $B0, $11
+	dc.b $0, $E
+	dc.b $0, $C
+	dc.b $0, $10
+	dc.b $0, $9
+Legacy_PLC_15D: 	dc.b $3
+	dc.b $40, $1D
+	dc.b $0, $9
+	dc.b $90, $22
+Legacy_PLC_164: 	dc.b $3
+	dc.b $B0, $2C
+	dc.b $20, $1F
+	dc.b $0, $9
+Legacy_PLC_16B: 	dc.b $2
+	dc.b $0, $9
+	dc.b $F0, $38
+Legacy_PLC_170: 	dc.b $2
+	dc.b $B0, $48
+	dc.b $20, $1F
+Legacy_PLC_175: 	dc.b $3
+	dc.b $0, $52
+	dc.b $A0, $54
+	dc.b $20, $1F
+Legacy_PLC_17C: 	dc.b $2
+	dc.b $E0, $5F
+	dc.b $20, $1F
+Legacy_PLC_181: 	dc.b $2
+	dc.b $F0, $6E
+	dc.b $20, $7E
+Legacy_PLC_186: 	dc.b $2
+	dc.b $F0, $81
+	dc.b $0, $91
+Legacy_PLC_18B: 	dc.b $2
+	dc.b $F0, $92
+	dc.b $20, $A2
+Legacy_PLC_190: 	dc.b $2
+	dc.b $F0, $A5
+	dc.b $50, $B5
+Legacy_PLC_195: 	dc.b $2
+	dc.b $F0, $BB
+	dc.b $40, $CB
+Legacy_PLC_19A: 	dc.b $2
+	dc.b $F0, $D0
+	dc.b $0, $E0
+Legacy_PLC_19F: 	dc.b $2
+	dc.b $F0, $E1
+	dc.b $20, $F1
+Legacy_PLC_1A4: 	dc.b $2
+	dc.b $F0, $F4
+	dc.b $41, $4
+Legacy_PLC_1A9: 	dc.b $2
+	dc.b $F1, $9
+	dc.b $21, $19
+Legacy_PLC_1AE: 	dc.b $2
+	dc.b $F1, $1C
+	dc.b $1, $2C
+Legacy_PLC_1B3: 	dc.b $2
+	dc.b $F1, $2D
+	dc.b $1, $3D
+Legacy_PLC_1B8: 	dc.b $2
+	dc.b $F1, $3E
+	dc.b $51, $4E
+Legacy_PLC_1BD: 	dc.b $2
+	dc.b $F1, $54
+	dc.b $31, $64
+Legacy_PLC_1C2: 	dc.b $2
+	dc.b $F1, $68
+	dc.b $11, $78
+Legacy_PLC_1C7: 	dc.b $2
+	dc.b $F1, $7A
+	dc.b $51, $8A
+Legacy_PLC_1CC: 	dc.b $2
+	dc.b $F1, $90
+	dc.b $71, $A0
+Legacy_PLC_1D1: 	dc.b $2
+	dc.b $F1, $A8
+	dc.b $61, $B8
+Legacy_PLC_1D6: 	dc.b $2
+	dc.b $F1, $BF
+	dc.b $11, $CF
+Legacy_PLC_1DB: 	dc.b $2
+	dc.b $F1, $D1
+	dc.b $21, $E1
+Legacy_PLC_1E0: 	dc.b $2
+	dc.b $F1, $E4
+	dc.b $41, $F4
+Legacy_PLC_1E5: 	dc.b $2
+	dc.b $F1, $F9
+	dc.b $32, $9
+Legacy_PLC_1EA: 	dc.b $1
+	dc.b $F2, $D
+Legacy_PLC_1ED: 	dc.b $2
+	dc.b $F2, $1D
+	dc.b $32, $2D
+Legacy_PLC_1F2: 	dc.b $2
+	dc.b $F2, $31
+	dc.b $42, $41
+Legacy_PLC_1F7: 	dc.b $2
+	dc.b $F2, $46
+	dc.b $32, $56
+Legacy_PLC_1FC: 	dc.b $1
+	dc.b $F2, $5A
+Legacy_PLC_1FF: 	dc.b $2
+	dc.b $F2, $6A
+	dc.b $2, $7A
+Legacy_PLC_204: 	dc.b $2
+	dc.b $F2, $7B
+	dc.b $52, $8B
+Legacy_PLC_209: 	dc.b $2
+	dc.b $F2, $91
+	dc.b $32, $A1
+Legacy_PLC_20E: 	dc.b $2
+	dc.b $F2, $A5
+	dc.b $12, $B5
+Legacy_PLC_213: 	dc.b $2
+	dc.b $F2, $B7
+	dc.b $22, $C7
+Legacy_PLC_218: 	dc.b $2
+	dc.b $F2, $CA
+	dc.b $72, $DA
+Legacy_PLC_21D: 	dc.b $2
+	dc.b $F2, $E2
+	dc.b $42, $F2
+Legacy_PLC_222: 	dc.b $2
+	dc.b $F2, $F7
+	dc.b $13, $7
+Legacy_PLC_227: 	dc.b $2
+	dc.b $F3, $9
+	dc.b $23, $19
+Legacy_PLC_22C: 	dc.b $2
+	dc.b $F3, $1C
+	dc.b $33, $2C
+Legacy_PLC_231: 	dc.b $2
+	dc.b $F3, $30
+	dc.b $23, $40
+Legacy_PLC_236: 	dc.b $2
+	dc.b $F3, $43
+	dc.b $23, $53
+Legacy_PLC_23B: 	dc.b $2
+	dc.b $F3, $56
+	dc.b $23, $66
+Legacy_PLC_240: 	dc.b $2
+	dc.b $F3, $69
+	dc.b $33, $79
+Legacy_PLC_245: 	dc.b $2
+	dc.b $F3, $7D
+	dc.b $23, $8D
+Legacy_PLC_24A: 	dc.b $2
+	dc.b $F3, $90
+	dc.b $33, $A0
+Legacy_PLC_24F: 	dc.b $2
+	dc.b $F3, $A4
+	dc.b $23, $B4
+Legacy_PLC_254: 	dc.b $2
+	dc.b $F3, $B7
+	dc.b $33, $C7
+Legacy_PLC_259: 	dc.b $2
+	dc.b $F3, $CB
+	dc.b $23, $DB
+Legacy_PLC_25E: 	dc.b $2
+	dc.b $F3, $DE
+	dc.b $33, $EE
+Legacy_PLC_263: 	dc.b $2
+	dc.b $F3, $F2
+	dc.b $24, $2
+Legacy_PLC_268: 	dc.b $2
+	dc.b $F4, $5
+	dc.b $34, $15
+Legacy_PLC_26D: 	dc.b $2
+	dc.b $F4, $19
+	dc.b $24, $29
+Legacy_PLC_272: 	dc.b $2
+	dc.b $F4, $2C
+	dc.b $24, $3C
+Legacy_PLC_277: 	dc.b $2
+	dc.b $F4, $3F
+	dc.b $24, $4F
+Legacy_PLC_27C: 	dc.b $1
+	dc.b $E4, $52
+Legacy_PLC_27F: 	dc.b $1
+	dc.b $E4, $61
+Legacy_PLC_282: 	dc.b $1
+	dc.b $E4, $70
+Legacy_PLC_285: 	dc.b $1
+	dc.b $E4, $7F
+Legacy_PLC_288: 	dc.b $1
+	dc.b $E4, $8E
+Legacy_PLC_28B: 	dc.b $1
+	dc.b $E4, $9D
+Legacy_PLC_28E: 	dc.b $2
+	dc.b $F4, $AC
+	dc.b $14, $BC
+Legacy_PLC_293: 	dc.b $2
+	dc.b $F4, $BE
+	dc.b $14, $CE
+Legacy_PLC_298: 	dc.b $1
+	dc.b $F4, $D0
+Legacy_PLC_29B: 	dc.b $1
+	dc.b $E4, $E0
+Legacy_PLC_29E: 	dc.b $1
+	dc.b $F4, $EF
+Legacy_PLC_2A1: 	dc.b $1
+	dc.b $F4, $FF
+Legacy_PLC_2A4: 	dc.b $1
+	dc.b $F5, $F
+Legacy_PLC_2A7: 	dc.b $1
+	dc.b $E5, $1F
+Legacy_PLC_2AA: 	dc.b $1
+	dc.b $D5, $2E
+Legacy_PLC_2AD: 	dc.b $2
+	dc.b $F5, $3C
+	dc.b $25, $4C
+Legacy_PLC_2B2: 	dc.b $2
+	dc.b $F5, $4F
+	dc.b $15, $5F
+Legacy_PLC_2B7: 	dc.b $1
+	dc.b $F5, $61
+Legacy_PLC_2BA: 	dc.b $2
+	dc.b $F5, $71
+	dc.b $5, $81
+Legacy_PLC_2BF: 	dc.b $2
+	dc.b $F5, $82
+	dc.b $15, $92
+Legacy_PLC_2C4: 	dc.b $2
+	dc.b $E5, $82
+	dc.b $25, $94
+Legacy_PLC_2C9: 	dc.b $2
+	dc.b $F5, $97
+	dc.b $35, $A7
+Legacy_PLC_2CE: 	dc.b $2
+	dc.b $F5, $AB
+	dc.b $55, $BB
+Legacy_PLC_2D3: 	dc.b $2
+	dc.b $F5, $C1
+	dc.b $15, $D1
+Legacy_PLC_2D8: 	dc.b $2
+	dc.b $F5, $D3
+	dc.b $45, $E3
+Legacy_PLC_2DD: 	dc.b $2
+	dc.b $F5, $E8
+	dc.b $25, $F8
+Legacy_PLC_2E2: 	dc.b $2
+	dc.b $F5, $FB
+	dc.b $36, $B
+Legacy_PLC_2E7: 	dc.b $2
+	dc.b $F6, $F
+	dc.b $46, $1F
+Legacy_PLC_2EC: 	dc.b $2
+	dc.b $F6, $24
+	dc.b $26, $34
+Legacy_PLC_2F1: 	dc.b $2
+	dc.b $F6, $37
+	dc.b $26, $47
+Legacy_PLC_2F6: 	dc.b $2
+	dc.b $F6, $4A
+	dc.b $46, $5A
+Legacy_PLC_2FB: 	dc.b $2
+	dc.b $F6, $5F
+	dc.b $16, $6F
+Legacy_PLC_300: 	dc.b $1
+	dc.b $D6, $71
+Legacy_PLC_303: 	dc.b $2
+	dc.b $F6, $7F
+	dc.b $6, $8F
+Legacy_PLC_308: 	dc.b $1
+	dc.b $D6, $90
+Legacy_PLC_30B: 	dc.b $1
+	dc.b $D6, $9E
+Legacy_PLC_30E: 	dc.b $1
+	dc.b $A6, $AC
+Legacy_PLC_311: 	dc.b $1
+	dc.b $96, $B7
+Legacy_PLC_314: 	dc.b $1
+	dc.b $A6, $AC
+Legacy_PLC_317: 	dc.b $1
+	dc.b $D6, $9E
+Legacy_PLC_31A: 	dc.b $1
+	dc.b $C6, $C1
+Legacy_PLC_31D: 	dc.b $1
+	dc.b $96, $CE
+Legacy_PLC_320: 	dc.b $1
+	dc.b $C6, $C1
+Legacy_PLC_323: 	dc.b $1
+	dc.b $F6, $D8
+Legacy_PLC_326: 	dc.b $2
+	dc.b $F6, $E8
+	dc.b $36, $F8
+Legacy_PLC_32B: 	dc.b $2
+	dc.b $F6, $FC
+	dc.b $17, $C
+Legacy_PLC_330: 	dc.b $2
+	dc.b $F7, $E
+	dc.b $17, $1E
+Legacy_PLC_335: 	dc.b $1
+	dc.b $E7, $20
+Legacy_PLC_338: 	dc.b $2
+	dc.b $F7, $2F
+	dc.b $7, $3F
+Legacy_PLC_33D: 	dc.b $2
+	dc.b $F7, $40
+	dc.b $17, $50
+Legacy_PLC_342: 	dc.b $2
+	dc.b $F7, $52
+	dc.b $17, $62
+Legacy_PLC_347: 	dc.b $2
+	dc.b $C7, $52
+	dc.b $47, $64
+Legacy_PLC_34C: 	dc.b $2
+	dc.b $F7, $69
+	dc.b $57, $79
+Legacy_PLC_351: 	dc.b $2
+	dc.b $F7, $7F
+	dc.b $47, $8F
+Legacy_PLC_356: 	dc.b $2
+	dc.b $F7, $94
+	dc.b $57, $A4
+Legacy_PLC_35B: 	dc.b $2
+	dc.b $F7, $AA
+	dc.b $47, $BA
+Legacy_PLC_360: 	dc.b $2
+	dc.b $F7, $BF
+	dc.b $57, $CF
+Legacy_PLC_365: 	dc.b $2
+	dc.b $F7, $D5
+	dc.b $57, $E5
+Legacy_PLC_36A: 	dc.b $2
+	dc.b $F7, $EB
+	dc.b $57, $FB
+Legacy_PLC_36F: 	dc.b $2
+	dc.b $F8, $1
+	dc.b $58, $11
+Legacy_PLC_374: 	dc.b $2
+	dc.b $F8, $17
+	dc.b $68, $27
+Legacy_PLC_379: 	dc.b $2
+	dc.b $F8, $2E
+	dc.b $48, $3E
+Legacy_PLC_37E: 	dc.b $3
+	dc.b $F8, $43
+	dc.b $58, $53
+	dc.b $8, $2D
+Legacy_PLC_385: 	dc.b $2
+	dc.b $F8, $59
+	dc.b $48, $69
+Legacy_PLC_38A: 	dc.b $2
+	dc.b $F8, $6E
+	dc.b $68, $7E
+Legacy_PLC_38F: 	dc.b $2
+	dc.b $F8, $85
+	dc.b $58, $95
+Legacy_PLC_394: 	dc.b $2
+	dc.b $F8, $9B
+	dc.b $58, $AB
+Legacy_PLC_399: 	dc.b $2
+	dc.b $F8, $B1
+	dc.b $58, $C1
+Legacy_PLC_39E: 	dc.b $1
+	dc.b $B8, $C7
+Legacy_PLC_3A1: 	dc.b $2
+	dc.b $F8, $D3
+	dc.b $28, $E3
+Legacy_PLC_3A6: 	dc.b $2
+	dc.b $F8, $E6
+	dc.b $38, $F6
+Legacy_PLC_3AB: 	dc.b $2
+	dc.b $F8, $FA
+	dc.b $39, $A
+Legacy_PLC_3B0: 	dc.b $2
+	dc.b $F9, $E
+	dc.b $49, $1E
+Legacy_PLC_3B5: 	dc.b $1
+	dc.b $E9, $23
+Legacy_PLC_3B8: 	dc.b $1
+	dc.b $E9, $32
+Legacy_PLC_3BB: 	dc.b $1
+	dc.b $E9, $41
+Legacy_PLC_3BE: 	dc.b $2
+	dc.b $F9, $50
+	dc.b $9, $60
+Legacy_PLC_3C3: 	dc.b $2
+	dc.b $F9, $61
+	dc.b $9, $71
+Legacy_PLC_3C8: 	dc.b $1
+	dc.b $E9, $72
+Legacy_PLC_3CB: 	dc.b $1
+	dc.b $E9, $81
+Legacy_PLC_3CE: 	dc.b $1
+	dc.b $F9, $90
+Legacy_PLC_3D1: 	dc.b $2
+	dc.b $F9, $A0
+	dc.b $39, $B0
+Legacy_PLC_3D6: 	dc.b $2
+	dc.b $F9, $B4
+	dc.b $9, $C4
+Legacy_PLC_3DB: 	dc.b $1
+	dc.b $E9, $C5
+Legacy_PLC_3DE: 	dc.b $1
+	dc.b $A9, $D4
+Legacy_PLC_3E1: 	dc.b $1
+	dc.b $D9, $DF
+Legacy_PLC_3E4: 	dc.b $1
+	dc.b $B9, $ED
+Legacy_PLC_3E7: 	dc.b $1
+	dc.b $E9, $F9
+Legacy_PLC_3EA: 	dc.b $2
+	dc.b $FA, $8
+	dc.b $2A, $18
+Legacy_PLC_3EF: 	dc.b $1
+	dc.b $CA, $1B
+Legacy_PLC_3F2: 	dc.b $1
+	dc.b $CA, $28
+Legacy_PLC_3F5: 	dc.b $1
+	dc.b $BA, $35
+Legacy_PLC_3F8: 	dc.b $1
+	dc.b $CA, $41
+Legacy_PLC_3FB: 	dc.b $1
+	dc.b $EA, $4E
+Legacy_PLC_3FE: 	dc.b $2
+	dc.b $FA, $5D
+	dc.b $1A, $6D
+Legacy_PLC_403: 	dc.b $2
+	dc.b $FA, $6F
+	dc.b $3A, $7F
+Legacy_PLC_408: 	dc.b $2
+	dc.b $FA, $83
+	dc.b $4A, $93
+Legacy_PLC_40D: 	dc.b $2
+	dc.b $FA, $98
+	dc.b $4A, $A8
+Legacy_PLC_412: 	dc.b $1
+	dc.b $FA, $AD
+Legacy_PLC_415: 	dc.b $2
+	dc.b $FA, $BD
+	dc.b $3A, $CD
+Legacy_PLC_41A: 	dc.b $2
+	dc.b $FA, $D1
+	dc.b $3A, $E1
+Legacy_PLC_41F: 	dc.b $2
+	dc.b $FA, $E5
+	dc.b $2A, $F5
+Legacy_PLC_424: 	dc.b $1
+	dc.b $EA, $F8
+Legacy_PLC_427: 	dc.b $1
+	dc.b $EB, $7
+Legacy_PLC_42A: 	dc.b $2
+	dc.b $EA, $F8
+	dc.b $1B, $16
+Legacy_PLC_42F: 	dc.b $2
+	dc.b $FB, $7
+	dc.b $B, $17
+	even

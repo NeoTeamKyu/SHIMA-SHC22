@@ -1,0 +1,30 @@
+WindUpKoi_DPLC:
+WindUpKoi_DPLC_0: 	dc.w WindUpKoi_DPLC_E-WindUpKoi_DPLC
+WindUpKoi_DPLC_2: 	dc.w WindUpKoi_DPLC_13-WindUpKoi_DPLC
+WindUpKoi_DPLC_4: 	dc.w WindUpKoi_DPLC_18-WindUpKoi_DPLC
+WindUpKoi_DPLC_6: 	dc.w WindUpKoi_DPLC_1D-WindUpKoi_DPLC
+WindUpKoi_DPLC_8: 	dc.w WindUpKoi_DPLC_22-WindUpKoi_DPLC
+WindUpKoi_DPLC_A: 	dc.w WindUpKoi_DPLC_27-WindUpKoi_DPLC
+WindUpKoi_DPLC_C: 	dc.w WindUpKoi_DPLC_2C-WindUpKoi_DPLC
+WindUpKoi_DPLC_E: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $F0, $10
+WindUpKoi_DPLC_13: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $F0, $20
+WindUpKoi_DPLC_18: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $F0, $30
+WindUpKoi_DPLC_1D: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $F0, $40
+WindUpKoi_DPLC_22: 	dc.b $2
+	dc.b $F0, $50
+	dc.b $F0, $20
+WindUpKoi_DPLC_27: 	dc.b $2
+	dc.b $F0, $60
+	dc.b $F0, $30
+WindUpKoi_DPLC_2C: 	dc.b $2
+	dc.b $F0, $50
+	dc.b $F0, $40
+	even

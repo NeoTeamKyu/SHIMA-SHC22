@@ -1,0 +1,103 @@
+LightningShield_DPLC:
+LightningShield_DPLC_0: 	dc.w LightningShield_DPLC_2E-LightningShield_DPLC
+LightningShield_DPLC_2: 	dc.w LightningShield_DPLC_35-LightningShield_DPLC
+LightningShield_DPLC_4: 	dc.w LightningShield_DPLC_3A-LightningShield_DPLC
+LightningShield_DPLC_6: 	dc.w LightningShield_DPLC_41-LightningShield_DPLC
+LightningShield_DPLC_8: 	dc.w LightningShield_DPLC_48-LightningShield_DPLC
+LightningShield_DPLC_A: 	dc.w LightningShield_DPLC_4D-LightningShield_DPLC
+LightningShield_DPLC_C: 	dc.w LightningShield_DPLC_54-LightningShield_DPLC
+LightningShield_DPLC_E: 	dc.w LightningShield_DPLC_5B-LightningShield_DPLC
+LightningShield_DPLC_10: 	dc.w LightningShield_DPLC_60-LightningShield_DPLC
+LightningShield_DPLC_12: 	dc.w LightningShield_DPLC_67-LightningShield_DPLC
+LightningShield_DPLC_14: 	dc.w LightningShield_DPLC_6C-LightningShield_DPLC
+LightningShield_DPLC_16: 	dc.w LightningShield_DPLC_71-LightningShield_DPLC
+LightningShield_DPLC_18: 	dc.w LightningShield_DPLC_74-LightningShield_DPLC
+LightningShield_DPLC_1A: 	dc.w LightningShield_DPLC_77-LightningShield_DPLC
+LightningShield_DPLC_1C: 	dc.w LightningShield_DPLC_7A-LightningShield_DPLC
+LightningShield_DPLC_1E: 	dc.w LightningShield_DPLC_81-LightningShield_DPLC
+LightningShield_DPLC_20: 	dc.w LightningShield_DPLC_86-LightningShield_DPLC
+LightningShield_DPLC_22: 	dc.w LightningShield_DPLC_8D-LightningShield_DPLC
+LightningShield_DPLC_24: 	dc.w LightningShield_DPLC_94-LightningShield_DPLC
+LightningShield_DPLC_26: 	dc.w LightningShield_DPLC_99-LightningShield_DPLC
+LightningShield_DPLC_28: 	dc.w LightningShield_DPLC_A0-LightningShield_DPLC
+LightningShield_DPLC_2A: 	dc.w LightningShield_DPLC_A7-LightningShield_DPLC
+LightningShield_DPLC_2C: 	dc.w LightningShield_DPLC_AC-LightningShield_DPLC
+LightningShield_DPLC_2E: 	dc.b $3
+	dc.b $30, $0
+	dc.b $70, $4
+	dc.b $30, $C
+LightningShield_DPLC_35: 	dc.b $2
+	dc.b $80, $10
+	dc.b $80, $19
+LightningShield_DPLC_3A: 	dc.b $3
+	dc.b $20, $22
+	dc.b $B0, $25
+	dc.b $20, $31
+LightningShield_DPLC_41: 	dc.b $3
+	dc.b $20, $34
+	dc.b $B0, $37
+	dc.b $50, $43
+LightningShield_DPLC_48: 	dc.b $2
+	dc.b $50, $49
+	dc.b $50, $4F
+LightningShield_DPLC_4D: 	dc.b $3
+	dc.b $20, $34
+	dc.b $B0, $37
+	dc.b $50, $43
+LightningShield_DPLC_54: 	dc.b $3
+	dc.b $20, $22
+	dc.b $B0, $25
+	dc.b $20, $31
+LightningShield_DPLC_5B: 	dc.b $2
+	dc.b $80, $10
+	dc.b $80, $19
+LightningShield_DPLC_60: 	dc.b $3
+	dc.b $30, $0
+	dc.b $70, $4
+	dc.b $30, $C
+LightningShield_DPLC_67: 	dc.b $2
+	dc.b $80, $55
+	dc.b $80, $5E
+LightningShield_DPLC_6C: 	dc.b $2
+	dc.b $80, $67
+	dc.b $80, $70
+LightningShield_DPLC_71: 	dc.b $1
+	dc.b $80, $79
+LightningShield_DPLC_74: 	dc.b $1
+	dc.b $0, $82
+LightningShield_DPLC_77: 	dc.b $1
+	dc.b $30, $83
+LightningShield_DPLC_7A: 	dc.b $3
+	dc.b $30, $0
+	dc.b $70, $4
+	dc.b $30, $C
+LightningShield_DPLC_81: 	dc.b $2
+	dc.b $80, $10
+	dc.b $80, $19
+LightningShield_DPLC_86: 	dc.b $3
+	dc.b $20, $22
+	dc.b $B0, $25
+	dc.b $20, $31
+LightningShield_DPLC_8D: 	dc.b $3
+	dc.b $20, $34
+	dc.b $B0, $37
+	dc.b $50, $43
+LightningShield_DPLC_94: 	dc.b $2
+	dc.b $50, $49
+	dc.b $50, $4F
+LightningShield_DPLC_99: 	dc.b $3
+	dc.b $20, $34
+	dc.b $B0, $37
+	dc.b $50, $43
+LightningShield_DPLC_A0: 	dc.b $3
+	dc.b $20, $22
+	dc.b $B0, $25
+	dc.b $20, $31
+LightningShield_DPLC_A7: 	dc.b $2
+	dc.b $80, $10
+	dc.b $80, $19
+LightningShield_DPLC_AC: 	dc.b $3
+	dc.b $30, $0
+	dc.b $70, $4
+	dc.b $30, $C
+	even

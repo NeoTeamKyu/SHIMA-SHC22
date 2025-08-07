@@ -1,0 +1,33 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$04
+	sHeaderSFX	(1<<cfbRun), ctFM3, .FM3, $10, $00
+	sHeaderSFX	(1<<cfbRun), ctFM4, .FM4, $00, $00
+	sHeaderSFX	(1<<cfbRun), ctFM5, .FM5, $10, $00
+	sHeaderSFX	(1<<cfbRun)|(1<<cfbVol)|(1<<cfbRest), ctPSG3, .PSG3, $0C, $00
+
+.FM3:
+	sPan		spRight
+	dc.b nRst, $02
+	sJump		.FM4
+
+.FM5:
+	sPan		spLeft
+	dc.b nRst, $01
+
+.FM4:
+	sVoice		pCollapse
+	sModAMPS	$02, $01, $20, $04
+	dc.b nC0, $10
+	sStop
+
+.PSG3:
+	sModAMPS	$00, $01, $0F, $05
+	sNoisePSG	snWhitePSG3
+;	ssDetune	$0F
+
+.Loop1:
+	dc.b nB3, $18, sHold
+	saVol		$18
+	sLoop		$00, $05, .Loop1
+	sStop

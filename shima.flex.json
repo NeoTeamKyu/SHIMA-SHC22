@@ -1,0 +1,3415 @@
+{
+    "Flex": 2,
+    "name": "Sonic the Hedgehog: Isle of Magnetic Artifacts",
+    "node": "38679ae8-f1c9-4c7d-9936-fa894613c63e",
+    "objects": [
+        {
+            "uuid": "36eb53dc-2ac9-4da7-bfc3-e80e21d1b692",
+            "format": "Sonic 1.js",
+            "name": "NTKyu Logo Sonic",
+            "palettes": [
+                {
+                    "path": "palette/Neo Team Kyukyoku Logo.bin",
+                    "length": 1
+                },
+                {
+                    "path": "palette/Sonic.bin",
+                    "length": 1
+                }
+            ],
+            "art": {
+                "path": "art/uncompressed/NTKyu Logo Sonic.bin",
+                "compression": "Uncompressed",
+                "offset": 0
+            },
+            "mappings": {
+                "path": "Mappings/NTKyu Logo Sonic.asm",
+                "label": "NTKSonic_Map"
+            },
+            "dplcs": {
+                "enabled": true,
+                "path": "DPLCs/NTKyu Logo Sonic.asm",
+                "label": "NTKSonic_PLC"
+            }
+        },
+        {
+            "name": "Generic Gameplay Elements",
+            "children": [
+                {
+                    "name": "Animals",
+                    "children": [
+                        {
+                            "uuid": "142509e4-0844-4f3a-8ef2-9d571e495569",
+                            "format": "Sonic 1.js",
+                            "name": "Bucky",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/nemesis/Animal Bucky.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Animals 3.asm",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            },
+                            "expanded": true
+                        },
+                        {
+                            "uuid": "cbdfab7b-874c-4197-9bf6-3da9093d6ccb",
+                            "format": "Sonic 1.js",
+                            "name": "Packy",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/nemesis/Animal Packy.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Animals 3.asm",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            },
+                            "expanded": true
+                        },
+                        {
+                            "name": "S1",
+                            "children": [
+                                {
+                                    "uuid": "ab7b874c-a197-4bf6-bda9-093d6ccb2572",
+                                    "format": "Sonic 1.js",
+                                    "name": "Pecky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Blackbird.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 1.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    },
+                                    "expanded": true
+                                },
+                                {
+                                    "uuid": "dfab7b87-4ca1-47db-b63d-a9093d6ccb25",
+                                    "format": "Sonic 1.js",
+                                    "name": "Cucky (Clucky)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Chicken.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 2.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    },
+                                    "expanded": true
+                                },
+                                {
+                                    "uuid": "dbf63da9-093d-4ccb-a572-ff3d7557944c",
+                                    "format": "Sonic 1.js",
+                                    "name": "Flicky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Flicky.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 2.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "6ccb2572-ff3d-4557-944c-28c9d3bb9dac",
+                                    "format": "Sonic 1.js",
+                                    "name": "Picky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Pig.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 3.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "874ca197-dbf6-4da9-893d-6ccb2572ff3d",
+                                    "format": "Sonic 1.js",
+                                    "name": "Pocky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Rabbit.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 1.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "7b874ca1-97db-463d-a909-3d6ccb2572ff",
+                                    "format": "Sonic 1.js",
+                                    "name": "Rocky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Seal.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 2.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "3da9093d-6ccb-4572-bf3d-7557944c28c9",
+                                    "format": "Sonic 1.js",
+                                    "name": "Ricky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Squirrel.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 3.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": false,
+                            "uuid": "c64ed56e-1425-49e4-8844-1f3acef29d57"
+                        },
+                        {
+                            "name": "S2",
+                            "children": [
+                                {
+                                    "uuid": "592861f0-fea6-4096-97fb-2312bc9c252c",
+                                    "format": "Sonic 1.js",
+                                    "name": "Micky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Micky.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 3.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "cb2572ff-3d75-4794-8c28-c9d3bb9dac38",
+                                    "format": "Sonic 1.js",
+                                    "name": "Locky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Locky.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 2.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    },
+                                    "expanded": true
+                                },
+                                {
+                                    "uuid": "2572ff3d-7557-444c-a8c9-d3bb9dac3863",
+                                    "format": "Sonic 1.js",
+                                    "name": "Becky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Becky.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 3.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    },
+                                    "expanded": true
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": false,
+                            "uuid": "4ed56e14-2509-4408-841f-3acef29d571e"
+                        },
+                        {
+                            "name": "SCD",
+                            "children": [
+                                {
+                                    "uuid": "3d6ccb25-72ff-4d75-9794-4c28c9d3bb9d",
+                                    "format": "Sonic 1.js",
+                                    "name": "Vicky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Vicky.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 2.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "4ca197db-f63d-4909-bd6c-cb2572ff3d75",
+                                    "format": "Sonic 1.js",
+                                    "name": "Flocky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Flocky.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 3.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": false,
+                            "uuid": "d56e1425-09e4-4844-9f3a-cef29d571e49"
+                        },
+                        {
+                            "name": "S3D",
+                            "children": [
+                                {
+                                    "uuid": "a197dbf6-3da9-493d-accb-2572ff3d7557",
+                                    "format": "Sonic 1.js",
+                                    "name": "Red Flicky",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Animal Red Flicky.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Animals 3.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": false,
+                            "uuid": "6e142509-e408-441f-bace-f29d571e4955"
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": false,
+                    "uuid": "77c64ed5-6e14-4509-a408-441f3acef29d"
+                },
+                {
+                    "name": "Powerups",
+                    "children": [
+                        {
+                            "name": "Monitors",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/Monitors.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Monitor.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "Monitor_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "uuid": "6109ea32-113b-49b4-8997-e8dcbd2e22ed",
+                            "format": "Sonic 1.js"
+                        },
+                        {
+                            "name": "Monitor icons",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/Monitors.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Monitor Icons.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "MonitorIcon_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "uuid": "f37b6d70-3536-4562-aee0-378865553909",
+                            "format": "Sonic 1.js"
+                        },
+                        {
+                            "uuid": "d58dca94-abf7-426e-8bba-d1f23fa7e95d",
+                            "format": "Sonic 1.js",
+                            "name": "Shield",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Shield.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Shield.asm",
+                                "label": "Shield_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Shield.asm",
+                                "label": "Shield_PLC"
+                            }
+                        },
+                        {
+                            "uuid": "9c782633-3b2b-434a-a749-59c321b57ec4",
+                            "format": "Sonic 1.js",
+                            "name": "Bubble Shield",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Bubble Shield.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Bubble Shield.asm",
+                                "label": "BubbleShield_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Bubble Shield.asm",
+                                "label": "BubbleShield_DPLC"
+                            }
+                        },
+                        {
+                            "uuid": "48029c78-2633-4b2b-b34a-274959c321b5",
+                            "format": "Sonic 1.js",
+                            "name": "Fire Shield",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Fire Shield.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Fire Shield.asm",
+                                "label": "FireShield_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Fire Shield.asm",
+                                "label": "FireShield_DPLC"
+                            }
+                        },
+                        {
+                            "uuid": "029c7826-333b-4bb3-8a27-4959c321b57e",
+                            "format": "Sonic 1.js",
+                            "name": "Lightning Shield",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Lightning Shield.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Lightning Shield.asm",
+                                "label": "LightningShield_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Lightning Shield.asm",
+                                "label": "LightningShield_DPLC"
+                            }
+                        },
+                        {
+                            "uuid": "93934622-eea8-4934-ad76-fd1cf9a00bac",
+                            "format": "Sonic 1.js",
+                            "name": "Gold Shield",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/uncompressed/Gold Shield.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Gold Shield.asm",
+                                "label": "GoldShield_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Gold Shield.asm",
+                                "label": "GoldShield_DPLC"
+                            }
+                        },
+                        {
+                            "uuid": "d506928a-563b-449a-9734-a3056c862928",
+                            "format": "Sonic 1.js",
+                            "name": "Invincibility Stars",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Invincibility Stars.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Invincibility Stars.asm",
+                                "label": "InvStar_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": false,
+                    "uuid": "e0f01382-380a-4651-8513-b028f5605eb3"
+                },
+                {
+                    "name": "Underwater",
+                    "children": [
+                        {
+                            "uuid": "86c7b197-2982-49fd-90a9-e2b3e06bff6b",
+                            "format": "Sonic 1.js",
+                            "name": "Water Surface",
+                            "palettes": [
+                                {
+                                    "length": 1,
+                                    "blank": true
+                                },
+                                {
+                                    "path": "palette/Labyrinth Zone.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/Generic Water Surface.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Water Surface.asm",
+                                "label": "Surface_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "format": "Sonic 1.js",
+                            "name": "Bubbles",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/nemesis/Bubbles.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Bubbles.asm",
+                                "label": "Bubble_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "../../../../Desktop/Tools/Flex2",
+                                "label": ""
+                            },
+                            "uuid": "163f7fc0-d01e-4f7d-af95-e0ef43bd0c84"
+                        },
+                        {
+                            "uuid": "d708163f-7fc0-401e-af7d-af95e0ef43bd",
+                            "format": "Sonic 1.js",
+                            "name": "Bubble Generator",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/nemesis/Bubble Generator.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Bubble Generator.asm",
+                                "label": "BubbleGen_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            },
+                            "expanded": true
+                        },
+                        {
+                            "uuid": "d8d70816-3f7f-40d0-9eef-7daf95e0ef43",
+                            "format": "Sonic 1.js",
+                            "name": "Countdown Numbers",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/uncompressed/Countdown Numbers.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Countdown Numbers.asm",
+                                "label": "Countdown_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Countdown Numbers.asm",
+                                "label": "Countdown_PLC"
+                            },
+                            "expanded": true
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": false,
+                    "uuid": "cbac1492-6db2-4fd4-a47c-1072aeb779d0"
+                },
+                {
+                    "uuid": "5bbed4b4-ce81-4092-b156-ec0b6a6fc393",
+                    "format": "Sonic 1.js",
+                    "name": "Ring",
+                    "palettes": [],
+                    "art": {
+                        "path": "art/nemesis/Rings.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Rings.asm",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    }
+                },
+                {
+                    "uuid": "3afc2f5a-33da-411d-88d2-e2898ea3b8c1",
+                    "format": "Sonic 1.js",
+                    "name": "Invisible Barriers",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Monitors.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Invisible Barriers.asm",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    }
+                },
+                {
+                    "uuid": "062385ac-35cc-4a96-ab31-20f8f61991a3",
+                    "format": "Sonic 1.js",
+                    "name": "Giant Ring",
+                    "palettes": [],
+                    "art": {
+                        "path": "art/uncompressed/Giant Ring.bin",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Giant Ring.asm",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": true,
+                        "path": "DPLCs/Giant Ring.asm",
+                        "label": ""
+                    }
+                },
+                {
+                    "uuid": "9544fb49-14a4-43fe-9b95-06d38270f73b",
+                    "format": "Sonic 1.js",
+                    "name": "Krizonus Pearl (placeholder)",
+                    "palettes": [],
+                    "art": {
+                        "path": "art/uncompressed/Krizonus Pearl.bin",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Krizonus Pearl.asm",
+                        "label": "KPearl_Map"
+                    },
+                    "dplcs": {
+                        "enabled": true,
+                        "path": "DPLCs/Krizonus Pearl.asm",
+                        "label": "KPearl_PLC"
+                    },
+                    "expanded": true
+                },
+                {
+                    "uuid": "6a44df7d-7416-410c-add4-d8c87f9dd92e",
+                    "format": "Sonic 1.js",
+                    "name": "Checkpoint",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Lamppost.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Lamppost.asm",
+                        "label": "Checkpoint_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "expanded": true
+                },
+                {
+                    "format": "Sonic 1.js",
+                    "name": "Spikes",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Spikes.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Spikes.asm",
+                        "label": "Spikes_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "140b9611-ceea-46f1-b525-ed5baacdf5cd"
+                },
+                {
+                    "format": "Sonic 1.js",
+                    "name": "Explosion (Smoke)",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Explosion.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Explosion.asm",
+                        "label": "Explosion_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "df38679a-e8f1-499c-bdd9-36fa894613c6",
+                    "expanded": true
+                },
+                {
+                    "format": "Sonic 1.js",
+                    "name": "Explosion (Fire)",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Explosion.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Fiery Explosion.asm",
+                        "label": "FieryExplosion_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "9edbb0a2-90a7-4b06-a11d-6f7d9b64250a"
+                },
+                {
+                    "format": "Sonic 1.js",
+                    "name": "Monitor Shards",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Explosion.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Monitor Shards.asm",
+                        "label": "MonShard_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    },
+                    "uuid": "38679ae8-f1c9-4c7d-9936-fa894613c63e"
+                },
+                {
+                    "name": "Springs",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Spring.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Springs.asm",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": "Spring_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": ""
+                    },
+                    "uuid": "2ee03788-6555-4909-a89e-b9ed756f5774",
+                    "format": "Sonic 1.js"
+                },
+                {
+                    "uuid": "c979687a-c917-404c-be9e-d1a4f2f410c8",
+                    "format": "Sonic 1.js",
+                    "name": "Diagonal Springs",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Diagonal springs.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Diagonal Springs.asm",
+                        "label": "DiagSpring_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    }
+                },
+                {
+                    "uuid": "cefb947e-4c3b-4a9e-839e-cda0bf80c000",
+                    "format": "Sonic 1.js",
+                    "name": "Prison Capsule",
+                    "palettes": [],
+                    "art": {
+                        "path": "art/nemesis/Prison Capsule.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Prison Capsule.asm",
+                        "label": "Capsule_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    }
+                }
+            ],
+            "isDirectory": true,
+            "expanded": true,
+            "uuid": "449f0a19-b108-47d9-94a9-f17ca031d20c"
+        },
+        {
+            "name": "Title Screen",
+            "children": [
+                {
+                    "name": "Title Screen Options",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Title Screen Foreground.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Title Screen Options.asm",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": "TitleMenu_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": ""
+                    },
+                    "uuid": "18fd5f46-aec1-4b34-92c4-f782fa24f37b",
+                    "expanded": true,
+                    "format": "Sonic 1.js"
+                },
+                {
+                    "name": "Title Screen Characters",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/uncompressed/Title Screen Characters.bin",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Title Screen Characters.asm",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": "TitleChars_Map"
+                    },
+                    "dplcs": {
+                        "enabled": true,
+                        "path": "DPLCs/Title Screen Characters.asm",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": ""
+                    },
+                    "uuid": "fd5f46ae-c10b-4412-84f7-82fa24f37b6d",
+                    "expanded": true,
+                    "format": "Sonic 1.js"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": true,
+            "uuid": "a3936ded-3551-457e-96bc-62ba7f2f22b6"
+        },
+        {
+            "name": "HUD",
+            "children": [
+                {
+                    "name": "HUD",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/HUD.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/HUD.asm",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": "HUD_Map"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": ""
+                    },
+                    "uuid": "0b3412c4-f782-4a24-b37b-6d7035366562",
+                    "format": "Sonic 1.js"
+                },
+                {
+                    "name": "HUD numbers",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/uncompressed/HUD Numbers.bin",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": ""
+                    },
+                    "uuid": "3412c4f7-82fa-44f3-bb6d-70353665622e",
+                    "format": "Sonic 1.js"
+                },
+                {
+                    "uuid": "961f0ff7-db57-4f25-9bbf-6fbb6561eb56",
+                    "format": "Sonic 1.js",
+                    "name": "Title Cards",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "length": 1,
+                            "blank": true
+                        },
+                        {
+                            "length": 1,
+                            "blank": true
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Title Cards.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Title Cards.asm",
+                        "label": "M_Card"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    }
+                },
+                {
+                    "uuid": "39378852-0f09-4d42-982d-dbfe8ffc41b2",
+                    "format": "Sonic 1.js",
+                    "name": "Special Stage Result Cards",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Special Stage.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Title Cards.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/SS Results.asm",
+                        "label": "M_SSResults"
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    }
+                },
+                {
+                    "uuid": "fd5c089d-c693-4252-8357-23c7792b287c",
+                    "format": "Sonic 1.js",
+                    "name": "Points",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/nemesis/Points.bin",
+                        "compression": "Nemesis",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Points.asm",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": false,
+                        "path": "",
+                        "label": ""
+                    }
+                },
+                {
+                    "name": "Life Icons",
+                    "children": [
+                        {
+                            "name": "Life icon (Sonic)",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/HUD - Life Counter Icon.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Life Icon for Editing.bin",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "uuid": "e218fd5f-46ae-410b-b412-c4f782fa24f3",
+                            "format": "Sonic 1.js"
+                        },
+                        {
+                            "name": "Life icon (Tails)",
+                            "palettes": [
+                                {
+                                    "path": "palette/Tails.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/HUD - Life Counter Icon - Tails.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Life Icon for Editing.bin",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "uuid": "82fa24f3-7b6d-4035-b665-622ee0378865",
+                            "format": "Sonic 1.js"
+                        },
+                        {
+                            "name": "Life icon (Knuckles)",
+                            "palettes": [
+                                {
+                                    "path": "palette/Knuckles.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/HUD - Life Counter Icon - Knuckles.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Life Icon for Editing.bin",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "uuid": "fa24f37b-6d70-4536-a562-2ee037886555",
+                            "format": "Sonic 1.js"
+                        },
+                        {
+                            "name": "Life icon (Kyuko)",
+                            "palettes": [
+                                {
+                                    "path": "palette/Kyuko.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/HUD - Life Counter Icon - Kyuko.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Life Icon for Editing.bin",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "uuid": "24f37b6d-7035-4665-a22e-e03788655539",
+                            "format": "Sonic 1.js"
+                        },
+                        {
+                            "uuid": "4af9bac6-d62e-48ea-90f6-f525c651089f",
+                            "format": "Sonic 1.js",
+                            "name": "Life icon (Metal)",
+                            "palettes": [
+                                {
+                                    "path": "palette/Metal.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/HUD - Life Counter Icon - Metal Sonic.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Life Icon for Editing.bin",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "uuid": "f414d3a9-ef81-4660-a834-98e2dc44828f",
+                            "format": "Sonic 1.js",
+                            "name": "Life icon (Mighty)",
+                            "palettes": [
+                                {
+                                    "path": "palette/Mighty.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/HUD - Life Counter Icon - Mighty.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Life Icon for Editing.bin",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "uuid": "bac6d62e-a8ea-40f6-b525-c651089f5421",
+                            "format": "Sonic 1.js",
+                            "name": "Life icon (Amy)",
+                            "palettes": [
+                                {
+                                    "path": "palette/Amy.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/HUD - Life Counter Icon - Amy.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Life Icon for Editing.bin",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "uuid": "f9bac6d6-2ea8-4ad0-b6f5-25c651089f54",
+                            "format": "Sonic 1.js",
+                            "name": "Life icon (Legacy)",
+                            "palettes": [
+                                {
+                                    "path": "palette/Legacy Sonic.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/HUD - Life Counter Icon - Legacy.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Life Icon for Editing.bin",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": false,
+                    "uuid": "f78e005f-df50-4aa3-936d-ed3551d57e56"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": false,
+            "uuid": "42ba58d9-5cd6-469e-a4f5-a644a0fa3ff7"
+        },
+        {
+            "name": "Player-related",
+            "children": [
+                {
+                    "name": "Splash/Spindash Dust",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/uncompressed/Splash and skid dust.bin",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Spindash Dust.asm",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": "Dust_Map"
+                    },
+                    "dplcs": {
+                        "enabled": true,
+                        "path": "DPLCs/Spindash Dust.asm",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": "Dust_PLC"
+                    },
+                    "uuid": "aec10b34-12c4-4782-ba24-f37b6d703536",
+                    "format": "Sonic 1.js",
+                    "expanded": true
+                },
+                {
+                    "name": "Signposts",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        },
+                        {
+                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                            "length": 3
+                        }
+                    ],
+                    "art": {
+                        "path": "art/uncompressed/Signposts.bin",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Signpost.asm",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": ""
+                    },
+                    "dplcs": {
+                        "enabled": true,
+                        "path": "DPLCs/Signpost.asm",
+                        "format": "Sonic 1",
+                        "customDefinition": "",
+                        "label": ""
+                    },
+                    "uuid": "46aec10b-3412-44f7-82fa-24f37b6d7035",
+                    "expanded": true,
+                    "format": "Sonic 1.js"
+                },
+                {
+                    "uuid": "5a49c659-ed13-402c-9ea3-13ea421a1cd4",
+                    "format": "Sonic 1.js",
+                    "name": "Abbey",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        }
+                    ],
+                    "art": {
+                        "path": "art/uncompressed/Abbey.bin",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Abbey.asm",
+                        "label": "Abbey_Map"
+                    },
+                    "dplcs": {
+                        "enabled": true,
+                        "path": "DPLCs/Abbey.asm",
+                        "label": "Abbey_PLC"
+                    },
+                    "expanded": true
+                },
+                {
+                    "uuid": "f4e64b9c-eed5-4f7f-b499-4779ae4f6904",
+                    "format": "Sonic 1.js",
+                    "name": "Super Abbey",
+                    "palettes": [
+                        {
+                            "path": "palette/Sonic.bin",
+                            "length": 1
+                        }
+                    ],
+                    "art": {
+                        "path": "art/uncompressed/Super Abbey.bin",
+                        "compression": "Uncompressed",
+                        "offset": 0
+                    },
+                    "mappings": {
+                        "path": "Mappings/Abbey.asm",
+                        "label": "Abbey_Map"
+                    },
+                    "dplcs": {
+                        "enabled": true,
+                        "path": "DPLCs/Abbey.asm",
+                        "label": "Abbey_PLC"
+                    },
+                    "expanded": true
+                },
+                {
+                    "name": "Main Game",
+                    "children": [
+                        {
+                            "name": "Sonic",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Sonic.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Sonic.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "Sonic_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Sonic.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "Sonic_PLC"
+                            },
+                            "uuid": "c16b3de2-18fd-4f46-aec1-0b3412c4f782",
+                            "format": "Sonic 1.js",
+                            "expanded": true
+                        },
+                        {
+                            "name": "Super Sonic",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/uncompressed/Super Sonic.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Super Sonic.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "SuperSonic_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Super Sonic.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "SuperSonic_PLC"
+                            },
+                            "uuid": "5f46aec1-0b34-42c4-b782-fa24f37b6d70",
+                            "format": "Sonic 1.js",
+                            "expanded": true
+                        },
+                        {
+                            "name": "Tails",
+                            "palettes": [
+                                {
+                                    "path": "palette/Tails.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Tails.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Tails.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "Tails_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Tails.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "Tails_PLC"
+                            },
+                            "uuid": "6b3de218-fd5f-46ae-810b-3412c4f782fa",
+                            "format": "Sonic 1.js",
+                            "expanded": true
+                        },
+                        {
+                            "uuid": "bb075a79-426a-494d-804c-6170c7c24d89",
+                            "format": "Sonic 1.js",
+                            "name": "Tails's Tails",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/uncompressed/Tails's tails.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Tails's tails.asm",
+                                "label": "TailsTails_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Tails's tails.asm",
+                                "label": "TailsTails_PLC"
+                            },
+                            "expanded": true
+                        },
+                        {
+                            "name": "Knuckles",
+                            "palettes": [
+                                {
+                                    "path": "palette/Knuckles.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Knuckles.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Knuckles.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "Knuckles_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Knuckles.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "Knuckles_PLC"
+                            },
+                            "uuid": "3de218fd-5f46-4ec1-8b34-12c4f782fa24",
+                            "format": "Sonic 1.js",
+                            "expanded": true
+                        },
+                        {
+                            "name": "Kyuko",
+                            "palettes": [
+                                {
+                                    "path": "palette/Kyuko.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Kyuko.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Kyuko.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "Kyuko_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Kyuko.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": "Kyuko_PLC"
+                            },
+                            "uuid": "f782fa24-f37b-4d70-b536-65622ee03788",
+                            "format": "Sonic 1.js",
+                            "expanded": true
+                        },
+                        {
+                            "uuid": "22f414d3-a9ef-41f6-a0e8-3498e2dc4482",
+                            "format": "Sonic 1.js",
+                            "name": "Metal Sonic",
+                            "palettes": [
+                                {
+                                    "path": "palette/Metal.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Metal.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Metal Sonic.asm",
+                                "label": "MetalSonic_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Metal Sonic.asm",
+                                "label": "MetalSonic_PLC"
+                            },
+                            "expanded": true
+                        },
+                        {
+                            "uuid": "b705c327-d39d-41c4-825f-5265871e4c9e",
+                            "format": "Sonic 1.js",
+                            "name": "Mighty",
+                            "palettes": [
+                                {
+                                    "path": "palette/Mighty.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Mighty.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Mighty.asm",
+                                "label": "Mighty_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Mighty.asm",
+                                "label": "Mighty_PLC"
+                            },
+                            "expanded": true
+                        },
+                        {
+                            "uuid": "98b705c3-27d3-4d61-8402-5f5265871e4c",
+                            "format": "Sonic 1.js",
+                            "name": "Amy",
+                            "palettes": [
+                                {
+                                    "path": "palette/Amy.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Amy.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Amy.asm",
+                                "label": "Amy_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Amy.asm",
+                                "label": "Amy_PLC"
+                            },
+                            "expanded": true
+                        },
+                        {
+                            "uuid": "62aeb410-51bd-408d-9a36-093b558c3d42",
+                            "format": "Sonic 1.js",
+                            "name": "Legacy Sonic",
+                            "palettes": [
+                                {
+                                    "path": "palette/Legacy Sonic.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Legacy.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Legacy Sonic.asm",
+                                "label": "Legacy_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Legacy Sonic.asm",
+                                "label": "Legacy_PLC"
+                            },
+                            "expanded": true
+                        },
+                        {
+                            "uuid": "3498b705-c327-439d-a1c4-025f5265871e",
+                            "format": "Sonic 1.js",
+                            "name": "Dark Legacy Sonic",
+                            "palettes": [
+                                {
+                                    "path": "palette/Legacy Sonic.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/uncompressed/Dark Legacy.bin",
+                                "compression": "Uncompressed",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Dark Legacy Sonic.asm",
+                                "label": "DarkLegacy_Map"
+                            },
+                            "dplcs": {
+                                "enabled": true,
+                                "path": "DPLCs/Dark Legacy Sonic.asm",
+                                "label": "DarkLegacy_PLC"
+                            },
+                            "expanded": true
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": true,
+                    "uuid": "005fdf50-4aa3-436d-ad35-51d57e56bc62"
+                },
+                {
+                    "name": "Continue Screen",
+                    "children": [
+                        {
+                            "name": "Idle",
+                            "children": [
+                                {
+                                    "name": "Sonic (Continue)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Continue Screen Sonic.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Continue Screen.asm",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "a9c31f39-3788-420f-895d-42182ddbfe8f",
+                                    "format": "Sonic 1.js"
+                                },
+                                {
+                                    "name": "Tails (Continue)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Continue Screen Tails.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Continue Screen - Tails.asm",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "88655539-09e8-4eb9-ad75-6f57746b2890",
+                                    "format": "Sonic 1.js"
+                                },
+                                {
+                                    "name": "Knuckles (Continue)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Continue Screen Knuckles.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Continue Screen - Knuckles.asm",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "65553909-e89e-49ed-b56f-57746b289061",
+                                    "format": "Sonic 1.js"
+                                },
+                                {
+                                    "name": "Metal (Continue)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Continue Screen Metal.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Continue Screen.asm",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "37886555-3909-489e-b9ed-756f57746b28",
+                                    "format": "Sonic 1.js",
+                                    "expanded": true
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": false,
+                            "uuid": "df504aa3-936d-4d35-91d5-7e56bc62ba7f"
+                        },
+                        {
+                            "name": "Mini",
+                            "children": [
+                                {
+                                    "name": "Mini Sonic (Continue)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Continue Screen Stuff.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Continue Screen for Editing.bin",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "c31f3937-8852-4f09-9d42-182ddbfe8ffc",
+                                    "format": "Sonic 1.js"
+                                },
+                                {
+                                    "name": "Mini Tails (Continue)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Continue Screen Stuff - Tails.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Continue Screen for Editing.bin",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "09e89eb9-ed75-4f57-b46b-289061959fa8",
+                                    "format": "Sonic 1.js",
+                                    "expanded": true
+                                },
+                                {
+                                    "name": "Mini Knuckles (Continue)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Continue Screen Stuff - Knuckles.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Continue Screen for Editing.bin",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "e89eb9ed-756f-4774-ab28-9061959fa8e2",
+                                    "format": "Sonic 1.js",
+                                    "expanded": true
+                                },
+                                {
+                                    "name": "Mini Metal (Continue)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Continue Screen Stuff - Metal.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Continue Screen for Editing.bin",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "3909e89e-b9ed-456f-9774-6b289061959f",
+                                    "format": "Sonic 1.js"
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": false,
+                            "uuid": "504aa393-6ded-4551-957e-56bc62ba7f2f"
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": true,
+                    "uuid": "5fdf504a-a393-4ded-b551-d57e56bc62ba"
+                },
+                {
+                    "name": "Ending",
+                    "children": [
+                        {
+                            "name": "Ending Sonic",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/Ending - Sonic.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Ending Sequence Sonic.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "uuid": "35366562-2ee0-4788-a555-3909e89eb9ed",
+                            "expanded": true,
+                            "format": "Sonic 1.js"
+                        },
+                        {
+                            "name": "Ending Tails",
+                            "palettes": [
+                                {
+                                    "path": "palette/Tails.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/Ending - Tails.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Ending Sequence Tails.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "uuid": "3665622e-e037-4865-9539-09e89eb9ed75",
+                            "expanded": true,
+                            "format": "Sonic 1.js"
+                        },
+                        {
+                            "name": "Ending Knuckles",
+                            "palettes": [
+                                {
+                                    "path": "palette/Knuckles.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/Ending - Knuckles.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Ending Sequence Knuckles.asm",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "format": "Sonic 1",
+                                "customDefinition": "",
+                                "label": ""
+                            },
+                            "uuid": "65622ee0-3788-4555-b909-e89eb9ed756f",
+                            "format": "Sonic 1.js"
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": false,
+                    "uuid": "4aa3936d-ed35-41d5-be56-bc62ba7f2f22"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": false,
+            "uuid": "8e005fdf-504a-4393-aded-3551d57e56bc"
+        },
+        {
+            "name": "Stages",
+            "children": [
+                {
+                    "name": "Blossom Gardens Zone",
+                    "children": [
+                        {
+                            "uuid": "4b732ad1-2fdd-4519-8a7a-a9a15a24b76c",
+                            "format": "Sonic 1.js",
+                            "name": "Platforms",
+                            "palettes": [
+                                {
+                                    "length": 1,
+                                    "blank": true
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/BGZ Blocks.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Platforms (GHZ).asm",
+                                "label": "Map_Plat"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "uuid": "d78c4b73-2ad1-4fdd-9519-ca7aa9a15a24",
+                            "format": "Sonic 1.js",
+                            "name": "Breakable Floors",
+                            "palettes": [
+                                {
+                                    "length": 1,
+                                    "blank": true
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/BGZ Blocks.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Smashable Block - BGZ.asm",
+                                "label": "Map_Break"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "format": "Sonic 1.js",
+                            "name": "Bamboo Spikes",
+                            "palettes": [
+                                {
+                                    "path": "palette/Sonic.bin",
+                                    "length": 1
+                                },
+                                {
+                                    "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/Bamboo Spikes.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Spikes.asm",
+                                "label": "Spikes_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            },
+                            "uuid": "4dcd660c-3af6-4e79-8f2e-6d30813b83df"
+                        },
+                        {
+                            "uuid": "d2708d99-ddb3-4e11-9b64-3f54ba5cd939",
+                            "format": "Sonic 1.js",
+                            "name": "Horizontal Flapping Door",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/nemesis/CD Flapdoor.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Horizontal Flapdoor.asm",
+                                "label": "CDFlapDoorH_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "uuid": "1648029c-7826-433b-abb3-4a274959c321",
+                            "format": "Sonic 1.js",
+                            "name": "Vertical Flapping Door",
+                            "palettes": [],
+                            "art": {
+                                "path": "art/nemesis/CD Flapdoor.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Vertical Flapdoor.asm",
+                                "label": "CDFlapDoorV_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "name": "Decorations",
+                            "children": [
+                                {
+                                    "name": "Legacy",
+                                    "children": [
+                                        {
+                                            "uuid": "517cc606-0580-4db1-86af-fb9c7f31ebfb",
+                                            "format": "Sonic 1.js",
+                                            "name": "Rock",
+                                            "palettes": [
+                                                {
+                                                    "path": "palette/Legacy Sonic.bin",
+                                                    "length": 1
+                                                },
+                                                {
+                                                    "path": "palette/Legacy Blossom Gardens Zone.bin",
+                                                    "length": 3
+                                                }
+                                            ],
+                                            "art": {
+                                                "path": "art/nemesis/LBGZ Rock.bin",
+                                                "compression": "Nemesis",
+                                                "offset": 0
+                                            },
+                                            "mappings": {
+                                                "path": "Mappings/LBGZ Rock.asm",
+                                                "label": "Rock_Map"
+                                            },
+                                            "dplcs": {
+                                                "enabled": false,
+                                                "path": "",
+                                                "label": ""
+                                            }
+                                        }
+                                    ],
+                                    "isDirectory": true,
+                                    "expanded": true,
+                                    "uuid": "eee009f7-0b7b-4482-8e57-56cf32173e93"
+                                },
+                                {
+                                    "uuid": "c6e7a852-8e98-413d-b261-9417cbf4327c",
+                                    "format": "Sonic 1.js",
+                                    "name": "Falling petals",
+                                    "palettes": [
+                                        {
+                                            "length": 1,
+                                            "blank": true
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/Falling Petals.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Falling Petals.asm",
+                                        "label": "mappetals"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    },
+                                    "expanded": true
+                                },
+                                {
+                                    "uuid": "ae517cc6-0605-407d-b186-affb9c7f31eb",
+                                    "format": "Sonic 1.js",
+                                    "name": "Statues",
+                                    "palettes": [
+                                        {
+                                            "path": "palette/Sonic.bin",
+                                            "length": 1
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/BGZ Statues.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/BGZ Statues.asm",
+                                        "label": "Statues_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "3129ae98-d834-4a70-a13e-3b2877c30061",
+                                    "format": "Sonic 1.js",
+                                    "name": "Seaweed",
+                                    "palettes": [
+                                        {
+                                            "length": 1,
+                                            "blank": true
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/uncompressed/BGZ Seaweed.bin",
+                                        "compression": "Uncompressed",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/BGZ Seaweed.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "4684a849-174a-4117-9c6f-2037b426db32",
+                                    "format": "Sonic 1.js",
+                                    "name": "Shoji doors (use with blocks)",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/BGZ Blocks.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/BGZ Shoji.asm",
+                                        "label": "Shoji_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "242bdd78-bd79-4462-955e-e9fe18215bf7"
+                        },
+                        {
+                            "name": "Gimmicks",
+                            "children": [
+                                {
+                                    "format": "Sonic 1.js",
+                                    "name": "Flower Cannon",
+                                    "palettes": [
+                                        {
+                                            "path": "palette/Sonic.bin",
+                                            "length": 1
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/uncompressed/Flower Cannon.bin",
+                                        "compression": "Uncompressed",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Flower Cannon.asm",
+                                        "label": "FlowerCannon_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": true,
+                                        "path": "DPLCs/Flower Cannon.asm",
+                                        "label": "FlowerCannon_PLC"
+                                    },
+                                    "uuid": "8ca86ab5-c860-4cb3-bddd-b92f37d13449",
+                                    "expanded": true
+                                },
+                                {
+                                    "uuid": "c450a18c-b359-4ea5-9450-addcf1ad9063",
+                                    "format": "Sonic 1.js",
+                                    "name": "Bamboo Springboard",
+                                    "palettes": [
+                                        {
+                                            "path": "palette/Sonic.bin",
+                                            "length": 1
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/Bamboo Pole Springboard.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Bamboo Pole Springboard.asm",
+                                        "label": "BambooBoard_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    },
+                                    "expanded": true
+                                },
+                                {
+                                    "uuid": "a3c68881-2311-46de-a3c1-27106f4a68b2",
+                                    "format": "Sonic 1.js",
+                                    "name": "Lanterns",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/BGZ Lantern.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/BGZ Lanterns.asm",
+                                        "label": "Lantern_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "006169db-1047-496b-8896-67d08e56acbb",
+                                    "format": "Sonic 1.js",
+                                    "name": "Lantern Explosions",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Lantern Explosion.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Lantern Explosion.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "4bffd486-6629-45dc-b520-1cf84084b8d9"
+                        },
+                        {
+                            "name": "Enemies",
+                            "children": [
+                                {
+                                    "name": "Moto Bug",
+                                    "palettes": [
+                                        {
+                                            "path": "palette/Sonic.bin",
+                                            "length": 1
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/Enemy Motobug.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Moto Bug.asm",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": "Motobug_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "6f75447c-5d86-4d34-ba33-4de1186bc326",
+                                    "format": "Sonic 1.js"
+                                },
+                                {
+                                    "name": "Gameroid",
+                                    "palettes": [
+                                        {
+                                            "path": "palette/Sonic.bin",
+                                            "length": 1
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/Enemy Gameroid.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Gameroid.asm",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": "Gameroid_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "format": "Sonic 1",
+                                        "customDefinition": "",
+                                        "label": ""
+                                    },
+                                    "uuid": "e0378865-5539-49e8-9eb9-ed756f57746b",
+                                    "format": "Sonic 1.js"
+                                },
+                                {
+                                    "uuid": "f471cadb-5fec-443f-a369-1fffc7e83ba9",
+                                    "format": "Sonic 1.js",
+                                    "name": "Mosqui",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/Enemy Mosqui.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Mosqui.asm",
+                                        "label": "Mosqui_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    },
+                                    "expanded": true
+                                },
+                                {
+                                    "uuid": "b44a374b-93c3-408b-ae0d-3ed704fd7a92",
+                                    "format": "Sonic 1.js",
+                                    "name": "Wind-Up Koi",
+                                    "palettes": [
+                                        {
+                                            "path": "palette/Sonic.bin",
+                                            "length": 1
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/uncompressed/Enemy Wind-Up Koi.bin",
+                                        "compression": "Uncompressed",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Wind-Up Koi.asm",
+                                        "label": "WindUpKoi_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": true,
+                                        "path": "DPLCs/Wind-Up Koi.asm",
+                                        "label": "WindUpKoi_DPLC"
+                                    },
+                                    "expanded": true
+                                },
+                                {
+                                    "name": "Legacy",
+                                    "children": [
+                                        {
+                                            "uuid": "926c3fd7-b9c0-4b21-89dc-46ed472c566c",
+                                            "format": "Sonic 1.js",
+                                            "name": "Crabmeat",
+                                            "palettes": [
+                                                {
+                                                    "path": "palette/Sonic.bin",
+                                                    "length": 1
+                                                },
+                                                {
+                                                    "path": "palette/Legacy Blossom Gardens Zone.bin",
+                                                    "length": 3
+                                                }
+                                            ],
+                                            "art": {
+                                                "path": "art/nemesis/Enemy Crabmeat.bin",
+                                                "compression": "Nemesis",
+                                                "offset": 0
+                                            },
+                                            "mappings": {
+                                                "path": "Mappings/Crabmeat.asm",
+                                                "label": "Crabmeat_Map"
+                                            },
+                                            "dplcs": {
+                                                "enabled": false,
+                                                "path": "",
+                                                "label": ""
+                                            }
+                                        },
+                                        {
+                                            "uuid": "2b008aa2-a005-4afd-b180-0e04dbd152af",
+                                            "format": "Sonic 1.js",
+                                            "name": "Buzz Bomber",
+                                            "palettes": [
+                                                {
+                                                    "path": "palette/Sonic.bin",
+                                                    "length": 1
+                                                },
+                                                {
+                                                    "path": "palette/Legacy Blossom Gardens Zone.bin",
+                                                    "length": 3
+                                                }
+                                            ],
+                                            "art": {
+                                                "path": "art/nemesis/Enemy Buzz Bomber.bin",
+                                                "compression": "Nemesis",
+                                                "offset": 0
+                                            },
+                                            "mappings": {
+                                                "path": "Mappings/Buzz Bomber.asm",
+                                                "label": "BuzzBomber_Map"
+                                            },
+                                            "dplcs": {
+                                                "enabled": false,
+                                                "path": "",
+                                                "label": ""
+                                            }
+                                        }
+                                    ],
+                                    "isDirectory": true,
+                                    "expanded": true,
+                                    "uuid": "c4af40e6-2343-4b4c-8f37-5a8c050ffc1c"
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "6c4bffd4-8666-4955-9cb5-201cf84084b8"
+                        },
+                        {
+                            "name": "Boss",
+                            "children": [
+                                {
+                                    "uuid": "bf142454-503b-4257-a473-f2a212742a68",
+                                    "format": "Sonic 1.js",
+                                    "name": "Boss Kyuko",
+                                    "palettes": [
+                                        {
+                                            "path": "palette/Sonic.bin",
+                                            "length": 1
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Boss.bin",
+                                            "length": 1
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/uncompressed/Boss Kyuko.bin",
+                                        "compression": "Uncompressed",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Boss Kyuko.asm",
+                                        "label": "BKyuko_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": true,
+                                        "path": "DPLCs/Boss Kyuko.asm",
+                                        "label": "BKyuko_DPLC"
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "ffd48666-2955-4cb5-a01c-f84084b8d955"
+                        },
+                        {
+                            "name": "Animated Tiles",
+                            "children": [
+                                {
+                                    "uuid": "3acac609-7917-4f3a-9ca6-97c539237d79",
+                                    "format": "Sonic 1.js",
+                                    "name": "BGZ Waterfall",
+                                    "palettes": [
+                                        {
+                                            "path": "palette/Sonic.bin",
+                                            "length": 1
+                                        },
+                                        {
+                                            "path": "palette/Blossom Gardens Zone Act 1.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/uncompressed/BGZ Waterfall.bin",
+                                        "compression": "Uncompressed",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "6b88da15-22bc-4114-b99a-66e1a6de8511"
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": true,
+                    "uuid": "856c4bff-d486-4629-95dc-b5201cf84084"
+                },
+                {
+                    "name": "Melting Heights Zone",
+                    "children": [
+                        {
+                            "uuid": "073cee6f-9b8d-4ea6-8356-5cf74274e913",
+                            "format": "Sonic 1.js",
+                            "name": "Bridge",
+                            "palettes": [
+                                {
+                                    "length": 1,
+                                    "blank": true
+                                },
+                                {
+                                    "path": "palette/Melting Heights Zone.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/MHZ Decorations.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Bridge.asm",
+                                "label": "Bridge_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "format": "Sonic 1.js",
+                            "name": "Ice Spikes",
+                            "palettes": [
+                                {
+                                    "length": 1,
+                                    "blank": true
+                                },
+                                {
+                                    "path": "palette/Melting Heights Zone.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/Ice Spikes.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Spikes.asm",
+                                "label": "Spikes_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            },
+                            "uuid": "fb91ca68-3921-41fa-ac7f-8ae146170ea0"
+                        },
+                        {
+                            "uuid": "3cee6f9b-8d1e-46c3-965c-f74274e913ec",
+                            "format": "Sonic 1.js",
+                            "name": "Smashable Walls",
+                            "palettes": [
+                                {
+                                    "length": 1,
+                                    "blank": true
+                                },
+                                {
+                                    "path": "palette/Melting Heights Zone.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/MHZ Breakable Wall.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Smashable Walls.asm",
+                                "label": "Smash_Map"
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "",
+                                "label": ""
+                            }
+                        },
+                        {
+                            "format": "Sonic 1.js",
+                            "name": "Pushable blocks",
+                            "palettes": [
+                                {
+                                    "length": 1,
+                                    "blank": true
+                                },
+                                {
+                                    "path": "palette/Melting Heights Zone.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/MHZ Ice Blocks.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/MHZ Pushable Block.asm",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "../../../..",
+                                "label": ""
+                            },
+                            "uuid": "a8836594-7384-4315-8c62-d16933c90cc6"
+                        },
+                        {
+                            "format": "Sonic 1.js",
+                            "name": "Smashable blocks",
+                            "palettes": [
+                                {
+                                    "length": 1,
+                                    "blank": true
+                                },
+                                {
+                                    "path": "palette/Melting Heights Zone.bin",
+                                    "length": 3
+                                }
+                            ],
+                            "art": {
+                                "path": "art/nemesis/MHZ Ice Blocks.bin",
+                                "compression": "Nemesis",
+                                "offset": 0
+                            },
+                            "mappings": {
+                                "path": "Mappings/Smashable Block - MHZ.asm",
+                                "label": ""
+                            },
+                            "dplcs": {
+                                "enabled": false,
+                                "path": "../../../..",
+                                "label": ""
+                            },
+                            "uuid": "d45377c5-c142-4c3c-a830-2f6f4a0bddf6"
+                        },
+                        {
+                            "name": "Decorations",
+                            "children": [
+                                {
+                                    "uuid": "f3d4e180-a1ee-4787-90a7-0ed4bf86c714",
+                                    "format": "Sonic 1.js",
+                                    "name": "Falling snow",
+                                    "palettes": [
+                                        {
+                                            "length": 1,
+                                            "blank": true
+                                        },
+                                        {
+                                            "path": "palette/Melting Heights Zone.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/Falling Snow.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Falling Snow.asm",
+                                        "label": "Snow_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "e301a883-6594-4384-8315-4c62d16933c9",
+                                    "format": "Sonic 1.js",
+                                    "name": "Lamp",
+                                    "palettes": [],
+                                    "art": {
+                                        "path": "art/nemesis/MHZ Decorations.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/MHZ Lamp.asm",
+                                        "label": ""
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "042e5f78-4878-43f2-837e-71b968a6f40c"
+                        },
+                        {
+                            "name": "Gimmicks",
+                            "children": [],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "86662955-dcb5-401c-b840-84b8d9552b38"
+                        },
+                        {
+                            "name": "Enemies",
+                            "children": [
+                                {
+                                    "uuid": "a8f1387c-f9c0-4570-a518-a3db0a14a29c",
+                                    "format": "Sonic 1.js",
+                                    "name": "Snowrex",
+                                    "palettes": [
+                                        {
+                                            "length": 1,
+                                            "blank": true
+                                        },
+                                        {
+                                            "path": "palette/Melting Heights Zone.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/Enemy Snowrex.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Snowrex.asm",
+                                        "label": "Snowrex_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                },
+                                {
+                                    "uuid": "ddd51ecd-4129-4f6a-9973-474415af9916",
+                                    "format": "Sonic 1.js",
+                                    "name": "Snow Tulipon",
+                                    "palettes": [
+                                        {
+                                            "length": 1,
+                                            "blank": true
+                                        },
+                                        {
+                                            "path": "palette/Melting Heights Zone.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/Enemy Snow Tulipon.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Snow Tulipon.asm",
+                                        "label": "SnowTulipon_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "662955dc-b520-4cf8-8084-b8d9552b383b"
+                        },
+                        {
+                            "name": "Boss",
+                            "children": [
+                                {
+                                    "uuid": "a23b06f4-607b-4d92-9df6-7172c8852537",
+                                    "format": "Sonic 1.js",
+                                    "name": "Stupid Dumb Unnamed Robo Fairy (SDURF)",
+                                    "palettes": [
+                                        {
+                                            "length": 1,
+                                            "blank": true
+                                        },
+                                        {
+                                            "path": "palette/Melting Heights Zone Boss.bin",
+                                            "length": 1
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/uncompressed/SDURF.bin",
+                                        "compression": "Uncompressed",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/SDURF.asm",
+                                        "label": "SDURF_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": true,
+                                        "path": "DPLCs/SDURF.asm",
+                                        "label": "SDURF_DPLC"
+                                    }
+                                },
+                                {
+                                    "uuid": "2b7ae6a8-579b-4b4a-834f-eab83c2f54c2",
+                                    "format": "Sonic 1.js",
+                                    "name": "SDURF projectiles",
+                                    "palettes": [
+                                        {
+                                            "length": 1,
+                                            "blank": true
+                                        },
+                                        {
+                                            "path": "palette/Melting Heights Zone Boss.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/Boss - SDURF Projectiles.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/SDURF Projectiles.asm",
+                                        "label": "SDURFProj_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "2955dcb5-201c-4840-84b8-d9552b383bc8"
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": true,
+                    "uuid": "d4866629-55dc-4520-9cf8-4084b8d9552b"
+                },
+                {
+                    "name": "Sunken Relic Zone",
+                    "children": [
+                        {
+                            "name": "Decorations",
+                            "children": [
+                                {
+                                    "uuid": "c7b19729-8229-4d10-a9e2-b3e06bff6b62",
+                                    "format": "Sonic 1.js",
+                                    "name": "SRZ Water Surface",
+                                    "palettes": [
+                                        {
+                                            "length": 1,
+                                            "blank": true
+                                        },
+                                        {
+                                            "path": "palette/Labyrinth Zone.bin",
+                                            "length": 3
+                                        }
+                                    ],
+                                    "art": {
+                                        "path": "art/nemesis/LZ Water Surface.bin",
+                                        "compression": "Nemesis",
+                                        "offset": 0
+                                    },
+                                    "mappings": {
+                                        "path": "Mappings/Water Surface.asm",
+                                        "label": "Surface_Map"
+                                    },
+                                    "dplcs": {
+                                        "enabled": false,
+                                        "path": "",
+                                        "label": ""
+                                    }
+                                }
+                            ],
+                            "isDirectory": true,
+                            "expanded": true,
+                            "uuid": "f1eba610-64f2-4954-9b74-decf0c239e17"
+                        }
+                    ],
+                    "isDirectory": true,
+                    "expanded": true,
+                    "uuid": "65f1eba6-1064-42e9-949b-74decf0c239e"
+                }
+            ],
+            "isDirectory": true,
+            "expanded": false,
+            "uuid": "0f7181fa-b433-4610-8d57-a7623a9ea503"
+        },
+        {
+            "uuid": "9cf3d39e-f15c-4fb5-a2d6-dee41ad37792",
+            "format": "Sonic 1.js",
+            "name": "Metallix (BBZ boss?)",
+            "palettes": [
+                {
+                    "path": "palette/Metallix.bin",
+                    "length": 1
+                }
+            ],
+            "art": {
+                "path": "art/uncompressed/Metallix.bin",
+                "compression": "Uncompressed",
+                "offset": 0
+            },
+            "mappings": {
+                "path": "Mappings/Metallix.asm",
+                "label": "Metallix_Map"
+            },
+            "dplcs": {
+                "enabled": true,
+                "path": "DPLCs/Metallix.asm",
+                "label": "Metallix_PLC"
+            },
+            "expanded": true
+        },
+        {
+            "name": "Ball",
+            "palettes": [
+                {
+                    "path": "palette/Sonic.bin",
+                    "length": 1
+                },
+                {
+                    "path": "palette/Legacy Blossom Gardens Zone.bin",
+                    "length": 3
+                }
+            ],
+            "art": {
+                "path": "art/nemesis/GHZ Giant Ball.bin",
+                "compression": "Nemesis",
+                "offset": 0
+            },
+            "mappings": {
+                "path": "Mappings/GHZ Ball.asm",
+                "format": "Sonic 1",
+                "customDefinition": "",
+                "label": ""
+            },
+            "dplcs": {
+                "enabled": false,
+                "path": "",
+                "format": "Sonic 1",
+                "customDefinition": "",
+                "label": ""
+            },
+            "uuid": "b9ed756f-5774-4b28-9061-959fa8e2b820",
+            "format": "Sonic 1.js",
+            "expanded": true
+        },
+        {
+            "uuid": "fb74ec43-aefe-4a50-b6d1-25b311bfbed0",
+            "format": "Sonic 1.js",
+            "name": "That's All, Folks!",
+            "palettes": [],
+            "art": {
+                "path": "art\\uncompressed\\That's All Folks.bin",
+                "compression": "Uncompressed",
+                "offset": 0
+            },
+            "mappings": {
+                "path": "Mappings\\That's All Folks.asm",
+                "label": ""
+            },
+            "dplcs": {
+                "enabled": true,
+                "path": "DPLCs\\Thats All Folks.asm",
+                "label": ""
+            }
+        }
+    ]
+}

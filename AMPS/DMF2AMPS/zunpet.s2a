@@ -1,0 +1,129 @@
+; ========================================================================
+;  by 
+; Converted with dmf2amps v1.0 by VladislavSavvateev
+; ========================================================================
+
+XqPkid_Header:
+	sHeaderInit
+	sHeaderTempo	$01, $00
+	sHeaderCh	$05, $03
+	sHeaderDAC	XqPkid_DAC1
+	sHeaderDAC	XqPkid_DAC2
+	sHeaderFM	XqPkid_FM1, $00, $00
+	sHeaderFM	XqPkid_FM2, $00, $00
+	sHeaderFM	XqPkid_FM3, $00, $00
+	sHeaderFM	XqPkid_FM4, $00, $00
+	sHeaderFM	XqPkid_FM5, $00, $00
+	sHeaderFM	XqPkid_FM6, $00, $00
+	sHeaderPSG	XqPkid_PSG1, $00, $00, $00, $00
+	sHeaderPSG	XqPkid_PSG2, $00, $00, $00, $00
+	sHeaderPSG	XqPkid_PSG3, $00, $00, $00, $00
+
+; Instruments
+
+; $00: zunpet
+	spAlgorithm	$02
+	spFeedback	$07
+	spDetune	$04, $07, $02, $04
+	spMultiple	$02, $02, $02, $02
+	spRateScale	$01, $02, $00, $00
+	spAttackRt	$18, $1F, $18, $14
+	spAmpMod	$00, $00, $00, $00
+	spDecayRt	$00, $00, $00, $00
+	spSustainLv	$00, $00, $00, $00
+	spSustainRt	$00, $00, $00, $09
+	spReleaseRt	$05, $0F, $0F, $0A
+	spSSGEG	$00, $00, $00, $00
+	spTotalLv	$1D, $3F, $14, $07
+
+XqPkid_FM1_0:
+	sVoice	$00
+	dc.b	nAb2, $7F, sHold, $41
+	sRet
+
+
+XqPkid_FM1:
+	sCall	XqPkid_FM1_0
+	sStop
+
+XqPkid_FM2_0:
+	dc.b	sHold, $7F, $41
+	sRet
+
+
+XqPkid_FM2:
+	sCall	XqPkid_FM2_0
+	sStop
+
+XqPkid_FM3_0:
+	dc.b	sHold, $7F, $41
+	sRet
+
+
+XqPkid_FM3:
+	sCall	XqPkid_FM3_0
+	sStop
+
+XqPkid_FM4_0:
+	dc.b	sHold, $7F, $41
+	sRet
+
+
+XqPkid_FM4:
+	sCall	XqPkid_FM4_0
+	sStop
+
+XqPkid_FM5_0:
+	dc.b	sHold, $7F, $41
+	sRet
+
+
+XqPkid_FM5:
+	sCall	XqPkid_FM5_0
+	sStop
+
+XqPkid_FM6_0:
+	dc.b	sHold, $7F, $41
+	sRet
+
+
+XqPkid_FM6:
+	sCall	XqPkid_FM6_0
+	sStop
+
+XqPkid_DAC1_0:
+	dc.b	sHold, $7F, $41
+	sRet
+
+
+XqPkid_DAC1:
+	sCall	XqPkid_DAC1_0
+	sStop
+
+XqPkid_DAC2:
+	sStop
+
+XqPkid_PSG1_0:
+	sRet
+
+
+XqPkid_PSG1:
+	sCall	XqPkid_PSG1_0
+	sStop
+
+XqPkid_PSG2_0:
+	sRet
+
+
+XqPkid_PSG2:
+	sCall	XqPkid_PSG2_0
+	sStop
+
+XqPkid_PSG3_0:
+	sRet
+
+
+XqPkid_PSG3:
+	sCall	XqPkid_PSG3_0
+	sStop
+

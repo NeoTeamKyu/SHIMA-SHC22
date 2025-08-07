@@ -1,0 +1,562 @@
+Sonic_PLC:
+Sonic_PLC_0: 	dc.w Sonic_PLC_134-Sonic_PLC
+Sonic_PLC_2: 	dc.w Sonic_PLC_135-Sonic_PLC
+Sonic_PLC_4: 	dc.w Sonic_PLC_13A-Sonic_PLC
+Sonic_PLC_6: 	dc.w Sonic_PLC_13F-Sonic_PLC
+Sonic_PLC_8: 	dc.w Sonic_PLC_144-Sonic_PLC
+Sonic_PLC_A: 	dc.w Sonic_PLC_149-Sonic_PLC
+Sonic_PLC_C: 	dc.w Sonic_PLC_14E-Sonic_PLC
+Sonic_PLC_E: 	dc.w Sonic_PLC_153-Sonic_PLC
+Sonic_PLC_10: 	dc.w Sonic_PLC_158-Sonic_PLC
+Sonic_PLC_12: 	dc.w Sonic_PLC_15D-Sonic_PLC
+Sonic_PLC_14: 	dc.w Sonic_PLC_162-Sonic_PLC
+Sonic_PLC_16: 	dc.w Sonic_PLC_167-Sonic_PLC
+Sonic_PLC_18: 	dc.w Sonic_PLC_16A-Sonic_PLC
+Sonic_PLC_1A: 	dc.w Sonic_PLC_16D-Sonic_PLC
+Sonic_PLC_1C: 	dc.w Sonic_PLC_172-Sonic_PLC
+Sonic_PLC_1E: 	dc.w Sonic_PLC_177-Sonic_PLC
+Sonic_PLC_20: 	dc.w Sonic_PLC_17A-Sonic_PLC
+Sonic_PLC_22: 	dc.w Sonic_PLC_17D-Sonic_PLC
+Sonic_PLC_24: 	dc.w Sonic_PLC_182-Sonic_PLC
+Sonic_PLC_26: 	dc.w Sonic_PLC_187-Sonic_PLC
+Sonic_PLC_28: 	dc.w Sonic_PLC_18A-Sonic_PLC
+Sonic_PLC_2A: 	dc.w Sonic_PLC_18D-Sonic_PLC
+Sonic_PLC_2C: 	dc.w Sonic_PLC_192-Sonic_PLC
+Sonic_PLC_2E: 	dc.w Sonic_PLC_197-Sonic_PLC
+Sonic_PLC_30: 	dc.w Sonic_PLC_19C-Sonic_PLC
+Sonic_PLC_32: 	dc.w Sonic_PLC_1A1-Sonic_PLC
+Sonic_PLC_34: 	dc.w Sonic_PLC_1A6-Sonic_PLC
+Sonic_PLC_36: 	dc.w Sonic_PLC_1AB-Sonic_PLC
+Sonic_PLC_38: 	dc.w Sonic_PLC_1AE-Sonic_PLC
+Sonic_PLC_3A: 	dc.w Sonic_PLC_1B1-Sonic_PLC
+Sonic_PLC_3C: 	dc.w Sonic_PLC_1B6-Sonic_PLC
+Sonic_PLC_3E: 	dc.w Sonic_PLC_1BB-Sonic_PLC
+Sonic_PLC_40: 	dc.w Sonic_PLC_1BE-Sonic_PLC
+Sonic_PLC_42: 	dc.w Sonic_PLC_1C1-Sonic_PLC
+Sonic_PLC_44: 	dc.w Sonic_PLC_1C6-Sonic_PLC
+Sonic_PLC_46: 	dc.w Sonic_PLC_1CB-Sonic_PLC
+Sonic_PLC_48: 	dc.w Sonic_PLC_1CE-Sonic_PLC
+Sonic_PLC_4A: 	dc.w Sonic_PLC_1D1-Sonic_PLC
+Sonic_PLC_4C: 	dc.w Sonic_PLC_1D6-Sonic_PLC
+Sonic_PLC_4E: 	dc.w Sonic_PLC_1DB-Sonic_PLC
+Sonic_PLC_50: 	dc.w Sonic_PLC_1E0-Sonic_PLC
+Sonic_PLC_52: 	dc.w Sonic_PLC_1E5-Sonic_PLC
+Sonic_PLC_54: 	dc.w Sonic_PLC_1EA-Sonic_PLC
+Sonic_PLC_56: 	dc.w Sonic_PLC_1EF-Sonic_PLC
+Sonic_PLC_58: 	dc.w Sonic_PLC_1F4-Sonic_PLC
+Sonic_PLC_5A: 	dc.w Sonic_PLC_1F9-Sonic_PLC
+Sonic_PLC_5C: 	dc.w Sonic_PLC_1FE-Sonic_PLC
+Sonic_PLC_5E: 	dc.w Sonic_PLC_203-Sonic_PLC
+Sonic_PLC_60: 	dc.w Sonic_PLC_208-Sonic_PLC
+Sonic_PLC_62: 	dc.w Sonic_PLC_20D-Sonic_PLC
+Sonic_PLC_64: 	dc.w Sonic_PLC_212-Sonic_PLC
+Sonic_PLC_66: 	dc.w Sonic_PLC_217-Sonic_PLC
+Sonic_PLC_68: 	dc.w Sonic_PLC_21C-Sonic_PLC
+Sonic_PLC_6A: 	dc.w Sonic_PLC_221-Sonic_PLC
+Sonic_PLC_6C: 	dc.w Sonic_PLC_226-Sonic_PLC
+Sonic_PLC_6E: 	dc.w Sonic_PLC_22B-Sonic_PLC
+Sonic_PLC_70: 	dc.w Sonic_PLC_230-Sonic_PLC
+Sonic_PLC_72: 	dc.w Sonic_PLC_235-Sonic_PLC
+Sonic_PLC_74: 	dc.w Sonic_PLC_238-Sonic_PLC
+Sonic_PLC_76: 	dc.w Sonic_PLC_23B-Sonic_PLC
+Sonic_PLC_78: 	dc.w Sonic_PLC_23E-Sonic_PLC
+Sonic_PLC_7A: 	dc.w Sonic_PLC_241-Sonic_PLC
+Sonic_PLC_7C: 	dc.w Sonic_PLC_246-Sonic_PLC
+Sonic_PLC_7E: 	dc.w Sonic_PLC_249-Sonic_PLC
+Sonic_PLC_80: 	dc.w Sonic_PLC_24C-Sonic_PLC
+Sonic_PLC_82: 	dc.w Sonic_PLC_24F-Sonic_PLC
+Sonic_PLC_84: 	dc.w Sonic_PLC_254-Sonic_PLC
+Sonic_PLC_86: 	dc.w Sonic_PLC_259-Sonic_PLC
+Sonic_PLC_88: 	dc.w Sonic_PLC_25C-Sonic_PLC
+Sonic_PLC_8A: 	dc.w Sonic_PLC_261-Sonic_PLC
+Sonic_PLC_8C: 	dc.w Sonic_PLC_266-Sonic_PLC
+Sonic_PLC_8E: 	dc.w Sonic_PLC_26B-Sonic_PLC
+Sonic_PLC_90: 	dc.w Sonic_PLC_270-Sonic_PLC
+Sonic_PLC_92: 	dc.w Sonic_PLC_275-Sonic_PLC
+Sonic_PLC_94: 	dc.w Sonic_PLC_27A-Sonic_PLC
+Sonic_PLC_96: 	dc.w Sonic_PLC_27D-Sonic_PLC
+Sonic_PLC_98: 	dc.w Sonic_PLC_280-Sonic_PLC
+Sonic_PLC_9A: 	dc.w Sonic_PLC_283-Sonic_PLC
+Sonic_PLC_9C: 	dc.w Sonic_PLC_286-Sonic_PLC
+Sonic_PLC_9E: 	dc.w Sonic_PLC_289-Sonic_PLC
+Sonic_PLC_A0: 	dc.w Sonic_PLC_28C-Sonic_PLC
+Sonic_PLC_A2: 	dc.w Sonic_PLC_28F-Sonic_PLC
+Sonic_PLC_A4: 	dc.w Sonic_PLC_292-Sonic_PLC
+Sonic_PLC_A6: 	dc.w Sonic_PLC_295-Sonic_PLC
+Sonic_PLC_A8: 	dc.w Sonic_PLC_298-Sonic_PLC
+Sonic_PLC_AA: 	dc.w Sonic_PLC_29B-Sonic_PLC
+Sonic_PLC_AC: 	dc.w Sonic_PLC_29E-Sonic_PLC
+Sonic_PLC_AE: 	dc.w Sonic_PLC_2A3-Sonic_PLC
+Sonic_PLC_B0: 	dc.w Sonic_PLC_2A8-Sonic_PLC
+Sonic_PLC_B2: 	dc.w Sonic_PLC_2AD-Sonic_PLC
+Sonic_PLC_B4: 	dc.w Sonic_PLC_2B2-Sonic_PLC
+Sonic_PLC_B6: 	dc.w Sonic_PLC_2B7-Sonic_PLC
+Sonic_PLC_B8: 	dc.w Sonic_PLC_2BA-Sonic_PLC
+Sonic_PLC_BA: 	dc.w Sonic_PLC_2BF-Sonic_PLC
+Sonic_PLC_BC: 	dc.w Sonic_PLC_2C4-Sonic_PLC
+Sonic_PLC_BE: 	dc.w Sonic_PLC_2C9-Sonic_PLC
+Sonic_PLC_C0: 	dc.w Sonic_PLC_2CE-Sonic_PLC
+Sonic_PLC_C2: 	dc.w Sonic_PLC_2D3-Sonic_PLC
+Sonic_PLC_C4: 	dc.w Sonic_PLC_2D8-Sonic_PLC
+Sonic_PLC_C6: 	dc.w Sonic_PLC_2DD-Sonic_PLC
+Sonic_PLC_C8: 	dc.w Sonic_PLC_2E2-Sonic_PLC
+Sonic_PLC_CA: 	dc.w Sonic_PLC_2E5-Sonic_PLC
+Sonic_PLC_CC: 	dc.w Sonic_PLC_2E8-Sonic_PLC
+Sonic_PLC_CE: 	dc.w Sonic_PLC_2EB-Sonic_PLC
+Sonic_PLC_D0: 	dc.w Sonic_PLC_2EE-Sonic_PLC
+Sonic_PLC_D2: 	dc.w Sonic_PLC_2F1-Sonic_PLC
+Sonic_PLC_D4: 	dc.w Sonic_PLC_2F4-Sonic_PLC
+Sonic_PLC_D6: 	dc.w Sonic_PLC_2F9-Sonic_PLC
+Sonic_PLC_D8: 	dc.w Sonic_PLC_2FE-Sonic_PLC
+Sonic_PLC_DA: 	dc.w Sonic_PLC_303-Sonic_PLC
+Sonic_PLC_DC: 	dc.w Sonic_PLC_308-Sonic_PLC
+Sonic_PLC_DE: 	dc.w Sonic_PLC_30D-Sonic_PLC
+Sonic_PLC_E0: 	dc.w Sonic_PLC_312-Sonic_PLC
+Sonic_PLC_E2: 	dc.w Sonic_PLC_317-Sonic_PLC
+Sonic_PLC_E4: 	dc.w Sonic_PLC_31C-Sonic_PLC
+Sonic_PLC_E6: 	dc.w Sonic_PLC_321-Sonic_PLC
+Sonic_PLC_E8: 	dc.w Sonic_PLC_326-Sonic_PLC
+Sonic_PLC_EA: 	dc.w Sonic_PLC_32B-Sonic_PLC
+Sonic_PLC_EC: 	dc.w Sonic_PLC_330-Sonic_PLC
+Sonic_PLC_EE: 	dc.w Sonic_PLC_335-Sonic_PLC
+Sonic_PLC_F0: 	dc.w Sonic_PLC_33A-Sonic_PLC
+Sonic_PLC_F2: 	dc.w Sonic_PLC_33F-Sonic_PLC
+Sonic_PLC_F4: 	dc.w Sonic_PLC_344-Sonic_PLC
+Sonic_PLC_F6: 	dc.w Sonic_PLC_349-Sonic_PLC
+Sonic_PLC_F8: 	dc.w Sonic_PLC_34E-Sonic_PLC
+Sonic_PLC_FA: 	dc.w Sonic_PLC_353-Sonic_PLC
+Sonic_PLC_FC: 	dc.w Sonic_PLC_358-Sonic_PLC
+Sonic_PLC_FE: 	dc.w Sonic_PLC_35D-Sonic_PLC
+Sonic_PLC_100: 	dc.w Sonic_PLC_362-Sonic_PLC
+Sonic_PLC_102: 	dc.w Sonic_PLC_365-Sonic_PLC
+Sonic_PLC_104: 	dc.w Sonic_PLC_368-Sonic_PLC
+Sonic_PLC_106: 	dc.w Sonic_PLC_36D-Sonic_PLC
+Sonic_PLC_108: 	dc.w Sonic_PLC_370-Sonic_PLC
+Sonic_PLC_10A: 	dc.w Sonic_PLC_373-Sonic_PLC
+Sonic_PLC_10C: 	dc.w Sonic_PLC_376-Sonic_PLC
+Sonic_PLC_10E: 	dc.w Sonic_PLC_379-Sonic_PLC
+Sonic_PLC_110: 	dc.w Sonic_PLC_37C-Sonic_PLC
+Sonic_PLC_112: 	dc.w Sonic_PLC_381-Sonic_PLC
+Sonic_PLC_114: 	dc.w Sonic_PLC_384-Sonic_PLC
+Sonic_PLC_116: 	dc.w Sonic_PLC_387-Sonic_PLC
+Sonic_PLC_118: 	dc.w Sonic_PLC_38A-Sonic_PLC
+Sonic_PLC_11A: 	dc.w Sonic_PLC_38D-Sonic_PLC
+Sonic_PLC_11C: 	dc.w Sonic_PLC_390-Sonic_PLC
+Sonic_PLC_11E: 	dc.w Sonic_PLC_395-Sonic_PLC
+Sonic_PLC_120: 	dc.w Sonic_PLC_39A-Sonic_PLC
+Sonic_PLC_122: 	dc.w Sonic_PLC_39F-Sonic_PLC
+Sonic_PLC_124: 	dc.w Sonic_PLC_3A2-Sonic_PLC
+Sonic_PLC_126: 	dc.w Sonic_PLC_3A7-Sonic_PLC
+Sonic_PLC_128: 	dc.w Sonic_PLC_3AC-Sonic_PLC
+Sonic_PLC_12A: 	dc.w Sonic_PLC_3B1-Sonic_PLC
+Sonic_PLC_12C: 	dc.w Sonic_PLC_3B6-Sonic_PLC
+Sonic_PLC_12E: 	dc.w Sonic_PLC_3B9-Sonic_PLC
+Sonic_PLC_130: 	dc.w Sonic_PLC_3BC-Sonic_PLC
+Sonic_PLC_132: 	dc.w Sonic_PLC_3C1-Sonic_PLC
+Sonic_PLC_134: 	dc.b $0
+Sonic_PLC_135: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $0, $10
+Sonic_PLC_13A: 	dc.b $2
+	dc.b $F0, $11
+	dc.b $0, $21
+Sonic_PLC_13F: 	dc.b $2
+	dc.b $F0, $22
+	dc.b $0, $32
+Sonic_PLC_144: 	dc.b $2
+	dc.b $F0, $33
+	dc.b $0, $43
+Sonic_PLC_149: 	dc.b $2
+	dc.b $F0, $44
+	dc.b $0, $54
+Sonic_PLC_14E: 	dc.b $2
+	dc.b $F0, $55
+	dc.b $0, $65
+Sonic_PLC_153: 	dc.b $2
+	dc.b $F0, $66
+	dc.b $0, $76
+Sonic_PLC_158: 	dc.b $2
+	dc.b $F0, $77
+	dc.b $0, $87
+Sonic_PLC_15D: 	dc.b $2
+	dc.b $F0, $88
+	dc.b $30, $98
+Sonic_PLC_162: 	dc.b $2
+	dc.b $F0, $9C
+	dc.b $0, $AC
+Sonic_PLC_167: 	dc.b $1
+	dc.b $E0, $AD
+Sonic_PLC_16A: 	dc.b $1
+	dc.b $E0, $BC
+Sonic_PLC_16D: 	dc.b $2
+	dc.b $F0, $CB
+	dc.b $20, $DB
+Sonic_PLC_172: 	dc.b $2
+	dc.b $F0, $DE
+	dc.b $0, $EE
+Sonic_PLC_177: 	dc.b $1
+	dc.b $F0, $EF
+Sonic_PLC_17A: 	dc.b $1
+	dc.b $E0, $FF
+Sonic_PLC_17D: 	dc.b $2
+	dc.b $F1, $E
+	dc.b $11, $1E
+Sonic_PLC_182: 	dc.b $2
+	dc.b $F1, $20
+	dc.b $21, $30
+Sonic_PLC_187: 	dc.b $1
+	dc.b $E1, $33
+Sonic_PLC_18A: 	dc.b $1
+	dc.b $F1, $42
+Sonic_PLC_18D: 	dc.b $2
+	dc.b $F1, $52
+	dc.b $11, $62
+Sonic_PLC_192: 	dc.b $2
+	dc.b $F1, $64
+	dc.b $11, $74
+Sonic_PLC_197: 	dc.b $2
+	dc.b $F1, $76
+	dc.b $11, $86
+Sonic_PLC_19C: 	dc.b $2
+	dc.b $F1, $88
+	dc.b $1, $98
+Sonic_PLC_1A1: 	dc.b $2
+	dc.b $F1, $99
+	dc.b $31, $A9
+Sonic_PLC_1A6: 	dc.b $2
+	dc.b $F1, $AD
+	dc.b $1, $BD
+Sonic_PLC_1AB: 	dc.b $1
+	dc.b $E1, $BE
+Sonic_PLC_1AE: 	dc.b $1
+	dc.b $E1, $CD
+Sonic_PLC_1B1: 	dc.b $2
+	dc.b $F1, $DC
+	dc.b $21, $EC
+Sonic_PLC_1B6: 	dc.b $2
+	dc.b $F1, $EF
+	dc.b $1, $FF
+Sonic_PLC_1BB: 	dc.b $1
+	dc.b $F2, $0
+Sonic_PLC_1BE: 	dc.b $1
+	dc.b $E2, $10
+Sonic_PLC_1C1: 	dc.b $2
+	dc.b $F2, $1F
+	dc.b $12, $2F
+Sonic_PLC_1C6: 	dc.b $2
+	dc.b $F2, $31
+	dc.b $22, $41
+Sonic_PLC_1CB: 	dc.b $1
+	dc.b $E2, $44
+Sonic_PLC_1CE: 	dc.b $1
+	dc.b $F2, $53
+Sonic_PLC_1D1: 	dc.b $2
+	dc.b $F2, $63
+	dc.b $12, $73
+Sonic_PLC_1D6: 	dc.b $2
+	dc.b $F2, $75
+	dc.b $12, $85
+Sonic_PLC_1DB: 	dc.b $2
+	dc.b $F2, $87
+	dc.b $12, $97
+Sonic_PLC_1E0: 	dc.b $2
+	dc.b $F2, $99
+	dc.b $2, $A9
+Sonic_PLC_1E5: 	dc.b $2
+	dc.b $F2, $AA
+	dc.b $22, $BA
+Sonic_PLC_1EA: 	dc.b $2
+	dc.b $F2, $BD
+	dc.b $12, $CD
+Sonic_PLC_1EF: 	dc.b $2
+	dc.b $F2, $CF
+	dc.b $12, $DF
+Sonic_PLC_1F4: 	dc.b $2
+	dc.b $F2, $E1
+	dc.b $12, $F1
+Sonic_PLC_1F9: 	dc.b $2
+	dc.b $F2, $F3
+	dc.b $23, $3
+Sonic_PLC_1FE: 	dc.b $2
+	dc.b $F3, $6
+	dc.b $23, $16
+Sonic_PLC_203: 	dc.b $2
+	dc.b $F3, $19
+	dc.b $13, $29
+Sonic_PLC_208: 	dc.b $2
+	dc.b $F3, $2B
+	dc.b $13, $3B
+Sonic_PLC_20D: 	dc.b $2
+	dc.b $F3, $3D
+	dc.b $23, $4D
+Sonic_PLC_212: 	dc.b $2
+	dc.b $F3, $50
+	dc.b $13, $60
+Sonic_PLC_217: 	dc.b $2
+	dc.b $F3, $62
+	dc.b $13, $72
+Sonic_PLC_21C: 	dc.b $2
+	dc.b $F3, $74
+	dc.b $13, $84
+Sonic_PLC_221: 	dc.b $2
+	dc.b $F3, $86
+	dc.b $23, $96
+Sonic_PLC_226: 	dc.b $2
+	dc.b $F3, $99
+	dc.b $23, $A9
+Sonic_PLC_22B: 	dc.b $2
+	dc.b $F3, $AC
+	dc.b $13, $BC
+Sonic_PLC_230: 	dc.b $2
+	dc.b $F3, $BE
+	dc.b $13, $CE
+Sonic_PLC_235: 	dc.b $1
+	dc.b $E3, $D0
+Sonic_PLC_238: 	dc.b $1
+	dc.b $E3, $DF
+Sonic_PLC_23B: 	dc.b $1
+	dc.b $E3, $EE
+Sonic_PLC_23E: 	dc.b $1
+	dc.b $E3, $FD
+Sonic_PLC_241: 	dc.b $2
+	dc.b $F4, $C
+	dc.b $14, $1C
+Sonic_PLC_246: 	dc.b $1
+	dc.b $E4, $1E
+Sonic_PLC_249: 	dc.b $1
+	dc.b $E4, $2D
+Sonic_PLC_24C: 	dc.b $1
+	dc.b $F4, $3C
+Sonic_PLC_24F: 	dc.b $2
+	dc.b $F4, $4C
+	dc.b $4, $5C
+Sonic_PLC_254: 	dc.b $2
+	dc.b $F4, $5D
+	dc.b $4, $6D
+Sonic_PLC_259: 	dc.b $1
+	dc.b $C4, $6E
+Sonic_PLC_25C: 	dc.b $2
+	dc.b $F4, $7B
+	dc.b $44, $8B
+Sonic_PLC_261: 	dc.b $2
+	dc.b $F4, $90
+	dc.b $24, $A0
+Sonic_PLC_266: 	dc.b $2
+	dc.b $F4, $A3
+	dc.b $24, $B3
+Sonic_PLC_26B: 	dc.b $2
+	dc.b $F4, $B6
+	dc.b $14, $C6
+Sonic_PLC_270: 	dc.b $2
+	dc.b $F4, $C8
+	dc.b $24, $D8
+Sonic_PLC_275: 	dc.b $2
+	dc.b $F4, $DB
+	dc.b $24, $EB
+Sonic_PLC_27A: 	dc.b $1
+	dc.b $E4, $EE
+Sonic_PLC_27D: 	dc.b $1
+	dc.b $D4, $FD
+Sonic_PLC_280: 	dc.b $1
+	dc.b $E5, $B
+Sonic_PLC_283: 	dc.b $1
+	dc.b $D5, $1A
+Sonic_PLC_286: 	dc.b $1
+	dc.b $E5, $28
+Sonic_PLC_289: 	dc.b $1
+	dc.b $E5, $37
+Sonic_PLC_28C: 	dc.b $1
+	dc.b $C5, $46
+Sonic_PLC_28F: 	dc.b $1
+	dc.b $C5, $53
+Sonic_PLC_292: 	dc.b $1
+	dc.b $C5, $60
+Sonic_PLC_295: 	dc.b $1
+	dc.b $E5, $6D
+Sonic_PLC_298: 	dc.b $1
+	dc.b $D5, $7C
+Sonic_PLC_29B: 	dc.b $1
+	dc.b $F5, $8A
+Sonic_PLC_29E: 	dc.b $2
+	dc.b $F5, $9A
+	dc.b $15, $AA
+Sonic_PLC_2A3: 	dc.b $2
+	dc.b $F5, $AC
+	dc.b $25, $BC
+Sonic_PLC_2A8: 	dc.b $2
+	dc.b $F5, $BF
+	dc.b $15, $CF
+Sonic_PLC_2AD: 	dc.b $2
+	dc.b $F5, $D1
+	dc.b $15, $E1
+Sonic_PLC_2B2: 	dc.b $2
+	dc.b $F5, $E3
+	dc.b $5, $F3
+Sonic_PLC_2B7: 	dc.b $1
+	dc.b $D5, $F4
+Sonic_PLC_2BA: 	dc.b $2
+	dc.b $F6, $2
+	dc.b $6, $12
+Sonic_PLC_2BF: 	dc.b $2
+	dc.b $85, $F4
+	dc.b $46, $13
+Sonic_PLC_2C4: 	dc.b $2
+	dc.b $F6, $18
+	dc.b $46, $28
+Sonic_PLC_2C9: 	dc.b $2
+	dc.b $F6, $2D
+	dc.b $26, $3D
+Sonic_PLC_2CE: 	dc.b $2
+	dc.b $F6, $40
+	dc.b $46, $50
+Sonic_PLC_2D3: 	dc.b $2
+	dc.b $F6, $55
+	dc.b $16, $65
+Sonic_PLC_2D8: 	dc.b $2
+	dc.b $F6, $67
+	dc.b $6, $77
+Sonic_PLC_2DD: 	dc.b $2
+	dc.b $F6, $78
+	dc.b $16, $88
+Sonic_PLC_2E2: 	dc.b $1
+	dc.b $D6, $8A
+Sonic_PLC_2E5: 	dc.b $1
+	dc.b $D6, $98
+Sonic_PLC_2E8: 	dc.b $1
+	dc.b $D6, $A6
+Sonic_PLC_2EB: 	dc.b $1
+	dc.b $D6, $B4
+Sonic_PLC_2EE: 	dc.b $1
+	dc.b $D6, $C2
+Sonic_PLC_2F1: 	dc.b $1
+	dc.b $D6, $D0
+Sonic_PLC_2F4: 	dc.b $2
+	dc.b $F6, $DE
+	dc.b $16, $EE
+Sonic_PLC_2F9: 	dc.b $2
+	dc.b $F6, $F0
+	dc.b $17, $0
+Sonic_PLC_2FE: 	dc.b $2
+	dc.b $F7, $2
+	dc.b $27, $12
+Sonic_PLC_303: 	dc.b $2
+	dc.b $F7, $15
+	dc.b $47, $25
+Sonic_PLC_308: 	dc.b $2
+	dc.b $F7, $2A
+	dc.b $47, $3A
+Sonic_PLC_30D: 	dc.b $2
+	dc.b $F7, $3F
+	dc.b $17, $4F
+Sonic_PLC_312: 	dc.b $2
+	dc.b $F7, $51
+	dc.b $47, $61
+Sonic_PLC_317: 	dc.b $2
+	dc.b $F7, $66
+	dc.b $37, $76
+Sonic_PLC_31C: 	dc.b $2
+	dc.b $F7, $7A
+	dc.b $37, $8A
+Sonic_PLC_321: 	dc.b $2
+	dc.b $F7, $8E
+	dc.b $37, $9E
+Sonic_PLC_326: 	dc.b $2
+	dc.b $F7, $A2
+	dc.b $37, $B2
+Sonic_PLC_32B: 	dc.b $2
+	dc.b $F7, $B6
+	dc.b $37, $C6
+Sonic_PLC_330: 	dc.b $2
+	dc.b $F7, $CA
+	dc.b $37, $DA
+Sonic_PLC_335: 	dc.b $2
+	dc.b $F7, $DE
+	dc.b $37, $EE
+Sonic_PLC_33A: 	dc.b $2
+	dc.b $F7, $F2
+	dc.b $48, $2
+Sonic_PLC_33F: 	dc.b $2
+	dc.b $F8, $7
+	dc.b $38, $17
+Sonic_PLC_344: 	dc.b $2
+	dc.b $F8, $1B
+	dc.b $38, $2B
+Sonic_PLC_349: 	dc.b $2
+	dc.b $F8, $2F
+	dc.b $38, $3F
+Sonic_PLC_34E: 	dc.b $2
+	dc.b $F8, $43
+	dc.b $38, $53
+Sonic_PLC_353: 	dc.b $2
+	dc.b $F8, $57
+	dc.b $38, $67
+Sonic_PLC_358: 	dc.b $2
+	dc.b $F8, $6B
+	dc.b $38, $7B
+Sonic_PLC_35D: 	dc.b $2
+	dc.b $F8, $7F
+	dc.b $38, $8F
+Sonic_PLC_362: 	dc.b $1
+	dc.b $F8, $93
+Sonic_PLC_365: 	dc.b $1
+	dc.b $F8, $A3
+Sonic_PLC_368: 	dc.b $2
+	dc.b $F8, $B3
+	dc.b $8, $C3
+Sonic_PLC_36D: 	dc.b $1
+	dc.b $E8, $C4
+Sonic_PLC_370: 	dc.b $1
+	dc.b $B8, $D3
+Sonic_PLC_373: 	dc.b $1
+	dc.b $C8, $DF
+Sonic_PLC_376: 	dc.b $1
+	dc.b $C8, $EC
+Sonic_PLC_379: 	dc.b $1
+	dc.b $E8, $F9
+Sonic_PLC_37C: 	dc.b $2
+	dc.b $F9, $8
+	dc.b $19, $18
+Sonic_PLC_381: 	dc.b $1
+	dc.b $E9, $1A
+Sonic_PLC_384: 	dc.b $1
+	dc.b $C9, $29
+Sonic_PLC_387: 	dc.b $1
+	dc.b $C9, $36
+Sonic_PLC_38A: 	dc.b $1
+	dc.b $D9, $43
+Sonic_PLC_38D: 	dc.b $1
+	dc.b $F9, $51
+Sonic_PLC_390: 	dc.b $2
+	dc.b $F9, $61
+	dc.b $29, $71
+Sonic_PLC_395: 	dc.b $2
+	dc.b $F9, $74
+	dc.b $19, $84
+Sonic_PLC_39A: 	dc.b $2
+	dc.b $F9, $86
+	dc.b $29, $96
+Sonic_PLC_39F: 	dc.b $1
+	dc.b $C9, $99
+Sonic_PLC_3A2: 	dc.b $2
+	dc.b $F9, $A6
+	dc.b $39, $B6
+Sonic_PLC_3A7: 	dc.b $2
+	dc.b $F9, $BA
+	dc.b $29, $CA
+Sonic_PLC_3AC: 	dc.b $2
+	dc.b $F9, $CD
+	dc.b $29, $DD
+Sonic_PLC_3B1: 	dc.b $2
+	dc.b $F9, $E0
+	dc.b $29, $F0
+Sonic_PLC_3B6: 	dc.b $1
+	dc.b $E9, $F3
+Sonic_PLC_3B9: 	dc.b $1
+	dc.b $EA, $2
+Sonic_PLC_3BC: 	dc.b $2
+	dc.b $E9, $F3
+	dc.b $1A, $11
+Sonic_PLC_3C1: 	dc.b $2
+	dc.b $FA, $2
+	dc.b $A, $12
+	even

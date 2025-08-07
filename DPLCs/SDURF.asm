@@ -1,0 +1,80 @@
+SDURF_DPLC:
+SDURF_DPLC_0: 	dc.w SDURF_DPLC_28-SDURF_DPLC
+SDURF_DPLC_2: 	dc.w SDURF_DPLC_29-SDURF_DPLC
+SDURF_DPLC_4: 	dc.w SDURF_DPLC_2E-SDURF_DPLC
+SDURF_DPLC_6: 	dc.w SDURF_DPLC_33-SDURF_DPLC
+SDURF_DPLC_8: 	dc.w SDURF_DPLC_38-SDURF_DPLC
+SDURF_DPLC_A: 	dc.w SDURF_DPLC_3D-SDURF_DPLC
+SDURF_DPLC_C: 	dc.w SDURF_DPLC_42-SDURF_DPLC
+SDURF_DPLC_E: 	dc.w SDURF_DPLC_47-SDURF_DPLC
+SDURF_DPLC_10: 	dc.w SDURF_DPLC_4C-SDURF_DPLC
+SDURF_DPLC_12: 	dc.w SDURF_DPLC_51-SDURF_DPLC
+SDURF_DPLC_14: 	dc.w SDURF_DPLC_56-SDURF_DPLC
+SDURF_DPLC_16: 	dc.w SDURF_DPLC_5B-SDURF_DPLC
+SDURF_DPLC_18: 	dc.w SDURF_DPLC_60-SDURF_DPLC
+SDURF_DPLC_1A: 	dc.w SDURF_DPLC_65-SDURF_DPLC
+SDURF_DPLC_1C: 	dc.w SDURF_DPLC_6A-SDURF_DPLC
+SDURF_DPLC_1E: 	dc.w SDURF_DPLC_6F-SDURF_DPLC
+SDURF_DPLC_20: 	dc.w SDURF_DPLC_74-SDURF_DPLC
+SDURF_DPLC_22: 	dc.w SDURF_DPLC_79-SDURF_DPLC
+SDURF_DPLC_24: 	dc.w SDURF_DPLC_7E-SDURF_DPLC
+SDURF_DPLC_26: 	dc.w SDURF_DPLC_83-SDURF_DPLC
+SDURF_DPLC_28: 	dc.b $0
+SDURF_DPLC_29: 	dc.b $2
+	dc.b $F0, $0
+	dc.b $10, $10
+SDURF_DPLC_2E: 	dc.b $2
+	dc.b $F0, $12
+	dc.b $10, $22
+SDURF_DPLC_33: 	dc.b $2
+	dc.b $F0, $24
+	dc.b $10, $34
+SDURF_DPLC_38: 	dc.b $2
+	dc.b $F0, $36
+	dc.b $20, $46
+SDURF_DPLC_3D: 	dc.b $2
+	dc.b $F0, $49
+	dc.b $10, $59
+SDURF_DPLC_42: 	dc.b $2
+	dc.b $F0, $5B
+	dc.b $30, $6B
+SDURF_DPLC_47: 	dc.b $2
+	dc.b $F0, $6F
+	dc.b $30, $7F
+SDURF_DPLC_4C: 	dc.b $2
+	dc.b $F0, $83
+	dc.b $40, $93
+SDURF_DPLC_51: 	dc.b $2
+	dc.b $F0, $98
+	dc.b $40, $A8
+SDURF_DPLC_56: 	dc.b $2
+	dc.b $F0, $AD
+	dc.b $30, $BD
+SDURF_DPLC_5B: 	dc.b $2
+	dc.b $F0, $C1
+	dc.b $30, $D1
+SDURF_DPLC_60: 	dc.b $2
+	dc.b $F0, $D5
+	dc.b $20, $E5
+SDURF_DPLC_65: 	dc.b $2
+	dc.b $F0, $E8
+	dc.b $30, $F8
+SDURF_DPLC_6A: 	dc.b $2
+	dc.b $F0, $FC
+	dc.b $1, $C
+SDURF_DPLC_6F: 	dc.b $2
+	dc.b $F1, $D
+	dc.b $11, $1D
+SDURF_DPLC_74: 	dc.b $2
+	dc.b $F1, $1F
+	dc.b $21, $2F
+SDURF_DPLC_79: 	dc.b $2
+	dc.b $F1, $32
+	dc.b $11, $42
+SDURF_DPLC_7E: 	dc.b $2
+	dc.b $F1, $44
+	dc.b $31, $54
+SDURF_DPLC_83: 	dc.b $2
+	dc.b $F1, $58
+	dc.b $41, $68
+	even

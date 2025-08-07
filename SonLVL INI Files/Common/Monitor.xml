@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjDef xmlns="http://www.sonicretro.org" Name="Monitor" Image="img" RememberState="true">
+  <Images>
+    <ImageFromMappings id="img">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="0" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="static">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="1" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="1up">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="3" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="super">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="4" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="silverring">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="5" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="rings">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="6" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="randomring">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="7" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="invincibility">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="8" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="shoes">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="9" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="shield">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="10" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="bubbleshield">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="11" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="fireshield">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="12" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="lightningshield">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="13" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="homingshield">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="14" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="pogospring">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="15" startpal="0" />
+    </ImageFromMappings>
+    <ImageFromMappings id="broken">
+      <ArtFile filename="../art/nemesis/Monitors.bin" />
+      <MapFile type="ASM" filename="../Mappings/Monitor.asm" frame="16" startpal="0" />
+    </ImageFromMappings>
+  </Images>
+  <Subtypes>
+    <Subtype id="00" name="Static" image="static" />
+    <Subtype id="01" name="1-Up" image="1up" />
+    <Subtype id="02" name="Super" image="super" />
+    <Subtype id="03" name="Silver Ring" image="silverring" />
+    <Subtype id="04" name="Rings" image="rings" />
+    <Subtype id="05" name="Random Ring" image="randomring" />
+    <Subtype id="06" name="Invincibility" image="invincibility" />
+    <Subtype id="07" name="Shoes" image="shoes" />
+    <Subtype id="08" name="Shield" image="shield" />
+    <Subtype id="09" name="Bubble Shield" image="bubbleshield" />
+    <Subtype id="0A" name="Fire Shield" image="fireshield" />
+    <Subtype id="0B" name="Lightning Shield" image="lightningshield" />
+    <Subtype id="0C" name="Homing Shield" image="homingshield" />
+    <Subtype id="0D" name="Pogo Spring" image="pogospring" />
+    <Subtype id="0E" name="Broken" image="broken" />
+  </Subtypes>
+  <Properties>
+    <BitsProperty name="Contents" type="MonitorType" startbit="0" length="4" />
+  </Properties>
+  <Enums>
+    <Enum name="MonitorType">
+      <EnumMember name="Static" />
+      <EnumMember name="1-Up" />
+      <EnumMember name="Super" />
+      <EnumMember name="Silver Ring" />
+      <EnumMember name="Rings" />
+      <EnumMember name="Random Ring" />
+      <EnumMember name="Invincibility" />
+      <EnumMember name="Shoes" />
+      <EnumMember name="Shield" />
+      <EnumMember name="Bubble Shield" />
+      <EnumMember name="Fire Shield" />
+      <EnumMember name="Lightning Shield" />
+      <EnumMember name="Homing Shield" />
+      <EnumMember name="Pogo Spring" />
+      <EnumMember name="Broken" />
+    </Enum>
+  </Enums>
+</ObjDef>

@@ -1,0 +1,284 @@
+CharacterSelect_Header:
+	sHeaderInit
+	sHeaderTempo	$01, $3A	
+	sHeaderCh	$05, $03
+	sHeaderDAC	CharacterSelect_DAC1
+	sHeaderDAC	CharacterSelect_DAC2
+	sHeaderFM	CharacterSelect_FM1, $FF, $09
+	sHeaderFM	CharacterSelect_FM2, $F3, $0A
+	sHeaderFM	CharacterSelect_FM3, $F3, $0A
+	sHeaderFM	CharacterSelect_FM4, $FF, $0A
+	sHeaderFM	CharacterSelect_FM5, $FF, $0A
+	sHeaderPSG	CharacterSelect_PSG1, $DB+$0C, $18, $00, vNone
+	sHeaderPSG	CharacterSelect_PSG2, $DB+$0C, $30, $00, vNone
+	sHeaderPSG	CharacterSelect_PSG3, $DB, $40, $00, vNone
+
+	; Patch $00
+	; $38
+	; $01, $00, $00, $00,	$1C, $3F, $16, $18
+	; $09, $11, $0E, $0A,	$01, $01, $01, $01
+	; $3F, $5F, $BF, $FF,	$20, $17, $20, $80
+	spAlgorithm	$00
+	spFeedback	$07
+	spDetune	$00, $00, $00, $00
+	spMultiple	$01, $00, $00, $00
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1C, $16, $1F, $18
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$09, $0E, $11, $0A
+	spSustainLv	$03, $0B, $05, $0F
+	spDecayRt	$01, $01, $01, $01
+	spReleaseRt	$0F, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$20, $20, $17, $00
+
+	; Patch $01
+	; $11
+	; $0F, $0E, $08, $08,	$5F, $5F, $5F, $5F
+	; $1B, $0D, $0C, $0E,	$0A, $0A, $0A, $0A
+	; $D9, $D9, $D9, $A9,	$14, $0F, $2C, $80
+	spAlgorithm	$01
+	spFeedback	$02
+	spDetune	$00, $00, $00, $00
+	spMultiple	$0F, $08, $0E, $08
+	spRateScale	$01, $01, $01, $01
+	spAttackRt	$1F, $1F, $1F, $1F
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$1B, $0C, $0D, $0E
+	spSustainLv	$0D, $0D, $0D, $0A
+	spDecayRt	$0A, $0A, $0A, $0A
+	spReleaseRt	$09, $09, $09, $09
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$14, $2C, $0F, $00
+
+	; Patch $02
+	; $3D
+	; $53, $31, $30, $31,	$1F, $0E, $0E, $0E
+	; $0D, $1F, $1F, $1F,	$00, $00, $00, $00
+	; $18, $08, $08, $08,	$30, $8A, $8A, $8A
+	spAlgorithm	$05
+	spFeedback	$07
+	spDetune	$05, $03, $03, $03
+	spMultiple	$03, $00, $01, $01
+	spRateScale	$00, $00, $00, $00
+	spAttackRt	$1F, $0E, $0E, $0E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$0D, $1F, $1F, $1F
+	spSustainLv	$01, $00, $00, $00
+	spDecayRt	$00, $00, $00, $00
+	spReleaseRt	$08, $08, $08, $08
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$30, $0A, $0A, $0A
+
+	; Patch $03
+	; $24
+	; $39, $51, $02, $01,	$5F, $9B, $9E, $9E
+	; $12, $05, $03, $0E,	$00, $03, $06, $06
+	; $15, $85, $F7, $F7,	$30, $80, $20, $80
+	spAlgorithm	$04
+	spFeedback	$04
+	spDetune	$03, $00, $05, $00
+	spMultiple	$09, $02, $01, $01
+	spRateScale	$01, $02, $02, $02
+	spAttackRt	$1F, $1E, $1B, $1E
+	spAmpMod	$00, $00, $00, $00
+	spSustainRt	$12, $03, $05, $0E
+	spSustainLv	$01, $0F, $08, $0F
+	spDecayRt	$00, $06, $03, $06
+	spReleaseRt	$05, $07, $05, $07
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$30, $20, $00, $00	
+
+CharacterSelect_FM1:
+;	ssPalTempo	$34
+	sVoice		$00
+	sGate	$06
+
+CharacterSelect_Jump1:
+	dc.b nF3, $06, nF3, nF3, nF3, nF3, $0C, nF3
+	dc.b $06, nF3, nF3, nF3, nF3, $0C, nF3, $06
+	dc.b nF3, nF3, $0C, nCs3, $06, nCs3, nCs3, nCs3
+	dc.b nCs3, $0C, nCs3, $06, nCs3, nCs3, nCs3, nCs3
+	dc.b $0C, nC3, $06, nCs3, nCs3, $0C, nEb3, $06
+	dc.b nEb3, nEb3, nEb3, nEb3, $0C, nEb3, $06, nEb3
+	dc.b nEb3, nEb3, nEb3, $0C, nEb3, $06, nEb3, nEb3
+	dc.b $0C, nEb3, $06, nEb3, nEb3, nEb3, nEb3, $0C
+	dc.b nEb3, $06, nEb3, nEb3, nEb3, nEb3, $0C, nEb3
+	dc.b $06, nEb3, nEb3, nEb3
+	sJump		CharacterSelect_Jump1
+
+CharacterSelect_FM2:
+	sVoice		$01
+	sGate	$04
+;	sPanAni		$01, $02, $03, $06, $03
+
+CharacterSelect_Jump2:
+	dc.b nC3, $06, nG2, $0C, nBb2, $12, nF2, $0C
+	dc.b nC3, nG2, nBb3, nF2
+	sJump		CharacterSelect_Jump2
+
+CharacterSelect_FM3:
+	dc.b nRst, $09
+	saVol		$0E
+	sJump		CharacterSelect_FM2
+
+CharacterSelect_FM4:
+	sModAMPS	$10, $03, $09, $03
+	sPan		spLeft
+	sVoice		$02
+
+CharacterSelect_Jump3:
+	saVol		$14
+	dc.b nA4, $08
+	sCall		CharacterSelect_Call1
+	saVol		$14
+	dc.b nAb4, $08
+	sCall		CharacterSelect_Call1
+	saVol		$14
+	dc.b nF4, $08
+	sCall		CharacterSelect_Call2
+	saVol		$14
+	dc.b nA4, $08
+	sCall		CharacterSelect_Call1
+	saVol		$14
+	dc.b nAb4, $08
+	sCall		CharacterSelect_Call1
+	saVol		$14
+	dc.b nF4, $08
+	sCall		CharacterSelect_Call1
+	saVol		$16
+	dc.b nF4, $04
+	sCall		CharacterSelect_Call3
+	saVol		$16
+	dc.b nEb4, $04
+	sCall		CharacterSelect_Call3
+	sJump		CharacterSelect_Jump3
+
+CharacterSelect_FM5:
+	sModAMPS	$10, $03, $09, $03
+	sPan		spRight
+	sVoice		$02
+
+CharacterSelect_Jump4:
+	saVol		$14
+	dc.b nC4, $08
+	sCall		CharacterSelect_Call1
+	saVol		$14
+	dc.b nAb3, $08
+	sCall		CharacterSelect_Call1
+	saVol		$14
+	dc.b nBb3, $08
+	sCall		CharacterSelect_Call2
+	saVol		$14
+	dc.b nC4, $08
+	sCall		CharacterSelect_Call1
+	saVol		$14
+	dc.b nAb3, $08
+	sCall		CharacterSelect_Call1
+	saVol		$14
+	dc.b nBb3, $08
+	sCall		CharacterSelect_Call1
+	saVol		$16
+	dc.b nBb3, $04
+	sCall		CharacterSelect_Call3
+	saVol		$16
+	dc.b nCs4, $04
+	sCall		CharacterSelect_Call3
+	sJump		CharacterSelect_Jump4
+
+CharacterSelect_PSG1:
+	sVolEnv	v01
+
+CharacterSelect_Loop4:
+	dc.b nE5, $04, nC5, nC4, nF5, nC5, nC4
+	sLoop		$00, $04, CharacterSelect_Loop4
+
+CharacterSelect_Loop5:
+	dc.b nCs5, $04, nAb4, nCs4, nF5, nCs5, nCs4
+	sLoop		$00, $04, CharacterSelect_Loop5
+
+CharacterSelect_Loop6:
+	dc.b nD5, $04, nF4, nBb3, nEb5, nF4, nBb3
+	sLoop		$00, $04, CharacterSelect_Loop6
+	dc.b nD5, $04, nF4, nBb3, nEb5, nF4, nBb3, nF5
+	dc.b nF4, nBb3, nEb5, nF4, nBb3, nD5, nF4, nBb3
+	dc.b nEb5, nF4, nBb3, nD5, nEb5, nF5, nG5, nA5
+	dc.b nBb5
+
+CharacterSelect_Loop7:
+	dc.b nE5, $04, nC5, nC4, nF5, nC5, nC4
+	sLoop		$00, $04, CharacterSelect_Loop7
+
+CharacterSelect_Loop8:
+	dc.b nCs5, $04, nAb4, nCs4, nF5, nCs5, nCs4
+	sLoop		$00, $04, CharacterSelect_Loop8
+
+CharacterSelect_Loop9:
+	dc.b nF5, $04, nEb5, nEb4, nG5, nEb5, nEb4
+	sLoop		$00, $04, CharacterSelect_Loop9
+
+CharacterSelect_Loop10:
+	dc.b nA5, $04, nEb5, nEb4, nBb5, nEb5, nEb4
+	sLoop		$00, $02, CharacterSelect_Loop10
+	dc.b nA5, $04, nEb5, nEb4, nG5, nEb5, nEb4, nA5
+	dc.b nEb5, nEb4, nG5, nEb5, nEb4
+	sJump		CharacterSelect_PSG1
+
+CharacterSelect_PSG2:
+	ssDetune	$02
+	dc.b nRst, $09
+	sJump		CharacterSelect_PSG1
+
+CharacterSelect_PSG3:
+	ssDetune	$FE
+	dc.b nRst, $0D
+	sJump		CharacterSelect_PSG1
+
+CharacterSelect_DAC1:
+	sStop
+
+CharacterSelect_DAC2:
+	sStop
+
+CharacterSelect_Call1:
+	saVol		$FC
+	dc.b sHold, $04
+	sLoop		$00, $05, CharacterSelect_Call1
+	dc.b sHold, $1C
+
+CharacterSelect_Loop1:
+	saVol		$02
+	dc.b sHold, $04
+	sLoop		$00, $09, CharacterSelect_Loop1
+	saVol		$02
+	dc.b sHold, $03, nRst, $01
+	saVol		$EC
+	sRet
+
+CharacterSelect_Call2:
+	saVol		$FC
+	dc.b sHold, $04
+	sLoop		$00, $05, CharacterSelect_Call2
+	dc.b sHold, $1C
+
+CharacterSelect_Loop2:
+	saVol		$02
+	dc.b sHold, $08
+	sLoop		$00, $05, CharacterSelect_Loop2
+	dc.b sHold, $08
+
+CharacterSelect_Loop3:
+	saVol		$FF
+	dc.b sHold, $08
+	sLoop		$00, $09, CharacterSelect_Loop3
+	saVol		$FF
+	dc.b sHold, $0F, nRst, $01
+	sRet
+
+CharacterSelect_Call3:
+	saVol		$FE
+	dc.b sHold, $04
+	sLoop		$00, $0A, CharacterSelect_Call3
+	saVol		$FE
+	dc.b sHold, $03, nRst, $01
+	sRet

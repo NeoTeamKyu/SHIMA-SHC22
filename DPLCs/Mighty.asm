@@ -1,0 +1,581 @@
+Mighty_PLC:
+Mighty_PLC_0: 	dc.w Mighty_PLC_146-Mighty_PLC
+Mighty_PLC_2: 	dc.w Mighty_PLC_147-Mighty_PLC
+Mighty_PLC_4: 	dc.w Mighty_PLC_14A-Mighty_PLC
+Mighty_PLC_6: 	dc.w Mighty_PLC_14F-Mighty_PLC
+Mighty_PLC_8: 	dc.w Mighty_PLC_154-Mighty_PLC
+Mighty_PLC_A: 	dc.w Mighty_PLC_157-Mighty_PLC
+Mighty_PLC_C: 	dc.w Mighty_PLC_15C-Mighty_PLC
+Mighty_PLC_E: 	dc.w Mighty_PLC_161-Mighty_PLC
+Mighty_PLC_10: 	dc.w Mighty_PLC_164-Mighty_PLC
+Mighty_PLC_12: 	dc.w Mighty_PLC_167-Mighty_PLC
+Mighty_PLC_14: 	dc.w Mighty_PLC_16A-Mighty_PLC
+Mighty_PLC_16: 	dc.w Mighty_PLC_16D-Mighty_PLC
+Mighty_PLC_18: 	dc.w Mighty_PLC_172-Mighty_PLC
+Mighty_PLC_1A: 	dc.w Mighty_PLC_177-Mighty_PLC
+Mighty_PLC_1C: 	dc.w Mighty_PLC_17A-Mighty_PLC
+Mighty_PLC_1E: 	dc.w Mighty_PLC_17F-Mighty_PLC
+Mighty_PLC_20: 	dc.w Mighty_PLC_182-Mighty_PLC
+Mighty_PLC_22: 	dc.w Mighty_PLC_187-Mighty_PLC
+Mighty_PLC_24: 	dc.w Mighty_PLC_18C-Mighty_PLC
+Mighty_PLC_26: 	dc.w Mighty_PLC_191-Mighty_PLC
+Mighty_PLC_28: 	dc.w Mighty_PLC_194-Mighty_PLC
+Mighty_PLC_2A: 	dc.w Mighty_PLC_199-Mighty_PLC
+Mighty_PLC_2C: 	dc.w Mighty_PLC_19C-Mighty_PLC
+Mighty_PLC_2E: 	dc.w Mighty_PLC_1A1-Mighty_PLC
+Mighty_PLC_30: 	dc.w Mighty_PLC_1A6-Mighty_PLC
+Mighty_PLC_32: 	dc.w Mighty_PLC_1AB-Mighty_PLC
+Mighty_PLC_34: 	dc.w Mighty_PLC_1AE-Mighty_PLC
+Mighty_PLC_36: 	dc.w Mighty_PLC_1B3-Mighty_PLC
+Mighty_PLC_38: 	dc.w Mighty_PLC_1B6-Mighty_PLC
+Mighty_PLC_3A: 	dc.w Mighty_PLC_1BB-Mighty_PLC
+Mighty_PLC_3C: 	dc.w Mighty_PLC_1C0-Mighty_PLC
+Mighty_PLC_3E: 	dc.w Mighty_PLC_1C5-Mighty_PLC
+Mighty_PLC_40: 	dc.w Mighty_PLC_1C8-Mighty_PLC
+Mighty_PLC_42: 	dc.w Mighty_PLC_1CD-Mighty_PLC
+Mighty_PLC_44: 	dc.w Mighty_PLC_1D0-Mighty_PLC
+Mighty_PLC_46: 	dc.w Mighty_PLC_1D5-Mighty_PLC
+Mighty_PLC_48: 	dc.w Mighty_PLC_1DA-Mighty_PLC
+Mighty_PLC_4A: 	dc.w Mighty_PLC_1DF-Mighty_PLC
+Mighty_PLC_4C: 	dc.w Mighty_PLC_1E4-Mighty_PLC
+Mighty_PLC_4E: 	dc.w Mighty_PLC_1E9-Mighty_PLC
+Mighty_PLC_50: 	dc.w Mighty_PLC_1EE-Mighty_PLC
+Mighty_PLC_52: 	dc.w Mighty_PLC_1F3-Mighty_PLC
+Mighty_PLC_54: 	dc.w Mighty_PLC_1F8-Mighty_PLC
+Mighty_PLC_56: 	dc.w Mighty_PLC_1FD-Mighty_PLC
+Mighty_PLC_58: 	dc.w Mighty_PLC_202-Mighty_PLC
+Mighty_PLC_5A: 	dc.w Mighty_PLC_207-Mighty_PLC
+Mighty_PLC_5C: 	dc.w Mighty_PLC_20C-Mighty_PLC
+Mighty_PLC_5E: 	dc.w Mighty_PLC_211-Mighty_PLC
+Mighty_PLC_60: 	dc.w Mighty_PLC_216-Mighty_PLC
+Mighty_PLC_62: 	dc.w Mighty_PLC_21B-Mighty_PLC
+Mighty_PLC_64: 	dc.w Mighty_PLC_220-Mighty_PLC
+Mighty_PLC_66: 	dc.w Mighty_PLC_225-Mighty_PLC
+Mighty_PLC_68: 	dc.w Mighty_PLC_228-Mighty_PLC
+Mighty_PLC_6A: 	dc.w Mighty_PLC_22B-Mighty_PLC
+Mighty_PLC_6C: 	dc.w Mighty_PLC_22E-Mighty_PLC
+Mighty_PLC_6E: 	dc.w Mighty_PLC_231-Mighty_PLC
+Mighty_PLC_70: 	dc.w Mighty_PLC_234-Mighty_PLC
+Mighty_PLC_72: 	dc.w Mighty_PLC_237-Mighty_PLC
+Mighty_PLC_74: 	dc.w Mighty_PLC_23C-Mighty_PLC
+Mighty_PLC_76: 	dc.w Mighty_PLC_23F-Mighty_PLC
+Mighty_PLC_78: 	dc.w Mighty_PLC_242-Mighty_PLC
+Mighty_PLC_7A: 	dc.w Mighty_PLC_247-Mighty_PLC
+Mighty_PLC_7C: 	dc.w Mighty_PLC_24A-Mighty_PLC
+Mighty_PLC_7E: 	dc.w Mighty_PLC_24D-Mighty_PLC
+Mighty_PLC_80: 	dc.w Mighty_PLC_250-Mighty_PLC
+Mighty_PLC_82: 	dc.w Mighty_PLC_253-Mighty_PLC
+Mighty_PLC_84: 	dc.w Mighty_PLC_256-Mighty_PLC
+Mighty_PLC_86: 	dc.w Mighty_PLC_25B-Mighty_PLC
+Mighty_PLC_88: 	dc.w Mighty_PLC_260-Mighty_PLC
+Mighty_PLC_8A: 	dc.w Mighty_PLC_265-Mighty_PLC
+Mighty_PLC_8C: 	dc.w Mighty_PLC_268-Mighty_PLC
+Mighty_PLC_8E: 	dc.w Mighty_PLC_26B-Mighty_PLC
+Mighty_PLC_90: 	dc.w Mighty_PLC_270-Mighty_PLC
+Mighty_PLC_92: 	dc.w Mighty_PLC_275-Mighty_PLC
+Mighty_PLC_94: 	dc.w Mighty_PLC_27A-Mighty_PLC
+Mighty_PLC_96: 	dc.w Mighty_PLC_27D-Mighty_PLC
+Mighty_PLC_98: 	dc.w Mighty_PLC_280-Mighty_PLC
+Mighty_PLC_9A: 	dc.w Mighty_PLC_283-Mighty_PLC
+Mighty_PLC_9C: 	dc.w Mighty_PLC_286-Mighty_PLC
+Mighty_PLC_9E: 	dc.w Mighty_PLC_289-Mighty_PLC
+Mighty_PLC_A0: 	dc.w Mighty_PLC_28C-Mighty_PLC
+Mighty_PLC_A2: 	dc.w Mighty_PLC_28F-Mighty_PLC
+Mighty_PLC_A4: 	dc.w Mighty_PLC_292-Mighty_PLC
+Mighty_PLC_A6: 	dc.w Mighty_PLC_295-Mighty_PLC
+Mighty_PLC_A8: 	dc.w Mighty_PLC_29A-Mighty_PLC
+Mighty_PLC_AA: 	dc.w Mighty_PLC_29F-Mighty_PLC
+Mighty_PLC_AC: 	dc.w Mighty_PLC_2A4-Mighty_PLC
+Mighty_PLC_AE: 	dc.w Mighty_PLC_2A7-Mighty_PLC
+Mighty_PLC_B0: 	dc.w Mighty_PLC_2AC-Mighty_PLC
+Mighty_PLC_B2: 	dc.w Mighty_PLC_2AF-Mighty_PLC
+Mighty_PLC_B4: 	dc.w Mighty_PLC_2B4-Mighty_PLC
+Mighty_PLC_B6: 	dc.w Mighty_PLC_2B9-Mighty_PLC
+Mighty_PLC_B8: 	dc.w Mighty_PLC_2BE-Mighty_PLC
+Mighty_PLC_BA: 	dc.w Mighty_PLC_2C1-Mighty_PLC
+Mighty_PLC_BC: 	dc.w Mighty_PLC_2C4-Mighty_PLC
+Mighty_PLC_BE: 	dc.w Mighty_PLC_2C9-Mighty_PLC
+Mighty_PLC_C0: 	dc.w Mighty_PLC_2CE-Mighty_PLC
+Mighty_PLC_C2: 	dc.w Mighty_PLC_2D3-Mighty_PLC
+Mighty_PLC_C4: 	dc.w Mighty_PLC_2D6-Mighty_PLC
+Mighty_PLC_C6: 	dc.w Mighty_PLC_2D9-Mighty_PLC
+Mighty_PLC_C8: 	dc.w Mighty_PLC_2DC-Mighty_PLC
+Mighty_PLC_CA: 	dc.w Mighty_PLC_2DF-Mighty_PLC
+Mighty_PLC_CC: 	dc.w Mighty_PLC_2E2-Mighty_PLC
+Mighty_PLC_CE: 	dc.w Mighty_PLC_2E5-Mighty_PLC
+Mighty_PLC_D0: 	dc.w Mighty_PLC_2EA-Mighty_PLC
+Mighty_PLC_D2: 	dc.w Mighty_PLC_2EF-Mighty_PLC
+Mighty_PLC_D4: 	dc.w Mighty_PLC_2F4-Mighty_PLC
+Mighty_PLC_D6: 	dc.w Mighty_PLC_2F9-Mighty_PLC
+Mighty_PLC_D8: 	dc.w Mighty_PLC_2FE-Mighty_PLC
+Mighty_PLC_DA: 	dc.w Mighty_PLC_303-Mighty_PLC
+Mighty_PLC_DC: 	dc.w Mighty_PLC_308-Mighty_PLC
+Mighty_PLC_DE: 	dc.w Mighty_PLC_30D-Mighty_PLC
+Mighty_PLC_E0: 	dc.w Mighty_PLC_312-Mighty_PLC
+Mighty_PLC_E2: 	dc.w Mighty_PLC_317-Mighty_PLC
+Mighty_PLC_E4: 	dc.w Mighty_PLC_31C-Mighty_PLC
+Mighty_PLC_E6: 	dc.w Mighty_PLC_321-Mighty_PLC
+Mighty_PLC_E8: 	dc.w Mighty_PLC_326-Mighty_PLC
+Mighty_PLC_EA: 	dc.w Mighty_PLC_32B-Mighty_PLC
+Mighty_PLC_EC: 	dc.w Mighty_PLC_330-Mighty_PLC
+Mighty_PLC_EE: 	dc.w Mighty_PLC_335-Mighty_PLC
+Mighty_PLC_F0: 	dc.w Mighty_PLC_33A-Mighty_PLC
+Mighty_PLC_F2: 	dc.w Mighty_PLC_33D-Mighty_PLC
+Mighty_PLC_F4: 	dc.w Mighty_PLC_340-Mighty_PLC
+Mighty_PLC_F6: 	dc.w Mighty_PLC_345-Mighty_PLC
+Mighty_PLC_F8: 	dc.w Mighty_PLC_348-Mighty_PLC
+Mighty_PLC_FA: 	dc.w Mighty_PLC_34B-Mighty_PLC
+Mighty_PLC_FC: 	dc.w Mighty_PLC_34E-Mighty_PLC
+Mighty_PLC_FE: 	dc.w Mighty_PLC_351-Mighty_PLC
+Mighty_PLC_100: 	dc.w Mighty_PLC_354-Mighty_PLC
+Mighty_PLC_102: 	dc.w Mighty_PLC_359-Mighty_PLC
+Mighty_PLC_104: 	dc.w Mighty_PLC_35E-Mighty_PLC
+Mighty_PLC_106: 	dc.w Mighty_PLC_363-Mighty_PLC
+Mighty_PLC_108: 	dc.w Mighty_PLC_368-Mighty_PLC
+Mighty_PLC_10A: 	dc.w Mighty_PLC_36B-Mighty_PLC
+Mighty_PLC_10C: 	dc.w Mighty_PLC_36E-Mighty_PLC
+Mighty_PLC_10E: 	dc.w Mighty_PLC_371-Mighty_PLC
+Mighty_PLC_110: 	dc.w Mighty_PLC_376-Mighty_PLC
+Mighty_PLC_112: 	dc.w Mighty_PLC_37B-Mighty_PLC
+Mighty_PLC_114: 	dc.w Mighty_PLC_380-Mighty_PLC
+Mighty_PLC_116: 	dc.w Mighty_PLC_385-Mighty_PLC
+Mighty_PLC_118: 	dc.w Mighty_PLC_388-Mighty_PLC
+Mighty_PLC_11A: 	dc.w Mighty_PLC_38D-Mighty_PLC
+Mighty_PLC_11C: 	dc.w Mighty_PLC_392-Mighty_PLC
+Mighty_PLC_11E: 	dc.w Mighty_PLC_397-Mighty_PLC
+Mighty_PLC_120: 	dc.w Mighty_PLC_39C-Mighty_PLC
+Mighty_PLC_122: 	dc.w Mighty_PLC_39F-Mighty_PLC
+Mighty_PLC_124: 	dc.w Mighty_PLC_3A2-Mighty_PLC
+Mighty_PLC_126: 	dc.w Mighty_PLC_3A5-Mighty_PLC
+Mighty_PLC_128: 	dc.w Mighty_PLC_3A8-Mighty_PLC
+Mighty_PLC_12A: 	dc.w Mighty_PLC_3AB-Mighty_PLC
+Mighty_PLC_12C: 	dc.w Mighty_PLC_3AE-Mighty_PLC
+Mighty_PLC_12E: 	dc.w Mighty_PLC_3B3-Mighty_PLC
+Mighty_PLC_130: 	dc.w Mighty_PLC_3B6-Mighty_PLC
+Mighty_PLC_132: 	dc.w Mighty_PLC_3B9-Mighty_PLC
+Mighty_PLC_134: 	dc.w Mighty_PLC_3BC-Mighty_PLC
+Mighty_PLC_136: 	dc.w Mighty_PLC_3BF-Mighty_PLC
+Mighty_PLC_138: 	dc.w Mighty_PLC_3C2-Mighty_PLC
+Mighty_PLC_13A: 	dc.w Mighty_PLC_3C7-Mighty_PLC
+Mighty_PLC_13C: 	dc.w Mighty_PLC_3CC-Mighty_PLC
+Mighty_PLC_13E: 	dc.w Mighty_PLC_3CF-Mighty_PLC
+Mighty_PLC_140: 	dc.w Mighty_PLC_3D4-Mighty_PLC
+Mighty_PLC_142: 	dc.w Mighty_PLC_3D9-Mighty_PLC
+Mighty_PLC_144: 	dc.w Mighty_PLC_3DE-Mighty_PLC
+Mighty_PLC_146: 	dc.b $0
+Mighty_PLC_147: 	dc.b $1
+	dc.b $E0, $0
+Mighty_PLC_14A: 	dc.b $2
+	dc.b $B0, $F
+	dc.b $20, $C
+Mighty_PLC_14F: 	dc.b $2
+	dc.b $B0, $1B
+	dc.b $20, $C
+Mighty_PLC_154: 	dc.b $1
+	dc.b $F0, $27
+Mighty_PLC_157: 	dc.b $2
+	dc.b $F0, $37
+	dc.b $0, $47
+Mighty_PLC_15C: 	dc.b $2
+	dc.b $F0, $48
+	dc.b $0, $58
+Mighty_PLC_161: 	dc.b $1
+	dc.b $F0, $59
+Mighty_PLC_164: 	dc.b $1
+	dc.b $E0, $69
+Mighty_PLC_167: 	dc.b $1
+	dc.b $F0, $78
+Mighty_PLC_16A: 	dc.b $1
+	dc.b $F0, $88
+Mighty_PLC_16D: 	dc.b $2
+	dc.b $F0, $98
+	dc.b $10, $A8
+Mighty_PLC_172: 	dc.b $2
+	dc.b $F0, $AA
+	dc.b $10, $BA
+Mighty_PLC_177: 	dc.b $1
+	dc.b $E0, $BC
+Mighty_PLC_17A: 	dc.b $2
+	dc.b $F0, $CB
+	dc.b $20, $DB
+Mighty_PLC_17F: 	dc.b $1
+	dc.b $F0, $DE
+Mighty_PLC_182: 	dc.b $2
+	dc.b $F0, $EE
+	dc.b $0, $FE
+Mighty_PLC_187: 	dc.b $2
+	dc.b $F0, $FF
+	dc.b $1, $F
+Mighty_PLC_18C: 	dc.b $2
+	dc.b $F1, $10
+	dc.b $11, $20
+Mighty_PLC_191: 	dc.b $1
+	dc.b $E1, $22
+Mighty_PLC_194: 	dc.b $2
+	dc.b $F1, $31
+	dc.b $11, $41
+Mighty_PLC_199: 	dc.b $1
+	dc.b $E1, $43
+Mighty_PLC_19C: 	dc.b $2
+	dc.b $F1, $52
+	dc.b $1, $62
+Mighty_PLC_1A1: 	dc.b $2
+	dc.b $F1, $63
+	dc.b $11, $73
+Mighty_PLC_1A6: 	dc.b $2
+	dc.b $F1, $75
+	dc.b $11, $85
+Mighty_PLC_1AB: 	dc.b $1
+	dc.b $E1, $87
+Mighty_PLC_1AE: 	dc.b $2
+	dc.b $F1, $96
+	dc.b $21, $A6
+Mighty_PLC_1B3: 	dc.b $1
+	dc.b $F1, $A9
+Mighty_PLC_1B6: 	dc.b $2
+	dc.b $F1, $B9
+	dc.b $1, $C9
+Mighty_PLC_1BB: 	dc.b $2
+	dc.b $F1, $CA
+	dc.b $1, $DA
+Mighty_PLC_1C0: 	dc.b $2
+	dc.b $F1, $DB
+	dc.b $1, $EB
+Mighty_PLC_1C5: 	dc.b $1
+	dc.b $D1, $EC
+Mighty_PLC_1C8: 	dc.b $2
+	dc.b $F1, $FA
+	dc.b $22, $A
+Mighty_PLC_1CD: 	dc.b $1
+	dc.b $F2, $D
+Mighty_PLC_1D0: 	dc.b $2
+	dc.b $F2, $1D
+	dc.b $2, $2D
+Mighty_PLC_1D5: 	dc.b $2
+	dc.b $F2, $2E
+	dc.b $12, $3E
+Mighty_PLC_1DA: 	dc.b $2
+	dc.b $F2, $40
+	dc.b $22, $50
+Mighty_PLC_1DF: 	dc.b $2
+	dc.b $F2, $53
+	dc.b $12, $63
+Mighty_PLC_1E4: 	dc.b $2
+	dc.b $F2, $65
+	dc.b $22, $75
+Mighty_PLC_1E9: 	dc.b $2
+	dc.b $F2, $78
+	dc.b $12, $88
+Mighty_PLC_1EE: 	dc.b $2
+	dc.b $F2, $8A
+	dc.b $12, $9A
+Mighty_PLC_1F3: 	dc.b $2
+	dc.b $F2, $9C
+	dc.b $12, $AC
+Mighty_PLC_1F8: 	dc.b $2
+	dc.b $F2, $AE
+	dc.b $12, $BE
+Mighty_PLC_1FD: 	dc.b $2
+	dc.b $F2, $C0
+	dc.b $12, $D0
+Mighty_PLC_202: 	dc.b $2
+	dc.b $F2, $D2
+	dc.b $22, $E2
+Mighty_PLC_207: 	dc.b $2
+	dc.b $F2, $E5
+	dc.b $12, $F5
+Mighty_PLC_20C: 	dc.b $2
+	dc.b $F2, $F7
+	dc.b $23, $7
+Mighty_PLC_211: 	dc.b $2
+	dc.b $F3, $A
+	dc.b $13, $1A
+Mighty_PLC_216: 	dc.b $2
+	dc.b $F3, $1C
+	dc.b $13, $2C
+Mighty_PLC_21B: 	dc.b $2
+	dc.b $F3, $2E
+	dc.b $13, $3E
+Mighty_PLC_220: 	dc.b $2
+	dc.b $F3, $40
+	dc.b $13, $50
+Mighty_PLC_225: 	dc.b $1
+	dc.b $F3, $52
+Mighty_PLC_228: 	dc.b $1
+	dc.b $F3, $62
+Mighty_PLC_22B: 	dc.b $1
+	dc.b $F3, $72
+Mighty_PLC_22E: 	dc.b $1
+	dc.b $F3, $82
+Mighty_PLC_231: 	dc.b $1
+	dc.b $F3, $92
+Mighty_PLC_234: 	dc.b $1
+	dc.b $E3, $A2
+Mighty_PLC_237: 	dc.b $2
+	dc.b $F3, $B1
+	dc.b $3, $C1
+Mighty_PLC_23C: 	dc.b $1
+	dc.b $F3, $C2
+Mighty_PLC_23F: 	dc.b $1
+	dc.b $F3, $D2
+Mighty_PLC_242: 	dc.b $2
+	dc.b $F3, $E2
+	dc.b $13, $F2
+Mighty_PLC_247: 	dc.b $1
+	dc.b $F3, $F4
+Mighty_PLC_24A: 	dc.b $1
+	dc.b $B4, $4
+Mighty_PLC_24D: 	dc.b $1
+	dc.b $D4, $10
+Mighty_PLC_250: 	dc.b $1
+	dc.b $E4, $1E
+Mighty_PLC_253: 	dc.b $1
+	dc.b $F4, $2D
+Mighty_PLC_256: 	dc.b $2
+	dc.b $F4, $3D
+	dc.b $14, $4D
+Mighty_PLC_25B: 	dc.b $2
+	dc.b $F4, $4F
+	dc.b $14, $5F
+Mighty_PLC_260: 	dc.b $2
+	dc.b $F4, $61
+	dc.b $4, $71
+Mighty_PLC_265: 	dc.b $1
+	dc.b $F4, $72
+Mighty_PLC_268: 	dc.b $1
+	dc.b $F4, $82
+Mighty_PLC_26B: 	dc.b $2
+	dc.b $F4, $92
+	dc.b $24, $A2
+Mighty_PLC_270: 	dc.b $2
+	dc.b $F4, $A5
+	dc.b $14, $B5
+Mighty_PLC_275: 	dc.b $2
+	dc.b $F4, $B7
+	dc.b $4, $C7
+Mighty_PLC_27A: 	dc.b $1
+	dc.b $F4, $C8
+Mighty_PLC_27D: 	dc.b $1
+	dc.b $D4, $D8
+Mighty_PLC_280: 	dc.b $1
+	dc.b $F4, $E6
+Mighty_PLC_283: 	dc.b $1
+	dc.b $E4, $F6
+Mighty_PLC_286: 	dc.b $1
+	dc.b $E5, $5
+Mighty_PLC_289: 	dc.b $1
+	dc.b $C5, $14
+Mighty_PLC_28C: 	dc.b $1
+	dc.b $E4, $F6
+Mighty_PLC_28F: 	dc.b $1
+	dc.b $E5, $21
+Mighty_PLC_292: 	dc.b $1
+	dc.b $E5, $30
+Mighty_PLC_295: 	dc.b $2
+	dc.b $F5, $3F
+	dc.b $25, $4F
+Mighty_PLC_29A: 	dc.b $2
+	dc.b $F5, $52
+	dc.b $15, $62
+Mighty_PLC_29F: 	dc.b $2
+	dc.b $F5, $64
+	dc.b $5, $74
+Mighty_PLC_2A4: 	dc.b $1
+	dc.b $D5, $75
+Mighty_PLC_2A7: 	dc.b $2
+	dc.b $F5, $83
+	dc.b $5, $93
+Mighty_PLC_2AC: 	dc.b $1
+	dc.b $D5, $94
+Mighty_PLC_2AF: 	dc.b $2
+	dc.b $F5, $A2
+	dc.b $55, $B2
+Mighty_PLC_2B4: 	dc.b $2
+	dc.b $F5, $B8
+	dc.b $45, $C8
+Mighty_PLC_2B9: 	dc.b $2
+	dc.b $F5, $CD
+	dc.b $65, $DD
+Mighty_PLC_2BE: 	dc.b $1
+	dc.b $E4, $F6
+Mighty_PLC_2C1: 	dc.b $1
+	dc.b $C5, $14
+Mighty_PLC_2C4: 	dc.b $2
+	dc.b $F5, $E4
+	dc.b $5, $F4
+Mighty_PLC_2C9: 	dc.b $2
+	dc.b $F5, $F5
+	dc.b $16, $5
+Mighty_PLC_2CE: 	dc.b $2
+	dc.b $F6, $7
+	dc.b $26, $17
+Mighty_PLC_2D3: 	dc.b $1
+	dc.b $D6, $1A
+Mighty_PLC_2D6: 	dc.b $1
+	dc.b $D6, $28
+Mighty_PLC_2D9: 	dc.b $1
+	dc.b $D6, $36
+Mighty_PLC_2DC: 	dc.b $1
+	dc.b $D6, $44
+Mighty_PLC_2DF: 	dc.b $1
+	dc.b $D6, $52
+Mighty_PLC_2E2: 	dc.b $1
+	dc.b $D6, $60
+Mighty_PLC_2E5: 	dc.b $2
+	dc.b $F6, $6E
+	dc.b $16, $7E
+Mighty_PLC_2EA: 	dc.b $2
+	dc.b $F6, $80
+	dc.b $6, $90
+Mighty_PLC_2EF: 	dc.b $2
+	dc.b $F6, $91
+	dc.b $6, $A1
+Mighty_PLC_2F4: 	dc.b $2
+	dc.b $F6, $A2
+	dc.b $16, $B2
+Mighty_PLC_2F9: 	dc.b $2
+	dc.b $F6, $B4
+	dc.b $26, $C4
+Mighty_PLC_2FE: 	dc.b $2
+	dc.b $F6, $C7
+	dc.b $26, $D7
+Mighty_PLC_303: 	dc.b $2
+	dc.b $F6, $DA
+	dc.b $16, $EA
+Mighty_PLC_308: 	dc.b $2
+	dc.b $F6, $EC
+	dc.b $26, $FC
+Mighty_PLC_30D: 	dc.b $2
+	dc.b $F6, $FF
+	dc.b $17, $F
+Mighty_PLC_312: 	dc.b $2
+	dc.b $F7, $11
+	dc.b $7, $21
+Mighty_PLC_317: 	dc.b $2
+	dc.b $F7, $22
+	dc.b $7, $32
+Mighty_PLC_31C: 	dc.b $2
+	dc.b $F7, $33
+	dc.b $17, $43
+Mighty_PLC_321: 	dc.b $2
+	dc.b $F7, $45
+	dc.b $27, $55
+Mighty_PLC_326: 	dc.b $2
+	dc.b $F7, $58
+	dc.b $27, $68
+Mighty_PLC_32B: 	dc.b $2
+	dc.b $F7, $6B
+	dc.b $7, $7B
+Mighty_PLC_330: 	dc.b $2
+	dc.b $F7, $7C
+	dc.b $27, $8C
+Mighty_PLC_335: 	dc.b $2
+	dc.b $F7, $8F
+	dc.b $17, $9F
+Mighty_PLC_33A: 	dc.b $1
+	dc.b $D7, $A1
+Mighty_PLC_33D: 	dc.b $1
+	dc.b $97, $AF
+Mighty_PLC_340: 	dc.b $2
+	dc.b $F7, $B9
+	dc.b $47, $C9
+Mighty_PLC_345: 	dc.b $1
+	dc.b $E7, $CE
+Mighty_PLC_348: 	dc.b $1
+	dc.b $E7, $DD
+Mighty_PLC_34B: 	dc.b $1
+	dc.b $E7, $EC
+Mighty_PLC_34E: 	dc.b $1
+	dc.b $D7, $FB
+Mighty_PLC_351: 	dc.b $1
+	dc.b $F8, $9
+Mighty_PLC_354: 	dc.b $2
+	dc.b $F8, $19
+	dc.b $18, $29
+Mighty_PLC_359: 	dc.b $2
+	dc.b $F8, $2B
+	dc.b $68, $3B
+Mighty_PLC_35E: 	dc.b $2
+	dc.b $F8, $42
+	dc.b $38, $52
+Mighty_PLC_363: 	dc.b $2
+	dc.b $F8, $56
+	dc.b $38, $66
+Mighty_PLC_368: 	dc.b $1
+	dc.b $E8, $6A
+Mighty_PLC_36B: 	dc.b $1
+	dc.b $E8, $79
+Mighty_PLC_36E: 	dc.b $1
+	dc.b $E8, $88
+Mighty_PLC_371: 	dc.b $2
+	dc.b $F8, $97
+	dc.b $18, $A7
+Mighty_PLC_376: 	dc.b $2
+	dc.b $F8, $A9
+	dc.b $38, $B9
+Mighty_PLC_37B: 	dc.b $2
+	dc.b $F8, $BD
+	dc.b $38, $CD
+Mighty_PLC_380: 	dc.b $2
+	dc.b $F8, $D1
+	dc.b $18, $E1
+Mighty_PLC_385: 	dc.b $1
+	dc.b $D8, $E3
+Mighty_PLC_388: 	dc.b $2
+	dc.b $F8, $F1
+	dc.b $19, $1
+Mighty_PLC_38D: 	dc.b $2
+	dc.b $F9, $3
+	dc.b $29, $13
+Mighty_PLC_392: 	dc.b $2
+	dc.b $F9, $16
+	dc.b $29, $26
+Mighty_PLC_397: 	dc.b $2
+	dc.b $F9, $29
+	dc.b $29, $39
+Mighty_PLC_39C: 	dc.b $1
+	dc.b $F9, $3C
+Mighty_PLC_39F: 	dc.b $1
+	dc.b $D9, $4C
+Mighty_PLC_3A2: 	dc.b $1
+	dc.b $A9, $5A
+Mighty_PLC_3A5: 	dc.b $1
+	dc.b $C9, $65
+Mighty_PLC_3A8: 	dc.b $1
+	dc.b $A9, $72
+Mighty_PLC_3AB: 	dc.b $1
+	dc.b $D9, $7D
+Mighty_PLC_3AE: 	dc.b $2
+	dc.b $F9, $8B
+	dc.b $19, $9B
+Mighty_PLC_3B3: 	dc.b $1
+	dc.b $D9, $9D
+Mighty_PLC_3B6: 	dc.b $1
+	dc.b $D9, $AB
+Mighty_PLC_3B9: 	dc.b $1
+	dc.b $B9, $B9
+Mighty_PLC_3BC: 	dc.b $1
+	dc.b $B9, $C5
+Mighty_PLC_3BF: 	dc.b $1
+	dc.b $D9, $D1
+Mighty_PLC_3C2: 	dc.b $2
+	dc.b $F9, $DF
+	dc.b $19, $EF
+Mighty_PLC_3C7: 	dc.b $2
+	dc.b $F9, $F1
+	dc.b $A, $1
+Mighty_PLC_3CC: 	dc.b $1
+	dc.b $CA, $2
+Mighty_PLC_3CF: 	dc.b $2
+	dc.b $FA, $F
+	dc.b $A, $1F
+Mighty_PLC_3D4: 	dc.b $2
+	dc.b $FA, $20
+	dc.b $4A, $30
+Mighty_PLC_3D9: 	dc.b $2
+	dc.b $FA, $35
+	dc.b $3A, $45
+Mighty_PLC_3DE: 	dc.b $2
+	dc.b $FA, $49
+	dc.b $3A, $59
+	even

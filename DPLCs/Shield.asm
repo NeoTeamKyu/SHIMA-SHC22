@@ -1,0 +1,56 @@
+ChaotixShield_PLC:
+ChaotixShield_PLC_0: 	dc.w ChaotixShield_PLC_1A-ChaotixShield_PLC
+ChaotixShield_PLC_2: 	dc.w ChaotixShield_PLC_1B-ChaotixShield_PLC
+ChaotixShield_PLC_4: 	dc.w ChaotixShield_PLC_22-ChaotixShield_PLC
+ChaotixShield_PLC_6: 	dc.w ChaotixShield_PLC_29-ChaotixShield_PLC
+ChaotixShield_PLC_8: 	dc.w ChaotixShield_PLC_30-ChaotixShield_PLC
+ChaotixShield_PLC_A: 	dc.w ChaotixShield_PLC_35-ChaotixShield_PLC
+ChaotixShield_PLC_C: 	dc.w ChaotixShield_PLC_3A-ChaotixShield_PLC
+ChaotixShield_PLC_E: 	dc.w ChaotixShield_PLC_3F-ChaotixShield_PLC
+ChaotixShield_PLC_10: 	dc.w ChaotixShield_PLC_42-ChaotixShield_PLC
+ChaotixShield_PLC_12: 	dc.w ChaotixShield_PLC_47-ChaotixShield_PLC
+ChaotixShield_PLC_14: 	dc.w ChaotixShield_PLC_4C-ChaotixShield_PLC
+ChaotixShield_PLC_16: 	dc.w ChaotixShield_PLC_51-ChaotixShield_PLC
+ChaotixShield_PLC_18: 	dc.w ChaotixShield_PLC_58-ChaotixShield_PLC
+ChaotixShield_PLC_1A: 	dc.b $0
+ChaotixShield_PLC_1B: 	dc.b $3
+	dc.b $F0, $0
+	dc.b $F0, $10
+	dc.b $80, $20
+ChaotixShield_PLC_22: 	dc.b $3
+	dc.b $F0, $29
+	dc.b $F0, $39
+	dc.b $80, $49
+ChaotixShield_PLC_29: 	dc.b $3
+	dc.b $F0, $52
+	dc.b $F0, $62
+	dc.b $50, $72
+ChaotixShield_PLC_30: 	dc.b $2
+	dc.b $F0, $78
+	dc.b $D0, $88
+ChaotixShield_PLC_35: 	dc.b $2
+	dc.b $F0, $96
+	dc.b $90, $A6
+ChaotixShield_PLC_3A: 	dc.b $2
+	dc.b $F0, $B0
+	dc.b $10, $C0
+ChaotixShield_PLC_3F: 	dc.b $1
+	dc.b $60, $C2
+ChaotixShield_PLC_42: 	dc.b $2
+	dc.b $F0, $B0
+	dc.b $10, $C0
+ChaotixShield_PLC_47: 	dc.b $2
+	dc.b $F0, $96
+	dc.b $90, $A6
+ChaotixShield_PLC_4C: 	dc.b $2
+	dc.b $F0, $78
+	dc.b $D0, $88
+ChaotixShield_PLC_51: 	dc.b $3
+	dc.b $F0, $52
+	dc.b $F0, $62
+	dc.b $50, $72
+ChaotixShield_PLC_58: 	dc.b $3
+	dc.b $F0, $29
+	dc.b $F0, $39
+	dc.b $80, $49
+	even

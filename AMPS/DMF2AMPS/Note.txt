@@ -1,0 +1,1 @@
+This isn't perfect. However, it's definitely an easy way to get *SOMETHING* working. You have to fix DAC notes yourself, and it seems to just drop the PSG entirely.

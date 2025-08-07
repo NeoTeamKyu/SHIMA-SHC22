@@ -1,0 +1,12 @@
+	sHeaderInitSFX
+	sHeaderPrio	$70
+	sHeaderCh	$01
+	sHeaderSFX	$A1, ctPSG1, .PSG1, $F4+$0C, $00
+
+.PSG1	
+	sSpinReset
+	sVolEnv		vNone
+	dc.b nF2, $05
+	sModAMPS	$01, $01, $F8, $65
+	dc.b nBb2, $15
+	sStop
