@@ -4,14 +4,14 @@ BGZ2_Header:
 	sHeaderCh	$05, $03
 	sHeaderDAC	BGZ2_DAC1
 	sHeaderDAC	BGZ2_DAC2
-	sHeaderFM	BGZ2_FM1, $F4, $0E+$04
-	sHeaderFM	BGZ2_FM2, $F4, $0A+$04
-	sHeaderFM	BGZ2_FM3, $F4, $09+$04
-	sHeaderFM	BGZ2_FM4, $F4, $0C+$04
-	sHeaderFM	BGZ2_FM5, $F4, $0E+$04
-	sHeaderPSG	BGZ2_PSG1, $00, $30+$04, $00, v0D
-	sHeaderPSG	BGZ2_PSG2, $00, $10+$04, $00, v0D
-	sHeaderPSG	BGZ2_PSG3, $00, $00+$08, $00, vNone
+	sHeaderFM	BGZ2_FM1, $F4, $0E
+	sHeaderFM	BGZ2_FM2, $F4, $0A
+	sHeaderFM	BGZ2_FM3, $F4, $09
+	sHeaderFM	BGZ2_FM4, $F4, $0C
+	sHeaderFM	BGZ2_FM5, $F4, $0E
+	sHeaderPSG	BGZ2_PSG1, $00, $30, $00, v0D
+	sHeaderPSG	BGZ2_PSG2, $00, $10, $00, v0D
+	sHeaderPSG	BGZ2_PSG3, $00, $00, $00, vNone
 
 	; Patch $00
 	; $04

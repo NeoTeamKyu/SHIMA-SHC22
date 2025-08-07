@@ -26,7 +26,7 @@ SonicMyName_Header:
 	spTotalLv	$23, $23, $00, $00
 
 SonicMyNameDAC2:
-	;dc.b dSonicMyName, $7F
+	dc.b dSonicMyName, $7F
 	sStop
 	
 SonicMyNameDAC1:	sStop

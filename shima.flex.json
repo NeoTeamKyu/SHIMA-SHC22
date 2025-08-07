@@ -1,7 +1,7 @@
 {
     "Flex": 2,
     "name": "Sonic the Hedgehog: Isle of Magnetic Artifacts",
-    "node": "38679ae8-f1c9-4c7d-9936-fa894613c63e",
+    "node": "fb74ec43-aefe-4a50-b6d1-25b311bfbed0",
     "objects": [
         {
             "uuid": "36eb53dc-2ac9-4da7-bfc3-e80e21d1b692",
@@ -1040,7 +1040,7 @@
                 }
             ],
             "isDirectory": true,
-            "expanded": true,
+            "expanded": false,
             "uuid": "449f0a19-b108-47d9-94a9-f17ca031d20c"
         },
         {
@@ -1116,7 +1116,7 @@
                 }
             ],
             "isDirectory": true,
-            "expanded": true,
+            "expanded": false,
             "uuid": "a3936ded-3551-457e-96bc-62ba7f2f22b6"
         },
         {

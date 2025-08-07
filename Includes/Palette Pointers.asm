@@ -81,9 +81,7 @@ ptr_Pal_Menu:			palp	Pal_Menu,v_pal_dry+$20,$30
 ptr_Pal_SpecialStage:	palp	Pal_SpecialStage,v_pal_dry+$20,$30
 
 ptr_Pal_Options:		palp	Pal_Options,v_pal_dry+$20,$30
-	if DemoMode=1
 ptr_Pal_EOD:		palp	Pal_EOD,v_pal_dry,$20
-	endc
 			even
 
 

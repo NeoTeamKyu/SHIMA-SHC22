@@ -116,13 +116,13 @@ BadApplePC98_Jump9:
 BadApplePC98_Loop144:
 	dc.b $18
 	sLoop		$00, $36, BadApplePC98_Loop144
-	dc.b dSnareS3, $06, $06, $06, $06, $18
+	dc.b dSnareS1, $06, $06, $06, $06, $18
 
 BadApplePC98_Loop145:
 	dc.b dKickS3
 	sLoop		$00, $1D, BadApplePC98_Loop145
-	dc.b dKickS3, $0C, $06, $06, dSnareS3, dSnareS3, dSnareS3, dSnareS3
-	dc.b dSnareS3, dSnareS3, $12, dKickS3, $60, $60
+	dc.b dKickS3, $0C, $06, $06, dSnareS1, dSnareS1, dSnareS1, dSnareS1
+	dc.b dSnareS1, dSnareS1, $12, dKickS3, $60, $60
 
 BadApplePC98_Loop146:
 	dc.b $18
@@ -132,22 +132,22 @@ BadApplePC98_Loop146:
 BadApplePC98_Loop147:
 	dc.b $18
 	sLoop		$00, $2C, BadApplePC98_Loop147
-	dc.b dSnareS3, dSnareS3, dSnareS3, dSnareS3, $0C, $06
+	dc.b dSnareS1, dSnareS1, dSnareS1, dSnareS1, $0C, $06
 
 BadApplePC98_Loop148:
-	dc.b $06, dKickS3, $0C, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3
-	dc.b dKickS3, dSnareS3, $06, $06, dKickS3, $0C, dSnareS3, dKickS3
-	dc.b dSnareS3, dKickS3, dSnareS3, dKickS3, $06, dSnareS3, dSnareS3, dKickS3
-	dc.b dKickS3, $0C, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3, dKickS3
-	dc.b dSnareS3, $06, $06, dKickS3, $0C, dSnareS3, dKickS3, dKickS3
-	dc.b $06, $06, dSnareS3, dSnareS3, dSnareS3, dSnareS3, dSnareS3, dSnareS3
+	dc.b $06, dKickS3, $0C, dSnareS1, dKickS3, dSnareS1, dKickS3, dSnareS1
+	dc.b dKickS3, dSnareS1, $06, $06, dKickS3, $0C, dSnareS1, dKickS3
+	dc.b dSnareS1, dKickS3, dSnareS1, dKickS3, $06, dSnareS1, dSnareS1, dKickS3
+	dc.b dKickS3, $0C, dSnareS1, dKickS3, dSnareS1, dKickS3, dSnareS1, dKickS3
+	dc.b dSnareS1, $06, $06, dKickS3, $0C, dSnareS1, dKickS3, dKickS3
+	dc.b $06, $06, dSnareS1, dSnareS1, dSnareS1, dSnareS1, dSnareS1, dSnareS1
 	dc.b dKickS3
 	sLoop		$00, $03, BadApplePC98_Loop148
-	dc.b dKickS3, dKickS3, $0C, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3
-	dc.b dKickS3, dSnareS3, $06, $06, dKickS3, $0C, dSnareS3, dKickS3
-	dc.b dSnareS3, dKickS3, dSnareS3, dKickS3, $06, dSnareS3, dSnareS3, dKickS3
-	dc.b dKickS3, $0C, dSnareS3, dKickS3, dSnareS3, dKickS3, dSnareS3, dKickS3
-	dc.b dSnareS3, $06, $06, dKickS3, $18, $18, $18, $18
+	dc.b dKickS3, dKickS3, $0C, dSnareS1, dKickS3, dSnareS1, dKickS3, dSnareS1
+	dc.b dKickS3, dSnareS1, $06, $06, dKickS3, $0C, dSnareS1, dKickS3
+	dc.b dSnareS1, dKickS3, dSnareS1, dKickS3, $06, dSnareS1, dSnareS1, dKickS3
+	dc.b dKickS3, $0C, dSnareS1, dKickS3, dSnareS1, dKickS3, dSnareS1, dKickS3
+	dc.b dSnareS1, $06, $06, dKickS3, $18, $18, $18, $18
 	sJump		BadApplePC98_Jump9
 
 BadApplePC98_FM1:

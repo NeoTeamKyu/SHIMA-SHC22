@@ -896,8 +896,8 @@ DLE_MHZ3boss:
 		music	mus_Cirno	; play boss music
 		move.b	#1,(f_lockscreen).w ; lock screen
 		addq.b	#2,(v_dle_routine).w
-		moveq	#plcid_Boss,d0
-		jmp		AddPLC		; load boss patterns
+;		moveq	#plcid_Boss,d0
+;		jmp		AddPLC		; load boss patterns
 ; ===========================================================================
 
 @ret:

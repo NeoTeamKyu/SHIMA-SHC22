@@ -1,23 +1,23 @@
-SuperSonic_Header:
+ASIAInvic_Header:
 	sHeaderInit
-	sHeaderTempo	$01, $53
+	sHeaderTempo	$01, $50	
 	sHeaderCh	$05, $03
-	sHeaderDAC	SuperSonic_DAC1
-	sHeaderDAC	SuperSonic_DAC2
-	sHeaderFM	SuperSonic_FM1, $00, $0E
-	sHeaderFM	SuperSonic_FM2, $00, $0A
-	sHeaderFM	SuperSonic_FM3, $00, $0D
-	sHeaderFM	SuperSonic_FM4, $00, $14
-	sHeaderFM	SuperSonic_FM5, $00, $1A
-	sHeaderPSG	SuperSonic_PSG1, $00+$0C, $20, $00, v01
-	sHeaderPSG	SuperSonic_PSG2, $00+$0C, $20, $00, v01
-	sHeaderPSG	SuperSonic_PSG3, $00+$0D, $10, $00, vNone
+	sHeaderDAC	ASIAInvic_DAC1
+	sHeaderDAC	ASIAInvic_DAC2	
+	sHeaderFM	ASIAInvic_FM1, $00, $00-$03
+	sHeaderFM	ASIAInvic_FM2, $00, $00-$03
+	sHeaderFM	ASIAInvic_FM3, $00, $00-$03
+	sHeaderFM	ASIAInvic_FM4, $00, $00-$03
+	sHeaderFM	ASIAInvic_FM5, $00, $06-$03
+	sHeaderPSG	ASIAInvic_PSG1, $0C, $30-$03, $00, vNone
+	sHeaderPSG	ASIAInvic_PSG2, $0C, $30-$03, $00, vNone
+	sHeaderPSG	ASIAInvic_PSG3, $0D, $28-$03, $00, vNone
 
 	; Patch $00
 	; $3D
 	; $01, $21, $51, $01,	$12, $14, $14, $0F
 	; $0A, $05, $05, $05,	$00, $00, $00, $00
-	; $2B, $2B, $2B, $1B,	$19, $03, $03, $03
+	; $2B, $2B, $2B, $1B,	$19, $16, $16, $16
 	spAlgorithm	$05
 	spFeedback	$07
 	spDetune	$00, $05, $02, $00
@@ -29,13 +29,14 @@ SuperSonic_Header:
 	spSustainLv	$02, $02, $02, $01
 	spDecayRt	$00, $00, $00, $00
 	spReleaseRt	$0B, $0B, $0B, $0B
-	spTotalLv	$19, $03, $03, $03
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$19, $16, $16, $16
 
 	; Patch $01
 	; $08
 	; $0A, $70, $30, $00,	$1F, $1F, $5F, $5F
 	; $12, $0E, $0A, $0A,	$00, $04, $04, $03
-	; $2F, $2F, $2F, $2F,	$24, $2D, $13, $00
+	; $2F, $2F, $2F, $2F,	$24, $2D, $13, $0D
 	spAlgorithm	$00
 	spFeedback	$01
 	spDetune	$00, $03, $07, $00
@@ -47,13 +48,14 @@ SuperSonic_Header:
 	spSustainLv	$02, $02, $02, $02
 	spDecayRt	$00, $04, $04, $03
 	spReleaseRt	$0F, $0F, $0F, $0F
-	spTotalLv	$24, $13, $2D, $00
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$24, $13, $2D, $0D
 
 	; Patch $02
 	; $04
 	; $3F, $01, $01, $01,	$1F, $1F, $5F, $5F
 	; $0E, $0A, $09, $0A,	$0F, $0B, $0A, $0A
-	; $2F, $1F, $4F, $1F,	$2C, $03, $12, $03
+	; $2F, $1F, $4F, $1F,	$2C, $15, $12, $15
 	spAlgorithm	$04
 	spFeedback	$00
 	spDetune	$03, $00, $00, $00
@@ -65,130 +67,160 @@ SuperSonic_Header:
 	spSustainLv	$02, $04, $01, $01
 	spDecayRt	$0F, $0A, $0B, $0A
 	spReleaseRt	$0F, $0F, $0F, $0F
-	spTotalLv	$2C, $12, $03, $03
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$2C, $12, $15, $15
 
 	; Patch $03
-	; $3A
-	; $70, $76, $30, $71,	$1F, $9F, $1F, $1F
-	; $15, $19, $0B, $0C,	$07, $06, $06, $07
-	; $1F, $6F, $0F, $1F,	$1B, $12, $13, $00
-	spAlgorithm	$02
-	spFeedback	$07
-	spDetune	$07, $03, $07, $07
-	spMultiple	$00, $00, $06, $01
-	spRateScale	$00, $00, $02, $00
+	; $33
+	; $62, $31, $01, $02,	$1F, $1F, $1F, $1F
+	; $10, $0E, $11, $13,	$02, $05, $09, $06
+	; $1D, $1F, $1F, $1F,	$10, $19, $16, $19
+	spAlgorithm	$03
+	spFeedback	$06
+	spDetune	$06, $00, $03, $00
+	spMultiple	$02, $01, $01, $02
+	spRateScale	$00, $00, $00, $00
 	spAttackRt	$1F, $1F, $1F, $1F
 	spAmpMod	$00, $00, $00, $00
-	spSustainRt	$15, $0B, $19, $0C
-	spSustainLv	$01, $00, $06, $01
-	spDecayRt	$07, $06, $06, $07
-	spReleaseRt	$0F, $0F, $0F, $0F
-	spTotalLv	$1B, $13, $12, $00
+	spSustainRt	$10, $11, $0E, $13
+	spSustainLv	$01, $01, $01, $01
+	spDecayRt	$02, $09, $05, $06
+	spReleaseRt	$0D, $0F, $0F, $0F
+	spSSGEG		$00, $00, $00, $00	
+	spTotalLv	$10, $16, $19, $19
 
-	; Patch $04
-	; $3A
-	; $71, $0C, $33, $01,	$1C, $16, $1D, $1F
-	; $04, $06, $04, $08,	$00, $01, $03, $00
-	; $16, $17, $16, $A6,	$25, $2F, $25, $00
-	spAlgorithm	$02
-	spFeedback	$07
-	spDetune	$07, $03, $00, $00
-	spMultiple	$01, $03, $0C, $01
-	spRateScale	$00, $00, $00, $00
-	spAttackRt	$1C, $1D, $16, $1F
-	spAmpMod	$00, $00, $00, $00
-	spSustainRt	$04, $04, $06, $08
-	spSustainLv	$01, $01, $01, $0A
-	spDecayRt	$00, $03, $01, $00
-	spReleaseRt	$06, $06, $07, $06
-	spTotalLv	$25, $25, $2F, $00
+ASIAInvic_DAC1:
+	sStop
 
-SuperSonic_DAC1:
+ASIAInvic_DAC2:
 	sPan		spCenter
-	dc.b nRst, $03, dMidElecTom, $03, dLowElecTom, $06, dLowElecTom, $09
-	dc.b dMidElecTom, $03, dLowElecTom, $06, dLowElecTom, $12
+	dc.b dSnareS3, $03, dMidElecTom, $03, dLowElecTom, $06, dLowElecTom, $06
+	dc.b dSnareS3, $03, dMidElecTom, $03, dLowElecTom, $06, dLowElecTom, $06
+	dc.b dSnareS3, $0C
 
-SuperSonic_Jump6:
-	dc.b nRst, $52, $52, $52, $52, $52, $52, $52
-	dc.b $52, $52, $52, $02, dCrashCymbal, $12, nRst, $18
-	sJump		SuperSonic_Jump6
-	
-SuperSonic_DAC2:
+ASIAInvic_DAC2Jump:
+	dc.b dKick, $0C, dSnareS3, $06, dKick, $0C
+	dc.b dKick, $06, dSnareS3, $12, dKick, $06, dSnareS3, $06
+	dc.b dKick, $06, dKick, $06, dKick, $06, dSnareS3, $0C
+	dc.b dKick, $0C, dSnareS3, $06, dKick, $0C, dKick, $06
+	dc.b dSnareS3, $12, dKick, $06, dSnareS3, $06, dKick, $03
+	dc.b dKick, $03, dKick, $06, dKick, $06, dSnareS3, $0C
+	dc.b dKick, $0C, dSnareS3, $06, dKick, $0C, dKick, $06
+	dc.b dSnareS3, $12, dKick, $06, dSnareS3, $06, dKick, $06
+	dc.b dKick, $06, dKick, $06, dSnareS3, $0C, dKick, $0C
+	dc.b dSnareS3, $06, dKick, $0C, dKick, $06, dSnareS3, $06
+	dc.b dKick, $0C, dKick, $06, dSnareS3, $06, dKick, $06
+	dc.b dSnareS3, $06, dKick, $06, dSnareS3, $0C, dKick, $0C
+	dc.b dSnareS3, $06, dKick, $0C, dKick, $06, dSnareS3, $12
+	dc.b dKick, $06, dSnareS3, $06, dKick, $06, dKick, $06
+	dc.b dKick, $06, dSnareS3, $0C, dKick, $0C, dSnareS3, $06
+	dc.b dKick, $0C, dKick, $06, dSnareS3, $12, dKick, $06
+	dc.b dSnareS3, $06, dKick, $03, dKick, $03, dKick, $06
+	dc.b dKick, $06, dSnareS3, $0C, dKick, $0C, dSnareS3, $06
+	dc.b dKick, $0C, dKick, $06, dSnareS3, $12, dKick, $06
+	dc.b dSnareS3, $06, dKick, $06, dKick, $06, dKick, $06
+	dc.b dSnareS3, $0C, dKick, $0C, dSnareS3, $06, dKick, $0C
+	dc.b dKick, $06, dSnareS3, $06, dKick, $0C, dKick, $06
+	dc.b dSnareS3, $06, dKick, $06, dSnareS3, $06, dKick, $06
+	dc.b dSnareS3, $0C, dSnareS3, $06, dMidElecTom, $03, dLowElecTom, $03
+	dc.b dLowElecTom, $06, dSnareS3, $0C, dSnareS3, $0C, dSnareS3, $0C
+	dc.b dCrashCymbal, $0C, dMidElecTom, $06, dSnareS3, $06, dSnareS3, $06
+	dc.b dSnareS3, $06, dSnareS3, $06, dKick, $0C, dSnareS3, $06
+	dc.b dKick, $0C, dKick, $06, dSnareS3, $12, dKick, $06
+	dc.b dSnareS3, $06, dKick, $06, dKick, $06, dKick, $06
+	dc.b dSnareS3, $0C, dKick, $0C, dSnareS3, $06, dKick, $0C
+	dc.b dKick, $06, dSnareS3, $12, dKick, $06, dSnareS3, $06
+	dc.b dKick, $03, dKick, $03, dKick, $06, dKick, $06
+	dc.b dSnareS3, $0C, dKick, $0C, dSnareS3, $06, dKick, $0C
+	dc.b dKick, $06, dSnareS3, $12, dKick, $06, dSnareS3, $06
+	dc.b dKick, $06, dKick, $06, dKick, $06, dSnareS3, $0C
+	dc.b dKick, $0C, dSnareS3, $06, dKick, $0C, dKick, $06
+	dc.b dSnareS3, $06, dKick, $0C, dKick, $06, dSnareS3, $06
+	dc.b dKick, $06, dSnareS3, $06, dKick, $06, dSnareS3, $0C
+	dc.b dKick, $0C, dSnareS3, $06, dKick, $0C, dKick, $06
+	dc.b dSnareS3, $12, dKick, $06, dSnareS3, $06, dKick, $06
+	dc.b dKick, $06, dKick, $06, dSnareS3, $0C, dKick, $0C
+	dc.b dSnareS3, $06, dKick, $0C, dKick, $06, dSnareS3, $12
+	dc.b dKick, $06, dSnareS3, $06, dKick, $03, dKick, $03
+	dc.b dKick, $06, dKick, $06, dSnareS3, $0C, dKick, $0C
+	dc.b dSnareS3, $06, dKick, $0C, dKick, $06, dSnareS3, $12
+	dc.b dKick, $06, dSnareS3, $06, dKick, $06, dKick, $06
+	dc.b dKick, $06, dSnareS3, $0C, dKick, $0C, dSnareS3, $06
+	dc.b dKick, $0C, dKick, $06, dSnareS3, $06, dKick, $0C
+	dc.b dKick, $06, dSnareS3, $06, dKick, $06, dSnareS3, $06
+	dc.b dKick, $06, dSnareS3, $0C, dSnareS3, $06, dMidElecTom, $03
+	dc.b dLowElecTom, $03, dLowElecTom, $06, dSnareS3, $0C, dSnareS3, $0C
+	dc.b dSnareS3, $0C, dCrashCymbal, $0C, dMidElecTom, $06, dSnareS3, $06
+	dc.b dSnareS3, $06, dSnareS3, $06, dSnareS3, $06
 	sPan		spCenter
-	dc.b dSnareS3, $12, dSnareS3, $12, dSnareS3, $0C
+	sJump	ASIAInvic_DAC2Jump
 
-SuperSonic_Jump10:
-	dc.b dKickS3, $0C, dSnareS3, $06, dKickS3, $0C, dKickS3, $06
-	dc.b dSnareS3, $12, dKickS3, $06, dSnareS3, $06, dKickS3, $06
-	dc.b dKickS3, $06, dKickS3, $06, dSnareS3, $0C, dKickS3, $0C
-	dc.b dSnareS3, $06, dKickS3, $0C, dKickS3, $06, dSnareS3, $12
-	dc.b dKickS3, $06, dSnareS3, $06, dKickS3, $03, dKickS3, $03
-	dc.b dKickS3, $06, dKickS3, $06, dSnareS3, $0C, dKickS3, $0C
-	dc.b dSnareS3, $06, dKickS3, $0C, dKickS3, $06, dSnareS3, $12
-	dc.b dKickS3, $06, dSnareS3, $06, dKickS3, $06, dKickS3, $06
-	dc.b dKickS3, $06, dSnareS3, $0C, dKickS3, $0C, dSnareS3, $06
-	dc.b dKickS3, $0C, dKickS3, $06, dSnareS3, $06, dKickS3, $0C
-	dc.b dKickS3, $06, dSnareS3, $06, dKickS3, $06, dSnareS3, $06
-	dc.b dKickS3, $06, dSnareS3, $0C, dKickS3, $0C, dSnareS3, $06
-	dc.b dKickS3, $0C, dKickS3, $06, dSnareS3, $12, dKickS3, $06
-	dc.b dSnareS3, $06, dKickS3, $06, dKickS3, $06, dKickS3, $06
-	dc.b dSnareS3, $0C, dKickS3, $0C, dSnareS3, $06, dKickS3, $0C
-	dc.b dKickS3, $06, dSnareS3, $12, dKickS3, $06, dSnareS3, $06
-	dc.b dKickS3, $03, dKickS3, $03, dKickS3, $06, dKickS3, $06
-	dc.b dSnareS3, $0C, dKickS3, $0C, dSnareS3, $06, dKickS3, $0C
-	dc.b dKickS3, $06, dSnareS3, $12, dKickS3, $06, dSnareS3, $06
-	dc.b dKickS3, $06, dKickS3, $06, dKickS3, $06, dSnareS3, $0C
-	dc.b dKickS3, $0C, dSnareS3, $06, dKickS3, $0C, dKickS3, $06
-	dc.b dSnareS3, $06, dKickS3, $0C, dKickS3, $06, dSnareS3, $06
-	dc.b dKickS3, $06, dSnareS3, $06, dKickS3, $06, dSnareS3, $0C
-	dc.b dSnareS3, $06, dMidElecTom, $03, dLowElecTom, $03, dLowElecTom, $06
-	dc.b dSnareS3, $0C, dSnareS3, $0C, dSnareS3, $0C, dMidElecTom, $0C
-	dc.b dLowElecTom, $06, dSnareS3, $06, dSnareS3, $06, dSnareS3, $06
-	dc.b dSnareS3, $06
-	sJump		SuperSonic_Jump10
-
-SuperSonic_FM1:
+ASIAInvic_FM1:
 	sPan		spCenter
-	sVoice		$00
 	ssDetune	$00
-	saVol		$01
+	sVoice		$00
 	dc.b nRst, $30
 
-SuperSonic_Jump1:
+ASIAInvic_Jump0:	
+	dc.b nRst, $06, nC4, $06, nD4, $06
+	dc.b nG4, $06, nRst, $06, nF4, $06, nRst, $06
+	dc.b nE4, $0C, nF4, $06, nE4, $06, nC4, $1E
+	dc.b nRst, $06, nC4, $06, nD4, $06, nG4, $06
+	dc.b nRst, $06, nF4, $06, nRst, $06, nE4, $0C
+	dc.b nF4, $06, nG4, $06, nC5, $1E, nRst, $0C
+	dc.b nA4, $06, nA4, $06, nB4, $06, nC5, $06
+	dc.b nRst, $06, nF5, $06, nRst, $06, nE5, $06
+	dc.b nRst, $06, nD5, $12, nC5, $06, nD5, $36
+	dc.b nG5, $06, nA5, $06, nRst, $06, nG5, $1E
 	dc.b nRst, $06, nC4, $06, nD4, $06, nG4, $06
 	dc.b nRst, $06, nF4, $06, nRst, $06, nE4, $0C
 	dc.b nF4, $06, nE4, $06, nC4, $1E, nRst, $06
 	dc.b nC4, $06, nD4, $06, nG4, $06, nRst, $06
-	dc.b nF4, $06, nRst, $06, nE4, $0C, nF4, $06
-	dc.b nG4, $06, nC5, $1E, nRst, $0C, nA4, $06
 	dc.b nA4, $06, nB4, $06, nC5, $06, nRst, $06
-	dc.b nF5, $06, nRst, $06, nE5, $06, nRst, $06
-	dc.b nD5, $12, nC5, $06, nD5, $36, nG5, $06
-	dc.b nA5, $06, nRst, $06, nG5, $1E, nRst, $06
+	dc.b nD5, $06, nRst, $06, nE5, $1E, nRst, $0C
+	dc.b nF5, $0C, nE5, $06, nC5, $06, nRst, $06
+	dc.b nC5, $0C, nA4, $06, nRst, $06, nG4, $0C
+	dc.b nC5, $06, nD5, $06, nG5, $2A, nF5, $06
+	dc.b nE5, $06, nF5, $06, nE5, $06, nRst, $06
+	dc.b nC5, $1E, nRst, $0C, nG4, $06, nB4, $06
+	dc.b nE5, $06, nD5, $06, nRst, $06, nC5, $1E
+	dc.b nC5, $03, nRst, $03, nC5, $03, nRst, $03
+	dc.b nC5, $03, nRst, $03, nC5, $03, nRst, $09
 	dc.b nC4, $06, nD4, $06, nG4, $06, nRst, $06
 	dc.b nF4, $06, nRst, $06, nE4, $0C, nF4, $06
 	dc.b nE4, $06, nC4, $1E, nRst, $06, nC4, $06
-	dc.b nD4, $06, nG4, $06, nRst, $06, nA4, $06
-	dc.b nB4, $06, nC5, $06, nRst, $06, nD5, $06
-	dc.b nRst, $06, nE5, $1E, nRst, $0C, nF5, $0C
-	dc.b nE5, $06, nC5, $06, nRst, $06, nC5, $0C
-	dc.b nA4, $06, nRst, $06, nG4, $0C, nC5, $06
-	dc.b nD5, $06, nG5, $2A, nF5, $06, nE5, $06
-	dc.b nF5, $06, nE5, $06, nRst, $06, nC5, $1E
-	dc.b nRst, $0C, nG4, $06, nB4, $06, nE5, $06
-	dc.b nD5, $06, nRst, $06, nC5, $1E, nC5, $03
-	dc.b nRst, $03, nC5, $03, nRst, $03, nC5, $03
-	dc.b nRst, $03, nC5, $03, nRst, $03
-	sJump		SuperSonic_Jump1
+	dc.b nD4, $06, nG4, $06, nRst, $06, nF4, $06
+	dc.b nRst, $06, nE4, $0C, nF4, $06, nG4, $06
+	dc.b nC5, $1E, nRst, $0C, nA4, $06, nA4, $06
+	dc.b nB4, $06, nC5, $06, nRst, $06, nF5, $06
+	dc.b nRst, $06, nE5, $06, nRst, $06, nD5, $12
+	dc.b nC5, $06, nD5, $36, nG5, $06, nA5, $06
+	dc.b nRst, $06, nG5, $1E, nRst, $06, nC4, $06
+	dc.b nD4, $06, nG4, $06, nRst, $06, nF4, $06
+	dc.b nRst, $06, nE4, $0C, nF4, $06, nE4, $06
+	dc.b nC4, $1E, nRst, $06, nC4, $06, nD4, $06
+	dc.b nG4, $06, nRst, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nD5, $06, nRst, $06
+	dc.b nE5, $1E, nRst, $0C, nF5, $0C, nE5, $06
+	dc.b nC5, $06, nRst, $06, nC5, $0C, nA4, $06
+	dc.b nRst, $06, nG4, $0C, nC5, $06, nD5, $06
+	dc.b nG5, $2A, nF5, $06, nE5, $06, nF5, $06
+	dc.b nE5, $06, nRst, $06, nC5, $1E, nRst, $0C
+	dc.b nG4, $06, nB4, $06, nE5, $06, nD5, $06
+	dc.b nRst, $06, nC5, $1E, nC5, $03, nRst, $03
+	dc.b nC5, $03, nRst, $03, nC5, $03, nRst, $03
+	dc.b nC5, $03, nRst, $03
+	sPan		spCenter
+	ssDetune	$00
+	sVoice		$00
+	sJump		ASIAInvic_Jump0
 
-SuperSonic_FM2:
+ASIAInvic_FM2:
 	sPan		spCenter
 	sVoice		$01
-	ssDetune	$00
-	saVol		$01
 	dc.b nRst, $30
 
-SuperSonic_Jump2:
+ASIAInvic_Jump1:
 	dc.b nC3, $06, nC3, $06, nG2, $06, nC3, $06
 	dc.b nC3, $06, nG2, $06, nC3, $06, nC3, $06
 	dc.b nG2, $06, nC3, $06, nC3, $06, nG2, $06
@@ -224,16 +256,36 @@ SuperSonic_Jump2:
 	dc.b nG2, $06, nF2, $06, nE2, $06, nG2, $06
 	dc.b nRst, $06, nB2, $06, nRst, $06, nC3, $1E
 	dc.b nC2, $06, nC2, $06, nC2, $06, nC2, $06
-	sJump		SuperSonic_Jump2
+	sJump		ASIAInvic_Jump1
 
-SuperSonic_FM3:
+ASIAInvic_FM3:
 	sPan		spCenter
-	sVoice		$02
 	ssDetune	$00
-	saVol		$01
-	dc.b nRst, $30
+	sVoice		$02
+	dc.b nRst, $30 
 
-SuperSonic_Jump3:
+ASIAInvic_Jump2:	
+	dc.b	nRst, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nA4, $06, nC5, $06
+	dc.b nG5, $36, nG4, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nA4, $06, nC5, $06
+	dc.b nE5, $36, nRst, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nA4, $06, nC5, $06
+	dc.b nG5, $36, nG4, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nG4, $06, nB4, $06
+	dc.b nRst, $06, nG5, $06, nA5, $06, nRst, $06
+	dc.b nG5, $1E, nRst, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nA4, $06, nC5, $06
+	dc.b nG5, $36, nG4, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nA4, $06, nC5, $06
+	dc.b nE5, $36, nRst, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nA4, $06, nC5, $06
+	dc.b nG5, $36, nG4, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nG4, $06, nB4, $06
+	dc.b nRst, $06, nF5, $06, nE5, $06, nRst, $06
+	dc.b nC5, $1E, nRst, $0C, nA4, $06, nB4, $06
+	dc.b nE5, $06, nD5, $06, nRst, $06, nC5, $1E
+	dc.b nC5, $06, nC5, $06, nC5, $06, nC5, $06
 	dc.b nRst, $06, nA4, $06, nB4, $06, nC5, $06
 	dc.b nRst, $06, nA4, $06, nC5, $06, nG5, $36
 	dc.b nG4, $06, nA4, $06, nB4, $06, nC5, $06
@@ -255,93 +307,173 @@ SuperSonic_Jump3:
 	dc.b nRst, $0C, nA4, $06, nB4, $06, nE5, $06
 	dc.b nD5, $06, nRst, $06, nC5, $1E, nC5, $06
 	dc.b nC5, $06, nC5, $06, nC5, $06
-	sJump		SuperSonic_Jump3
-
-SuperSonic_FM4:
 	sPan		spCenter
-	sVoice		$03
 	ssDetune	$00
-	saVol		$02
-	dc.b nRst, $30
+	sVoice		$02
+	sJump		ASIAInvic_Jump2
 
-SuperSonic_Jump4:
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
-	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
-	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
-	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
-	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
-	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
-	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
-	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
-	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
-	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
-	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
-	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
-	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
-	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
-	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
-	dc.b nRst, $06, nA3, $06, nA3, $06, nB3, $06
-	dc.b nRst, $06, nB3, $06, nRst, $06, nC4, $1E
-	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
-	sJump		SuperSonic_Jump4
-
-SuperSonic_FM5:
+ASIAInvic_FM4:
 	sPan		spCenter
-	sVoice		$00
-	ssDetune	$04
-	saVol		$02
-	dc.b nRst, $30
+	ssDetune	$00
+	sVoice		$03
+	dc.b nRst, $30 
 
-SuperSonic_Jump5:
-	dc.b nRst, $0C, nC4, $06, nD4, $06, nG4, $06
+ASIAInvic_Jump3:	
+	dc.b	nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nRst, $06, nA3, $06, nA3, $06
+	dc.b nB3, $06, nRst, $06, nB3, $06, nRst, $06
+	dc.b nC4, $1E, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nA3, $06, nA3, $06, nA3, $06
+	dc.b nA3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nB3, $06, nB3, $06, nB3, $06
+	dc.b nB3, $06, nRst, $06, nA3, $06, nA3, $06
+	dc.b nB3, $06, nRst, $06, nB3, $06, nRst, $06
+	dc.b nC4, $1E, nC4, $06, nC4, $06, nC4, $06
+	dc.b nC4, $06
+	sPan		spCenter
+	ssDetune	$00
+	sVoice		$03
+	sJump		ASIAInvic_Jump3
+
+ASIAInvic_FM5:
+	sPan		spCenter
+	ssDetune	$00
+	sVoice		$00
+	dc.b nRst, $30 
+
+ASIAInvic_Jump4:	
+	dc.b nRst, $0C, nC4, $06, nD4, $06
+	dc.b nG4, $06, nRst, $06, nF4, $06, nRst, $06
+	dc.b nE4, $0C, nF4, $06, nE4, $06, nC4, $1E
+	dc.b nRst, $06, nC4, $06, nD4, $06, nG4, $06
+	dc.b nRst, $06, nF4, $06, nRst, $06, nE4, $0C
+	dc.b nF4, $06, nG4, $06, nC5, $1E, nRst, $0C
+	dc.b nA4, $06, nA4, $06, nB4, $06, nC5, $06
+	dc.b nRst, $06, nF5, $06, nRst, $06, nE5, $06
+	dc.b nRst, $06, nD5, $12, nC5, $06, nD5, $36
+	dc.b nG5, $06, nA5, $06, nRst, $06, nG5, $1E
+	dc.b nRst, $06, nC4, $06, nD4, $06, nG4, $06
 	dc.b nRst, $06, nF4, $06, nRst, $06, nE4, $0C
 	dc.b nF4, $06, nE4, $06, nC4, $1E, nRst, $06
 	dc.b nC4, $06, nD4, $06, nG4, $06, nRst, $06
-	dc.b nF4, $06, nRst, $06, nE4, $0C, nF4, $06
-	dc.b nG4, $06, nC5, $1E, nRst, $0C, nA4, $06
 	dc.b nA4, $06, nB4, $06, nC5, $06, nRst, $06
-	dc.b nF5, $06, nRst, $06, nE5, $06, nRst, $06
-	dc.b nD5, $12, nC5, $06, nD5, $36, nG5, $06
-	dc.b nA5, $06, nRst, $06, nG5, $1E, nRst, $06
+	dc.b nD5, $06, nRst, $06, nE5, $1E, nRst, $0C
+	dc.b nF5, $0C, nE5, $06, nC5, $06, nRst, $06
+	dc.b nC5, $0C, nA4, $06, nRst, $06, nG4, $0C
+	dc.b nC5, $06, nD5, $06, nG5, $2A, nF5, $06
+	dc.b nE5, $06, nF5, $06, nE5, $06, nRst, $06
+	dc.b nC5, $1E, nRst, $0C, nG4, $06, nB4, $06
+	dc.b nE5, $06, nD5, $06, nRst, $06, nC5, $1E
+	dc.b nC5, $03, nRst, $03, nC5, $03, nRst, $03
+	dc.b nC5, $03, nRst, $03, nC5, $03, nRst, $09
 	dc.b nC4, $06, nD4, $06, nG4, $06, nRst, $06
 	dc.b nF4, $06, nRst, $06, nE4, $0C, nF4, $06
 	dc.b nE4, $06, nC4, $1E, nRst, $06, nC4, $06
-	dc.b nD4, $06, nG4, $06, nRst, $06, nA4, $06
-	dc.b nB4, $06, nC5, $06, nRst, $06, nD5, $06
-	dc.b nRst, $06, nE5, $1E, nRst, $0C, nF5, $0C
-	dc.b nE5, $06, nC5, $06, nRst, $06, nC5, $0C
-	dc.b nA4, $06, nRst, $06, nG4, $0C, nC5, $06
-	dc.b nD5, $06, nG5, $2A, nF5, $06, nE5, $06
-	dc.b nF5, $06, nE5, $06, nRst, $06, nC5, $1E
-	dc.b nRst, $0C, nG4, $06, nB4, $06, nE5, $06
-	dc.b nD5, $06, nRst, $06, nC5, $1E, nC5, $03
-	dc.b nRst, $03, nC5, $03, nRst, $03, nC5, $03
-	dc.b nRst, $03
-	sJump		SuperSonic_Jump5
-
-SuperSonic_PSG1:
+	dc.b nD4, $06, nG4, $06, nRst, $06, nF4, $06
+	dc.b nRst, $06, nE4, $0C, nF4, $06, nG4, $06
+	dc.b nC5, $1E, nRst, $0C, nA4, $06, nA4, $06
+	dc.b nB4, $06, nC5, $06, nRst, $06, nF5, $06
+	dc.b nRst, $06, nE5, $06, nRst, $06, nD5, $12
+	dc.b nC5, $06, nD5, $36, nG5, $06, nA5, $06
+	dc.b nRst, $06, nG5, $1E, nRst, $06, nC4, $06
+	dc.b nD4, $06, nG4, $06, nRst, $06, nF4, $06
+	dc.b nRst, $06, nE4, $0C, nF4, $06, nE4, $06
+	dc.b nC4, $1E, nRst, $06, nC4, $06, nD4, $06
+	dc.b nG4, $06, nRst, $06, nA4, $06, nB4, $06
+	dc.b nC5, $06, nRst, $06, nD5, $06, nRst, $06
+	dc.b nE5, $1E, nRst, $0C, nF5, $0C, nE5, $06
+	dc.b nC5, $06, nRst, $06, nC5, $0C, nA4, $06
+	dc.b nRst, $06, nG4, $0C, nC5, $06, nD5, $06
+	dc.b nG5, $2A, nF5, $06, nE5, $06, nF5, $06
+	dc.b nE5, $06, nRst, $06, nC5, $1E, nRst, $0C
+	dc.b nG4, $06, nB4, $06, nE5, $06, nD5, $06
+	dc.b nRst, $06, nC5, $1E, nC5, $03, nRst, $03
+	dc.b nC5, $03, nRst, $03, nC5, $03, nRst, $03
+	sPan		spCenter
 	ssDetune	$00
-	sVolEnv	v01
-	dc.b nRst, $30
+	sVoice		$00
+	sJump		ASIAInvic_Jump4
 
-SuperSonic_Jump7:
+ASIAInvic_PSG1:
+	ssDetune	$00
+	sVolEnv	vNone
+	dc.b nRst, $2F 
+
+ASIAInvic_Jump5:	
+	dc.b nRst, $0C, nC1, $06, nRst, $0C
+	dc.b nC1, $06, nRst, $06, nC1, $06, nRst, $06
+	dc.b nC1, $06, nRst, $06, nC1, $0C, nC1, $06
+	dc.b nD1, $06, nE1, $06, nRst, $0C, nA0, $06
+	dc.b nRst, $0C, nA0, $06, nRst, $06, nA0, $06
+	dc.b nRst, $06, nA0, $06, nRst, $06, nF1, $0C
+	dc.b nE1, $06, nD1, $06, nC1, $06, nRst, $0C
+	dc.b nC1, $06, nRst, $0C, nC1, $06, nRst, $06
+	dc.b nC1, $06, nRst, $06, nC1, $06, nRst, $06
+	dc.b nC1, $0C, nC1, $06, nD1, $06, nE1, $06
+	dc.b nRst, $0C, nG0, $06, nRst, $0C, nG0, $06
+	dc.b nRst, $06, nG0, $06, nRst, $06, nG0, $06
+	dc.b nRst, $06, nG0, $0A, nRst, $02, nG0, $04
+	dc.b nRst, $02, nG0, $04, nRst, $02, nG1, $06
 	dc.b nRst, $0C, nC1, $06, nRst, $0C, nC1, $06
 	dc.b nRst, $06, nC1, $06, nRst, $06, nC1, $06
 	dc.b nRst, $06, nC1, $0C, nC1, $06, nD1, $06
@@ -353,46 +485,77 @@ SuperSonic_Jump7:
 	dc.b nRst, $06, nC1, $06, nRst, $06, nC1, $0C
 	dc.b nC1, $06, nD1, $06, nE1, $06, nRst, $0C
 	dc.b nG0, $06, nRst, $0C, nG0, $06, nRst, $06
+	dc.b nG0, $06, nRst, $06, nG0, $06, nG0, $06
+	dc.b nC1, $18, nRst, $06, nA0, $06, nG0, $06
+	dc.b nA0, $06, nB0, $06, nRst, $06, nB0, $06
+	dc.b nRst, $06, nC1, $36, nRst, $0C, nC1, $06
+	dc.b nRst, $0C, nC1, $06, nRst, $06, nC1, $06
+	dc.b nRst, $06, nC1, $06, nRst, $06, nC1, $0C
+	dc.b nC1, $06, nD1, $06, nE1, $06, nRst, $0C
+	dc.b nA0, $06, nRst, $0C, nA0, $06, nRst, $06
+	dc.b nA0, $06, nRst, $06, nA0, $06, nRst, $06
+	dc.b nF1, $0C, nE1, $06, nD1, $06, nC1, $06
+	dc.b nRst, $0C, nC1, $06, nRst, $0C, nC1, $06
+	dc.b nRst, $06, nC1, $06, nRst, $06, nC1, $06
+	dc.b nRst, $06, nC1, $0C, nC1, $06, nD1, $06
+	dc.b nE1, $06, nRst, $0C, nG0, $06, nRst, $0C
 	dc.b nG0, $06, nRst, $06, nG0, $06, nRst, $06
-	dc.b nG0, $0B, nRst, $01, nG0, $05, nRst, $01
-	dc.b nG0, $05, nRst, $01, nG1, $06, nRst, $0C
+	dc.b nG0, $06, nRst, $06, nG0, $0A, nRst, $02
+	dc.b nG0, $04, nRst, $02, nG0, $04, nRst, $02
+	dc.b nG1, $06, nRst, $0C, nC1, $06, nRst, $0C
+	dc.b nC1, $06, nRst, $06, nC1, $06, nRst, $06
+	dc.b nC1, $06, nRst, $06, nC1, $0C, nC1, $06
+	dc.b nD1, $06, nE1, $06, nRst, $0C, nA0, $06
+	dc.b nRst, $0C, nA0, $06, nRst, $06, nA0, $06
+	dc.b nRst, $06, nA0, $06, nRst, $06, nF1, $0C
+	dc.b nE1, $06, nD1, $06, nC1, $06, nRst, $0C
 	dc.b nC1, $06, nRst, $0C, nC1, $06, nRst, $06
 	dc.b nC1, $06, nRst, $06, nC1, $06, nRst, $06
 	dc.b nC1, $0C, nC1, $06, nD1, $06, nE1, $06
-	dc.b nRst, $0C, nA0, $06, nRst, $0C, nA0, $06
-	dc.b nRst, $06, nA0, $06, nRst, $06, nA0, $06
-	dc.b nRst, $06, nF1, $0C, nE1, $06, nD1, $06
-	dc.b nC1, $06, nRst, $0C, nC1, $06, nRst, $0C
-	dc.b nC1, $06, nRst, $06, nC1, $06, nRst, $06
-	dc.b nC1, $06, nRst, $06, nC1, $0C, nC1, $06
-	dc.b nD1, $06, nE1, $06, nRst, $0C, nG0, $06
-	dc.b nRst, $0C, nG0, $06, nRst, $06, nG0, $06
-	dc.b nRst, $06, nG0, $06, nG0, $06, nC1, $18
-	dc.b nRst, $06, nA0, $06, nG0, $06, nA0, $06
-	dc.b nB0, $06, nRst, $06, nB0, $06, nRst, $06
-	dc.b nC1, $36
-	sJump		SuperSonic_Jump7
-
-SuperSonic_PSG2:
-	ssDetune	$00
-	sVolEnv	v01
-	dc.b nRst, $30
-
-SuperSonic_Jump8:
 	dc.b nRst, $0C, nG0, $06, nRst, $0C, nG0, $06
 	dc.b nRst, $06, nG0, $06, nRst, $06, nG0, $06
-	dc.b nRst, $06, nG0, $0C, nG0, $06, nA0, $06
-	dc.b nB0, $06, nRst, $0C, nE0, $06, nRst, $0C
+	dc.b nG0, $06, nC1, $18, nRst, $06, nA0, $06
+	dc.b nG0, $06, nA0, $06, nB0, $06, nRst, $06
+	dc.b nB0, $06, nRst, $06, nC1, $36, nRst, $01
+	ssDetune	$00
+	sVolEnv	vNone
+	sJump		ASIAInvic_Jump5
+
+ASIAInvic_PSG2:
+	ssDetune	$00
+	sVolEnv	vNone
+	dc.b nRst, $2F 
+
+ASIAInvic_Jump6:
+	dc.b nRst, $01, nRst, $0C, nG0, $06
+	dc.b nRst, $0C, nG0, $06, nRst, $06, nG0, $06
+	dc.b nRst, $06, nG0, $06, nRst, $06, nG0, $0C
+	dc.b nG0, $06, nA0, $06, nB0, $06, nRst, $0C
+	dc.b nE0, $06, nRst, $0C, nE0, $06, nRst, $06
 	dc.b nE0, $06, nRst, $06, nE0, $06, nRst, $06
-	dc.b nE0, $06, nRst, $06, nC1, $0C, nB0, $06
-	dc.b nA0, $06, nG0, $06, nRst, $0C, nF0, $06
-	dc.b nRst, $0C, nF0, $06, nRst, $06, nF0, $06
-	dc.b nRst, $06, nF0, $06, nRst, $06, nF0, $0C
-	dc.b nF0, $06, nG0, $06, nA0, $06, nRst, $0C
-	dc.b nD0, $06, nRst, $0C, nD0, $06, nRst, $06
+	dc.b nC1, $0C, nB0, $06, nA0, $06, nG0, $06
+	dc.b nRst, $0C, nF0, $06, nRst, $0C, nF0, $06
+	dc.b nRst, $06, nF0, $06, nRst, $06, nF0, $06
+	dc.b nRst, $06, nF0, $0C, nF0, $06, nG0, $06
+	dc.b nA0, $06, nRst, $0C, nD0, $06, nRst, $0C
 	dc.b nD0, $06, nRst, $06, nD0, $06, nRst, $06
-	dc.b nD0, $0B, nRst, $01, nD0, $05, nRst, $01
-	dc.b nD0, $05, nRst, $01, nD1, $06, nRst, $0C
+	dc.b nD0, $06, nRst, $06, nD0, $0B, nRst, $01
+	dc.b nD0, $05, nRst, $01, nD0, $05, nRst, $01
+	dc.b nD1, $06, nRst, $0C, nG0, $06, nRst, $0C
+	dc.b nG0, $06, nRst, $06, nG0, $06, nRst, $06
+	dc.b nG0, $06, nRst, $06, nG0, $0C, nG0, $06
+	dc.b nA0, $06, nB0, $06, nRst, $0C, nE0, $06
+	dc.b nRst, $0C, nE0, $06, nRst, $06, nE0, $06
+	dc.b nRst, $06, nE0, $06, nRst, $06, nC1, $0C
+	dc.b nB0, $06, nA0, $06, nG0, $06, nRst, $0C
+	dc.b nF0, $06, nRst, $0C, nF0, $06, nRst, $06
+	dc.b nF0, $06, nRst, $06, nF0, $06, nRst, $06
+	dc.b nF0, $0C, nF0, $06, nG0, $06, nA0, $06
+	dc.b nRst, $0C, nD0, $06, nRst, $0C, nD0, $06
+	dc.b nRst, $06, nD0, $06, nRst, $06, nD0, $06
+	dc.b nD0, $06, nG0, $18, nRst, $06, nE0, $06
+	dc.b nD0, $06, nE0, $06, nFs0, $06, nRst, $06
+	dc.b nFs0, $06, nRst, $06, nG0, $36, nRst, $0C
 	dc.b nG0, $06, nRst, $0C, nG0, $06, nRst, $06
 	dc.b nG0, $06, nRst, $06, nG0, $06, nRst, $06
 	dc.b nG0, $0C, nG0, $06, nA0, $06, nB0, $06
@@ -404,19 +567,34 @@ SuperSonic_Jump8:
 	dc.b nF0, $06, nRst, $06, nF0, $0C, nF0, $06
 	dc.b nG0, $06, nA0, $06, nRst, $0C, nD0, $06
 	dc.b nRst, $0C, nD0, $06, nRst, $06, nD0, $06
-	dc.b nRst, $06, nD0, $06, nD0, $06, nG0, $18
-	dc.b nRst, $06, nE0, $06, nD0, $06, nE0, $06
-	dc.b nFs0, $06, nRst, $06, nFs0, $06, nRst, $06
-	dc.b nG0, $36
-	sJump		SuperSonic_Jump8
+	dc.b nRst, $06, nD0, $06, nRst, $06, nD0, $0B
+	dc.b nRst, $01, nD0, $05, nRst, $01, nD0, $05
+	dc.b nRst, $01, nD1, $06, nRst, $0C, nG0, $06
+	dc.b nRst, $0C, nG0, $06, nRst, $06, nG0, $06
+	dc.b nRst, $06, nG0, $06, nRst, $06, nG0, $0C
+	dc.b nG0, $06, nA0, $06, nB0, $06, nRst, $0C
+	dc.b nE0, $06, nRst, $0C, nE0, $06, nRst, $06
+	dc.b nE0, $06, nRst, $06, nE0, $06, nRst, $06
+	dc.b nC1, $0C, nB0, $06, nA0, $06, nG0, $06
+	dc.b nRst, $0C, nF0, $06, nRst, $0C, nF0, $06
+	dc.b nRst, $06, nF0, $06, nRst, $06, nF0, $06
+	dc.b nRst, $06, nF0, $0C, nF0, $06, nG0, $06
+	dc.b nA0, $06, nRst, $0C, nD0, $06, nRst, $0C
+	dc.b nD0, $06, nRst, $06, nD0, $06, nRst, $06
+	dc.b nD0, $06, nD0, $06, nG0, $18, nRst, $06
+	dc.b nE0, $06, nD0, $06, nE0, $06, nFs0, $06
+	dc.b nRst, $06, nFs0, $06, nRst, $06, nG0, $36
+	ssDetune	$00
+	sVolEnv	vNone
+	sJump		ASIAInvic_Jump6
 
-SuperSonic_PSG3:
+ASIAInvic_PSG3:
 	sNoisePSG	$E7
 	ssDetune	$00
 	dc.b nRst, $30
 
-SuperSonic_Jump9:
-	sVolEnv	v01
+ASIAInvic_Jump7:	
+	sVolEnv	v02
 	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
 	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
 	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
@@ -434,8 +612,30 @@ SuperSonic_Jump9:
 	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
 	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
 	dc.b nA5, $06
-	sVolEnv	v02
-	dc.b nA5, $03, nA5, $03, nA5, $06
 	sVolEnv	v01
+	dc.b nA5, $03, nA5, $03, nA5, $06
+	sVolEnv	v02
+	dc.b nA5, $0C, nA5, $0C, nA5, $36, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $0C
+	dc.b nA5, $0C, nA5, $0C, nA5, $0C, nA5, $06
+	sVolEnv	v01
+	dc.b nA5, $03, nA5, $03, nA5, $06
+	sVolEnv	v02
 	dc.b nA5, $0C, nA5, $0C, nA5, $36
-	sJump		SuperSonic_Jump9
+	ssDetune	$00
+	sJump		ASIAInvic_Jump7
+

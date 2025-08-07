@@ -25,15 +25,10 @@ TLF_Main:
 		move.w	#560,TLF_time(a0) ; set duration for delay (5 seconds)
 
 TLF_DoneInit:
-	if DemoMode=1
 		subq.w	#1,TLF_time(a0) ; subtract 1 from duration
 		bpl.s	TLF_Wait
-		
 		move.b	#id_EndOfDemoScreen,(v_gamemode).w ; exit to credits
-	else
-		nop
-	endc
-	
+
 	TLF_Wait:
 		rts
 

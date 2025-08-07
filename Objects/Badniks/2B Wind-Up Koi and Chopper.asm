@@ -53,6 +53,8 @@ WindUpKoi_Main:
 	@cont2:
 		jsr		(SpeedToPos).l
 		bsr.w	Obj_GetOrientationToPlayer
+		move.w	d2,d4
+		move.w	d3,d5
 		bsr.w	WindUpKoi_TestCharacterPos	; are Sonic or Tails close enough to attack?
 		bne.s	WindUpKoi_PrepareCharge	; if yes, prepare to charge at them
 		move.b	#0,obAnim(a0)

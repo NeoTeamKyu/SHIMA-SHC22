@@ -66,7 +66,7 @@ MusicIndex:
 	ptrMusic BGZ1,				$20, BGZ2,				$20, BGZ3,			$20, BadApplePC98,	$20, EHZ,	$20	; Blossom Gardens Zone
 	ptrMusic Icescape,			$20, ICESCAPE_ACT_2,	$20, LunateElf,		$20, Cirno,			$20				; Melting Heights Zone
 	ptrMusic MZ,				$20,											ImmortalSmoke,	$20				; Ashen Temple Zone
-	ptrMusic ChineseBicycle,	$20, IceScream,			$20														; Bumper City Zone
+	ptrMusic ChineseBicycle,	$20, BCA2,				$20														; Bumper City Zone
 	ptrMusic Beep,				$20, LZ,				$20														; Sunken Relic Zone
 	ptrMusic SpaceQueens,		$20, SLZ,				$20														; Hoshi Metro Zone
 	ptrMusic SBZ,				$20, FZ,				$20														; Badnik Blitz Zone
@@ -82,7 +82,7 @@ MusicIndex:
 	ptrMusic SS,				$20, Drowning,		$00, Boss,			$20
 	ptrMusic Title,				$00, MM8StageSelect,	$00, GotThroughAct,	$00, Emerald,		$00
 	ptrMusic ExtraLife, 		$00, GameOver,			$00, Continue,		$00, Ending,		$00
-	ptrMusic Credits,			$00, Pichuun,			$00, Backup,		$00
+	ptrMusic Credits,			$00, Pichuun,			$00, Backup,		$00, SonicMyName,	$00
 MusCount =	__mus-MusOff		; number of installed music tracks
 SFXoff =	__mus			; first SFX ID
 __sfx =		SFXoff
@@ -243,7 +243,7 @@ SampleList:
 	sample $0100, MM8Snare, Stop		; DF - Mega Man 8's Snare
 
 	sample $0100, Pichuun, Stop			; E0 - Pichuun~
-	sample $0100, SnareGo, Stop			; E1 - Sonic's My Name ~ Speed's My Game
+	sample $0100, SonicMyName, Stop			; E1 - Sonic's My Name ~ Speed's My Game
 	
 	sample $0104, Choir1, Choir1		; Bass and Mellotron Choir B-D-F#
 	sample $0104, Choir2, Choir2		; Bass and Mellotron Choir B-D-G
@@ -608,7 +608,7 @@ dSoundNames:
 ; Others
 	dc.l	_musnm_SpecStag,	_musnm_Drowning,		_musnm_Boss
 	dc.l	_musnm_Title,		_musnm_MM8StgSel,	_musnm_ActClear,	_musnm_Emerald,			_musnm_ExtraLife
-	dc.l	_musnm_GameOver,	_musnm_Continue,	_musnm_Ending,	_musnm_Credits,	_musnm_Pichuun,	_musnm_Backup
+	dc.l	_musnm_GameOver,	_musnm_Continue,	_musnm_Ending,	_musnm_Credits,	_musnm_Pichuun,	_musnm_Backup, _musnm_SonicMyName
 
 
 ; ---------------------------------------------------------------------------
@@ -829,7 +829,7 @@ SWFR_Stop:	dcb.b Z80E_Read*(MaxPitch/$100),$00
 	incSWF	SynthHit3, HeavyKick, WhooCrash, SideStick, KickOh, DHSlap, OrchHit, Scratch
 	incSWF	ClosedHiHat, OpenHiHat, PedalHiHat, MM8Kick, MM8Snare
 	incSWF	kcKick, kcLowKick, kcTom, kcSnare, kcCrashCymbal, kcClap, kcCowbell
-	incSWF	SplashCymbal, SlowCongo, Timbale, Clink, HighCymbal, Weird, Bang, Bing, Gong
+	incSWF	SplashCymbal, SlowCongo, Timbale, Clink, HighCymbal, Weird, Bang, Bing, Gong, SonicMyName
 	incSWF	Choir1, Choir2, Choir3, Choir4, Choir5, Choir6, Choir7, Choir8, Choir9, ChoirA, ChoirB, ChoirC, ChoirD
 	even
 	opt ae+				; enable automatic evens
